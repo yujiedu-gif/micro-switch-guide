@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class="container footer-grid{% if page.url == '/' %} footer-grid-compact{% endif %}">
+  <div class="container footer-grid footer-grid-compact">
     <div>
       <a class="brand footer-brand" href="{{ '/' | relative_url }}">
         <span class="brand-mark" aria-hidden="true"><span></span></span>
@@ -15,13 +15,6 @@
         <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
       </ul>
     </div>
-    {% unless page.url == '/' %}
-      <div>
-        <h2>Official resource</h2>
-        <p>This educational site is maintained in connection with ZINGEAR. Product-specific information remains on the official website.</p>
-        <a class="text-link" href="https://www.zingear-switch.com/" rel="noopener">Visit ZINGEAR</a>
-      </div>
-    {% endunless %}
   </div>
   <div class="container footer-bottom">
     <p>&copy; {{ site.time | date: '%Y' }} Micro Switch Guide. Educational content only.</p>
