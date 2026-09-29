@@ -37,7 +37,6 @@ permalink: /guides/
       <p class="eyebrow">Building the library</p>
       <h2 id="library-launch-heading">Five focused collections, published carefully.</h2>
       <p>We are preparing the first guides now. This directory will switch to the published article library automatically as content is added.</p>
-      <a class="text-link" href="{{ '/feed.xml' | relative_url }}">Follow new guides by RSS</a>
     </div>
     <ol class="library-topic-list">
       {% for topic in site.data.topics %}

@@ -14,7 +14,7 @@ permalink: /about/
   </div>
 </section>
 
-<section class="about-introduction">
+<section class="about-introduction" id="about-publication">
   <div class="container about-intro-grid">
     <div class="about-lead">
       <p class="eyebrow">Why we publish</p>
@@ -72,10 +72,23 @@ permalink: /about/
         <h3>Explain where advice applies</h3>
         <p>Ratings and recommendations are presented with their load, environment, mechanism, and lifecycle conditions instead of as universal rules.</p>
       </div>
-      <div>
+      <div id="corrections-and-updates">
         <h3>Update and correct</h3>
         <p>Material changes are dated. If a technical error is identified, we correct the guide and keep its application limits explicit.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="editorial-team-section" id="editorial-team">
+  <div class="container editorial-team-grid">
+    <div>
+      <p class="eyebrow">Editorial team</p>
+      <h2>Micro Switch Guide Editorial Team</h2>
+    </div>
+    <div class="editorial-team-copy">
+      <p>Guides are published under a collective editorial byline rather than attributed to invented individual experts. The team brings together practical experience from the electromechanical switch industry and checks technical explanations against primary material where appropriate.</p>
+      <p>Individual contributors or reviewers will only be named when their identity, role, and involvement can be stated accurately.</p>
     </div>
   </div>
 </section>
@@ -101,7 +114,7 @@ permalink: /about/
   </div>
 </section>
 
-<section class="about-caution">
+<section class="about-caution" id="engineering-use">
   <div class="container narrow-container">
     <p class="eyebrow">A note on engineering use</p>
     <h2>Good guidance still needs application-specific verification.</h2>

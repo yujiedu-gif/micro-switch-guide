@@ -1,25 +1,46 @@
 <footer class="site-footer">
-  <div class="container footer-grid footer-grid-compact">
-    <div>
+  <div class="container footer-grid footer-grid-expanded">
+    <div class="footer-introduction">
       <a class="brand footer-brand" href="{{ '/' | relative_url }}">
         <span class="brand-mark" aria-hidden="true"><span></span></span>
         <span>Micro Switch Guide</span>
       </a>
       <p>Practical, plain-English education for working with micro switches.</p>
+      <p class="footer-note">Built for engineers, product designers, maintenance professionals, and technical buyers.</p>
     </div>
-    <div>
-      <h2>Explore</h2>
+    <nav aria-label="Learn">
+      <h2>Learn</h2>
       <ul>
         <li><a href="{{ '/guides/' | relative_url }}">All guides</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About this site</a></li>
-        <li><a href="{{ '/about/#editorial-approach' | relative_url }}">Editorial approach</a></li>
-        <li><a href="{{ '/about/#publication-disclosure' | relative_url }}">Publication disclosure</a></li>
-        <li><a href="{{ '/image-credits/' | relative_url }}">Image credits</a></li>
-        <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+        {% for topic in site.data.topics %}
+        <li><a href="{{ '/guides/' | append: '#' | append: topic.slug | relative_url }}">{{ topic.name }}</a></li>
+        {% endfor %}
       </ul>
-    </div>
+    </nav>
+    <nav aria-label="About the publication">
+      <h2>Publication</h2>
+      <ul>
+        <li><a href="{{ '/about/#about-publication' | relative_url }}">About the publication</a></li>
+        <li><a href="{{ '/about/#editorial-team' | relative_url }}">Editorial team</a></li>
+        <li><a href="{{ '/about/#publication-disclosure' | relative_url }}">Who supports this site</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Editorial standards">
+      <h2>Standards</h2>
+      <ul>
+        <li><a href="{{ '/about/#editorial-approach' | relative_url }}">Editorial approach</a></li>
+        <li><a href="{{ '/about/#corrections-and-updates' | relative_url }}">Corrections &amp; updates</a></li>
+        <li><a href="{{ '/about/#engineering-use' | relative_url }}">Engineering use notice</a></li>
+        <li><a href="{{ '/image-credits/' | relative_url }}">Image credits</a></li>
+      </ul>
+    </nav>
   </div>
   <div class="container footer-bottom">
     <p>&copy; {{ site.time | date: '%Y' }} Micro Switch Guide. Educational content only.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="{{ '/privacy/' | relative_url }}">Privacy Notice</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
+    </nav>
   </div>
 </footer>

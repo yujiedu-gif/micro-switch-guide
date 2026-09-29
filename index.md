@@ -86,7 +86,6 @@ permalink: /
         <p class="eyebrow">Library launch</p>
         <h3>The first practical guides are in preparation.</h3>
         <p>The library will begin with three questions that form a useful foundation for later application and troubleshooting guides.</p>
-        <a class="text-link" href="{{ '/feed.xml' | relative_url }}">Follow the RSS feed</a>
       </div>
       <ol class="launch-directions" aria-label="Initial guide directions">
         <li><span>01</span><strong>Fundamentals</strong><small>How snap action and COM, NC, and NO contacts work.</small></li>
