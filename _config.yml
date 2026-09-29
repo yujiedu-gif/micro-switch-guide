@@ -17,12 +17,8 @@ future: false
 show_excerpts: true
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-
-feed:
-  path: feed.xml
 
 defaults:
   - scope:
