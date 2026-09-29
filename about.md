@@ -91,6 +91,13 @@ permalink: /about/
       <p>Micro Switch Guide is created by professionals working in the electromechanical switch industry. The publication is maintained with support from <a href="https://www.zingear-switch.com/" rel="noopener">ZINGEAR</a>, a manufacturer of electromechanical switches.</p>
       <p>This relationship is stated here so readers can understand who supports the publication. The main guide library remains focused on broadly useful technical education rather than product listings or sales material.</p>
     </div>
+    <figure class="publisher-factory">
+      <picture>
+        <source srcset="{{ '/assets/images/zingear-factory.avif' | relative_url }}" type="image/avif">
+        <img src="{{ '/assets/images/zingear-factory.jpg' | relative_url }}" width="1800" height="1012" alt="Exterior view of the ZINGEAR manufacturing facility" loading="lazy">
+      </picture>
+      <figcaption><strong>ZINGEAR manufacturing facility</strong><span>The company supporting the publication and its technical contributors.</span></figcaption>
+    </figure>
   </div>
 </section>
 

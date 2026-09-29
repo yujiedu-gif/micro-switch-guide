@@ -19,10 +19,10 @@ permalink: /
       <div class="cutaway-stage">
         <picture>
           <source srcset="{{ '/assets/images/micro-switch-exploded-cutaway.avif' | relative_url }}" type="image/avif">
-          <img src="{{ '/assets/images/micro-switch-exploded-cutaway.png' | relative_url }}" width="900" height="900" alt="Exploded cutaway illustration showing the lever, plunger, snap spring, contacts, housing, and three terminals of a micro switch" fetchpriority="high">
+          <img src="{{ '/assets/images/micro-switch-exploded-cutaway.png' | relative_url }}" width="900" height="900" alt="Generic SPDT micro switch cutaway showing the lever, plunger, snap mechanism, contacts, housing, and COM, NC, and NO terminals" fetchpriority="high">
         </picture>
       </div>
-      <figcaption><strong>Inside a snap-action switch</strong><span>Schematic construction; internal arrangements vary by design.</span></figcaption>
+      <figcaption><strong>Inside a generic SPDT switch</strong><span>The three external terminals represent COM, NC, and NO. Schematic construction; internal arrangements vary by design.</span></figcaption>
     </figure>
   </div>
 </section>

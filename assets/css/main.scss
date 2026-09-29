@@ -140,6 +140,11 @@ p { margin: 0 0 1rem; }
 .publisher-copy p { color: #d8e4ed; font-size: 1.05rem; }
 .publisher-copy a { color: white; font-weight: 800; text-decoration-color: #ff9a52; text-decoration-thickness: 2px; }
 .publisher-copy a:hover { color: #ffb06f; }
+.publisher-factory { grid-column: 1 / -1; margin: .5rem 0 0; border: 1px solid rgba(255,255,255,.2); background: #0b2137; overflow: hidden; }
+.publisher-factory picture, .publisher-factory img { display: block; width: 100%; }
+.publisher-factory img { aspect-ratio: 2.25 / 1; object-fit: cover; object-position: center 58%; }
+.publisher-factory figcaption { display: flex; justify-content: space-between; gap: 1rem 2rem; padding: .9rem 1rem; border-top: 1px solid rgba(255,255,255,.2); color: #b8c8d6; font-size: .78rem; line-height: 1.45; }
+.publisher-factory figcaption strong { color: white; font-size: .8rem; letter-spacing: .03em; }
 .about-caution { border-top: 1px solid var(--line); text-align: center; }
 .about-caution h2 { font-size: clamp(1.9rem, 4vw, 3rem); }
 .about-caution p:last-child { color: var(--ink-soft); font-size: 1.05rem; }
@@ -222,6 +227,7 @@ p { margin: 0 0 1rem; }
   .principle-card h3 { margin-top: 2rem; }
   .standards-list > div { grid-template-columns: 1fr; gap: .35rem; }
   .publisher-card { box-shadow: 8px 8px 0 var(--ink); }
+  .publisher-factory figcaption { display: grid; }
   .cutaway-stage { min-height: auto; }
   .hero-cutaway figcaption { grid-template-columns: 1fr; }
 }
