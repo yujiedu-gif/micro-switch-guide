@@ -1,0 +1,47 @@
+{% assign author_key = page.author | default: 'editorial_team' %}
+{% assign post_author = site.data.authors[author_key] %}
+{% assign post_title = page.title | append: ' | ' | append: site.title %}
+{% assign post_url = page.url | absolute_url %}
+{% assign modified_date = page.last_updated | default: page.date %}
+<title>{{ post_title | escape }}</title>
+<meta name="generator" content="Jekyll">
+<meta name="author" content="{{ post_author.name | escape }}">
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ post_url }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ post_url }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="{{ page.title | escape }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "{{ post_url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ post_url }}"
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ modified_date | date_to_xmlschema }}",
+  "author": {
+    "@type": "{{ post_author.type | default: 'Organization' }}",
+    "name": {{ post_author.name | jsonify }},
+    "url": "{{ post_author.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ '/' | absolute_url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.logo | absolute_url }}"
+    }
+  }
+}
+</script>

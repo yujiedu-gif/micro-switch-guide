@@ -48,9 +48,10 @@ permalink: /
     <div class="topic-grid">
       {% for topic in site.data.topics %}
       <a class="topic-card" href="{{ '/guides/' | append: '#' | append: topic.slug | relative_url }}">
-        <span class="topic-number">0{{ forloop.index }}</span>
+        <span class="topic-number" aria-hidden="true">0{{ forloop.index }}</span>
         <h3>{{ topic.name }}</h3>
         <p>{{ topic.description }}</p>
+        <p class="topic-question"><span>Example question</span>{{ topic.question }}</p>
         <span class="card-link">Explore topic</span>
       </a>
       {% endfor %}
@@ -74,25 +75,36 @@ permalink: /
       {% endfor %}
     </div>
     {% else %}
-    <div class="empty-state">
-      <p class="eyebrow">Editorial library</p>
-      <h3>The first guides are being prepared.</h3>
-      <p>New articles will cover fundamentals, selection tradeoffs, sealed construction, troubleshooting, and real-world applications.</p>
-      <a class="text-link" href="{{ '/feed.xml' | relative_url }}">Follow the RSS feed</a>
+    <div class="launch-panel">
+      <div class="launch-panel-intro">
+        <p class="eyebrow">Library launch</p>
+        <h3>The first practical guides are in preparation.</h3>
+        <p>The library will begin with three questions that form a useful foundation for later application and troubleshooting guides.</p>
+        <a class="text-link" href="{{ '/feed.xml' | relative_url }}">Follow the RSS feed</a>
+      </div>
+      <ol class="launch-directions" aria-label="Initial guide directions">
+        <li><span>01</span><strong>Fundamentals</strong><small>How snap action and COM, NC, and NO contacts work.</small></li>
+        <li><span>02</span><strong>Selection</strong><small>How to compare load, force, travel, actuator, and life ratings.</small></li>
+        <li><span>03</span><strong>Waterproofing</strong><small>What sealing and ingress ratings do and do not tell you.</small></li>
+      </ol>
     </div>
     {% endif %}
   </div>
 </section>
 
-<section class="method-section">
-  <div class="container method-grid">
-    <div>
-      <p class="eyebrow">A practical editorial standard</p>
-      <h2>Useful before it is promotional.</h2>
+<section class="method-section" aria-labelledby="method-heading">
+  <div class="container">
+    <div class="method-heading">
+      <div>
+        <p class="eyebrow">Editorial standard</p>
+        <h2 id="method-heading">How each guide earns trust.</h2>
+      </div>
+      <a class="text-link" href="{{ '/about/#editorial-approach' | relative_url }}">Read our editorial approach</a>
     </div>
-    <div>
-      <p>Every guide begins with the operating principle or selection problem, defines technical terms in context, and separates general engineering guidance from product-specific information.</p>
-      <a class="text-link" href="{{ '/about/' | relative_url }}">Read our editorial approach</a>
+    <div class="trust-grid">
+      <article><span>01</span><h3>Focused scope</h3><p>Each guide starts with one operating principle, selection decision, or field problem.</p></article>
+      <article><span>02</span><h3>Checkable sources</h3><p>Technical claims point to standards, manufacturer documentation, or other primary material when appropriate.</p></article>
+      <article><span>03</span><h3>Clear limitations</h3><p>Advice states the conditions, trade-offs, and application checks that can change the answer.</p></article>
     </div>
   </div>
 </section>

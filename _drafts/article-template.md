@@ -6,7 +6,8 @@ category: Basics
 tags:
   - micro switch
   - snap action
-author: Micro Switch Guide Editorial Team
+author: editorial_team
+# last_updated: 2026-01-15 09:00:00 +0800
 # official_url: https://www.zingear-switch.com/relevant-official-page.html
 ---
 
@@ -34,3 +35,7 @@ Call out assumptions that can lead to a poor selection, unreliable operation, or
 
 Summarize the practical decision in a short paragraph. Link to another guide when a reader needs the next step.
 
+## Sources and references
+
+- List primary standards, manufacturer documentation, datasheets, or test definitions used to verify the guide.
+- Link to the exact source page where possible and state the document revision or access date when it matters.

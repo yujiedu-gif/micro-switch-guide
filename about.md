@@ -57,30 +57,30 @@ permalink: /about/
   </div>
 </section>
 
-<section class="about-standards">
+<section class="about-standards" id="editorial-approach">
   <div class="container about-standards-grid">
     <div>
-      <p class="eyebrow">How we work</p>
-      <h2>Practical, specific, and transparent.</h2>
+      <p class="eyebrow">Editorial approach</p>
+      <h2>Three checks before a guide is published.</h2>
     </div>
     <div class="standards-list">
       <div>
-        <h3>Useful before promotional</h3>
-        <p>Topics are chosen for the questions they help readers answer, not for the products they might promote.</p>
+        <h3>Check primary material</h3>
+        <p>We compare claims with relevant standards, component datasheets, test definitions, and manufacturer documentation before simplifying them.</p>
       </div>
       <div>
-        <h3>Context before conclusions</h3>
-        <p>Ratings and recommendations are explained with their operating conditions, limitations, and relevant trade-offs.</p>
+        <h3>Explain where advice applies</h3>
+        <p>Ratings and recommendations are presented with their load, environment, mechanism, and lifecycle conditions instead of as universal rules.</p>
       </div>
       <div>
-        <h3>Sources that can be checked</h3>
-        <p>Where appropriate, guides point readers to standards, technical documentation, and primary references for further verification.</p>
+        <h3>Update and correct</h3>
+        <p>Material changes are dated. If a technical error is identified, we correct the guide and keep its application limits explicit.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="publisher-section">
+<section class="publisher-section" id="publication-disclosure">
   <div class="container publisher-card">
     <div class="publisher-label">
       <span class="publisher-rule" aria-hidden="true"></span>
@@ -91,7 +91,7 @@ permalink: /about/
       <p>Micro Switch Guide is created by professionals working in the electromechanical switch industry. The publication is maintained with support from <a href="https://www.zingear-switch.com/" rel="noopener">ZINGEAR</a>, a manufacturer of electromechanical switches.</p>
       <p>This relationship is stated here so readers can understand who supports the publication. The main guide library remains focused on broadly useful technical education rather than product listings or sales material.</p>
     </div>
-    <figure class="publisher-factory">
+    <figure class="publisher-factory publisher-factory-compact">
       <picture>
         <source srcset="{{ '/assets/images/zingear-factory.avif' | relative_url }}" type="image/avif">
         <img src="{{ '/assets/images/zingear-factory.jpg' | relative_url }}" width="1800" height="1012" alt="Exterior view of the ZINGEAR manufacturing facility" loading="lazy">

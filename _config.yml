@@ -34,7 +34,7 @@ defaults:
       type: posts
     values:
       layout: post
-      author: Micro Switch Guide Editorial Team
+      author: editorial_team
 
 exclude:
   - Gemfile
