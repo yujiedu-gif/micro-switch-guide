@@ -7,7 +7,7 @@
     {% seo %}
     {% feed_meta %}
     <link rel="icon" href="{{ '/assets/icons/favicon.svg' | relative_url }}" type="image/svg+xml">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     {% include structured-data.html %}
   </head>
   <body>
@@ -19,4 +19,3 @@
     {% include footer.html %}
   </body>
 </html>
-
