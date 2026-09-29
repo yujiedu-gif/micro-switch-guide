@@ -17,10 +17,19 @@ permalink: /
     </div>
     <figure class="hero-cutaway">
       <div class="cutaway-stage">
-        <picture>
+        <picture class="cutaway-image">
           <source srcset="{{ '/assets/images/micro-switch-exploded-cutaway.avif' | relative_url }}" type="image/avif">
           <img src="{{ '/assets/images/micro-switch-exploded-cutaway.png' | relative_url }}" width="900" height="900" alt="Generic SPDT micro switch cutaway showing the lever, plunger, snap mechanism, contacts, housing, and COM, NC, and NO terminals" fetchpriority="high">
         </picture>
+        <ol class="cutaway-callouts" aria-label="Micro switch structure labels">
+          <li class="callout callout-left callout-lever"><span>Actuator lever</span><i aria-hidden="true"></i></li>
+          <li class="callout callout-left callout-housing"><span>Housing cover</span><i aria-hidden="true"></i></li>
+          <li class="callout callout-left callout-plunger"><span>Plunger</span><i aria-hidden="true"></i></li>
+          <li class="callout callout-left callout-spring"><span>Snap-action spring</span><i aria-hidden="true"></i></li>
+          <li class="callout callout-right callout-moving"><span>Moving contact</span><i aria-hidden="true"></i></li>
+          <li class="callout callout-right callout-fixed"><span>Fixed contacts</span><i aria-hidden="true"></i></li>
+          <li class="callout callout-right callout-terminals"><span>COM / NC / NO terminals</span><i aria-hidden="true"></i></li>
+        </ol>
       </div>
       <figcaption><strong>Inside a generic SPDT switch</strong><span>The three external terminals represent COM, NC, and NO. Schematic construction; internal arrangements vary by design.</span></figcaption>
     </figure>
