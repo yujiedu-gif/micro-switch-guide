@@ -58,17 +58,17 @@ p { margin: 0 0 1rem; }
 .nav-list a { display: block; padding: 0.55rem 0.8rem; border-radius: 4px; color: var(--ink-soft); font-size: 0.92rem; font-weight: 700; text-decoration: none; }
 .nav-list a:hover, .nav-list a[aria-current="page"] { color: var(--ink); background: var(--mist); }
 
-.hero { padding: clamp(4rem, 8vw, 7rem) 0; color: white; background: var(--ink); overflow: hidden; }
-.hero-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(480px, 1.1fr); align-items: center; gap: clamp(2.5rem, 5vw, 5rem); }
-.hero h1 { max-width: 760px; }
+.hero { position: relative; padding: clamp(2.8rem, 5vw, 4.5rem) 0; color: white; background-color: var(--ink); background-image: linear-gradient(90deg, rgba(11,31,54,.99) 0%, rgba(11,31,54,.95) 34%, rgba(11,31,54,.68) 64%, rgba(11,31,54,.52) 100%), linear-gradient(0deg, rgba(7,23,39,.42), transparent 58%), url("{{ '/assets/images/production-line-banner.jpg' | relative_url }}"); background-position: center; background-size: cover; background-repeat: no-repeat; overflow: hidden; }
+.hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, .94fr) minmax(460px, 1.06fr); align-items: center; gap: clamp(2.5rem, 5vw, 5rem); }
+.hero h1 { max-width: 680px; font-size: clamp(2.6rem, 5.2vw, 4.8rem); }
 .hero .eyebrow, .page-hero .eyebrow { color: #ff9a52; }
 .hero-copy { max-width: 660px; color: #cfdae4; font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .hero-actions { display: flex; align-items: center; gap: 1.4rem; margin-top: 2rem; }
 .hero .text-link { color: white; }
-.hero-cutaway { min-width: 0; margin: 0; border: 1px solid #34516e; border-radius: 8px; background: #102943; box-shadow: 16px 16px 0 #071727; overflow: hidden; }
-.cutaway-stage { position: relative; display: grid; place-items: center; min-height: 510px; padding: clamp(.5rem, 2vw, 1.2rem); background: radial-gradient(circle at 50% 44%, rgba(44,92,132,.55), rgba(16,41,67,.08) 58%, transparent 72%); }
+.hero-cutaway { min-width: 0; margin: 0; border: 1px solid rgba(115,151,181,.7); border-radius: 8px; background: rgba(16,41,67,.14); box-shadow: 12px 12px 0 rgba(7,23,39,.82); overflow: hidden; }
+.cutaway-stage { position: relative; display: grid; place-items: center; min-height: 410px; padding: clamp(.4rem, 1.4vw, .9rem); background: radial-gradient(circle at 50% 44%, rgba(44,92,132,.58), rgba(16,41,67,.08) 58%, transparent 72%); }
 .cutaway-stage::before { content: ""; position: absolute; inset: 10%; border: 1px solid rgba(143,167,189,.18); border-radius: 50%; }
-.cutaway-image { position: relative; z-index: 1; display: block; width: 76%; animation: cutaway-enter .85s cubic-bezier(.2,.75,.25,1) both; }
+.cutaway-image { position: relative; z-index: 1; display: block; width: 68%; animation: cutaway-enter .85s cubic-bezier(.2,.75,.25,1) both; }
 .cutaway-stage img { display: block; width: 100%; height: auto; filter: drop-shadow(0 22px 22px rgba(0,0,0,.24)); }
 .cutaway-callouts { position: absolute; z-index: 2; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; }
 .callout { --delay: .25s; position: absolute; color: #f4f8fb; font-size: .67rem; font-weight: 780; letter-spacing: .025em; line-height: 1.25; opacity: 0; animation: callout-reveal .42s ease-out var(--delay) forwards; }
@@ -89,7 +89,7 @@ p { margin: 0 0 1rem; }
 .callout-moving { --line: 160px; --angle: 0deg; --delay: .58s; top: 48%; }
 .callout-fixed { --line: 135px; --angle: 0deg; --delay: .68s; top: 57%; }
 .callout-terminals { --line: 62px; --angle: -5deg; --delay: .78s; top: 76%; }
-.hero-cutaway figcaption { display: grid; grid-template-columns: auto 1fr; gap: .4rem 1rem; padding: 1rem 1.2rem; border-top: 1px solid #34516e; color: #b8c8d6; font-size: .78rem; line-height: 1.45; }
+.hero-cutaway figcaption { display: grid; grid-template-columns: auto 1fr; gap: .4rem 1rem; padding: 1rem 1.2rem; border-top: 1px solid #34516e; color: #b8c8d6; background: rgba(11,31,54,.86); font-size: .78rem; line-height: 1.45; }
 .hero-cutaway figcaption strong { color: white; font-size: .8rem; letter-spacing: .03em; }
 
 @keyframes cutaway-enter {
@@ -223,7 +223,7 @@ p { margin: 0 0 1rem; }
 
 @media (max-width: 900px) {
   .hero-grid, .guide-topic, .article-grid, .about-hero-grid, .about-intro-grid, .about-standards-grid { grid-template-columns: 1fr; }
-  .hero-grid { gap: 3rem; }
+  .hero-grid { gap: 2rem; }
   .hero-cutaway { width: 100%; max-width: 680px; }
   .topic-card { grid-column: span 3; }
   .topic-card:nth-child(5) { grid-column: 2 / span 4; }
@@ -242,6 +242,8 @@ p { margin: 0 0 1rem; }
   .nav-list li { flex: 1; text-align: center; }
   .nav-list a { padding: .5rem; font-size: .84rem; }
   .hero-actions, .split-heading { align-items: flex-start; flex-direction: column; }
+  .hero { padding-block: 2.8rem; }
+  .hero { background-image: linear-gradient(180deg, rgba(11,31,54,.98) 0%, rgba(11,31,54,.93) 48%, rgba(11,31,54,.76) 100%), url("{{ '/assets/images/production-line-banner.jpg' | relative_url }}"); }
   .topic-grid, .post-grid, .method-grid, .footer-grid, .footer-grid-compact, .principle-grid, .publisher-card { grid-template-columns: 1fr; }
   .topic-card, .topic-card:nth-child(4), .topic-card:nth-child(5) { grid-column: 1; }
   .topic-card { min-height: 220px; }
@@ -256,14 +258,15 @@ p { margin: 0 0 1rem; }
   .standards-list > div { grid-template-columns: 1fr; gap: .35rem; }
   .publisher-card { box-shadow: 8px 8px 0 var(--ink); }
   .publisher-factory figcaption { display: grid; }
-  .cutaway-stage { min-height: auto; padding: 1.2rem 1rem; }
-  .cutaway-image { width: 100%; }
+  .cutaway-stage { min-height: auto; padding: 1rem; }
+  .cutaway-image { width: 72%; }
   .cutaway-callouts { position: relative; inset: auto; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .55rem; width: 100%; margin-top: .75rem; }
   .callout { position: relative; inset: auto; text-align: left; }
   .callout span { max-width: none; min-height: 100%; padding: .52rem .6rem; color: #dce8f1; background: rgba(7,23,39,.58); }
   .callout i { display: none; }
   .callout-terminals { grid-column: 1 / -1; }
-  .hero-cutaway figcaption { grid-template-columns: 1fr; }
+  .hero-cutaway figcaption { grid-template-columns: 1fr; padding: .8rem 1rem; }
+  .hero-cutaway figcaption span { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
