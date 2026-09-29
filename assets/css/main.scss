@@ -109,11 +109,17 @@ p { margin: 0 0 1rem; }
 .topic-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
 .topic-card { position: relative; grid-column: span 2; min-height: 285px; display: flex; flex-direction: column; padding: 1.45rem 1.5rem 1.55rem; border: 1px solid var(--line); border-radius: 5px; color: var(--ink); background: #f8fafc; text-decoration: none; overflow: hidden; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease; }
 .topic-card::before { content: ""; position: absolute; top: 0; left: 0; width: 42%; height: 3px; background: var(--orange); transition: width .18s ease; }
+.topic-card > :not(.topic-art) { position: relative; z-index: 1; }
+.topic-art { position: absolute; z-index: 0; right: -11%; bottom: -12%; width: 62%; aspect-ratio: 1; opacity: .105; pointer-events: none; transform: rotate(-4deg); transition: opacity .18s ease, transform .18s ease; }
+.topic-art picture, .topic-art img { display: block; width: 100%; height: 100%; }
+.topic-art img { object-fit: contain; filter: saturate(.62) contrast(.94); }
+.topic-card:nth-child(even) .topic-art { right: -8%; transform: rotate(4deg); }
 .topic-card:nth-child(2), .topic-card:nth-child(5) { background: #f2f6f9; }
 .topic-card:nth-child(3) { background: #f7f8f5; }
 .topic-card:nth-child(4), .topic-card:nth-child(5) { grid-column: span 3; }
 .topic-card:hover, .topic-card:focus-visible { transform: translateY(-4px); border-color: #a9bac8; color: var(--ink); background: white; box-shadow: var(--shadow); }
 .topic-card:hover::before, .topic-card:focus-visible::before { width: 100%; }
+.topic-card:hover .topic-art, .topic-card:focus-visible .topic-art { opacity: .18; transform: translate(-2%, -2%) rotate(0); }
 .topic-number { color: var(--orange); font-size: .78rem; font-weight: 850; letter-spacing: .1em; }
 .topic-card h3 { margin-top: 1.55rem; font-size: 1.45rem; }
 .topic-card p { color: var(--ink-soft); }
@@ -285,6 +291,7 @@ p { margin: 0 0 1rem; }
   .topic-grid, .post-grid, .footer-grid, .footer-grid-compact, .principle-grid, .publisher-card, .launch-panel, .trust-grid { grid-template-columns: 1fr; }
   .topic-card, .topic-card:nth-child(4), .topic-card:nth-child(5) { grid-column: 1; }
   .topic-card { min-height: 0; }
+  .topic-art { right: -7%; bottom: -20%; width: 52%; opacity: .09; }
   .topic-card h3 { margin-top: 1.2rem; }
   .launch-directions { border-top: 1px solid var(--line); border-left: 0; }
   .launch-directions li { grid-template-columns: 2rem 1fr; }

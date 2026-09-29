@@ -48,6 +48,12 @@ permalink: /
     <div class="topic-grid">
       {% for topic in site.data.topics %}
       <a class="topic-card" href="{{ '/guides/' | append: '#' | append: topic.slug | relative_url }}">
+        <span class="topic-art" aria-hidden="true">
+          <picture>
+            <source srcset="{{ topic.image | replace: '.png', '.avif' | relative_url }}" type="image/avif">
+            <img src="{{ topic.image | relative_url }}" width="560" height="560" alt="" loading="lazy" decoding="async">
+          </picture>
+        </span>
         <span class="topic-number" aria-hidden="true">0{{ forloop.index }}</span>
         <h3>{{ topic.name }}</h3>
         <p>{{ topic.description }}</p>

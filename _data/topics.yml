@@ -1,20 +1,25 @@
 - name: Basics
   slug: basics
+  image: /assets/images/topics/basics.png
   description: Understand snap action, terminals, contact forms, and core terminology.
   question: What changes electrically when the actuator moves?
 - name: Selection Guides
   slug: selection-guides
+  image: /assets/images/topics/selection-guides.png
   description: Match electrical ratings, actuators, force, size, and lifecycle to an application.
   question: Which ratings and force values matter for my design?
 - name: Waterproof Switches
   slug: waterproof-switches
+  image: /assets/images/topics/waterproof-switches.png
   description: Learn what ingress protection means and when sealed construction matters.
   question: Does an IP rating cover the actual exposure conditions?
 - name: Troubleshooting
   slug: troubleshooting
+  image: /assets/images/topics/troubleshooting.png
   description: Diagnose intermittent signals, contact wear, mechanical damage, and installation issues.
   question: Why is a switch signal intermittent or late?
 - name: Applications
   slug: applications
+  image: /assets/images/topics/applications.png
   description: See how micro switches support appliances, vehicles, industrial equipment, and controls.
   question: How should the mechanism drive the switch reliably?
