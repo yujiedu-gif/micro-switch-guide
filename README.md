@@ -6,7 +6,7 @@ A lightweight English educational blog about micro switch fundamentals, selectio
 
 1. Push this project to the `main` branch of the public `yujiedu-gif/micro-switch-guide` repository.
 2. In **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/(root)`.
-3. The initial site address is `https://yujiedu-gif.github.io/micro-switch-guide/`.
+3. The production address is `https://www.microswitchguide.com/`; GitHub Pages remains the hosting origin.
 
 ## Publish an article
 
@@ -55,12 +55,13 @@ On a fresh computer, install Ruby 3.3 and run `bundle install` once before using
 - Edit `_data/topics.yml` to change topic names and descriptions.
 - If a topic name changes, update the category value in all affected posts.
 
-## Connect a custom domain later
+## Custom domain
 
-1. Change `url` in `_config.yml` to `https://www.yourdomain.com`.
-2. Change `baseurl` to an empty string: `baseurl: ""`.
-3. Add the custom domain in **Settings → Pages** and follow GitHub's DNS verification instructions.
-4. Point the `www` CNAME to `yujiedu-gif.github.io` and configure the apex domain using GitHub's documented records.
-5. Enable **Enforce HTTPS** after the certificate is ready.
+The canonical production domain is `www.microswitchguide.com`.
+
+1. Keep the repository `CNAME` file set to `www.microswitchguide.com`.
+2. In Cloudflare DNS, point the `www` CNAME to `yujiedu-gif.github.io` with proxying disabled.
+3. Point the apex domain to GitHub Pages using the four documented A records.
+4. Keep the domain configured in **Settings → Pages** and enable **Enforce HTTPS** after the certificate is ready.
 
 Article links use Jekyll URL helpers, so article body content does not need to change when the domain is connected.

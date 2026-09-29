@@ -4,8 +4,8 @@ description: >-
   Clear, practical guides to micro switch fundamentals, selection, waterproofing,
   troubleshooting, and real-world applications.
 lang: en
-url: "https://yujiedu-gif.github.io"
-baseurl: "/micro-switch-guide"
+url: "https://www.microswitchguide.com"
+baseurl: ""
 repository: yujiedu-gif/micro-switch-guide
 author:
   name: Micro Switch Guide
