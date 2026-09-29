@@ -1,0 +1,16 @@
+- name: Basics
+  slug: basics
+  description: Understand snap action, terminals, contact forms, and core terminology.
+- name: Selection Guides
+  slug: selection-guides
+  description: Match electrical ratings, actuators, force, size, and lifecycle to an application.
+- name: Waterproof Switches
+  slug: waterproof-switches
+  description: Learn what ingress protection means and when sealed construction matters.
+- name: Troubleshooting
+  slug: troubleshooting
+  description: Diagnose intermittent signals, contact wear, mechanical damage, and installation issues.
+- name: Applications
+  slug: applications
+  description: See how micro switches support appliances, vehicles, industrial equipment, and controls.
+

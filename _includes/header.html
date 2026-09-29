@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Micro Switch Guide home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>Micro Switch Guide</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        {% for item in site.data.navigation %}
+          {% assign item_url = item.url | relative_url %}
+          <li><a href="{{ item_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+

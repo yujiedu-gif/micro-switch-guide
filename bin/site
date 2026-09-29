@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+if [[ -x "$PROJECT_DIR/work/ruby/bin/ruby" ]]; then
+  export PATH="$PROJECT_DIR/work/ruby/bin:$PATH"
+  export BUNDLE_PATH="$PROJECT_DIR/work/bundle"
+fi
+
+cd "$PROJECT_DIR"
+
+case "${1:-serve}" in
+  build)
+    JEKYLL_ENV=production bundle exec jekyll build
+    ;;
+  drafts)
+    bundle exec jekyll serve --drafts
+    ;;
+  serve)
+    bundle exec jekyll serve
+    ;;
+  *)
+    echo "Usage: ./bin/site [build|serve|drafts]" >&2
+    exit 2
+    ;;
+esac
+

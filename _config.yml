@@ -1,0 +1,45 @@
+title: Micro Switch Guide
+tagline: Practical knowledge for choosing and applying micro switches
+description: >-
+  Clear, practical guides to micro switch fundamentals, selection, waterproofing,
+  troubleshooting, and real-world applications.
+lang: en
+url: "https://yujiedu-gif.github.io"
+baseurl: "/micro-switch-guide"
+repository: yujiedu-gif/micro-switch-guide
+author:
+  name: Micro Switch Guide
+logo: /assets/icons/favicon.svg
+
+permalink: /guides/:title/
+timezone: Asia/Shanghai
+future: false
+show_excerpts: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Micro Switch Guide Editorial Team
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - work
+  - outputs
