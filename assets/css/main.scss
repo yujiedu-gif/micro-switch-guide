@@ -65,17 +65,13 @@ p { margin: 0 0 1rem; }
 .hero-copy { max-width: 660px; color: #cfdae4; font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .hero-actions { display: flex; align-items: center; gap: 1.4rem; margin-top: 2rem; }
 .hero .text-link { color: white; }
-.switch-diagram { position: relative; padding: 1.5rem; border: 1px solid #34516e; border-radius: 8px; background: #102943; box-shadow: 16px 16px 0 #071727; }
-.diagram-label { color: #9db1c4; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.diagram-state { display: grid; grid-template-columns: 74px 1fr; gap: .5rem 1rem; padding: 1.2rem 0; border-bottom: 1px solid #34516e; }
-.diagram-state > span { color: #8fa7bd; font-size: .72rem; font-weight: 800; letter-spacing: .08em; }
-.diagram-state strong { grid-column: 2; font-size: .9rem; }
-.circuit { position: relative; height: 42px; }
-.circuit i, .circuit em { position: absolute; bottom: 3px; width: 11px; height: 11px; border: 3px solid var(--orange-bright); border-radius: 50%; }
-.circuit i { left: 0; } .circuit em { right: 0; }
-.circuit b { position: absolute; left: 10px; bottom: 11px; width: calc(100% - 25px); height: 3px; transform: rotate(-13deg); transform-origin: left; background: white; }
-.diagram-state.active .circuit b { transform: rotate(13deg); }
-.diagram-note { margin: 1rem 0 0; color: #b8c8d6; font-size: .9rem; }
+.hero-cutaway { min-width: 0; margin: 0; border: 1px solid #34516e; border-radius: 8px; background: #102943; box-shadow: 16px 16px 0 #071727; overflow: hidden; }
+.cutaway-stage { position: relative; display: grid; place-items: center; min-height: 390px; padding: clamp(.5rem, 2vw, 1.2rem); background: radial-gradient(circle at 50% 44%, rgba(44,92,132,.55), rgba(16,41,67,.08) 58%, transparent 72%); }
+.cutaway-stage::before { content: ""; position: absolute; inset: 10%; border: 1px solid rgba(143,167,189,.18); border-radius: 50%; }
+.cutaway-stage picture { position: relative; z-index: 1; display: block; }
+.cutaway-stage img { display: block; width: 100%; height: auto; filter: drop-shadow(0 22px 22px rgba(0,0,0,.24)); }
+.hero-cutaway figcaption { display: grid; grid-template-columns: auto 1fr; gap: .4rem 1rem; padding: 1rem 1.2rem; border-top: 1px solid #34516e; color: #b8c8d6; font-size: .78rem; line-height: 1.45; }
+.hero-cutaway figcaption strong { color: white; font-size: .8rem; letter-spacing: .03em; }
 
 .topic-section, .latest-section { padding: clamp(4rem, 8vw, 7rem) 0; }
 .section-heading { margin-bottom: 2rem; }
@@ -195,7 +191,7 @@ p { margin: 0 0 1rem; }
 @media (max-width: 900px) {
   .hero-grid, .guide-topic, .article-grid, .about-hero-grid, .about-intro-grid, .about-standards-grid { grid-template-columns: 1fr; }
   .hero-grid { gap: 3rem; }
-  .switch-diagram { max-width: 560px; }
+  .hero-cutaway { max-width: 600px; }
   .topic-card { grid-column: span 3; }
   .topic-card:nth-child(5) { grid-column: 2 / span 4; }
   .post-grid { grid-template-columns: repeat(2, 1fr); }
@@ -226,6 +222,8 @@ p { margin: 0 0 1rem; }
   .principle-card h3 { margin-top: 2rem; }
   .standards-list > div { grid-template-columns: 1fr; gap: .35rem; }
   .publisher-card { box-shadow: 8px 8px 0 var(--ink); }
+  .cutaway-stage { min-height: auto; }
+  .hero-cutaway figcaption { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

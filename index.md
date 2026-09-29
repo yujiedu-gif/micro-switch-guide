@@ -15,20 +15,15 @@ permalink: /
         <a class="text-link" href="{{ '/about/' | relative_url }}">How this site works</a>
       </div>
     </div>
-    <div class="switch-diagram" aria-label="Simplified micro switch contact states">
-      <p class="diagram-label">Snap-action principle</p>
-      <div class="diagram-state">
-        <span>REST</span>
-        <div class="circuit"><i></i><b></b><em></em></div>
-        <strong>NC connected</strong>
+    <figure class="hero-cutaway">
+      <div class="cutaway-stage">
+        <picture>
+          <source srcset="{{ '/assets/images/micro-switch-exploded-cutaway.avif' | relative_url }}" type="image/avif">
+          <img src="{{ '/assets/images/micro-switch-exploded-cutaway.png' | relative_url }}" width="900" height="900" alt="Exploded cutaway illustration showing the lever, plunger, snap spring, contacts, housing, and three terminals of a micro switch" fetchpriority="high">
+        </picture>
       </div>
-      <div class="diagram-state active">
-        <span>ACTUATED</span>
-        <div class="circuit"><i></i><b></b><em></em></div>
-        <strong>NO connected</strong>
-      </div>
-      <p class="diagram-note">A small movement produces a fast, repeatable contact change.</p>
-    </div>
+      <figcaption><strong>Inside a snap-action switch</strong><span>Schematic construction; internal arrangements vary by design.</span></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -92,4 +87,3 @@ permalink: /
     </div>
   </div>
 </section>
-
