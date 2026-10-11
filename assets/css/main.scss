@@ -165,6 +165,7 @@ p { margin: 0 0 1rem; }
 .guide-directory .post-card h3 { font-size: clamp(1.05rem, 1.7vw, 1.18rem); line-height: 1.25; letter-spacing: -.015em; }
 .guide-overflow { margin-top: 1rem; }
 .guide-list-actions { width: 100%; margin-top: 1rem; }
+.guide-overflow[hidden], .guide-list-actions[hidden] { display: none !important; }
 .guide-list-toggle { width: 100%; min-height: 50px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 1rem; border: 1px solid #aebdca; border-left: 4px solid var(--orange); border-radius: 3px; color: var(--ink); background: var(--mist); font: inherit; font-weight: 750; text-align: left; cursor: pointer; }
 .guide-list-toggle:hover { border-color: var(--orange); background: white; }
 .guide-list-toggle-icon { flex: 0 0 auto; color: var(--orange); font-size: 1.35rem; font-weight: 500; line-height: 1; }
