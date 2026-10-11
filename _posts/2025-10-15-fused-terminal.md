@@ -64,4 +64,4 @@ In short, **this topic** generally refers to a terminal assembly that incorporat
 
 ## Sources and references
 
-- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452)
+- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452){: rel="nofollow noopener noreferrer" }

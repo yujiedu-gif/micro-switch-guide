@@ -66,4 +66,4 @@ A careful summary can be brief: the source uses the word “clear,” but the te
 
 ## Sources and references
 
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

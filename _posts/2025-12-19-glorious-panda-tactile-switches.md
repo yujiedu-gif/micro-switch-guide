@@ -64,4 +64,4 @@ The dependable conclusion is narrow: the phrase points toward a tactile-switch t
 
 ## Sources and references
 
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

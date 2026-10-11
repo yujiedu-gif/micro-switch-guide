@@ -101,7 +101,7 @@ permalink: /about/
     </div>
     <div class="publisher-copy">
       <h2>Who is behind Micro Switch Guide?</h2>
-      <p>Micro Switch Guide is created by professionals working in the electromechanical switch industry. The publication is maintained with support from <a href="https://www.zingear-switch.com/" rel="noopener">ZINGEAR</a>, a manufacturer of electromechanical switches.</p>
+      <p>Micro Switch Guide is created by professionals working in the electromechanical switch industry. The publication is maintained with support from <a href="https://www.zingear-switch.com/" rel="nofollow noopener noreferrer">ZINGEAR</a>, a manufacturer of electromechanical switches.</p>
       <p>This relationship is stated here so readers can understand who supports the publication. The main guide library remains focused on broadly useful technical education rather than product listings or sales material.</p>
     </div>
     <figure class="publisher-factory publisher-factory-compact">
