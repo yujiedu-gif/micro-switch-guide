@@ -60,6 +60,7 @@ A careful interpretation can therefore be concise: identify the term, preserve t
 ### Related guides
 
 - [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
+- [micro switch 5pa2](/guides/micro-switch-5pa2/)
 - [microswitch tact](/guides/microswitch-tact/)
 - [micro switch current rating](/guides/micro-switch-current-rating/)
 
