@@ -160,7 +160,14 @@ p { margin: 0 0 1rem; }
 .compact-hero { padding-block: clamp(3.5rem, 7vw, 5.5rem); }
 .guide-directory { padding-block: 2rem 6rem; }
 .guide-topic { display: grid; grid-template-columns: 290px 1fr; gap: 3rem; padding: 4rem 0; border-bottom: 1px solid var(--line); scroll-margin-top: 2rem; }
+.guide-topic-content { min-width: 0; }
 .guide-topic .post-grid { grid-template-columns: repeat(2, 1fr); }
+.guide-directory .post-card h3 { font-size: clamp(1.05rem, 1.7vw, 1.18rem); line-height: 1.25; letter-spacing: -.015em; }
+.guide-overflow { margin-top: 1rem; }
+.guide-list-actions { width: 100%; margin-top: 1rem; }
+.guide-list-toggle { width: 100%; min-height: 50px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 1rem; border: 1px solid #aebdca; border-left: 4px solid var(--orange); border-radius: 3px; color: var(--ink); background: var(--mist); font: inherit; font-weight: 750; text-align: left; cursor: pointer; }
+.guide-list-toggle:hover { border-color: var(--orange); background: white; }
+.guide-list-toggle-icon { flex: 0 0 auto; color: var(--orange); font-size: 1.35rem; font-weight: 500; line-height: 1; }
 .topic-intro > p:last-child, .empty-note { color: var(--ink-soft); }
 .library-launch { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: clamp(2.5rem, 7vw, 6rem); padding: clamp(3rem, 6vw, 5rem) 0 1rem; }
 .library-launch-heading { align-self: start; }
