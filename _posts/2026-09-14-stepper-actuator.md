@@ -67,9 +67,8 @@ If the contact path cannot be seen or identified from the available documentatio
 ### Related guides
 
 - [emergency shut off switch](/guides/emergency-shut-off-switch/)
-- [decora timer switch](/guides/decora-timer-switch/)
 - [generator switch over](/guides/generator-switch-over/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
 
 ## Stepper actuator: What should be verified before applying the explanation?
 

@@ -50,9 +50,8 @@ These limits matter when the question is compatibility. A general explanation of
 ### Related guides
 
 - [emergency shut off switch](/guides/emergency-shut-off-switch/)
-- [decora timer switch](/guides/decora-timer-switch/)
 - [generator switch over](/guides/generator-switch-over/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
 
 ## What to verify before interpreting a pedal for equipment
 

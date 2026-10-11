@@ -49,7 +49,6 @@ In short, blade engagement corresponds to the closed contact state and a complet
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## What the visible blade does not tell you

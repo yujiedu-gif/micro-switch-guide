@@ -50,9 +50,8 @@ Keep the response bounded: do not bypass the control, do not use repeated resett
 ### Related guides
 
 - [emergency shut off switch](/guides/emergency-shut-off-switch/)
-- [decora timer switch](/guides/decora-timer-switch/)
 - [generator switch over](/guides/generator-switch-over/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
 
 ## Why a reset or replacement is not a diagnosis
 

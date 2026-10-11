@@ -58,9 +58,8 @@ Before work, follow the instructions that apply to the tool and extractor and co
 ### Related guides
 
 - [emergency shut off switch](/guides/emergency-shut-off-switch/)
-- [decora timer switch](/guides/decora-timer-switch/)
 - [generator switch over](/guides/generator-switch-over/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
 
 ## When an automatic vacuum switch for power tools does not behave as expected
 

@@ -48,7 +48,6 @@ For a broader explanation of the mechanically actuated device, see the [micro sw
 ### Related guides
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 - [cutout electrical](/guides/cutout-electrical/)
 

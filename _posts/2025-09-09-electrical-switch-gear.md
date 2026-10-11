@@ -57,7 +57,6 @@ This reading approach keeps terminology separate from decisions about a particul
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [cutout electrical](/guides/cutout-electrical/)
 
 ## What electrical switch gear does not tell you by itself

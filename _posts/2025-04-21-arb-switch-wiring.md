@@ -46,9 +46,8 @@ Finally, check whether the documentation itself is complete enough to interpret.
 ### Related guides
 
 - [emergency shut off switch](/guides/emergency-shut-off-switch/)
-- [decora timer switch](/guides/decora-timer-switch/)
 - [generator switch over](/guides/generator-switch-over/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
 
 ## When a wiring diagram is not enough
 

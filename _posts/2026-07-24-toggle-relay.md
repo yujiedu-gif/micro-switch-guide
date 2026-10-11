@@ -59,7 +59,6 @@ This comparison is intentionally limited. It clarifies why similar names do not 
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## What should you verify before applying the term toggle relay?

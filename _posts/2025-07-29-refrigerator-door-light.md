@@ -41,10 +41,9 @@ Avoid using improvised tests to make the observation more conclusive. Do not wed
 
 ### Related guides
 
-- [green wire light fixture](/guides/green-wire-light-fixture/)
-- [3 way blade switch wiring](/guides/3-way-blade-switch-wiring/)
-- [intermatic timer wiring](/guides/intermatic-timer-wiring/)
 - [micro switch overheating](/guides/micro-switch-overheating/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
+- [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
 
 ## When to stop and consult the appliance instructions
 

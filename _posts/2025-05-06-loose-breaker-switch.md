@@ -53,10 +53,9 @@ If there are no urgent warning signs but the handle still feels loose, avoid tre
 
 ### Related guides
 
-- [green wire light fixture](/guides/green-wire-light-fixture/)
-- [3 way blade switch wiring](/guides/3-way-blade-switch-wiring/)
-- [intermatic timer wiring](/guides/intermatic-timer-wiring/)
 - [micro switch overheating](/guides/micro-switch-overheating/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
+- [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
 
 ## What information should you give the electrician?
 

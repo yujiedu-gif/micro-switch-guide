@@ -57,7 +57,6 @@ The distinction is therefore useful for understanding function, but it is not en
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## What the sensing principle does not tell you

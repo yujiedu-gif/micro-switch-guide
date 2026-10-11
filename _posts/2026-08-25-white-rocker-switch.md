@@ -63,7 +63,6 @@ Replacement selection is outside the scope of identifying a visible control. A d
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## What does white rocker switch leave unknown?

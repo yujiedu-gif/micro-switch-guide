@@ -61,7 +61,6 @@ This example is intentionally schematic. It does not prescribe how to connect a 
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## What this circuit explanation does not establish

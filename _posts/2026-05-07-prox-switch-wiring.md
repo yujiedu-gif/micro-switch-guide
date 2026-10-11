@@ -61,7 +61,6 @@ An IP code, if present, has a limited meaning. It states defined enclosure-prote
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## When a diagram is not enough

@@ -47,7 +47,6 @@ If an exact, applicable authority cannot be found, stop short of assigning an id
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## What remains unresolved when exact evidence is absent

@@ -60,7 +60,6 @@ This checklist is a verification framework, not a pinout or wiring procedure. Th
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## When a wiring diagram is not enough

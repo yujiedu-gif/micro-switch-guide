@@ -49,10 +49,9 @@ This article therefore does not identify terminals, provide wiring instructions,
 
 ### Related guides
 
-- [decora timer switch](/guides/decora-timer-switch/)
 - [generator switch over](/guides/generator-switch-over/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
-- [no neutral timer switch](/guides/no-neutral-timer-switch/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
+- [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
 
 ## What to verify for a specific machine
 

@@ -53,7 +53,6 @@ These checks provide a way to frame an evaluation, not a complete installation s
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## How is a plunger roller different from a roller plunger?

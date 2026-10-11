@@ -56,7 +56,6 @@ It is equally important not to treat pole count as a wiring diagram. A broad cat
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
 - [reed contact sensor](/guides/reed-contact-sensor/)
-- [genki force field lite](/guides/genki-force-field-lite/)
 - [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## How to interpret the term on a micro switch

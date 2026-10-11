@@ -60,9 +60,8 @@ The overview also does not establish whether a particular configuration is suita
 ### Related guides
 
 - [emergency shut off switch](/guides/emergency-shut-off-switch/)
-- [decora timer switch](/guides/decora-timer-switch/)
-- [adding lights to existing circuit](/guides/adding-lights-to-existing-circuit/)
-- [no neutral timer switch](/guides/no-neutral-timer-switch/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
+- [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
 
 ## What does generator switch over mean for your next verification step?
 
