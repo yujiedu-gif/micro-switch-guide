@@ -49,7 +49,6 @@ Use the fixture instructions and applicable local requirements alongside the enc
 
 - [explosion proof limit switch](/guides/explosion-proof-limit-switch/)
 - [universal window switch](/guides/universal-window-switch/)
-- [keychron low profile](/guides/keychron-low-profile/)
 - [30 amp transfer switch for portable generator](/guides/30-amp-transfer-switch-for-portable-generator/)
 
 ## When the box choice needs further verification

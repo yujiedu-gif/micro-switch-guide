@@ -49,7 +49,6 @@ The useful conclusion is limited but important: an enclosure claim can help desc
 
 ### Related guides
 
-- [aqua keyboard](/guides/aqua-keyboard/)
 - [dustproof micro switch](/guides/dustproof-micro-switch/)
 - [micro switch humidity](/guides/micro-switch-humidity/)
 - [micro switch water ingress](/guides/micro-switch-water-ingress/)

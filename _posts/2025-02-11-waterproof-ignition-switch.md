@@ -60,7 +60,6 @@ A careful interpretation is therefore specific: the code supplies defined enclos
 
 ### Related guides
 
-- [aqua keyboard](/guides/aqua-keyboard/)
 - [dustproof micro switch](/guides/dustproof-micro-switch/)
 - [micro switch humidity](/guides/micro-switch-humidity/)
 - [micro switch water ingress](/guides/micro-switch-water-ingress/)
