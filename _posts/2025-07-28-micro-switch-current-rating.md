@@ -46,7 +46,6 @@ This approach is an interpretation of supplied requirements, not a substitute fo
 ### Related guides
 
 - [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
 - [microswitch tact](/guides/microswitch-tact/)
 - [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
 

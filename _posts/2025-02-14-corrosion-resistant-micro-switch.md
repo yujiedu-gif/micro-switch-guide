@@ -68,7 +68,6 @@ If the switch has already failed in a corrosive environment, troubleshooting is 
 ### Related guides
 
 - [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
 - [microswitch tact](/guides/microswitch-tact/)
 - [micro switch current rating](/guides/micro-switch-current-rating/)
 

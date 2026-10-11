@@ -62,7 +62,6 @@ If documentation is incomplete, leave the uncertain characteristic unresolved. A
 ### Related guides
 
 - [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
 - [micro switch current rating](/guides/micro-switch-current-rating/)
 - [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
 
