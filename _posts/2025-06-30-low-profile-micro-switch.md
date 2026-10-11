@@ -56,7 +56,6 @@ Fit and rating verification do not resolve every safety or application question.
 ### Related guides
 
 - [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
 - [microswitch tact](/guides/microswitch-tact/)
 - [micro switch current rating](/guides/micro-switch-current-rating/)
 
