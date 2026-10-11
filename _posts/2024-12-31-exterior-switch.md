@@ -47,7 +47,6 @@ IP-code interpretation involves details beyond this assessment. Consult the dedi
 
 ### Related guides
 
-- [aqua keyboard](/guides/aqua-keyboard/)
 - [dustproof micro switch](/guides/dustproof-micro-switch/)
 - [micro switch humidity](/guides/micro-switch-humidity/)
 - [micro switch water ingress](/guides/micro-switch-water-ingress/)

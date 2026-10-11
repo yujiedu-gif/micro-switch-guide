@@ -49,7 +49,6 @@ The distinction is important whenever “waterproof” is used as shorthand. A r
 
 ### Related guides
 
-- [aqua keyboard](/guides/aqua-keyboard/)
 - [dustproof micro switch](/guides/dustproof-micro-switch/)
 - [micro switch humidity](/guides/micro-switch-humidity/)
 - [micro switch water ingress](/guides/micro-switch-water-ingress/)
