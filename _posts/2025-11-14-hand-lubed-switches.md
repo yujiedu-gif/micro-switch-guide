@@ -89,6 +89,6 @@ In short, **hand lubed switches** is a process description, not a guarantee or c
 
 ## Sources and references
 
-- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452)
-- International Electrotechnical Commission: [IEC 60947-1 Low-voltage switchgear and controlgear, Part 1: General rules, preview](https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYwOTQ3LTF7ZWQ2LjB9Yi5wZGY%3D)
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452){: rel="nofollow noopener noreferrer" }
+- International Electrotechnical Commission: [IEC 60947-1 Low-voltage switchgear and controlgear, Part 1: General rules, preview](https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYwOTQ3LTF7ZWQ2LjB9Yi5wZGY%3D){: rel="nofollow noopener noreferrer" }
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

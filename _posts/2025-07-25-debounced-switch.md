@@ -64,4 +64,4 @@ In short, a **debounced switch** signal is one handled so contact bounce is less
 
 ## Sources and references
 
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

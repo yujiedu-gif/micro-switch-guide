@@ -17,10 +17,10 @@ permalink: /image-credits/
     <h2>Explore by topic</h2>
     <ul>
       <li><strong>Basics:</strong> G9-series product photograph supplied by ZINGEAR and used with permission. Manufacturer markings and background removed; composition resized.</li>
-      <li><strong>Selection Guides:</strong> <a href="https://commons.wikimedia.org/wiki/File:Microswitch.jpg">Microswitch</a> by Benjamin D. Esham, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Background removed and composition resized. The adapted image is shared under the same license.</li>
+      <li><strong>Selection Guides:</strong> <a href="https://commons.wikimedia.org/wiki/File:Microswitch.jpg" rel="nofollow noopener noreferrer">Microswitch</a> by Benjamin D. Esham, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener noreferrer">CC BY-SA 4.0</a>. Background removed and composition resized. The adapted image is shared under the same license.</li>
       <li><strong>Waterproof Switches:</strong> G10B product photograph supplied by ZINGEAR and used with permission. Background removed and composition resized.</li>
-      <li><strong>Troubleshooting:</strong> <a href="https://commons.wikimedia.org/wiki/File:DIGITAL_MULTIMETER_PROBE.jpg">Digital Multimeter Probe</a> by Ranjithkumar Murugesan, released under CC0. Background removed and composition resized.</li>
-      <li><strong>Applications:</strong> <a href="https://commons.wikimedia.org/wiki/File:Arduino_push_button-1.jpg">Arduino push button-1</a> by DustyDingo, public domain. Cropped, background removed, and composition resized.</li>
+      <li><strong>Troubleshooting:</strong> <a href="https://commons.wikimedia.org/wiki/File:DIGITAL_MULTIMETER_PROBE.jpg" rel="nofollow noopener noreferrer">Digital Multimeter Probe</a> by Ranjithkumar Murugesan, released under CC0. Background removed and composition resized.</li>
+      <li><strong>Applications:</strong> <a href="https://commons.wikimedia.org/wiki/File:Arduino_push_button-1.jpg" rel="nofollow noopener noreferrer">Arduino push button-1</a> by DustyDingo, public domain. Cropped, background removed, and composition resized.</li>
     </ul>
     <p>These images are decorative. Product construction and appearance vary by switch family and manufacturer.</p>
   </div>

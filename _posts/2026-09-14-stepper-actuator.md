@@ -81,4 +81,4 @@ In short, trace the physical path from the motion source to the switch actuator,
 
 ## Sources and references
 
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

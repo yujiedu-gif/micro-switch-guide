@@ -63,5 +63,5 @@ If an answer is missing, treat it as an open verification item. A general explan
 
 ## Sources and references
 
-- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452)
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452){: rel="nofollow noopener noreferrer" }
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

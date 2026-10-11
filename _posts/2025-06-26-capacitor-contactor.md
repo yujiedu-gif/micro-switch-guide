@@ -60,4 +60,4 @@ In short, a capacitor contactor switches a capacitor bank, and its switching dut
 
 ## Sources and references
 
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch)
+- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }

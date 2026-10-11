@@ -60,5 +60,5 @@ In short, piggy back spade connectors describe a way to add a branch at an exist
 
 ## Sources and references
 
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196)
-- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452)
+- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
+- International Electrotechnical Commission: [IEC 60529:1989+AMD1:1999+AMD2:2013 CSV](https://webstore.iec.ch/en/publication/2452){: rel="nofollow noopener noreferrer" }
