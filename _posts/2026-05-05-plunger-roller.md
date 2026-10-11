@@ -52,9 +52,8 @@ These checks provide a way to frame an evaluation, not a complete installation s
 ### Related guides
 
 - [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [micro switch terminology](/guides/micro-switch-terminology/)
-- [micro switch operating force](/guides/micro-switch-operating-force/)
-- [micro switch overtravel](/guides/micro-switch-overtravel/)
+- [reed contact sensor](/guides/reed-contact-sensor/)
+- [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## How is a plunger roller different from a roller plunger?
 
