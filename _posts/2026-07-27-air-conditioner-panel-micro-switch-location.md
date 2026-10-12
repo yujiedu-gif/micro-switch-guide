@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Conditioner Panel Micro Switch Location: How to Identify One Safely
-
 The **air conditioner panel micro switch location** depends on the equipment’s design; there is no single position shared by all air conditioners. A panel-mounted micro switch is identified by how it is mounted and mechanically actuated, not merely by its size or proximity to other controls. Even when a small switch appears to interact with a panel or access door, that visual relationship does not establish its electrical purpose. Use equipment-specific documentation to confirm identification and circuit role, and do not open or reach into equipment unless power has been isolated according to the appropriate procedure.
 
 ## Air conditioner panel micro switch location: What the phrase means

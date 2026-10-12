@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Touch Micro Switch Works
-
 The phrase **touch micro switch** can refer to two different things: a surface that responds to a finger, or a small mechanical switch operated by movement. Touch activation alone does not establish that the device contains a mechanical micro switch. The distinction matters because the sensing element, switching element, and relevant operating limits may be separate parts.
 
 To identify the mechanism, look beyond the user-facing surface. A mechanical design has an actuator that moves and changes contact state. An electronic touch design detects a touch and uses circuitry to produce an output; that output may operate a separate switch, but it does not have to. Documentation and construction evidence are needed to determine which arrangement is present.

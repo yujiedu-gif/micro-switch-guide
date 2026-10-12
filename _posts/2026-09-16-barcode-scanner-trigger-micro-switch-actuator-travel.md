@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding Trigger-Switch Travel in a Barcode Scanner
-
 The **barcode scanner trigger micro switch actuator travel** describes movement at the switch actuator, not the full distance a user sees or feels at the trigger. Understanding that distinction helps explain why a trigger’s motion alone cannot establish where the switch operates or whether the mechanism stays within its permitted movement.
 
 A trigger and switch are connected by the scanner’s mechanical design. The trigger may contact the actuator directly or transfer movement through a lever or other linkage. Because that path and its geometry vary, there is no universal travel value or adjustment limit that applies to every scanner. The useful approach is to identify the switch’s travel terms, follow the movement path, and verify operation against the documentation for the specific device.

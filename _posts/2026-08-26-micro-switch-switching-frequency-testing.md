@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Measuring and verifying micro switch switching frequency
-
 Micro switch switching frequency testing measures how many complete operating cycles occur in a stated time. A reliable result depends on distinguishing the actuator’s actual movement from the test controller’s command and from the electrical transitions recorded at the contacts. Those counts can differ, particularly when the contacts bounce or the test does not observe the actuator directly.
 
 A frequency measurement is not, by itself, a rated operating limit or an endurance result. Compare it with the switch’s documented conditions and limits, and report the method and conditions so another person can understand what was measured. The method below focuses on a controlled check of mechanical cycling and electrical contact state, not a full life-cycle qualification.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to test a computer mouse button micro switch
-
 A mouse button that behaves inconsistently may have a problem at the switch contacts or elsewhere in the mouse’s electrical path. **How to test a computer mouse button micro switch** is therefore a question about checking the contacts directly, then separating that result from faults in connected circuitry. A click sound alone does not show that the electrical contacts changed state.
 
 The procedure below uses an unpowered mouse and a multimeter to compare the switch’s released and pressed states. The exact terminal arrangement and expected contact pair depend on the device’s markings or circuit tracing. If those do not identify the pair clearly, treat the result as uncertain rather than guessing.

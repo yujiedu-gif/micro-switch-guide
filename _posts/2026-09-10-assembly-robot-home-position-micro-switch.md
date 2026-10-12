@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying an Assembly Robot’s Home Reference
-
 An **assembly robot home position micro switch** may provide a discrete reference signal on a robot design configured to use one. The switch’s mechanical transition, the controller’s recognition of its input, and the final home coordinate are separate events. A successful switch transition alone does not prove that the controller stored the intended position or that the reference is repeatable.
 
 Verification should therefore follow the signal through the assembly: confirm the actuator reaches its intended operating point, confirm the input changes as expected, and compare the robot’s trigger position across repeated approaches. The robot’s design documentation and safety procedures govern setup and testing. Details such as the switch’s electrical rating, wiring, controller logic, and permitted travel remain design-specific and cannot be inferred from the presence of a switch.

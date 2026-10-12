@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding an end-of-stroke micro switch on an air compressor
-
 The **air compressor end of stroke micro switch location** depends on the compressor’s mechanical and electrical design. If a micro switch is used to signal that a moving assembly has reached a point in its sequence, look for the electrical switch near the relevant travel endpoint, where a moving feature can operate its actuator. Do not assume that every compressor uses this arrangement or that the switch is mounted in the same place across designs.
 
 Finding the component means distinguishing the switch body from nearby parts that move or stop motion. The switch’s mechanical connection shows what operates it; its electrical connections help identify it in the control circuit. A careful verification follows the mechanism to the suspected endpoint, then confirms the switch’s identity and state change using the equipment’s documentation and an appropriate test with power isolated.

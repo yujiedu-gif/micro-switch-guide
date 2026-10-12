@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing access hatch travel-limit symptoms
-
 Access hatch travel limit micro switch symptoms can point to a problem with hatch movement, switch actuation, wiring, or the control circuit. The symptom alone does not identify the failed part. This guide applies only to hatch designs that use a micro switch to signal or limit travel; not every access hatch uses one, and a limit switch alone should not be assumed to provide a safety function.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. Diagnosing a travel-limit problem therefore means checking two separate events: whether the hatch mechanism moves the actuator far enough to operate the switch, and whether the switch changes electrical state when operated. A fault in either event can produce similar behavior.

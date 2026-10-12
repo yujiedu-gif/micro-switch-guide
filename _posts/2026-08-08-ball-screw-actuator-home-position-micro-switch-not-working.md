@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Isolating a ball screw actuator home position micro switch fault
-
 A ball screw actuator home position micro switch not working may indicate a failed switch, but the fault can also lie in mechanical actuation, wiring, or the controller’s interpretation of the input. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish the specifications or wiring of a particular actuator. Use the machine’s circuit information and documentation to identify the expected trigger point, contact state, and test method.
 
 The useful distinction is whether the physical feature reaches the switch, whether the switch changes state, whether that change reaches the controller, and whether the controller accepts it. Check those stages in order. Do not repeat homing attempts or perform electrical tests until the machine has been made safe.

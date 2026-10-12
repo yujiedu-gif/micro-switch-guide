@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Reading an Access Hatch Travel Limit Switch
-
 An **access hatch travel limit micro switch NO and NC terminals** can indicate whether the switch’s internal contacts are at rest or have transferred when its actuator is operated. The terminal state is an electrical fact about the switch, not a universal label for whether the hatch is open or closed. To interpret it, first identify the switch’s common terminal and verify its actual markings or schematic. Then relate the point where its contacts change to the hatch mechanism’s intended travel endpoint.
 
 Not every access hatch uses this switch arrangement. The guidance below applies only when the hatch actually has a micro switch with the stated contact configuration. The exact switch documentation and equipment connection diagram control; terminal locations, ratings, and circuit meaning should not be inferred from a generic layout.

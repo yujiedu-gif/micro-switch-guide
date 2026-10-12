@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting a bagging machine home-position switch
-
 Bagging machine home position micro switch troubleshooting starts by separating three questions: does the mechanism reach the switch, does the switch change electrical contact state, and does the machine respond correctly to that change? Checking these in order helps distinguish a mechanical reach problem from a switch-contact problem or a fault farther along the signal path. It also avoids assuming that replacing the switch will resolve a missed-home fault.
 
 Before inspecting or testing, stop the equipment and follow its service instructions for isolation and stored energy. Do not reach into moving mechanisms or defeat guards or interlocks. Use the machine’s documentation to identify the switch terminals, wiring, and prescribed test procedure. Generic terminal assumptions or a continuity result alone cannot establish that the machine will detect home and stop as intended.

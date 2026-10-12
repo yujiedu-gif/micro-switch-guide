@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Compressor Guard Interlock Micro Switch Adjustment
-
 An **air compressor guard interlock micro switch adjustment** changes where a switch responds to guard movement. It does not correct a guard that is loose, damaged, or misaligned. Because the interlock is part of the guard’s protective function, follow the equipment-specific service procedure and verify both electrical response and mechanical operation before returning the compressor to service. The available evidence does not establish a universal switch setting, travel limit, or test procedure; those details must come from the instructions for the specific equipment and switch.
 
 ## What air compressor guard interlock micro switch adjustment changes

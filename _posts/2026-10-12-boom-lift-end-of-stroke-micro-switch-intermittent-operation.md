@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Isolating Intermittent End-of-Stroke Switching
-
 A **boom lift end of stroke micro switch intermittent operation** problem is possible only on a machine whose design uses a micro switch at the relevant end-of-stroke point. Do not assume every boom lift uses this arrangement. Here, intermittent operation means the switch state or resulting signal does not repeat consistently under comparable conditions.
 
 The fault may begin before the switch is actuated, within the switch’s electrical state, or farther along the wiring and control-input path. Separating these possibilities takes observations across repeatable cycles and testing under the machine’s service procedures. This guide does not establish machine-specific isolation steps or test limits; use the applicable service documentation and the ratings of the switch and test equipment.

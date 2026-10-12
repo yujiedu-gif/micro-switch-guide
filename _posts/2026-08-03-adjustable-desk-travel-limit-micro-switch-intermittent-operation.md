@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an intermittent travel-limit switch at an adjustable desk
-
 An **adjustable desk travel limit micro switch intermittent operation** problem can show up as inconsistent stopping or as a limit state that changes on some approaches to the same endpoint but not others. The symptom does not, by itself, prove that the switch contacts have failed. The moving structure may miss the actuator, the switch may be mounted or positioned inconsistently, or a connection in the switch circuit may be unreliable.
 
 This diagnosis applies only to desk designs that use a micro switch to limit travel. A desk can show inconsistent motion or stopping for reasons outside the switch, so distinguish the switch’s state from the desk’s broader behavior before deciding what has failed. A cautious sequence is to observe whether the actuator is engaged consistently, inspect accessible mounting and wiring with power isolated, and then check switch continuity using the applicable datasheet. Do not bypass the limit circuit or probe energized wiring.

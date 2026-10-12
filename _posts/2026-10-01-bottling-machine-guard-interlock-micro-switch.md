@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a guard interlock uses a micro switch
-
 A **bottling machine guard interlock micro switch** is a switch actuated as a guard or its linkage moves. In an interlock, its contact state provides an electrical indication associated with guard position. That indication may be read by the machine’s control system, but it is not, by itself, proof that the guard is secure or that hazardous motion has stopped.
 
 The key is to follow the complete chain: guard position, mechanical movement at the actuator, contact-state change, and the control system’s response. The mounting and linkage vary by design, so the exact device documentation and the machine’s documented procedures govern interpretation and verification.

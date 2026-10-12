@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Micro Switch Detects a Binding Machine’s Stroke Limit
-
 A **book binding machine end of stroke micro switch** can serve as a position detector: moving machine parts actuate the switch at a travel limit, changing an electrical contact state. The resulting signal may be used by control circuitry to initiate a stop or another step in the machine’s sequence. The switch detects position; that does not establish that it alone removes motor power or applies a brake.
 
 Reliable detection depends on the physical relationship between the moving mechanism and the switch actuator. The actuator must be reached consistently at the intended limit, without relying on accidental contact or vibration. Verification therefore involves considering both the switch’s contact response and what the machine does after that response. The exact wiring, terminal states, and stopping arrangement depend on the machine and must be established from its applicable documentation.

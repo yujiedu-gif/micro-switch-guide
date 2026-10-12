@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Evaluating operating force in a guard interlock
-
 The **air compressor guard interlock micro switch operating force** is one parameter in evaluating how a guard’s motion reaches a switch actuator. It is not necessarily the force a person applies to the guard, and it does not by itself establish that an interlock functions safely. The force relationship depends on the guard and its mechanism, while the switch’s travel and release behavior are separate considerations.
 
 A useful evaluation traces the mechanical path from the guard, through any direct contact, cam, or linkage, to the micro switch actuator. Then it checks the relevant switch documentation and verifies the interlock as a complete system. No universal operating-force value can establish safe operation across different guard designs.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing the NO Terminals of a Micro Switch
-
 Micro switch NO terminal testing checks whether the normally open contact pair changes from an open state to a closed state when the actuator is operated. The key is to verify the pair by its contact behavior, not by assuming that terminals in a particular physical position are NO. Use the exact switch documentation, including its markings or schematic, to identify terminals; then compare meter readings with the actuator released and operated. This is a contact-state check, not a complete assessment of the switch’s performance under a rated load.
 
 ## What NO means in micro switch NO terminal testing

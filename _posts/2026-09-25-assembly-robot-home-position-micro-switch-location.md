@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assembly Robot Home-Position Micro Switch Location
-
 The **assembly robot home position micro switch location** depends on the robot’s design and documentation. Some designs may use a micro switch to detect a physical home reference; others may use a different sensing arrangement. A controller display showing “home” or a stored coordinate does not, by itself, reveal whether a micro switch is present or where one is mounted.
 
 To identify a switch that is used for home detection, follow the physical sensing path: find the documented home reference feature, determine what it contacts, and check whether the resulting switch signal corresponds to the controller input identified in the robot documentation. Verification should follow the approved maintenance or setup procedure, with access and movement handled only as that procedure allows. The general method can help narrow down the documented sensing arrangement, but it cannot establish a specific robot’s switch location without model-specific evidence.

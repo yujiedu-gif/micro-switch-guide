@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing a Micro Switch Used by a Rotary Actuator
-
 A rotary actuator may use a micro switch to detect position or motion. This guide explains **how to test a rotary actuator micro switch** by checking its contact state as the actuator moves, then comparing switching behavior with the assembly’s specified mechanical travel. It does not establish a universal rotation angle or travel limit.
 
 The procedure applies only to rotary actuator designs that use a micro switch and whose contacts can be identified and accessed safely. Use the exact device markings or documentation to identify terminals and expected states. If those details, safe access, or the assembly’s tolerances are unknown, a test result may be inconclusive.

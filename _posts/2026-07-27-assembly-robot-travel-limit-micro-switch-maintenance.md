@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining an Assembly Robot Travel Limit Micro Switch
-
 Assembly robot travel limit micro switch maintenance requires more than checking whether a switch changes electrical state. The switch’s mechanical actuation path, its position relative to the triggering feature, and its return behavior all matter. Inspection and testing must follow the robot’s maintenance procedure and the requirements for the installed switch and application.
 
 This guide covers bounded maintenance and verification of a micro switch used to detect or stop an assembly robot’s travel. It does not address selecting a switch for a new robot, programming travel limits, or maintaining unrelated robot components. Do not infer a universal travel setting from the component category: numerical travel limits are requirements of the applicable specification sheet. [claim_device_specific_travel_limits]

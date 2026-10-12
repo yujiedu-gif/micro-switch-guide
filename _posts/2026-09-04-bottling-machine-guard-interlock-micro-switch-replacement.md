@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying a Guard Interlock Micro Switch Replacement
-
 A **bottling machine guard interlock micro switch replacement** must match the machine’s documented electrical and mechanical requirements, not merely resemble the removed part. A switch that fits its mounting location may still have unsuitable contacts, ratings, terminals, or actuator travel. Conversely, matching electrical details alone does not establish that the mechanism operates correctly.
 
 The verification has two levels. First, establish whether the replacement is suitable for the documented switch requirements and the guard mechanism. Then verify the complete interlock circuit using the machine’s specified post-maintenance procedure. A micro switch’s operation by itself does not establish the safety performance of the machine’s guard interlock.

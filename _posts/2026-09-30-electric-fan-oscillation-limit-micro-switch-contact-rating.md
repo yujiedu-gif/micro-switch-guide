@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing Contact-Rating Suitability in a Fan Oscillation Limit Circuit
-
 An **electric fan oscillation limit micro switch contact rating** cannot be judged from the fan’s motor rating or the switch’s location alone. The relevant question is what electrical load the switch contacts actually interrupt, then whether the switch’s documented rating applies to that load and its operating conditions. Only some electric fan designs use a micro switch to limit oscillation travel, and their circuit arrangements may differ. Without the circuit and switch documentation, suitability may remain unknown.
 
 ## What an electric fan oscillation limit micro switch does

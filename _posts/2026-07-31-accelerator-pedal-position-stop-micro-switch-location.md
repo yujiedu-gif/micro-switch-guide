@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding an Accelerator Pedal Stop Micro Switch
-
 The **accelerator pedal position stop micro switch location** depends on the design of the vehicle’s pedal assembly. Some designs may include a switch associated with a pedal stop; others may not include one. There is no universal mounting point that can be identified from the component name alone. Vehicle-specific service information is the appropriate reference for confirming whether a switch is present and where it is mounted.
 
 The word “stop” can refer to a pedal-related stop or the point at which the switch is actuated. It does not establish that the switch occupies a standard position, or that it is the component that measures pedal movement. Distinguishing those functions matters when inspecting an assembly that may contain a pedal position sensor or other nearby switches.

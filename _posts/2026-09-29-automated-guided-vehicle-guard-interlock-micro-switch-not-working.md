@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Automated Guided Vehicle Guard Interlock Micro Switch
-
 An **automated guided vehicle guard interlock micro switch not working** can reflect more than a failed switch. The guard may not bring its actuator into the required position, the switch may not change contact state, or the signal may be interrupted between the switch and the control input. A miniature snap-action switch changes an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general description does not establish the wiring or behavior of a particular guard circuit.
 
 Use the installed switch documentation, the vehicle circuit diagram, and the site-approved diagnostic procedure to identify the intended actuation and signal path. Work from the guard inward: inspect mechanical movement first, test the switch at its terminals, then assess the connected wiring and control input separately. Do not assume a fault from appearance alone or infer terminal functions from physical layout.

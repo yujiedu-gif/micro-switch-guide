@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting a machine guard home-position signal
-
 A machine guard home position micro switch not working can reflect a missed mechanical actuation, a switch that does not change electrical state, a wiring problem, or a fault farther along the control signal path. These possibilities need to be separated rather than treated as proof that the switch itself has failed. Designs differ, so identify the actual signal path and expected states from the machine documentation before testing.
 
 Begin with the machine’s established shutdown, isolation, and stored-energy procedures. Keep the guard and interlock intact. Do not bypass the switch or operate the machine with the guard unsecured. If safe isolation, measurement, or diagnosis is uncertain, stop and involve qualified maintenance personnel.

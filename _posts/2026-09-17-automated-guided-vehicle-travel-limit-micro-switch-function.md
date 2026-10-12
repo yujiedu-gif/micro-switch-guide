@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an automated guided vehicle travel limit micro switch function marks an endpoint
-
 An **automated guided vehicle travel limit micro switch function** is to report a defined travel boundary in an AGV design that uses this component. A miniature snap-action switch changes an electrical contact state in response to mechanical actuator movement. At a configured endpoint, a moving part contacts the actuator; the resulting switch-state change can be passed through the connected circuit to control logic.
 
 This is an endpoint-detection role, not a description of how an AGV follows a route, navigates, brakes, or detects obstacles. The physical arrangement and control response depend on the AGV design, its wiring, and the applicable switch specifications. The switch should not be assumed to provide a mechanical stop or a universal safety function.

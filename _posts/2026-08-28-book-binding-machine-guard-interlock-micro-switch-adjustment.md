@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Book binding machine guard interlock adjustment and verification
-
 The **book binding machine guard interlock micro switch adjustment** applies only to a machine design that uses a micro switch to detect guard position. The switch is part of a sequence: the guard moves, its contact engages the switch actuator, and the resulting electrical state is used by the machine control system. A problem in that sequence does not automatically mean the switch needs repositioning. The guard may be misaligned, the actuator may not be engaged as intended, or the electrical state may not change correctly.
 
 There is no universal clearance, engagement depth, or adjustment value established here. Use the machine’s service instructions and the switch documentation for the applicable limits and mounting requirements. The distinction that matters is between bringing the guard to its intended position and adjusting the switch or actuator to respond to that position. Verify both the physical movement and the resulting interlock behavior rather than treating adjustment alone as proof of function.

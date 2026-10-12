@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Micro Switch in a Bottling Machine Guard Interlock
-
 Bottling machine guard interlock micro switch failure causes are only one possible explanation when a guarded machine does not respond as expected. This article applies to bottling-machine guard designs that use a micro switch as part of the interlock; not every guard interlock uses one. A fault symptom alone does not establish that the switch has failed. Guard position, mounting, wiring, the input circuit, and control logic can also affect the result.
 
 A useful diagnosis separates the mechanical action at the switch from the electrical state at its terminals and from the control system’s response. Contact damage, contamination where protection is inadequate, actuator damage, or operation outside specified limits may affect switching. But similar symptoms can arise when a guard does not move the actuator as intended or when a signal is interrupted downstream. Use the machine and switch documentation to define what should happen and how it may be checked safely.

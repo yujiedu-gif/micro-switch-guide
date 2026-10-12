@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Intermittent Micro Switch
-
 An intermittent micro switch symptom means the switch does not change electrical state consistently during otherwise comparable actuator movement. That inconsistency is a clue, not a diagnosis: actuator travel, mounting, terminal connections, wiring, or the connected circuit can also affect what a meter shows. A careful diagnosis separates these possibilities instead of treating one erratic reading as proof that the switch has failed.
 
 The checklist below starts with safe isolation, then compares repeatable actuator movement with continuity readings. It also uses controlled inspection and wiring movement to help distinguish contact behavior from mechanical or connection faults. If you cannot isolate the circuit safely, stop and seek qualified service.

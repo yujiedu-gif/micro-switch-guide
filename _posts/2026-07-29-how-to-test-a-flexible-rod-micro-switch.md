@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing a Flexible-Rod Micro Switch
-
 To understand **how to test a flexible rod micro switch**, check its electrical state with the rod untouched, observe the contacts while you deflect the rod gradually, and confirm that the state returns after release. This test is meaningful only when the switch is disconnected from power and its contact terminals are identified. The expected reading depends on the contact pair and the switch’s contact diagram; a single reading cannot establish that the switch changes state reliably.
 
 The procedure below focuses on the switch itself. It does not establish whether the complete device or circuit is functioning, and it does not provide a universal rod travel distance or force. Use the applicable switch specification to set the permitted movement boundary.

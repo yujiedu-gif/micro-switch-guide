@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Float Switch Moves a Micro Switch Actuator
-
 A **float switch mechanism micro switch actuator travel** describes how movement of a float is transmitted to a switch actuator, eventually changing electrical contact state. The float’s displacement, the linkage’s movement, the actuator’s travel, and the electrical switching point are related, but they are not the same measurement. Understanding those distinctions helps explain both actuation and reset.
 
 This explanation applies only to float switch designs that use a micro switch. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. The particular float mechanism determines how liquid-level movement reaches that actuator; the switch’s travel boundaries describe the actuator, not the float’s path.

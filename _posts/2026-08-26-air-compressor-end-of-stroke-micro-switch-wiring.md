@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Tracing an Air Compressor End-of-Stroke Switch
-
 Air compressor end of stroke micro switch wiring connects a moving mechanism’s position to a control circuit in designs that use a micro switch to signal a stroke endpoint. The switch provides a change in contact state when its actuator moves; the machine’s circuit determines what that change does. There is no universal terminal-to-wire arrangement or assumption that reaching the endpoint must open or close a particular contact.
 
 To trace the wiring, identify the switch terminals and their states, then follow the conductors on the equipment schematic. Keep this control wiring distinct from the compressor motor’s power wiring. Before inspecting or testing connections, isolate the relevant power source and verify absence of voltage. Confirm as well that the mechanism operates the switch at the intended endpoint, rather than treating every mismatch as a wiring fault.

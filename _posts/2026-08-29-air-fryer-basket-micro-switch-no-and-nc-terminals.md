@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding Air Fryer Basket Micro Switch Contacts
-
 The **air fryer basket micro switch NO and NC terminals** describe contact states at the switch, not whether the basket is inserted or removed. In generic changeover terminology, COM is the common terminal, NC is normally closed, and NO is normally open. These names refer to the switch’s unactuated state. Operating the actuator changes the contact connection, but the appliance’s mechanism determines when that happens relative to basket position.
 
 A careful check therefore separates two questions: which contacts connect in each switch state, and what those states mean in the appliance circuit. Do not infer the expected reading from the basket position alone. Identify the exact switch terminals from its markings and schematic, and consult the appliance’s service documentation for its circuit. Testing should be done with the appliance disconnected from power, at the switch terminals, and in accordance with the component’s specifications.

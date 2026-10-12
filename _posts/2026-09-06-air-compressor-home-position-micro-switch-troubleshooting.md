@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting an Air Compressor Home-Position Micro Switch
-
 Air compressor home position micro switch troubleshooting applies only when the compressor’s home-position mechanism uses a micro switch to signal its position. Designs vary, so first confirm that the switch is part of the mechanism in question. This guide focuses on three symptoms: the compressor does not detect home, detection is inconsistent, or the system reports home when the mechanism is not there.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That role does not, by itself, establish that the switch is responsible for every stopping or position fault. Trace the sequence: does the mechanism reach and release the actuator, does the contact state change, and does the resulting signal reach the equipment control? Checking those stages separately helps distinguish a travel problem from an electrical or downstream fault.

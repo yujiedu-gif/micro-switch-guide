@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding NO and NC Contacts at a Robot Travel Limit
-
 An **assembly robot travel limit micro switch NO and NC terminals** can indicate a mechanical position through changes in electrical contact state. To interpret that indication correctly, distinguish what the switch contacts do from what a robot controller makes of the resulting input. The terminal labels describe contact relationships in a defined switch state; they do not, by themselves, identify a robot motion command or establish what the controller considers a limit.
 
 The exact switch markings, schematic, and applicable specification sheet govern terminal identity and switching behavior. A general description can explain the contact states, but it cannot establish the ratings, wiring, controller logic, or suitability of a particular switch for a particular machine. The guidance below focuses on interpreting and checking contact states, not designing or validating a robot safeguarding function.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting and Verifying Magnetic Sensing
-
 A **magnetic micro switch** is selected by matching its magnetic response to a target magnet and the movement in which sensing must occur. The term does not mean that every micro switch responds to a magnet. A miniature snap-action switch changes electrical contact state in response to mechanical actuator movement, and is commonly used for position or limit detection. A magnetic sensing design instead responds to a magnetic field at its switching element. Keeping these mechanisms distinct is essential: a magnet may also move a conventional mechanical actuator, which is not the same as direct magnetic sensing.
 
 Selection therefore has two separate questions. First, does the sensing mechanism operate and release at the required positions in the intended geometry? Second, are the contacts and circuit appropriate for the intended electrical load? A successful magnetic trigger alone does not establish electrical suitability. Because magnetic response depends on the specific design and test conditions, verify the applicable documentation and the installed setup rather than assuming a generic sensing distance.

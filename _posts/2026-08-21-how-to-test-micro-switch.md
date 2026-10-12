@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to test a micro switch for continuity and switching action
-
 To learn **how to test micro switch** continuity and switching action, begin with the power isolated and the switch electrically separated from at least one connected lead. A continuity reading can show whether contacts change state as the actuator moves, but it does not establish that the switch will perform correctly under load or that the surrounding circuit is sound. The procedure below focuses on switch-level checks with a multimeter and on interpreting results without treating them as a complete equipment diagnosis.
 
 ## How to test micro switch safely with a multimeter

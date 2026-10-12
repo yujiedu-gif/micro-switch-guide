@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Compressor Home-Position Switching and Actuator Travel
-
 The **air compressor home position micro switch actuator travel** relationship concerns two events that are related but not identical: a mechanism reaches its designated reference location, and a switch changes electrical state as its actuator is moved. The switch can provide a position signal, but that signal alone does not establish that the mechanism has stopped at its physical home position or that the return is repeatable.
 
 Home position means the mechanism’s specified reference location. It is not automatically the end of the mechanism’s travel. Compressor designs differ, and this discussion applies only to designs that use the stated micro switch arrangement. Confirm the equipment documentation and the switch specifications before interpreting movement or adjusting the installation.

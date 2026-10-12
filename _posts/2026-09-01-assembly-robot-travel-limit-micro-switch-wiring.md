@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Wiring and verifying a robot travel-limit micro switch
-
 **Assembly robot travel limit micro switch wiring** connects a switch’s changing contact state to a controller input so the system can register a travel-limit signal. The switch’s physical contact behavior and the controller’s interpretation are separate: a contact may open or close when operated, while the input response depends on how the controller is designed and configured. This guide covers general low-voltage input wiring, not the design of a safety circuit. Check the equipment documentation for the applicable input voltage, wiring arrangement, and configuration before making connections.
 
 ## What the assembly robot travel limit micro switch wiring must signal

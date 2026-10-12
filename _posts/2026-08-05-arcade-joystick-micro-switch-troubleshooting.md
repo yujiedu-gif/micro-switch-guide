@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Arcade joystick micro switch troubleshooting: a symptom-led guide
-
 Arcade joystick micro switch troubleshooting starts by separating what the player feels from what the switch actually does. A missed input, an input that appears only intermittently, repeated input, or a signal that arrives at the wrong point in lever travel can each have a mechanical or electrical explanation. The symptom is a starting clue, not proof that the switch has failed.
 
 Work from the lever toward the contacts: observe movement and switch actuation, inspect mounting and connections, then check contact behavior with power disconnected. This sequence helps distinguish a lever that does not engage the actuator reliably from a contact or connection that does not change state consistently. It also avoids treating one meter reading as a complete diagnosis.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Book binding machine guard interlock micro switch replacement
-
 A **book binding machine guard interlock micro switch replacement** should restore the machine’s documented guard safety function, not merely exchange one small component for another. First confirm that the machine design actually uses a micro switch at the guard interlock. Then identify the switch and its installation requirements from the machine documentation, isolate the machine under site procedures, and verify the guard’s operation using the approved functional test. Designs differ, so neither the switch nor the safety circuit should be inferred from appearance alone.
 
 ## When a book binding machine guard uses a micro switch

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding open-position micro switch force
-
 An **adjustable desk open position micro switch operating force** is not a universal setting for a desk. It describes force at the switch actuator, and its effect depends on the specific switch and on how the desk mechanism brings the actuator to its operating point. A desk’s payload, lifting force, or motor force is not the same as the force applied to the switch.
 
 Reliable open-position detection depends on more than force alone. The actuator must move far enough to change the contact state, then be able to release as the mechanism moves away. The switch and desk mechanism also have travel limits. Verification should therefore observe both actuation and release at the open-position boundary, rather than treating a force value as proof that detection works.

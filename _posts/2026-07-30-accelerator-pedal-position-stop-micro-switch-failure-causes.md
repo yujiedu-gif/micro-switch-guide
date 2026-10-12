@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Accelerator Pedal Position Stop Micro Switch Failure Causes
-
 **Accelerator pedal position stop micro switch failure causes** depend on the switch design, its mounting, and how its actuator moves. This guide applies only to pedal assemblies designed with a stop micro switch; not every accelerator pedal assembly contains one. A suspected switch problem should be distinguished from a pedal-position sensor signal fault and from a mechanical problem with the pedal or linkage. Symptoms alone cannot establish which component has failed. Vehicle-specific service information is needed to identify the switch, its terminals, and the expected test conditions.
 
 ## What the accelerator pedal position stop micro switch does

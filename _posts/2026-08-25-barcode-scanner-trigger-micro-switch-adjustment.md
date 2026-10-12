@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Barcode Scanner Trigger Micro Switch Adjustment
-
 Barcode scanner trigger micro switch adjustment is appropriate only when the scanner’s design provides a documented adjustment. A trigger may operate a switch through an external contact, linkage, or mounting position, but that does not mean the switch’s internal operating point can be changed. The distinctions matter: an external adjustment may change how the trigger meets the switch, while internal force and travel characteristics may be fixed.
 
 Use the device documentation to determine whether adjustment is provided and how to verify it. Do not infer an adjustment from a screw, movable part, or a trigger that feels out of position. The guidance below covers the trigger-to-switch mechanism and a cautious verification process. It does not address decoding, data transmission, software, or interface configuration.

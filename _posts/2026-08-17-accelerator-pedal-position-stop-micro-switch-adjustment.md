@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding and verifying an accelerator pedal position stop
-
 An **accelerator pedal position stop micro switch adjustment** cannot be treated as a universal setting. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, and such switches are commonly used for position or limit detection. But that general fact does not establish how a particular vehicle’s pedal stop works or whether its design uses this component.
 
 The first task is to identify the stop’s function in vehicle-specific service information. It may position a switch actuator, limit pedal movement, or serve another design-specific purpose. Those functions are not interchangeable. Do not reposition a stop, apply a generic clearance, or assume that a pedal-travel limit is also a switch adjustment.

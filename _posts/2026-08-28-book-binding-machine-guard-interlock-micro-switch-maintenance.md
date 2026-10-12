@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining a Book Binding Machine Guard Interlock Micro Switch
-
 Book binding machine guard interlock micro switch maintenance depends on the installed machine design and its documented service procedure. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, and such switches are commonly used for position or limit detection. That general function does not establish that every binding machine uses this component or define how a particular interlock must operate.
 
 Treat maintenance as separate tasks: inspect the switch and surrounding parts, check alignment against the installed design’s references, and verify the interlock using the machine’s documented test and acceptance criteria. Do not infer travel limits or a pass condition from the switch category. If the applicable instructions or test criteria are unavailable, leave the result unresolved and refer the issue to qualified personnel.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boom Lift Travel-Limit Micro Switch Symptoms: What They May Mean
-
 Boom lift travel limit micro switch symptoms can point to a problem in the switch, its actuator, the wiring, or another part of the control system. They do not, by themselves, confirm that the micro switch has failed. Designs and control behavior vary, so this discussion applies only when the specific lift’s documentation confirms that a micro switch is used in its travel-limit circuit. If the machine’s documentation does not identify that design, do not assume that these checks apply.
 
 A travel-limit function can produce two notably different observations: travel may continue when a limit should act, or travel may be restricted when it should be available. Either observation needs equipment-specific diagnosis. Before any testing, consult the machine’s wiring diagram, service instructions, and fault indications, and follow the manufacturer’s inspection procedures. Do not bypass or defeat a travel limit.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Stand Mixer Head-Lock Switch Travel and Reliable Sensing
-
 A **stand mixer head lock micro switch actuator travel** assessment applies only to designs that use a micro switch to sense whether the mixer head is locked. Other head-lock arrangements are outside this explanation. The switch’s datasheet and the mechanism’s documented limits govern the measurements; a visible actuator movement or an audible click alone does not establish that travel is within limits.
 
 Reliable sensing depends on the relationship between head-lock movement and the switch’s operating point. The lock must move the actuator far enough to change the switch state, without driving it beyond its permitted travel. Verification therefore has two distinct parts: observe the mechanism’s movement and confirm the switch’s electrical state. Neither check, by itself, proves that the head is safely locked.

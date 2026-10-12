@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Micro Switch for an Access Hatch Travel Limit
-
 **Access hatch travel limit micro switch adjustment** depends on the hatch mechanism and the specific switch installed. The switch may signal that the hatch has reached an endpoint so a control circuit can stop or change motion. Its setting is only one part of that system: the switch position and actuator engagement are distinct from linkage geometry and the hatch’s physical stops.
 
 There is no universal adjustment position or travel value for this equipment. Use the documentation for the hatch and the switch to identify the intended endpoint states and permitted actuator movement. Before changing anything, make the mechanism safe to inspect and test. Then assess switch operation and hatch clearance separately at both the open and closed endpoints.

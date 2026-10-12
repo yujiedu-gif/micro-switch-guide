@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Mapping NO and NC Contacts to Door Position
-
 An **access control door position micro switch NO and NC terminals** provide a way to examine the switch’s contact states, but their labels do not by themselves identify whether a door is open or closed. First establish how the contacts behave with the switch actuator unactuated and actuated. Then determine which door position produces each actuator state in the particular mechanical arrangement.
 
 That distinction matters because the door, its mounting, and any linkage determine when the actuator moves. A switch can change contact state correctly while the access-control input still reports an unexpected door state. The contact test and the panel’s interpretation are separate checks, and not every door-position device uses a micro switch.

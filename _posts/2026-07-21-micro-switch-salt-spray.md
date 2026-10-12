@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting Salt-Spray Test Results for a Micro Switch
-
 A **micro switch salt spray** result describes how a particular tested specimen behaved during a specified corrosion exposure. It is evidence about that test, not a universal prediction of how long a switch will last in service or whether it suits every corrosive environment. To interpret the result, identify what was exposed, how the exposure was conducted, and what acceptance criteria were applied afterward. Also distinguish visible corrosion from electrical and mechanical function: a surface may show corrosion without proving a functional failure, while an acceptable appearance alone does not establish continued operation. The useful question is not simply whether a report says “pass,” but what construction passed, under which conditions, and against which defined checks.
 
 ## What micro switch salt spray testing evaluates

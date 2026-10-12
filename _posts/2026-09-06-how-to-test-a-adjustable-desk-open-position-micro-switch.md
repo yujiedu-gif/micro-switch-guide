@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Adjustable Desk Open-Position Micro Switch
-
 How to test a adjustable desk open position micro switch depends on the switch’s documented contact state and how the desk mechanism engages its actuator. A continuity check can show whether the isolated switch changes electrical state when its actuator is released and pressed. It cannot, by itself, establish that the desk’s control board works or explain every cause of a desk that will not move.
 
 Before access, disconnect the desk from power and secure it against unexpected movement. Do not probe energized control circuitry. The test has two distinct parts: check the switch contacts electrically, then determine whether the desk mechanism reaches and moves the actuator at the intended open position. Keeping those checks separate helps distinguish an electrical contact problem from an engagement, mounting, or wiring problem.

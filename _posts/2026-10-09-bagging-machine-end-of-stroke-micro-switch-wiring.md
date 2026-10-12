@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and verifying end-of-stroke switch wiring
-
 The **bagging machine end of stroke micro switch wiring** depends on the machine’s specific design. This guidance applies only to bagging machines that use a micro switch to detect an end-of-stroke position. Other designs may use different sensing methods, and the switch’s contact arrangement does not by itself describe the machine’s complete control circuit.
 
 Treat two questions separately: which terminals change electrical state when the switch is actuated, and how those terminals connect into the machine’s control path. Use the exact switch documentation and the applicable machine wiring diagram to answer them. Do not infer terminal function, circuit connections, or control behavior from wire color, physical layout, or assumptions about other machines.

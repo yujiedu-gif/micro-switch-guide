@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Reading NO and NC Contacts on a Blender Jar Interlock Switch
-
 A **blender jar interlock micro switch NO and NC terminals** question is best answered by separating the switch’s contact state from the blender’s behavior. NO and NC describe contacts relative to the switch’s unactuated state, not a guarantee that the blender motor will be on or off in a particular condition. First identify the switch’s terminals from its marking or electrical diagram. Then, with the blender unplugged and the switch isolated as needed, compare contact continuity with the actuator released and pressed. The exact contact path used by an interlock depends on the blender’s design, so neither wire position nor observed motor behavior is a reliable substitute for checking the switch itself.
 
 ## What NO and NC mean on a blender jar interlock micro switch NO and NC terminals

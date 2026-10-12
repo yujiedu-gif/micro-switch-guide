@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding a closed-position limit switch in an antenna rotator
-
 The **antenna rotator closed position micro switch location** depends on the rotator’s mechanical design. There is no universal side, compartment, or mounting point that identifies it. This guide applies only to designs that use a micro switch for the closed-position limit. To find the relevant switch, trace the mechanism that moves toward the closed limit and look for the point where a stop or cam engages a switch actuator. Then verify its function with the equipment unpowered and the terminals identified. Physical position alone does not establish which limit a switch controls.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement. Such switches are commonly used for position or limit detection, but that general use does not establish that a particular rotator contains one. A rotator may use a different arrangement, and its internal layout cannot be determined without design-specific evidence. Treat documentation for the applicable rotator as the reference for identifying parts and functions.

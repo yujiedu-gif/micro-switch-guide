@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing intermittent end-of-stroke switching
-
 The **air compressor end of stroke micro switch intermittent operation** described here applies only to compressor designs that use a micro switch at the end of stroke. In such a design, mechanical movement can change an electrical contact state through the switch actuator. That role does not establish that the switch is the cause whenever the compressor behaves inconsistently.
 
 Treat symptoms as observations, not a diagnosis. A compressor may stop inconsistently, respond intermittently at the same mechanism position, or behave differently when vibration is present. These patterns help direct checks, but they do not by themselves distinguish a switch fault from inconsistent mechanical movement, a wiring problem, or a downstream control or mechanical issue. The useful question is whether the mechanism reaches the switch operating point consistently and whether the switch’s electrical state then changes repeatably.

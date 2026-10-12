@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Access Hatch Open-Position Micro Switch Maintenance
-
 Access hatch open position micro switch maintenance checks whether hatch movement produces the documented electrical state for the hatch-open position. It is not enough to see that the hatch is open or that a control display reports an open condition. The maintenance check must trace the hatch-to-actuator motion path, verify the switch contacts, and, where required, confirm that the equipment’s input receives the expected signal.
 
 The expected contact arrangement and signal are specific to the switch and equipment. Use the applicable maintenance procedure and equipment documentation to identify them. Do not infer contact logic from the switch’s appearance or assume that all installations use the same open-position signal.

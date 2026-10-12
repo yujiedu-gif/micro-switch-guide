@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Locating a Micro Switch in an Automated Guided Vehicle Guard Interlock
-
 The **automated guided vehicle guard interlock micro switch location** depends on how the particular interlock is built. The switch, when the design specifies one, is a sensing component within the guard-interlock arrangement. It is not the guard itself, the actuator that moves with or responds to the guard, or the control device that processes the switch signal. There is no universal mounting point, orientation, or distance that applies to every assembly.
 
 To locate it, follow the mechanical path: begin with the moving guard, identify the part that actuates the interlock, then trace that part to the switch’s operating point. Confirm the intended position and relationship using the drawings and approved documentation for the equipment. A switch indication may show that the switch changed state, but it does not alone prove that the complete safety function has been validated.

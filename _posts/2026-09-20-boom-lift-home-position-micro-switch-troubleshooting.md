@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Boom Lift Home-Position Signal
-
 A boom lift home position micro switch troubleshooting sequence should distinguish three possibilities: the mechanism does not reach the actuator, the switch does not change contact state, or the signal is lost between the switch and the receiving circuit. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general description does not establish how a particular boom lift detects its home position; confirm the design from the applicable equipment information.
 
 Before inspecting or testing, prevent unintended equipment movement and follow the applicable service and isolation procedures. Identify the documented home position, switch, wiring, expected contact state, and approved test method before drawing conclusions. Do not infer a terminal function from a switch’s physical layout, or assume a generic test method applies to the installed equipment.

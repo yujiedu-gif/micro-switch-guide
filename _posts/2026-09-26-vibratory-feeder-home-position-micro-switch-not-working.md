@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Vibratory Feeder Home-Position Signal
-
 A **vibratory feeder home position micro switch not working** symptom can come from several different points in the signal path. The target may not actuate the switch correctly, the switch contacts may not change state, or a valid switch signal may fail to reach or register at the control input. Separating these possibilities prevents a displayed home-position fault from being mistaken for proof that the switch itself has failed.
 
 First confirm that the feeder’s home-position design actually uses a micro switch. Then use the equipment documentation to identify the home target, switch terminals, expected contact state, and control-input behavior. Do not infer these details from a switch’s shape or terminal arrangement. Follow the equipment-specific safety and isolation requirements before inspection or testing.

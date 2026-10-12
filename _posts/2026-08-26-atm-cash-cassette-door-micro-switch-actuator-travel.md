@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing actuator travel at a cash cassette door
-
 The **atm cash cassette door micro switch actuator travel** should be assessed at the switch itself, not inferred from how far the door or latch moves. The goal is to compare the switch actuator’s observed movement and electrical state changes with the limits and test method for that specific switch. There is no universal travel distance that can be assumed for every cassette-door design.
 
 This guidance applies only where a design uses the stated micro switch. Door mechanisms, linkages, mounting arrangements, and actuator forms can differ. Keep switch movement separate from door or latch displacement, and follow the authorized service process for any inspection or test involving cash-handling equipment.

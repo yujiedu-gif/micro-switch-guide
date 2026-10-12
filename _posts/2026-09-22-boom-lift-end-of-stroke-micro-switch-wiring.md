@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Tracing and verifying boom lift end-of-stroke switch wiring
-
 **Boom lift end of stroke micro switch wiring** is specific to the lift’s design. A switch may provide a position-dependent contact input to a controller or relay, rather than directly interrupting actuator power. Terminal labels help identify contact relationships, but they do not reveal the lift’s intended control logic. Use the machine-specific schematic to establish the circuit path and expected behavior.
 
 The verification process has two distinct parts: test the switch contacts with power isolated, then trace the conductors against the schematic. Do not infer a voltage, pinout, controller response, or wiring arrangement from the switch’s name or terminal markings. If the applicable diagram or safe service procedure is unavailable, stop and consult qualified service support.

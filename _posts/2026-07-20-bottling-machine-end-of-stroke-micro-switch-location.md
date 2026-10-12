@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding an End-of-Stroke Micro Switch on a Bottling Machine
-
 The **bottling machine end of stroke micro switch location** depends on the machine’s motion and control design. It is the point where a moving part, or a feature linked to that part, actuates the switch at the intended stroke endpoint. There is no universal mounting coordinate: the switch may be fixed to a frame or bracket, while a separate cam, tab, or linkage contacts its actuator.
 
 Finding the correct switch means tracing the relevant motion and signal, not simply looking beside the visible end stop. The switch is an electrical sensing component; the stop is a mechanical travel-limiting feature. Their locations and functions are related, but they are not interchangeable. Use the machine’s documentation to identify the intended input and actuation point, and do not inspect or adjust the mechanism until electrical and stored mechanical energy have been addressed under site procedures.

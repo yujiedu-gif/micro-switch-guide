@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying an Adjustable Desk’s Closed-Position Signal
-
 An **adjustable desk closed position micro switch adjustment** is appropriate only when the desk uses a mechanical switch to report its closed position. The switch’s electrical transition, the desk’s physical stopping point, and any limit stored in the controller are distinct things. A display or sound alone does not confirm that the switch itself changes state.
 
 The available evidence defines switch travel terms but does not provide a particular desk’s wiring, adjustment method, operating limits, or service procedure. Check the switch and desk documentation before making changes. If the design or specifications are unknown, do not guess at terminal connections or actuator travel.

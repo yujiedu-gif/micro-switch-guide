@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boom Lift Home-Position Switch Maintenance
-
 Boom lift home position micro switch maintenance should follow the lift’s applicable service documentation, because switch location, function, and expected position indication depend on the control design. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general description does not establish how a particular lift detects its home position or what its indicators should show.
 
 Use the inspection path below to keep physical condition, actuator movement, electrical state, and machine indication distinct. A disagreement among them is useful diagnostic information, but does not, by itself, identify a failed component. This guide does not provide lift-specific test limits or a substitute for approved service procedures.

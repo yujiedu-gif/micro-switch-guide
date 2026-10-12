@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Planning environmental tests for a micro switch
-
 **Micro switch food processing environment testing** should show whether the installed component continues to perform its defined role after exposure conditions that represent the site. A useful plan separates three questions: did the switch operate correctly before exposure, did the exposure reproduce relevant cleaning or contamination conditions, and did the component remain mechanically and electrically consistent afterward? A test can support a conclusion about the tested component and conditions; it does not by itself validate a complete machine or its hygienic design.
 
 Before testing, define the switch’s role in the installation and the failure modes that matter. These may include loss of switching, leakage, corrosion, residue-related sticking, or damage to the actuator or enclosure. Establish the procedure, measurement boundaries, and acceptance criteria before exposure. If the applicable switch specification, test procedure, or equipment risk assessment does not supply enough information to make a meaningful judgment, record that limitation rather than substituting an assumed threshold.

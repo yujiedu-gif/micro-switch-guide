@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Checking actuator travel for dental chair position detection
-
 A dental chair position micro switch actuator travel check examines motion at the switch, not how far or how many degrees the chair moves. This distinction matters because a chair’s mechanical linkage may translate chair movement into a different amount of actuator movement. The terms below help describe that motion, but they do not supply universal travel limits or establish that every dental chair uses a micro switch for position detection. Verify the installed arrangement and its specifications before testing or changing anything.
 
 ## What dental chair position micro switch actuator travel means

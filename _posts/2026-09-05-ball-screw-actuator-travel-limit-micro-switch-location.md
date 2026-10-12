@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding a Travel-Limit Micro Switch on a Ball Screw Actuator
-
 The **ball screw actuator travel limit micro switch location** is not fixed across actuator designs. This guide applies only to an actuator that uses a micro switch for travel-limit detection. To verify the location, distinguish where the switch is mounted from the point in the stroke where a moving feature operates it. Then confirm that the switch changes state before the mechanism reaches its mechanical end of travel. The actuator’s documentation and control response are essential to that assessment; a visible switch alone does not establish that the limit is set appropriately.
 
 ## What the ball screw actuator travel limit micro switch location means

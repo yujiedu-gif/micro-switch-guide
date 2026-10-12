@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a micro switch with three-way contacts
-
 The phrase **three way micro switch** can describe a single miniature snap-action switch with a common terminal and two selectable contacts. It does not, by itself, say that two switches control a load from separate locations. The distinction matters: one phrase can refer either to the contacts inside one component or to the behavior of a larger circuit.
 
 A micro switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. To identify its terminals, focus on the contact diagram and on how continuity changes between the actuator’s released and operated states. Terminal position or appearance alone is not enough to establish function.

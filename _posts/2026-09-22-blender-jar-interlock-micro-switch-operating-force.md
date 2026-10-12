@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding Force in a Blender Jar Interlock
-
 The **blender jar interlock micro switch operating force** is a switch-level quantity: the force or torque applied to the switch’s actuating mechanism to operate its contacts. It is not automatically the force a user must apply to the jar or lid. In an assembled appliance, the force reaching the actuator depends on the linkage and where it contacts the switch. The switch’s operating position and the mechanism’s available travel also matter to consistent actuation.
 
 The definitions below establish what the force terms mean. The evidence available here does not specify a blender design, a force rating, test conditions for a particular switch, or appliance-specific verification instructions. Those details must come from the applicable switch and appliance information; they cannot be inferred from the term “operating force.”

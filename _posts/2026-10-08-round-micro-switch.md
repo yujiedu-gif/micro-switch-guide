@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a round micro switch
-
 A **round micro switch** is a micro switch identified by a round exterior feature. Depending on the design, that feature may be the actuator, the body, or another part of the mounting geometry. The description helps identify a physical form, but it does not establish how the contacts are arranged, how the switch operates, or whether its electrical limits suit a circuit.
 
 Evaluation therefore has two separate parts: mechanical fit and electrical suitability. Check dimensions and mounting details, then compare the actuator’s required movement and force with documented parameters. Separately, verify contact configuration and electrical ratings for the intended load and test conditions. Do not use round appearance as a substitute for switch documentation.

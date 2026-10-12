@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to test continuity at an air compressor end of stroke
-
 An **air compressor end of stroke micro switch continuity test** checks whether the switch’s electrical contacts change state as its actuator moves. It can help distinguish a switch contact problem from a failure of the installed mechanism to actuate the switch. A continuity result alone does not establish that the compressor’s full control circuit or mechanism works correctly.
 
 Test the switch in its released and operated states, comparing the readings between common (COM) and normally open (NO), then between COM and normally closed (NC). Identify terminals from the switch markings or circuit documentation rather than assuming a universal layout. Isolate electrical power before connecting a meter, and avoid forcing the actuator beyond its specified travel.

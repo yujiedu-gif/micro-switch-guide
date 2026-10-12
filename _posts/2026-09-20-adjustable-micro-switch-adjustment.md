@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting and verifying a micro switch
-
 An **adjustable micro switch** is not a universal component type with one standard adjustment procedure. Whether its operating point can be changed, and how, depends on the specific design and its documentation. Adjustment may mean repositioning the switch, changing an external actuator’s position, or using a setting expressly built into the switch. Those changes are not equivalent. Before making any change, identify which adjustment the documentation permits and what limits apply. Verification should then check how the contacts operate and release, whether the result repeats, and whether measurements meet the switch’s published limits.
 
 ## What makes an adjustable micro switch adjustable?

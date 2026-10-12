@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Inspecting and verifying a boiler access-door interlock
-
 Boiler access door micro switch maintenance applies only to boiler designs whose access-door interlock actually uses a micro switch as a position input. The inspection should trace the physical path from door and latch to actuator and then to the documented electrical state. A generic switch appearance or terminal label is not enough to establish how a particular interlock works.
 
 This guide provides a bounded maintenance sequence, not instructions for servicing a boiler or adjusting an unspecified switch. Isolate electrical power and prevent unintended operation before inspection. Do not bypass or defeat the interlock. Work involving gas, combustion, energized equipment, or uncertain conditions belongs with qualified service personnel. If the equipment documentation does not identify the switch function or the required verification, stop and obtain qualified assistance.

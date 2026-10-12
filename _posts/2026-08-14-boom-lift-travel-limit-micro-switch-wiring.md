@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boom Lift Travel Limit Switch Wiring: A Diagram-Led Overview
-
 **Boom lift travel limit micro switch wiring** describes a switch’s role as a signal input in a lift design that uses a micro switch to detect a travel boundary. It does not establish a universal terminal layout or wiring pattern. The approved equipment diagram and the switch’s markings determine how to trace a particular circuit.
 
 A useful way to follow the path is to separate three questions: which contact state the switch presents, where that signal goes in the control circuit, and how the state may be verified without defeating a limit or interlock. The input signal is distinct from wiring that supplies power to motors or valves. The specific circuit arrangement depends on the lift and the function being monitored.

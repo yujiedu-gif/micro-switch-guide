@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Why a micro switch fails under electrical load
-
 When a **micro switch fails under load**, the symptom may reflect electrical stress at its contacts, a mechanical actuation problem, or a fault elsewhere in the circuit. The distinction matters: a switch that does not change state reliably is not necessarily the failed component. Load type, current during switching, voltage, operating duty, actuator movement, wiring, and the connected load all affect what the evidence can establish.
 
 A useful diagnosis begins with de-energized inspection and the component’s applicable specifications. It then compares the specified limits with actual circuit conditions and, only when safe and necessary, uses controlled measurements. Do not infer a universal current or voltage threshold from the switch’s size or from a symptom observed in service.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Choosing and verifying a joystick switch
-
 Arcade joystick micro switch replacement is appropriate only when the joystick has a separately mounted, serviceable switch. Some designs use an integrated or non-serviceable assembly, so do not assume a switch can be removed just because a joystick has directional inputs. When a switch is replaceable, the choice depends on its electrical connections and physical interfaces, not just its appearance. Record how the existing part is mounted, how the joystick contacts its actuator, and how its terminals are wired before removing it. Then compare those details with a candidate replacement and verify operation after installation. If the switch itself tests correctly, the fault may lie elsewhere in the control path.
 
 ## When arcade joystick micro switch replacement is possible

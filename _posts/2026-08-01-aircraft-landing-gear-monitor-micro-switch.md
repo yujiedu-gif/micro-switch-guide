@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Landing-Gear Monitor Switch Indicates Position
-
 An **aircraft landing gear monitor micro switch** can provide a discrete electrical indication when a gear-related mechanical part reaches a defined position. Its signal is one link in an indication chain, not independent proof that the landing gear is locked, safe, or airworthy. The monitor’s display also reflects the circuit design and its interpretation of the input, not simply the switch’s physical position.
 
 Understanding the distinction matters when explaining what an indication establishes. The switch responds to actuator movement and changes contact state. Wiring carries that state to a monitor input, where the aircraft’s design determines how the input is interpreted. The specific arrangement, contact logic, limits, and verification procedures are aircraft-dependent; no universal adjustment value or test method follows from the component’s name alone.

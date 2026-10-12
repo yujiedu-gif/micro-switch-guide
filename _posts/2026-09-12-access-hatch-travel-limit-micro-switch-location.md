@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding and verifying an access hatch travel-limit switch
-
 The **access hatch travel limit micro switch location** depends on the hatch mechanism’s design. There is no universal distance from a hinge or standard mounting side to rely on. In a design that uses a micro switch to detect an endpoint, locate it by tracing how the hatch moves and seeing where that movement contacts the switch actuator. This helps distinguish an endpoint switch from a nearby switch that responds to latching or another access condition.
 
 Begin with the available hatch documentation and identify the intended travel endpoint. Before opening or inspecting the mechanism, isolate its energy source. Do not infer a switch’s function from its appearance or position alone: a plunger, lever, or roller indicates an actuator style, not what condition the switch monitors. The key evidence is when and how the hatch mechanism engages it.

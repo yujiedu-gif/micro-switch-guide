@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a Position-Switch Contact Rating
-
 An **operating table position micro switch contact rating** describes an electrical switching limit under specified conditions. It is not a universal statement that the switch can safely control every circuit in an operating table. The relevant limit depends on the circuit’s voltage, current, AC or DC supply, load type, and switching conditions. A switch used to signal table position may operate in a control circuit, but its role and the electrical load it switches must be confirmed from circuit documentation rather than assumed.
 
 To interpret a rating, compare the switch’s documented limits with the actual circuit and its operating duty. If the required load category or switching conditions are not stated, the available information is not enough to establish suitability. Component ratings also do not establish whether an entire table is safe or compliant.

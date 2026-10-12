@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to check micro switch inrush current
-
 To check whether a micro switch can handle a load’s inrush current, compare the load’s startup behavior with the exact switch rating and the conditions attached to that rating. A steady-state current value alone cannot show whether contacts can make or break the brief surge. The comparison needs to account for the load category, current type, voltage, surge duration, and applicable switching conditions. If the available rating does not cover those conditions, the evidence is insufficient for a confident suitability judgment.
 
 ## What inrush current means for a micro switch

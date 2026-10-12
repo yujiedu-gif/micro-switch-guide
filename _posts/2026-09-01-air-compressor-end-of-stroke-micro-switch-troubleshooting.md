@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Compressor End-of-Stroke Micro Switch Troubleshooting
-
 Air compressor end of stroke micro switch troubleshooting applies only to compressor designs that use a micro switch to detect the mechanism’s end-of-stroke position. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. Other compressor designs may use different sensing methods, so first establish that this is the sensing arrangement on the equipment being examined.
 
 The diagnostic path runs from the moving mechanism to the switch actuator, through the switch contacts and wiring, and finally to the receiving control input. A failure anywhere along that path can prevent end-of-stroke detection. The checks below separate mechanical engagement from the electrical contact transition and then distinguish a switch-terminal signal from what reaches the control input. Use the equipment documentation and applicable qualification requirements throughout; if safe access or testing is uncertain, stop and seek qualified service.

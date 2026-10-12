@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Guard Interlock Micro Switch
-
 **Book binding machine guard interlock micro switch failure causes** can include a defective switch, but the same symptom may come from guard movement, actuator misalignment, wiring, or a downstream circuit fault. A machine that does not respond as expected does not, by itself, identify which part has failed. Diagnosis should distinguish the switch’s physical and electrical condition from the conditions that make it operate and the circuit that receives its signal.
 
 The checks below apply only to designs that use a micro switch to detect guard position. Keep the guard function intact throughout testing. Do not bypass or defeat the interlock to see whether the machine will run. If inspection or verification would require unsafe exposure, uncertain circuit interpretation, or changes to safety-related wiring, stop and involve qualified service personnel.

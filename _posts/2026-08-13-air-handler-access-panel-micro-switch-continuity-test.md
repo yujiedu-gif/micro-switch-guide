@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Air Handler Access-Panel Micro Switch
-
 An **air handler access panel micro switch continuity test** checks whether the switch’s contact path changes as its actuator moves between released and actuated positions. This guidance applies only to an air handler that actually uses a micro switch as its access-panel interlock. It does not establish that every air handler has this arrangement or that a switch reading alone confirms the equipment’s interlock or operation.
 
 The key comparison is between readings at two actuator positions, not a single continuity result. Panel fit and alignment may affect how the panel moves the actuator, so assess those mechanical conditions separately from the electrical reading. Before testing, use the unit’s instructions to isolate power and make sure the tested switch is electrically isolated from other paths that could affect the measurement. If the unit’s documentation does not identify the relevant terminals or isolation procedure, do not guess.

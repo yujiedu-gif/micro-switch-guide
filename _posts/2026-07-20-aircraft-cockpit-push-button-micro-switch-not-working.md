@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft Cockpit Push Button Micro Switch Fault Isolation
-
 An **aircraft cockpit push button micro switch not working** is a symptom, not a diagnosis. A button may fail to produce the expected response because it does not mechanically actuate the installed switch, the switch contacts do not change state reliably, or a fault lies elsewhere in the circuit. Not every aircraft cockpit push button uses a micro switch, so first confirm the installed design through applicable aircraft maintenance data. This guidance applies only when that design is confirmed. Because cockpit controls can be flight-critical, inspection and testing belong to qualified maintenance personnel working under aircraft-specific approved procedures. Do not manipulate, adjust, or test a control outside those procedures.
 
 ## Aircraft cockpit push button micro switch not working: establish the failure boundary

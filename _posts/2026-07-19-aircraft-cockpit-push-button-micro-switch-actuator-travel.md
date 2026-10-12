@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting aircraft cockpit push button micro switch actuator travel
-
 Aircraft cockpit push button micro switch actuator travel must be interpreted at the switch, not inferred from how far the button cap moves. A cockpit button may transfer motion through a plunger or linkage before it reaches the switch actuator. Those movements are related, but they are not interchangeable measurements.
 
 The distinction matters when assessing whether a control reliably reaches its operating position without driving the actuator beyond its permitted range. The available evidence here defines pretravel, overtravel, and movement differential, but does not establish universal travel limits or define every control’s operating and release points. Use the applicable component and control-design documentation for those details. The discussion below applies only to cockpit push-button designs that use a micro switch.

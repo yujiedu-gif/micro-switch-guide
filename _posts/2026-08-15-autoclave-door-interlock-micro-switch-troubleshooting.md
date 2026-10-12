@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting an Autoclave Door Interlock
-
 Autoclave door interlock micro switch troubleshooting should begin with safety, not with a meter or a replacement part. A door-closed indication or cycle-start problem can have several causes, and the micro switch is only one possible source. The fault may involve incomplete mechanical actuation, the switch contacts, wiring, connectors, or the interlock control system. This guide describes a bounded way to distinguish those paths. Follow the equipment documentation and approved service procedures throughout; if safe access or isolation is uncertain, stop and contact qualified service.
 
 ## Safety first: make the autoclave safe before troubleshooting

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing Switch Force in Door-Position Designs
-
 An **access control door position micro switch operating force** check is not simply a question of how hard a door closes. The relevant force is applied at the switch actuator, while the door, target, and any linkage determine how much force reaches that point. The switch’s operating force must be considered with its release force and travel limits, then verified at the installed actuator point. This guide is limited to door-position designs that use a micro switch; it does not address door-position systems that use other sensing methods.
 
 ## What operating force means in an access control door position micro switch

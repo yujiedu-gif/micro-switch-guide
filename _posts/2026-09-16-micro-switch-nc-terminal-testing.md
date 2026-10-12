@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Test the NC Terminal Path on a Micro Switch
-
 Micro switch NC terminal testing depends on the contact’s state, not on where a terminal sits on the housing. “Normally closed” describes a contact path that is closed when the actuator is released. To verify that path, use the switch’s markings or documentation to identify candidate terminals, then check how their electrical connection changes as the actuator moves. Do not assume a universal terminal layout or identify terminals by wire color alone.
 
 Before using a meter, disconnect power and isolate the switch from parallel circuit paths. A continuity or resistance reading taken through connected circuitry may not represent the switch contact itself. The steps below focus on identifying and checking the NC path, not diagnosing the surrounding equipment.

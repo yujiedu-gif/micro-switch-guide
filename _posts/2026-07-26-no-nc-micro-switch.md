@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# NO and NC Contacts on a Micro Switch
-
 The phrase **no nc micro switch** refers to the normally open (NO) and normally closed (NC) contact behavior associated with a switch. These terms describe electrical contact states relative to the switch’s unactuated, or resting, condition. They do not mean that every switch has both contacts, or that NO and NC are separate kinds of switches. To identify the actual terminals and confirm how they behave, use the device’s schematic and check continuity with power disconnected.
 
 A switch may provide a changeover arrangement with a common terminal and NO and NC terminals. Other contact configurations are possible, and the terminal layout is not universal. The basic interpretation is state-based: first note the contact condition at rest, then operate the actuator and compare the condition. This distinction helps prevent a common error: reading “normally” as a description of the switch after it has been operated.

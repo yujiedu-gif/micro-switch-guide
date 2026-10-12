@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying a book binding machine travel limit micro switch
-
 A **book binding machine travel limit micro switch** can signal that a moving mechanism has reached a selected position, but only in machine designs that use a micro switch for endpoint detection. The signal does not, by itself, establish that the mechanism has reached its hard stop or that the machine stopped at the intended position. The moving target, actuator travel, electrical state change, and control response all matter.
 
 To verify endpoint detection, trace those stages in order. First establish whether the target physically reaches and moves the actuator. Then determine whether the switch changes electrical state as it operates. Finally, establish whether the machine control responds as intended. This separates a missed target or travel issue from a switch, wiring, or control problem without assuming a particular machine design or switch specification.

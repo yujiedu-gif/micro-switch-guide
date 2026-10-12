@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft Landing Gear Monitor Micro Switch Maintenance: Inspection and Verification
-
 Aircraft landing gear monitor micro switch maintenance applies only when the aircraft design uses a micro switch to monitor the landing gear condition in question. Inspection and verification must follow the approved instructions for that aircraft and configuration. Those instructions govern access, safety controls, test conditions, limits, and maintenance disposition. This workflow does not establish switch function, adjustment dimensions, or permission to return an aircraft to service. Do not transfer assumptions from another aircraft installation.
 
 The inspection separates three questions: Does the installation allow the switch to be actuated as specified? Does the switch change state under the prescribed test? Does that state produce the expected indication? Keeping those checks distinct helps direct fault isolation without assuming that an incorrect indication proves the switch itself has failed.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing end-of-stroke switch symptoms on a stacker crane
-
 **stacker crane end of stroke micro switch symptoms** can point to a switch that fails to change state, an inconsistent electrical connection, or a problem elsewhere in the stopping path. Symptoms are clues, not proof that the switch itself is faulty. This guidance applies only to stacker crane designs that use the stated micro switch; designs and circuits can differ. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how a particular crane is configured.
 
 A useful diagnosis separates what happens near the intended actuation point from what happens at the switch terminals and in the control input. Observe the timing and position of the reported problem, then check physical actuation and electrical contact state as distinct questions. Follow the equipment’s applicable isolation procedures before inspection. If safe access or interpretation is uncertain, leave the checks to qualified personnel.

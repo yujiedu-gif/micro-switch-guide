@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Matching Micro Switch Applications to a Task
-
 Micro switch applications depend on the movement that must be detected and the electrical load the switch must control. A switch may suit one task but not another, even when both use the same kind of mechanism. Match the actuator’s motion and required switching action to the circuit, then verify the combination under the intended operating conditions. Compact size alone does not establish suitability.
 
 ## What micro switch applications have in common

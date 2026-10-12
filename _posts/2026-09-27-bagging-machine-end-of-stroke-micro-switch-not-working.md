@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a bagging machine end-of-stroke signal
-
 When a **bagging machine end of stroke micro switch not working** appears to be the problem, the symptom is that the machine does not stop, sequence, or register the endpoint as expected. That does not by itself prove the switch has failed. The position signal depends on a chain: the machine mechanism must reach the intended point, actuate the switch, and deliver the resulting electrical state through the wiring to the controller input.
 
 A useful diagnosis follows that chain in order. First establish safe conditions, then check physical actuation, verify the switch contacts, and compare the signal at the controller input. This helps distinguish missed mechanical contact from a switch that is actuated but does not change state, and from faults farther downstream. Exact terminal arrangements and controller indications depend on the installed equipment, so use the machine documentation rather than assuming a particular design.

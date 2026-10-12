@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing intermittent travel-limit switch operation
-
 An **automated guided vehicle travel limit micro switch intermittent operation** fault means the switch changes electrical state inconsistently during approaches that should be comparable. The inconsistency may begin with the mechanical operating point, or it may occur in the switch contacts, wiring, or signal path after the actuator moves. Separating those possibilities is more useful than treating every missed limit indication as the same fault.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. This article focuses on checking the switch and its actuation path, not diagnosing vehicle navigation behavior. The required operating point and travel limits depend on the particular switch specification. Do not infer numerical limits from the component category.

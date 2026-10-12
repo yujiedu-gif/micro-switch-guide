@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Standard Micro Switch: Meaning and Specification Checks
-
 A **standard micro switch** is a broad descriptive term for a commonly used type of switch, not a guarantee of one universal size, terminal layout, contact arrangement, or electrical rating. To determine whether a particular switch suits an application, compare its documented mechanical and electrical characteristics with the equipment and circuit. Similar appearance, or the word “standard” on its own, does not establish interchangeability.
 
 The useful distinction is between a switch’s operating behavior and its specifications. Snap action describes how contacts move. It does not set the switch’s permissible load or establish whether its actuator, mounting, or terminals match a particular application. Those details must be checked against documentation for the exact switch and equipment.

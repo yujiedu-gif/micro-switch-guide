@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Industrial Mixer Home-Position Signal
-
 An industrial mixer home position micro switch not working can result from a mechanism that never reaches the switch, contacts that fail to change state, or a fault elsewhere in the signal path. These are separate possibilities, and one observation alone does not establish which is responsible. This guide applies only to mixer designs whose documentation identifies a micro switch for home-position detection. It explains how to distinguish mechanical actuation from contact behavior and how to interpret those checks without assuming a particular wiring arrangement or control design.
 
 A micro switch is a miniature snap-action switch that can change an electrical contact state in response to mechanical actuator movement. It is commonly used for position or limit detection. That general description does not establish that a particular mixer uses one, or identify its terminals, contact arrangement, or permissible load. Confirm those details from the equipment documentation and the exact switch markings or schematic before testing.

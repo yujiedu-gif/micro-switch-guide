@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boom Lift End-of-Stroke Switch Adjustment and Verification
-
 The **boom lift end of stroke micro switch adjustment** process should begin with the lift’s service procedure, not with moving a bracket or changing a travel limit. The switch may provide a position-sensing input on designs that use one, but its exact function and permitted adjustment depend on the lift design. Confirm what the switch controls and how the manufacturer’s procedure requires it to be checked before touching the assembly.
 
 The goal is to restore the documented relationship between the switch, its actuator, and the target, then verify the complete function under an approved test procedure. Switch position is not a substitute for the machine’s structural or hydraulic travel limit. If the procedure, reference setting, or safe test conditions are unavailable, stop and refer the work to qualified service personnel.

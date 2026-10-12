@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Test a Cam Follower Micro Switch
-
 A cam follower micro switch has two parts to evaluate: the mechanical motion that operates its actuator and the electrical contacts that change state. Knowing **how to test a cam follower micro switch** means checking those stages separately, then confirming that they work together consistently. This procedure covers the switch and its cam-follower actuation, not the full machine or its control system.
 
 Before using continuity or resistance mode, shut down and isolate the relevant circuit. Lock out the equipment where applicable, account for stored energy, and verify that power is absent. Energized tests or machine operation require suitable procedures and qualified personnel. Never force the follower beyond the switch’s specified travel. The switch’s exact terminal arrangement and operating limits must come from its markings or applicable documentation, not assumptions or generic values.

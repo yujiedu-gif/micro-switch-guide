@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Automated Guided Vehicle Travel-Limit Micro Switch Maintenance
-
 An automated guided vehicle travel limit micro switch maintenance check should begin by confirming that the vehicle’s design actually uses a micro switch for this limit. Travel-limit mechanisms and control responses vary; a switch’s presence does not establish a universal stopping distance or a single test method. Follow the vehicle’s approved isolation and service procedure, then use the vehicle documentation and the specification for the installed switch to guide inspection and verification. This checklist traces the physical contact point through switch actuation to the indicated input, while keeping mechanical symptoms distinct from electrical or signal faults.
 
 ## What the travel-limit micro switch does on an automated guided vehicle

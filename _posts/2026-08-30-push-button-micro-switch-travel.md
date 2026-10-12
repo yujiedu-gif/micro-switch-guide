@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding and measuring actuator travel
-
 **Push button micro switch travel** describes movement of the switch actuator between defined positions. Measuring it accurately means recording where movement begins, where the switch operates, and where it releases, while keeping those positions distinct from the button’s external motion and the contacts’ electrical state. The names for these intervals depend on defined endpoints, not on a universal travel distance.
 
 A repeatable measurement therefore needs a clear reference position, a consistent direction of movement, and a stated way to identify operation and release. The switch’s own documentation determines which limits apply. The terms below describe specific relationships between actuator positions; they should not be treated as interchangeable measurements.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Remote Micro Switches: Operation, Selection, and Verification
-
 A **remote micro switch** is a micro switch operated through an arrangement that carries a command or motion from a separate input point to the switch actuator. The phrase describes how a switch is used in a system, not a special switch design or a wireless communication standard. Some remote-control systems include a micro switch; others do not.
 
 To evaluate one, trace the complete path: a remote input produces a command, a transmission or linkage carries it to an actuation mechanism, that mechanism moves the switch actuator, and the contacts change state. A fault at any link can prevent the intended control action. Selection therefore depends on the application’s actual mechanism, contact requirements, load, and component documentation, not on the word “remote” alone.

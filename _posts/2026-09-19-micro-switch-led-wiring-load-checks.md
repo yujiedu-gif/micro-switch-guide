@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Controlling an LED Circuit with a Micro Switch
-
 A **micro switch led** circuit uses a mechanically actuated contact to open or close the electrical path to an LED load. The switch controls continuity; it does not generate LED current or regulate it. Whether it can control a particular LED circuit depends on the load, the contact arrangement, and the switch’s documented electrical limits. This guide covers conceptual, low-voltage DC wiring and basic verification. It does not provide instructions for wiring mains-powered lighting.
 
 ## What a micro switch does in an LED circuit

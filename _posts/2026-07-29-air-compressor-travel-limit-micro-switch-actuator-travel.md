@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding actuator travel on an air-compressor limit switch
-
 The **air compressor travel limit micro switch actuator travel** describes movement at the switch itself, not the full motion of the compressor’s pressure mechanism or linkage. Keeping those motions separate helps identify the switch’s operating point and prevents a mechanism’s movement from being mistaken for a switch travel measurement. The relevant limits depend on the particular switch specification and equipment design; there is no universal travel value or arrangement established here.
 
 A useful verification compares the actuator’s observed movement with the switch’s documented operating and maximum travel limits. Compressor cycling alone does not show whether actuator travel is correct. Before inspecting or measuring, follow the compressor’s service instructions and use a safe, de-energized method. If the required limits are unavailable, the measurement is uncertain, or the actuator appears damaged, stop and consult the equipment documentation or a qualified technician.

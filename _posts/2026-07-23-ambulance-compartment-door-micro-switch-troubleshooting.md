@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting a compartment-door position signal
-
 A warning that stays on, fails to activate, or changes intermittently can come from the door’s mechanical contact with a switch, the switch itself, the wiring, or the receiving indicator. This guide covers **ambulance compartment door micro switch troubleshooting** only after confirming that the particular door-position circuit actually uses a micro switch. Equipment layouts and expected switch states are not universal, so use the documentation for the exact vehicle and switch rather than inferring connections from appearance.
 
 Record the warning behavior and the door position when it occurs before disturbing anything. The useful diagnostic question is whether the switch changes state as the door moves and, if it does, whether that signal reaches the indicator. Keep those parts of the signal path separate: a correct switch transition does not establish that the downstream circuit is working.

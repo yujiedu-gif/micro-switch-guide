@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Adjustable Desk Closed-Position Micro Switch
-
 An **adjustable desk closed position micro switch not working** is a useful starting description, but it does not establish that the switch itself has failed. The desk may not physically reach the switch, the switch may not change electrical state, or the signal may fail somewhere between the switch and the control input. This guide applies only to desk designs that use a micro switch to detect the closed position. Check the desk’s documentation before inspection or testing; designs and procedures can differ.
 
 The diagnostic sequence separates those possibilities: first establish whether the mechanism reaches the actuator, then assess the isolated switch, and finally consider the wiring and controller input. Keep to desk-specific service instructions, and stop if a safe test procedure is not available.

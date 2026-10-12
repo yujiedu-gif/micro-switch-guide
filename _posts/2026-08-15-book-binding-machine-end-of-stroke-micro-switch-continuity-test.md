@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an End-of-Stroke Micro Switch in a Book Binding Machine
-
 A **book binding machine end of stroke micro switch continuity test** checks whether the switch contacts change state as its actuator moves. The test is useful for assessing the switch itself, but its result has limits: it does not establish that the machine’s stroke timing is correct or that wiring and downstream controls work properly. Reliable results depend on identifying the correct terminals and keeping other circuit paths from influencing the measurement.
 
 Before testing, stop the machine, isolate its power using the applicable lockout procedure, and verify that the circuit is de-energized. Use machine documentation or switch markings to identify the contact arrangement. Do not infer terminal functions from wire colors. Where appropriate and safe, disconnect a lead so parallel circuit paths do not affect the reading. Then compare the relevant contact pair with the actuator released and operated.

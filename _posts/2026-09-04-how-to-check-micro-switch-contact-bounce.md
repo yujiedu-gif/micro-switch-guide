@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to check micro switch contact bounce
-
 Contact bounce is a brief series of repeated electrical state changes as a switch contact transfers between open and closed. A trace can help show whether those changes occur at the contact transition, but it can also be affected by the measurement setup, wiring, noise, or actuator motion. This guide explains how to check micro switch contact bounce with a repeatable, time-resolved measurement and how to report the result without assuming a universal pass/fail duration. The available evidence does not specify a particular switch, circuit, instrument, or acceptable bounce limit, so those details must be established for the test at hand.
 
 ## What micro switch contact bounce looks like

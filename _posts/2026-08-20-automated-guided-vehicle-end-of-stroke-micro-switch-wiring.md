@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# End-of-stroke switch contacts and vehicle input behavior
-
 An **automated guided vehicle end of stroke micro switch wiring** question has two parts: which switch contacts change state, and how those contacts connect to the vehicle’s designated input. The switch’s mechanical action can be checked at its terminals, but that check alone does not establish what the controller will do with the input. The actual connection and interpretation must come from the switch documentation and the vehicle’s circuit diagram.
 
 This reference explains how to identify common, normally open, and normally closed contacts; trace their relationship to a vehicle input without assuming a universal pinout or electrical arrangement; and distinguish an isolated contact check from powered system validation. It does not establish a particular vehicle circuit or safety strategy.

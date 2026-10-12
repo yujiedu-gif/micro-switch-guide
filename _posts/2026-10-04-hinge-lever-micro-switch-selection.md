@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting and verifying a hinge lever micro switch
-
 A hinge lever micro switch transfers motion from an external mechanism through a hinged lever to the switch actuator. Selecting one for a mechanism means checking that this motion produces the required actuation and release without exceeding the actuator’s permissible travel. The lever’s contact location and the mechanism’s hinge location affect how movement and force reach the actuator, so lever-tip movement cannot be treated as the same quantity as switch travel. The verification task is to observe both the operating point and the return point across the intended movement, rather than relying on a click alone.
 
 The available definitions describe switch travel at the actuator. They do not provide a particular lever geometry, travel value, force rating, or model specification. Those details must therefore be established from the relevant device information and mechanism, not inferred from the component name.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting and verifying an endstop microswitch
-
 An **endstop microswitch** detects when a moving mechanism reaches a defined travel boundary. Selecting one involves more than matching its actuator to the moving part: the mounting geometry, operating and release behavior, and electrical ratings must all suit the actual setup. Verification should check both the switch’s contact changes and the installed mechanism’s movement in both directions. The switch detects a condition; the surrounding circuit or control system determines how the machine responds. Keep those roles distinct when setting a travel limit.
 
 ## What an endstop microswitch does

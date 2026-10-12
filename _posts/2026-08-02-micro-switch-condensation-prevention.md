@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Micro Switch Condensation Prevention: Practical Measures
-
 **Micro switch condensation prevention** starts with understanding when moisture forms: humid air can leave liquid on a switch or nearby surface if that surface is cold enough. Reducing the conditions that allow condensation is different from making a switch waterproof. The right measures depend on the specific switch, its installation, and the surrounding equipment, so appearance alone cannot establish how much moisture exposure it can tolerate.
 
 The guidance below focuses on the temperature and moisture conditions near a micro switch, ways to reduce exposure, and what to do if condensation is observed. Follow the documentation for the switch and the equipment. Do not assume that sealing, ventilation, or another change is appropriate for every installation.

@@ -37,6 +37,7 @@ Count description characters including spaces and punctuation, then verify every
 - Preserve the approved reader_task, answer_type, differentiation_anchors, and section_roles. Do not reproduce the owned question or section-role combination listed in avoid_content_identities.
 - Shared definitions may be concise, but the mechanism, failure path, verification path, and conclusion must follow this plan's differentiation anchors rather than a reusable equipment-name template.
 - Follow word_budget. The local validator accepts 1,000-2,000 English words. Do not use an em dash, generic industry opening, marketing CTA, or exposed workflow note.
+- Do not put a Markdown H1 (`# ...`) in body_markdown. The page layout renders the approved title as its sole H1. Begin with the introduction, then use H2 (`## ...`) for sections.
 - Use the complete primary_keyword in sentence 1 or 2, within the first 150 words, in at least one H2, and exactly once in the closing section.
 - Return only body_markdown, the unique IDs of claims actually used, and the five self_review booleans. Set a boolean true only after the final prose passes that check. Return only JSON matching the response schema.""",
     "review": """You are the final semantic auditor for MicroSwitchGuide. Review only; never rewrite the article.
@@ -58,6 +59,28 @@ Count description characters including spaces and punctuation, then verify every
 - Recheck exact-keyword placement, description length, word count, internal links, source mapping, zero-brand policy, and prohibited phrasing. Return only JSON matching the response schema.""",
 }
 
+# This versioned, stable reference prefix is deliberately before the explicit
+# cache breakpoint. It contains only policies shared by every request, never
+# article-specific keywords, outlines, claims, or review notes. Explicit prompt
+# caching requires a sufficiently long common prefix (1024+ model tokens).
+CACHE_REFERENCE_V1 = """
+
+# Stable editorial reference for every MicroSwitchGuide page
+The subject is the electromechanical micro switch, also called a miniature basic switch or snap-action switch when the particular design has that mechanism. A micro switch is not a generic synonym for every device called a switch. A wall light switch, push-button panel, circuit breaker, keyboard key switch, reed switch, Hall-effect sensor, proximity sensor, and wireless kinetic wall switch should never silently become the subject of a micro-switch article. If an application is in scope, explicitly explain the mechanical or electrical relationship to a micro switch and distinguish the component from the surrounding appliance or system. Some designs use a micro switch; others do not. Do not generalize a design-specific arrangement to a whole equipment class.
+
+The local plan, accepted claim pack, and source metadata are authoritative inputs for this page. The stable reference is a writing policy, not a source of product specifications or application evidence. A supplied fact has meaning only inside its recorded scope. Keep the source's conditions attached to numerical values, terminal descriptions, operating states, and testing advice. If a claim names AC, do not imply DC equivalence. If it names a load type, do not transfer the value to another load. If it names a particular model or apparatus, do not claim it for every micro switch. Do not create a certification, rating, life-cycle figure, ingress-protection level, contact material, operating-force value, travel value, temperature limit, or replacement compatibility from general knowledge. When a factual relationship is unresolved, state the uncertainty plainly or omit it.
+
+Terminology must remain internally consistent. COM is the common terminal when that contact arrangement is actually documented; NO and NC refer to contact state at the specified reference condition, not an unqualified promise about current flow. An actuator is the part moved by the external mechanism. Operating point and release point are different events; their separation is related to differential travel. Pretravel is motion before operation and overtravel is motion after operation where the design permits it. Mechanical life and electrical life are different measures and cannot be swapped. A click can indicate movement of a snap mechanism, but by itself does not prove continuity, contact condition, correct wiring, or suitability for a load. A continuity test concerns the isolated switch and a defined actuator state; never infer an installed circuit's safety from an isolated reading alone. Use these distinctions only when pertinent to the owned question and supported by the supplied claims.
+
+The article should solve one reader task. Start with the direct answer or diagnostic frame, then explain the relevant mechanism, observations, checks, limits, and decision boundary in a causal order. Every substantial section should advance this page's distinct answer. Keep generic definitions short and avoid repeatedly substituting a different equipment name into the same template. A troubleshooting article should separate symptoms from possible causes and verification; a selection article should distinguish requirements from unsupported specifications; an explanation article should distinguish mechanism from application. Conditions and exceptions belong close to the sentence they qualify, not in an unrelated disclaimer at the end. Conclusions must follow only from established premises. Never promise that a single test proves the whole assembly good or bad.
+
+The article is educational, not a sales page. No promotional superlatives, manufacturer recommendations, supplier rankings, purchasing call-to-action, or fabricated first-hand test. Do not use a publisher's identity as a substitute for explaining a technical claim. Visible Sources are assembled locally, and external links are marked nofollow at rendering. The response must obey the supplied JSON schema exactly, with no Markdown fence, prefatory commentary, or additional keys. Before returning, check the exact keyword and heading requirements of the active stage, the article's logical sequence, definitions, parameters, topic focus, and whether each positive factual claim is inside the accepted evidence scope.
+
+Use precise boundaries for diagnostics. A switch can have a mechanical input problem, an internal contact problem, a terminal identification problem, a wiring problem, or a problem elsewhere in the equipment. Do not collapse those different causes into one diagnosis. If a symptom could arise from several causes, describe what observation would distinguish them without promising certainty that the evidence does not provide. A test result is meaningful only with the tested state, isolation condition, measuring method, and expected behavior specified. If a task has an electrical safety implication, stay within the supplied safe procedure and clearly leave work outside that boundary to qualified personnel. Do not improvise repair steps from an abstract switch definition.
+
+For application pages, separate the component's role from the host equipment's control logic. A door, pedal, cam, lever, or linkage may actuate a switch, but the effect of the resulting contact change depends on the actual circuit and design. Do not infer a particular normal state, contact arrangement, alarm behavior, or shutdown behavior just because a switch is present. For comparison pages, compare only dimensions that the evidence actually establishes, and avoid implying that another technology is mechanically or electrically interchangeable. For parameter pages, distinguish nominal label, test condition, installation constraint, and real operating environment. Readers should be able to tell which statement is general explanation and which statement applies only under a named condition.
+"""
+
 
 def build_batch_requests(
     kind: str,
@@ -74,7 +97,7 @@ def build_batch_requests(
     # policy. Batch requests use a compact stage-specific compilation so the
     # model does not repeatedly receive publishing, tooling, and workflow text.
     del skill_text
-    fixed_prefix = SYSTEM_PROMPTS[kind]
+    fixed_prefix = SYSTEM_PROMPTS[kind] + CACHE_REFERENCE_V1
     cache_key = f"microswitchguide:{kind}:{sha256_bytes(fixed_prefix.encode('utf-8'))[:20]}"
     rows = []
     seen = set()

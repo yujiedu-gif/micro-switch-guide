@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Tracing an Autoclave Door Interlock Circuit
-
 Autoclave door interlock micro switch wiring can be traced safely only by following the specific equipment schematic and switch diagram. The switch may provide a door-position input to an interlock circuit, but its terminal assignments and the control system’s response are not universal. A terminal marked normally open does not, by itself, establish what the autoclave considers a safe door state.
 
 The useful tracing path is mechanical movement, switch-contact state, wiring, and the documented control input. Keep those parts distinct while reading the diagram. For electrical checks, qualified personnel should follow the equipment isolation procedure and verify de-energization before measuring continuity. Do not probe energized circuits or bypass the interlock. If the diagram, terminal identity, or expected behavior is uncertain, stop and use the equipment’s service documentation.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Choosing a Tiny Micro Switch for a Space-Constrained Application
-
 A **tiny micro switch** can be a useful description when a switch has a compact package relative to the space available, but “tiny” does not establish a standard size or confirm that the part will fit. Selection requires more than comparing body dimensions: mounting, terminal access, actuator movement, operating force, and electrical duty all matter. The reliable approach is to check mechanical fit first, then verify switching behavior and ratings under the conditions of use.
 
 ## What “tiny” means for a micro switch

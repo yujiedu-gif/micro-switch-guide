@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Bottling Machine Guard Interlock Micro Switch
-
 Bottling machine guard interlock micro switch adjustment sets the relationship between a guard, its actuator, and the switch’s operating point. It applies only to a machine design that uses the stated micro switch and provides an adjustment permitted by its service instructions. There is no universal mounting arrangement or adjustment procedure. Some switches or mounts have no intended field adjustment.
 
 The objective is reliable detection of the guard’s required open and closed states, not merely making the switch click. Use the machine-specific service documentation to identify the permitted adjustment, limits, test method, and acceptance checks. If these requirements are unavailable or the design does not authorize adjustment, do not improvise.

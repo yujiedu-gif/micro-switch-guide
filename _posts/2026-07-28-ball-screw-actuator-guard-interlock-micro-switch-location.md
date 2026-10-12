@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Locating a Guard-Interlock Micro Switch on a Ball Screw Actuator
-
 The **ball screw actuator guard interlock micro switch location** is determined by the guard’s movement and the machine’s interlock design, not by the actuator’s travel limits. The switch must sense the guard’s defined open or closed state. A ball screw actuator does not necessarily include a guard-interlock micro switch, and there is no universal mounting coordinate. The machine’s safety documentation establishes the intended arrangement and response.
 
 To identify a suitable location, trace how the movable guard approaches the frame or a fixed bracket. The guard, or a feature attached to it, must operate the switch at the intended guard position. Then verify the interlock input as the guard moves, while preventing hazardous motion and following the machine’s approved procedures. A continuity check by itself cannot establish that the complete safety function works.

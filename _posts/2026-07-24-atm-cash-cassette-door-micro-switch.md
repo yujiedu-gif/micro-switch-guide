@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# ATM Cash Cassette Door Position Sensing
-
 An **atm cash cassette door micro switch** is a position input only in cassette-door designs that use one. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how any particular ATM mounts the switch, what door or latch feature moves it, or how its signal is interpreted. Those details depend on the documented design.
 
 Door closure, mechanical switch actuation, electrical contact state, and the control system’s reported status are separate stages. A door that appears closed does not, by itself, prove that the switch changed state or that the controller received the expected signal. Verification should follow the equipment’s documentation and distinguish these stages rather than assuming a universal arrangement.

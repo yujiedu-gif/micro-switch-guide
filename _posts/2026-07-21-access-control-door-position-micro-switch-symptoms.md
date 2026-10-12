@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing Door-Position Micro Switch Symptoms
-
 **Access control door position micro switch symptoms** can appear as a system status that stays open or closed, changes intermittently, or changes only when someone presses or moves the door. These reports identify a mismatch to investigate, not proof that the switch itself has failed. The cause may be mechanical actuation, electrical contacts or connections, or how the controller interprets the input.
 
 This guide covers only door-position designs that use the specified micro switch. Begin by observing whether the door or linked mechanism operates the actuator consistently. Then compare the contact behavior with the installed circuit configuration and trace the signal from the switch, through its wiring, to the controller input. Follow the circuit documentation, and use appropriate isolation before continuity testing. Do not bypass security functions to test or correct a reported state.

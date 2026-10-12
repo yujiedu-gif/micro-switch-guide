@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting an End-of-Stroke Micro Switch on a Bottling Machine
-
 The **bottling machine end of stroke micro switch adjustment** depends on the machine’s actual switch mounting and actuator arrangement. In designs that use a micro switch to detect an end-of-stroke position, the switch provides a discrete position signal. Its adjustment should make that signal correspond to the intended machine position, not compensate for an unrelated actuator or control-timing problem.
 
 There is no universal mounting method or adjustment dimension established here. Before making changes, consult the machine-specific service instructions for the adjustment point, allowable movement, and safe test procedure. If those instructions do not identify a permitted adjustment or verification method, do not improvise one. The sequence below explains how to distinguish the variables and assess the result without assuming that bottling machines share a common mechanism.

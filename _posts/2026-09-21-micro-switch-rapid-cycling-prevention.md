@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Preventing rapid cycling of a micro switch
-
 Micro switch rapid cycling prevention starts with finding out whether the switch’s actuator is moving repeatedly across its switching boundary or whether a downstream control is cycling while the switch remains stable. The distinction matters: a miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, and is commonly used for position or limit detection. Repeated contact changes during one expected actuation or hold period are different from the normal sequence of separate machine cycles.
 
 A practical investigation compares what the mechanism does with what the switch contacts do. First establish the expected actuation and hold period, then observe actuator movement and contact-state changes under the same conditions. Do not begin by changing switch settings or assuming that every rapid cycle originates in the control system. The switch and mechanism must be evaluated together, and the installed design’s limits and documentation govern any adjustment.

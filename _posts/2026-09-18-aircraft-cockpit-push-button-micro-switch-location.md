@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft Cockpit Push-Button Micro Switch Location
-
 The **aircraft cockpit push button micro switch location** depends on the specific aircraft and push-button design. In general, the exposed button cap is the part a person presses, while a micro switch, if the assembly uses one, is a separate component inside or behind the push-button assembly. The cap’s visible position does not establish where the switch is mounted.
 
 To understand the arrangement, distinguish the button cap, any return mechanism, any actuator or linkage, the switch itself, and its electrical connections. Button movement may reach the switch actuator directly or through an intermediate part. The components’ exact positions and relationships require aircraft-specific evidence, not assumptions based on a generic cockpit view.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Perform a Continuity Test on an Aircraft Cockpit Push Button Micro Switch
-
 An **aircraft cockpit push button micro switch continuity test** checks whether the switch’s specified contacts change state as the push button is released and pressed. It is a component-level check, not a test of energized aircraft wiring or the complete cockpit system. Perform it only when the switch is identified in the push button design and applicable approved maintenance instructions authorize the work. Qualified personnel should follow those instructions and their safety controls. The switch documentation, rather than a generic terminal assumption or meter reading, determines which contacts to check and what result is expected.
 
 ## What this aircraft cockpit push button micro switch continuity test can verify

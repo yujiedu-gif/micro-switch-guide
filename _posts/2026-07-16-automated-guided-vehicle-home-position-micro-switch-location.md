@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Positioning a Micro Switch for an Automated Guided Vehicle Home Signal
-
 The **automated guided vehicle home position micro switch location** matters only on vehicle designs that use a micro switch to provide a home-position signal. In that arrangement, the switch senses contact with a target; it does not, by itself, establish where the vehicle must stop. Placement therefore needs to bring the intended target to the switch’s operating point within the actuator’s usable travel, while allowing the controller to recognize the resulting input.
 
 There is no universal mounting location or distance that applies to every vehicle. The relevant geometry depends on the target’s approach, the actuator’s direction of movement, and the travel limits for the installed switch. Treat the physical switching event, the controller’s configured home reference, and the commanded stop point as related but distinct. Confirm the complete signal path through controlled tests on the actual design.

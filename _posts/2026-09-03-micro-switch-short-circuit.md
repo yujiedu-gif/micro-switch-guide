@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Tell Whether a Micro Switch Is Causing a Short Circuit
-
 A **micro switch short circuit** diagnosis requires separating normal contact operation from an unintended electrical path. A switch is meant to open or close a circuit as its actuator moves. That expected continuity is not, by itself, a short circuit. A fault may instead involve damaged switch contacts, an unintended path between terminals, miswiring, damaged external wiring, or a connected-load problem. A meter reading taken while the switch remains connected to the rest of a circuit may reflect those other paths, so it cannot identify the switch as the cause on its own.
 
 The checks below focus on distinguishing a switch fault from wiring or load faults. Keep equipment de-energized during inspection and resistance or continuity checks. If the equipment is mains-powered, wiring is uncertain, or damage is visible, stop and seek qualified electrical service.

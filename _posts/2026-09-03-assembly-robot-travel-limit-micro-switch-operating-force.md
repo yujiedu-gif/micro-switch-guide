@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Operating Force and Travel in an Assembly Robot Limit Input
-
 An **assembly robot travel limit micro switch operating force** is the force required at the switch actuator to operate its contacts. In a robot installation, that component-level value is only one part of the motion-limit design: the robot feature reaches the actuator through a particular contact geometry, and the switch needs suitable travel and stopping margin. This article covers designs that use a micro switch as a travel-limit input; it does not assume every robot uses one or define a complete robot safety system.
 
 The practical question is not simply whether the robot can press the switch. The switch must operate at the intended point, return when the force is reduced, and remain within its documented travel and loading limits. The robot must also stop before reaching the mechanical boundary. These conditions depend on the installed mechanism and the exact switch documentation, not on a universal force or travel value.

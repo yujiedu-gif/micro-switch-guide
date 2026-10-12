@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting Operating Force for Bagging-Machine End-of-Stroke Detection
-
 The **bagging machine end of stroke micro switch operating force** cannot be chosen from the machine’s drive force alone. It depends on the particular switch, how its actuator is contacted, and the linkage that transfers motion from the machine mechanism. Some bagging-machine designs use a micro switch for end-of-stroke detection; others may not.
 
 A suitable force target must let the installed mechanism reach the switch’s operating point reliably, then allow the contacts to return as the mechanism moves away. That assessment also depends on actuator travel: the motion must reach the operating position without exceeding the switch’s permitted travel. The relevant datasheet and machine tolerances are needed to judge those boundaries; the supplied definitions do not establish a numerical force or travel target.

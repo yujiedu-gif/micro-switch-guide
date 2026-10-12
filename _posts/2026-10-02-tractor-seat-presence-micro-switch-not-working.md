@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Tractor Seat-Presence Micro Switch
-
 A **tractor seat presence micro switch not working** may be one explanation for a no-start, unexpected shutdown, intermittent cutout, or warning indication. The symptom alone does not prove the switch has failed. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, and such switches are commonly used for position or limit detection. In a seat-presence circuit, the diagnostic question is whether the switch changes state as specified, whether that state reaches the rest of the circuit, and whether another interlock or controller is responsible.
 
 Use the tractor’s service information to guide inspection and testing. Do not assume every switch has the same contact arrangement or that a similar-looking terminal layout identifies its function. Keep the safety circuit intact throughout diagnosis; if testing is uncertain or requires procedures beyond the available service information, have qualified service personnel continue.

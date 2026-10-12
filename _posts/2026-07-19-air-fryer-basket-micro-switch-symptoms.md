@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air fryer basket micro switch symptoms: possible signs and limits
-
 Air fryer basket micro switch symptoms can offer clues about a basket-detection problem, but they do not by themselves identify a failed switch. This discussion applies only to air fryer designs that use a basket-actuated micro switch. Other designs may detect basket position differently, so the symptom pattern alone cannot establish which mechanism is present.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement. Such switches are commonly used for position or limit detection. In a basket-actuated design, the basket’s position may operate the switch, but the exact arrangement and circuit behavior depend on the appliance. Do not assume that every air fryer has this switch or that a particular symptom proves it is defective.

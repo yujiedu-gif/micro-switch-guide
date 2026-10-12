@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How Electromechanical Snap Action Switches Transfer Contacts
-
 **Electromechanical snap action switches** are defined by the way their contacts move: a mechanical mechanism causes a rapid transfer between contact states, even when the actuator itself moves more slowly. The key distinction is between the speed of external actuator movement and the speed of contact movement. Snap action describes the latter, not a requirement that a person or machine move the actuator quickly.
 
 This explanation focuses on the contact-transfer mechanism and on terms used to describe actuator force and travel. It does not imply that every electromechanical switch uses a micro switch or the same internal arrangement. Nor does the mechanism alone establish a particular switching speed, contact-bounce limit, or suitability for a specific circuit. Those details depend on the switch design, operating conditions, and how electrical behavior is observed.

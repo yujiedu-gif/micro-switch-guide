@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a solar tracker travel-limit micro switch
-
 A **solar tracker travel limit micro switch not working** can indicate several different problems: the tracker may not physically actuate the switch, the switch may fail to change electrical state, or the signal may not reach the controller input. Those possibilities require separate checks. Begin by identifying the affected direction or endpoint and the switch’s documented role, then follow the tracker and switch documentation rather than assuming a universal design or input logic.
 
 Travel-limit protection is a boundary condition, not a feature to test by forcing motion past an endpoint. If the tracker may fail to stop at its limit, do not command movement toward that limit until the risk of overtravel is controlled. Follow applicable deenergization and qualification requirements before electrical inspection or testing.

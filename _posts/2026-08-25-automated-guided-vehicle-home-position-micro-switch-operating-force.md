@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Evaluating Operating Force for Home-Position Detection
-
 An **automated guided vehicle home position micro switch operating force** evaluation should focus on the force that reaches the switch actuator, not the vehicle’s total driving force. This distinction matters because the contact geometry and mounting determine how much of the vehicle’s push is transmitted to the switch. Adequate force can help produce reliable switching, but it does not by itself establish positional accuracy.
 
 This guide applies only to automated guided vehicle designs that use a micro switch for home-position detection. It explains the relevant force and travel terms, how to assess the installed force path, and how to verify actuation and release without treating operating force as a substitute for checking home-position variation.

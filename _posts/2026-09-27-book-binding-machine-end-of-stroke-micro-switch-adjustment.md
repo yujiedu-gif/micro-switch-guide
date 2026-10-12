@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting an End-of-Stroke Micro Switch in a Book Binding Machine
-
 The **book binding machine end of stroke micro switch adjustment** process begins by identifying which switch detects the mechanism’s travel endpoint and how the machine is designed to actuate it. Adjustment is not simply a matter of moving a switch until the machine stops where expected. Mechanical positioning, actuator travel, and electrical state changes are related but distinct checks.
 
 Use the machine’s instructions and the switch datasheet to identify the correct adjustment method and applicable travel limits. The claims available here define several actuator-travel terms, but provide no numeric limits, wiring details, or machine-specific procedure. Do not infer those details. If the documents do not establish a safe method or permitted travel, do not proceed on assumptions.

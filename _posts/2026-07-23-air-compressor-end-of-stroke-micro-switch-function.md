@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an Air Compressor End-of-Stroke Micro Switch Works
-
 The **air compressor end of stroke micro switch function** is to detect a moving mechanism reaching a defined travel endpoint and change an electrical contact state. It is a position-responsive function: the switch responds when a mechanical part operates its actuator, not because the switch inherently measures air pressure. What happens after the contact changes depends on the compressor’s mechanism and circuit design.
 
 This distinction matters because a contact change does not, by itself, explain why a compressor motor stops or what pressure condition governs operation. A circuit may use the switch signal to stop, reverse, or advance a mechanism, but the micro switch is only one part of that arrangement. The verification question is therefore specific: does the mechanism reach the intended point, and does the switch’s contact state change there?

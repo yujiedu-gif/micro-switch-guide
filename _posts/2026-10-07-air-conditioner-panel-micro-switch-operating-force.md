@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Conditioner Panel Micro Switch Operating Force
-
 The **air conditioner panel micro switch operating force** is a component-level quantity, not necessarily the force a person feels while pressing a panel button or control. A panel may transfer, redirect, or resist user-applied force before it reaches the switch actuator. As a result, a panel reading and a switch specification are meaningful together only when their measurement points and methods are clear.
 
 Verification should start with the applicable switch specification and its stated conditions. Then identify where force reaches the actuator, in what direction, and how actuator travel is observed. This distinction helps separate switch behavior from effects introduced by a particular panel arrangement. It also prevents a perceived change in button effort from being treated, by itself, as evidence that the switch is outside its specified limits.

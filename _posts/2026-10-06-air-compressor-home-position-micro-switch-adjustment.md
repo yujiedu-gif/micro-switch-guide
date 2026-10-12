@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Compressor Home-Position Micro Switch Adjustment
-
 An **air compressor home position micro switch adjustment** applies only to compressor mechanisms that use a micro switch to signal a reference position. The switch does not necessarily control the compressor’s pressure, and its trip point is not the same as a mechanical travel stop. The correct arrangement and adjustment method depend on the equipment design.
 
 Before changing anything, identify the moving mechanism, the target or cam that operates the switch, and the intended contact transition using the equipment diagram or service instructions. Isolate power and follow the equipment’s directions for stored pressure and moving parts. If documentation does not authorize adjustment, stop and consult qualified service rather than guessing.

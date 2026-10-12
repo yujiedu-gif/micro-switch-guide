@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Micro Switch That Sets an Adjustable Desk’s Travel Limit
-
 An **adjustable desk travel limit micro switch adjustment** applies only to a desk whose endpoint is detected by a physical micro switch and actuator. In that design, actuator movement changes an electrical contact state; the control system may use that change to stop motion. This is different from programming an electronic travel limit in a desk that has no endpoint switch. Do not assume every adjustable desk uses a micro switch or that switch placement alone controls the endpoint.
 
 The switch, actuator, mounting arrangement, and control circuit must work together. The specific switch’s permitted travel and the mechanism’s adjustment range are not established by the component category. Use the applicable specification sheet and the desk’s service information for device-specific limits. If the mechanism cannot be identified or adjusted safely, stop and seek qualified service.

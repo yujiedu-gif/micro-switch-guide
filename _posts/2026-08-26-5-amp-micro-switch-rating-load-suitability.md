@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to assess a 5 amp micro switch for a specific load
-
 A **5 amp micro switch** cannot be judged suitable for a circuit from its current figure alone. That number has meaning only alongside the stated voltage, load type, and test conditions. A switch’s rating for one kind of load does not establish that it can switch every other kind of load at the same current.
 
 Start by identifying the circuit voltage and the connected load, then compare those conditions with the electrical ratings for the exact switch. Also consider current during startup and how often the switch operates. If the relevant rating information is missing, suitability has not been established; do not fill the gap by assuming that the 5 amp figure covers it.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to check a micro switch safely
-
 Micro switch testing checks whether the contacts change state as the actuator moves and return when it is released. A basic meter check can reveal whether the contact behavior matches the expected open or closed state, but it cannot establish that the switch will work correctly in its installed circuit. For a useful result, separate the switch from powered equipment, identify the correct terminals, and observe both operation and release.
 
 ## Micro switch testing: prepare the switch and meter safely

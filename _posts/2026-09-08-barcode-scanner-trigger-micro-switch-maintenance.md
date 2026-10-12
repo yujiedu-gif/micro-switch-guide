@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Barcode Scanner Trigger Micro Switch Maintenance
-
 Barcode scanner trigger micro switch maintenance begins by confirming that the scanner actually uses a micro switch. Scanner designs vary, so a trigger that looks or feels similar does not establish what component is inside. If the design is confirmed, maintenance can focus on visible trigger movement, the accessible actuator interface, and consistent operation without opening the scanner or assuming a particular switch construction.
 
 The guidance below covers external inspection, bounded cleaning, and a limited functional check. It does not provide instructions for replacing a switch or repairing internal parts. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. Snap action means the moving contacts’ speed is relatively independent of the actuating mechanism’s speed. That definition explains the switching principle, but it does not identify the scanner’s internal design or establish device-specific travel requirements.

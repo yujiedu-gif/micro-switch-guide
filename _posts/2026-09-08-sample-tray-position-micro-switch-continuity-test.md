@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing continuity across a sample tray position micro switch
-
 A sample tray position micro switch continuity test checks whether the switch contacts change electrical state when the tray mechanism moves between its defined released and actuated positions. It applies only to designs that use a micro switch to sense tray position. The test is performed without powered control logic, so it can provide evidence about contact behavior but cannot establish that the controller or complete tray system operates correctly.
 
 Use the device’s service procedure and documentation to identify the required tray positions, terminal functions, and safe access method. Do not infer terminal locations from pin position alone. If you cannot confirm safe isolation, terminal identity, or the expected tray positions, stop and consult the applicable service information.

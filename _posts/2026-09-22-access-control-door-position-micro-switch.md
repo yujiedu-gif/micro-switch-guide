@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an access control door position micro switch reports position
-
 An **access control door position micro switch** can report a change in door position by converting movement at a mechanical actuator into an electrical contact change. In an installation that uses one, that change may be read as a position input by a controller. The switch does not independently determine whether the door is locked, latched, secure, or authorized to open. Those are separate conditions that cannot be established by a position contact alone.
 
 The signal depends on the installed geometry and circuit: the door, or a feature linked to it, must move the actuator far enough to change the contact state, and the controller must interpret that state according to the circuit design. A useful way to understand or check the signal is to follow it from physical door movement, through actuator travel and contact change, to the controller input. This avoids treating a displayed door state as proof that every part of the signal path is working.

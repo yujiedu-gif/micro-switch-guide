@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Antenna Rotator Travel-Limit Troubleshooting
-
 Antenna rotator travel limit micro switch troubleshooting starts by separating a mechanical actuation problem from a switch-contact or wiring fault. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, and it is commonly used for position or limit detection. However, not every rotator uses this type of limit mechanism, and the switching arrangement is not universal. Begin by identifying the symptom and consulting the equipment documentation before interpreting any contact state.
 
 The key distinction is whether the rotator continues past its intended travel boundary or stops before reaching the expected endpoint. Note whether the behavior occurs in one direction or both. These observations define what to investigate, but they do not by themselves establish which switch, circuit, or control arrangement the rotator uses.

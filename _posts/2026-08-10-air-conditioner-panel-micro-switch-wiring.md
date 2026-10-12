@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Conditioner Panel Micro Switch Wiring: Terminal Identification and Verification
-
 Air conditioner panel micro switch wiring depends on the specific panel schematic and the switch’s contact arrangement. There is no universal connection for every air conditioner panel. To identify terminals, use the device markings or documented diagram, then check contact continuity with the supply isolated and the actuator in both positions. The observed contact states must be matched to the equipment schematic before any conductor is reconnected.
 
 A micro switch is a control contact within a circuit, not a source of power or a universal appliance interface. This guide applies only to panel designs that use one. It does not establish how a particular panel is intended to operate, identify a specific switch, or provide a generic connection recipe. If the circuit, voltage, or required contact state is undocumented, stop rather than infer a connection.

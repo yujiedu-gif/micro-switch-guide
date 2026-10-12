@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Checking Actuator Travel for Reliable Drawer Closure
-
 A **drawer closed position micro switch actuator travel** check asks whether the drawer moves the actuator far enough to operate the switch at the intended closed point, while staying within the permitted movement. The check also needs to establish that the switch returns as the drawer opens. A switch that changes state only sometimes may reflect inconsistent actuator movement, but the cause cannot be identified from the state alone.
 
 There is no universal travel allowance to apply to every switch. Use the definitions and limits in the applicable switch specification, then compare those limits with the actuator positions produced by the drawer and its stop. The claims below describe travel and release terms as defined in MIL-PRF-8805K; another specification may use different terms or values.

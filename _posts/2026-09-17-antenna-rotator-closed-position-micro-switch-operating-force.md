@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying force at an antenna rotator closed position
-
 The **antenna rotator closed position micro switch operating force** is a switch-level characteristic, not a universal force target for the rotator mechanism. The force delivered by a cam, lever, or linkage at the actuator depends on the particular design and contact geometry. Verification therefore needs the switch specifications and the rotator’s design documentation, along with checks of actuator travel and electrical state at the closed position.
 
 A useful check separates three questions: what force the switch requires to operate, what force and travel the mechanism actually delivers, and whether the contacts operate and return as intended. The open-position switch must be assessed separately because its actuator location and loading may differ.

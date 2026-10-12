@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting an Automated Guided Vehicle End-of-Stroke Micro Switch
-
 An **automated guided vehicle end of stroke micro switch adjustment** changes where the switch detects a travel boundary. It does not, by itself, set where the vehicle stops. The switch’s mechanical movement, its electrical state change, the controller’s interpretation, and the vehicle’s final response are separate parts of the signal chain. Each must be checked on its own.
 
 The correct setting depends on the installed switch and vehicle design. Identify the component and its intended function in the vehicle documentation before making changes. Use the switch’s documented operating and travel limits rather than a universal dimension, and verify switch operation before testing vehicle motion. Mechanical work requires safe isolation, followed by controlled, supervised testing after reassembly. A micro switch is not a substitute for independent protective stopping systems.

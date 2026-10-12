@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Tracing ATM cash cassette door micro switch wiring
-
 Tracing **atm cash cassette door micro switch wiring** begins with the equipment’s specific design, not a presumed terminal arrangement or wire color. The goal is to follow the door-sensing path from the actuator, through the switch contacts and connected conductors, to the documented receiving circuit. That path can differ between designs, so the equipment schematic and applicable service procedure govern what each connection means.
 
 Keep two kinds of observations separate. An isolated contact check establishes whether the switch changes electrical state as its actuator moves. A powered signal check concerns the receiving circuit and must be interpreted against the documented circuit and authorized procedure. Neither observation, by itself, establishes that every part of the door-sensing system is functioning as intended.

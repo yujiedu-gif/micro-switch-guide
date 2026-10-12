@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Matching operating force to bagging-machine travel
-
 A **bagging machine travel limit micro switch operating force** cannot be assessed in isolation from the machine’s movement. The switch’s operating force describes what is applied to its actuator to operate the contacts; it is not the same as the force delivered by a machine stop, cam, or linkage. Reliable actuation depends on the mechanical contact path and whether the machine reaches the switch’s operating position without exceeding its allowed travel.
 
 The practical check is to compare the switch’s specified force and travel characteristics with motion at the actuator contact point. Confirm that the mechanism reaches the operating point consistently, releases the actuator on its return, and stays within the permitted movement for that switch configuration. The terms below clarify what can be compared and what must be checked in the actual machine.

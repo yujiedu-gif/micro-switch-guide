@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding NO and NC terminal states on a compressor travel limit switch
-
 An **air compressor travel limit micro switch NO and NC terminals** are interpreted by comparing their contact states before and after the actuator moves. The labels do not, by themselves, show which terminal is powered or how the compressor will respond. For a changeover contact, COM is the common terminal, while NO and NC identify connections relative to the actuator’s unactuated state. The exact switch markings and circuit diagram determine whether that generic description applies to the installed device.
 
 A continuity check can help establish the switch’s terminal behavior, but it should be performed with power isolated and the switch separated from the circuit as needed. The observed electrical transfer is only one part of the system: the switch’s mechanical trip point and the compressor’s resulting control response are distinct. Do not infer a travel limit, wiring arrangement, or compressor behavior from terminal labels alone.

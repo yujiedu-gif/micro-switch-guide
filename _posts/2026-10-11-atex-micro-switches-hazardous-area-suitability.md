@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to assess an ATEX micro switch for a hazardous area
-
 Selecting **atex micro switches** is a documentation and application-matching task, not a decision that can be made from the ATEX term alone. A suitable assessment connects the specific switch’s protection marking and certification scope to the hazardous-area classification and conditions where it will be used. It also checks the electrical duty independently: hazardous-area documentation does not establish that the contacts can switch a particular load.
 
 The available evidence must support both parts of the decision. If marking, certificate scope, configuration, installation conditions, or electrical ratings are unclear, suitability remains unresolved. Do not treat a generic description or an incomplete label as proof of approval.

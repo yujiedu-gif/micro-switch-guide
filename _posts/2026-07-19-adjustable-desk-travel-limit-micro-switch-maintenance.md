@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining an Adjustable Desk Travel Limit Switch
-
 **Adjustable desk travel limit micro switch maintenance** applies only to desk designs that use a micro switch to detect a travel boundary. The switch must be contacted at the intended point so the desk can stop as designed. Maintenance therefore centers on the switch, its actuator, its mounting, and any linkage that contacts it, rather than on general desk lubrication or frame care.
 
 Desk designs vary, and the available information does not establish one access method or inspection procedure for every model. Follow the desk’s own instructions for access, power isolation, and testing. Do not infer switch travel limits from the component category: numerical travel limits are requirements of the applicable specification sheet, not values to guess.

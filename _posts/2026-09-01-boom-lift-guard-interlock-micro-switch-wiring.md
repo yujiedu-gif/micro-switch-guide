@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and verifying boom lift guard interlock micro switch wiring
-
 **Boom lift guard interlock micro switch wiring** must be interpreted against the equipment’s own schematic and service documentation. A micro switch may provide an input in some guard interlock designs, but the available information does not establish that every boom lift uses this arrangement or that all interlocks share the same circuit. The goal is to trace the documented path and verify what can be established at the switch and system levels, not to improvise connections.
 
 A contact reading alone does not demonstrate that an interlock or machine response is safe. First establish what the schematic says the switch should do in each guard position, then distinguish that switch-level check from the specified system-level functional check. Do not bypass or defeat the protective control. Stop and refer unresolved discrepancies to qualified service personnel using equipment-specific procedures.

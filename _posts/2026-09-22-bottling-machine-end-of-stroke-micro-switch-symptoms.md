@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Bottling Machine End-of-Stroke Signal
-
 Bottling machine end of stroke micro switch symptoms can point to a switch problem, but they can also come from the mechanism, wiring, or control input. A missed or inconsistent endpoint signal is a clue, not a diagnosis. Its effect depends on how the switch is used and how the machine’s circuit responds.
 
 A useful check follows the signal path in order: first establish whether the actuator reaches and releases the switch at the intended endpoint, then test the switch’s contacts with power isolated, and finally compare the electrical result with the machine’s input indication. Machine-specific safety procedures take priority throughout. Do not infer a particular switch rating, wiring arrangement, or control response from the machine’s symptoms alone.

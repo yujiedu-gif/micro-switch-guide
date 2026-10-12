@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Blender Jar Interlock Micro Switch Wiring and Contact Checks
-
 Blender jar interlock micro switch wiring depends on the appliance’s own circuit design, so terminal labels and wiring information matter more than wire colors or physical position. The micro switch is one mechanically actuated component in a broader interlock system. Its contacts may change state as the jar or a related actuator reaches its intended position, but that change alone does not establish that the complete appliance circuit is working.
 
 This guide explains the common, normally open, and normally closed contact relationships and outlines a bounded continuity check with the switch isolated and power disconnected. It does not provide a universal appliance schematic. Confirm the exact switch configuration and consult the appliance’s wiring information before interpreting connections.

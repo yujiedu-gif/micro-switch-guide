@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Adjustable Desk Micro Switch at the Open Position
-
 An **adjustable desk open position micro switch continuity test** checks whether the switch contacts have the expected electrical state when the desk reaches its intended open position. The result depends on two things: the switch’s contact configuration and whether the desk’s mechanism actuates the switch at that position. A continuity reading alone does not show that the desk’s complete control system works.
 
 The switch’s contact diagram or circuit documentation determines which terminals to measure and what state to expect. Disconnect power and isolate the relevant switch terminals before measuring resistance. If the circuit cannot be isolated or the switch cannot be accessed safely, stop rather than trying to interpret a reading from connected equipment.

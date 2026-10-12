@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing and replacing an access-control door-position switch
-
 An **access control door position micro switch replacement** should follow evidence that the switch itself has failed, not merely a symptom such as an incorrect or intermittent door state. Door alignment, actuator engagement, wiring, and the controller input can produce similar symptoms. First establish that the installation actually uses a micro switch for door-position sensing; not all door-position devices do. Then isolate and check each part of the signal path before deciding whether to replace the switch.
 
 The replacement must match the required contact configuration and electrical ratings, as well as the mechanical arrangement that actuates it. A similar-looking switch is not enough to establish compatibility. Use the device documentation for terminal identification and operating characteristics, and verify the switch and controller indications separately after installation.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing Intermittent Cockpit Push-Button Behavior
-
 An **aircraft cockpit push button micro switch intermittent operation** concern describes a control that does not produce a consistent electrical state or system response when actuated as intended. The observed symptom identifies a problem in the control-to-response chain, but does not establish that the micro switch itself is faulty. Button motion, actuator engagement, switch contacts, electrical connections, signal conditioning, and downstream control response are distinct points to consider.
 
 This article provides a bounded way to describe the symptom and organize maintenance fault isolation. It does not provide cockpit adjustment instructions or universal electrical limits. Inspection, measurement, adjustment, and any return-to-service decision belong under applicable aircraft maintenance documentation and qualified personnel requirements.

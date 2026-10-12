@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a guard interlock input works
-
 An **automated guided vehicle guard interlock micro switch** is a mechanically actuated switch used in some vehicle designs to provide information about a guard’s position. Guard movement can operate the switch actuator and change an electrical contact state. That contact state is a switch output; it does not, by itself, establish how the vehicle controller interprets the signal or what response the vehicle makes.
 
 The distinction matters because a guard’s movement, the switch’s mechanical action, its electrical output, and the controller’s interpretation are separate stages. Their relationship depends on the vehicle’s circuit and documentation. The explanation below follows those stages and outlines a bounded verification path without treating a continuity result as proof of system-level safety.

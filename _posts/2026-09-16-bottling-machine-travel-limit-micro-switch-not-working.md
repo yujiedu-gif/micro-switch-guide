@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Bottling Machine Travel-Limit Switch Fault
-
 A **bottling machine travel limit micro switch not working** report describes a symptom, not a confirmed component failure. The cause may be mechanical: the machine’s moving part does not reach or release the switch as intended. It may be electrical: the switch contacts do not change state, or the changed state does not reach or register at the relevant control input. Trace those stages in order instead of assuming the switch itself is defective.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general description does not establish how a particular machine’s switch is configured or where it should be mounted. Identify the installed switch and expected signal from the machine’s documentation before testing. Follow the machine’s approved isolation and diagnostic procedures throughout.

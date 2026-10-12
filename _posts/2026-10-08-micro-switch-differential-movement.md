@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Micro Switch Differential Movement: Meaning and Measurement
-
 Micro switch differential movement is the travel interval between the actuator position where the switch operates and the position where it releases as the actuator returns. It describes how far the actuator moves between those two events, not the force required to operate the switch or a gap between electrical contacts. To interpret or measure it, identify both positions using the same actuator reference and a consistent measurement direction.
 
 The exact value and any acceptable range depend on the particular switch design and its documentation. A measurement is meaningful only when its reference point, direction, and test conditions are clear. The definitions below distinguish differential movement from related travel terms, then provide a cautious method for checking it without assuming a universal value.

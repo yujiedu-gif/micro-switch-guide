@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding actuator travel in a foot switch assembly
-
 Foot switch assembly micro switch actuator travel is the movement at the switch itself, not the full distance the pedal moves under a user’s foot. Keeping those motions distinct helps explain when a switch operates and whether the assembly continues to move its actuator within the limits specified for that switch. The mechanical path between pedal and switch varies by assembly, so pedal stroke alone cannot establish allowable actuator travel.
 
 This guide applies to foot switch assemblies that use a micro switch. It explains how to trace movement through the mechanism, interpret operating position and overtravel, and check for binding and reliable return. The switch’s own documentation is the reference for its travel limits; no universal pedal or actuator dimension applies to every design.

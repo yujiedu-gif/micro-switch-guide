@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Distinguishing intermittent aircraft flap position signals
-
 An **aircraft flap position micro switch intermittent operation** symptom does not, by itself, establish that the switch has failed. In an installation designed to use a micro switch, the device changes an electrical state when mechanical movement actuates it. The resulting signal may contribute to position indication, but aircraft system architecture varies, and not every flap system uses a micro switch.
 
 A fluctuating cockpit indication is an observation, not a component diagnosis. The cause could lie at the switch, in the mechanical path that actuates it, in wiring or connectors, or farther downstream in the indication circuit. Distinguishing these paths requires aircraft-specific approved maintenance information and qualified personnel. The checks described here are boundaries for reasoning, not a substitute for approved procedures.

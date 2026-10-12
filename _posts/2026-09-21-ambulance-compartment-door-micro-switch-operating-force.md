@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Ambulance compartment door micro switch operating force
-
 Ambulance compartment door micro switch operating force is relevant only when the door design actually uses a micro switch. The term refers to force applied at the switch actuator, not the effort a person feels while closing the entire door. To verify it meaningfully, identify where and in what direction force is measured, then observe the switch’s electrical state transition under a consistent procedure. Door contact, alignment, latch engagement, and seals can affect the load reaching the actuator, so a reading at the door edge is not automatically the switch’s operating force. No single acceptable value applies to every door design. Use the applicable vehicle and switch documentation for acceptance criteria and service precautions.
 
 ## Ambulance compartment door micro switch operating force: what the term means

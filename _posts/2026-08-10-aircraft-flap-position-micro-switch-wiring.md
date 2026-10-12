@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Micro Switch Fits Into Flap Wiring
-
 Aircraft flap position micro switch wiring describes how a mechanically operated switch can participate in an indication or control circuit. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how any particular aircraft indicates flap position or controls flap movement. Equipment architecture varies, and not every flap system uses a micro switch.
 
 To interpret a circuit, separate three things: the flap mechanism’s movement, the switch’s mechanical actuation, and the electrical path shown in the aircraft documentation. Contact labels provide a starting point, but they do not identify a universal flap position, pin number, wire color, or aircraft wiring arrangement. The exact schematic and switch documentation govern those details.

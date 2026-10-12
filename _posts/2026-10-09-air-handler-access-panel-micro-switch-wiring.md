@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Handler Access Panel Micro Switch Wiring and Verification
-
 Air handler access panel micro switch wiring is not universal. Some air handlers use a micro switch to respond to panel position; other designs do not use one. The equipment’s wiring diagram and the switch’s own markings and documentation are therefore the starting points, not wire color or an assumed terminal layout.
 
 The switch’s contact behavior and the equipment’s control-circuit connections are related but distinct. Identifying COM, NO, and NC describes the switch contacts. Tracing the diagram shows how those contacts are used in the particular air handler, such as to interrupt, enable, or signal a control circuit. Keep those questions separate while inspecting and testing the wiring.

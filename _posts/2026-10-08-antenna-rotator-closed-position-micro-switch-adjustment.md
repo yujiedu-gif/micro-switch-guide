@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Closed-Position Limit on an Antenna Rotator
-
 An antenna rotator closed position micro switch adjustment applies only to a rotator whose closed-position control actually uses a micro switch. The switch’s actuation point, the rotator’s physical travel stop, and any position indication are distinct parts of the system. Changing one does not necessarily change the others. The correct adjustment therefore depends on what the switch does in the particular design: interrupt motor power, report position, or perform both functions.
 
 Use the rotator’s documentation and wiring information to establish the intended function before changing hardware. Keep the open-position limit separate. This guide covers identifying and adjusting the closed-position switch, then checking whether the rotator stops consistently and the switch releases as the mechanism moves away from closed. It does not establish model-specific adjustment dimensions or procedures.

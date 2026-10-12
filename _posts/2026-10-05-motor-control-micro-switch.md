@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# What a Micro Switch Does in Motor Control
-
 A **motor control micro switch** can detect mechanical movement and either provide an input to a controller or switch part of a motor circuit directly. It is one possible component in a motor-control design, not a universal feature. Its role depends on how the surrounding circuit is built, so the switch’s presence alone does not show how the motor is controlled.
 
 To understand its function, trace what happens when an actuator moves: the switch mechanism changes its contacts, and the resulting circuit change affects a controller or another part of the circuit. Verifying that sequence requires checking mechanical action and electrical state separately. It also requires care not to treat a motor-load rating as interchangeable with a rating for another load type.

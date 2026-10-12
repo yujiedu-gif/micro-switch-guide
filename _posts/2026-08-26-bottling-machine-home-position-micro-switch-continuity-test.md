@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing a Bottling Machine Home-Position Micro Switch
-
 A bottling machine home position micro switch continuity test checks whether the switch’s contacts change electrical state as its actuator moves. It applies only if the machine uses a micro switch to sense home position. A successful contact test does not, by itself, confirm that the machine’s home position is correctly aligned or that its controller receives the signal.
 
 Use the machine and switch documentation to identify the wiring, required isolation steps, and approved verification procedure. Do not infer terminal locations, acceptable travel, or a universal resistance threshold. The procedure below separates the switch’s contact behavior from the machine’s mechanical positioning and downstream input circuit.

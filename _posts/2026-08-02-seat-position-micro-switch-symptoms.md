@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Seat Position Micro Switch Symptoms: What They Can and Cannot Show
-
 Seat position micro switch symptoms can point to a problem in a position-detection circuit, but they do not establish that the switch itself has failed. A switch may be one part of a path that also includes a mechanical actuator, wiring, connectors, and downstream controls. The exact function and expected behavior depend on the seat and equipment design.
 
 A useful diagnosis separates three questions: Does the seat mechanism reach the switch’s operating point? Does the switch change electrical state when actuated? Does the rest of the circuit respond to that change? Checking these in order helps avoid treating every intermittent or missing position signal as a defective switch.

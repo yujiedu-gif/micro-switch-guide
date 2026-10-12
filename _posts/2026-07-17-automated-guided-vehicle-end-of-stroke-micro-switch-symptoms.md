@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing end-of-stroke micro switch symptoms in automated guided vehicles
-
 Automated guided vehicle end of stroke micro switch symptoms can resemble problems elsewhere in the motion or control system. A missing, intermittent, or persistent endpoint indication is a clue to investigate, not proof that the switch has failed. The first distinction is between what the vehicle does and what the switch’s electrical contacts do.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. This describes a general function, not a claim that every automated guided vehicle uses a micro switch at its stroke endpoint. The guidance below applies only to designs that use one for end-of-stroke sensing. The vehicle’s wiring information and service procedures determine how its particular switch and controller input should be interpreted.

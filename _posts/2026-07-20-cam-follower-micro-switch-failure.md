@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a cam follower micro switch failure
-
 A **cam follower micro switch failure** can begin at the mechanical contact between a cam and its follower, rather than inside the switch itself. In mechanisms that use a miniature snap-action switch to detect cam movement, the cam moves the follower, and the follower operates the switch actuator. If motion is lost along that path, the switch may not change state when expected, or it may not return to its original state.
 
 The diagnosis depends on separating mechanical movement from electrical switching. A worn or obstructed contact surface, a loose or misaligned follower, inadequate cam travel, a switch problem, and a fault elsewhere in the circuit are different possibilities. The observations that distinguish them are whether the follower moves freely, reaches and leaves the switch’s operating point, and produces the expected change in switch state. Do not assume every cam-driven mechanism uses a micro switch.

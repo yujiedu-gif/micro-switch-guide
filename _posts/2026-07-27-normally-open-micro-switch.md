@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Normally Open Micro Switch Contact States
-
 A **normally open micro switch** is defined by the electrical state of a contact pair when the switch is unactuated: the pair is open. When the switch is actuated, that pair changes to closed if the switch is designed for that operation. “Normally” refers to the switch’s unactuated state, not necessarily to the actuator’s position in the equipment where the switch is installed.
 
 That distinction matters when identifying contacts. An actuator can rest pressed because of the surrounding equipment’s geometry, even though the switch’s reference state is unactuated. A continuity check can help establish how an identified pair behaves, but it does not by itself establish whether the switch is suitable for a particular load or application. Confirm terminal identification against the exact switch documentation, and test only with the circuit de-energized.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining an Air Compressor Home-Position Switch
-
 Air compressor home position micro switch maintenance applies only to compressor designs in which a micro switch detects when a mechanism reaches its home position. Other compressors may use a different position-sensing method, so first confirm the design and the applicable service instructions. The switch, its wiring, actuator, and any connected linkage should be identified from the equipment documentation before inspection.
 
 A useful maintenance check follows the signal path: the moving mechanism must reach and release the actuator, and the switch contacts must change as specified. This separates a mechanical failure to actuate from an electrical contact or wiring fault. Use the compressor’s documented safety procedure, operating limits, and functional test throughout. If those instructions do not describe the switch or its permitted checks, do not infer settings or procedures.

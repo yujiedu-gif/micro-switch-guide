@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a Wi-Fi Micro Switch in a Connected Control Design
-
 A **wifi micro switch** can refer to either a mechanically actuated contact component used within a connected control assembly or, informally, the complete assembly itself. The distinction matters: a micro switch changes electrical contact state through mechanical actuation, while Wi-Fi communication requires additional electronic circuitry. A network command does not, by itself, describe how the physical load is switched.
 
 To evaluate a connected design, consider two separate paths. First, determine whether the switching contacts are documented for the intended electrical load and operating conditions. Then verify the network functions, including pairing, local operation, and behavior when connectivity or power is interrupted. The exact assembly architecture and behavior must come from its documentation rather than from the term “Wi-Fi micro switch.”

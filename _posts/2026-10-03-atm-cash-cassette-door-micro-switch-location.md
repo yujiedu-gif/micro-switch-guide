@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding an ATM Cash Cassette Door Micro Switch
-
 The **atm cash cassette door micro switch location** depends on the specific equipment design, so there is no universal side, mounting point, or visible landmark to rely on. To find a likely candidate, follow the cassette door’s closing motion and look for a mechanical switch positioned where the door or a linked part can actuate it. Then confirm the candidate through safe visual observation and, only when service procedures permit, a de-energized continuity check.
 
 A latch, hinge, wiring connector, or non-contact sensor may be nearby, but proximity alone does not establish that a part is the micro switch. An alarm or status message may provide context, but it does not identify the switch’s physical location. If you cannot confirm the candidate without entering a restricted area or approaching energized equipment, stop and consult approved service documentation for the specific equipment.
