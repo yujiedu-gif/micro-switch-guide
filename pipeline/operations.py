@@ -1403,6 +1403,14 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
                WHERE j.status=? AND """ + scope + " AND j.duplicate_of_job_id IS NULL" + completeness + " ORDER BY j.job_id LIMIT ?",
             (required_status, *scope_params, args.limit),
         ).fetchall()
+        recent_plans = []
+        if args.kind == "article":
+            recent_plans = [
+                (item["job_id"], json.loads(item["plan_json"]))
+                for item in connection.execute(
+                    "SELECT job_id,plan_json FROM content_jobs WHERE plan_json IS NOT NULL ORDER BY updated_at DESC LIMIT 101"
+                )
+            ]
         output = []
         for row in rows:
             version_material = f"{args.run_id}:{row['job_id']}:{args.kind}:{REQUEST_VERSION}"
@@ -1458,19 +1466,15 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
                     )
                 }
                 nearby = []
-                for other in connection.execute(
-                    """SELECT job_id,plan_json FROM content_jobs
-                       WHERE job_id<>? AND plan_json IS NOT NULL
-                       ORDER BY updated_at DESC LIMIT 100""",
-                    (row["job_id"],),
-                ).fetchall():
-                    other_plan = json.loads(other["plan_json"])
+                for other_job_id, other_plan in recent_plans:
+                    if other_job_id == row["job_id"]:
+                        continue
                     if (
                         other_plan.get("reader_task") == plan.get("reader_task")
                         or other_plan.get("answer_type") == plan.get("answer_type")
                     ):
                         nearby.append({
-                            "job_id": other["job_id"],
+                            "job_id": other_job_id,
                             "content_signature": other_plan.get("content_signature"),
                             "section_roles": other_plan.get("section_roles", []),
                             "owned_question": other_plan.get("owned_question"),
@@ -2941,11 +2945,16 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
     output = []
     by_id = {str(row["id"]): row for row in rows}
     plan_by_job: dict[str, dict[str, Any]] = {}
+    status_by_job: dict[str, str] = {}
     if args.object_type == "article_plan":
         with store.connect() as connection:
             plan_by_job = {
                 row["job_id"]: json.loads(row["plan_json"])
                 for row in connection.execute("SELECT job_id,plan_json FROM content_jobs WHERE plan_json IS NOT NULL")
+            }
+            status_by_job = {
+                row["job_id"]: row["status"]
+                for row in connection.execute("SELECT job_id,status FROM content_jobs")
             }
     for cluster in clusters:
         owner = cluster[0]["id"]
@@ -2981,41 +2990,54 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
     if rows and credentials.get("QDRANT_URL") and credentials.get("QDRANT_API_KEY"):
         qdrant = QdrantClient(credentials["QDRANT_URL"], credentials["QDRANT_API_KEY"])
         current_ids = set(by_id)
-        for offset in range(0, len(rows), 64):
-            chunk = rows[offset:offset + 64]
+
+        def query_existing(chunk: list[dict[str, Any]]) -> list[tuple[dict[str, Any], list[dict[str, Any]]]]:
             batches = qdrant.query_batch(
                 config["qdrant"]["collections"][args.object_type],
                 [row["vector"] for row in chunk],
                 limit=config["similarity"]["neighbors"],
                 score_threshold=threshold,
             )
-            for row, neighbors in zip(chunk, batches):
-                for neighbor in neighbors:
-                    payload = neighbor.get("payload") or {}
-                    neighbor_id = str(payload.get("local_id") or "")
-                    if not neighbor_id or neighbor_id == str(row["id"]) or neighbor_id in current_ids:
-                        continue
-                    if payload.get("granularity", "article") != row.get("granularity", "article"):
-                        continue
-                    neighbor_job = str(payload.get("job_id") or neighbor_id.split(":section:", 1)[0])
-                    if neighbor_job == str(row.get("job_id", row["id"])):
-                        continue
-                    if args.object_type == "article_plan" and not same_plan_content_identity(
-                        plan_by_job.get(str(row.get("job_id", row["id"])), {}),
-                        plan_by_job.get(neighbor_job, {}),
-                    ):
-                        continue
-                    with store.connect() as connection:
-                        accepted = connection.execute(
-                            "SELECT 1 FROM content_jobs WHERE job_id=? AND status IN ('validated','reserve_validated','rendered','published')",
-                            (neighbor_job,),
-                        ).fetchone()
-                    if accepted:
-                        score = float(neighbor.get("score") or 0.0)
-                        previous = external_by_id.get(str(row["id"]))
-                        if previous is None or score > previous[2]:
-                            external_by_id[str(row["id"])] = (neighbor_id, neighbor_job, score)
-                        break
+            if len(batches) != len(chunk):
+                raise RuntimeError(f"Qdrant returned {len(batches)} results for {len(chunk)} plans")
+            return list(zip(chunk, batches))
+
+        chunks = [rows[offset:offset + 64] for offset in range(0, len(rows), 64)]
+        with ThreadPoolExecutor(max_workers=8) as executor:
+            futures = [executor.submit(query_existing, chunk) for chunk in chunks]
+            for future in as_completed(futures):
+                for row, neighbors in future.result():
+                    for neighbor in neighbors:
+                        payload = neighbor.get("payload") or {}
+                        neighbor_id = str(payload.get("local_id") or "")
+                        if not neighbor_id or neighbor_id == str(row["id"]) or neighbor_id in current_ids:
+                            continue
+                        if payload.get("granularity", "article") != row.get("granularity", "article"):
+                            continue
+                        neighbor_job = str(payload.get("job_id") or neighbor_id.split(":section:", 1)[0])
+                        if neighbor_job == str(row.get("job_id", row["id"])):
+                            continue
+                        if args.object_type == "article_plan" and not same_plan_content_identity(
+                            plan_by_job.get(str(row.get("job_id", row["id"])), {}),
+                            plan_by_job.get(neighbor_job, {}),
+                        ):
+                            continue
+                        if args.object_type == "article_plan":
+                            accepted = status_by_job.get(neighbor_job) in {
+                                "planned", "article_submitted", "validated", "reserve_validated", "rendered", "published"
+                            }
+                        else:
+                            with store.connect() as connection:
+                                accepted = connection.execute(
+                                    "SELECT 1 FROM content_jobs WHERE job_id=? AND status IN ('validated','reserve_validated','rendered','published')",
+                                    (neighbor_job,),
+                                ).fetchone()
+                        if accepted:
+                            score = float(neighbor.get("score") or 0.0)
+                            previous = external_by_id.get(str(row["id"]))
+                            if previous is None or score > previous[2]:
+                                external_by_id[str(row["id"])] = (neighbor_id, neighbor_job, score)
+                            break
     output_by_id = {str(item["id"]): item for item in output}
     for item_id, (neighbor_id, neighbor_job, score) in external_by_id.items():
         item = output_by_id[item_id]

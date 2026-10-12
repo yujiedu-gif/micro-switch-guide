@@ -75,6 +75,45 @@ def cosine_similarity(left: list[float], right: list[float]) -> float:
 
 def cluster_vectors(items: list[dict[str, Any]], threshold: float) -> list[list[dict[str, Any]]]:
     """Deterministic greedy clustering; input order is the tie-breaker."""
+    # Production vectors are 768-dimensional and can number in the thousands.
+    # The scalar fallback keeps the test/runtime dependency optional, while the
+    # bundled embedding environment uses BLAS-backed matrix-vector products.
+    if len(items) >= 128:
+        try:
+            import numpy as np
+        except ImportError:
+            pass
+        else:
+            dimension = len(items[0]["vector"])
+            centroids = np.empty((len(items), dimension), dtype=np.float64)
+            centroid_norms = np.empty(len(items), dtype=np.float64)
+            counts: list[int] = []
+            clusters: list[list[dict[str, Any]]] = []
+            for item in items:
+                vector = np.asarray(item["vector"], dtype=np.float64)
+                if vector.ndim != 1 or vector.size != dimension:
+                    raise ValueError("vectors must be non-empty and have equal dimensions")
+                norm = float(np.linalg.norm(vector))
+                best_index, best_score = -1, -1.0
+                if clusters and norm:
+                    products = centroids[:len(clusters)] @ vector
+                    denominators = centroid_norms[:len(clusters)] * norm
+                    scores = np.divide(products, denominators, out=np.zeros_like(products), where=denominators != 0)
+                    best_index = int(np.argmax(scores))
+                    best_score = float(scores[best_index])
+                if best_score >= threshold:
+                    clusters[best_index].append(item)
+                    counts[best_index] += 1
+                    count = counts[best_index]
+                    centroids[best_index] = ((centroids[best_index] * (count - 1)) + vector) / count
+                    centroid_norms[best_index] = np.linalg.norm(centroids[best_index])
+                else:
+                    index = len(clusters)
+                    clusters.append([item])
+                    counts.append(1)
+                    centroids[index] = vector
+                    centroid_norms[index] = norm
+            return clusters
     clusters: list[list[dict[str, Any]]] = []
     centroids: list[list[float]] = []
     for item in items:
@@ -291,10 +330,20 @@ def build_internal_links(jobs: list[dict[str, Any]], minimum: int = 3, maximum: 
         by_category[job.get("category", "")].append(job)
     links: list[dict[str, str]] = []
     for source in jobs:
-        candidates = [item for item in by_category[source.get("category", "")] if item["job_id"] != source["job_id"]]
-        candidates += [item for item in jobs if item["job_id"] != source["job_id"] and item not in candidates]
-        desired = min(maximum, max(minimum, min(len(candidates), maximum)))
-        for index, target in enumerate(candidates[:desired]):
+        candidates: list[dict[str, Any]] = []
+        source_category = source.get("category", "")
+        for item in by_category[source_category]:
+            if item["job_id"] != source["job_id"]:
+                candidates.append(item)
+                if len(candidates) == maximum:
+                    break
+        if len(candidates) < maximum:
+            for item in jobs:
+                if item["job_id"] != source["job_id"] and item.get("category", "") != source_category:
+                    candidates.append(item)
+                    if len(candidates) == maximum:
+                        break
+        for index, target in enumerate(candidates):
             relation = "pillar" if index == 0 and target.get("page_type") == "pillar" else ("supporting" if target.get("category") == source.get("category") else "related")
             links.append({"source_job_id": source["job_id"], "target_job_id": target["job_id"], "relation": relation, "anchor_text": target.get("primary_keyword") or target.get("title", "related guide"), "status": "valid"})
     return links

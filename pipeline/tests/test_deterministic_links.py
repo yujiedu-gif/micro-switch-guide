@@ -1,9 +1,20 @@
 import unittest
 
-from content_ops import apply_authoritative_internal_links
+from content_ops import apply_authoritative_internal_links, build_internal_links
 
 
 class DeterministicLinkTests(unittest.TestCase):
+    def test_large_graph_keeps_same_category_targets_first(self):
+        jobs = [
+            {"job_id": f"job_{index:04d}", "category": "basics" if index % 2 else "applications",
+             "primary_keyword": f"micro switch topic {index}"}
+            for index in range(1000)
+        ]
+        links = build_internal_links(jobs, minimum=3, maximum=4)
+        self.assertEqual(len(links), 4000)
+        first_targets = [link["target_job_id"] for link in links if link["source_job_id"] == "job_0000"]
+        self.assertEqual(first_targets, ["job_0002", "job_0004", "job_0006", "job_0008"])
+
     def test_replaces_model_links_and_inserts_before_closing_h2(self):
         article = {
             "primary_keyword": "micro switch 5pa2",
