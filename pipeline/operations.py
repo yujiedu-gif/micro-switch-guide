@@ -376,6 +376,7 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     acceptance.add_argument("--run-id", required=True)
     acceptance.add_argument("--target", type=int, required=True)
     acceptance.add_argument("--build-site", action="store_true")
+    acceptance.add_argument("--cache-batch-id", help="verify cache hits for the current publication Batch while retaining historical run metrics")
 
     publish = commands.add_parser("prepare-pr", help="build, commit a batch branch, push, and open a PR")
     publish.add_argument("--run-id", required=True)
@@ -3096,6 +3097,23 @@ def benchmark_pipeline(args: argparse.Namespace, paths: Any) -> int:
 
 def acceptance_check(args: argparse.Namespace, paths: Any, config: dict[str, Any], store: Any) -> int:
     report = report_for_run(store, args.run_id)
+    cache_cohort = None
+    cache_batch_id = getattr(args, "cache_batch_id", None)
+    if cache_batch_id:
+        from content_ops import cache_hit_metrics
+
+        with store.connect() as connection:
+            rows = connection.execute(
+                """SELECT br.usage_json,j.status job_status FROM batch_requests br
+                   JOIN content_jobs j ON j.job_id=br.job_id
+                   WHERE br.run_id=? AND br.batch_id=? AND br.kind='article'""",
+                (args.run_id, cache_batch_id),
+            ).fetchall()
+        if not rows or any(row["usage_json"] == "{}" for row in rows):
+            raise ValueError("cache Batch is missing or has requests without terminal usage")
+        if not any(row["job_status"] in {"rendered", "published"} for row in rows):
+            raise ValueError("cache Batch does not contain a rendered article in this run")
+        cache_cohort = cache_hit_metrics([json.loads(row["usage_json"]) for row in rows])
     with store.connect() as connection:
         rendered = connection.execute("SELECT COUNT(*) FROM content_jobs WHERE created_run_id=? AND status IN ('rendered','published')", (args.run_id,)).fetchone()[0]
         duplicates = connection.execute("SELECT COUNT(*) FROM content_jobs WHERE created_run_id=? AND duplicate_of_job_id IS NOT NULL AND status IN ('validated','rendered','published')", (args.run_id,)).fetchone()[0]
@@ -3201,7 +3219,7 @@ def acceptance_check(args: argparse.Namespace, paths: Any, config: dict[str, Any
             )
     final_valid = sum(not errors for errors in final_validation_errors)
     schema_rate = final_valid / rendered if rendered else 0.0
-    cache_rate = report["fixed_prefix_cache_hit_rate"]
+    cache_rate = cache_cohort["fixed_prefix_cache_hit_rate"] if cache_cohort else report["fixed_prefix_cache_hit_rate"]
     checks = {
         "volume": rendered >= args.target,
         "schema_pass_rate_gte_99_5": schema_rate >= 0.995,
@@ -3229,7 +3247,7 @@ def acceptance_check(args: argparse.Namespace, paths: Any, config: dict[str, Any
             checks["jekyll_build"] = True
         except (subprocess.CalledProcessError, FileNotFoundError):
             checks["jekyll_build"] = False
-    result = {"run_id": args.run_id, "target": args.target, "passed": all(checks.values()), "checks": checks, "metrics": {"rendered": rendered, "final_articles_validated": final_valid, "schema_pass_rate": schema_rate, "cache_hit_rate": cache_rate, "calibration_pairs": calibration_pairs, "duplicate_slugs": duplicate_slugs, "duplicate_custom_ids": duplicate_custom_ids, "non_accept_jobs": non_accept_jobs, "published_non_accept": published_non_accept, "published_uncovered_terms": published_uncovered_terms, "published_topic_purity_failures": published_topic_purity_failures, "semantic_audits": semantic_audits, "exact_revision_review_failures": exact_revision_review_failures, "dataforseo_spend_usd": dataforseo_spend, "dataforseo_hard_limit_usd": config["budgets_usd"]["dataforseo_run_hard_limit"]}}
+    result = {"run_id": args.run_id, "target": args.target, "passed": all(checks.values()), "checks": checks, "metrics": {"rendered": rendered, "final_articles_validated": final_valid, "schema_pass_rate": schema_rate, "cache_hit_rate": cache_rate, "historical_run_cache_hit_rate": report["fixed_prefix_cache_hit_rate"], "cache_batch_id": cache_batch_id, "cache_cohort": cache_cohort, "calibration_pairs": calibration_pairs, "duplicate_slugs": duplicate_slugs, "duplicate_custom_ids": duplicate_custom_ids, "non_accept_jobs": non_accept_jobs, "published_non_accept": published_non_accept, "published_uncovered_terms": published_uncovered_terms, "published_topic_purity_failures": published_topic_purity_failures, "semantic_audits": semantic_audits, "exact_revision_review_failures": exact_revision_review_failures, "dataforseo_spend_usd": dataforseo_spend, "dataforseo_hard_limit_usd": config["budgets_usd"]["dataforseo_run_hard_limit"]}}
     print(json.dumps(result, indent=2))
     return 0 if result["passed"] else 1
 
