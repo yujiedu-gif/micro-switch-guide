@@ -2,7 +2,6 @@
 title: "Corrosion Resistant Micro Switch: How to Evaluate Environmental Suitability"
 description: "Learn how to assess a corrosion resistant micro switch for a specific environment by checking exposure, materials, sealing limits, and application evidence."
 date: 2025-02-14 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Selection Guides
 tags:
   - corrosion resistant micro switch
@@ -67,10 +66,10 @@ If the switch has already failed in a corrosive environment, troubleshooting is 
 
 ### Related guides
 
-- [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
-- [microswitch tact](/guides/microswitch-tact/)
 - [micro switch current rating](/guides/micro-switch-current-rating/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
+- [micro switch operating force](/guides/micro-switch-operating-force/)
 
 ## Choose the next verification step for a corrosion resistant micro switch
 

@@ -2,7 +2,6 @@
 title: "Micro Switch Current Rating: How to Interpret It"
 description: "Learn how to interpret a micro switch current rating, identify the load and test conditions behind it, and determine what must be verified before application."
 date: 2025-07-28 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Selection Guides
 tags:
   - micro switch current rating
@@ -46,9 +45,9 @@ This approach is an interpretation of supplied requirements, not a substitute fo
 ### Related guides
 
 - [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
-- [microswitch tact](/guides/microswitch-tact/)
-- [how to choose a micro switch](/guides/how-to-choose-a-micro-switch/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
+- [micro switch operating force](/guides/micro-switch-operating-force/)
 
 ## What a current rating does not establish
 

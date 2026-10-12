@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MicroSwitchGuide semantic article review",
+  "type": "object",
+  "required": ["job_id", "passed", "issues", "checks"],
+  "properties": {
+    "job_id": {"type": "string", "minLength": 1},
+    "passed": {"type": "boolean"},
+    "issues": {"type": "array", "items": {"type": "string"}},
+    "checks": {
+      "type": "object",
+      "required": ["logical_consistency", "parameter_accuracy", "definition_accuracy", "reader_task_alignment", "h2_fulfillment", "owned_question_uniqueness", "zero_brand"],
+      "properties": {
+        "logical_consistency": {"type": "boolean"},
+        "parameter_accuracy": {"type": "boolean"},
+        "definition_accuracy": {"type": "boolean"},
+        "reader_task_alignment": {"type": "boolean"},
+        "h2_fulfillment": {"type": "boolean"},
+        "owned_question_uniqueness": {"type": "boolean"},
+        "zero_brand": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

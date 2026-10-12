@@ -2,7 +2,6 @@
 title: "What Is a Micro Switch? How Its Snap-Action Mechanism Works"
 description: "Learn what is a micro switch, how its snap-action mechanism works, and how actuator movement changes contact state in common control circuits."
 date: 2026-08-07 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - what is a micro switch
@@ -47,10 +46,10 @@ The same boundary applies to the question “what is a micro switch used for?”
 
 ### Related guides
 
-- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
 - [how to wire a micro switch](/guides/how-to-wire-a-micro-switch/)
-- [micro switch com](/guides/micro-switch-com/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [micro switch free position](/guides/micro-switch-free-position/)
+- [micro switch insulation resistance](/guides/micro-switch-insulation-resistance/)
 
 ## What Is a Micro Switch? Key Limits to Keep in Mind
 

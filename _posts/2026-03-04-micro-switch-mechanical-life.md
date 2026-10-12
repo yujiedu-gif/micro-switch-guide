@@ -2,7 +2,6 @@
 title: "Micro Switch Mechanical Life: What the Cycle Count Means"
 description: "Understand micro switch mechanical life, what a cycle count measures, and why operating conditions matter when interpreting published endurance figures."
 date: 2026-03-04 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - micro switch mechanical life
@@ -59,10 +58,10 @@ When a decision depends on a specific installation, use the relevant equipment d
 
 ### Related guides
 
-- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
 - [how to wire a micro switch](/guides/how-to-wire-a-micro-switch/)
-- [micro switch com](/guides/micro-switch-com/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [micro switch free position](/guides/micro-switch-free-position/)
+- [micro switch insulation resistance](/guides/micro-switch-insulation-resistance/)
 
 ## Use micro switch mechanical life in context
 

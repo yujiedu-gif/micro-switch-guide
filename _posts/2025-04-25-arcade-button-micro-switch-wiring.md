@@ -2,7 +2,6 @@
 title: "Arcade Button Micro Switch Wiring: Identify and Connect the Terminals"
 description: "Learn arcade button micro switch wiring by identifying COM, NO, and NC terminals and checking a button’s switch documentation before connecting it."
 date: 2025-04-25 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Applications
 tags:
   - arcade button micro switch wiring
@@ -51,8 +50,8 @@ The decision is therefore about the required input behavior, not which pair look
 
 ### Related guides
 
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
 - [elevator micro switch](/guides/elevator-micro-switch/)
-- [micro switch water heater](/guides/micro-switch-water-heater/)
 - [rice cooker micro switch](/guides/rice-cooker-micro-switch/)
 - [what is a micro switch in a car](/guides/what-is-a-micro-switch-in-a-car/)
 

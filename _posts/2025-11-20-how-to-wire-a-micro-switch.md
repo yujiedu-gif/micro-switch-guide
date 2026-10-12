@@ -2,7 +2,6 @@
 title: "How to Wire a Micro Switch: Identify Terminals Before Connecting"
 description: "Learn how to wire a micro switch by identifying terminals and documenting connections, with clear limits on what a general guide can safely explain."
 date: 2025-11-20 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - how to wire a micro switch
@@ -49,10 +48,10 @@ In the United States workplace context, the cited workplace rule generally requi
 
 ### Related guides
 
-- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
-- [micro switch com](/guides/micro-switch-com/)
-- [micro switch differential travel](/guides/micro-switch-differential-travel/)
+- [micro switch mechanical life](/guides/micro-switch-mechanical-life/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [micro switch free position](/guides/micro-switch-free-position/)
+- [micro switch insulation resistance](/guides/micro-switch-insulation-resistance/)
 
 ## When a general micro switch wiring guide is not enough
 

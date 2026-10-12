@@ -1,0 +1,28 @@
+{
+  "version": "2026-10-09.1",
+  "seeds": [
+    "micro switch basics",
+    "microswitch wiring",
+    "NO NC COM micro switch",
+    "snap action switch",
+    "micro switch actuator types",
+    "operating force and release force",
+    "pretravel overtravel differential movement",
+    "waterproof micro switch",
+    "IP67 micro switch",
+    "roller lever micro switch",
+    "plunger micro switch",
+    "micro switch contact resistance",
+    "micro switch debounce",
+    "micro switch troubleshooting",
+    "micro switch vs limit switch",
+    "micro switch applications"
+  ],
+  "excluded_intents": [
+    "brand navigation",
+    "manufacturer ranking",
+    "supplier list",
+    "product roundup",
+    "commercial model comparison"
+  ]
+}

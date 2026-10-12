@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MicroSwitchGuide article plan",
+  "type": "object",
+  "required": ["primary_keyword", "secondary_keywords", "intent", "reader", "page_type", "category", "topic_scope", "owned_question", "excluded_questions", "angle", "title", "h1", "description", "slug", "outline", "must_cover", "evidence_needed", "source_pack_terms", "internal_link_targets"],
+  "properties": {
+    "primary_keyword": {"type": "string", "minLength": 2},
+    "secondary_keywords": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "intent": {"enum": ["informational", "troubleshooting", "selection", "application"]},
+    "reader": {"type": "string", "minLength": 2},
+    "page_type": {"enum": ["pillar", "spoke"]},
+    "category": {"enum": ["Basics", "Selection Guides", "Waterproof Switches", "Troubleshooting", "Applications"]},
+    "topic_scope": {
+      "type": "object",
+      "required": ["primary_entity", "relation", "owned_question_is_direct"],
+      "properties": {
+        "primary_entity": {"enum": ["micro_switch"]},
+        "relation": {"enum": ["direct"]},
+        "owned_question_is_direct": {"enum": [true]}
+      },
+      "additionalProperties": false
+    },
+    "owned_question": {"type": "string", "minLength": 5},
+    "excluded_questions": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "angle": {"type": "string", "minLength": 5},
+    "title": {"type": "string", "minLength": 5},
+    "h1": {"type": "string", "minLength": 5},
+    "description": {"type": "string", "minLength": 140, "maxLength": 160},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "outline": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["h2", "purpose", "points"],
+        "properties": {
+          "h2": {"type": "string", "minLength": 3},
+          "purpose": {"type": "string", "minLength": 5},
+          "points": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "must_cover": {"type": "array", "items": {"type": "string"}},
+    "evidence_needed": {"type": "array", "items": {"type": "string"}},
+    "source_pack_terms": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+    "internal_link_targets": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

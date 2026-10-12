@@ -2,7 +2,6 @@
 title: "What Is a Micro Switch in a Car?"
 description: "Learn what is a micro switch in a car, how its mechanical action changes an electrical state, and what to check before interpreting its role in a vehicle."
 date: 2026-09-29 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Applications
 tags:
   - what is a micro switch in a car
@@ -47,10 +46,10 @@ This is why a broad label is not enough to infer electrical behavior or fit. Two
 
 ### Related guides
 
-- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
 - [elevator micro switch](/guides/elevator-micro-switch/)
-- [micro switch water heater](/guides/micro-switch-water-heater/)
 - [rice cooker micro switch](/guides/rice-cooker-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 
 ## What is a micro switch in a car not enough to tell you?
 

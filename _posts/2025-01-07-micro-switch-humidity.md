@@ -2,7 +2,6 @@
 title: "Micro Switch Humidity: What the Evidence Establishes"
 description: "Learn what evidence establishes about micro switch humidity and IP Codes, plus which documentation details remain necessary before assessing an installation."
 date: 2025-01-07 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Waterproof Switches
 tags:
   - micro switch humidity
@@ -57,10 +56,10 @@ Finally, record separate verification needs rather than treating them as one moi
 
 ### Related guides
 
+- [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
 - [micro switch ingress protection](/guides/micro-switch-ingress-protection/)
-- [dustproof micro switch](/guides/dustproof-micro-switch/)
-- [micro switch water ingress](/guides/micro-switch-water-ingress/)
-- [air fryer micro switch](/guides/air-fryer-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 
 ## What can be concluded about micro switch humidity?
 

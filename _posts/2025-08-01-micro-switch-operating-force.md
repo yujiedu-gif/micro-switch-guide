@@ -2,7 +2,6 @@
 title: "Micro switch operating force: how to interpret the specification"
 description: "Learn what micro switch operating force measures, how it differs from release force, and which datasheet conditions to check before evaluating an actuator."
 date: 2025-08-01 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Selection Guides
 tags:
   - micro switch operating force
@@ -59,10 +58,10 @@ A careful interpretation can therefore be concise: identify the term, preserve t
 
 ### Related guides
 
-- [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
-- [micro switch 5pa2](/guides/micro-switch-5pa2/)
-- [microswitch tact](/guides/microswitch-tact/)
 - [micro switch current rating](/guides/micro-switch-current-rating/)
+- [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 
 ## What operating force can and cannot tell you
 

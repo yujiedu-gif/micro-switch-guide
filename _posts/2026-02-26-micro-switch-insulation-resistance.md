@@ -2,7 +2,6 @@
 title: "Micro Switch Insulation Resistance: Meaning and Measurement"
 description: "Learn what micro switch insulation resistance measures, how it differs from contact resistance, and which test conditions matter when interpreting results."
 date: 2026-02-26 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - micro switch insulation resistance
@@ -53,10 +52,10 @@ A useful report or test record should preserve the information needed to identif
 
 ### Related guides
 
-- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
 - [how to wire a micro switch](/guides/how-to-wire-a-micro-switch/)
-- [micro switch com](/guides/micro-switch-com/)
+- [micro switch mechanical life](/guides/micro-switch-mechanical-life/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [micro switch free position](/guides/micro-switch-free-position/)
 
 ## How to interpret a specified value
 

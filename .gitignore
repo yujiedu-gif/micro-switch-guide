@@ -5,5 +5,9 @@ _site/
 vendor/
 work/
 outputs/
+pipeline/state/
+.env
+pipeline/state/secrets.env
+__pycache__/
+*.py[cod]
 .DS_Store
-
