@@ -211,6 +211,7 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     jobs.add_argument("--keyword", action="append", default=[], help="create jobs only for these exact normalized keywords")
     jobs.add_argument("--keyword-file", type=Path, help="CSV/JSONL input whose keyword column limits job creation")
     jobs.add_argument("--new-only", action="store_true", help="skip intent clusters that already have a content job")
+    jobs.add_argument("--allow-borderline-topics", action="store_true", help="plan direct-scope topics with unresolved similarity pairs; article-plan and article duplicate gates still apply")
 
     requeue = commands.add_parser("jobs-requeue-articles", help="clear invalid drafts and requeue a bounded article candidate pool")
     requeue.add_argument("--run-id", required=True)
@@ -1260,6 +1261,11 @@ def jobs_create(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
                 "INSERT OR IGNORE INTO requested_keywords(normalized_keyword) VALUES(?)",
                 ((keyword,) for keyword in normalized),
             )
+            borderline_clause = "" if getattr(args, "allow_borderline_topics", False) else """AND NOT EXISTS (
+                        SELECT 1 FROM similarity_reviews sr
+                        WHERE sr.object_type='topic' AND sr.status='needs_review'
+                          AND k.keyword_id IN (sr.left_id,sr.right_id)
+                      )"""
             rows = connection.execute(
                 """SELECT c.cluster_id,k.keyword_id,k.normalized_keyword
                     FROM keywords k JOIN clusters c ON c.cluster_id=k.cluster_id
@@ -1267,11 +1273,7 @@ def jobs_create(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
                     WHERE k.selected=1 AND k.exclusion_reason IS NULL
                       AND EXISTS (SELECT 1 FROM keyword_scope_decisions sd
                                   WHERE sd.keyword_id=k.keyword_id AND sd.classifier_version=? AND sd.decision='accept')
-                      AND NOT EXISTS (
-                        SELECT 1 FROM similarity_reviews sr
-                        WHERE sr.object_type='topic' AND sr.status='needs_review'
-                          AND k.keyword_id IN (sr.left_id,sr.right_id)
-                      )
+                      """ + borderline_clause + """
                     ORDER BY COALESCE(k.search_volume,0) DESC,k.normalized_keyword LIMIT ?""",
                 (CLASSIFIER_VERSION, limit),
             ).fetchall()
@@ -1289,7 +1291,7 @@ def jobs_create(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
                    ORDER BY COALESCE(k.search_volume,0) DESC,k.normalized_keyword"""
                 , (CLASSIFIER_VERSION,)
             ).fetchall()
-            blocked = {
+            blocked = set() if getattr(args, "allow_borderline_topics", False) else {
                 item_id
                 for review in connection.execute(
                     """SELECT sr.left_id,sr.right_id,kl.normalized_keyword left_keyword,
@@ -1327,7 +1329,7 @@ def jobs_create(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
             )
             inserted += cursor.rowcount
             existing += int(cursor.rowcount == 0)
-    print(canonical_json({"eligible_clusters": len(rows), "created": inserted, "existing": existing, "daily_limit": limit}))
+    print(canonical_json({"eligible_clusters": len(rows), "created": inserted, "existing": existing, "daily_limit": limit, "allow_borderline_topics": bool(getattr(args, "allow_borderline_topics", False))}))
     return 0
 
 
