@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding the basket-position wiring path
-
 **Air fryer basket micro switch wiring** is best understood as a position-detection path, not as a universal circuit diagram. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement. In an air fryer, that movement may be caused by inserting or seating the basket, allowing the switch to indicate a position to control circuitry. The exact mechanism, contacts used, and circuit destination depend on the appliance design.
 
 The useful approach is to follow the path in order: basket movement, actuator movement, contact-state change, and the connected circuit. Terminal labels and a de-energized continuity check can help establish the switch’s behavior. They do not, by themselves, identify the appliance’s full circuit or prove whether the switch carries a load or provides a signal.

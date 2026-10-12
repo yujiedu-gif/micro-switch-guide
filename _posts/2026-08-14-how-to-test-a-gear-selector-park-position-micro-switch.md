@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to test a gear selector Park position micro switch
-
 A Park-position micro switch can be checked by comparing its electrical state outside Park and at the Park detent, then verifying that selector movement actuates it. The exact terminal arrangement and expected contact behavior depend on the switch and vehicle. Use vehicle-specific service information to identify the switch, its terminals, and its specified contact logic; do not infer them from a generic switch layout.
 
 This sequence separates an electrical contact fault from a mechanical engagement problem or a fault elsewhere in the connected circuit. It covers checking the switch and tracing its immediate circuit, not repairing or replacing it or diagnosing every cause of a no-start condition.

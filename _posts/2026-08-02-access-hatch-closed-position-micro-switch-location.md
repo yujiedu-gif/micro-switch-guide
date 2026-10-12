@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding an Access Hatch’s Closed-Position Sensing Point
-
 The **access hatch closed position micro switch location** depends on how the hatch, switch, and actuator are arranged. There is no single mounting point that applies to every hatch. To find the sensing point, distinguish the switch body, which is typically fixed to a support, from the moving hatch feature or linkage that operates it. Then observe how those parts meet as the hatch closes and verify the electrical state change with power isolated.
 
 The relevant location is the interface where hatch movement causes switch actuation, not simply the nearest component to the hatch edge. A switch can be mounted away from the edge and operated through a lever or linkage. Likewise, a nearby latch or indicator is not necessarily the switch. Identify the actual mechanical action and circuit response before drawing that conclusion.

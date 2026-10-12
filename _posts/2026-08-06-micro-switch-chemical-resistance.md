@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing Chemical Compatibility in a Micro Switch
-
 Assessing **micro switch chemical resistance** means determining whether a particular switch can retain its function and material integrity under a defined chemical exposure. It is not a universal property that can be inferred from a switch’s appearance or a broad resistance label. The assessment depends on what chemical reaches the switch, how it reaches it, which materials are exposed, and the conditions and duration of contact.
 
 A useful evaluation separates exposure mapping from evidence review and post-exposure verification. First identify the chemical and exposure conditions. Then trace possible contact paths through the switch’s construction, check whether test evidence matches those details, and compare the switch’s condition and operation with a documented baseline. If essential material or test information is unavailable, compatibility remains unresolved rather than established.

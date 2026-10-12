@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying a Contact Rating for an Air Compressor Home-Position Switch
-
 An **air compressor home position micro switch contact rating** must be checked against the electrical conditions in the circuit that the switch contacts actually control. A switch that detects a machine position may signal a controller, or it may be placed in a powered circuit. Its presence near the compressor motor does not establish that its contacts are suitable for switching motor current. Verify the circuit path and the switch’s documented rating separately from checking whether the mechanism changes contact state.
 
 ## What the air compressor home position micro switch contact rating applies to

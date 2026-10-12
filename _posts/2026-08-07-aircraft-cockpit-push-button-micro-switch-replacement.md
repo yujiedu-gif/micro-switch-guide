@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and verifying an aircraft cockpit push button micro switch replacement
-
 An aircraft cockpit push button micro switch replacement is not a generic consumer switch swap. It concerns the small switching component within a push button mechanism, and only applies when aircraft documentation identifies a micro switch in that mechanism. The complete push button assembly is a different scope.
 
 The replacement requirement must come from the aircraft-specific approved maintenance instructions and applicable parts data. Appearance alone does not establish that a switch is suitable. The actuator, mounting, terminals, contact arrangement, and electrical ratings all need to correspond to the documented installation. A bench check can assess component operation, but it cannot establish aircraft suitability or authorize return to service.

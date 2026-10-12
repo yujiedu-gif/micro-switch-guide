@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing intermittent operation at an air handler access panel
-
 An **air handler access panel micro switch intermittent operation** problem can arise from panel fit, actuator movement, switch contacts, wiring, or another part of the control circuit. The timing of the symptom may help narrow the possibilities, but it does not prove that the switch itself has failed.
 
 This discussion applies only to air handlers designed with an access-panel micro switch. Equipment configurations and interlock behavior vary, so the wiring diagram and service documentation for the specific equipment determine the switch’s intended circuit function and state. Do not infer terminal purpose or circuit behavior from the switch’s physical layout.

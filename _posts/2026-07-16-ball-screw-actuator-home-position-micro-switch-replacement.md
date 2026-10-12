@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Replacing a Ball Screw Actuator Home-Position Micro Switch
-
 A **ball screw actuator home position micro switch replacement** should preserve the existing mechanical reference, not merely restore an electrical connection. The switch’s mounting position and the direction the actuator approaches it help define where the physical transition occurs. A replacement that looks similar may not preserve that reference or suit the circuit.
 
 Before removal, establish that the installed home sensor is a micro switch and that replacement is justified. Record its wiring, orientation, mounting position, and approach direction. After installation, check the switch’s physical state change, the controller input, and the final homing position as separate results. The available evidence does not establish universal compatibility, adjustment dimensions, or controller settings, so use the documentation for the specific actuator and circuit.

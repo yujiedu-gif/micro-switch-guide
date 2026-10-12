@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting and verifying a boom lift travel-limit micro switch
-
 A **boom lift travel limit micro switch adjustment** is specific to the lift design and service procedure. This guidance applies only to boom lifts whose travel-limit design uses a micro switch. It does not establish a universal adjustment dimension or procedure. Before inspection or adjustment, use the equipment’s service information and required isolation and securing procedure.
 
 A travel limit involves more than the switch itself. A mechanism reaches and operates the switch; the switch changes state; the control system may respond; and the lift’s motion must stop at the intended boundary. Verifying one link alone does not prove the whole limit function. In particular, a continuity result by itself does not establish that the lift stops where required.

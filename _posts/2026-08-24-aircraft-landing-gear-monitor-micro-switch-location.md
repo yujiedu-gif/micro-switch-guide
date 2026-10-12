@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft landing gear monitor micro switch location
-
 The **aircraft landing gear monitor micro switch location** is specific to the aircraft’s configuration and monitoring installation. A general description cannot identify a mounting point for every aircraft. To locate the relevant switch, use the applicable aircraft maintenance information and wiring documentation, then trace how the landing-gear mechanism operates the switch and how its electrical contacts relate to the indication system.
 
 It is also important to distinguish three things: the physical switch, the point where a moving part engages its actuator, and the gear position that the monitoring system reports. Those are related, but they are not interchangeable. An indication or schematic symbol may identify a function without showing where the switch is physically mounted.

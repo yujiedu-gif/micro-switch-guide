@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding and verifying a ball screw actuator home reference
-
 The **ball screw actuator home position micro switch location** is best understood by tracing the relationship between the fixed switch, the moving feature that actuates it, and the controller’s reference behavior. The switch may signal that the moving assembly has reached a trigger point, but that point does not necessarily equal the axis position at which motion finally stops or the machine records home.
 
 There is no universal mounting side or end of travel for this switch. Its physical placement depends on the actuator design and the sensing arrangement. A careful check therefore follows the installed mechanism and its documented travel limits rather than assuming that a particular layout is standard.

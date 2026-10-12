@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Valve Micro Switch Indicates Position
-
 A **valve micro switch** provides a mechanical position signal only in valve designs that include one. As the valve stem, actuator, or a separate mechanism moves the switch actuator, the switch changes contact state at a mechanically defined point. That electrical change can indicate that a particular travel event has occurred. It does not, by itself, establish that fluid is moving or that the valve is sealed.
 
 The switching point depends on how the switch is connected to the valve and how far the valve mechanism travels. Direct actuation and cam or linkage actuation create different relationships between valve motion and switch motion. Verification therefore requires comparing the electrical transition with the valve’s actual mechanical position, while respecting the permitted movement of the switch actuator.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Replacing an End-of-Stroke Micro Switch on an Automated Guided Vehicle
-
 An **automated guided vehicle end of stroke micro switch replacement** is not complete when a new component is mounted. The switch must correspond to the vehicle’s documented electrical and mechanical requirements, and its actuation point must be verified against the motion it monitors. A switch that fits physically may still have unsuitable ratings, actuator travel, or operating behavior.
 
 The procedure below applies only when a particular automated guided vehicle uses a micro switch to define or report an end-of-stroke condition. The switch provides a signal; it is not necessarily the mechanism’s physical stop, nor does it alone establish how the controller responds. Vehicle-specific service documentation governs isolation, wiring, and test methods. If the circuit, required component characteristics, or intended limit cannot be established, do not guess.

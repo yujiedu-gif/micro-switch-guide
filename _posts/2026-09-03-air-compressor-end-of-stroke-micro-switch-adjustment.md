@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting an Air Compressor End-of-Stroke Micro Switch
-
 An air compressor end of stroke micro switch adjustment changes when the switch actuator changes electrical state as the mechanism approaches its intended endpoint. It does not, by itself, change how far the compressor mechanism physically travels. Keeping those two settings distinct is essential: moving a mechanical stop to compensate for a switch that is mistimed can lead to excessive actuator travel or a missed switching event.
 
 The correct adjustment depends on the compressor design and its documented limits. First identify the switch, actuator, linkage, and endpoint it senses. Then make only an adjustment the design provides, in small increments, and verify the result over repeated controlled cycles. A single click is not enough to establish that switching occurs at the right point or that the actuator remains within its permitted travel.

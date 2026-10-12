@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft landing gear monitor micro switch wiring
-
 Aircraft landing gear monitor micro switch wiring is best understood as a documented signal path, not as a universal pinout. In a design that uses a mechanically actuated switch, the switch supplies an electrical input associated with a defined gear position. The contact state is one part of the system; the aircraft’s circuit and indication logic determine what that state means to the pilot or monitoring system.
 
 This distinction matters because a contact labeled normally open or normally closed does not, by itself, say whether the landing gear is up or down. The exact aircraft wiring diagram, switch marking, and maintenance procedure govern interpretation and testing. Other aircraft designs may use different sensing arrangements, so the explanation below describes a general way to read documented switch logic rather than a universal aircraft circuit.

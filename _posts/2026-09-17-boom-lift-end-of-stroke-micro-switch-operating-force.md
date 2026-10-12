@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding end-of-stroke switch force on a boom lift
-
 The **boom lift end of stroke micro switch operating force** is a switch-level parameter: it describes the force applied to the switch actuator to operate its contacts. It is not the force acting on the boom, cam, or linkage. For an end-of-stroke function, the relevant question is whether the installed mechanism moves the actuator through its specified operating and return cycle, not whether the switch has one universally correct force value.
 
 A reliable assessment therefore starts with the switch and machine documentation. The specified test method and limits, actuator arrangement, and actual movement all matter. Do not infer a force limit from the machine’s size or from the switch’s appearance. This explanation applies only to designs that use the stated micro switch; qualified service guidance and the applicable procedures take precedence.

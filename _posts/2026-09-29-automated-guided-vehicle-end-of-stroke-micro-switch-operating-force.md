@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting actuator force at an automated guided vehicle end of stroke switch
-
 An **automated guided vehicle end of stroke micro switch operating force** is a component-level quantity: the force or torque applied to the switch actuator to operate its contacts. It is not the vehicle’s propulsion force, payload force, or stopping force. Understanding that distinction helps keep a switch measurement in its proper context.
 
 The force reaching the actuator depends on the installed mechanism between the moving part and the switch. Contact position, actuator geometry, approach direction, and mounting can affect how the mechanism loads the switch. For that reason, a force observed in an installation cannot be interpreted using a universal target value. Use the documentation for the actual switch and the installed mechanism, and verify that actuation, travel, and return behavior are consistent with their specified limits.

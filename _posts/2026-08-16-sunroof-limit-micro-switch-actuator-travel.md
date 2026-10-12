@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Sunroof actuator travel limits and micro switches
-
 A **sunroof limit micro switch actuator travel** arrangement can use a mechanically operated switch to signal or control movement near a travel boundary. The switch does not, by itself, establish that every sunroof uses this method or that the glass has reached its correct position. Its role depends on the mechanism and circuit. A useful check therefore connects three observations: actuator motion, the point where the switch changes state, and the circuit behavior expected for that design.
 
 The following guide explains that relationship and describes a bounded, de-energized way to observe switch action. It does not identify a particular vehicle’s switch, terminal layout, or control strategy. Those details require applicable vehicle information and the exact device schematic.

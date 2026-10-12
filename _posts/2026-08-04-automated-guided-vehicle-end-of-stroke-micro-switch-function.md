@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an End-of-Stroke Micro Switch Signals a Travel Limit
-
 An **automated guided vehicle end of stroke micro switch function** is to detect a defined travel boundary in a mechanism and change an electrical contact state when that boundary is reached. The switch provides a discrete signal; it does not, by itself, determine what the vehicle should do next. The vehicle’s control circuit or logic interprets the signal and may respond according to its design.
 
 This explanation applies only to vehicle designs that use a micro switch for end-of-stroke detection. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. It is distinct from navigation or general obstacle sensing, which are not the function addressed here. The specific switch’s travel limits and operating details cannot be inferred from its category; they are requirements of the applicable specification sheet.

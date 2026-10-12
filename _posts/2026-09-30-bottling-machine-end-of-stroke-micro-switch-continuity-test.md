@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing a Bottling Machine End-of-Stroke Micro Switch
-
 A bottling machine end of stroke micro switch continuity test can help determine whether a mechanically actuated switch changes electrical state at the end of machine travel. This procedure applies only when the machine’s end-of-stroke signal uses a micro switch. Other sensor types require different test methods, so confirm the device and signal path in the machine’s documentation before proceeding.
 
 A continuity result alone does not identify the cause of a missing end-of-stroke signal. The switch may not receive enough actuator travel, its mounting or linkage may be misaligned, or a connection or conductor may be faulty. In-circuit paths can also affect meter readings. The useful approach is to verify the mechanical sequence, test the documented contact in both actuator states, and isolate the contact circuit when needed to confirm an ambiguous result.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Handler Access Panel Micro Switch Maintenance
-
 Air handler access panel micro switch maintenance applies only to equipment whose documented design includes a micro switch actuated by an access panel. The switch’s role, contact arrangement, and relationship to air-handler operation depend on that equipment’s documentation. Do not assume every access panel contains a switch or that every switch serves the same circuit function.
 
 During maintenance, the goal is to check the switch’s visible condition and mechanical action, then verify its electrical state when appropriate and safe to do so. Use the equipment-specific service procedure throughout. The general description here does not establish mounting requirements, adjustment limits, wiring details, or a procedure for making equipment electrically safe.

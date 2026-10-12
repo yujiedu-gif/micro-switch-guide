@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding and verifying an end-of-stroke switch
-
 The **book binding machine end of stroke micro switch location** depends on the machine’s mechanism and design documentation; there is no universal mounting point to assume. To find one, trace the binding assembly’s motion toward its intended travel limit, then identify whether a moving feature actuates a switch there. The switch’s position relative to that motion is more useful than guessing from a panel, frame, or enclosure layout.
 
 A visual match alone does not establish that a component is an end-of-stroke micro switch. Compare its actuator position with the assembly at the travel boundary, distinguish it from the physical stop and any intermediate sensor, and use the machine’s documentation to confirm its role. Do not bypass guards or energize exposed mechanisms to investigate. If access or testing requires those steps, seek qualified service.

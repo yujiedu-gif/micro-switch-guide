@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding IP65 Protection for a Micro Switch
-
 An **ip65 micro switch** claim describes a stated level of enclosure protection against dust and water jets. It does not, by itself, show that a particular switch will remain protected after installation or suit every wet, corrosive, or outdoor environment. The rating has a defined scope, and its meaning depends on the test conditions and configuration covered by the documentation.
 
 To assess a specific exposure, separate what the IP code establishes from what still needs evidence. Confirm which assembly was evaluated, how it was installed, and whether the expected exposure matches the documented test scope. Details such as openings, cable entries, mounting interfaces, and seal condition can affect whether the installed assembly retains the protection claimed for a component.

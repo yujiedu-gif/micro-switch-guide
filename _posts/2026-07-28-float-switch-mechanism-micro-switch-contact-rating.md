@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Float Switch Mechanism and Micro Switch Contact Rating
-
 A **float switch mechanism micro switch contact rating** question combines two different things: how a level-responsive mechanism moves a switch, and the electrical limits for the switch’s contacts. The float’s movement may cause a micro switch to change contact state, but that movement does not define the contacts’ allowable electrical load. Likewise, the contact rating does not specify the liquid level at which the float mechanism operates.
 
 This distinction matters because float-switch designs vary. The explanation below applies only when a float-switch design uses a micro switch. Its particular linkage, actuation method, contact arrangement, level threshold, and electrical limits must be established from documentation for the exact device rather than inferred from its appearance.

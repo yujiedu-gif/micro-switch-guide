@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to test a micro switch for continuity and reliable actuation
-
 To learn **how to test a micro switch**, use a de-energized, isolated bench setup and compare the switch’s readings before, during, and after actuation. The sequence matters: a reading taken while the switch is still connected to a circuit may reflect other electrical paths rather than the switch alone. First make the circuit safe and disconnect at least one switch connection. Then identify the terminals from their markings or contact diagram, measure the relevant contact pair at rest and while pressing the actuator, and repeat the cycle to look for inconsistent changes.
 
 This procedure checks continuity and observable actuation behavior under the test conditions. It does not establish how the switch performs under a device’s operating load. Interpret each result in light of the identified contact arrangement; do not assume that every switch uses the same terminal layout or has the same expected state.

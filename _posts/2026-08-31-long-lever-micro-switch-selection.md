@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting a Long-Lever Micro Switch for Motion and Force
-
 A **long lever micro switch** uses an extended actuator to transfer movement from a target to the switch mechanism. Choosing one requires more than checking whether the lever can reach the target: the contact location changes the force and movement at the actuator, and the application must stay within the switch’s documented mechanical limits. Mechanical fit also does not establish electrical-load suitability.
 
 The practical approach is to map the target’s motion, compare that motion with the switch’s specified operating position and allowable actuator movement, and then verify the required release behavior and electrical conditions independently. If a needed limit is not documented, treat it as unknown rather than assuming that the lever’s length makes the application suitable.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Evaluating a Micro Switch for a Board-Level Design
-
 A **microswitch smd** evaluation must establish more than whether a compact switch can sit on a circuit board. The component must have terminals intended for surface-mount attachment, a documented board interface, and an operating window that fits the mechanism. Its electrical ratings and assembly limits must also apply to the actual design conditions.
 
 Treat the drawing, applicable specification, and equipment connection information as evidence to verify, not as interchangeable descriptions. Package dimensions alone do not establish surface-mount compatibility or show whether solder joints are expected to carry actuator loads. Likewise, a rating value is not a universal switching capacity: its stated load and test conditions matter. The checks below separate board fit, mechanical operation, electrical loading, and assembly validation so each constraint can be evaluated on its own.

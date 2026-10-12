@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Finding a trigger-operated switch in a barcode scanner
-
 The **barcode scanner trigger micro switch location** depends on the scanner’s internal mechanism. In designs that use a micro switch, it is generally inside the housing, where movement from the trigger can reach the switch actuator. The visible trigger hinge or pivot is not necessarily where the switch itself is mounted.
 
 To identify the component, trace the mechanical path from the trigger surface through its pivot or any lever or linkage to the point that presses the switch actuator. Visual inspection can suggest which component is involved, but an unpowered continuity check provides a separate way to verify that the identified switch changes electrical state as the trigger moves. Not every barcode scanner uses a micro switch for its trigger, so the trigger’s presence alone does not establish that one is inside.

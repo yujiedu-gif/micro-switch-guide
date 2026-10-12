@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boiler access door micro switch wiring and contact verification
-
 Boiler access door micro switch wiring depends on the switch’s contact arrangement and the boiler’s control design. The switch does not have a universal connection pattern based only on whether the door is open or closed. To trace the path, identify the switch terminals, establish how its actuator moves, and compare the resulting contact change with the boiler’s wiring diagram. The switch contact and the boiler control input are separate parts of that path: the contact changes electrical continuity, while the control circuit determines what that state means.
 
 Work only within the limits of the available diagram and confirmed circuit conditions. Low-voltage control wiring must be distinguished from potentially hazardous line-voltage wiring. Isolate power and verify its absence before handling conductors or using a continuity meter. If the circuit voltage or design is uncertain, stop and refer the work to a qualified technician.

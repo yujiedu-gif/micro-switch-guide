@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Matching and verifying a travel-limit switch on an air compressor
-
 An **air compressor travel limit micro switch replacement** is appropriate only when the compressor uses a micro switch to detect mechanical movement. Some compressor designs use switches for pressure-related functions instead, so first identify what the existing device senses. A travel-limit switch responds to a moving part reaching a position; it is not a substitute for a pressure switch, and this guidance does not cover changing pressure cut-in or cut-out settings.
 
 A reliable match requires more than similar shape. Compare the original switch’s mounting, actuator position and movement, contact configuration, terminal arrangement, and documented electrical ratings. Then verify that the replacement changes state at the intended point in the mechanism’s travel without exceeding its permitted movement. If the wiring, ratings, or safe isolation steps are uncertain, stop and seek qualified service.

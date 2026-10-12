@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Compressor Travel Limit Switch Intermittency: A Safe Verification Guide
-
 An **air compressor travel limit micro switch intermittent operation** concern can arise when a compressor uses a micro switch to signal a mechanism’s travel position. In that design, inconsistent operation may relate to mechanical actuation, the switch contacts, terminals, wiring, or another part of the control circuit. Compressor cycling by itself does not prove that the micro switch has failed.
 
 This guide applies only to compressor designs that use a micro switch as a travel limit device. It outlines a bounded way to check repeatable mechanical movement and switch-state changes. The equipment’s circuit documentation and applicable specifications govern terminal identification, operating points, release points, and test procedures. If safe isolation or the correct test points cannot be established, stop rather than guessing.

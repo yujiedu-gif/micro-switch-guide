@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Accelerator Pedal Position Stop Micro Switch
-
 An **accelerator pedal position stop micro switch not working** is a possible explanation for a pedal-related fault, but the symptom alone does not identify the switch as the cause. First confirm that the specific vehicle’s pedal design includes this switch. Then separate three questions: does the pedal reach and actuate it at the intended position, does the isolated switch change electrical state, and does that state reach the relevant downstream circuit?
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how a particular vehicle’s pedal switch is wired, what its expected states are, or whether a reported symptom is related to it. Use vehicle-specific service information for identification, precautions, test points, and any adjustment.

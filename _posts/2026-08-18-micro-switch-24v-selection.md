@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting a Micro Switch for a 24 V Circuit
-
 A micro switch 24v label does not, by itself, show that the switch is suitable for a particular circuit. Selection also depends on whether the circuit is AC or DC, the current and load being switched, and the conditions under which switching occurs. The relevant ratings must match the intended electrical duty, and the switch must also provide the required circuit interface and mechanical operation.
 
 A useful review begins with the circuit’s actual requirements, then checks those requirements against documentation for the exact switch and equipment. Do not infer an electrical rating from a physical layout or treat a voltage value as a complete measure of switching capability. The following checks help distinguish what a 24 V supply establishes from what still needs verification.

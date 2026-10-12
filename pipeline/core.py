@@ -345,6 +345,9 @@ def nofollow_external_links(markdown: str) -> str:
 def render_post(article: dict[str, Any], publish_date: date, author: str, timezone_offset: str) -> str:
     tags = "\n".join(f"  - {tag}" for tag in article["tags"])
     body = article["body_markdown"].strip()
+    # The post layout renders page.title as the sole H1. Older model outputs
+    # sometimes begin with a second Markdown H1; do not render it twice.
+    body = re.sub(r"\A#\s+[^\n]+\n+(?=\S)", "", body, count=1)
     sources = article.get("sources", [])
     if sources:
         source_lines = ["", "## Sources and references", ""]

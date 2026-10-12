@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a labeling machine’s home-position switch
-
 A **labeling machine home position micro switch not working** can point to more than a failed switch. The target may not move the actuator far enough, the contacts may not change state, the signal may not reach the controller input, or the machine may not recognize that input. Diagnose those parts of the detection path separately rather than assuming the switch is the cause.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. Some labeling-machine designs use one to detect a home position; others do not. Follow the machine’s documentation to identify the actual arrangement and procedure. Isolate power before inspection or contact testing, and use qualified service personnel when live testing or hazardous motion is involved.

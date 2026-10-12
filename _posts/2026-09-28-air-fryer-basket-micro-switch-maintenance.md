@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Safe Air Fryer Basket Micro Switch Maintenance
-
 Air fryer basket micro switch maintenance applies only to appliances whose basket-presence mechanism actually uses a micro switch. Because designs vary, do not assume that every air fryer has this component or that a visible part is the switch. Follow the appliance instructions for identifying user-accessible areas and for cleaning or removing parts.
 
 The maintenance described here is limited to inspecting an accessible actuator area and gently removing visible debris. It is not a way to correct a loose, damaged, misaligned, persistently sticking, or electrically unresponsive switch. Disconnect power and let the appliance cool before inspection. Afterward, verify operation only through the appliance’s normal user procedure. Do not bypass or defeat the basket-sensing mechanism to test it.

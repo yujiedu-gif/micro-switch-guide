@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting SPDT Micro Switch Contacts
-
 A repeatable contact test can help distinguish a failed contact path from a measurement or actuator problem. **Micro switch SPDT contacts troubleshooting** starts by identifying the three terminals, then comparing their electrical states with the actuator at rest and while it is operated. Do not infer terminal identity from wire color, and do not rely on an in-circuit reading when other paths may affect the measurement. Use the switch markings or diagram and its documentation to guide the test. The method below focuses on the switch’s contact paths, not on diagnosing the larger appliance or vehicle circuit.
 
 ## What SPDT contact behavior should you expect?

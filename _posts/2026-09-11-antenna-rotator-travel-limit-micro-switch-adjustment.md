@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Micro Switch for an Antenna Rotator Travel Limit
-
 An **antenna rotator travel limit micro switch adjustment** applies only to rotator designs that use a micro switch in the travel-control circuit. The switch’s trip point is not automatically the same as the antenna’s mechanical endpoint. Adjustment must follow the instructions for the specific rotator, because the travel-setting mechanism and switch arrangement can differ. Numerical travel limits are requirements of the applicable specification sheet and must not be inferred from the component category.
 
 The general approach is to identify which documented setting moves the switch’s actuation point, make only a small change, and verify the result at both travel limits. Do not treat the switch actuator as a mechanical stop. If the design-specific procedure or adjustment point is unclear, do not guess at the setting.

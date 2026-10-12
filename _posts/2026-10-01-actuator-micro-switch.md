@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an Actuator Operates a Micro Switch
-
 An actuator micro switch changes electrical state when external movement is transferred through its actuator to the switch’s internal mechanism. Reliable operation depends not only on reaching the position where switching occurs, but also on allowing the actuator to return and respecting the switch’s movement limits. Actuator travel and the switch’s internal operating travel are related, but they are not the same measurement.
 
 The actuator’s shape, direction of movement, and contact arrangement vary by design. No single travel value or force limit applies to every switch. A useful explanation therefore separates the movement that reaches operation from the additional movement allowed beyond it, and from the return movement that permits the contacts to go back to the unoperated position.

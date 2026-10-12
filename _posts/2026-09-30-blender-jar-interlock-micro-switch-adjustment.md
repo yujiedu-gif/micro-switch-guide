@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Blender Jar Interlock Micro Switch Adjustment
-
 Blender jar interlock micro switch adjustment is a design-specific service question, not a universal fix for a blender that will not start. The relevant question is whether the interlock mechanism operates and releases the switch reliably when the jar is installed and removed as intended. A problem that looks like incorrect switch position may instead come from incomplete jar seating or misalignment elsewhere in the interlock linkage.
 
 Before inspection, unplug the blender. Do not assume that every design provides an adjustable switch, or that a failed start identifies the switch as the cause. Check accessible seating and linkage conditions first. If the appliance’s documentation does not specify an adjustment and a test method for its design, do not improvise one. The available technical information defines switch travel terms but does not establish a blender-specific adjustment procedure, setting, or verification method.

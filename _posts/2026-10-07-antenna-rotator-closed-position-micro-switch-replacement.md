@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Replacing an Antenna Rotator’s Closed-Position Limit Switch
-
 An **antenna rotator closed position micro switch replacement** is appropriate only when the rotator actually uses a micro switch to detect its closed limit. Designs vary, so first confirm the mechanism rather than assuming that a particular switch, wire color, or visible component controls that position. A miniature snap-action switch can change electrical contact state in response to mechanical actuator movement, and such switches are commonly used for position or limit detection. That general function does not establish that a given switch is suitable for a particular rotator.
 
 The replacement should preserve the original point at which the mechanism actuates the closed limit. Before removing anything, distinguish an electrical switching failure from a cam or mounting problem that prevents the switch from being operated. Record the existing wiring and geometry, test the switch with the circuit isolated, and verify mechanical engagement separately. If you cannot secure the equipment or access it safely, stop and use an appropriate service procedure.

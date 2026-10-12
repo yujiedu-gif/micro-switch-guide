@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# What Electrical Durability Means for a Micro Switch
-
 Electrical durability is a condition-specific measure, not a universal promise about how long a component will operate. The phrase **what is micro switch electrical durability** refers to the number of electrical switching operations a micro switch is specified or tested to withstand while switching a stated load under defined conditions. To interpret a cycle count accurately, read it together with the load and test details that produced it.
 
 A cycle count without those details leaves important questions unanswered. The applied voltage, current, load type, operating sequence, switching rate, and environmental or other test conditions can define the scope of a result. Electrical durability is also different from mechanical durability, and neither figure by itself establishes actual service life in a particular application.

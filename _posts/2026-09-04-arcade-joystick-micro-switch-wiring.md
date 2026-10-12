@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Arcade Joystick Micro Switch Wiring: Identify, Connect, and Verify
-
 Arcade joystick micro switch wiring depends on the switch and control-board design, so terminal position and wire color are not reliable guides by themselves. The dependable approach is to identify the contacts from their markings or measured behavior, trace the actual circuit, then verify that joystick movement changes the intended control input. This guide covers a joystick that uses a micro switch; it does not apply to optical or Hall-effect sensors.
 
 A micro switch registers lever movement by changing the state of its contacts. The switch is one part of a circuit between the control input and its corresponding return path. The exact connections vary by design, so use the specific switch markings and control-board documentation where available rather than assuming a standard pinout.

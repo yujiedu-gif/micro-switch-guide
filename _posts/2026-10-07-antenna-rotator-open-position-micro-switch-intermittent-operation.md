@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Checking intermittent operation at an antenna rotator’s open limit
-
 The **antenna rotator open position micro switch intermittent operation** symptom means the rotator does not respond consistently when it reaches, or is expected to reach, its open-position limit. This points to a position-specific fault to investigate, not proof that the switch itself has failed. Rotators differ: some use a micro switch in a limit or control circuit, and others may use a different arrangement. The circuit and switch must be identified from documentation for the equipment being checked.
 
 A micro switch’s electrical state depends on how its actuator is engaged and on the switch’s terminal configuration. Intermittency can therefore come from inconsistent mechanical engagement, an unstable electrical path, or a problem elsewhere in the relevant circuit. A safe, repeatable check separates these possibilities instead of relying on one observation or assuming a common wiring layout.

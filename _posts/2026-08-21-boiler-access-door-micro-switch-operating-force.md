@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting force at a boiler access door switch
-
 The **boiler access door micro switch operating force** is a switch-actuator parameter, not a universal measure of how hard someone must push or pull the boiler door. To interpret it, separate the force applied at the actuator from the force applied at the door, then consider the switch’s return behavior and travel limits. The force path between door and actuator depends on the installed mechanism, so a switch value alone cannot establish the force at the door edge.
 
 Verification should be based on the exact switch documentation and applicable boiler service procedures. The available definitions establish what operating force and related travel terms mean, but do not provide a force-measurement method, numerical limit, or boiler-specific acceptance criterion. Do not treat an assumed value as a service limit or bypass a safety interlock to obtain a reading.

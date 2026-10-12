@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Bagging machine home-position switch symptoms and diagnosis
-
 Bagging machine home position micro switch symptoms can point to an interruption in the mechanism that detects the machine’s designated home position, but they do not prove that the switch has failed. This guide applies only to bagging-machine designs that use a micro switch for home-position detection. The symptom may instead involve how the mechanism reaches the actuator, the switch’s electrical path, or the documented controller input.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. For home detection, the useful diagnostic question is whether the intended movement reliably actuates the switch and produces the expected electrical state change. Machine-specific schematics and procedures determine what that state should be and how it is checked.

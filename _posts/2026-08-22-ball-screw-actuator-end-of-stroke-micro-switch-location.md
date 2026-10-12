@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding End-of-Stroke Switch Placement
-
 The **ball screw actuator end of stroke micro switch location** depends on the actuator’s sensing arrangement, not on a universal mounting point. To identify it, trace the mechanical path: find the switch mounted to the fixed structure, then follow the moving carriage or target as it approaches the travel end and see how it operates the switch actuator. The switch’s electrical transition is a sensing event. It is not, by itself, the actuator’s stopping point or physical travel limit.
 
 A drawing and the switch specifications are needed to establish the actual placement and permitted actuator travel. Those details matter because the actuator can continue moving after the switch changes state. The sections below explain how to distinguish the relevant positions, verify the arrangement on the actual equipment, and recognize faults without treating the switch as a mechanical stop.

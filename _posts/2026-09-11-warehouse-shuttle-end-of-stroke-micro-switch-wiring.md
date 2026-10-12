@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Warehouse shuttle end-of-stroke switch wiring and verification
-
 The **warehouse shuttle end of stroke micro switch wiring** depends on the shuttle’s documented circuit, so terminal labels alone do not establish how the machine is configured. The switch detects a mechanical end-of-travel condition by changing electrical contact state when its actuator moves. To understand the circuit, first identify the contacts by their markings or by testing continuity with the circuit isolated. Then trace the conductors to the control input or other documented control path. Do not assume the shuttle uses a particular voltage, wire color, or stop-control design.
 
 The steps below separate contact testing from checking the shuttle’s control response. They provide a way to follow a documented circuit, not a universal wiring diagram. Site procedures and the shuttle’s applicable electrical documentation govern the work.

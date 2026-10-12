@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing warehouse shuttle end-of-travel signals
-
 Warehouse shuttle end of stroke micro switch symptoms can point to a problem in the switch, its mechanical target, the wiring, or the controller input. A missed stop, an unexpected stop, intermittent indication, or failure to resume is a clue for troubleshooting, not proof that the micro switch has failed. Start by separating two conditions: the shuttle may not physically reach its stop, or it may reach the stop without producing the expected switch state. That distinction directs inspection toward either motion and alignment or the signal path.
 
 A typical diagnostic path runs from a target or cam to the switch actuator and contacts, then through wiring to a controller input. A fault at any point can produce similar behavior. Keep the checks focused on the reported symptom, and do not infer the condition of an unseen component. Use the installed equipment documentation and approved maintenance procedures for the mechanism and electrical circuit.

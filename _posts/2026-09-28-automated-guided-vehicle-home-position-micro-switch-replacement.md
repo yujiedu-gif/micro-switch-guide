@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Replacing a Home-Position Micro Switch on an Automated Guided Vehicle
-
 An **automated guided vehicle home position micro switch replacement** should preserve the mechanical point at which the vehicle’s home signal changes. The switch is only one part of that reference: the target, switch mounting, actuator, wiring, and controller input all affect what the vehicle reports. Replacing a switch without first checking those parts can alter the established trip point or leave the original fault unresolved.
 
 Vehicle designs and service procedures differ. Use the vehicle’s wiring diagram, approved replacement criteria, and documented home-position tolerance for decisions that depend on its specific configuration. Before accessing or testing the switch, isolate the vehicle and secure it against unintended movement. Do not infer terminal assignments, contact logic, adjustment dimensions, or compatibility from appearance alone.

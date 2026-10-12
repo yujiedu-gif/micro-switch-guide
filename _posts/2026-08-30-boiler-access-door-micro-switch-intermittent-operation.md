@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boiler Access Door Micro Switch Intermittent Operation: Safe Checks
-
 Boiler access door micro switch intermittent operation can have more than one cause, and the symptom alone does not establish that the switch has failed. This explanation applies only when the boiler’s access-door design actually uses a micro switch; other door-sensing arrangements may work differently. The useful first distinction is whether the door and actuator reach a consistent position each time, or whether the electrical state or resulting signal is unstable despite apparently similar conditions. External observations can help describe the pattern, but they cannot confirm electrical continuity or prove which component is faulty. Because an access-door interlock may be safety-related, do not bypass it or open electrical compartments to investigate. Record what happens during ordinary, safe observation and arrange qualified service if the problem persists or a safety control is involved.
 
 ## What intermittent operation means for a boiler access door micro switch

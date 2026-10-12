@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding an Air Compressor Guard Interlock
-
 Air compressor guard interlock micro switch wiring depends on the compressor’s specific circuit. A micro switch may serve as a guard-position input: movement of the guard changes the switch contacts, and the control circuit responds according to its design. The terminal labels alone do not reveal what the complete machine will do, which contact state permits operation, or how the interlock is integrated. Use the equipment’s wiring diagram and instructions to identify the intended circuit and behavior. The overview below explains how to read the contact logic and what can, and cannot, be established by checking continuity at the switch.
 
 ## air compressor guard interlock micro switch wiring: what the circuit does

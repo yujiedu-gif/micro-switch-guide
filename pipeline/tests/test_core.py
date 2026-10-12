@@ -48,6 +48,18 @@ class CoreTests(unittest.TestCase):
             rendered,
         )
 
+    def test_render_post_removes_duplicate_leading_h1(self) -> None:
+        article = {
+            "title": "Micro Switch Troubleshooting",
+            "description": "Example description",
+            "category": "Basics",
+            "tags": ["micro switch"],
+            "body_markdown": "# Micro Switch Troubleshooting\n\nIntroduction.\n\n## First check\n\nDetails.",
+        }
+        rendered = render_post(article, __import__("datetime").date(2026, 10, 11), "editorial_team", "+0800")
+        self.assertNotIn("# Micro Switch Troubleshooting", rendered)
+        self.assertIn("Introduction.\n\n## First check", rendered)
+
     def test_keyword_normalization(self) -> None:
         self.assertEqual(normalize_keyword(" MicroSwitch—Wiring "), "micro switch-wiring")
         self.assertEqual(slugify("Micro Switch Wiring"), "micro-switch-wiring")

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft Flap Position Micro Switch Continuity Test
-
 An aircraft flap position micro switch continuity test checks whether the switch’s contacts change state as the switch actuator moves. It is a component-level check, not a test of the complete flap system or a basis for deciding that an aircraft is airworthy. Use the applicable aircraft maintenance instructions for access, electrical isolation, prevention of unintended flap movement, test setup, and acceptance criteria. Do not substitute assumed terminal behavior or generic meter limits for aircraft-specific information.
 
 ## Safety and scope before an aircraft flap position micro switch continuity test

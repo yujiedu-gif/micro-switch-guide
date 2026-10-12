@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a DPDT Micro Switch
-
 A **dpdt micro switch** routes two separate electrical paths through one mechanically actuated changeover mechanism. DPDT means “double-pole, double-throw”: each pole has a common contact that can connect to either of two contacts. To understand what the switch does, follow each pole separately, then verify its terminals and ratings using documentation for the specific device. The DPDT label describes a contact arrangement, not a guaranteed terminal layout or universal switching capacity.
 
 ## What a DPDT micro switch means

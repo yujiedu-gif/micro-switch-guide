@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying travel-limit actuation on an automated guided vehicle
-
 An **automated guided vehicle travel limit micro switch operating force** question is not answered by choosing a force value in isolation. Dependable detection depends on whether the installed mechanism moves the actuator to its operating position, then permits it to return, within the switch’s specified force and travel limits. Vehicle contact geometry, mounting, and available actuator travel all affect that result. The force needed for electrical switching is also distinct from loads involved in stopping or braking the vehicle.
 
 A useful verification follows the complete mechanical sequence: contact with the actuator, movement to the operating point, any remaining permitted travel, and return to the release point. Check that sequence on the installed mechanism against the published data for the actual switch configuration. The terminology below provides a basis for evaluating that path without assuming an uncovered force value or travel rating.

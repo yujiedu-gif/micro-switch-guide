@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a travel-limit micro switch
-
 Ball screw actuator travel limit micro switch failure causes may be mechanical, electrical, or related to how a control system interprets the signal. A switch can fail to change electrical state, but an actuator that misses its limit signal may also have a shifted target, a wiring fault, or an input or controller problem. Diagnosis should trace the signal from the switch through the control path rather than treating every missed limit as a defective component.
 
 This guide concerns a micro switch employed as an actuator travel limit. It does not assume a particular ball screw actuator layout, switch terminal arrangement, or stopping distance. Verify those details against the actual switch and equipment documentation. A limit switch is not automatically a safety-rated stop.

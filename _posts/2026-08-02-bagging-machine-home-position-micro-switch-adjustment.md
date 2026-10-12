@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Micro Switch for a Bagging Machine’s Home Position
-
 A **bagging machine home position micro switch adjustment** applies only when the machine uses a micro switch to detect home. In that design, a moving machine feature contacts the switch actuator, changing the switch state. The controller may then recognize that state as the home signal. Correct adjustment depends on the machine’s documented setup and the switch’s specified actuation limits; there is no universal cam position, lever setting, or adjustment distance.
 
 The physical reference and the controller’s recognition are related but distinct. The mechanism must bring the actuator into the intended position, and the switch state must be recognized by the controller. Verification should therefore cover both the mechanical contact and the resulting input indication, followed by repeated safe approaches to home. Other bagging machines may use a different sensing arrangement, so this procedure does not apply to them.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing and Replacing an Air Compressor Home-Position Switch
-
 An air compressor home position micro switch replacement should begin with fault isolation, not an assumption that the switch has failed. Some compressor mechanisms use a miniature snap-action switch to report a home position: mechanical actuator movement changes an electrical contact state. Other designs may use a different sensing method, so first confirm the component from the equipment documentation and the actual wiring and mechanism.
 
 A missed or inconsistent home-position signal can result from the switch, its actuator or mounting, wiring, or the controller input. Symptoms alone do not identify the failed part. Follow the signal path and check how the mechanism operates before deciding whether replacement is warranted. Keep diagnosis within the equipment’s documented service procedures; this is not a guide to repairing unrelated pump, motor, or pressure-control faults.

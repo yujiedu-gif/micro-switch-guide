@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding operating force at a cassette-door micro switch
-
 The **atm cash cassette door micro switch operating force** is a switch-side quantity, not a general measure of how hard a person must push a door closed. It describes the force applied to the switch actuator to operate its contacts. Door effort and actuator force are related through the door’s contact point and mechanism, but they are not interchangeable measurements.
 
 A meaningful check therefore starts with the applicable switch specification: the stated test point, direction, actuator configuration, and test conditions define what force value means. The available information does not establish a universal force threshold for an ATM cassette door or for any particular switch. The practical task is to distinguish the force at the actuator from the effort at the door, then check whether the mechanism operates consistently without assuming an unsupported pass/fail value.

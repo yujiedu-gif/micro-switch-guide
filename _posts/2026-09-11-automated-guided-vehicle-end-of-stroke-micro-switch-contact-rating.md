@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting an End-of-Stroke Micro Switch Contact Rating
-
 An **automated guided vehicle end of stroke micro switch contact rating** must be read as a limit stated for a particular switch and specified electrical conditions, not as a universal allowance for every circuit. The printed values alone do not establish that the switch is suitable for the load or the way the circuit switches it. Verification requires identifying the fitted switch, understanding the actual circuit and switching duty, and comparing those conditions with the switch’s technical documentation. Designs using the stated micro switch are covered here; other implementations may differ.
 
 ## What the automated guided vehicle end of stroke micro switch contact rating means

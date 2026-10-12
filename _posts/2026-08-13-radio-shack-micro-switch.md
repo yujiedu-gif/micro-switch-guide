@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and testing a switch found in radio equipment
-
 The phrase **radio shack micro switch** is a search term, not proof that a particular branded or standardized part is present. It does not identify a switch’s rating, wiring diagram, or suitability as a replacement. Identify the component from its own markings and physical mechanism, then verify its contact change separately from its ability to carry the radio’s electrical load.
 
 A contact test is useful only within its limits. With power disconnected, compare the relevant contacts at rest and while operating the actuator. Treat the result as evidence of contact behavior under the test conditions, not as confirmation of electrical capacity or interchangeability.

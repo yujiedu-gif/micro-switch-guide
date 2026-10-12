@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying Micro Switch Wiring in an Aircraft Cockpit Push Button
-
 Aircraft cockpit push button micro switch wiring must be identified from the exact switch documentation and the applicable aircraft wiring diagram, not from a generic pinout. This article covers how to distinguish switch contacts from other circuits in a push-button assembly and how to keep verification within the relevant documentation and maintenance procedures. It does not provide aircraft-specific terminal assignments or instructions to alter aircraft wiring.
 
 A micro switch may serve as a contact device actuated by a button where that design is used. However, not every cockpit push button necessarily contains a micro switch, and an assembly may include separate circuitry. Terminal names, circuit roles, and permitted checks therefore depend on the exact component and aircraft documentation.

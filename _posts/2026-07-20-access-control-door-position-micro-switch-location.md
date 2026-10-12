@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying a Door-Position Micro Switch
-
 The **access control door position micro switch location** depends on the mechanism, so there is no universal mounting side or orientation to look for. In a design that uses a mechanical micro switch, the sensing point is not simply the visible switch housing. It is the place where door movement causes a linked surface or target to move the switch actuator far enough to change the switch state.
 
 To identify that point, trace the motion from the door or its linkage, through the moving target and actuator, to the state change. Some door-position designs use magnetic sensing or another mechanism instead of a micro switch, so first establish which sensing principle is present. Visual inspection and observation during normal door travel can help distinguish the parts without assuming a standard layout.

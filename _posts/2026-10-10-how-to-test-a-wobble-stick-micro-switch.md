@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Test a Wobble Stick Micro Switch
-
 A wobble stick micro switch test should separate actuator movement from electrical contact behavior. The sequence matters: first make the switch safe to inspect, then check whether the wobble stick moves and returns, and only afterward measure the documented contact pair in released and actuated states. This helps distinguish a mechanical problem from an electrical one without treating an uncertain reading as a diagnosis.
 
 This procedure evaluates the switch itself, not the complete device circuit. Resistance or continuity checks require the switch to be electrically isolated, with circuit power removed and stored energy addressed. The switch’s terminal arrangement, contact configuration, and permitted actuator travel are design-dependent. Use its markings or documentation for those details; do not infer them from appearance or substitute a universal travel limit.

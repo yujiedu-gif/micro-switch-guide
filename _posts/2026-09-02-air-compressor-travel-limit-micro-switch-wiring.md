@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and verifying an air compressor travel-limit switch
-
 An **air compressor travel limit micro switch wiring** check applies only when the compressor design uses a micro switch to detect a travel endpoint. It does not provide a universal compressor wiring diagram. The switch’s contacts belong to the control path shown in the equipment documentation; they should not be confused with motor power conductors or a pressure-control circuit. Identify the device and its documented role before tracing wires or testing contacts.
 
 Use the equipment circuit diagram to establish what the travel limit is meant to do. Then record the switch’s terminal markings and existing connections before disconnecting anything. Contact labels can help identify terminals, but the exact device schematic and continuity readings are needed to verify them. The method below focuses on checking contact-state changes in released and actuated positions, with power isolated for continuity testing.

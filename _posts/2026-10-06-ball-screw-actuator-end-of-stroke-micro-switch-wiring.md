@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Tracing End-of-Stroke Switch Wiring
-
 Ball screw actuator end of stroke micro switch wiring is traced by following the switch contacts into the documented control circuit, not by assuming a universal actuator diagram. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. At an actuator endpoint, that change may provide a controller input or alter a relay-control path. The switch’s function and circuit role must be confirmed from the actuator and control documentation before connection.
 
 The key distinction is between a low-current endpoint signal and motor power conductors. A micro switch may be part of a control input or a documented control-interruption path; the mechanism alone does not establish which arrangement applies. Trace the contact path, verify its ratings and logic, then check the contact states with power isolated before any functional test.

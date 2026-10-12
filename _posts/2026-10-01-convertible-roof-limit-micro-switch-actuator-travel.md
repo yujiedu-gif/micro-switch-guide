@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying actuator travel at a convertible roof limit
-
 A **convertible roof limit micro switch actuator travel** check asks whether roof movement brings the switch actuator to its operating point at the intended limit, then allows it to release as the roof moves away. The switch does not measure total roof travel. It changes electrical state when its actuator moves through a defined range, and the roof mechanism must be designed to contact it at the correct position.
 
 There is no universal roof-limit position, adjustment value, or circuit behavior to assume. The intended open or closed limit, expected electrical state, permitted actuator movement, and test procedure must come from the applicable system and switch documentation. The distinction matters: a switch may change state even when the roof is not at its specified limit, or the roof may reach a limit without the switch changing state.

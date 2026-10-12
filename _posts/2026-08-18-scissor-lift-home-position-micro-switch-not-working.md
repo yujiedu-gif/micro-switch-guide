@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Scissor Lift Home-Position Signal
-
 The **scissor lift home position micro switch not working** may describe several different problems: the mechanism may not reach the actuator, the switch contacts may not change state, or the signal may fail somewhere in the wiring or controller input. A controller indication alone does not identify which part has failed. A useful diagnosis separates those parts of the signal path and checks them in order.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. For a lift’s home-position signal, that general function does not establish the correct switch, terminal arrangement, or expected state for a particular machine. Use the lift’s service information to identify those details before testing.

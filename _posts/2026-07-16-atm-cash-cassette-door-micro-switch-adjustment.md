@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# ATM Cash Cassette Door Micro Switch Adjustment
-
 An **atm cash cassette door micro switch adjustment** changes the switch’s position only where the cassette design provides an approved adjustment. The switch detects a defined door state through actuator movement; it does not secure the door. Because cassette designs can use different switch locations and actuation arrangements, there is no universal position or adjustment amount. Use the applicable cassette and switch service documentation to identify the intended state, permitted adjustment, actuator limits, and verification procedure before making any change.
 
 The key distinction is between the cassette door’s physical closed position and the point at which the switch changes electrical state. A door that appears closed does not, by itself, establish that the switch is operating as intended. Adjustment should address a documented mechanical-position issue, not compensate for a failed switch or an unknown design.

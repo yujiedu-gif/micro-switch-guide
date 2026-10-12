@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing Boom Lift End-of-Stroke Switch Symptoms
-
 **Boom lift end of stroke micro switch symptoms** can include a failure to register the intended end position, intermittent response, or an indication that does not match the lift’s position. These behaviors are clues, not proof that the switch has failed. The same symptom may arise because the actuator does not reach the switch correctly, an electrical connection is disrupted, or the control system interprets the input differently than expected.
 
 This discussion applies only to boom lifts designed to use a micro switch for end-position detection. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how a particular lift uses its signal or whether the switch directly affects hydraulic motion. The equipment’s service documentation is needed to identify the circuit and expected behavior.

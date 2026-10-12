@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Depalletizer Travel-Limit Switch
-
 A **depalletizer travel limit micro switch not working** is a specific fault only when that machine design uses a micro switch to detect travel limits. Other depalletizers may use different sensing devices, so begin with the machine documentation rather than assuming the sensor type, location, or control logic. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish the ratings, travel limits, terminal arrangement, or suitability of any particular switch.
 
 A useful diagnosis separates two questions: does the mechanism reach and actuate the switch as documented, and does the switch change its electrical state at its terminals? If both are confirmed, trace the signal through the wiring and connectors to the documented control input. Keep the machine’s shutdown, energy-isolation, qualification, and commissioning requirements in force throughout the work. Do not bypass the limit switch or test motion with guards removed.

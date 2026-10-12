@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a 15 A Micro Switch Rating
-
 A **micro switch 15a** marking identifies a current value, but it does not establish that the switch can carry or interrupt 15 A under every circuit condition. The usable rating depends on the electrical conditions and test limits documented for the exact switch. A suitable check therefore matches the rating to the circuit’s voltage, AC or DC supply, load, operating duty, and relevant component limits rather than relying on the current number alone.
 
 The key distinction is between a marked rating and an application’s permissible operating point. Before treating 15 A as applicable, find the exact switch documentation and confirm what conditions its electrical ratings cover. If that information is unavailable or does not match the circuit, suitability remains unresolved.

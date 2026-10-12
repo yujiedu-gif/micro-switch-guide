@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Reading end-of-stroke contacts in a book binding machine
-
 A **book binding machine end of stroke micro switch NO and NC terminals** can indicate whether a mechanism has reached a position only when the machine’s circuit uses that switch for this purpose. The terminal labels describe contact states, not the machine’s programmed meaning for those states. To interpret the signal, trace the mechanism’s motion through the switch and wiring to the control input, then compare the observed contact change with the machine’s documented circuit.
 
 A switch contact change is not, by itself, proof that the machine stopped because of that switch. The controller, wiring, actuator, and mechanical stopping behavior are separate parts of the signal path. Isolated contact verification can check the switch’s behavior, while a position-correlated control observation can help locate a fault elsewhere in the path. Before changing connections or testing, follow applicable deenergization and qualification requirements and consult the machine’s wiring diagram and electrical safety procedures.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding IP67 Protection on a Micro Switch
-
 An **ip67 micro switch** rating describes enclosure protection against specified solid-object and water-ingress exposures. It does not, by itself, establish whether a switch is electrically suitable for a circuit or whether an installed assembly will retain the protection stated for the tested product. Verification requires checking what configuration was assessed and whether it matches the intended installation and exposure.
 
 The IP Code is a classification of degrees of protection provided by enclosures under IEC 60529:1989+A1:1999+A2:2013. Its two characteristic numerals address different kinds of ingress protection. The first concerns access to hazardous parts and ingress of solid foreign objects; the second concerns protection against harmful effects from water ingress. Reading the digits separately helps prevent treating a short code as a complete product specification.

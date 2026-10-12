@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air compressor end-of-stroke switching: function and verification
-
 An **air compressor end of stroke micro switch** is relevant only to compressor designs that explicitly use one to detect a mechanism’s travel limit. It is not a universal compressor component, and its role cannot be inferred from the equipment category alone. In a design that uses this switch, a moving part engages the actuator; the actuator moves far enough for the switch contacts to change electrical state. The compressor’s documented control design determines what happens next.
 
 The switch’s electrical actuation point is not the mechanism’s physical travel limit. Nor is it a pressure-based control point. Understanding those distinctions helps separate an engagement problem from an electrical switching problem or a downstream control fault. Verification should follow the compressor’s instructions and compare both the observed mechanical engagement and electrical state change with the specified control response. Exact travel, wiring, adjustment, and test limits must come from the applicable equipment and component documentation.

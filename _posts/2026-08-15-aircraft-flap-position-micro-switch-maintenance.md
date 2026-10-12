@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft flap position micro switch maintenance
-
 Aircraft flap position micro switch maintenance applies only to installations that use a micro switch to indicate flap position. The switch is one part of an indication path: mechanical contact must move its actuator, and electrical contacts must change state as intended. A problem in either path can result in incorrect indication. The applicable aircraft maintenance instructions define the required configuration, access precautions, test method, flap positions, and limits. This checklist does not supply universal adjustment dimensions, test values, or service intervals.
 
 Before beginning, identify the applicable procedure and establish the specified safe configuration. Follow its isolation steps and precautions for accessing the switch and flap mechanism. If installation instructions or relevant limits are unavailable, do not infer them or adjust the switch based on a generic expectation. The release force is the force or torque to which force on the actuator must be reduced to permit the contacts to return to the unoperated position after operation. That definition does not provide an acceptable value for a particular installation; use the applicable component and aircraft documentation for limits.

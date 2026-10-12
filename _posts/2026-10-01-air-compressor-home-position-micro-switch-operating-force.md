@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding operating force at an air compressor home-position switch
-
 The **air compressor home position micro switch operating force** is the force applied to the switch actuator to operate its contacts. It is not the same as the force applied at a distant cam or lever, the switch’s actuator travel, or the compressor’s air pressure. To assess the mechanism, distinguish what happens at the switch from what happens elsewhere in the linkage, and check both operation and release against applicable service information.
 
 The available definitions describe force and travel terminology, but they do not establish a particular compressor’s switch identity, force rating, linkage arrangement, test method, or permissible travel. Those details remain unknown unless the compressor’s documentation supplies them. A reliable check therefore begins with the documentation for the specific equipment, rather than assumptions about a typical home-position mechanism.

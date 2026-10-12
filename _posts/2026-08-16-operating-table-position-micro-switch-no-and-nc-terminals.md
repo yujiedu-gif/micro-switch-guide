@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding NO and NC Contacts in an Operating Table Position Switch
-
 An **operating table position micro switch NO and NC terminals** indicate which electrical contact is connected to the switch’s common terminal as its actuator changes position. The labels describe contact behavior relative to the switch’s unactuated state; they do not, by themselves, name a table position such as raised, lowered, or tilted.
 
 The distinction matters when identifying contacts or interpreting a position signal. A mechanical feature may operate a switch, and the equipment circuit may use the resulting contact change to represent a position. The switch’s contact state and the table’s reported position are related through that circuit, not interchangeable descriptions.

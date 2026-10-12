@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Measuring Adjustable Desk Open-Position Micro Switch Actuator Travel
-
 The **adjustable desk open position micro switch actuator travel** is the movement of the switch actuator as the desk reaches a position sensed by that switch. It is not the desk frame’s total movement. Keeping those quantities separate helps show whether the actuator reaches its operating point and has the required travel beyond that point without exceeding its permitted limit.
 
 This guide covers desks that use a micro switch to sense an open position. It describes the travel terms, the effect of mounting geometry, and a repeatable way to observe and measure actuator movement. The applicable limits depend on the exact switch’s specifications, which must be consulted for the installed switch.

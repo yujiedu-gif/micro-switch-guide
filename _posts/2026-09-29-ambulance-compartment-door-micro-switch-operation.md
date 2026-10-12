@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an Ambulance Compartment Door Micro Switch Detects Position
-
 An ambulance compartment door micro switch can provide an electrical indication of door position in a design that uses one. The switch responds to mechanical movement: as the door moves, it contacts or releases the switch actuator, which changes an electrical contact state. That state can then be used by the vehicle circuit as a door-status signal, depending on the circuit design.
 
 The switch is not the latch. A door can have a position-sensing switch without the switch securing it, and a switch reading alone does not establish that the door is mechanically latched. The exact relationship among door position, switch state, and any status indication depends on the installed design. Verification therefore starts with the physical movement and actuator, then checks the electrical state against reliable circuit documentation.

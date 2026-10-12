@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Isolating a Postal Scale Platform Micro Switch Fault
-
 A postal scale platform micro switch not working may reflect a fault in the switch, but the switch is only one part of the actuation path. Platform binding, an obstructed or misaligned linkage, loose or damaged wiring, or a problem elsewhere in the scale can produce similar symptoms. A careful diagnosis follows the path from platform movement to the switch’s electrical state and then to the scale’s response.
 
 This process applies only to postal scale designs that use a micro switch to detect platform movement or position. The scale’s documentation must identify the safe access procedure, terminals, and expected electrical behavior. If any of these are unclear, stop rather than guessing or testing an unidentified connection.

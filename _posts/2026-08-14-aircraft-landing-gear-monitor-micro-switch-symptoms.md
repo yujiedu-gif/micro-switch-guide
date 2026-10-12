@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding landing-gear monitor indications
-
 Aircraft landing gear monitor micro switch symptoms can raise concern about a switch, but an indication is a clue, not confirmation of component failure. The same observed behavior may arise from mechanical actuation, wiring, power, or indication circuitry. Also, not every landing-gear monitor uses a micro switch in the way a particular diagnosis assumes. The aircraft’s design and approved maintenance documentation determine what the indication means and which checks apply.
 
 This distinction matters because a monitor reports the state of its sensing and indication path, not necessarily the physical gear position by itself. Do not use an abnormal display alone to conclude that the gear is up, down, locked, or unsafe. Treat unexpected or changing indications as a reason to follow the applicable aircraft procedures and refer troubleshooting to qualified maintenance personnel. The points below describe general fault paths, not aircraft-specific operating or maintenance instructions.

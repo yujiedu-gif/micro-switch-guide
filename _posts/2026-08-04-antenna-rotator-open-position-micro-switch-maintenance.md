@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Antenna rotator open-limit switch maintenance
-
 The **antenna rotator open position micro switch maintenance** task is to inspect and verify the switch that changes electrical state when a particular rotator reaches its specified open limit, if that design uses one. The check must follow the equipment’s documented mechanism and circuit; neither the actuator arrangement nor the wiring logic can be assumed from the switch’s appearance. A mechanical stop and an electrical state change are related but distinct: the mechanism reaches its limit, and the switch responds when its actuator is engaged.
 
 Use the equipment documentation to identify the switch, the lever or other actuator, the relevant terminals, and the intended limit behavior. Then inspect the mechanism and check for a repeatable electrical transition at the switch terminals. This guide addresses the open-position limit only, not general antenna or rotator upkeep.

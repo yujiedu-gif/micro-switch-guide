@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting a Landing Gear Monitor Switch Rating
-
 An **aircraft landing gear monitor micro switch contact rating** is meaningful only when read alongside the electrical conditions for which that rating is specified. It is not, by itself, proof that a switch is suitable for a particular aircraft circuit or installation. The relevant comparison is between the contact’s documented duty in the actual circuit and the conditions attached to the stated rating.
 
 A monitoring circuit may use a contact to change an indication signal, but the name of the monitored equipment does not establish what electrical load the contact switches. The circuit documentation must identify that duty. If the load type, contact voltage, current, or other required conditions are not documented, applicability remains unresolved rather than something that can be inferred from a generic rating.

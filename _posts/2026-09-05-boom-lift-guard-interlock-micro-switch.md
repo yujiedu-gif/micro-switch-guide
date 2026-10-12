@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a boom lift guard interlock micro switch works
-
 A **boom lift guard interlock micro switch** can provide a position-sensing input in a boom lift design that uses this component for the guard interlock. The switch responds to guard movement, but its contact state alone does not establish what the machine will do. The intended response depends on the equipment’s documented control circuit and design.
 
 Understanding the function means tracing two linked stages: how the guard moves the switch actuator, and how the machine uses the resulting contact state. The distinction matters because detecting that a guard has moved is not necessarily the same as directly controlling every boom-lift motion. The interlock’s specific purpose and response must be established from the documentation for that machine.

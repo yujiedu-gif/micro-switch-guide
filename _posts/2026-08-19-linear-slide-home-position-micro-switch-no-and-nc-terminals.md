@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Reading NO and NC terminals for a slide home signal
-
 A **linear slide home position micro switch NO and NC terminals** can provide an electrical indication of slide position, but neither terminal means “home” by itself. The meaning depends on the switch’s unactuated state, how the slide moves its actuator, and how the circuit uses the contact. Separate the switch’s electrical condition from the slide’s mechanical location, then verify the installed behavior against the exact switch and equipment documentation.
 
 The checks below explain the contact states, trace how slide movement can change them, and give a bounded method for verifying the transfer. Follow applicable deenergization and qualification requirements. Use the documented wiring diagram, terminal markings, circuit function, and permissible load for the exact switch and equipment; a generic terminal layout is not enough to establish applicability.

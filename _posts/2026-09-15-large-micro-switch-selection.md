@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to assess a large micro switch for fit and performance
-
 A **large micro switch** is a relative description of physical size, not a standardized category with a universal size threshold. The label alone does not tell you whether a switch will fit a mounting location or meet an application’s operating and electrical requirements. To assess suitability, compare the complete physical envelope with the available space, then verify actuator movement and each required specification independently. Housing dimensions, mounting pattern, actuator shape, and terminal clearance are separate considerations. A larger body also does not establish higher current capacity, greater operating force, more travel, or longer service life. Use dimensioned drawings and applicable specification information to evaluate those factors rather than inferring them from appearance.
 
 ## What does large micro switch mean?

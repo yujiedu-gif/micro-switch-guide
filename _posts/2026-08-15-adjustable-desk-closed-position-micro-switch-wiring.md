@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Wiring a Micro Switch for an Adjustable Desk’s Closed Position
-
 **Adjustable desk closed position micro switch wiring** is a way to provide a controller with an endpoint signal when a desk reaches its closed position, if that desk design uses a micro switch for this purpose. The switch’s COM, NO, and NC labels identify contact terminals; they do not, by themselves, specify which terminals belong in a particular desk circuit. That choice depends on the controller’s documented input logic and on the contact state observed at rest and when the actuator is operated.
 
 Treat the switch circuit as a position signal, not as a presumed motor-power connection. Desk designs differ, so there is no universal wiring diagram or guaranteed terminal choice. Before accessing or testing the circuit, isolate power and make sure unexpected desk movement is prevented. Then verify the switch’s contact behavior while unpowered and compare it with the desk’s controller documentation before making or interpreting a connection.

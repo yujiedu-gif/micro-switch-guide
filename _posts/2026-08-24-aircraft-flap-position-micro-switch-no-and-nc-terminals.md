@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting NO and NC Contacts in a Flap-Position Circuit
-
 An **aircraft flap position micro switch NO and NC terminals** describe contact relationships inside a switch, not flap positions by themselves. The switch responds to mechanical actuator movement; the installation and aircraft circuit determine which actuator state corresponds to a particular flap position or indication. A terminal marked NO is therefore not automatically a flap-up contact, and NC is not automatically flap-down.
 
 To interpret the signal, first establish what the switch contacts do when its actuator is unoperated and when it is operated. Then use the aircraft-specific wiring diagram and maintenance documentation to connect those contact states to the indicated flap states. This distinction matters because switch behavior, linkage movement, wiring, and indication logic are separate parts of the signal path.

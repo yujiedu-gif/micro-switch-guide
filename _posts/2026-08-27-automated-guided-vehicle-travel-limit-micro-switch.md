@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding AGV travel-limit detection
-
 An **automated guided vehicle travel limit micro switch** can detect a travel boundary when the vehicle’s design assigns a micro switch that function. In that arrangement, a physical feature at the boundary moves the switch actuator, the switch changes electrical state, and the vehicle control system receives an input it can use to initiate a response. The switch detects an actuation condition; it does not, by itself, establish where the vehicle will finally stop.
 
 The distinction matters because a travel limit is not the same as route guidance, obstacle sensing, or end-of-route logic. Those functions may use other mechanisms, and the evidence here does not establish that every automated guided vehicle uses a micro switch for travel-limit detection. Verification therefore has to follow the installed detection path and applicable equipment procedure, rather than assume a universal design or travel value.

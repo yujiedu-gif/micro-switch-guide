@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing Sealing Suitability in a Micro Switch
-
 A **hermetically sealed micro switch** is a micro switch described as having a boundary intended to limit environmental ingress. The phrase alone does not establish how the boundary is constructed, what exposure it can withstand, or whether it suits a particular application. Those conclusions require evidence about the complete switch, its test conditions, and the relevant environmental and electrical limits.
 
 Evaluate the enclosure as a system rather than judging it by appearance or material. The case joint, actuator interface, and electrical terminals are potential paths to examine. Then compare documented test evidence with the actual exposure and operating requirements. Sealing and switching performance are separate questions: evidence for one does not establish the other.

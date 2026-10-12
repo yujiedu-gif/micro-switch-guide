@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Locating a micro switch for an automated guided vehicle travel limit
-
 The **automated guided vehicle travel limit micro switch location** matters only in vehicle designs that use a micro switch as a travel-limit input. In that arrangement, a moving feature on the vehicle engages the switch actuator, and the resulting electrical transition provides a position input to the control system. The switch does not, by itself, stop the vehicle.
 
 A useful location must account for the full chain: the moving feature reaches the actuator, the contacts change state, the control system responds, and the vehicle comes to rest. The trip point and the final stopping point are therefore different positions. The vehicle’s safety architecture and documentation govern how this input is used; switch placement alone cannot establish that the travel limit is safe.

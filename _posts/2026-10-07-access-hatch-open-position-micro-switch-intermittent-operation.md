@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an intermittent open-position hatch signal
-
 An **access hatch open position micro switch intermittent operation** symptom means the electrical signal changes unexpectedly while the hatch is meant to remain fully open. The cause may be inconsistent mechanical engagement, instability at the switch contacts, or a connection that responds to movement. These possibilities need to be checked separately rather than treated as proof that the switch itself has failed.
 
 First establish the signal state the circuit is designed to show when this particular hatch is fully open. Circuit designs can use different contact logic, so do not assume that an open hatch must produce a specific continuity reading. Use the circuit documentation to identify the expected state, then compare it with what is measured during repeatable checks.

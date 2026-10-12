@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Checking Micro Switch Mounting Fit
-
 The **micro switch mounting holes** help locate and retain a switch, but matching holes alone do not prove that the assembly will work correctly. A reliable fit check separates the hole pattern from the fasteners, surrounding clearance, and actuator alignment. Measure the specific switch, compare it with a dimensioned drawing or the mounting support, and check operation after fastening. Do not assume that similar-looking switches share dimensions or installation limits. If the documentation does not provide needed measurements or fastening guidance, treat them as unknown rather than guessing.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general use does not establish that every design suits a particular mounting arrangement. This guide focuses on physical fit and post-installation verification, not electrical ratings, wiring, or application suitability.

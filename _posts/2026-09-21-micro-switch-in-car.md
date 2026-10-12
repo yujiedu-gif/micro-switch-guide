@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and verifying a micro switch in a car
-
 A **micro switch in car** controls is a small, mechanically actuated electrical switch that changes contact state when its actuator moves. Its presence and purpose depend on the vehicle’s design. A control that appears to report a position or action does not necessarily use a micro switch; it may use another switch type or sensing method. To identify one reliably, confirm its location and role in vehicle-specific service information before testing it. Then inspect its mechanical operation and wiring, and verify contact behavior under the prescribed conditions. These steps can help distinguish a switch problem from a wiring, connector, or control-module issue without assuming that all vehicles use the same arrangement.
 
 ## What a micro switch in car controls actually does

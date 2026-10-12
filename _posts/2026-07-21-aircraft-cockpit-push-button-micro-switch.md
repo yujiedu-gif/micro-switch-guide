@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How an Aircraft Cockpit Push Button Micro Switch Operates
-
 An aircraft cockpit push button micro switch, when a design uses one, converts movement of a button into a change in electrical contact state. The button is the visible control, but it may act through a plunger, linkage, or other mechanism before reaching the switch actuator. The switch’s mechanical operating point and its electrical behavior must be understood from the documentation for that component and installation. They are not universal across cockpit controls.
 
 This distinction matters during evaluation: movement at the button does not by itself establish that the switch has operated, and a contact-level observation does not establish that the aircraft system responds correctly. The relevant path runs from button movement, through the installed mechanism, to switch actuation and the contact arrangement shown in the applicable diagram. Aircraft maintenance instructions and approved procedures govern any inspection or test.

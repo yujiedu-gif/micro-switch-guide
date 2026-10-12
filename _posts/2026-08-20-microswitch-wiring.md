@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identify and verify micro switch terminals
-
 Microswitch wiring begins with identifying the terminals from the switch’s markings or printed schematic, then checking the contact paths before connecting circuit wires. The terminal labels describe electrical states, not assumed wire colors or a universal pin layout. This guide covers terminal identification and basic continuity verification; it does not establish that any particular switch is suitable for an application.
 
 Disconnect power before wiring or continuity testing. A continuity reading is meaningful only when the switch is isolated from powered circuits and other connections that could affect the result. Check the device documentation for its actual terminal arrangement and electrical ratings before making a connection.

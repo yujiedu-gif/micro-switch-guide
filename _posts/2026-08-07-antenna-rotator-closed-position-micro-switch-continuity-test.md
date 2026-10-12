@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Antenna Rotator Closed-Position Micro Switch
-
 An **antenna rotator closed position micro switch continuity test** checks whether the switch contacts change electrical state when its actuator moves, and whether the installed mechanism engages that actuator at the closed-position stop. These are separate checks: a switch may change state when pressed by hand yet fail to change state at the mechanism’s closed position.
 
 Keep power isolated during resistance or continuity measurements. Identify the contacts from the switch markings or circuit documentation, compare readings with the actuator released and pressed, then verify the installed action at the stop. A continuity result by itself does not establish that the position is adjusted correctly or that the circuit operates correctly while powered.

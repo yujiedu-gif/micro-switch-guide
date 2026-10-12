@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boiler Access Door Micro Switch Adjustment
-
 Boiler access door micro switch adjustment should begin with inspection, not with forcing the switch actuator. The door, the part that contacts the actuator, the switch body, and the mounting points form a mechanical arrangement that varies by boiler design. The available evidence does not establish a universal layout or adjustment procedure.
 
 The goal is to determine whether the door closes as intended and operates and releases the switch within documented limits. A positional adjustment may be allowed on some assemblies; an internal adjustment must not be assumed. Use the boiler and switch instructions for the specific assembly. If those instructions do not describe an approved adjustment or a suitable verification method, stop and seek qualified service.

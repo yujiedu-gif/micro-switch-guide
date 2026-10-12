@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting an End-of-Stroke Micro Switch on a Book Binding Machine
-
 A **book binding machine end of stroke micro switch troubleshooting** check should separate two possibilities: machine motion may not be reaching or releasing the switch actuator, or the switch may not be changing its electrical contact state. A third possibility is that the switch changes state but the signal does not reach or affect the downstream control as intended. These are different fault paths, so check them separately rather than replacing the switch based on a symptom alone.
 
 This workflow applies only to machines whose end-of-stroke mechanism uses a micro switch. Symptoms to investigate include failure to stop at the intended point, stopping early, and inconsistent stopping. Before accessing the mechanism, follow the machine’s documented isolation procedure. Do not bypass the switch or test exposed, energized wiring. Use the machine documentation to establish the intended end-of-travel behavior and any specified inspection or service method. If those instructions are unavailable, treat the appropriate test method and stopping position as unresolved rather than guessing.

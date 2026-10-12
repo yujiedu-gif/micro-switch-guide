@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Toaster Carriage and Micro Switch Travel
-
 Toaster carriage micro switch actuator travel describes movement at the switch, not the full movement of the carriage. In designs that use a micro switch, the carriage may move against the actuator directly or transmit movement through a mechanical path. The relationship depends on that mechanism; carriage displacement and actuator displacement are not interchangeable.
 
 Understanding the distinction helps keep observations within their limits. Switch terminology describes the actuator’s positions and movement, while carriage position describes a separate part of the mechanism. Without technical documentation, a visible carriage position, a sound, or a measured carriage distance does not establish the switch’s operating travel or whether its travel is within specification.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding “ex ar” and micro switch protection
-
 The phrase **micro switch ex ar** does not, by itself, identify a complete explosion-protection designation or establish that a switch is approved for a particular hazardous location. “Ex ar” should be treated here as a search phrase, not decoded as a verified or universally standardized marking. The exact marking on the device and its supporting documentation are what matter.
 
 This distinction is important because a switch that appears sealed, or that has an enclosure protection rating, is not thereby shown to be suitable for an explosive atmosphere. Verification requires matching the device’s complete protection information to the classified location and the conditions of installation and operation. If those details cannot be confirmed, do not infer protection from a partial phrase or appearance.

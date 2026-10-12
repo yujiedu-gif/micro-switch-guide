@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Adjustable Desk Travel-Limit Micro Switch
-
 An **adjustable desk travel limit micro switch continuity test** checks whether the switch contacts change electrical state when its actuator moves between released and operated positions. It can help distinguish a contact-state problem from a travel-limit mechanism that does not reach or operate the switch. The test alone does not establish that the controller, motor, or complete desk travel-limit system works.
 
 Before interpreting a meter reading, identify the switch’s contact arrangement and terminal markings. A beep is not a universal pass result: what matters is whether the relevant contact pair behaves as expected in each state. Keep the desk isolated from power during continuity measurements, and follow the applicable service guidance.

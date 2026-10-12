@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing a Computer Mouse Button Micro Switch
-
 A **computer mouse button micro switch continuity test** compares the switch’s electrical state with its actuator released and pressed. That comparison is more useful than a single meter reading: it can show whether the contacts change state, while helping separate a switch problem from an issue with the button mechanism or the surrounding circuit. The test must be performed with the mouse disconnected from its power source. A continuity measurement on an energized circuit is not appropriate.
 
 The reading also depends on the switch’s contact arrangement and on whether it has been isolated from other circuit paths. Identify the relevant terminals from the exact switch markings or schematic, and interpret the result in that context. If readings are unexpected, verify the setup and physical actuation before concluding that the switch itself has failed.

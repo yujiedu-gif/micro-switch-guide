@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Micro Switch Use: Operation and Roles
-
 Micro switch use means employing a mechanically actuated switch to change an electrical contact state in response to movement. A miniature snap-action switch can support position or limit detection, but the switch’s action is distinct from the larger system function that depends on it. The actuator responds to a physical trigger; the contacts change state; and the surrounding circuit determines what that change means for equipment operation. Understanding this sequence helps distinguish a switch’s basic operation from its role in a particular mechanism or control system.
 
 ## What micro switch use means

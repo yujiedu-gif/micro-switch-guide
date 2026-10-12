@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft flap position micro switch actuator travel
-
 In flap-position designs that use a micro switch, actuator travel determines when the switch changes electrical state, but it does not by itself define the correct aircraft adjustment. The key distinction is between movement before contact transfer, the operating point where transfer occurs, movement beyond that point, and the point at which the switch releases. These are related but different events. The aircraft flap position micro switch actuator travel must be checked against the applicable aircraft-specific maintenance data, not inferred from a switch travel term alone.
 
 This discussion is limited to systems whose design actually uses a micro switch for flap-position sensing. It does not establish that every aircraft uses this arrangement, nor does it supply universal travel dimensions or adjustment limits.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Reading NO and NC Contacts on an Access Hatch
-
 The **access hatch closed position micro switch NO and NC terminals** do not identify the hatch’s position by themselves. NO and NC describe contact states in relation to the switch actuator’s unactuated state. To determine what a hatch signal means, trace how the hatch moves the actuator, identify which contact path the circuit uses, and verify the actual switch state at the relevant hatch positions.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how any particular hatch is wired. The installation determines whether closing the hatch presses or releases the actuator, and the circuit determines which contact state represents a closed-position indication. The steps below keep those questions separate.

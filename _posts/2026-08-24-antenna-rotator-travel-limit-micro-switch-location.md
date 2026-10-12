@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Locating a Travel-Limit Micro Switch in an Antenna Rotator
-
 The **antenna rotator travel limit micro switch location** depends on the mechanism’s layout. In general, the switch belongs to the internal path that detects rotor movement at a selected limit. A moving drive part, such as a cam or lever, reaches the switch actuator; the switch then changes contact state, and the mechanism may interrupt motor operation. The switch itself does not have to sit at the point where the moving part touches it, or at the physical end of travel.
 
 To understand placement, distinguish three locations: where the switch is fixed, where the moving mechanism actuates it, and where travel is ultimately limited. Their relationship can vary. The enclosure’s shape or an opening alone is not enough to identify the switch or establish how it operates. A careful inspection traces the mechanical linkage and verifies function without assuming a particular actuator shape, electrical logic, or terminal arrangement.

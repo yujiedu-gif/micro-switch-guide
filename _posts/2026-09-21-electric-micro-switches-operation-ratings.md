@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How Electric Micro Switches Operate
-
 Electric micro switches use mechanical movement to change an electrical contact state. Understanding how **electric micro switches** transfer contacts requires following actuator travel through an operating point and a separate release point. This matters because a switch does not necessarily reset at the same position where it first changes state. Terminal labels and ratings also need to be read in context: the contact arrangement identifies possible circuit paths, while electrical ratings apply under specified load and test conditions.
 
 The sections below explain the snap-action mechanism, the relationship between travel and reset, and how to interpret contact states. They also distinguish electrical ratings from mechanical operating parameters and outline a bounded way to verify switching behavior with the circuit isolated. No universal terminal layout, rating, or compatibility can be assumed without checking the particular device’s markings or documentation.

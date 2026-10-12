@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding a 4 Way Micro Switch
-
 A **4 way micro switch** is not a universally precise description of a switch’s internal contacts. “Four-way” may refer to a circuit function or to a particular contact arrangement, but the name alone does not establish how many terminals, poles, or throws the device has. To identify the contacts, use the switch’s own markings and schematic, then compare them with the switch’s behavior in an unpowered continuity check.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement. That makes this type of switch commonly useful for position or limit detection, but it does not resolve what “four-way” means for a particular device. The reliable task is to identify the documented terminals and verify which contacts change between the unoperated and operated conditions.

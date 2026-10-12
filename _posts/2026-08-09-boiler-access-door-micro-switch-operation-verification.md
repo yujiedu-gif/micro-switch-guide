@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boiler Access Door Micro Switch: Operation and Verification
-
 A **boiler access door micro switch** can provide a position signal when a boiler design uses one to detect whether an access door has moved. The switch responds to mechanical actuator movement by changing an electrical contact state. That change may be used by a control circuit, but it does not, by itself, prove what the boiler controls do in response.
 
 The arrangement is specific to the equipment. The door may act on a switch directly, move a lever, or operate a linkage. The switch’s position, direction of actuation, contact connections, and role in any interlock must be confirmed from the boiler’s documentation, not inferred from its appearance. This guide explains the general mechanism and sets limits on what a safe operation check can establish.

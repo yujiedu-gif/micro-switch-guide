@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Reading NO and NC terminals on a boom lift switch
-
 The **boom lift home position micro switch NO and NC terminals** describe electrical contact paths relative to the switch’s unactuated mechanical state. They do not, by themselves, identify whether a boom is at home. The installed switch’s actuator position, mounting orientation, contact arrangement, and machine wiring determine what a terminal state means for the equipment.
 
 A contact check can help establish how a particular switch changes state, but it is different from diagnosing the controller’s interpretation of that state. Before testing, confirm the exact switch diagram and the equipment’s approved procedure. Do not infer terminal functions or machine logic from a generic layout.

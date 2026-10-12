@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting an Access Hatch Open-Position Micro Switch
-
 An access hatch open position micro switch adjustment should make the switch change state at the hatch’s intended fully open position, without forcing the actuator beyond its specified travel or force limits. The open-position indication is a distinct target: it must be checked separately from the hatch’s closed-position state. A switch that changes state during partial travel, or only when the hatch is pressed against an actuator, may not provide a reliable open indication.
 
 Before changing anything, identify the switch actuator, the hatch surface or cam that engages it, and the electrical state expected when the hatch is fully open. Record what happens at both endpoints using the installation’s actual test method. The available evidence does not establish universal wiring, terminal identities, or a single testing method, so use the documentation and procedure for the installed system.

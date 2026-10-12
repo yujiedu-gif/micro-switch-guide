@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Micro Switch Detects the End of a Bagging Machine’s Stroke
-
 A **bagging machine end of stroke micro switch** detects travel only in machine designs that use a micro switch for that purpose. The moving mechanism contacts the switch actuator; actuator movement changes the switch’s electrical contact state; and that state can be presented as an input to the controller. The switch reports a position event. It does not, by itself, determine what the machine does next.
 
 Understanding this sequence means distinguishing the switch’s operating point from the machine’s physical endpoint and stopping distance. It also means treating switch operation, controller-input recognition, and machine stopping performance as separate things to verify. The specific machine layout and switch documentation determine how those relationships apply; there is no universal mounting position or adjustment for every bagging machine.

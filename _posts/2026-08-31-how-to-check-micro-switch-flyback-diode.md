@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Checking a Flyback Diode Used With a Micro Switch
-
 How to check micro switch flyback diode depends first on the circuit’s wiring, not on a single meter reading. A diode connected across an inductive load has a different relationship to the switch contacts than a diode connected across those contacts. Identify the actual connection before deciding what a measurement means.
 
 This procedure applies only if the micro switch controls an inductive load and the circuit uses a flyback diode. The supplied definition of snap action describes contact movement speed relative to the actuating mechanism; it does not establish whether a diode is present or how that diode is wired. Do not infer diode orientation, ratings, or circuit behavior from the switch name or appearance alone.

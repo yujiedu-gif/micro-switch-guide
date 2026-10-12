@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a guard-interlock micro switch on a ball screw actuator
-
 **Ball screw actuator guard interlock micro switch adjustment** should be treated as a machine-specific maintenance task, not as a way to make a guard fit by forcing a switch. The guard defines a boundary around moving equipment. Before accessing its switch or changing the mounting position, follow the machine’s energy-control procedure and prevent unexpected actuator movement. Then inspect the complete actuation path, make only a supported adjustment, and verify the intended interlock response with the approved test procedure.
 
 The available definitions explain switch travel terms, but they do not establish a particular switch’s operating point, allowable travel, wiring, or test method. Use the documentation and specifications for the installed equipment. If those are unavailable, or if the safety behavior is uncertain, do not guess at an adjustment.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Access hatch travel limit micro switch operating force
-
 An access hatch travel limit micro switch operating force is a component-specific requirement, not the force a person feels while opening or closing the hatch. The distinction matters because hatch motion reaches a small actuator through a particular contact point and direction. A hatch may feel resistant without delivering the force the switch needs, or it may move easily while its linkage applies force in a way that does not produce the intended actuator travel.
 
 Verification therefore involves more than judging resistance by hand. The switch must reach its operating position, change state, and release as the hatch returns, while remaining within the travel limits stated for that particular device. The specification sheet, not a general assumption about micro switches, establishes the applicable force and travel requirements.

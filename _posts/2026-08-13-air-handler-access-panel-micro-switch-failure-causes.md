@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Air Handler Access-Panel Micro Switch
-
 The **air handler access panel micro switch failure causes** can include internal contact damage, contamination, or a damaged actuator, but symptoms alone do not establish that the switch has failed. A panel that does not seat correctly, loose or damaged wiring, or a downstream control fault can produce a similar problem. The useful distinction is whether the switch is being actuated correctly, whether its contacts change state as expected, and whether the rest of the circuit carries that state onward.
 
 This diagnostic framework applies only to air handlers whose access-panel interlock uses a micro switch. Designs differ, so do not assume that every air handler has this arrangement or that its switch uses a particular contact configuration. Keep the interlock in place: do not bypass it to test or operate the equipment. Inspection and continuity checks should be performed with power isolated; energized measurements and repairs belong with a qualified technician.

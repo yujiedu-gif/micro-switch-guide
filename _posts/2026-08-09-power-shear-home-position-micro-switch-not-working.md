@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Power Shear Home-Position Micro Switch
-
 A **power shear home position micro switch not working** can describe more than one fault. The switch may fail to change electrical state, the actuator may not reach or release it at the intended point, or the switch may change state while the control system fails to recognize the signal. Those conditions require different checks, so a home-position symptom alone does not establish that the switch has failed.
 
 This diagnosis applies only to a power shear whose home-position system uses a micro switch. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. The shear’s home behavior, signal logic, and setup criteria are machine-specific. Use the machine’s service documentation for its test procedure, terminal identification, clearances, adjustment, and calibration requirements.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Industrial Saw Home-Position Signal
-
 An **industrial saw home position micro switch not working** is one possible explanation for a saw that does not register its home position, but the symptom alone does not identify the fault. The machine may use a different sensing arrangement, the mechanism may fail to actuate a functioning switch, or the signal may be lost elsewhere in the circuit. Confirm the saw’s design before testing a component.
 
 A miniature snap-action switch changes an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. In this diagnosis, separate the physical actuation path from the switch’s electrical state change and the signal path to the control system. Follow the saw’s documentation, and do not bypass the switch or defeat an interlock.

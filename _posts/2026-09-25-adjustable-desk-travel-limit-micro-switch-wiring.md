@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Wiring a Micro Switch as an Adjustable Desk Travel Limit
-
 An adjustable desk travel limit micro switch wiring setup depends on the desk controller, not on a universal wire-color or terminal pattern. In designs that use a discrete switch, the switch can provide a position-triggered contact signal to a controller. The controller’s documented input, required contact logic, and electrical ratings determine whether and how that signal can be connected.
 
 Do not assume the micro switch carries motor current. A switch suitable for signaling a controller input is not automatically suitable for switching a desk motor. Before wiring, identify the controller interface and switch terminals from their markings and documentation. If the interface, ratings, or required contact behavior are unknown, stop rather than guessing.

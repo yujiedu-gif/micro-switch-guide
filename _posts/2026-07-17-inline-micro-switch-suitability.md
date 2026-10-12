@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to assess an inline micro switch for a circuit
-
 An **inline micro switch** is described by where it sits in a circuit, not by a universal construction or contact arrangement. To assess its suitability, first identify whether it interrupts a load path or provides a signal or control input. Then check the contact behavior and compare the circuit’s electrical conditions with ratings documented for the specific switch.
 
 The word “inline” alone does not establish how the switch is wired, what it controls, or how often it can operate. Suitability depends on the circuit role, the intended open and closed states, and the rating conditions that apply to the actual load.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Barcode Scanner Trigger Micro Switch Wiring: Contacts and Verification
-
 **Barcode scanner trigger micro switch wiring** depends on the scanner’s own circuit, not on a universal pinout. A micro switch can act as a mechanical contact that changes the state of a trigger circuit when its actuator moves. To trace the connection, first identify the switch contacts in both actuator states, then use the scanner’s wiring documentation or board markings to locate its trigger input and return path. Do not infer connector pins, voltage, polarity, or trigger logic from the switch terminals alone.
 
 The steps below separate contact identification from scanner-circuit mapping and powered functional checks. Some barcode scanners may use other trigger mechanisms or signal circuits, so the presence of a micro switch and the way it connects must be confirmed for the specific device.

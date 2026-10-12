@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting an Air Compressor Travel-Limit Switch
-
 An **air compressor travel limit micro switch adjustment** applies only to compressor designs that use a micro switch to detect a mechanical travel limit. It changes when the switch responds to the moving mechanism; it is not a method for setting compressor pressure or repairing an unrelated operating fault. The equipment’s instructions and applicable specifications govern whether adjustment is permitted and how it must be done. If those instructions are unavailable, or the switch, wiring, or mounting is damaged or unclear, stop and seek qualified service.
 
 ## What an air compressor travel limit micro switch adjustment changes

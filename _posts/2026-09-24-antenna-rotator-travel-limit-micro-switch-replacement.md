@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Replacing and verifying a travel-limit switch in an antenna rotator
-
 An **antenna rotator travel limit micro switch replacement** is not just a matter of transferring wires to a similar-looking part. The switch must match the electrical contact arrangement and the mechanical way the rotator’s trip mechanism operates it. First determine whether the switch has actually failed; a misadjusted cam, damaged wiring, or control fault can produce similar symptoms. Rotator limit mechanisms and wiring arrangements vary, and not every rotator uses the same switch.
 
 The procedure below focuses on identifying the fault, preserving the original setup, and checking both configured travel endpoints. It does not establish a replacement part for a particular rotator. Device-specific travel limits and other component requirements must come from the applicable specification, not from assumptions about the component category.

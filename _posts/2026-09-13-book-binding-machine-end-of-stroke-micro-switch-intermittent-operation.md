@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing intermittent end-of-stroke detection
-
 Intermittent end-position detection can result from inconsistent mechanical movement, a switch contact problem, a wiring fault, or an issue farther along the input path. The phrase **book binding machine end of stroke micro switch intermittent operation** describes a symptom to investigate, not proof that the switch itself has failed. This guidance applies only to a machine whose end-of-stroke mechanism uses a micro switch.
 
 A useful diagnosis separates the physical movement of the switch actuator from the electrical state of its contacts. First check whether the mechanism consistently actuates and releases the switch. Then test the switch contacts in isolation, following the machine’s circuit documentation. Only after those checks should you trace the wiring and controller input. Stop if you cannot establish safe access or identify the circuit with confidence.

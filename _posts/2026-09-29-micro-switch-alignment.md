@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing and Verifying Micro Switch Alignment
-
 Micro switch alignment is a relationship among the switch body, its actuator, and the moving target that operates it. A switch can appear level yet still be poorly aligned if the target approaches the actuator at the wrong point or direction. Conversely, a body that does not look level may still be positioned correctly if its mounting and operating geometry match the equipment design. The useful diagnostic question is not whether the switch looks straight, but whether the target moves the actuator through the intended switching and release sequence without slipping, side loading, or forcing it beyond its specified travel.
 
 This guide separates errors in the switch’s mounting position from errors where the external target contacts the switch actuator. It then relates those checks to actuator travel and describes a cautious way to verify operation after adjustment. No universal gap, angle, or travel value applies here; consult the documentation for the particular switch and equipment. If the specified travel limit or safe inspection procedure is unclear, do not guess or force the actuator.

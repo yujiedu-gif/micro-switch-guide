@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying NO and NC Contacts in a Hood-Latch Circuit
-
 The **hood latch micro switch NO and NC terminals** describe electrical contact relationships, not whether the hood is physically open or closed. Their behavior depends on the switch actuator’s position. A latch assembly may use a different sensing design or may not contain a micro switch at all, so identify the component before testing it. When a switch is present, its terminal markings and the equipment’s connection diagram are the best references for interpreting its connections. A continuity check can help verify contact behavior, but an unexpected reading is a reason to pause and investigate, not to guess at terminal identity or conclude that the entire vehicle circuit has failed.
 
 ## What NO and NC mean on a hood latch micro switch NO and NC terminals

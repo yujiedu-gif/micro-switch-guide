@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a Self-Locking Micro Switch Retains and Resets Its State
-
 A **self locking micro switch** uses a mechanical feature within the switch to retain a state after the force that initiated the change is removed. That behavior differs from a momentary switch that returns as soon as its actuator force is released. It also differs from an electrical circuit that keeps a relay or other device energized after a momentary input. The distinction matters: a powered output that stays on does not, by itself, show that the switch mechanism is latched.
 
 The set, retention, and reset sequence depends on the switch design. A retaining feature might release through a second push, a separate force, or another specified action. Force, actuator travel, contact state, and reset method therefore need to be evaluated for the particular design, rather than assumed from the words “self-locking.” The following sections explain the mechanism concept and a bounded way to check its behavior without treating any one arrangement as universal.

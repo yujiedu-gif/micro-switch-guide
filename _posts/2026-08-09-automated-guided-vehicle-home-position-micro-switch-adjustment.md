@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Adjusting a Home-Position Input
-
 An **automated guided vehicle home position micro switch adjustment** is appropriate only when the vehicle’s design uses a micro switch to detect its home position. The switch provides a position-detection signal; it does not, by itself, guarantee that the vehicle has stopped at the intended physical point. The control system’s response and the vehicle’s subsequent motion also affect where the vehicle comes to rest.
 
 This guide focuses on contact geometry, switch travel, and repeatable verification. It does not cover homing systems that use other sensor types or provide a universal setup for every vehicle. Follow the vehicle’s approved service procedure and the switch’s specified operating limits. If the relevant limits or test method are unavailable, do not guess at them.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing an Antenna Rotator Open-Position Micro Switch
-
 When an **antenna rotator open position micro switch not working** is suspected, first distinguish two symptoms: the open-position indication is missing, or the rotator continues moving past the open endpoint. Those symptoms can involve different parts of the mechanism and circuit. A missing indication does not, by itself, show that the switch is defective, and continued movement does not establish which part of the endpoint system has failed.
 
 The diagnostic sequence is to determine whether the endpoint mechanism actuates the switch, check whether the switch contacts change state, and then trace the open-position signal if they do. Endpoint arrangements differ by design, so use the rotator’s documentation for its mechanism and circuit. Isolate power before inspection or continuity testing; do not probe an energized circuit. Do not assume a terminal layout, adjustment method, or signal path based on another rotator.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and checking a Jake brake micro switch
-
 A **jake brake micro switch** may serve as a control input in designs that use one, but its presence and role must be confirmed for the specific vehicle and system. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general description does not establish how a particular Jake brake circuit is wired or when its switch should change state.
 
 The useful check is limited and specific: identify the switch from applicable service information, trace its documented circuit path, and determine whether its contacts change state as the actuator moves. Do not treat the switch as the braking mechanism or assume that a switch in one design occupies the same location, uses the same terminals, or serves the same function in another. Testing and interpretation must follow the procedures and criteria for the particular equipment.

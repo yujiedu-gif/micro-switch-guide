@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing a Micro Switch in a Panel
-
 A **micro switch panel** is a panel design that incorporates a micro switch to detect a defined position or movement. The switch responds to mechanical actuation; it does not necessarily detect a panel surface directly. A moving feature may operate the switch through a lever, plunger, cam, or another actuator, depending on the design. Not every panel includes a micro switch, and the mechanism and electrical circuit must be assessed as a specific assembly.
 
 The checks below separate mechanical fit and switching behavior from suitability under the circuit’s actual electrical and environmental conditions. Without documentation for the exact switch and installed assembly, dimensions, operating limits, ratings, and protection remain unresolved.

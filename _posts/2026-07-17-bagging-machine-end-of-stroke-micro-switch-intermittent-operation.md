@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing intermittent end-of-stroke detection
-
 A **bagging machine end of stroke micro switch intermittent operation** problem means the endpoint signal changes inconsistently when the mechanism should reach its intended position. The cause may be mechanical engagement that varies from cycle to cycle, an unstable switch contact, or a fault in wiring or the receiving control input. These possibilities require different checks, so an intermittent signal alone does not establish that the switch has failed.
 
 The diagnostic sequence below applies only to machines that use a micro switch for the endpoint signal. It focuses on locating the fault path, not diagnosing the bagging machine’s broader cycle control or specifying a replacement switch. Begin by making access and testing safe, then check mechanical engagement before tracing the signal electrically.

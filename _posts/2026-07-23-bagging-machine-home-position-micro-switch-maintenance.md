@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining a Bagging Machine Home-Position Switch
-
 Bagging machine home position micro switch maintenance applies only when a machine uses a micro switch to detect its home position. Other machines may use a different sensing device, so this checklist is not a substitute for identifying the installed design. The machine’s documentation should establish which component provides the home-position signal and how that signal is expected to behave.
 
 Maintenance should trace the signal path rather than rely on a position indicator alone. A moving machine part contacts the switch actuator; the switch’s contacts change state; and the resulting signal is used by the machine to indicate home position. A correct-looking indication does not, by itself, establish that each part of this path is functioning as intended. Inspect the mechanism and, where authorized, verify its electrical response using the machine-specific procedure.

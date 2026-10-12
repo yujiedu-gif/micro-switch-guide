@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining and verifying an end-of-stroke micro switch
-
 Book binding machine end of stroke micro switch maintenance applies only to machines whose design uses a micro switch to detect a defined end-of-stroke position. The switch responds to mechanical actuator movement by changing an electrical contact state. That change can signal that the moving part has reached its endpoint, but it does not establish that the switch controls every machine function.
 
 A useful maintenance check follows the endpoint event from machine motion, through the actuator and switch contacts, to the electrical indication. This helps distinguish a switch that is not reached or released correctly from an electrical contact or wiring problem. Use the machine’s service instructions and circuit documentation for access, test methods, adjustment limits, and return-to-service checks. The evidence available here does not specify a universal isolation procedure, test instrument, alignment tolerance, or operating limit.

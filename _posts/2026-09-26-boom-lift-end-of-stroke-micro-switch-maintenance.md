@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Boom lift end-of-stroke micro switch maintenance
-
 **Boom lift end of stroke micro switch maintenance** is a documented inspection and verification process for equipment designs that use a micro switch as a travel-limit input. The switch’s role, mounting, circuit, and relationship to boom movement can differ by equipment configuration. Identify the exact switch and its function from the equipment documentation before starting; do not assume a generic arrangement applies.
 
 Maintenance should establish whether the switch changes state at the documented point, whether its signal reaches the relevant control input, and whether the mechanical travel boundary is correct. These are related but distinct checks. A switch can operate while a wiring or controller fault prevents the expected response, and a mechanical stop or linkage problem can prevent reliable actuation. Use equipment-specific service instructions for isolation, access, testing, adjustment, and return to service. The information below is a planning framework, not a substitute for those instructions.

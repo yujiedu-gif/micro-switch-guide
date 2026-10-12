@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Operating Table Position Micro Switch
-
 Knowing **how to test a operating table position micro switch** begins with a strict boundary: test the switch separately from the table’s powered controls, and judge it against the equipment documentation rather than an assumed universal reading. This bench check can show whether the identified switch changes electrical state as its actuator moves. It cannot, by itself, prove that the complete table’s position-sensing or movement system is safe.
 
 Operating-table service procedures take precedence, and electrical testing should be performed by qualified personnel. Keep the table unavailable for patient use during diagnosis. Do not proceed if the isolation method, switch identity, terminal information, or acceptance limits are unclear.

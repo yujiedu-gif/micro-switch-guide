@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Selecting and verifying a guard-interlock switch
-
 An **automated guided vehicle guard interlock micro switch replacement** requires more than finding a switch that fits the existing mounting points. The replacement must operate through the interlock mechanism as intended and match the documented electrical function and permissible load. A physical match alone does not establish that the safety circuit will respond correctly.
 
 Treat the task as a compatibility assessment, not a universal replacement procedure. Vehicle and interlock designs differ, and the evidence available for a particular installation must come from its documentation and the specifications for the exact switch. Qualified maintenance personnel should use the applicable vehicle-specific procedures to identify the part, resolve uncertainties, and verify the complete safety function before return to service.

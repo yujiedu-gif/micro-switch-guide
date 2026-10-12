@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to check micro switch signal level switching
-
 How to check micro switch signal level switching depends on separating two questions: do the contacts change state when the actuator moves, and does the connected circuit receive the expected electrical level? A continuity check addresses the first question with power isolated. A voltage measurement addresses the second in an energized circuit. Neither reading substitutes for the other.
 
 Use the circuit documentation to identify the expected released and actuated states, the specified signal level, and the measurement reference point. There is no universal voltage to expect. Before testing, identify the circuit voltage and decide whether the measurement points can be accessed safely. If voltage, grounding, or probe access is uncertain, stop and seek qualified help.

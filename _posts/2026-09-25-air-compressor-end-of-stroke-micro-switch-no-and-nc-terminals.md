@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Checking NO and NC terminals on an air-compressor end-of-stroke switch
-
 An **air compressor end of stroke micro switch NO and NC terminals** check begins with the switch’s own unactuated state, not with whether the compressor is running. NO and NC describe contact relationships at rest. When the compressor mechanism reaches its travel limit and operates the switch actuator, a changeover contact set can transfer continuity from one path to the other. That transfer does not, by itself, establish what the compressor controller will do.
 
 For a reliable check, identify the terminals from the exact device’s markings and connection diagram, observe the switch in both actuator positions, and keep switch behavior separate from wiring and controller behavior. Continuity testing requires isolated electrical power. If the intended circuit or a safe test cannot be established from the equipment documentation, have a qualified technician perform the diagnosis.

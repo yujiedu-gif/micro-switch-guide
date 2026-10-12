@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding the RU Marking on a Micro Switch
-
 The **ru micro switch** marking is best treated as a clue to a component’s recognition status, not as a complete statement of what the switch can do or where it may be used. Its meaning for a particular switch must be confirmed against authoritative records and documentation for the exact component. Appearance alone does not establish a rating, approval, or permitted application.
 
 That distinction matters because a marking can be easy to overread. The verification task is specific: identify the component, confirm its status in relevant records, review any stated conditions, and check its electrical ratings separately. Component recognition also does not, by itself, establish approval of finished equipment containing that component.

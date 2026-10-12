@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a CNC Router Home-Position Micro Switch
-
 A **cnc router home position micro switch not working** can point to several different faults: the mechanism may not reach the switch, the contacts may not change state, or the controller may not recognize the signal. These are separate checks, so an apparent homing problem does not by itself identify a failed switch.
 
 This guide applies only to CNC router designs that use a micro switch for the home-position input. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. The diagnostic chain here is mechanical actuation, contact change, signal path, and controller recognition. The circuit and controller determine how the input is interpreted; normally open, normally closed, and active-high behavior are not universal.

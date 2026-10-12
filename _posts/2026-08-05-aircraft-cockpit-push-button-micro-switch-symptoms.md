@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Interpreting Aircraft Cockpit Push Button Micro Switch Symptoms
-
 Aircraft cockpit push button micro switch symptoms can help identify a concern, but they cannot establish that the switch itself has failed. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, and it is commonly used for position or limit detection. Whether a particular cockpit push button uses this type of switch is design-specific; this discussion applies only where one is used.
 
 A push button is part of a larger path: the cap is pressed, force moves an internal actuator, the switch changes an electrical contact state, and other circuit elements may process or display the result. A problem at any point can affect the observed command or indication. The same symptom can therefore have several explanations. Observations can help describe the issue for maintenance, but they do not replace approved aircraft maintenance inspection and testing.

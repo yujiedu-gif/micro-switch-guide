@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# 3 Pin Micro Switch Wiring: Identify Contacts Before Connecting
-
 3 pin micro switch wiring depends on the switch’s contact states, not on the physical order of its terminals. A three-terminal changeover switch has a common connection and two contacts that connect to it in different actuator states. Identifying those terminals first helps you choose the pair that matches the intended circuit behavior.
 
 Use the terminal markings and device documentation as the primary references. If the markings are absent or unclear, a continuity check with the circuit disconnected can help establish which terminals connect in each state. Do not assume that pin positions or wire colors follow a universal convention.

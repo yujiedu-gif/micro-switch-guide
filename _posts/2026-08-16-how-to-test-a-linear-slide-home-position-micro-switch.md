@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing a Linear Slide Home-Position Micro Switch
-
 **How to test a linear slide home position micro switch** depends first on whether the slide uses one as its home-position sensor. The procedure below applies only to that arrangement. It separates three checks: whether the slide and actuator engage mechanically, whether the switch contacts change state, and whether the resulting signal reaches the controller input. A homing symptom by itself cannot identify which part of that path is at fault.
 
 Before inspection, isolate the equipment and prevent unexpected movement. Verify that it is de-energized before measuring continuity or resistance. Never measure resistance on an energized circuit. Use the equipment documentation to identify safe access points and the method for checking the controller input. If manual movement or access is not safe, do not proceed with that step; use the equipment’s documented procedure or have qualified personnel perform it.

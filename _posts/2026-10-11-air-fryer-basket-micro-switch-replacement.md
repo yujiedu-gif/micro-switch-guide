@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air fryer basket micro switch replacement: diagnosis and verification
-
 An **air fryer basket micro switch replacement** is appropriate only when the appliance uses a micro switch to detect whether its basket is in position and inspection supports a switch fault. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement, which is why switches of this kind are used for position or limit detection. That general purpose does not establish that a particular air fryer uses one, or that a replacement part will fit it.
 
 A basket-position symptom can originate at the basket, the actuator that moves the switch, the switch mounting, wiring, or the switch contacts themselves. Check those parts before replacing anything. If the appliance’s service instructions do not cover access or the wiring is uncertain, stop and arrange qualified service. Do not work on energized circuits.

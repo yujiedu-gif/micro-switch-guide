@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Ball Screw Actuator Guard Interlock Micro Switch: Role and Verification
-
 A ball screw actuator guard interlock micro switch may be one component in a particular machine’s guarded-motion system. Its role is limited: guard movement can mechanically operate the switch, whose electrical state is conveyed to an interlock input. The switch’s change of state does not, by itself, show that the interlock has responded correctly or that hazardous motion is prevented.
 
 Verification therefore follows the whole path, from guard position and switch travel to the interlock input and the machine’s response. The details depend on the documented design. Use machine-specific procedures, control hazardous energy, and do not bypass or defeat the guard interlock during inspection or testing.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Diagnosing a Sunroof Limit-Switch Fault
-
 A sunroof that does not stop at the expected endpoint may have a limit-sensing problem, but that symptom alone does not establish that a switch has failed. The phrase “sunroof limit micro switch not working” describes one possibility among several: the system may use a different position-sensing method, the actuator may not reach the switch, or the switch signal may be interrupted or misinterpreted.
 
 A micro switch is a miniature snap-action switch that changes an electrical contact state in response to mechanical actuator movement. It is commonly used for position or limit detection, but that general use does not confirm that a particular sunroof contains one. Diagnose the sensing arrangement first, then separate mechanical actuation, contact behavior, wiring, and downstream response. Do not bypass a limit input to force sunroof movement.

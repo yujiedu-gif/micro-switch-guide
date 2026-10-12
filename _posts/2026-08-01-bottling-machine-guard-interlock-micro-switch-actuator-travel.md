@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing actuator travel at a bottling machine guard interlock
-
 The phrase **bottling machine guard interlock micro switch actuator travel** applies only when the guard interlock actually uses a micro switch. The guard, its linkage, and the switch actuator are connected parts of a mechanism, but they do not travel the same distance. Assessing the switch means checking where its actuator operates and releases, and whether its movement stays within the limits documented for that installed switch. It does not mean treating guard closure as a measure of switch travel.
 
 There is no universal travel value established here for a particular machine or switch. Use the documentation for the exact installed switch and the machine’s approved procedures. If the operating point, permissible travel, or safe test method is unclear, stop and consult qualified maintenance personnel. Do not defeat the guard function to perform a check.

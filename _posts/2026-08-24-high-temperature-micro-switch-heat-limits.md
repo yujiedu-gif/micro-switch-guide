@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Evaluating a Micro Switch for Hot Environments
-
 A **high temperature micro switch** cannot be evaluated by comparing room or surrounding-air temperature with a single number on a product sheet. Reliable assessment depends on what that number describes, how heat reaches the installed switch, and the electrical and mechanical conditions under which it must operate. Temperature suitability is therefore specific to the documented limits and the intended installation and switching duty.
 
 Start by separating operating limits from storage limits and other temperature ratings. Then consider both surrounding air and heat conducted through mounting surfaces or terminals. Finally, verify operation under representative conditions. If the applicable documentation does not establish a limit or test condition needed for that assessment, treat it as unknown rather than assuming the switch is suitable.

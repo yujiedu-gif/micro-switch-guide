@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Aircraft Landing-Gear Monitor Micro Switch Adjustment
-
 Aircraft landing gear monitor micro switch adjustment sets the relationship between a switch actuator and a gear-linked target so the monitoring circuit changes state at the specified point. The correct position depends on the particular installation. Use its applicable approved maintenance data for adjustment limits, required test conditions, and acceptance criteria; there is no universal setting to apply across aircraft.
 
 A switch trip alone does not establish that the landing-gear indication is correct. Verification must cover both the switch’s mechanical actuation and the resulting indication through the monitor circuit. If the installation, limits, or required test method cannot be established, do not proceed by estimating a position or clearance.

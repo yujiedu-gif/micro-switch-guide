@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying Accelerator Pedal Position Stop Micro Switch Actuator Travel
-
 Accelerator pedal position stop micro switch actuator travel can be verified only after vehicle-specific service information confirms that the pedal-position mechanism actually includes a micro switch. The pedal’s mechanical stop and the switch’s operating and release positions describe different points in the mechanism. Comparing them requires the installed switch’s specifications and the prescribed service procedure, not a universal adjustment value.
 
 The available definitions establish how pretravel, movement differential, and release force relate to switch operation. They do not provide model-specific travel limits, measurement methods, pedal-stop locations, or repair instructions. Those details must come from the exact switch datasheet and applicable vehicle service information. If either is unavailable, the relationship cannot be judged reliably from general guidance alone.

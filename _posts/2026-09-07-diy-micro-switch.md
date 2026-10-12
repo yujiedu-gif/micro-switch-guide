@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Build and test a basic micro switch circuit
-
 A **diy micro switch** circuit can demonstrate how mechanical movement changes electrical contact state. This guide keeps the project to a basic, low-voltage test circuit: identify the terminals, check the mechanical action, wire a suitable indicator or test load, and verify the result. It does not establish that an unspecified switch is suitable for a particular appliance, vehicle, or other application.
 
 Switch terminal arrangements, actuator designs, electrical ratings, and movement limits vary. Use the markings and documentation for the actual switch. If its terminal functions or ratings cannot be confirmed, do not energize the circuit. The aim is to observe a contact change under controlled conditions, not to prove that a switch can carry any arbitrary load.

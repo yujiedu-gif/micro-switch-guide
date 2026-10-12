@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Check Micro Switch Contact Gap
-
 The question of **how to check micro switch contact gap** starts with identifying which gap is meant. The internal electrical contact gap is the separation between the switch’s contacts in a specified state. It is not the visible space between an actuator and an external object, nor is it the actuator’s travel. Those external observations cannot, by themselves, establish the internal contact separation.
 
 A reliable check depends on the exact switch design, the contact state under consideration, and a documented specification or procedure. There is no universal acceptable gap established here. First determine whether the contacts can be inspected by an approved method. If they cannot, treat the internal gap as unverified rather than opening the switch or inferring a value from external movement.

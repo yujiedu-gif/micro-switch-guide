@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to Verify Electrical and Water-Protection Ratings
-
 A **12 volt waterproof micro switch** is not fully specified by those words alone. Verification requires two separate checks: whether the electrical rating matches the circuit’s voltage, current, and load, and what water protection the stated enclosure rating actually covers. The voltage number does not establish switching capacity, and “waterproof” without a defined ingress protection rating does not describe the protection boundary.
 
 Treat the published specification sheet as the authority for the conditions under which ratings apply. If the voltage type, load, current, ingress protection scope, or installation requirements are unclear, the available evidence is not enough to confirm suitability. The steps below show what to look for without assuming that one rating answers every question.

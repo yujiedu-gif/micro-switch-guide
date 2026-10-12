@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How a ball screw actuator end-of-stroke micro switch detects travel
-
 A **ball screw actuator end of stroke micro switch function** is to convert mechanical movement near a travel limit into a change in electrical contact state. A carriage, nut assembly, or attached target moves the switch actuator; the contacts then change state, and wiring carries that signal to a control system. The control system, not the micro switch by itself, must produce the designed stopping or direction-changing response.
 
 This description applies only to systems that use a micro switch for end-of-stroke detection. Switch arrangements, contact states, and control responses vary. Understanding the sequence from physical trigger to switch to control response helps clarify what the switch detects and what it does not do.

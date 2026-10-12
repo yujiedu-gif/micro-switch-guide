@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing an Assembly Robot Travel-Limit Switch
-
 An **assembly robot travel limit micro switch continuity test** checks whether the switch contacts change state as the actuator moves between its released and operated positions. The check is meaningful only when the contact terminals are identified from the device markings or circuit documentation and the measurement is not being distorted by other circuit paths. It can help separate a switch-contact problem from wiring, actuation, or meter setup issues, but it does not by itself validate the robot’s controller or safety system.
 
 Follow site procedures and the robot’s electrical documentation. Stop motion and isolate relevant energy sources before working on wiring. Under the cited United States workplace rule, exposed live parts generally must be deenergized before work; a qualified person must verify the deenergized condition with test equipment. Work on energized parts is limited to qualified persons. After establishing safe conditions, use the switch’s documented contact arrangement to plan the readings.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# How to test a seat position micro switch
-
 A seat-position signal alone does not show whether a micro switch’s contacts are working correctly. To check the switch itself, isolate it from circuit paths that could affect a meter reading, identify its terminals from markings or a circuit diagram, and compare the contact state with the actuator released and actuated. A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. This procedure focuses on the switch and its mechanical actuation, not on diagnosing the entire seat-control system.
 
 ## Safety and setup before testing

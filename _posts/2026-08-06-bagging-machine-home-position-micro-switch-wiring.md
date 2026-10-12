@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Identifying and verifying a bagging machine home-position switch
-
 **Bagging machine home position micro switch wiring** must be checked as two related but distinct things: the switch’s contact behavior and the machine controller’s interpretation of the resulting signal. A terminal label can identify a contact, but it does not by itself establish how the machine uses that contact. Likewise, conductor color alone does not prove a wire’s function.
 
 A reliable check follows the signal from mechanical position, through the isolated switch contacts, and onward to the documented controller input. The machine-specific diagram and approved service procedures are essential because input type, voltage, polarity, and logic can vary. Do not assume a universal wiring arrangement or infer that a particular contact is the home signal without confirming the circuit documentation.

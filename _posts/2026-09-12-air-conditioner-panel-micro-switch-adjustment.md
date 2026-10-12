@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air conditioner panel micro switch adjustment
-
 Air conditioner panel micro switch adjustment applies only when the panel mechanism actually includes a micro switch and its design provides a way to adjust the switch’s mounting position. The switch may detect panel position or closure, depending on the design. It is not a thermostat control, and adjusting its position is not the same as changing a temperature setting.
 
 The available evidence does not establish how a particular air-conditioner panel is built, whether its switch is adjustable, or what its intended actuator engagement should be. Treat those details as design-specific. Do not infer that a switch, bracket, alignment feature, or adjustment procedure exists. If the design does not provide a mounting adjustment, do not force one.

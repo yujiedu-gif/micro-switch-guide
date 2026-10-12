@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# What Makes a Micro Switch Sensitive?
-
 A **sensitive micro switch** is one that changes contact state in response to relatively little actuator force or movement, with a transition that is consistent enough for the intended detection task. The phrase describes performance in context; it is not necessarily a single standardized rating. Sensitivity is therefore best assessed through mechanical actuation measurements, not inferred from one specification or from the switch’s name.
 
 A useful comparison separates the force needed to operate the contacts from the actuator travel and the consistency of the operating and release points. These mechanical characteristics do not establish the electrical load capacity of the contacts. Nor does low operating force by itself establish reliable detection. The mechanism, actuator design, and test conditions all shape the measured response.

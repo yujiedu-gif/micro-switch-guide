@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Verifying Air Compressor Home-Position Switch Wiring
-
 **Air compressor home position micro switch wiring** carries a position signal in equipment designs that use a micro switch for this purpose. Verification means separating four things: whether the mechanism reaches its home position, whether the switch changes electrical state, whether the wiring carries that state, and whether the controller interprets the signal as intended. These are related checks, but none proves the others by itself.
 
 There is no universal terminal arrangement or rule that home must correspond to an open or closed circuit. The equipment diagram, switch markings, circuit function, and documented permissible load define the applicable connection. Use those references rather than assuming a layout from the switch’s appearance or the conductors’ colors.

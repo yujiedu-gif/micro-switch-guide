@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Replacing and verifying an end-of-stroke switch
-
 A **bagging machine end of stroke micro switch replacement** should preserve the point in the machine’s stroke where the control system receives the switch signal. Before removing anything, confirm that the installed component is a micro switch and that it monitors the end-of-stroke position in question. A switch that looks damaged is not the only possible cause of a missed or inconsistent signal: actuator alignment, wiring, or the control input may also be at fault.
 
 Use the machine’s established procedures for isolating energy and performing guarded tests. The evidence available here does not specify a particular machine’s isolation procedure, wiring layout, contact configuration, ratings, or test method. Treat those details as machine- and switch-specific; do not infer them from appearance. The steps below explain how to organize the diagnosis, preserve the existing actuation geometry, and verify the machine response without assuming a particular switch design.

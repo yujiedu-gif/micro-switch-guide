@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing Actuator Travel at an Incubator Door Switch
-
 Incubator door micro switch actuator travel is the movement at the switch itself, not the total movement of the door or latch. Assessing it means identifying how motion reaches the actuator, comparing that motion with the installed switch’s specified operating and release points, and confirming the electrical contact-state change. There is no universal travel distance to apply to every incubator door: the switch design and the mechanism that operates it matter.
 
 A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general function does not establish how a particular incubator door is aligned, how much motion it transfers, or which travel values apply. Use the documentation for the installed switch and device arrangement, and keep the assessment focused on the switch’s actuator and specified behavior.

@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air compressor guard interlock micro switch intermittent operation
-
 Air compressor guard interlock micro switch intermittent operation describes inconsistent switching as a guard reaches its intended closed position. This guide applies only when the particular guard interlock uses a micro switch. It does not assume that every air compressor guard has this design, or that every compressor symptom originates in the guard switch. The aim is to separate a failure to actuate the switch consistently from unstable contacts or a fault farther along the wiring or control circuit.
 
 Use the equipment and switch documentation to establish the intended guard position, switching behavior, test method, and component limits. Inspection and testing must follow the applicable safe procedure. Do not bypass or defeat the interlock to keep the equipment running.

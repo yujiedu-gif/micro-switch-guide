@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Testing continuity through a blow molding machine guard interlock micro switch
-
 A blow molding machine guard interlock micro switch continuity test checks whether a selected switch contact path is open or closed in a documented actuator state. It is a component-level electrical check, not proof that the guard interlock or the machine’s protective function works as intended. Perform it only after following the applicable hazardous-energy isolation procedure and verifying absence of voltage under that procedure. If you are not authorized or trained to perform the work, stop and refer it to qualified personnel under site requirements.
 
 The result depends on the actual switch diagram, the contact pair tested, and the specified actuator state. Do not infer terminal positions, assume how a guard position maps to contact state, or apply a resistance threshold that is not documented for the switch. Keep the switch, its wiring, the guard mechanism, and the rest of the control circuit as separate possible fault locations.

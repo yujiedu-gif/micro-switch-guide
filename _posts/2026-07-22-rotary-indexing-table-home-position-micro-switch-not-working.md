@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Troubleshooting a Rotary Indexing Table Home Signal
-
 A **rotary indexing table home position micro switch not working** report does not, by itself, establish that the switch has failed. The home signal passes through several stages: the rotating target reaches the switch actuator, the actuator moves, the switch contacts change state, and the signal travels through wiring to the controller input. A fault at any stage can leave the table without a home indication or make that indication intermittent or mistimed.
 
 This guide applies only to rotary indexing tables whose home-position signal is produced by a micro switch. It follows the signal path to separate target and actuation problems from contact, wiring, and input-path problems. Machine layouts and contact states vary, so identify the actual terminals and diagnostic indicators from the switch markings, documentation, and approved machine procedures rather than assuming a particular arrangement.

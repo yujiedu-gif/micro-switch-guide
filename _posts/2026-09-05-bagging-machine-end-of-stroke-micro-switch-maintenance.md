@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining an End-of-Stroke Micro Switch on a Bagging Machine
-
 **Bagging machine end of stroke micro switch maintenance** applies only when the machine is designed to use a mechanically actuated switch to detect a defined travel endpoint. Inspection should focus on the switch and the machine contact path that operates it, not on assumptions about how every bagging machine senses position. A sound check also considers whether the switch changes state consistently at the intended endpoint and whether machine geometry is forcing its actuator beyond permissible travel.
 
 Before accessing or testing the mechanism, follow the machine-specific shutdown, energy-isolation, and access procedures. Use the applicable machine and switch documentation for endpoint arrangement and permissible actuator travel. This guide does not establish universal adjustment values, electrical test methods, cleaning agents, or replacement intervals.

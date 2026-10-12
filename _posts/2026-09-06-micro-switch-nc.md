@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Understanding the NC Contact State of a Micro Switch
-
 A **micro switch nc** contact is closed when the switch is in its normal, unactuated state. In a changeover switch, this means there is a closed contact path between the common terminal and the normally closed terminal before the switch is actuated. The name describes the contact state, not whether a machine is powered or where an installed mechanism happens to rest.
 
 That distinction matters when checking a switch. A switch that is held down by an installed part may be actuated even if that is the mechanism’s resting position. Its NC path can therefore be open in the installed condition. To check the switch itself, identify the correct contact pair and test it with power disconnected, comparing the unactuated and actuated states.

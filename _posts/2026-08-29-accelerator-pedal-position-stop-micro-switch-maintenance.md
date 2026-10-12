@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Maintaining an accelerator pedal stop switch
-
 Accelerator pedal position stop micro switch maintenance begins by confirming that the vehicle actually has this component and identifying what it does in that design. Some accelerator pedal assemblies may use a switch at a pedal stop; others may not. A pedal position sensor reading is not proof that a separate stop switch operates correctly. Use the vehicle’s service information to identify the component and its intended function before inspection or testing.
 
 This guide covers bounded inspection and verification, not universal calibration. The correct terminals, circuit behavior, access method, and functional check depend on the exact vehicle and switch. If service information does not establish those details, leave adjustment and electrical interpretation to qualified service personnel.

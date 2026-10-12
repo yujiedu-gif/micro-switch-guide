@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Comparing Micro Switch Actuators by Motion and Travel
-
 Micro switch actuator types differ in how they receive external motion and transfer it to the switch’s operating mechanism. That difference matters when comparing contact approach, alignment, force, and travel. The actuator form alone, however, does not establish a switch’s electrical rating, environmental protection, or suitability for a particular application.
 
 A useful comparison begins with the movement available in the assembled mechanism. Consider the direction and path of that movement, where it can contact the actuator, and how much travel is available. Then check the specific switch documentation for operating characteristics and permitted movement. Names such as plunger, lever, and roller lever describe broad interface forms, but terminology and designs vary; the names do not supply universal force or travel values.

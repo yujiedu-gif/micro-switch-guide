@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Assessing operating force at a bottling-machine end of stroke
-
 The **bottling machine end of stroke micro switch operating force** is only one part of reliable end-of-stroke detection. The switch has an operating-force requirement at its actuator, while the machine mechanism delivers force through its own contact point and linkage. Those forces should not be treated as interchangeable. The mechanism also moves the actuator through a distance, so sufficient force does not by itself show that the switch or mechanism avoids excessive travel.
 
 A sound assessment therefore follows both the force path and the actuator’s movement. Use the switch’s documented operating-force value and test conditions, then assess whether the installed mechanism reaches the required operating position consistently. Separately check release behavior and end-of-stroke travel against applicable specifications. The evidence here does not establish a universal force target, permissible overtravel value, or linkage geometry for bottling machines.

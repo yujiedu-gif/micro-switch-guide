@@ -10,8 +10,6 @@ tags:
 author: editorial_team
 ---
 
-# Air Compressor Travel-Limit Micro Switch Troubleshooting
-
 Air compressor travel limit micro switch troubleshooting starts by separating a mechanical actuation problem from an electrical switch problem and a fault farther along the control circuit. Some compressor designs use a miniature snap-action switch to detect a mechanism’s position or travel limit; not every compressor has one, and its exact role depends on the equipment’s mechanism and circuit. Work from the equipment documentation, and do not infer specifications or terminals from the switch’s appearance.
 
 ## What the air compressor travel limit micro switch does
