@@ -292,6 +292,16 @@ def main(argv: list[str] | None = None) -> int:
                             validation_errors.append(
                                 f"duplicate content_signature already owned by {duplicate['job_id']}"
                             )
+                    if request_row["job_id"] and output.get("slug"):
+                        with store.connect() as connection:
+                            slug_owner = connection.execute(
+                                "SELECT job_id FROM content_jobs WHERE slug=? AND job_id<>? LIMIT 1",
+                                (output["slug"], request_row["job_id"]),
+                            ).fetchone()
+                        if slug_owner:
+                            validation_errors.append(
+                                f"duplicate slug already owned by {slug_owner['job_id']}"
+                            )
                 if effective_kind == "article" and not validation_errors:
                     validation_errors.extend(article_policy_errors(output, config))
                     if request_row["job_id"]:

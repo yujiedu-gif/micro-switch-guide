@@ -12,10 +12,55 @@ PIPELINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPELINE))
 
 from core import Paths, Store, load_json, load_jsonl, now_iso, stable_id
-from operations import build_batches_action, jobs_create, jobs_export, keywords_filter, publication_select, source_packs_build
+from operations import build_batches_action, dedupe_semantic, jobs_create, jobs_export, keywords_filter, publication_select, same_plan_content_identity, source_packs_build
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_plan_similarity_does_not_merge_distinct_reader_tasks(self) -> None:
+        function = {
+            "owned_question": "How does the micro switch detect position?",
+            "reader_task": "explain_mechanism",
+            "answer_type": "mechanism_explanation",
+            "section_roles": ["mechanism", "limits"],
+            "differentiation_anchors": ["actuator path", "contact state"],
+        }
+        rating = {
+            **function,
+            "owned_question": "What contact rating applies to the micro switch?",
+            "reader_task": "interpret_rating",
+            "answer_type": "parameter_boundary",
+            "section_roles": ["rating_scope", "limits"],
+            "differentiation_anchors": ["load type", "voltage condition"],
+        }
+        self.assertFalse(same_plan_content_identity(function, rating))
+        self.assertTrue(same_plan_content_identity(function, dict(function)))
+
+    def test_article_plan_dedupe_respects_content_identity(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(PIPELINE, root / "pipeline", ignore=shutil.ignore_patterns("state", "__pycache__"))
+            store = Store(Paths(root))
+            store.initialize()
+            config = load_json(root / "pipeline" / "config.json")
+            run_id = store.create_run("c" * 64, "s" * 64)
+            now = now_iso()
+            plans = (
+                {"owned_question": "How does a micro switch detect position?", "reader_task": "explain_mechanism", "answer_type": "mechanism_explanation"},
+                {"owned_question": "What contact rating applies to a micro switch?", "reader_task": "interpret_rating", "answer_type": "parameter_boundary"},
+            )
+            with store.connect() as connection:
+                for index, plan in enumerate(plans):
+                    keyword_id = f"kw_{index}"
+                    job_id = f"job_{index}"
+                    connection.execute("INSERT INTO keywords(keyword_id,keyword,normalized_keyword,location_code,language_code,selected,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)", (keyword_id, f"micro switch test {index}", f"micro switch test {index}", 2840, "en", 1, now, now))
+                    connection.execute("INSERT INTO content_jobs(job_id,created_run_id,keyword_id,custom_id,status,plan_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)", (job_id, run_id, keyword_id, f"custom_{index}", "planned", json.dumps(plan), now, now))
+            vectors = root / "plans.jsonl"
+            vectors.write_text("".join(json.dumps({"id": f"job_{index}", "job_id": f"job_{index}", "granularity": "plan", "vector": [1.0, 0.0]}) + "\n" for index in range(2)))
+            dedupe_semantic(argparse.Namespace(input=vectors, output=root / "dedupe.jsonl", threshold=0.93, object_type="article_plan", run_id=run_id, apply=True), config, store, {})
+            with store.connect() as connection:
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM content_jobs WHERE status='duplicate'").fetchone()[0], 0)
+
+
     def test_borderline_topics_require_explicit_planning_opt_in(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
