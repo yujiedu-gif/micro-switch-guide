@@ -8,8 +8,8 @@
     "secondary_keywords": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "intent": {"enum": ["informational", "troubleshooting", "selection", "application"]},
     "reader": {"type": "string", "minLength": 2},
-    "reader_task": {"type": "string", "minLength": 3},
-    "answer_type": {"type": "string", "minLength": 3},
+    "reader_task": {"type": "string", "pattern": "^[a-z0-9_]+$", "minLength": 3},
+    "answer_type": {"type": "string", "pattern": "^[a-z0-9_]+$", "minLength": 3},
     "content_signature": {"type": "string", "pattern": "^[a-z0-9_]+(?:\\|[a-z0-9_]+){2,}$"},
     "differentiation_anchors": {
       "type": "array", "minItems": 2, "items": {"type": "string", "minLength": 3}, "uniqueItems": true

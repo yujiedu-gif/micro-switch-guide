@@ -48,7 +48,7 @@ from validators import article_policy_errors, normalize_plan_metadata, source_pa
 from topic_scope import CLASSIFIER_VERSION, classify_keyword
 
 
-REQUEST_VERSION = "v11"
+REQUEST_VERSION = "v12"
 REVIEW_GATE_VERSION = "logic-gate-v5-stable-advisory-context"
 REVIEW_INSTRUCTION = (
     "Concentrate the hard review on logical consistency, parameter accuracy, definition accuracy, and zero-brand compliance. "
@@ -56,6 +56,40 @@ REVIEW_INSTRUCTION = (
     "Treat reader-task alignment, H2 coverage, and ownership uniqueness as advisory because deterministic structure and duplicate systems enforce them separately. "
     "A statement that supplied evidence does not establish a fact is an allowed boundary, not an unsupported positive claim."
 )
+
+
+def _topic_parts(text: str) -> tuple[str, set[str]]:
+    text = str(text).splitlines()[0].casefold()
+    task_patterns = (
+        ("function", r"\b(?:function|how does|working principle)\b"),
+        ("location", r"\blocation\b"), ("symptoms", r"\bsymptoms?\b"),
+        ("failure_causes", r"\bfailure causes?\b"), ("not_working", r"\bnot working\b"),
+        ("intermittent", r"\bintermittent\b"), ("continuity_test", r"\bcontinuity test\b"),
+        ("test", r"\b(?:how to test|testing|how to check)\b"),
+        ("terminals", r"\b(?:no and nc|terminals?)\b"), ("actuator_travel", r"\bactuator travel\b"),
+        ("operating_force", r"\boperating force\b"), ("contact_rating", r"\bcontact rating\b"),
+        ("wiring", r"\bwiring\b"), ("replacement", r"\breplacement\b"),
+        ("adjustment", r"\badjustment\b"), ("maintenance", r"\bmaintenance\b"),
+        ("troubleshooting", r"\btroubleshooting\b"), ("selection", r"\b(?:select|selection)\b"),
+        ("causes", r"\bcauses\b"), ("prevention", r"\bprevention\b"), ("explained", r"\bexplained\b"),
+    )
+    task = next((name for name, pattern in task_patterns if re.search(pattern, text)), "base")
+    stop = {
+        "a", "an", "the", "how", "does", "to", "and", "micro", "switch", "switches", "intent",
+        "informational", "function", "location", "symptom", "symptoms", "failure", "causes", "not",
+        "working", "intermittent", "operation", "test", "testing", "continuity", "no", "nc", "terminal",
+        "terminals", "actuator", "travel", "operating", "force", "contact", "rating", "wiring", "replacement",
+        "adjustment", "maintenance", "troubleshooting", "select", "selection", "check", "explained", "prevention",
+    }
+    return task, {token for token in re.findall(r"[a-z0-9]+", text) if token not in stop}
+
+
+def _compatible_topic_text(left: str, right: str) -> bool:
+    left_task, left_tokens = _topic_parts(left)
+    right_task, right_tokens = _topic_parts(right)
+    if left_task != right_task or not left_tokens or not right_tokens:
+        return False
+    return len(left_tokens & right_tokens) / len(left_tokens | right_tokens) >= 0.5
 
 
 def _review_article(article: dict[str, Any]) -> dict[str, Any]:
@@ -1256,14 +1290,25 @@ def jobs_create(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
             blocked = {
                 item_id
                 for review in connection.execute(
-                    "SELECT left_id,right_id FROM similarity_reviews WHERE object_type='topic' AND status='needs_review'"
+                    """SELECT sr.left_id,sr.right_id,kl.normalized_keyword left_keyword,
+                              kr.normalized_keyword right_keyword
+                       FROM similarity_reviews sr
+                       JOIN keywords kl ON kl.keyword_id=sr.left_id
+                       JOIN keywords kr ON kr.keyword_id=sr.right_id
+                       WHERE sr.object_type='topic' AND sr.status='needs_review'"""
                 ).fetchall()
+                if _compatible_topic_text(review["left_keyword"], review["right_keyword"])
                 for item_id in (review["left_id"], review["right_id"])
             }
             rows = [row for row in rows if row["keyword_id"] not in blocked]
             if getattr(args, "new_only", False):
                 existing_job_ids = {row[0] for row in connection.execute("SELECT job_id FROM content_jobs")}
-                rows = [row for row in rows if stable_id("job", row["cluster_id"]) not in existing_job_ids]
+                owned_keyword_ids = {row[0] for row in connection.execute("SELECT keyword_id FROM content_jobs")}
+                rows = [
+                    row for row in rows
+                    if stable_id("job", row["cluster_id"]) not in existing_job_ids
+                    and row["keyword_id"] not in owned_keyword_ids
+                ]
             rows = rows[:limit]
         for row in rows:
             already_owned = connection.execute(
@@ -1604,38 +1649,6 @@ def cluster_keywords(args: argparse.Namespace, config: dict[str, Any], store: An
         threshold = json.loads(calibrated[0])["threshold"] if calibrated else config["similarity"]["near_duplicate"]
     rows = load_jsonl(args.input)
 
-    def topic_parts(row: dict[str, Any]) -> tuple[str, set[str]]:
-        text = str(row.get("text", "")).splitlines()[0].casefold()
-        task_patterns = (
-            ("function", r"\b(?:function|how does|working principle)\b"),
-            ("location", r"\blocation\b"), ("symptoms", r"\bsymptoms?\b"),
-            ("failure_causes", r"\bfailure causes?\b"), ("not_working", r"\bnot working\b"),
-            ("intermittent", r"\bintermittent\b"), ("continuity_test", r"\bcontinuity test\b"),
-            ("test", r"\b(?:how to test|testing|how to check)\b"),
-            ("terminals", r"\b(?:no and nc|terminals?)\b"), ("actuator_travel", r"\bactuator travel\b"),
-            ("operating_force", r"\boperating force\b"), ("contact_rating", r"\bcontact rating\b"),
-            ("wiring", r"\bwiring\b"), ("replacement", r"\breplacement\b"),
-            ("adjustment", r"\badjustment\b"), ("maintenance", r"\bmaintenance\b"),
-            ("troubleshooting", r"\btroubleshooting\b"), ("selection", r"\b(?:select|selection)\b"),
-            ("causes", r"\bcauses\b"), ("prevention", r"\bprevention\b"), ("explained", r"\bexplained\b"),
-        )
-        task = next((name for name, pattern in task_patterns if re.search(pattern, text)), "base")
-        stop = {
-            "a", "an", "the", "how", "does", "to", "and", "micro", "switch", "switches", "intent",
-            "informational", "function", "location", "symptom", "symptoms", "failure", "causes", "not",
-            "working", "intermittent", "operation", "test", "testing", "continuity", "no", "nc", "terminal",
-            "terminals", "actuator", "travel", "operating", "force", "contact", "rating", "wiring", "replacement",
-            "adjustment", "maintenance", "troubleshooting", "select", "selection", "check", "explained", "prevention",
-        }
-        tokens = {token for token in re.findall(r"[a-z0-9]+", text) if token not in stop}
-        return task, tokens
-
-    def compatible_topics(left: dict[str, Any], right: dict[str, Any]) -> bool:
-        left_task, left_tokens = topic_parts(left)
-        right_task, right_tokens = topic_parts(right)
-        if left_task != right_task or not left_tokens or not right_tokens:
-            return False
-        return len(left_tokens & right_tokens) / len(left_tokens | right_tokens) >= 0.5
     if args.local and args.incremental:
         raise ValueError("incremental clustering requires Qdrant; do not combine --incremental with --local")
     cluster_records: list[tuple[list[dict[str, Any]], str | None]]
@@ -1690,14 +1703,14 @@ def cluster_keywords(args: argparse.Namespace, config: dict[str, Any], store: An
                         score = float(neighbor.get("score") or 0)
                         if right_id in existing_clusters and right_id not in by_id:
                             right_topic = {"text": str((neighbor.get("payload") or {}).get("text", ""))}
-                            if score >= threshold and compatible_topics(left, right_topic):
+                            if score >= threshold and _compatible_topic_text(left.get("text", ""), right_topic.get("text", "")):
                                 external_candidates.setdefault(left_id, []).append((score, existing_clusters[right_id], right_id))
                             else:
                                 review_pairs.append({"left_id": left_id, "right_id": right_id, "score": score, "serp_overlap": 0.0})
                             continue
                         if right_id not in by_id or left_id > right_id:
                             continue
-                        if score >= threshold and compatible_topics(left, by_id[right_id]):
+                        if score >= threshold and _compatible_topic_text(left.get("text", ""), by_id[right_id].get("text", "")):
                             union(left_id, right_id)
                         else:
                             right = by_id[right_id]

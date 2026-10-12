@@ -9,38 +9,47 @@ from topic_scope import classify_keyword
 
 
 def normalize_plan_metadata(plan: dict[str, Any]) -> dict[str, Any]:
-    """Repair the exact-keyword and length contract without another model call."""
+    """Repair deterministic plan identity and exact-keyword metadata locally."""
     normalized = copy.deepcopy(plan)
     keyword = str(normalized.get("primary_keyword", "")).strip()
     description = str(normalized.get("description", "")).strip()
-    if keyword and 140 <= len(description) <= 160 and phrase_count(description, keyword) == 1:
-        return normalized
     if not keyword:
         return normalized
-    prefix = f"{keyword}: "
-    if len(prefix) >= 140:
-        return normalized
-    source = (
-        "Understand the operating idea, essential terminology, practical checks, limitations, "
-        "and evidence needed for careful selection, installation, testing, maintenance, and "
-        "troubleshooting decisions in real applications."
-    )
-    source = re.sub(re.escape(keyword), "the topic", source, flags=re.IGNORECASE)
-    selected: list[str] = []
-    for word in source.split():
-        candidate = prefix + " ".join([*selected, word]) + "."
-        if len(candidate) > 155:
-            break
-        selected.append(word)
-    candidate = prefix + " ".join(selected) + "."
-    if len(candidate) < 140:
-        for word in ("with", "clear", "scope", "and", "safe", "technical", "boundaries"):
-            attempted = candidate[:-1] + " " + word + "."
-            if len(attempted) <= 160:
-                candidate = attempted
-            if len(candidate) >= 140:
-                break
-    normalized["description"] = candidate
+    if not (140 <= len(description) <= 160 and phrase_count(description, keyword) == 1):
+        prefix = f"{keyword}: "
+        if len(prefix) < 140:
+            source = (
+                "Understand the operating idea, essential terminology, practical checks, limitations, "
+                "and evidence needed for careful selection, installation, testing, maintenance, and "
+                "troubleshooting decisions in real applications."
+            )
+            source = re.sub(re.escape(keyword), "the topic", source, flags=re.IGNORECASE)
+            selected: list[str] = []
+            for word in source.split():
+                candidate = prefix + " ".join([*selected, word]) + "."
+                if len(candidate) > 155:
+                    break
+                selected.append(word)
+            candidate = prefix + " ".join(selected) + "."
+            if len(candidate) < 140:
+                for word in ("with", "clear", "scope", "and", "safe", "technical", "boundaries"):
+                    attempted = candidate[:-1] + " " + word + "."
+                    if len(attempted) <= 160:
+                        candidate = attempted
+                    if len(candidate) >= 140:
+                        break
+            normalized["description"] = candidate
+
+    reader_task = str(normalized.get("reader_task", "")).strip()
+    answer_type = str(normalized.get("answer_type", "")).strip()
+    signature_parts = str(normalized.get("content_signature", "")).split("|")
+    entity = signature_parts[0].strip() if signature_parts and signature_parts[0].strip() else "micro_switch"
+    if reader_task and answer_type:
+        normalized["content_signature"] = f"{entity}|{reader_task}|{answer_type}"
+
+    outline = normalized.get("outline") or []
+    if outline and not any(phrase_count(str(item.get("h2", "")), keyword) for item in outline if isinstance(item, dict)):
+        outline[0]["h2"] = keyword
     return normalized
 
 

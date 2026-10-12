@@ -70,6 +70,22 @@ class SourceAndValidationTests(unittest.TestCase):
         self.assertEqual(description.casefold().count(plan["primary_keyword"].casefold()), 1)
         self.assertTrue(description.startswith(plan["primary_keyword"] + ":"))
 
+    def test_plan_identity_and_keyword_h2_are_normalized_locally(self) -> None:
+        plan = {
+            "primary_keyword": "assembly robot travel limit micro switch failure causes",
+            "description": "assembly robot travel limit micro switch failure causes: " + "x" * 90,
+            "reader_task": "diagnose_limit_switch_fault",
+            "answer_type": "failure_diagnosis",
+            "content_signature": "micro_switch|failure_diagnosis|failure_diagnosis",
+            "outline": [{"h2": "What the travel-limit switch detects"}],
+        }
+        repaired = normalize_plan_metadata(plan)
+        self.assertEqual(
+            repaired["content_signature"],
+            "micro_switch|diagnose_limit_switch_fault|failure_diagnosis",
+        )
+        self.assertEqual(repaired["outline"][0]["h2"], plan["primary_keyword"])
+
     def test_article_cannot_rewrite_authoritative_source_metadata(self) -> None:
         pack = {
             "claims": [{"claim_id": "c", "status": "accepted", "source_ids": ["s"]}],
