@@ -7,6 +7,18 @@ from typing import Any
 from core import canonical_json, load_json, sanitize_schema_for_strict, sha256_bytes, write_jsonl
 
 
+ARTICLE_DRAFT_KEYS = frozenset({"body_markdown", "used_claim_ids", "self_review"})
+
+
+def is_compact_article_draft(value: Any) -> bool:
+    return isinstance(value, dict) and set(value) == ARTICLE_DRAFT_KEYS
+
+
+def has_compact_article_schema(request: dict[str, Any]) -> bool:
+    schema = (((request.get("body") or {}).get("text") or {}).get("format") or {}).get("schema") or {}
+    return set(schema.get("properties") or {}) == ARTICLE_DRAFT_KEYS
+
+
 SYSTEM_PROMPTS = {
     "plan": """You plan neutral, evidence-bound educational pages for MicroSwitchGuide.
 

@@ -16,7 +16,7 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
-from batch import build_batch_requests, extract_response_json, schema_for_kind, write_batch
+from batch import build_batch_requests, extract_response_json, has_compact_article_schema, schema_for_kind, write_batch
 from content_ops import (
     apply_authoritative_internal_links,
     assemble_article_draft,
@@ -2370,7 +2370,7 @@ def batch_preflight(args: argparse.Namespace, paths: Any, config: dict[str, Any]
             ).fetchone() if request and request["parent_custom_id"] else None
         effective_kind = parent["kind"] if parent and parent["kind"] in {"plan", "article", "review"} else "article"
     compact_article = effective_kind == "article" and args.kind == "article" and all(
-        any(version in str(row.get("custom_id", "")) for version in ("-v10-", "-v11-", "-v12-")) for row in rows
+        has_compact_article_schema(row) for row in rows
     )
     response_schema = load_json(paths.pipeline / "schemas" / "article-draft.schema.json") if compact_article else schema_for_kind(paths.pipeline, effective_kind)
     final_schema = schema_for_kind(paths.pipeline, effective_kind)
@@ -2542,7 +2542,7 @@ def batch_retry(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
             failure = json.loads(row["error_json"] or "{}")
             is_content_failure = (
                 row["kind"] == "article"
-                and any(version in row["custom_id"] for version in ("-v10-", "-v11-", "-v12-"))
+                and has_compact_article_schema(original[row["custom_id"]])
                 and failure.get("code") == "validation_failed"
             )
             if is_content_failure:
@@ -2558,7 +2558,7 @@ def batch_retry(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
                 if messages and messages[-1].get("role") == "user":
                     payload = json.loads(messages[-1].get("content") or "{}")
                     payload["repair_errors"] = failure.get("errors", [])
-                    payload["repair_instruction"] = "Correct every listed error in one final revision, rerun the four self-review checks, and return the compact response schema."
+                    payload["repair_instruction"] = "Correct every listed error in one final revision, rerun all five self-review checks, and return the compact response schema."
                     messages[-1]["content"] = canonical_json(payload)
             else:
                 prior_retries = connection.execute(
