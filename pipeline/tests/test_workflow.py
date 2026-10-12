@@ -16,6 +16,36 @@ from operations import build_batches_action, jobs_create, jobs_export, keywords_
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_borderline_topics_require_explicit_planning_opt_in(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(PIPELINE, root / "pipeline", ignore=shutil.ignore_patterns("state", "__pycache__"))
+            store = Store(Paths(root))
+            store.initialize()
+            config = load_json(root / "pipeline" / "config.json")
+            run_id = store.create_run("c" * 64, "s" * 64)
+            source = root / "keywords.jsonl"
+            source.write_text("".join(json.dumps({"keyword": keyword}) + "\n" for keyword in (
+                "dryer door micro switch troubleshooting",
+                "dryer door latch micro switch troubleshooting",
+            )))
+            store.import_keywords(source, 2840, "en")
+            keywords_filter(argparse.Namespace(brand=[]), config, store)
+            with store.connect() as connection:
+                ids = sorted(row[0] for row in connection.execute("SELECT keyword_id FROM keywords WHERE selected=1"))
+                self.assertEqual(len(ids), 2)
+                for keyword_id in ids:
+                    cluster_id = stable_id("cluster", keyword_id)
+                    connection.execute("INSERT INTO clusters(cluster_id,algorithm_version,threshold,primary_keyword_id,created_at) VALUES(?,?,?,?,?)", (cluster_id, "test", 0.93, keyword_id, now_iso()))
+                    connection.execute("UPDATE keywords SET cluster_id=? WHERE keyword_id=?", (cluster_id, keyword_id))
+                connection.execute("INSERT INTO similarity_reviews(object_type,left_id,right_id,cosine_score,status,created_at,updated_at) VALUES('topic',?, ?,0.9,'needs_review',?,?)", (*ids, now_iso(), now_iso()))
+            jobs_create(argparse.Namespace(run_id=run_id, limit=10, new_only=True), config, store)
+            with store.connect() as connection:
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM content_jobs").fetchone()[0], 0)
+            jobs_create(argparse.Namespace(run_id=run_id, limit=10, new_only=True, allow_borderline_topics=True), config, store)
+            with store.connect() as connection:
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM content_jobs").fetchone()[0], 2)
+
     def test_jobs_export_is_scoped_to_run(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
