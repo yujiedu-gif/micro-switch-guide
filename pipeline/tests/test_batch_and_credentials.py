@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import shutil
 import stat
@@ -7,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 PIPELINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPELINE))
@@ -14,11 +16,39 @@ sys.path.insert(0, str(PIPELINE))
 from batch import build_batch_requests, extract_response_json, has_compact_article_schema, is_compact_article_draft, write_batch
 from cli import is_authoritative_article_request, is_authoritative_review_request
 from core import Paths, Store, now_iso
-from operations import _review_custom_id, _review_payload
+from operations import _review_custom_id, _review_payload, batch_status
 from credentials import github_token_from_credential_helper, import_credentials, load_env_file
 
 
 class BatchTests(unittest.TestCase):
+    def test_batch_repoll_preserves_ingested_request_statuses(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            paths = Paths(Path(directory))
+            (paths.root / "pipeline").mkdir()
+            (paths.root / "pipeline" / "schema.sql").write_text(
+                (PIPELINE / "schema.sql").read_text(), encoding="utf-8"
+            )
+            store = Store(paths)
+            store.initialize()
+            run_id = store.create_run("config", "skill")
+            with store.connect() as connection:
+                for status in ("completed", "failed", "submitted"):
+                    connection.execute(
+                        """INSERT INTO batch_requests(custom_id,run_id,kind,endpoint,model,input_sha256,status,batch_id,created_at,updated_at)
+                           VALUES(?,?,'article','/v1/responses','test','hash',?,'batch-test',?,?)""",
+                        (status, run_id, status, now_iso(), now_iso()),
+                    )
+            class FakeOpenAIClient:
+                def __init__(self, _api_key: str) -> None:
+                    pass
+                def get_batch(self, _batch_id: str) -> dict:
+                    return {"status": "completed", "request_counts": {"completed": 3, "failed": 0, "total": 3}}
+            with patch("operations.OpenAIClient", FakeOpenAIClient):
+                batch_status(argparse.Namespace(batch_id="batch-test"), paths, store, {"OPENAI_API_KEY": "test"})
+            with store.connect() as connection:
+                statuses = dict(connection.execute("SELECT custom_id,status FROM batch_requests"))
+            self.assertEqual(statuses, {"completed": "completed", "failed": "failed", "submitted": "completed"})
+
     def test_compact_article_shape_is_not_tied_to_request_version(self) -> None:
         schema = json.loads((PIPELINE / "schemas" / "article-draft.schema.json").read_text())
         row = build_batch_requests(
