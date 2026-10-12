@@ -427,6 +427,32 @@ def assemble_article_draft(
     return apply_authoritative_internal_links(article, links)
 
 
+def cache_hit_metrics(usages: list[dict[str, Any]]) -> dict[str, Any]:
+    """Report actual cache writes and reads for one explicit request cohort."""
+    eligible = hits = writes = cached_tokens = input_tokens = 0
+    for usage in usages:
+        request_input = int(usage.get("input_tokens") or 0)
+        if not request_input:
+            continue
+        details = usage.get("input_tokens_details") or {}
+        request_cached = int(details.get("cached_tokens") or 0)
+        request_write = int(details.get("cache_write_tokens") or 0)
+        eligible += 1
+        hits += int(request_cached > 0)
+        writes += int(request_write > 0)
+        cached_tokens += request_cached
+        input_tokens += request_input
+    steady = eligible - writes
+    return {
+        "requests": eligible,
+        "cache_hits": hits,
+        "cache_writes": writes,
+        "raw_cache_hit_rate": hits / eligible if eligible else None,
+        "fixed_prefix_cache_hit_rate": hits / steady if steady else None,
+        "cached_input_token_rate": cached_tokens / input_tokens if input_tokens else None,
+    }
+
+
 def report_for_run(store: Any, run_id: str) -> dict[str, Any]:
     with store.connect() as connection:
         run = connection.execute("SELECT * FROM runs WHERE run_id=?", (run_id,)).fetchone()

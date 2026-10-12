@@ -9,7 +9,7 @@ from pathlib import Path
 PIPELINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPELINE))
 
-from content_ops import cluster_vectors, exclusion_reason, hamming_distance, minhash_signature, minhash_similarity, simhash
+from content_ops import cache_hit_metrics, cluster_vectors, exclusion_reason, hamming_distance, minhash_signature, minhash_similarity, simhash
 from core import Paths, Store, nofollow_external_links, normalize_keyword, render_post, slugify
 
 
@@ -63,6 +63,15 @@ class CoreTests(unittest.TestCase):
     def test_keyword_normalization(self) -> None:
         self.assertEqual(normalize_keyword(" MicroSwitch—Wiring "), "micro switch-wiring")
         self.assertEqual(slugify("Micro Switch Wiring"), "micro-switch-wiring")
+
+    def test_cache_cohort_distinguishes_warmup_from_hits(self) -> None:
+        metrics = cache_hit_metrics([
+            {"input_tokens": 1500, "input_tokens_details": {"cache_write_tokens": 1200, "cached_tokens": 0}},
+            {"input_tokens": 1500, "input_tokens_details": {"cache_write_tokens": 0, "cached_tokens": 1200}},
+        ])
+        self.assertEqual(metrics["raw_cache_hit_rate"], 0.5)
+        self.assertEqual(metrics["fixed_prefix_cache_hit_rate"], 1.0)
+        self.assertEqual(metrics["cache_writes"], 1)
 
     def test_commercial_and_off_topic_filters(self) -> None:
         for keyword in (
