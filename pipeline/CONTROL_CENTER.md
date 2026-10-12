@@ -24,7 +24,9 @@ micro switch no vs nc,500,informational
 - 自动：输入 `确认自动付费` 后，自动推进规划、正文、双重去重、逻辑审核及最多一次修改。不会自动创建 PR。
 - 创建 PR：验收通过后输入 `创建PR`。系统不会合并 PR。
 
-命令框不是 Shell，只接受：`status`、`poll`、`pause`、`resume`、`prepare plan`、`prepare article`、`prepare review`、`audit`、`audit semantic`、`prepare repair`、`finalize`、`auto stop`。
+“只读扩词审计（免费）”会把被拒绝的原始词作为材料，提取设备、部件和任务，再生成带来源链和内容身份的候选。它不改关键词选择、不提交 DataForSEO/OpenAI，也不会生成正文。界面展示候选总量及前 100 个可规划候选。
+
+命令框不是 Shell，只接受：`status`、`poll`、`pause`、`resume`、`prepare plan`、`prepare article`、`prepare review`、`audit`、`audit semantic`、`expand audit`、`prepare repair`、`finalize`、`auto stop`。
 
 终端也可操作：
 

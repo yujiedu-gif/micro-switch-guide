@@ -57,6 +57,45 @@ CREATE TABLE IF NOT EXISTS keyword_scope_decisions (
   PRIMARY KEY(keyword_id, classifier_version)
 );
 
+CREATE TABLE IF NOT EXISTS technical_relationships (
+  relationship_id TEXT PRIMARY KEY,
+  ontology_version TEXT NOT NULL,
+  entity TEXT NOT NULL,
+  component TEXT,
+  relation TEXT NOT NULL,
+  function TEXT NOT NULL,
+  confidence TEXT NOT NULL CHECK(confidence IN ('candidate','confirmed','rejected')),
+  evidence_mode TEXT NOT NULL CHECK(evidence_mode IN ('discovery_only','publishable','mixed')),
+  discovery_source_ids_json TEXT NOT NULL DEFAULT '[]',
+  publishable_claim_ids_json TEXT NOT NULL DEFAULT '[]',
+  allowed_tasks_json TEXT NOT NULL DEFAULT '[]',
+  blocked_tasks_json TEXT NOT NULL DEFAULT '[]',
+  conditional_language_required INTEGER NOT NULL DEFAULT 1 CHECK(conditional_language_required IN (0,1)),
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  UNIQUE(ontology_version,entity,component,relation,function)
+);
+
+CREATE TABLE IF NOT EXISTS keyword_derivations (
+  keyword_id TEXT NOT NULL REFERENCES keywords(keyword_id),
+  generator_version TEXT NOT NULL,
+  relation_version TEXT NOT NULL,
+  origin_keyword_ids_json TEXT NOT NULL DEFAULT '[]',
+  entity TEXT,
+  component TEXT,
+  function TEXT,
+  reader_task TEXT NOT NULL,
+  answer_type TEXT NOT NULL,
+  relation_type TEXT NOT NULL,
+  template_id TEXT NOT NULL,
+  risk_level TEXT NOT NULL,
+  content_signature TEXT NOT NULL,
+  validation_status TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY(keyword_id,generator_version)
+);
+
 CREATE TABLE IF NOT EXISTS embeddings (
   object_type TEXT NOT NULL,
   object_id TEXT NOT NULL,
@@ -224,6 +263,9 @@ CREATE TABLE IF NOT EXISTS similarity_reviews (
 
 CREATE INDEX IF NOT EXISTS idx_keywords_cluster ON keywords(cluster_id);
 CREATE INDEX IF NOT EXISTS idx_scope_decision ON keyword_scope_decisions(classifier_version, decision);
+CREATE INDEX IF NOT EXISTS idx_relationship_entity ON technical_relationships(ontology_version,entity,component);
+CREATE INDEX IF NOT EXISTS idx_derivation_status ON keyword_derivations(generator_version,validation_status);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_derivation_signature ON keyword_derivations(generator_version,content_signature);
 CREATE INDEX IF NOT EXISTS idx_jobs_status ON content_jobs(status);
 CREATE INDEX IF NOT EXISTS idx_batch_status ON batch_requests(status);
 CREATE INDEX IF NOT EXISTS idx_costs_run_provider ON api_costs(run_id, provider);

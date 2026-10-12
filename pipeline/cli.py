@@ -255,8 +255,8 @@ def main(argv: list[str] | None = None) -> int:
                             "SELECT source_pack_json,plan_json FROM content_jobs WHERE job_id=?",
                             (request_row["job_id"],),
                         ).fetchone()
-                    compact_v10 = "-v10-" in custom_id and set(output) == {"body_markdown", "used_claim_ids", "self_review"}
-                    if compact_v10:
+                    compact_article = any(version in custom_id for version in ("-v10-", "-v11-")) and set(output) == {"body_markdown", "used_claim_ids", "self_review"}
+                    if compact_article:
                         draft_schema = load_json(paths.pipeline / "schemas" / "article-draft.schema.json")
                         validation_errors.extend(validate_schema(output, draft_schema))
                         self_review = output.get("self_review") or {}
@@ -279,6 +279,19 @@ def main(argv: list[str] | None = None) -> int:
                     validation_errors.extend(validate_schema(output, schema))
                 if effective_kind == "plan" and not validation_errors:
                     validation_errors.extend(plan_policy_errors(output, config))
+                    if request_row["job_id"] and output.get("content_signature"):
+                        with store.connect() as connection:
+                            duplicate = connection.execute(
+                                """SELECT job_id FROM content_jobs
+                                   WHERE job_id<>? AND plan_json IS NOT NULL
+                                     AND json_extract(plan_json,'$.content_signature')=?
+                                   LIMIT 1""",
+                                (request_row["job_id"], output["content_signature"]),
+                            ).fetchone()
+                        if duplicate:
+                            validation_errors.append(
+                                f"duplicate content_signature already owned by {duplicate['job_id']}"
+                            )
                 if effective_kind == "article" and not validation_errors:
                     validation_errors.extend(article_policy_errors(output, config))
                     if request_row["job_id"]:
@@ -339,7 +352,7 @@ def main(argv: list[str] | None = None) -> int:
                                 (request_row["job_id"],),
                             )
                         if may_replace and request_row["kind"] == "repair":
-                            if "-v10-" in custom_id and embedded_review_result:
+                            if any(version in custom_id for version in ("-v10-", "-v11-")) and embedded_review_result:
                                 validation_json = canonical_json({
                                     "gate": "embedded_self_review_v1",
                                     "passed": True,
@@ -361,13 +374,15 @@ def main(argv: list[str] | None = None) -> int:
                                         revised_plan[field] = output.get(field)
                                     revised_plan["angle"] = output.get("owned_question")
                                     headings = re.findall(r"^##\s+(.+)$", output.get("body_markdown", ""), re.MULTILINE)
+                                    revised_plan["section_roles"] = [f"repaired_section_{index}" for index, _ in enumerate(headings, 1)]
                                     revised_plan["outline"] = [
                                         {
                                             "h2": heading,
                                             "purpose": "Answer this bounded section using only the attached source pack.",
+                                            "section_role": revised_plan["section_roles"][index],
                                             "points": ["Preserve the accepted evidence scope and state unresolved fields explicitly."],
                                         }
-                                        for heading in headings
+                                        for index, heading in enumerate(headings)
                                     ]
                                     revised_plan["internal_link_targets"] = [
                                         link.get("target_job_id")
@@ -377,7 +392,7 @@ def main(argv: list[str] | None = None) -> int:
                                     revised_plan_json = canonical_json(revised_plan)
                                 connection.execute("UPDATE content_jobs SET status='awaiting_semantic_review',article_json=?,plan_json=COALESCE(?,plan_json),title=?,slug=?,category=?,owned_question=?,validation_json='{}',updated_at=? WHERE job_id=?", (canonical_json(output), revised_plan_json, output.get("title"), output.get("slug"), output.get("category"), output.get("owned_question"), now_iso(), request_row["job_id"]))
                         elif may_replace:
-                            embedded_review = "-v10-" in custom_id
+                            embedded_review = any(version in custom_id for version in ("-v10-", "-v11-"))
                             validation_json = canonical_json({
                                 "gate": "embedded_self_review_v1",
                                 "passed": True,
@@ -481,17 +496,17 @@ def audit(paths: Paths, config: dict[str, Any], store: Store, skill_hash: str, c
             connection.execute("PRAGMA integrity_check").fetchone()
             source_count = connection.execute("SELECT COUNT(*) FROM sources").fetchone()[0]
             claim_count = connection.execute("SELECT COUNT(*) FROM claims WHERE status='accepted'").fetchone()[0]
-            prohibited_accepted = connection.execute(
+            unsupported_accepted = connection.execute(
                 """SELECT COUNT(DISTINCT c.claim_id)
                    FROM claims c JOIN claim_sources cs ON cs.claim_id=c.claim_id
                    JOIN sources s ON s.source_id=cs.source_id
                    WHERE c.status='accepted'
-                     AND (s.source_type NOT IN ('standard','regulator','government','intergovernmental','academic','encyclopedia')
-                          OR s.editorial_block_names_json <> '[]')"""
+                     AND s.source_type NOT IN ('standard','regulator','government','intergovernmental','academic','encyclopedia',
+                                               'manufacturer','technical_guide','commercial_technical','patent')"""
             ).fetchone()[0]
         add("sqlite", True, str(paths.db))
         add("core_fact_library", source_count >= 3 and claim_count >= 4, f"sources={source_count}, accepted_claims={claim_count}")
-        add("zero_commercial_sources", prohibited_accepted == 0, f"prohibited_accepted_claims={prohibited_accepted}")
+        add("supported_source_types", unsupported_accepted == 0, f"unsupported_accepted_claims={unsupported_accepted}")
     except (sqlite3.Error, OSError) as exc:
         add("sqlite", False, str(exc))
     add("skill_hash", len(skill_hash) == 64, skill_hash)
@@ -499,6 +514,8 @@ def audit(paths: Paths, config: dict[str, Any], store: Store, skill_hash: str, c
 
     layout = (paths.root / "_layouts" / "post.html").read_text(encoding="utf-8")
     add("zero_brand_layout", "official_url" not in layout and "ZINGEAR" not in layout, "no commercial insertion block")
+    renderer = (paths.pipeline / "core.py").read_text(encoding="utf-8")
+    add("external_links_nofollow", 'rel="nofollow noopener noreferrer"' in renderer, "renderer enforces nofollow")
 
     credential_names = ["DATAFORSEO_LOGIN", "DATAFORSEO_PASSWORD", "OPENAI_API_KEY", "QDRANT_URL", "QDRANT_API_KEY", "GITHUB_TOKEN"]
     credentials = effective_credentials(paths.state / "secrets.env")

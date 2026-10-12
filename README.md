@@ -21,7 +21,7 @@ A lightweight English educational blog about micro switch fundamentals, selectio
    - `Applications`
 5. Commit and push to `main`. GitHub Pages rebuilds the site automatically.
 
-The first 10,000-article program is educational and zero-brand. Do not name or recommend manufacturers, suppliers, brands, commercial series, or product models in article prose or metadata. Manufacturer documents may remain in source records for traceability, but they are not editorial subjects.
+The first 10,000-article program is educational and non-promotional. Do not rank or recommend manufacturers, suppliers, brands, commercial series, or product models. Manufacturer and commercial technical documents may support narrowly scoped facts and may be named in the Sources section; all external source links are rendered `nofollow`.
 
 ## Content pipeline
 
@@ -34,6 +34,8 @@ Initialize and inspect the local content-production state without making paid AP
 ```
 
 The pipeline stores runtime state under the ignored `pipeline/state/` directory. See `pipeline/README.md` for the staged smoke-test workflow. Never commit API keys or credential files.
+
+The local control center also provides a free, read-only keyword expansion audit. It reuses rejected queries as entity/task material while blocking topic drift, and prepares 100 evidence-aware planning candidates without calling paid providers or making them production-eligible.
 
 ## Local preview
 

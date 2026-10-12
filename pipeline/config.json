@@ -17,7 +17,7 @@
   "program": {
     "article_limit": 10000,
     "zero_brand": true,
-    "zero_commercial_sources": true,
+    "zero_commercial_sources": false,
     "include_product_model_keywords": false,
     "permissive_keyword_pool": false,
     "topic_scope_mode": "strict_direct",

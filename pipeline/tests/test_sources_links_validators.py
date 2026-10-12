@@ -37,6 +37,28 @@ class SourceAndValidationTests(unittest.TestCase):
         self.assertEqual(article["internal_links"], links)
         self.assertEqual(article["source_manufacturer_names"], [])
 
+    def test_commercial_source_name_is_kept_as_citation_guard_metadata(self) -> None:
+        plan = {
+            "primary_keyword": "micro switch basics", "secondary_keywords": [],
+            "owned_question": "How does a micro switch work?", "title": "micro switch basics",
+            "h1": "micro switch basics", "description": "x" * 145,
+            "slug": "micro-switch-basics", "category": "Basics",
+        }
+        pack = {
+            "claims": [{"claim_id": "c1", "source_ids": ["s1"], "status": "accepted"}],
+            "sources": [{
+                "source_id": "s1", "title": "Technical manual", "publisher": "Example Brand",
+                "url": "https://example.com/manual", "source_type": "manufacturer",
+                "editorial_block_names": ["Example Brand"],
+            }],
+        }
+        article = assemble_article_draft(
+            {"body_markdown": "micro switch basics.\n\n## micro switch basics\n\nText.\n\n## Final note\n\nmicro switch basics.", "used_claim_ids": ["c1"]},
+            plan, pack, [],
+        )
+        self.assertEqual(article["source_manufacturer_names"], ["Example Brand"])
+        self.assertEqual(article["sources"][0]["publisher"], "Example Brand")
+
     def test_plan_description_is_repaired_without_another_model_call(self) -> None:
         plan = {
             "primary_keyword": "what is a micro switch actuator",
@@ -103,7 +125,7 @@ class SourceAndValidationTests(unittest.TestCase):
         store.initialize()
         return store
 
-    def test_source_pack_rejects_manufacturer_specific_accepted_claim(self) -> None:
+    def test_source_pack_requires_scope_condition_for_manufacturer_claim(self) -> None:
         schema = json.loads((SKILL / "references" / "source-pack.schema.json").read_text())
         pack = {
             "topic_id": "t", "retrieved_at": "2026-10-09T00:00:00+00:00",
@@ -156,7 +178,7 @@ class SourceAndValidationTests(unittest.TestCase):
         errors = article_policy_errors(article, config)
         self.assertTrue(any("ranking" in error for error in errors))
 
-    def test_review_uses_deterministic_zero_brand_result(self) -> None:
+    def test_review_allows_source_publisher_metadata_but_not_editorial_promotion(self) -> None:
         article = {
             "primary_keyword": "micro switch mechanical life",
             "title": "Micro Switch Mechanical Life Explained",
@@ -182,19 +204,23 @@ class SourceAndValidationTests(unittest.TestCase):
         }
         config = {"program": {"article_word_min": 1200, "article_word_max": 1800}}
         reconciled = reconcile_review_deterministic_checks(review, article, config)
+        self.assertTrue(reconciled["checks"]["zero_brand"])
+        self.assertTrue(reconciled["passed"])
+        article["body_markdown"] += " Example Publisher is the best manufacturer."
+        reconciled = reconcile_review_deterministic_checks(review, article, config)
         self.assertFalse(reconciled["checks"]["zero_brand"])
         self.assertFalse(reconciled["passed"])
 
-    def test_source_pack_rejects_commercial_source_even_for_general_claim(self) -> None:
+    def test_source_pack_accepts_scoped_commercial_technical_source(self) -> None:
         schema = json.loads((SKILL / "references" / "source-pack.schema.json").read_text())
         pack = {
             "topic_id": "t", "retrieved_at": "2026-10-09T00:00:00+00:00",
-            "sources": [{"source_id": "s", "title": "Commercial Guide", "publisher": "Example Brand", "url": "https://example.com/guide", "source_type": "technical_guide", "retrieved_at": "2026-10-09T00:00:00+00:00", "content_hash": "a" * 64}],
-            "claims": [{"claim_id": "c", "subject": "switch", "predicate": "definition", "value": "text", "scope": "general", "source_ids": ["s"], "confidence": "high", "status": "accepted"}],
+            "sources": [{"source_id": "s", "title": "Commercial Guide", "publisher": "Example Brand", "url": "https://example.com/guide", "source_type": "technical_guide", "retrieved_at": "2026-10-09T00:00:00+00:00", "content_hash": "a" * 64, "editorial_block_names": ["Example Brand"]}],
+            "claims": [{"claim_id": "c", "subject": "switch", "predicate": "definition", "value": "text", "scope": "manufacturer", "conditions": {"manufacturer": "Example Brand"}, "source_ids": ["s"], "confidence": "high", "status": "accepted"}],
         }
         with tempfile.TemporaryDirectory() as directory:
-            with self.assertRaises(ValueError):
-                ingest_source_pack(self.store(Path(directory)), pack, schema)
+            result = ingest_source_pack(self.store(Path(directory)), pack, schema)
+        self.assertEqual(result["claims"], 1)
 
     def test_review_treats_noncritical_structure_signals_as_advisory(self) -> None:
         article = {

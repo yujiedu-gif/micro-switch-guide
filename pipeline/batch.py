@@ -17,6 +17,10 @@ SYSTEM_PROMPTS = {
 - description must target 150-155 characters (the hard acceptance range is 140-160). It must begin with primary_keyword copied as one contiguous literal substring, followed immediately by a colon, and that complete substring must occur exactly once. Do this even when the keyword is phrased as a question; never omit, reorder, or grammatically rewrite one of its words.
 - slug must contain the complete lowercase hyphenated primary_keyword. Do not drop its words.
 - At least one outline h2 must contain the complete primary_keyword contiguously.
+- Give the page one bounded reader_task and answer_type. Build content_signature as at least three lowercase underscore tokens separated by |: entity_or_component|reader_task|answer_type.
+- Supply at least two differentiation_anchors that require this page to use a distinct mechanism, failure path, parameter boundary, or verification path. A title variation is not an anchor.
+- Give every outline item a section_role and copy those roles, in order, to section_roles. Do not reuse a generic outline merely by replacing the equipment name.
+- When the payload says conditional_language_required, describe only designs that use the stated micro switch; never generalize the component to every device in that class.
 - Keep all editorial fields educational and free of brands, manufacturers, suppliers, factories, marketplaces, and commercial series. An exact model identifier is allowed only when it appears in the supplied primary keyword; do not introduce other models.
 Count description characters including spaces and punctuation, then verify every rule. Return only JSON matching the response schema.""",
     "article": """You write neutral, precise American-English educational articles for MicroSwitchGuide.
@@ -24,12 +28,14 @@ Count description characters including spaces and punctuation, then verify every
 # Evidence and scope
 - Use only accepted claims supplied by the user. Preserve every number, unit, AC/DC distinction, load type, state reference, test condition, definition, and scope qualifier.
 - If evidence is insufficient, omit or qualify the claim. Never invent a specification, compatibility statement, certification, safety instruction, model identity, or application.
-- Do not name, introduce, compare, rank, recommend, or promote a manufacturer, supplier, distributor, brand, factory, marketplace, commercial series, or commercial source.
+- Do not rank, recommend, promote, or make a manufacturer, supplier, distributor, brand, factory, marketplace, or commercial series the editorial subject. Commercial technical evidence may be used only within the supplied claim scope; source attribution is assembled locally.
 - An approved model identifier may appear only when it is in the supplied keyword. Without exact-model evidence, leave identity, rating, dimensions, terminals, compatibility, manufacturer, and application unresolved.
 
 # Writing contract
 - Work in two internal passes: draft, then audit the draft for logical consistency, parameter support, definition accuracy, zero-brand compliance, and topic purity. Silently fix every issue before returning the final JSON.
 - Follow the approved outline and owned question. Do not answer excluded questions in depth.
+- Preserve the approved reader_task, answer_type, differentiation_anchors, and section_roles. Do not reproduce the owned question or section-role combination listed in avoid_content_identities.
+- Shared definitions may be concise, but the mechanism, failure path, verification path, and conclusion must follow this plan's differentiation anchors rather than a reusable equipment-name template.
 - Follow word_budget. The local validator accepts 1,000-2,000 English words. Do not use an em dash, generic industry opening, marketing CTA, or exposed workflow note.
 - Use the complete primary_keyword in sentence 1 or 2, within the first 150 words, in at least one H2, and exactly once in the closing section.
 - Return only body_markdown, the unique IDs of claims actually used, and the five self_review booleans. Set a boolean true only after the final prose passes that check. Return only JSON matching the response schema.""",
@@ -43,7 +49,7 @@ Count description characters including spaces and punctuation, then verify every
 - Unsupported positive factual claims are hard failures under the most relevant of those three checks. Style, repetition, heading quality, and breadth are not hard failures unless they create a logical or definitional contradiction.
 - A statement that supplied evidence does not establish a fact is an allowed epistemic boundary, not an unsupported positive claim. An identifier-verification page may explain which fields remain unknown without external evidence for the mere absence of evidence.
 - Do not fail on internal-link existence or uniqueness; those are validated by the link graph and duplicate pipeline.
-- Commercial publishers and their titles or URLs are prohibited in `source_manufacturer_names` and structured Sources metadata. Fail zero_brand if any commercial source survives anywhere in the article payload, even when absent from visible prose. Government regulators, intergovernmental standards bodies, universities, and noncommercial encyclopedias are not commercial brands.
+- Commercial publishers may appear in structured source metadata. Fail zero_brand only when the editorial prose ranks, recommends, promotes, or uses a source name outside neutral attribution. Source metadata is assembled locally and all rendered external links are `nofollow`.
 - Return only JSON matching the response schema.""",
     "repair": """You repair one MicroSwitchGuide article exactly once. Correct only the supplied validation failures, preserve the approved owned question, and use only supplied evidence.
 

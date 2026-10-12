@@ -36,12 +36,18 @@ from content_ops import (
 )
 from core import canonical_json, load_json, load_jsonl, normalize_keyword, now_iso, render_post, sha256_bytes, stable_id, write_jsonl
 from credentials import REQUIRED, credential_status, effective_credentials, import_credentials
+from keyword_expansion import (
+    GENERATOR_VERSION,
+    RELATION_VERSION,
+    expansion_candidates,
+    material_rows,
+)
 from providers import DataForSEOClient, GitHubClient, LocalEmbeddingClient, OpenAIClient, OpenRouterClient, ProviderError, QdrantClient
 from validators import article_policy_errors, normalize_plan_metadata, source_pack_errors, validate_schema
 from topic_scope import CLASSIFIER_VERSION, classify_keyword
 
 
-REQUEST_VERSION = "v10"
+REQUEST_VERSION = "v11"
 REVIEW_GATE_VERSION = "logic-gate-v5-stable-advisory-context"
 REVIEW_INSTRUCTION = (
     "Concentrate the hard review on logical consistency, parameter accuracy, definition accuracy, and zero-brand compliance. "
@@ -143,6 +149,19 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     scope_apply = commands.add_parser("keywords-scope-apply", help="apply a versioned strict topic decision to keyword eligibility")
     scope_apply.add_argument("--output-dir", type=Path, required=True)
     scope_apply.add_argument("--brand", action="append", default=[])
+
+    materials = commands.add_parser("keywords-materials-audit", help="extract reusable keyword materials without changing SQLite")
+    materials.add_argument("--output-dir", type=Path, required=True)
+    materials.add_argument("--source", choices=["rejected", "all"], default="rejected")
+
+    expand_audit = commands.add_parser("keywords-expand-audit", help="generate provenance-aware direct micro-switch candidates without changing SQLite")
+    expand_audit.add_argument("--output-dir", type=Path, required=True)
+    expand_audit.add_argument("--source", choices=["rejected", "all"], default="rejected")
+    expand_audit.add_argument("--planning-limit", type=int, default=100)
+
+    expand_apply = commands.add_parser("keywords-expand-apply", help="stage explicitly approved expansion candidates in SQLite")
+    expand_apply.add_argument("--input", type=Path, required=True)
+    expand_apply.add_argument("--limit", type=int, default=100)
 
     jobs = commands.add_parser("jobs-create", help="create one idempotent article job per selected intent cluster")
     jobs.add_argument("--run-id", required=True)
@@ -350,6 +369,12 @@ def dispatch(args: argparse.Namespace, paths: Any, config: dict[str, Any], store
         return keywords_scope_audit(args, config, store, apply=False)
     if args.command == "keywords-scope-apply":
         return keywords_scope_audit(args, config, store, apply=True)
+    if args.command == "keywords-materials-audit":
+        return keywords_materials_audit(args, store)
+    if args.command == "keywords-expand-audit":
+        return keywords_expand_audit(args, config, store)
+    if args.command == "keywords-expand-apply":
+        return keywords_expand_apply(args, config, store)
     if args.command == "jobs-create":
         return jobs_create(args, config, store)
     if args.command == "jobs-requeue-articles":
@@ -457,13 +482,16 @@ def article_local_repair(args: argparse.Namespace, paths: Any, config: dict[str,
         for field in ("title", "h1", "description", "slug", "category", "owned_question"):
             revised_plan[field] = article.get(field)
         revised_plan["angle"] = article.get("owned_question")
+        headings = re.findall(r"^##\s+(.+)$", article.get("body_markdown", ""), re.MULTILINE)
+        revised_plan["section_roles"] = [f"repaired_section_{index}" for index, _ in enumerate(headings, 1)]
         revised_plan["outline"] = [
             {
                 "h2": heading,
                 "purpose": "Answer this bounded section using only the attached source pack.",
+                "section_role": revised_plan["section_roles"][index],
                 "points": ["Preserve the accepted evidence scope and state unresolved fields explicitly."],
             }
-            for heading in re.findall(r"^##\s+(.+)$", article.get("body_markdown", ""), re.MULTILINE)
+            for index, heading in enumerate(headings)
         ]
         revised_plan["internal_link_targets"] = [
             link.get("target_job_id")
@@ -828,6 +856,226 @@ def keywords_scope_audit(
     return 0
 
 
+def _expansion_source_rows(store: Any, source: str) -> list[dict[str, Any]]:
+    where = "WHERE exclusion_reason LIKE 'scope_reject:%'" if source == "rejected" else ""
+    with store.connect() as connection:
+        return [dict(row) for row in connection.execute(
+            f"SELECT keyword_id,keyword,normalized_keyword,search_volume,exclusion_reason FROM keywords {where} ORDER BY keyword_id"
+        ).fetchall()]
+
+
+def _write_csv(path: Path, rows: list[dict[str, Any]], fieldnames: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            serialized = {
+                name: "|".join(str(value) for value in row.get(name, []))
+                if isinstance(row.get(name), list) else row.get(name)
+                for name in fieldnames
+            }
+            writer.writerow(serialized)
+
+
+def keywords_materials_audit(args: argparse.Namespace, store: Any) -> int:
+    """Extract reusable semantic material without mutating SQLite."""
+    rows = _expansion_source_rows(store, args.source)
+    materials = material_rows(rows)
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    write_jsonl(args.output_dir / "keyword-materials.jsonl", materials)
+    fields = [
+        "keyword_id", "keyword", "normalized_keyword", "entity", "component", "function",
+        "symptom", "parameter", "environment", "reader_task", "relation_type",
+        "base_keyword", "decision", "reason_codes", "material_version",
+    ]
+    _write_csv(args.output_dir / "keyword-materials.csv", materials, fields)
+    decisions: dict[str, int] = {}
+    reasons: dict[str, int] = {}
+    relations: dict[str, int] = {}
+    for item in materials:
+        decisions[item["decision"]] = decisions.get(item["decision"], 0) + 1
+        if item.get("relation_type"):
+            relations[item["relation_type"]] = relations.get(item["relation_type"], 0) + 1
+        for reason in item.get("reason_codes", []):
+            reasons[reason] = reasons.get(reason, 0) + 1
+    summary = {
+        "source": args.source,
+        "keywords": len(rows),
+        "decisions": decisions,
+        "relations": relations,
+        "unique_relation_bases": len({
+            (item.get("entity"), item.get("component"), item.get("function"), item.get("relation_type"))
+            for item in materials if item.get("decision") == "accept"
+        }),
+        "reasons": reasons,
+        "database_mutated": False,
+        "output_dir": str(args.output_dir),
+    }
+    (args.output_dir / "keyword-materials-summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    return 0
+
+
+def keywords_expand_audit(args: argparse.Namespace, config: dict[str, Any], store: Any) -> int:
+    """Generate deterministic candidates and a bounded planning intake; never write SQLite."""
+    rows = _expansion_source_rows(store, args.source)
+    with store.connect() as connection:
+        existing = {row[0] for row in connection.execute("SELECT normalized_keyword FROM keywords")}
+    materials = material_rows(rows)
+    candidates = expansion_candidates(materials, existing)
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    write_jsonl(args.output_dir / "keyword-expansion-candidates.jsonl", candidates)
+    fields = [
+        "candidate_id", "candidate_keyword", "normalized_keyword", "entity", "component",
+        "function", "reader_task", "answer_type", "relation_type", "template_id",
+        "risk_level", "content_signature", "decision", "reason_codes", "validation_status",
+        "origin_keyword_ids", "source_variants", "generator_version", "relation_version",
+    ]
+    _write_csv(args.output_dir / "keyword-expansion-candidates.csv", candidates, fields)
+    high_confidence = [
+        item for item in candidates
+        if item["decision"] == "accept" and item["risk_level"] == "low"
+    ][: max(0, args.planning_limit)]
+    planning = [{
+        "candidate_id": item["candidate_id"],
+        "primary_keyword": item["candidate_keyword"],
+        "reader_task": item["reader_task"],
+        "answer_type": item["answer_type"],
+        "content_signature": item["content_signature"],
+        "relation_type": item["relation_type"],
+        "differentiation_anchors_required": 2,
+        "conditional_language_required": item["relation_type"] == "direct_application",
+        "validation_status": item["validation_status"],
+        "requirements": {
+            "direct_micro_switch_focus": True,
+            "zero_brand": True,
+            "no_article_submission": True,
+            "source_pack_required_before_drafting": True,
+        },
+    } for item in high_confidence]
+    write_jsonl(args.output_dir / "planning-candidates-100.jsonl", planning)
+    counts: dict[str, int] = {}
+    relations: dict[str, int] = {}
+    for item in candidates:
+        counts[item["decision"]] = counts.get(item["decision"], 0) + 1
+        relations[item["relation_type"]] = relations.get(item["relation_type"], 0) + 1
+    summary = {
+        "source": args.source,
+        "generator_version": GENERATOR_VERSION,
+        "relation_version": RELATION_VERSION,
+        "raw_keywords": len(rows),
+        "materials_accepted": sum(item["decision"] == "accept" for item in materials),
+        "unique_relation_bases": len({
+            (item.get("entity"), item.get("component"), item.get("function"), item.get("relation_type"))
+            for item in materials if item.get("decision") == "accept"
+        }),
+        "candidates": len(candidates),
+        "candidate_decisions": counts,
+        "candidate_relations": relations,
+        "planning_candidates": len(planning),
+        "database_mutated": False,
+        "paid_calls": 0,
+        "output_dir": str(args.output_dir),
+    }
+    (args.output_dir / "keyword-expansion-summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    return 0
+
+
+def keywords_expand_apply(args: argparse.Namespace, config: dict[str, Any], store: Any) -> int:
+    """Stage approved candidates with provenance; never select them for production."""
+    store.initialize()
+    candidates = load_jsonl(args.input)
+    accepted = [item for item in candidates if item.get("decision") == "accept"][: max(0, args.limit)]
+    inserted = existing = 0
+    now = now_iso()
+    known_brands = config["program"].get("excluded_brand_terms", [])
+    with store.connect() as connection:
+        known_ids = {row[0] for row in connection.execute("SELECT keyword_id FROM keywords")}
+        for item in accepted:
+            if item.get("generator_version") != GENERATOR_VERSION or item.get("relation_version") != RELATION_VERSION:
+                raise ValueError(f"unsupported expansion version for {item.get('candidate_id')}")
+            keyword = str(item.get("candidate_keyword", "")).strip()
+            normalized = normalize_keyword(keyword)
+            decision = classify_keyword(keyword, known_brands)
+            if decision.decision != "accept":
+                raise ValueError(f"expanded keyword fails strict scope: {keyword}: {decision.to_dict()}")
+            origins = sorted({str(value) for value in item.get("origin_keyword_ids", [])})
+            missing_origins = [origin for origin in origins if origin not in known_ids]
+            if missing_origins:
+                raise ValueError(f"candidate {item.get('candidate_id')} has unknown origins: {missing_origins}")
+            keyword_id = stable_id("kw", normalized)
+            cursor = connection.execute(
+                """INSERT OR IGNORE INTO keywords(
+                     keyword_id,keyword,normalized_keyword,source_endpoint,location_code,language_code,
+                     exclusion_reason,data_version,selected,created_at,updated_at
+                   ) VALUES(?,?,?,?,?,?,?,?,0,?,?)""",
+                (keyword_id, keyword, normalized, f"derived:{GENERATOR_VERSION}",
+                 config["site"]["location_code"], config["site"]["language"],
+                 "expansion_pending:demand_and_evidence", GENERATOR_VERSION, now, now),
+            )
+            inserted += cursor.rowcount
+            existing += int(cursor.rowcount == 0)
+            connection.execute(
+                """INSERT INTO keyword_derivations(
+                     keyword_id,generator_version,relation_version,origin_keyword_ids_json,entity,component,
+                     function,reader_task,answer_type,relation_type,template_id,risk_level,content_signature,
+                     validation_status,created_at,updated_at
+                   ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                   ON CONFLICT(keyword_id,generator_version) DO UPDATE SET
+                     origin_keyword_ids_json=excluded.origin_keyword_ids_json,
+                     validation_status=excluded.validation_status,updated_at=excluded.updated_at""",
+                (keyword_id, GENERATOR_VERSION, RELATION_VERSION, canonical_json(origins),
+                 item.get("entity"), item.get("component"), item.get("function"), item["reader_task"],
+                 item["answer_type"], item["relation_type"], item["template_id"], item["risk_level"],
+                 item["content_signature"], "pending_demand_and_evidence", now, now),
+            )
+            connection.execute(
+                """INSERT INTO keyword_scope_decisions(
+                     keyword_id,classifier_version,decision,scope_class,reason_codes_json,created_at,updated_at
+                   ) VALUES(?,?,?,?,?,?,?) ON CONFLICT(keyword_id,classifier_version) DO UPDATE SET
+                     decision=excluded.decision,scope_class=excluded.scope_class,
+                     reason_codes_json=excluded.reason_codes_json,updated_at=excluded.updated_at""",
+                (keyword_id, CLASSIFIER_VERSION, "accept", "direct_micro_switch", "[]", now, now),
+            )
+            relationship_id = stable_id("rel", "|".join([
+                RELATION_VERSION, str(item.get("entity") or ""), str(item.get("component") or ""),
+                str(item.get("relation_type") or ""), str(item.get("function") or ""),
+            ]))
+            connection.execute(
+                """INSERT OR IGNORE INTO technical_relationships(
+                     relationship_id,ontology_version,entity,component,relation,function,confidence,evidence_mode,
+                     allowed_tasks_json,blocked_tasks_json,conditional_language_required,created_at,updated_at
+                   ) VALUES(?,?,?,?,?,?,'candidate','discovery_only',?,?,1,?,?)""",
+                (relationship_id, RELATION_VERSION, str(item.get("entity") or "micro_switch"),
+                 item.get("component"), item["relation_type"], str(item.get("function") or "technical_explanation"),
+                 canonical_json([item["reader_task"]]), canonical_json([
+                     "rating", "replacement_compatibility", "model_identity", "safety_instruction"
+                 ]), now, now),
+            )
+            relationship = connection.execute(
+                "SELECT allowed_tasks_json FROM technical_relationships WHERE relationship_id=?",
+                (relationship_id,),
+            ).fetchone()
+            allowed_tasks = sorted(set(json.loads(relationship["allowed_tasks_json"] or "[]")) | {item["reader_task"]})
+            connection.execute(
+                "UPDATE technical_relationships SET allowed_tasks_json=?,updated_at=? WHERE relationship_id=?",
+                (canonical_json(allowed_tasks), now, relationship_id),
+            )
+    result = {
+        "input_candidates": len(candidates), "approved_rows_considered": len(accepted),
+        "inserted": inserted, "existing": existing, "selected_for_production": 0,
+        "status": "pending_demand_and_evidence",
+    }
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0
+
+
 def _ensure_dataforseo_budget(store: Any, run_id: str, config: dict[str, Any], reserve: float) -> None:
     with store.connect() as connection:
         spent = float(connection.execute("SELECT COALESCE(SUM(amount_usd),0) FROM api_costs WHERE run_id=? AND provider='dataforseo'", (run_id,)).fetchone()[0])
@@ -997,11 +1245,25 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
             custom_id = f"msg-{args.kind}-{REQUEST_VERSION}-{suffix}"
             if args.kind == "plan":
                 secondary = [item[0] for item in connection.execute("SELECT keyword FROM keywords WHERE cluster_id=? AND keyword_id<>? AND exclusion_reason IS NULL ORDER BY COALESCE(search_volume,0) DESC LIMIT 12", (row["cluster_id"], row["keyword_id"]))]
+                derivation = connection.execute(
+                    """SELECT * FROM keyword_derivations
+                       WHERE keyword_id=? ORDER BY created_at DESC LIMIT 1""",
+                    (row["keyword_id"],),
+                ).fetchone()
                 payload = {
                     "job_id": row["job_id"], "primary_keyword": row["keyword"], "secondary_keywords": secondary,
                     "search_intent": row["intent"] or "informational", "target_market": "United States",
                     "requirements": {"one_owned_question": True, "zero_brand": True, "educational_only": True},
                 }
+                if derivation:
+                    payload["content_identity_hint"] = {
+                        "entity": derivation["entity"], "component": derivation["component"],
+                        "function": derivation["function"], "reader_task": derivation["reader_task"],
+                        "answer_type": derivation["answer_type"],
+                        "content_signature": derivation["content_signature"],
+                        "relation_type": derivation["relation_type"],
+                        "conditional_language_required": derivation["relation_type"] == "direct_application",
+                    }
             elif args.kind == "article":
                 if not row["plan_json"] or not row["source_pack_json"]:
                     continue
@@ -1022,9 +1284,30 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
                     key: plan.get(key)
                     for key in (
                         "primary_keyword", "secondary_keywords", "owned_question",
-                        "topic_scope", "excluded_questions", "angle", "outline", "must_cover",
+                        "topic_scope", "excluded_questions", "angle", "reader_task", "answer_type",
+                        "content_signature", "differentiation_anchors", "section_roles", "outline", "must_cover",
                     )
                 }
+                nearby = []
+                for other in connection.execute(
+                    """SELECT job_id,plan_json FROM content_jobs
+                       WHERE job_id<>? AND plan_json IS NOT NULL
+                       ORDER BY updated_at DESC LIMIT 100""",
+                    (row["job_id"],),
+                ).fetchall():
+                    other_plan = json.loads(other["plan_json"])
+                    if (
+                        other_plan.get("reader_task") == plan.get("reader_task")
+                        or other_plan.get("answer_type") == plan.get("answer_type")
+                    ):
+                        nearby.append({
+                            "job_id": other["job_id"],
+                            "content_signature": other_plan.get("content_signature"),
+                            "section_roles": other_plan.get("section_roles", []),
+                            "owned_question": other_plan.get("owned_question"),
+                        })
+                    if len(nearby) >= 5:
+                        break
                 compact_claims = [
                     {
                         key: claim.get(key)
@@ -1036,6 +1319,7 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
                 payload = {
                     "plan": compact_plan,
                     "claims": compact_claims,
+                    "avoid_content_identities": nearby,
                     "word_budget": {
                         "target_total_words": target_total_words,
                         "introduction_words": introduction_words,
@@ -1107,22 +1391,39 @@ def embedding_export(args: argparse.Namespace, store: Any) -> int:
             for row in rows:
                 plan = json.loads(row["plan_json"])
                 if args.object_type == "article_plan":
-                    outline = "\n".join(item.get("h2", "") for item in plan.get("outline", []))
-                    output.append({"id": row["job_id"], "job_id": row["job_id"], "granularity": "plan", "text": f"{plan.get('owned_question','')}\n{plan.get('angle','')}\n{outline}"})
+                    outline = "\n".join(
+                        f"{item.get('section_role','')}: {item.get('h2','')} — {item.get('purpose','')}"
+                        for item in plan.get("outline", [])
+                    )
+                    anchors = "\n".join(plan.get("differentiation_anchors", []))
+                    output.append({
+                        "id": row["job_id"], "job_id": row["job_id"], "granularity": "plan",
+                        "text": f"{plan.get('content_signature','')}\n{plan.get('owned_question','')}\n{plan.get('reader_task','')}\n{plan.get('answer_type','')}\n{plan.get('angle','')}\n{anchors}\n{outline}",
+                    })
                 else:
                     for index, section in enumerate(plan.get("outline", [])):
-                        output.append({"id": f"{row['job_id']}:{index}", "job_id": row["job_id"], "granularity": "section_plan", "text": f"{section.get('h2','')}\n{section.get('purpose','')}\n{' '.join(section.get('points',[]))}"})
+                        output.append({
+                            "id": f"{row['job_id']}:section_plan:{index}", "job_id": row["job_id"],
+                            "granularity": "section_plan", "section_role": section.get("section_role"),
+                            "text": f"{section.get('section_role','')}\n{section.get('h2','')}\n{section.get('purpose','')}\n{' '.join(section.get('points',[]))}",
+                        })
         else:
-            rows = connection.execute(f"SELECT j.job_id,j.article_json FROM content_jobs j WHERE j.article_json IS NOT NULL AND j.duplicate_of_job_id IS NULL{status_filter}{run_filter}{batch_filter} ORDER BY j.job_id LIMIT ?", (*status_params, *run_params, *batch_params, args.limit)).fetchall()
+            rows = connection.execute(f"SELECT j.job_id,j.article_json,j.plan_json FROM content_jobs j WHERE j.article_json IS NOT NULL AND j.duplicate_of_job_id IS NULL{status_filter}{run_filter}{batch_filter} ORDER BY j.job_id LIMIT ?", (*status_params, *run_params, *batch_params, args.limit)).fetchall()
             for row in rows:
                 body = json.loads(row["article_json"]).get("body_markdown", "")
                 if getattr(args, "granularity", "article") == "section":
                     sections = [part.strip() for part in re.split(r"(?=^##\s+)", body, flags=re.MULTILINE) if part.strip()]
+                    plan = json.loads(row["plan_json"]) if row["plan_json"] else {}
+                    roles = ["introduction", *[
+                        str(item.get("section_role") or "unspecified")
+                        for item in plan.get("outline", []) if isinstance(item, dict)
+                    ]]
                     for index, section in enumerate(sections):
                         output.append({
                             "id": f"{row['job_id']}:section:{index}",
                             "job_id": row["job_id"],
                             "granularity": "section",
+                            "section_role": roles[index] if index < len(roles) else "unspecified",
                             "text": section[:6000],
                         })
                 else:
@@ -1153,7 +1454,7 @@ def embed_objects(args: argparse.Namespace, config: dict[str, Any], store: Any, 
         for row, vector in zip(chunk, vectors):
             point_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f"msg:{args.object_type}:{row['id']}"))
             payload = {"local_id": row["id"], "text": row["text"], "object_type": args.object_type}
-            for field in ("job_id", "granularity"):
+            for field in ("job_id", "granularity", "section_role"):
                 if row.get(field) is not None:
                     payload[field] = row[field]
             points.append({"id": point_id, "vector": vector, "payload": payload})
@@ -1858,7 +2159,7 @@ def batch_preflight(args: argparse.Namespace, paths: Any, config: dict[str, Any]
             ).fetchone() if request and request["parent_custom_id"] else None
         effective_kind = parent["kind"] if parent and parent["kind"] in {"plan", "article", "review"} else "article"
     compact_article = effective_kind == "article" and args.kind == "article" and all(
-        "-v10-" in str(row.get("custom_id", "")) for row in rows
+        any(version in str(row.get("custom_id", "")) for version in ("-v10-", "-v11-")) for row in rows
     )
     response_schema = load_json(paths.pipeline / "schemas" / "article-draft.schema.json") if compact_article else schema_for_kind(paths.pipeline, effective_kind)
     final_schema = schema_for_kind(paths.pipeline, effective_kind)
@@ -2030,7 +2331,7 @@ def batch_retry(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
             failure = json.loads(row["error_json"] or "{}")
             is_content_failure = (
                 row["kind"] == "article"
-                and "-v10-" in row["custom_id"]
+                and any(version in row["custom_id"] for version in ("-v10-", "-v11-"))
                 and failure.get("code") == "validation_failed"
             )
             if is_content_failure:
@@ -2415,9 +2716,17 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
     by_id = {str(row["id"]): row for row in rows}
     for cluster in clusters:
         owner = cluster[0]["id"]
+        owner_job = str(cluster[0].get("job_id", owner))
         for index, item in enumerate(cluster):
             score = cosine_similarity(cluster[0]["vector"], item["vector"])
-            output.append({"id": item["id"], "job_id": item.get("job_id", item["id"]), "granularity": item.get("granularity", "article"), "duplicate_of": owner if index else None, "cluster_owner": owner, "similarity": score, "threshold": threshold, "source": "current_input"})
+            duplicate_of = owner if index and str(item.get("job_id", item["id"])) != owner_job else None
+            output.append({
+                "id": item["id"], "job_id": item.get("job_id", item["id"]),
+                "granularity": item.get("granularity", "article"),
+                "section_role": item.get("section_role"),
+                "duplicate_of": duplicate_of, "cluster_owner": owner,
+                "similarity": score, "threshold": threshold, "source": "current_input",
+            })
     # Query Qdrant after upsert so the same operation also checks against the
     # previously accepted corpus. Current-input pairs are already handled by
     # deterministic local clustering above.
@@ -2460,13 +2769,54 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
         item = output_by_id[item_id]
         if not item["duplicate_of"]:
             item.update({"duplicate_of": neighbor_id, "duplicate_of_job_id": neighbor_job, "similarity": score, "source": "qdrant_existing_corpus"})
+
+    # A shared definition or one isolated similar section is not enough to
+    # reject an otherwise distinct article.  Two non-definition sections that
+    # match the same other article are a content-level duplicate.
+    if any(item.get("granularity") in {"section", "section_plan"} for item in output):
+        generic_roles = {"definition", "terminology", "introduction"}
+        match_groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
+        for item in output:
+            if item.get("granularity") not in {"section", "section_plan"} or not item.get("duplicate_of"):
+                continue
+            matched_id = str(item["duplicate_of"])
+            matched_job = str(
+                item.get("duplicate_of_job_id")
+                or by_id.get(matched_id, {}).get("job_id")
+                or matched_id.split(":section:", 1)[0]
+            )
+            item["matched_section_id"] = matched_id
+            item["matched_job_id"] = matched_job
+            if str(item.get("section_role") or "").casefold() in generic_roles:
+                item["allowed_shared_definition"] = True
+                item["duplicate_of"] = None
+                continue
+            match_groups.setdefault((str(item["job_id"]), matched_job), []).append(item)
+        for (_job_id, _matched_job), matches in match_groups.items():
+            is_article_duplicate = len(matches) >= 2
+            for item in matches:
+                item["content_duplicate"] = is_article_duplicate
+                if not is_article_duplicate:
+                    item["duplicate_of"] = None
     write_jsonl(args.output, output)
     if args.apply:
         with store.connect() as connection:
+            applied_section_jobs: set[str] = set()
             for row in output:
                 if row["duplicate_of"] and row.get("granularity") in {"article", "plan"}:
                     duplicate_job = row.get("duplicate_of_job_id") or by_id.get(str(row["duplicate_of"]), {}).get("job_id") or row["duplicate_of"]
                     connection.execute("UPDATE content_jobs SET duplicate_of_job_id=?,status='duplicate',semantic_score=?,updated_at=? WHERE job_id=?", (duplicate_job, row["similarity"], now_iso(), row["job_id"]))
+                elif row.get("granularity") in {"section", "section_plan"} and row.get("content_duplicate") and row["job_id"] not in applied_section_jobs:
+                    duplicate_job = row.get("matched_job_id")
+                    connection.execute(
+                        """UPDATE content_jobs SET duplicate_of_job_id=?,status='duplicate',semantic_score=?,
+                           validation_json=?,updated_at=? WHERE job_id=?""",
+                        (duplicate_job, row["similarity"], canonical_json({
+                            "error": "two or more non-definition sections duplicate the same article or plan",
+                            "matched_job_id": duplicate_job,
+                        }), now_iso(), row["job_id"]),
+                    )
+                    applied_section_jobs.add(row["job_id"])
     duplicate_count = sum(bool(row["duplicate_of"]) for row in output)
     granularities = sorted({row.get("granularity", "article") for row in rows}) or ["article"]
     if args.run_id:

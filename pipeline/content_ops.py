@@ -144,18 +144,23 @@ def ingest_source_pack(store: Any, pack: dict[str, Any], schema: dict[str, Any])
     if errors:
         raise ValueError("invalid source pack: " + "; ".join(errors))
     sources = {source["source_id"]: source for source in pack["sources"]}
-    allowed_source_types = {"standard", "regulator", "government", "intergovernmental", "academic", "encyclopedia"}
+    allowed_source_types = {
+        "standard", "regulator", "government", "intergovernmental", "academic", "encyclopedia",
+        "manufacturer", "technical_guide", "commercial_technical", "patent",
+    }
     for source in pack["sources"]:
         if source["source_type"] not in allowed_source_types:
-            raise ValueError(f"commercial or unsupported source type is prohibited: {source['source_id']}")
-        if source.get("editorial_block_names"):
-            raise ValueError(f"commercial source publisher is prohibited: {source['source_id']}")
+            raise ValueError(f"unsupported source type: {source['source_id']}")
     for claim in pack["claims"]:
         missing = set(claim["source_ids"]) - sources.keys()
         if missing:
             raise ValueError(f"claim {claim['claim_id']} references missing sources: {sorted(missing)}")
-        if claim["scope"] in {"manufacturer", "series"} and claim["status"] == "accepted":
-            raise ValueError(f"first-10,000 source pack cannot accept brand-specific claim {claim['claim_id']}")
+        if claim["scope"] == "manufacturer" and claim["status"] == "accepted":
+            if not str((claim.get("conditions") or {}).get("manufacturer", "")).strip():
+                raise ValueError(f"accepted manufacturer claim requires conditions.manufacturer: {claim['claim_id']}")
+        if claim["scope"] == "series" and claim["status"] == "accepted":
+            if not str((claim.get("conditions") or {}).get("series_identifier", "")).strip():
+                raise ValueError(f"accepted series claim requires conditions.series_identifier: {claim['claim_id']}")
         if claim["scope"] == "model" and claim["status"] == "accepted":
             model_identifier = str((claim.get("conditions") or {}).get("model_identifier", "")).strip()
             if not model_identifier:
@@ -373,7 +378,7 @@ def assemble_article_draft(
 
     Plans, evidence metadata, and the link graph have already passed their own
     gates. Asking the model to repeat them adds tokens and creates avoidable
-    mismatches, so V10 model output contains only prose and used claim IDs.
+    mismatches, so V11 model output contains only prose and used claim IDs.
     """
     used_claim_ids = list(dict.fromkeys(str(item) for item in draft.get("used_claim_ids", [])))
     claims = {claim.get("claim_id"): claim for claim in source_pack.get("claims", [])}
@@ -407,7 +412,16 @@ def assemble_article_draft(
         "body_markdown": draft.get("body_markdown", ""),
         "used_claim_ids": used_claim_ids,
         "internal_links": links,
-        "source_manufacturer_names": [],
+        "source_manufacturer_names": sorted({
+            name
+            for source in source_pack.get("sources", [])
+            if source.get("source_id") in source_ids
+            for name in (
+                source.get("editorial_block_names")
+                or ([source.get("publisher")] if source.get("source_type") in {"manufacturer", "commercial_technical", "technical_guide"} else [])
+            )
+            if name
+        }),
         "sources": sources,
     }
     return apply_authoritative_internal_links(article, links)

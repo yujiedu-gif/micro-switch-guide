@@ -200,8 +200,6 @@ def article_policy_errors(article: dict[str, Any], config: dict[str, Any]) -> li
         if str(name).strip()
     )
     blocked_names.update(str(name).strip() for name in article.get("source_manufacturer_names", []) if str(name).strip())
-    if article.get("source_manufacturer_names"):
-        errors.append("zero-brand violation: source_manufacturer_names must be empty because commercial sources are prohibited")
     for name in sorted(blocked_names):
         pattern = re.compile(r"(?<!\w)" + re.escape(name) + r"(?!\w)", re.IGNORECASE)
         if pattern.search(editorial):
@@ -245,6 +243,20 @@ def plan_policy_errors(plan: dict[str, Any], config: dict[str, Any] | None = Non
         errors.append(f"plan keyword is outside strict topic scope: {decision.decision}:{','.join(decision.reason_codes)}")
     if plan.get("h1") != plan.get("title"):
         errors.append("plan h1 must equal title")
+    anchors = [str(item).strip().casefold() for item in plan.get("differentiation_anchors", []) if str(item).strip()]
+    if len(set(anchors)) < 2:
+        errors.append("plan requires at least two unique differentiation anchors")
+    signature = str(plan.get("content_signature", ""))
+    if len(signature.split("|")) < 3:
+        errors.append("plan content_signature must include entity, reader task, and answer type")
+    outline = [item for item in plan.get("outline", []) if isinstance(item, dict)]
+    outline_roles = [str(item.get("section_role", "")).strip() for item in outline]
+    if outline_roles != list(plan.get("section_roles", [])):
+        errors.append("plan section_roles must match outline section_role values in order")
+    if plan.get("reader_task") and plan.get("reader_task") not in signature.split("|"):
+        errors.append("plan content_signature must include reader_task")
+    if plan.get("answer_type") and plan.get("answer_type") not in signature.split("|"):
+        errors.append("plan content_signature must include answer_type")
     if phrase_count(plan.get("title", ""), keyword) < 1:
         errors.append("plan title lacks the complete primary keyword")
     if phrase_count(plan.get("description", ""), keyword) != 1:
@@ -276,20 +288,16 @@ def source_pack_errors(article: dict[str, Any], source_pack: dict[str, Any]) -> 
         errors.append(f"source pack has uncovered center-topic terms: {uncovered}")
     claims = {item["claim_id"]: item for item in source_pack.get("claims", [])}
     sources = {item["source_id"]: item for item in source_pack.get("sources", [])}
-    allowed_source_types = {"standard", "regulator", "government", "intergovernmental", "academic", "encyclopedia"}
+    allowed_source_types = {
+        "standard", "regulator", "government", "intergovernmental", "academic", "encyclopedia",
+        "manufacturer", "technical_guide", "commercial_technical", "patent",
+    }
     prohibited_sources = sorted(
         source_id for source_id, source in sources.items()
         if source.get("source_type") not in allowed_source_types
     )
     if prohibited_sources:
-        errors.append(f"commercial or unsupported source types are prohibited: {prohibited_sources}")
-    commercial_aliases = sorted({
-        name for source in sources.values()
-        for name in source.get("editorial_block_names", [])
-        if str(name).strip()
-    })
-    if commercial_aliases:
-        errors.append(f"commercial source publishers are prohibited: {commercial_aliases}")
+        errors.append(f"unsupported source types: {prohibited_sources}")
     used = set(article.get("used_claim_ids", []))
     unknown_claims = used - claims.keys()
     if unknown_claims:

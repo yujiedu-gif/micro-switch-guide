@@ -102,9 +102,17 @@ class ControlCenter:
                 status = Supervisor(self.root, state["current_profile"]).status()
             except Exception as exc:
                 status = {"ok": False, "error": str(exc)}
+        expansion_summary = None
+        expansion_path = self.root / "pipeline" / "state" / "outputs" / "keyword-expansion-v1" / "keyword-expansion-summary.json"
+        if expansion_path.is_file():
+            try:
+                expansion_summary = json.loads(expansion_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                expansion_summary = {"error": "expansion summary is unreadable"}
         return {
             "control": state,
             "pipeline": status,
+            "expansion": expansion_summary,
             "policy": {
                 "local_only": True,
                 "auto_start_on_login": False,
@@ -219,6 +227,16 @@ class ControlCenter:
 
     def action(self, action: str, payload: dict[str, Any]) -> dict[str, Any]:
         supervisor = self.current_supervisor()
+        if action == "expand_audit":
+            output_dir = self.root / "pipeline" / "state" / "outputs" / "keyword-expansion-v1"
+            self.enqueue(
+                "审计扩词原料并生成候选",
+                lambda: self.output_json(self.command(
+                    "keywords-expand-audit", "--source", "rejected", "--planning-limit", "100",
+                    "--output-dir", str(output_dir),
+                )),
+            )
+            return {"accepted": True, "paid_calls": 0}
         if action == "import":
             self.enqueue("导入 CSV 并准备规划", lambda: self.import_csv(payload.get("filename", "keywords.csv"), payload.get("text", ""), payload.get("target")))
             return {"accepted": True}
@@ -349,6 +367,8 @@ class ControlCenter:
         command = " ".join(parts).casefold()
         if command == "status":
             return self.state()
+        if command == "expand audit":
+            return self.action("expand_audit", {})
         if command in {"poll", "run-once"}:
             return self.action("poll", {})
         if command in {"pause", "resume"}:
@@ -363,7 +383,7 @@ class ControlCenter:
             return self.action("finalize", {"create_pr": False})
         if command == "auto stop":
             return self.action("auto_stop", {})
-        raise ValueError("命令不在白名单中。可用：status、poll、pause、resume、prepare plan/article/review、audit semantic、prepare repair、finalize、auto stop")
+        raise ValueError("命令不在白名单中。可用：status、expand audit、poll、pause、resume、prepare plan/article/review、audit semantic、prepare repair、finalize、auto stop")
 
 
 class Handler(BaseHTTPRequestHandler):

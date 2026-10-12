@@ -8,14 +8,14 @@ For the local visual UI and allowlisted command console, run `./bin/content-cont
 
 ## Safety invariants
 
-- The first 10,000 articles are educational and zero-brand.
+- The first 10,000 articles are educational and non-promotional. Commercial technical sources are allowed with exact scope and visible attribution; all external links are rendered `nofollow`.
 - Paid calls must be associated with a `run_id` and recorded in `api_costs`.
 - DataForSEO spending is blocked above the configured per-run hard limit.
 - Generated files never overwrite an existing post.
 - Batch output is reconciled by `custom_id`, never line position.
 - The program renders front matter; the model only returns structured JSON.
 - PR preparation may create and push a content branch, but no command merges or writes directly to `main`.
-- V10 production uses one article request with an embedded four-part self-review. Deterministic failure may trigger exactly one revision; a revised article that still fails is rejected and replaced from reserve candidates.
+- V11 production uses one article request with an embedded four-part self-review. Deterministic failure may trigger exactly one revision; a revised article that still fails is rejected and replaced from reserve candidates. V10 results remain ingestible.
 - Provider transport failures may resend the identical request up to two times; content revision retries are capped at one.
 
 ## Local smoke test
@@ -58,6 +58,15 @@ Input may be CSV or JSONL and must contain `keyword`. Optional fields are `sourc
 
 Normalization makes `microswitch` and `micro switch` equivalent for exact deduplication while preserving the original query.
 
+Reuse rejected keywords as expansion material without changing their strict-topic decision or calling a paid API:
+
+```bash
+./bin/content-pipeline keywords-materials-audit --source rejected --output-dir pipeline/state/outputs/keyword-expansion-v1/materials
+./bin/content-pipeline keywords-expand-audit --source rejected --planning-limit 100 --output-dir pipeline/state/outputs/keyword-expansion-v1
+```
+
+The audit extracts entities, components, functions, symptoms, parameters, environments, and reader tasks; blocks keyboard, household wiring, switchgear, gaming, guitar, and generic panel drift; and writes candidates with origin keyword IDs, task compatibility, content signatures, and evidence risk. It is read-only. Explicit `keywords-expand-apply --input ... --limit 100` only stages accepted candidates as `expansion_pending:demand_and_evidence`; it does not select them for production. Evidence-sensitive tasks remain on hold until an approved relationship and publishable claims exist.
+
 ## End-to-end run
 
 ```bash
@@ -90,9 +99,9 @@ After `batch-status` downloads a terminal output file, run `ingest-batch`. Then 
 ./bin/content-pipeline build-batches --kind article --run-id "$RUN_ID" --input article-input.jsonl --output-dir article-batches
 ```
 
-V10 article requests contain only `system + user`. The model drafts, audits logic, parameters, definitions, and zero-brand compliance, silently repairs its draft, and returns `body_markdown`, `used_claim_ids`, and four `self_review` booleans. Approved plan metadata, source metadata, and internal links are joined locally. Passing outputs become `validated` without a separate OpenAI review Batch. V9 outputs retain the legacy review path.
+V11 article requests contain only `system + user`. The model drafts, audits logic, parameters, definitions, and zero-brand compliance, silently repairs its draft, and returns `body_markdown`, `used_claim_ids`, and four `self_review` booleans. Approved plan metadata, source metadata, and internal links are joined locally. Passing outputs become `validated` without a separate OpenAI review Batch. V10 outputs remain compatible; V9 outputs retain the legacy review path.
 
-Run local lexical and semantic duplicate checks, then select the accepted publication set. A failed V10 deterministic or embedded review gets at most one revision:
+Run local lexical and semantic duplicate checks, then select the accepted publication set. A failed V11 deterministic or embedded review gets at most one revision:
 
 ```bash
 ./bin/content-pipeline articles-export --output generated-articles.jsonl --limit 50
@@ -114,7 +123,7 @@ Local duplicate checks combine exact slug/question checks, SimHash, and MinHash.
 ./bin/content-pipeline benchmark --sizes 1000 5000 10000
 ```
 
-The report includes job and request states, exclusions, costs, prompt-cache metrics, source coverage, duplicate rate, and review pass rate. V10 accepts the embedded self-review only when all four checks are true and the assembled article passes local schema, SEO, source, link, and brand validation. V9 keeps the exact-revision OpenAI review requirement. Each article has one initial generation and at most one content revision; a failed final revision is replaced from the reserve pool. Qdrant network latency remains provider telemetry rather than part of the local filesystem benchmark.
+The report includes job and request states, exclusions, costs, prompt-cache metrics, source coverage, duplicate rate, and review pass rate. V11 accepts the embedded self-review only when all four checks are true and the assembled article passes local schema, SEO, source, link, brand, and content-identity validation. Each article has one initial generation and at most one content revision; a failed final revision is replaced from the reserve pool. Qdrant network latency remains provider telemetry rather than part of the local filesystem benchmark.
 
 ## Prepare a Batch file
 
