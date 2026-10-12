@@ -1431,10 +1431,14 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
                 plan = json.loads(row["plan_json"])
                 source_pack = json.loads(row["source_pack_json"])
                 uncovered = list((source_pack.get("coverage") or {}).get("uncovered_terms") or [])
-                if uncovered:
+                accepted_claims = [
+                    claim for claim in source_pack.get("claims", [])
+                    if claim.get("status") == "accepted"
+                ]
+                if not accepted_claims:
                     connection.execute(
                         "UPDATE content_jobs SET status='blocked_missing_sources',validation_json=?,updated_at=? WHERE job_id=?",
-                        (canonical_json({"error": "source pack has uncovered center-topic terms", "uncovered_terms": uncovered}), now_iso(), row["job_id"]),
+                        (canonical_json({"error": "source pack has no accepted claims", "uncovered_terms": uncovered}), now_iso(), row["job_id"]),
                     )
                     continue
                 h2_count = max(1, len(plan.get("outline", [])))
@@ -1480,6 +1484,10 @@ def jobs_export(args: argparse.Namespace, store: Any) -> int:
                 payload = {
                     "plan": compact_plan,
                     "claims": compact_claims,
+                    "evidence_boundaries": {
+                        "uncovered_terms": uncovered,
+                        "instructions": source_pack.get("writing_constraints", []),
+                    },
                     "avoid_content_identities": nearby,
                     "word_budget": {
                         "target_total_words": target_total_words,
@@ -2071,7 +2079,23 @@ def source_packs_build(args: argparse.Namespace, store: Any) -> int:
             pack["writing_constraints"].append(
                 "No exact-model source is present. Write an identifier-verification page: do not assert the model's identity, ratings, dimensions, terminals, compatibility, manufacturer, or application."
             )
-        if not pack["claims"] or missing_terms:
+        if not pack["claims"]:
+            fallback = build_source_pack(
+                store,
+                row["job_id"],
+                [
+                    "micro switch snap action definition",
+                    "micro switch position movement limit detection application",
+                    "micro switch device-specific travel limits",
+                ],
+            )
+            if fallback["claims"]:
+                pack["claims"] = fallback["claims"]
+                pack["sources"] = fallback["sources"]
+                pack["writing_constraints"].append(
+                    "Only general micro-switch facts are available. Describe the named application conditionally and do not assert that every design uses this component."
+                )
+        if not pack["claims"]:
             blocked += 1
             with store.connect() as connection:
                 connection.execute(
@@ -2080,7 +2104,14 @@ def source_packs_build(args: argparse.Namespace, store: Any) -> int:
                 )
             continue
         with store.connect() as connection:
-            connection.execute("UPDATE content_jobs SET status='planned',source_pack_json=?,validation_json='{}',updated_at=? WHERE job_id=?", (canonical_json(pack), now_iso(), row["job_id"]))
+            connection.execute(
+                "UPDATE content_jobs SET status='planned',source_pack_json=?,validation_json=?,updated_at=? WHERE job_id=?",
+                (
+                    canonical_json(pack),
+                    canonical_json({"warning": "uncovered evidence terms must be omitted or qualified", "uncovered_terms": missing_terms}) if missing_terms else "{}",
+                    now_iso(), row["job_id"],
+                ),
+            )
         attached += 1
     print(canonical_json({"planned_jobs": len(rows), "source_packs_attached": attached, "blocked_missing_sources": blocked}))
     return 0 if blocked == 0 else 2
@@ -2322,7 +2353,7 @@ def batch_preflight(args: argparse.Namespace, paths: Any, config: dict[str, Any]
             ).fetchone() if request and request["parent_custom_id"] else None
         effective_kind = parent["kind"] if parent and parent["kind"] in {"plan", "article", "review"} else "article"
     compact_article = effective_kind == "article" and args.kind == "article" and all(
-        any(version in str(row.get("custom_id", "")) for version in ("-v10-", "-v11-")) for row in rows
+        any(version in str(row.get("custom_id", "")) for version in ("-v10-", "-v11-", "-v12-")) for row in rows
     )
     response_schema = load_json(paths.pipeline / "schemas" / "article-draft.schema.json") if compact_article else schema_for_kind(paths.pipeline, effective_kind)
     final_schema = schema_for_kind(paths.pipeline, effective_kind)
