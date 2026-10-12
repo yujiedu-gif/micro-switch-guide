@@ -11,7 +11,7 @@ from pathlib import Path
 PIPELINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPELINE))
 
-from batch import build_batch_requests, extract_response_json, write_batch
+from batch import build_batch_requests, extract_response_json, has_compact_article_schema, is_compact_article_draft, write_batch
 from cli import is_authoritative_article_request, is_authoritative_review_request
 from core import Paths, Store, now_iso
 from operations import _review_custom_id, _review_payload
@@ -19,6 +19,19 @@ from credentials import github_token_from_credential_helper, import_credentials,
 
 
 class BatchTests(unittest.TestCase):
+    def test_compact_article_shape_is_not_tied_to_request_version(self) -> None:
+        schema = json.loads((PIPELINE / "schemas" / "article-draft.schema.json").read_text())
+        row = build_batch_requests(
+            "article", [{"custom_id": "msg-article-v13-test", "payload": {}}],
+            "test-model", "fixed skill", schema, 100,
+        )[0]
+        self.assertTrue(has_compact_article_schema(row))
+        self.assertTrue(is_compact_article_draft({
+            "body_markdown": "Example", "used_claim_ids": ["claim"],
+            "self_review": {"topic_purity": True},
+        }))
+        self.assertFalse(is_compact_article_draft({"body_markdown": "Example"}))
+
     def test_only_newest_article_lineage_is_authoritative(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

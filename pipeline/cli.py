@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from batch import build_batch_requests, extract_response_json, schema_for_kind, write_batch
+from batch import build_batch_requests, extract_response_json, is_compact_article_draft, schema_for_kind, write_batch
 from core import (
     Paths,
     Store,
@@ -255,7 +255,7 @@ def main(argv: list[str] | None = None) -> int:
                             "SELECT source_pack_json,plan_json FROM content_jobs WHERE job_id=?",
                             (request_row["job_id"],),
                         ).fetchone()
-                    compact_article = any(version in custom_id for version in ("-v10-", "-v11-", "-v12-")) and set(output) == {"body_markdown", "used_claim_ids", "self_review"}
+                    compact_article = is_compact_article_draft(output)
                     if compact_article:
                         draft_schema = load_json(paths.pipeline / "schemas" / "article-draft.schema.json")
                         validation_errors.extend(validate_schema(output, draft_schema))
@@ -362,7 +362,7 @@ def main(argv: list[str] | None = None) -> int:
                                 (request_row["job_id"],),
                             )
                         if may_replace and request_row["kind"] == "repair":
-                            if any(version in custom_id for version in ("-v10-", "-v11-", "-v12-")) and embedded_review_result:
+                            if embedded_review_result is not None:
                                 validation_json = canonical_json({
                                     "gate": "embedded_self_review_v1",
                                     "passed": True,
@@ -402,7 +402,7 @@ def main(argv: list[str] | None = None) -> int:
                                     revised_plan_json = canonical_json(revised_plan)
                                 connection.execute("UPDATE content_jobs SET status='awaiting_semantic_review',article_json=?,plan_json=COALESCE(?,plan_json),title=?,slug=?,category=?,owned_question=?,validation_json='{}',updated_at=? WHERE job_id=?", (canonical_json(output), revised_plan_json, output.get("title"), output.get("slug"), output.get("category"), output.get("owned_question"), now_iso(), request_row["job_id"]))
                         elif may_replace:
-                            embedded_review = any(version in custom_id for version in ("-v10-", "-v11-", "-v12-"))
+                            embedded_review = embedded_review_result is not None
                             validation_json = canonical_json({
                                 "gate": "embedded_self_review_v1",
                                 "passed": True,
