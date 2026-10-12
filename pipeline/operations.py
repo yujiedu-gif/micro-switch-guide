@@ -2915,18 +2915,58 @@ def dedupe_articles(args: argparse.Namespace, paths: Any, config: dict[str, Any]
     return 0
 
 
+def same_plan_content_identity(left: dict[str, Any], right: dict[str, Any]) -> bool:
+    """A high plan cosine alone does not make distinct reader tasks duplicates."""
+    left_question = normalize_keyword(str(left.get("owned_question") or ""))
+    right_question = normalize_keyword(str(right.get("owned_question") or ""))
+    if left_question and left_question == right_question:
+        return True
+    left_task = str(left.get("reader_task") or "").strip().casefold()
+    right_task = str(right.get("reader_task") or "").strip().casefold()
+    left_answer = str(left.get("answer_type") or "").strip().casefold()
+    right_answer = str(right.get("answer_type") or "").strip().casefold()
+    if left_task and left_answer and (left_task, left_answer) == (right_task, right_answer):
+        return True
+    left_roles = tuple(str(value).strip().casefold() for value in left.get("section_roles", []))
+    right_roles = tuple(str(value).strip().casefold() for value in right.get("section_roles", []))
+    left_anchors = {normalize_keyword(str(value)) for value in left.get("differentiation_anchors", [])}
+    right_anchors = {normalize_keyword(str(value)) for value in right.get("differentiation_anchors", [])}
+    return len(left_roles) >= 2 and left_roles == right_roles and len(left_anchors) >= 2 and left_anchors == right_anchors
+
+
 def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any, credentials: dict[str, str]) -> int:
     rows = load_jsonl(args.input)
     threshold = args.threshold or config["similarity"]["near_duplicate"]
     clusters = cluster_vectors(rows, threshold)
     output = []
     by_id = {str(row["id"]): row for row in rows}
+    plan_by_job: dict[str, dict[str, Any]] = {}
+    if args.object_type == "article_plan":
+        with store.connect() as connection:
+            plan_by_job = {
+                row["job_id"]: json.loads(row["plan_json"])
+                for row in connection.execute("SELECT job_id,plan_json FROM content_jobs WHERE plan_json IS NOT NULL")
+            }
     for cluster in clusters:
         owner = cluster[0]["id"]
         owner_job = str(cluster[0].get("job_id", owner))
         for index, item in enumerate(cluster):
             score = cosine_similarity(cluster[0]["vector"], item["vector"])
             duplicate_of = owner if index and str(item.get("job_id", item["id"])) != owner_job else None
+            if args.object_type == "article_plan" and duplicate_of:
+                duplicate_of = None
+                for earlier in cluster[:index]:
+                    earlier_job = str(earlier.get("job_id", earlier["id"]))
+                    item_job = str(item.get("job_id", item["id"]))
+                    if earlier_job == item_job:
+                        continue
+                    candidate_score = cosine_similarity(earlier["vector"], item["vector"])
+                    if candidate_score >= threshold and same_plan_content_identity(
+                        plan_by_job.get(earlier_job, {}), plan_by_job.get(item_job, {})
+                    ):
+                        duplicate_of = earlier["id"]
+                        score = candidate_score
+                        break
             output.append({
                 "id": item["id"], "job_id": item.get("job_id", item["id"]),
                 "granularity": item.get("granularity", "article"),
@@ -2959,6 +2999,11 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
                         continue
                     neighbor_job = str(payload.get("job_id") or neighbor_id.split(":section:", 1)[0])
                     if neighbor_job == str(row.get("job_id", row["id"])):
+                        continue
+                    if args.object_type == "article_plan" and not same_plan_content_identity(
+                        plan_by_job.get(str(row.get("job_id", row["id"])), {}),
+                        plan_by_job.get(neighbor_job, {}),
+                    ):
                         continue
                     with store.connect() as connection:
                         accepted = connection.execute(
