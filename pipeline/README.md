@@ -67,6 +67,14 @@ Reuse rejected keywords as expansion material without changing their strict-topi
 
 The audit extracts entities, components, functions, symptoms, parameters, environments, and reader tasks; blocks keyboard, household wiring, switchgear, gaming, guitar, and generic panel drift; and writes candidates with origin keyword IDs, task compatibility, content signatures, and evidence risk. It is read-only. Explicit `keywords-expand-apply --input ... --limit 100` only stages accepted candidates as `expansion_pending:demand_and_evidence`; it does not select them for production. Evidence-sensitive tasks remain on hold until an approved relationship and publishable claims exist.
 
+Generate the separate 10,000-keyword deliverable without creating plans or articles:
+
+```bash
+./bin/content-pipeline keywords-catalog-audit --target 10000 --output-dir pipeline/state/outputs/keyword-catalog-v1
+```
+
+This produces CSV and JSONL files containing only net-new, normalized-unique keywords that pass the direct micro-switch scope classifier. It does not mutate SQLite or call a paid provider.
+
 ## End-to-end run
 
 ```bash

@@ -103,7 +103,7 @@ class ControlCenter:
             except Exception as exc:
                 status = {"ok": False, "error": str(exc)}
         expansion_summary = None
-        expansion_path = self.root / "pipeline" / "state" / "outputs" / "keyword-expansion-v1" / "keyword-expansion-summary.json"
+        expansion_path = self.root / "pipeline" / "state" / "outputs" / "keyword-catalog-v1" / "micro-switch-keywords-10000-summary.json"
         if expansion_path.is_file():
             try:
                 expansion_summary = json.loads(expansion_path.read_text(encoding="utf-8"))
@@ -228,15 +228,14 @@ class ControlCenter:
     def action(self, action: str, payload: dict[str, Any]) -> dict[str, Any]:
         supervisor = self.current_supervisor()
         if action == "expand_audit":
-            output_dir = self.root / "pipeline" / "state" / "outputs" / "keyword-expansion-v1"
+            output_dir = self.root / "pipeline" / "state" / "outputs" / "keyword-catalog-v1"
             self.enqueue(
-                "审计扩词原料并生成候选",
+                "生成并审计一万条微动开关关键词",
                 lambda: self.output_json(self.command(
-                    "keywords-expand-audit", "--source", "rejected", "--planning-limit", "100",
-                    "--output-dir", str(output_dir),
+                    "keywords-catalog-audit", "--target", "10000", "--output-dir", str(output_dir),
                 )),
             )
-            return {"accepted": True, "paid_calls": 0}
+            return {"accepted": True, "target": 10000, "paid_calls": 0}
         if action == "import":
             self.enqueue("导入 CSV 并准备规划", lambda: self.import_csv(payload.get("filename", "keywords.csv"), payload.get("text", ""), payload.get("target")))
             return {"accepted": True}

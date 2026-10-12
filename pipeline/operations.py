@@ -42,6 +42,7 @@ from keyword_expansion import (
     expansion_candidates,
     material_rows,
 )
+from keyword_catalog import CATALOG_VERSION, catalog_candidates
 from providers import DataForSEOClient, GitHubClient, LocalEmbeddingClient, OpenAIClient, OpenRouterClient, ProviderError, QdrantClient
 from validators import article_policy_errors, normalize_plan_metadata, source_pack_errors, validate_schema
 from topic_scope import CLASSIFIER_VERSION, classify_keyword
@@ -162,6 +163,10 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     expand_apply = commands.add_parser("keywords-expand-apply", help="stage explicitly approved expansion candidates in SQLite")
     expand_apply.add_argument("--input", type=Path, required=True)
     expand_apply.add_argument("--limit", type=int, default=100)
+
+    catalog_audit = commands.add_parser("keywords-catalog-audit", help="build a strict, deduplicated direct micro-switch keyword catalog")
+    catalog_audit.add_argument("--output-dir", type=Path, required=True)
+    catalog_audit.add_argument("--target", type=int, default=10_000)
 
     jobs = commands.add_parser("jobs-create", help="create one idempotent article job per selected intent cluster")
     jobs.add_argument("--run-id", required=True)
@@ -375,6 +380,8 @@ def dispatch(args: argparse.Namespace, paths: Any, config: dict[str, Any], store
         return keywords_expand_audit(args, config, store)
     if args.command == "keywords-expand-apply":
         return keywords_expand_apply(args, config, store)
+    if args.command == "keywords-catalog-audit":
+        return keywords_catalog_audit(args, config, store)
     if args.command == "jobs-create":
         return jobs_create(args, config, store)
     if args.command == "jobs-requeue-articles":
@@ -1073,6 +1080,53 @@ def keywords_expand_apply(args: argparse.Namespace, config: dict[str, Any], stor
         "status": "pending_demand_and_evidence",
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0
+
+
+def keywords_catalog_audit(args: argparse.Namespace, config: dict[str, Any], store: Any) -> int:
+    """Create the requested keyword deliverable without changing SQLite."""
+    if not 1 <= args.target <= 50_000:
+        raise ValueError("catalog target must be between 1 and 50,000")
+    with store.connect() as connection:
+        existing = {row[0] for row in connection.execute("SELECT normalized_keyword FROM keywords")}
+    candidates = catalog_candidates(
+        args.target,
+        existing,
+        list(config.get("program", {}).get("excluded_brand_terms", [])),
+    )
+    if len(candidates) < args.target:
+        raise RuntimeError(f"only {len(candidates)} strict unique keywords were generated; target is {args.target}")
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    write_jsonl(args.output_dir / "micro-switch-keywords-10000.jsonl", candidates)
+    _write_csv(
+        args.output_dir / "micro-switch-keywords-10000.csv",
+        candidates,
+        [
+            "keyword_id", "keyword", "normalized_keyword", "category", "subject", "template_id",
+            "decision", "scope_class", "reason_codes", "generator_version",
+        ],
+    )
+    categories: dict[str, int] = {}
+    templates: dict[str, int] = {}
+    for item in candidates:
+        categories[item["category"]] = categories.get(item["category"], 0) + 1
+        templates[item["template_id"]] = templates.get(item["template_id"], 0) + 1
+    summary = {
+        "generator_version": CATALOG_VERSION,
+        "target": args.target,
+        "generated": len(candidates),
+        "unique_normalized": len({item["normalized_keyword"] for item in candidates}),
+        "strict_accept": sum(item["decision"] == "accept" for item in candidates),
+        "categories": categories,
+        "templates": templates,
+        "database_mutated": False,
+        "paid_calls": 0,
+        "output_dir": str(args.output_dir),
+    }
+    (args.output_dir / "micro-switch-keywords-10000-summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
     return 0
 
 

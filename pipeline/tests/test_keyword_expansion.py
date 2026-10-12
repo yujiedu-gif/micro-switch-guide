@@ -14,11 +14,19 @@ sys.path.insert(0, str(PIPELINE))
 
 from core import Paths, Store, load_json, now_iso
 from keyword_expansion import GENERATOR_VERSION, expansion_candidates, extract_material
+from keyword_catalog import catalog_candidates
 from operations import dedupe_semantic, keywords_expand_apply
 from validators import plan_policy_errors, validate_schema
 
 
 class KeywordExpansionTests(unittest.TestCase):
+    def test_catalog_produces_ten_thousand_strict_unique_keywords(self) -> None:
+        rows = catalog_candidates(10_000, set(), [])
+        self.assertEqual(len(rows), 10_000)
+        self.assertEqual(len({row["normalized_keyword"] for row in rows}), 10_000)
+        self.assertTrue(all(row["decision"] == "accept" for row in rows))
+        self.assertFalse(any("keyboard" in row["normalized_keyword"] for row in rows))
+
     def test_material_gate_accepts_direct_applications_and_rejects_drift(self) -> None:
         dryer = extract_material("a", "dryer door switch symptoms")
         self.assertEqual(dryer["decision"], "accept")
