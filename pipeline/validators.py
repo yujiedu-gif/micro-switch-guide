@@ -42,8 +42,12 @@ def normalize_plan_metadata(plan: dict[str, Any]) -> dict[str, Any]:
 
     reader_task = str(normalized.get("reader_task", "")).strip()
     answer_type = str(normalized.get("answer_type", "")).strip()
-    signature_parts = str(normalized.get("content_signature", "")).split("|")
-    entity = signature_parts[0].strip() if signature_parts and signature_parts[0].strip() else "micro_switch"
+    # The model often collapses every application to the generic entity
+    # ``micro_switch``.  That makes unrelated devices collide before the
+    # semantic duplicate gate can compare their actual plans.  Use the exact
+    # normalized keyword as the deterministic identity segment; Qdrant still
+    # handles genuine semantic overlap later in the workflow.
+    entity = slugify(normalize_keyword(keyword)).replace("-", "_") or "micro_switch"
     if reader_task and answer_type:
         normalized["content_signature"] = f"{entity}|{reader_task}|{answer_type}"
 
@@ -290,10 +294,20 @@ def plan_policy_errors(plan: dict[str, Any], config: dict[str, Any] | None = Non
     return errors
 
 
+def has_explicit_evidence_boundary(source_pack: dict[str, Any]) -> bool:
+    uncovered = list((source_pack.get("coverage") or {}).get("uncovered_terms") or [])
+    constraints = " ".join(str(item) for item in source_pack.get("writing_constraints", [])).casefold()
+    return bool(uncovered) and (
+        "uncovered" in constraints
+        and ("unknown" in constraints or "omit" in constraints or "inference" in constraints)
+    )
+
+
 def source_pack_errors(article: dict[str, Any], source_pack: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     uncovered = list((source_pack.get("coverage") or {}).get("uncovered_terms") or [])
-    if uncovered:
+    evidence_bounded = has_explicit_evidence_boundary(source_pack)
+    if uncovered and not evidence_bounded:
         errors.append(f"source pack has uncovered center-topic terms: {uncovered}")
     claims = {item["claim_id"]: item for item in source_pack.get("claims", [])}
     sources = {item["source_id"]: item for item in source_pack.get("sources", [])}

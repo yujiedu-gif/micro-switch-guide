@@ -82,7 +82,7 @@ class SourceAndValidationTests(unittest.TestCase):
         repaired = normalize_plan_metadata(plan)
         self.assertEqual(
             repaired["content_signature"],
-            "micro_switch|diagnose_limit_switch_fault|failure_diagnosis",
+            "assembly_robot_travel_limit_micro_switch_failure_causes|diagnose_limit_switch_fault|failure_diagnosis",
         )
         self.assertEqual(repaired["outline"][0]["h2"], plan["primary_keyword"])
 
@@ -104,6 +104,22 @@ class SourceAndValidationTests(unittest.TestCase):
         }
         errors = source_pack_errors(article, pack)
         self.assertTrue(any("metadata differs" in error for error in errors))
+
+    def test_uncovered_terms_are_allowed_only_with_explicit_evidence_boundaries(self) -> None:
+        article = {"used_claim_ids": [], "sources": []}
+        pack = {
+            "coverage": {"uncovered_terms": ["device-specific adjustment procedure"]},
+            "claims": [],
+            "sources": [],
+        }
+        errors = source_pack_errors(article, pack)
+        self.assertTrue(any("uncovered center-topic terms" in error for error in errors))
+
+        pack["writing_constraints"] = [
+            "Treat every uncovered evidence term as unknown rather than filling the gap by inference."
+        ]
+        errors = source_pack_errors(article, pack)
+        self.assertFalse(any("uncovered center-topic terms" in error for error in errors))
 
     def test_configured_manufacturer_names_are_blocked_in_plan_and_article(self) -> None:
         config = {

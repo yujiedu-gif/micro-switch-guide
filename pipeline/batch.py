@@ -17,7 +17,7 @@ SYSTEM_PROMPTS = {
 - description must target 150-155 characters (the hard acceptance range is 140-160). It must begin with primary_keyword copied as one contiguous literal substring, followed immediately by a colon, and that complete substring must occur exactly once. Do this even when the keyword is phrased as a question; never omit, reorder, or grammatically rewrite one of its words.
 - slug must contain the complete lowercase hyphenated primary_keyword. Do not drop its words.
 - At least one outline h2 must contain the complete primary_keyword contiguously.
-- Set reader_task and answer_type to short lowercase snake_case identifiers, not prose sentences. Build content_signature as entity_or_component|reader_task|answer_type, copying the reader_task and answer_type values exactly as its second and third segments.
+- Set reader_task and answer_type to short lowercase snake_case identifiers, not prose sentences. Build content_signature as normalized_primary_keyword|reader_task|answer_type, using the complete primary keyword in lowercase snake_case as the first segment and copying reader_task and answer_type exactly as the second and third segments. Local normalization is authoritative.
 - Supply at least two differentiation_anchors that require this page to use a distinct mechanism, failure path, parameter boundary, or verification path. A title variation is not an anchor.
 - Give every outline item a section_role and copy those roles, in order, to section_roles. Do not reuse a generic outline merely by replacing the equipment name.
 - When the payload says conditional_language_required, describe only designs that use the stated micro switch; never generalize the component to every device in that class.

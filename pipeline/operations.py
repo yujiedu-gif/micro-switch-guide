@@ -12,7 +12,7 @@ import tempfile
 import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -44,7 +44,7 @@ from keyword_expansion import (
 )
 from keyword_catalog import CATALOG_VERSION, catalog_candidates
 from providers import DataForSEOClient, GitHubClient, LocalEmbeddingClient, OpenAIClient, OpenRouterClient, ProviderError, QdrantClient
-from validators import article_policy_errors, normalize_plan_metadata, source_pack_errors, validate_schema
+from validators import article_policy_errors, has_explicit_evidence_boundary, normalize_plan_metadata, source_pack_errors, validate_schema
 from topic_scope import CLASSIFIER_VERSION, classify_keyword
 
 
@@ -280,6 +280,7 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     render_run.add_argument("--run-id", required=True)
     render_run.add_argument("--date", default=date.today().isoformat())
     render_run.add_argument("--limit", type=int, default=10_000)
+    render_run.add_argument("--spread-days", type=int, default=0, help="spread posts evenly across this many days ending on --date")
 
     submit = commands.add_parser("batch-submit", help="upload a prepared JSONL and create an OpenAI batch")
     submit.add_argument("--run-id", required=True)
@@ -324,7 +325,7 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
 
     publication_select = commands.add_parser("publication-select", help="select an exact accepted publication set and retain excess reviewed articles as reserve")
     publication_select.add_argument("--run-id", required=True)
-    publication_select.add_argument("--target", type=int, choices=[50, 250, 1000, 10000], required=True)
+    publication_select.add_argument("--target", type=int, required=True)
 
     build_batches = commands.add_parser("build-batches", help="split up to 10,000 jobs into cache-friendly Batch files")
     build_batches.add_argument("--run-id", required=True)
@@ -373,7 +374,7 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
 
     acceptance = commands.add_parser("acceptance-check", help="enforce rollout gates before increasing volume")
     acceptance.add_argument("--run-id", required=True)
-    acceptance.add_argument("--target", type=int, choices=[50, 250, 1000, 10000], required=True)
+    acceptance.add_argument("--target", type=int, required=True)
     acceptance.add_argument("--build-site", action="store_true")
 
     publish = commands.add_parser("prepare-pr", help="build, commit a batch branch, push, and open a PR")
@@ -2199,6 +2200,8 @@ def publication_select(args: argparse.Namespace, store: Any) -> int:
     passed-but-unrendered reserve page.  Selection therefore precedes link
     reconciliation and rendering.
     """
+    if args.target < 1:
+        raise ValueError("publication target must be a positive integer")
     store.ensure_run(args.run_id)
     eligible_statuses = ("validated", "reserve_validated", "rendered", "published")
     placeholders = ",".join("?" for _ in eligible_statuses)
@@ -2245,6 +2248,8 @@ def publication_select(args: argparse.Namespace, store: Any) -> int:
 
 def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], store: Any) -> int:
     publish_date = date.fromisoformat(args.date)
+    if args.spread_days < 0:
+        raise ValueError("spread-days must be zero or greater")
     rendered = skipped = failed = 0
     schema = load_json(paths.pipeline / "schemas" / "article.schema.json")
     (paths.root / "_posts").mkdir(parents=True, exist_ok=True)
@@ -2256,7 +2261,7 @@ def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], sto
                ORDER BY job_id LIMIT ?""",
             (args.run_id, args.limit),
         ).fetchall()
-    for row in rows:
+    for index, row in enumerate(rows):
         article = json.loads(row["article_json"])
         errors = validate_schema(article, schema) + article_policy_errors(article, config)
         if errors:
@@ -2264,8 +2269,13 @@ def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], sto
             with store.connect() as connection:
                 connection.execute("UPDATE content_jobs SET status='validation_failed',validation_json=?,updated_at=? WHERE job_id=?", (canonical_json({"errors": errors}), now_iso(), row["job_id"]))
             continue
-        destination = paths.root / "_posts" / f"{publish_date.isoformat()}-{article['slug']}.md"
-        rendered_text = render_post(article, publish_date, config["site"]["author"], config["site"]["timezone"])
+        if args.spread_days and len(rows) > 1:
+            days_before_end = round(args.spread_days * (len(rows) - 1 - index) / (len(rows) - 1))
+            article_date = publish_date - timedelta(days=days_before_end)
+        else:
+            article_date = publish_date
+        destination = paths.root / "_posts" / f"{article_date.isoformat()}-{article['slug']}.md"
+        rendered_text = render_post(article, article_date, config["site"]["author"], config["site"]["timezone"])
         if destination.exists():
             if destination.read_text(encoding="utf-8") == rendered_text:
                 with store.connect() as connection:
@@ -2280,7 +2290,7 @@ def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], sto
         with store.connect() as connection:
             connection.execute("UPDATE content_jobs SET status='rendered',updated_at=? WHERE job_id=?", (now_iso(), row["job_id"]))
         rendered += 1
-    print(canonical_json({"jobs": len(rows), "rendered": rendered, "skipped_existing": skipped, "failed": failed}))
+    print(canonical_json({"jobs": len(rows), "rendered": rendered, "skipped_existing": skipped, "failed": failed, "spread_days": args.spread_days}))
     return 1 if failed else 0
 
 
@@ -2525,7 +2535,7 @@ def batch_retry(args: argparse.Namespace, config: dict[str, Any], store: Any) ->
             failure = json.loads(row["error_json"] or "{}")
             is_content_failure = (
                 row["kind"] == "article"
-                and any(version in row["custom_id"] for version in ("-v10-", "-v11-"))
+                and any(version in row["custom_id"] for version in ("-v10-", "-v11-", "-v12-"))
                 and failure.get("code") == "validation_failed"
             )
             if is_content_failure:
@@ -3163,7 +3173,8 @@ def acceptance_check(args: argparse.Namespace, paths: Any, config: dict[str, Any
             source_errors = source_pack_errors(article, source_pack)
             errors.extend(source_errors)
             final_source_failures += int(bool(source_errors))
-            published_uncovered_terms += int(bool((source_pack.get("coverage") or {}).get("uncovered_terms")))
+            has_uncovered = bool((source_pack.get("coverage") or {}).get("uncovered_terms"))
+            published_uncovered_terms += int(has_uncovered and not has_explicit_evidence_boundary(source_pack))
         final_validation_errors.append(errors)
         final_brand_failures += int(any(error.startswith("zero-brand violation:") for error in errors))
         embedded = json.loads(row["validation_json"] or "{}")
