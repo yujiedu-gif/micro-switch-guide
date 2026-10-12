@@ -2511,7 +2511,16 @@ def batch_status(args: argparse.Namespace, paths: Any, store: Any, credentials: 
             destination.write_bytes(client.download_file(file_id))
             output_paths[label] = str(destination)
     with store.connect() as connection:
-        connection.execute("UPDATE batch_requests SET status=?,output_file_id=?,error_file_id=?,updated_at=? WHERE batch_id=?", (status, batch.get("output_file_id"), batch.get("error_file_id"), now_iso(), args.batch_id))
+        # Provider batch state and local per-request ingestion state are not
+        # interchangeable. Re-polling a completed batch must not turn a
+        # locally rejected article back into a completed request.
+        connection.execute(
+            """UPDATE batch_requests
+               SET status=CASE WHEN status IN ('completed','failed','retry_exhausted') THEN status ELSE ? END,
+                   output_file_id=?,error_file_id=?,updated_at=?
+               WHERE batch_id=?""",
+            (status, batch.get("output_file_id"), batch.get("error_file_id"), now_iso(), args.batch_id),
+        )
     print(canonical_json({"batch_id": args.batch_id, "status": status, "files": output_paths, "request_counts": batch.get("request_counts")}))
     return 0 if status not in {"failed", "expired", "cancelled"} else 1
 
