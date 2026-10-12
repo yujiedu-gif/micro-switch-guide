@@ -70,6 +70,14 @@ class ProviderContractTests(unittest.TestCase):
         self.assertEqual(request.call_args.kwargs["body"]["searches"][0]["score_threshold"], 0.87)
 
     @patch("providers.request_json")
+    def test_qdrant_upsert_retries_transient_writes(self, request):
+        request.return_value = {"result": {"status": "completed"}}
+        points = [{"id": "point-1", "vector": [1.0, 0.0], "payload": {"local_id": "kw-1"}}]
+        QdrantClient("https://qdrant.example", "key").upsert("msg_topics_v1", points)
+        self.assertEqual(request.call_args.kwargs["max_attempts"], 4)
+        self.assertEqual(request.call_args.kwargs["body"], {"points": points})
+
+    @patch("providers.request_json")
     def test_github_pr_never_requests_merge(self, request):
         request.return_value = {"html_url": "https://example/pr/1"}
         GitHubClient("token", "owner", "repo").create_pull_request("title", "content/run", "main", "body")

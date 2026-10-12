@@ -192,7 +192,7 @@ class QdrantClient:
     def upsert(self, collection: str, points: list[dict[str, Any]]) -> dict[str, Any]:
         return request_json(
             "qdrant", "PUT", f"{self.url.rstrip('/')}/collections/{urllib.parse.quote(collection)}/points?wait=true",
-            headers=self.headers, body={"points": points}, timeout=180,
+            headers=self.headers, body={"points": points}, timeout=180, max_attempts=4,
         )
 
     def query(self, collection: str, vector: list[float], limit: int = 20, score_threshold: float | None = None) -> list[dict[str, Any]]:

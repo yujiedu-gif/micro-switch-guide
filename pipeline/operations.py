@@ -168,6 +168,9 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     catalog_audit.add_argument("--output-dir", type=Path, required=True)
     catalog_audit.add_argument("--target", type=int, default=10_000)
 
+    cluster_export = commands.add_parser("keywords-cluster-export", help="export selected keyword cluster membership and primary keywords")
+    cluster_export.add_argument("--output-dir", type=Path, required=True)
+
     jobs = commands.add_parser("jobs-create", help="create one idempotent article job per selected intent cluster")
     jobs.add_argument("--run-id", required=True)
     jobs.add_argument("--limit", type=int, default=10_000)
@@ -382,6 +385,8 @@ def dispatch(args: argparse.Namespace, paths: Any, config: dict[str, Any], store
         return keywords_expand_apply(args, config, store)
     if args.command == "keywords-catalog-audit":
         return keywords_catalog_audit(args, config, store)
+    if args.command == "keywords-cluster-export":
+        return keywords_cluster_export(args, store)
     if args.command == "jobs-create":
         return jobs_create(args, config, store)
     if args.command == "jobs-requeue-articles":
@@ -1130,6 +1135,63 @@ def keywords_catalog_audit(args: argparse.Namespace, config: dict[str, Any], sto
     return 0
 
 
+def keywords_cluster_export(args: argparse.Namespace, store: Any) -> int:
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    with store.connect() as connection:
+        rows = [dict(row) for row in connection.execute(
+            """SELECT k.cluster_id,k.keyword_id,k.keyword,k.normalized_keyword,k.search_volume,
+                      c.primary_keyword_id,pk.keyword primary_keyword
+               FROM keywords k
+               JOIN clusters c ON c.cluster_id=k.cluster_id
+               LEFT JOIN keywords pk ON pk.keyword_id=c.primary_keyword_id
+               WHERE k.selected=1 AND k.exclusion_reason IS NULL
+               ORDER BY k.cluster_id,CASE WHEN k.keyword_id=c.primary_keyword_id THEN 0 ELSE 1 END,
+                        COALESCE(k.search_volume,0) DESC,k.normalized_keyword"""
+        ).fetchall()]
+    if not rows:
+        raise RuntimeError("no selected keyword clusters are available")
+    _write_csv(
+        args.output_dir / "keyword-cluster-membership.csv", rows,
+        ["cluster_id", "primary_keyword_id", "primary_keyword", "keyword_id", "keyword", "normalized_keyword", "search_volume"],
+    )
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for row in rows:
+        grouped.setdefault(str(row["cluster_id"]), []).append(row)
+    clusters = [{
+        "cluster_id": cluster_id,
+        "primary_keyword_id": members[0]["primary_keyword_id"],
+        "primary_keyword": members[0]["primary_keyword"],
+        "member_count": len(members),
+        "keywords": [member["keyword"] for member in members],
+    } for cluster_id, members in grouped.items()]
+    clusters.sort(key=lambda item: (-item["member_count"], item["cluster_id"]))
+    write_jsonl(args.output_dir / "keyword-clusters.jsonl", clusters)
+    _write_csv(
+        args.output_dir / "keyword-cluster-primary.csv",
+        [{
+            "cluster_id": item["cluster_id"],
+            "primary_keyword_id": item["primary_keyword_id"],
+            "primary_keyword": item["primary_keyword"],
+            "member_count": item["member_count"],
+        } for item in clusters],
+        ["cluster_id", "primary_keyword_id", "primary_keyword", "member_count"],
+    )
+    sizes = [item["member_count"] for item in clusters]
+    summary = {
+        "keywords": len(rows), "clusters": len(clusters),
+        "singleton_clusters": sum(size == 1 for size in sizes),
+        "multi_member_clusters": sum(size > 1 for size in sizes),
+        "largest_cluster": max(sizes),
+        "mean_cluster_size": round(len(rows) / len(clusters), 4),
+        "output_dir": str(args.output_dir),
+    }
+    (args.output_dir / "keyword-cluster-summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    return 0
+
+
 def _ensure_dataforseo_budget(store: Any, run_id: str, config: dict[str, Any], reserve: float) -> None:
     with store.connect() as connection:
         spent = float(connection.execute("SELECT COALESCE(SUM(amount_usd),0) FROM api_costs WHERE run_id=? AND provider='dataforseo'", (run_id,)).fetchone()[0])
@@ -1541,6 +1603,39 @@ def cluster_keywords(args: argparse.Namespace, config: dict[str, Any], store: An
             calibrated = connection.execute("SELECT metadata_json FROM provider_objects WHERE provider='local' AND object_type='similarity_calibration' AND local_id='topic:v1' AND status='complete'").fetchone()
         threshold = json.loads(calibrated[0])["threshold"] if calibrated else config["similarity"]["near_duplicate"]
     rows = load_jsonl(args.input)
+
+    def topic_parts(row: dict[str, Any]) -> tuple[str, set[str]]:
+        text = str(row.get("text", "")).splitlines()[0].casefold()
+        task_patterns = (
+            ("function", r"\b(?:function|how does|working principle)\b"),
+            ("location", r"\blocation\b"), ("symptoms", r"\bsymptoms?\b"),
+            ("failure_causes", r"\bfailure causes?\b"), ("not_working", r"\bnot working\b"),
+            ("intermittent", r"\bintermittent\b"), ("continuity_test", r"\bcontinuity test\b"),
+            ("test", r"\b(?:how to test|testing|how to check)\b"),
+            ("terminals", r"\b(?:no and nc|terminals?)\b"), ("actuator_travel", r"\bactuator travel\b"),
+            ("operating_force", r"\boperating force\b"), ("contact_rating", r"\bcontact rating\b"),
+            ("wiring", r"\bwiring\b"), ("replacement", r"\breplacement\b"),
+            ("adjustment", r"\badjustment\b"), ("maintenance", r"\bmaintenance\b"),
+            ("troubleshooting", r"\btroubleshooting\b"), ("selection", r"\b(?:select|selection)\b"),
+            ("causes", r"\bcauses\b"), ("prevention", r"\bprevention\b"), ("explained", r"\bexplained\b"),
+        )
+        task = next((name for name, pattern in task_patterns if re.search(pattern, text)), "base")
+        stop = {
+            "a", "an", "the", "how", "does", "to", "and", "micro", "switch", "switches", "intent",
+            "informational", "function", "location", "symptom", "symptoms", "failure", "causes", "not",
+            "working", "intermittent", "operation", "test", "testing", "continuity", "no", "nc", "terminal",
+            "terminals", "actuator", "travel", "operating", "force", "contact", "rating", "wiring", "replacement",
+            "adjustment", "maintenance", "troubleshooting", "select", "selection", "check", "explained", "prevention",
+        }
+        tokens = {token for token in re.findall(r"[a-z0-9]+", text) if token not in stop}
+        return task, tokens
+
+    def compatible_topics(left: dict[str, Any], right: dict[str, Any]) -> bool:
+        left_task, left_tokens = topic_parts(left)
+        right_task, right_tokens = topic_parts(right)
+        if left_task != right_task or not left_tokens or not right_tokens:
+            return False
+        return len(left_tokens & right_tokens) / len(left_tokens | right_tokens) >= 0.5
     if args.local and args.incremental:
         raise ValueError("incremental clustering requires Qdrant; do not combine --incremental with --local")
     cluster_records: list[tuple[list[dict[str, Any]], str | None]]
@@ -1594,14 +1689,15 @@ def cluster_keywords(args: argparse.Namespace, config: dict[str, Any], store: An
                             continue
                         score = float(neighbor.get("score") or 0)
                         if right_id in existing_clusters and right_id not in by_id:
-                            if score >= threshold:
+                            right_topic = {"text": str((neighbor.get("payload") or {}).get("text", ""))}
+                            if score >= threshold and compatible_topics(left, right_topic):
                                 external_candidates.setdefault(left_id, []).append((score, existing_clusters[right_id], right_id))
                             else:
                                 review_pairs.append({"left_id": left_id, "right_id": right_id, "score": score, "serp_overlap": 0.0})
                             continue
                         if right_id not in by_id or left_id > right_id:
                             continue
-                        if score >= threshold:
+                        if score >= threshold and compatible_topics(left, by_id[right_id]):
                             union(left_id, right_id)
                         else:
                             right = by_id[right_id]
