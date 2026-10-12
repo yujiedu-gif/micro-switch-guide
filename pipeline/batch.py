@@ -20,6 +20,7 @@ SYSTEM_PROMPTS = {
 - Set reader_task and answer_type to short lowercase snake_case identifiers, not prose sentences. Build content_signature as normalized_primary_keyword|reader_task|answer_type, using the complete primary keyword in lowercase snake_case as the first segment and copying reader_task and answer_type exactly as the second and third segments. Local normalization is authoritative.
 - Supply at least two differentiation_anchors that require this page to use a distinct mechanism, failure path, parameter boundary, or verification path. A title variation is not an anchor.
 - Give every outline item a section_role and copy those roles, in order, to section_roles. Do not reuse a generic outline merely by replacing the equipment name.
+- Provide at least one nonempty source_pack_terms entry naming the technical fact or relationship needed to answer the owned question. Never leave evidence requirements empty, even for a basic definition page.
 - When the payload says conditional_language_required, describe only designs that use the stated micro switch; never generalize the component to every device in that class.
 - Keep all editorial fields educational and free of brands, manufacturers, suppliers, factories, marketplaces, and commercial series. An exact model identifier is allowed only when it appears in the supplied primary keyword; do not introduce other models.
 Count description characters including spaces and punctuation, then verify every rule. Return only JSON matching the response schema.""",

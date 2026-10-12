@@ -79,6 +79,7 @@ class BatchTests(unittest.TestCase):
         self.assertEqual(rows[0]["body"]["input"][0]["role"], "system")
         self.assertNotIn("fixed skill", rows[0]["body"]["input"][0]["content"][0]["text"])
         self.assertIn("Plan contract", rows[0]["body"]["input"][0]["content"][0]["text"])
+        self.assertIn("nonempty source_pack_terms", rows[0]["body"]["input"][0]["content"][0]["text"])
         self.assertEqual(rows[0]["body"]["input"][0]["content"][0]["prompt_cache_breakpoint"], {"mode": "explicit"})
         self.assertEqual(rows[0]["body"]["prompt_cache_options"], {"mode": "explicit", "ttl": "30m"})
         self.assertEqual(rows[0]["body"]["text"]["format"]["type"], "json_schema")

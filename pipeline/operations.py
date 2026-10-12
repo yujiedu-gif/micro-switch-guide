@@ -48,7 +48,7 @@ from validators import article_policy_errors, has_explicit_evidence_boundary, no
 from topic_scope import CLASSIFIER_VERSION, classify_keyword
 
 
-REQUEST_VERSION = "v12"
+REQUEST_VERSION = "v13"
 REVIEW_GATE_VERSION = "logic-gate-v5-stable-advisory-context"
 REVIEW_INSTRUCTION = (
     "Concentrate the hard review on logical consistency, parameter accuracy, definition accuracy, and zero-brand compliance. "
