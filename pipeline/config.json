@@ -1,0 +1,107 @@
+{
+  "site": {
+    "language": "en",
+    "market": "United States",
+    "location_code": 2840,
+    "device": "desktop",
+    "timezone": "+0800",
+    "author": "editorial_team",
+    "categories": [
+      "Basics",
+      "Selection Guides",
+      "Waterproof Switches",
+      "Troubleshooting",
+      "Applications"
+    ]
+  },
+  "program": {
+    "article_limit": 10000,
+    "zero_brand": true,
+    "zero_commercial_sources": false,
+    "include_product_model_keywords": false,
+    "permissive_keyword_pool": false,
+    "topic_scope_mode": "strict_direct",
+    "topic_scope_classifier_version": "strict-direct-v1",
+    "pilot_articles": 50,
+    "pilot_candidate_pool": 60,
+    "article_word_min": 1000,
+    "article_word_max": 2000,
+    "daily_job_limit": 10000,
+    "rollout_gates": [50, 250, 1000, 10000],
+    "excluded_brand_terms": [
+      "zingear", "omron", "honeywell", "cherry", "zf", "huano", "kailh",
+      "panasonic", "alps", "marquardt", "schmersal", "saia-burgess", "saia burgess", "c&k", "ezgo", "ansul",
+      "allen bradley", "arduino", "bernstein", "blee", "brisk", "burgess", "crouzet", "defond", "donghai", "dongnan",
+      "drayton", "e switch", "eaton", "essen", "ge", "gersung", "gilard", "grove", "happ", "hartmann", "insteon",
+      "jiaben", "kaycee", "kissling", "lema electronics", "lema electrics", "licon", "logitech", "matsushita", "menlo",
+      "miltac", "moujen", "otehall", "pizzato", "raspberry pi", "razer", "sanwa", "schneider", "siemens", "square d",
+      "suns", "tezuo", "tiaihua", "toneluck", "ttc", "unimax", "ushun", "vabsco", "weipeng", "yamatake", "zippy", "zing ear",
+      "amarok", "club car", "deco", "dicgu", "freeport", "highly", "kjell", "saia", "telemecanique", "voron", "rs"
+    ],
+    "internal_links_min": 3,
+    "internal_links_max": 4
+  },
+  "budgets_usd": {
+    "dataforseo_run_hard_limit": 4.0,
+    "dataforseo_warning": 3.5,
+    "dataforseo_discovery_reserve": 1.98,
+    "dataforseo_intent_reserve": 1.32,
+    "dataforseo_serp_reserve": 0.48
+  },
+  "models": {
+    "embedding_provider": "local",
+    "embedding": "sentence-transformers/all-mpnet-base-v2",
+    "embedding_dimensions": 768,
+    "generation": "gpt-6-luna"
+  },
+  "pricing_usd_per_million_tokens": {
+    "gpt-6-luna_batch": {
+      "input": 0.05,
+      "cached_input": 0.005,
+      "cache_write": 0.0625,
+      "output": 0.25,
+      "verified_on": "2026-10-09"
+    },
+    "gpt-6-luna_standard": {
+      "input": 0.10,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "output": 0.50,
+      "verified_on": "2026-10-09"
+    }
+  },
+  "batch": {
+    "pilot_size": 50,
+    "requests_per_file": 500,
+    "max_requests_per_file": 50000,
+    "max_file_bytes": 209715200,
+    "transport_retries": 2,
+    "content_revision_retries": 1
+  },
+  "similarity": {
+    "near_duplicate": 0.93,
+    "same_topic_lower": 0.87,
+    "neighbors": 20,
+    "simhash_max_distance": 6,
+    "minhash_min_similarity": 0.85,
+    "calibration_pairs": 200
+  },
+  "qdrant": {
+    "collections": {
+      "topic": "msg_topics_strict_v1",
+      "article_plan": "msg_article_plans_v1",
+      "section_plan": "msg_section_plans_v1",
+      "chunk": "msg_chunks_v1"
+    },
+    "distance": "Cosine"
+  },
+  "github": {
+    "owner": "yujiedu-gif",
+    "repo": "micro-switch-guide",
+    "base_branch": "main"
+  },
+  "skill": {
+    "root": "/Users/yujiedu/.codex/skills/microswitchguide-content",
+    "version": "2026-10-09.1"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MicroSwitchGuide generated article body",
+  "type": "object",
+  "required": ["body_markdown", "used_claim_ids", "self_review"],
+  "properties": {
+    "body_markdown": {"type": "string", "minLength": 500},
+    "used_claim_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "self_review": {
+      "type": "object",
+      "required": ["logical_consistency", "parameter_accuracy", "definition_accuracy", "zero_brand", "topic_purity"],
+      "properties": {
+        "logical_consistency": {"type": "boolean"},
+        "parameter_accuracy": {"type": "boolean"},
+        "definition_accuracy": {"type": "boolean"},
+        "zero_brand": {"type": "boolean"},
+        "topic_purity": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

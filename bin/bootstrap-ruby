@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+RUBY_VERSION="${MSG_RUBY_VERSION:-3.3.9}"
+OPENSSL_VERSION="${MSG_OPENSSL_VERSION:-3.0.16}"
+LIBYAML_VERSION="${MSG_LIBYAML_VERSION:-0.2.5}"
+PREFIX="$PROJECT_DIR/work/ruby"
+OPENSSL_PREFIX="$PROJECT_DIR/work/openssl"
+LIBYAML_PREFIX="$PROJECT_DIR/work/libyaml"
+SOURCE_DIR="$PROJECT_DIR/work/src/ruby-$RUBY_VERSION"
+ARCHIVE="$PROJECT_DIR/work/src/ruby-$RUBY_VERSION.tar.gz"
+
+if [[ -x "$PREFIX/bin/ruby" ]] && "$PREFIX/bin/ruby" -ropenssl -rpsych -e 'exit RUBY_VERSION.start_with?("3.3.") ? 0 : 1'; then
+  "$PREFIX/bin/ruby" --version
+  exit 0
+fi
+
+mkdir -p "$PROJECT_DIR/work/src"
+
+if [[ ! -f "$OPENSSL_PREFIX/lib/libssl.a" ]]; then
+  OPENSSL_ARCHIVE="$PROJECT_DIR/work/src/openssl-$OPENSSL_VERSION.tar.gz"
+  OPENSSL_SOURCE="$PROJECT_DIR/work/src/openssl-$OPENSSL_VERSION"
+  [[ -f "$OPENSSL_ARCHIVE" ]] || curl --fail --location --retry 3 "https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz" --output "$OPENSSL_ARCHIVE"
+  [[ -d "$OPENSSL_SOURCE" ]] || tar -xzf "$OPENSSL_ARCHIVE" -C "$PROJECT_DIR/work/src"
+  cd "$OPENSSL_SOURCE"
+  ./Configure darwin64-arm64-cc --prefix="$OPENSSL_PREFIX" --openssldir="$OPENSSL_PREFIX/ssl" no-shared
+  make -j"$(sysctl -n hw.logicalcpu)"
+  make install_sw
+fi
+
+if [[ ! -f "$LIBYAML_PREFIX/lib/libyaml.a" ]]; then
+  LIBYAML_ARCHIVE="$PROJECT_DIR/work/src/yaml-$LIBYAML_VERSION.tar.gz"
+  LIBYAML_SOURCE="$PROJECT_DIR/work/src/yaml-$LIBYAML_VERSION"
+  [[ -f "$LIBYAML_ARCHIVE" ]] || curl --fail --location --retry 3 "https://github.com/yaml/libyaml/releases/download/$LIBYAML_VERSION/yaml-$LIBYAML_VERSION.tar.gz" --output "$LIBYAML_ARCHIVE"
+  [[ -d "$LIBYAML_SOURCE" ]] || tar -xzf "$LIBYAML_ARCHIVE" -C "$PROJECT_DIR/work/src"
+  cd "$LIBYAML_SOURCE"
+  ./configure --prefix="$LIBYAML_PREFIX" --disable-shared
+  make -j"$(sysctl -n hw.logicalcpu)"
+  make install
+fi
+
+if [[ ! -f "$ARCHIVE" ]]; then
+  curl --fail --location --retry 3 "https://cache.ruby-lang.org/pub/ruby/3.3/ruby-$RUBY_VERSION.tar.gz" --output "$ARCHIVE"
+fi
+if [[ ! -d "$SOURCE_DIR" ]]; then
+  tar -xzf "$ARCHIVE" -C "$PROJECT_DIR/work/src"
+fi
+
+cd "$SOURCE_DIR"
+make distclean >/dev/null 2>&1 || true
+CPPFLAGS="-I$OPENSSL_PREFIX/include -I$LIBYAML_PREFIX/include" \
+LDFLAGS="-L$OPENSSL_PREFIX/lib -L$LIBYAML_PREFIX/lib" \
+PKG_CONFIG_PATH="$OPENSSL_PREFIX/lib/pkgconfig:$LIBYAML_PREFIX/lib/pkgconfig" \
+./configure --prefix="$PREFIX" --disable-install-doc --with-openssl-dir="$OPENSSL_PREFIX"
+make -j"$(sysctl -n hw.logicalcpu)"
+make install
+export PATH="$PREFIX/bin:$PATH"
+export BUNDLE_PATH="$PROJECT_DIR/work/bundle"
+gem install bundler --no-document
+cd "$PROJECT_DIR"
+bundle install
+ruby --version

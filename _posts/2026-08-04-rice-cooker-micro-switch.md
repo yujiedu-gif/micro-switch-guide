@@ -2,7 +2,6 @@
 title: "Rice cooker micro switch: its role in cook-to-warm control"
 description: "Learn how a rice cooker micro switch may affect cook-to-warm behavior, what symptoms can and cannot show, and which checks belong to qualified service."
 date: 2026-08-04 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Applications
 tags:
   - rice cooker micro switch
@@ -47,9 +46,9 @@ Use the appliance’s own service information to identify the intended control a
 
 ### Related guides
 
-- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
 - [elevator micro switch](/guides/elevator-micro-switch/)
-- [micro switch water heater](/guides/micro-switch-water-heater/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 - [what is a micro switch in a car](/guides/what-is-a-micro-switch-in-a-car/)
 
 ## Rice cooker micro switch safety and service limits

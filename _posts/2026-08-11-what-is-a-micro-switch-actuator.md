@@ -2,7 +2,6 @@
 title: "what is a micro switch actuator"
 description: "what is a micro switch actuator: Learn how the actuator transfers movement to a switch mechanism and what to check when describing its motion."
 date: 2026-08-11 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - what is a micro switch actuator
@@ -43,10 +42,10 @@ Together, these terms describe different parts of the operating sequence. Actuat
 
 ### Related guides
 
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
 - [how to wire a micro switch](/guides/how-to-wire-a-micro-switch/)
-- [micro switch com](/guides/micro-switch-com/)
-- [micro switch differential travel](/guides/micro-switch-differential-travel/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [micro switch free position](/guides/micro-switch-free-position/)
+- [micro switch insulation resistance](/guides/micro-switch-insulation-resistance/)
 
 ## What the Actuator Does Not Tell You by Itself
 

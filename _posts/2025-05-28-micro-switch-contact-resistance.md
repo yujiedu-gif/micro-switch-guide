@@ -2,7 +2,6 @@
 title: "Micro switch contact resistance: how to interpret a reading"
 description: "Learn how to interpret micro switch contact resistance readings, what can affect them, and when a measurement alone cannot establish switch condition."
 date: 2025-05-28 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Troubleshooting
 tags:
   - micro switch contact resistance
@@ -47,10 +46,10 @@ If the test conditions cannot be established, report the reading as an observati
 
 ### Related guides
 
-- [air fryer micro switch](/guides/air-fryer-micro-switch/)
-- [broken micro switch lever](/guides/broken-micro-switch-lever/)
-- [burnt micro switch contacts](/guides/burnt-micro-switch-contacts/)
-- [micro switch overheating](/guides/micro-switch-overheating/)
+- [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [elevator micro switch](/guides/elevator-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 
 ## What a resistance reading cannot establish
 

@@ -2,7 +2,6 @@
 title: "Elevator micro switch: What the supplied evidence can establish"
 description: "See what an elevator micro switch evidence can establish, and identify the documentation gaps that prevent unsupported conclusions about its function."
 date: 2025-10-16 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Applications
 tags:
   - elevator micro switch
@@ -51,9 +50,9 @@ This is an interpretation boundary, not a wiring procedure. Do not use this arti
 
 ### Related guides
 
-- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
-- [micro switch water heater](/guides/micro-switch-water-heater/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
 - [rice cooker micro switch](/guides/rice-cooker-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 - [what is a micro switch in a car](/guides/what-is-a-micro-switch-in-a-car/)
 
 ## What does the supplied safety evidence cover?

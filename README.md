@@ -21,7 +21,21 @@ A lightweight English educational blog about micro switch fundamentals, selectio
    - `Applications`
 5. Commit and push to `main`. GitHub Pages rebuilds the site automatically.
 
-Only include `official_url` when an article has a directly relevant official ZINGEAR page. Do not copy an existing article from the official website; write an original guide that serves a distinct reader question.
+The first 10,000-article program is educational and non-promotional. Do not rank or recommend manufacturers, suppliers, brands, commercial series, or product models. Manufacturer and commercial technical documents may support narrowly scoped facts and may be named in the Sources section; all external source links are rendered `nofollow`.
+
+## Content pipeline
+
+Initialize and inspect the local content-production state without making paid API calls:
+
+```bash
+./bin/content-pipeline init
+./bin/content-pipeline status
+./bin/content-pipeline audit
+```
+
+The pipeline stores runtime state under the ignored `pipeline/state/` directory. See `pipeline/README.md` for the staged smoke-test workflow. Never commit API keys or credential files.
+
+The local control center also provides a free, read-only keyword expansion audit. It reuses rejected queries as entity/task material while blocking topic drift, and prepares 100 evidence-aware planning candidates without calling paid providers or making them production-eligible.
 
 ## Local preview
 
@@ -47,7 +61,17 @@ Run a production build with:
 ./bin/site build
 ```
 
-On a fresh computer, install Ruby 3.3 and run `bundle install` once before using the helper.
+On a fresh computer, bootstrap the isolated Ruby 3.3 environment and dependencies once:
+
+```bash
+./bin/bootstrap-ruby
+```
+
+For the content pipeline's local semantic clustering, install the isolated embedding environment once:
+
+```bash
+./bin/bootstrap-embeddings
+```
 
 ## Change navigation or topics
 

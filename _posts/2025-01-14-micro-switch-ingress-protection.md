@@ -2,7 +2,6 @@
 title: "Micro Switch Ingress Protection: What an IP Rating Does and Does Not Show"
 description: "Learn how micro switch ingress protection is classified, what an IP code can establish, and which environmental risks still need separate verification."
 date: 2025-01-14 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Waterproof Switches
 tags:
   - micro switch ingress protection
@@ -51,10 +50,10 @@ For each distinct risk, identify what evidence would be needed and whether it ap
 
 ### Related guides
 
-- [air fryer micro switch](/guides/air-fryer-micro-switch/)
-- [dustproof micro switch](/guides/dustproof-micro-switch/)
+- [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
 - [micro switch humidity](/guides/micro-switch-humidity/)
-- [micro switch water ingress](/guides/micro-switch-water-ingress/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [arcade button micro switch wiring](/guides/arcade-button-micro-switch-wiring/)
 
 ## Micro switch ingress protection: a neutral verification checklist
 

@@ -2,7 +2,6 @@
 title: "2 terminal micro switch: what the terminal count tells you"
 description: "Learn what a 2 terminal micro switch can tell you about its contacts, what it cannot confirm, and which checks matter before interpreting an installed switch."
 date: 2024-12-19 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - 2 terminal micro switch
@@ -53,10 +52,10 @@ This distinction keeps identification separate from testing and wiring. Determin
 
 ### Related guides
 
-- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
 - [how to wire a micro switch](/guides/how-to-wire-a-micro-switch/)
-- [micro switch com](/guides/micro-switch-com/)
+- [micro switch mechanical life](/guides/micro-switch-mechanical-life/)
+- [micro switch free position](/guides/micro-switch-free-position/)
+- [micro switch insulation resistance](/guides/micro-switch-insulation-resistance/)
 
 ## What to verify before interpreting an installed switch
 

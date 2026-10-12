@@ -2,7 +2,6 @@
 title: "Micro Switch Free Position: Meaning and Measurement Context"
 description: "Learn what micro switch free position means, how it differs from operating points, and what to verify before using it to assess switch movement."
 date: 2026-02-24 09:00:00 +0800
-last_updated: 2026-10-11 09:00:00 +0800
 category: Basics
 tags:
   - micro switch free position
@@ -59,10 +58,10 @@ A position reference can still be useful: it gives a consistent starting point f
 
 ### Related guides
 
-- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
-- [how long do micro switches last](/guides/how-long-do-micro-switches-last/)
 - [how to wire a micro switch](/guides/how-to-wire-a-micro-switch/)
-- [micro switch com](/guides/micro-switch-com/)
+- [micro switch mechanical life](/guides/micro-switch-mechanical-life/)
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [micro switch insulation resistance](/guides/micro-switch-insulation-resistance/)
 
 ## What to check when observed movement seems different
 
