@@ -59,6 +59,9 @@ class CoreTests(unittest.TestCase):
         rendered = render_post(article, __import__("datetime").date(2026, 10, 11), "editorial_team", "+0800")
         self.assertNotIn("# Micro Switch Troubleshooting", rendered)
         self.assertIn("Introduction.\n\n## First check", rendered)
+        self.assertIn("date: 2026-10-11 00:00:00 +0800", rendered)
+        self.assertIn("publication_date_only: true", rendered)
+        self.assertNotIn("09:00:00", rendered)
 
     def test_keyword_normalization(self) -> None:
         self.assertEqual(normalize_keyword(" MicroSwitch—Wiring "), "micro switch-wiring")
