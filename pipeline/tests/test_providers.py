@@ -61,6 +61,13 @@ class ProviderContractTests(unittest.TestCase):
         self.assertEqual(request.call_args.kwargs["body"], {"vectors": {"size": 768, "distance": "Cosine"}})
 
     @patch("providers.request_json")
+    def test_qdrant_granularity_index_contract(self, request):
+        request.return_value = {"result": {"status": "completed"}}
+        QdrantClient("https://qdrant.example", "key").create_payload_index("msg_chunks_v1", "granularity")
+        self.assertTrue(request.call_args.args[2].endswith("/collections/msg_chunks_v1/index?wait=true"))
+        self.assertEqual(request.call_args.kwargs["body"], {"field_name": "granularity", "field_schema": "keyword"})
+
+    @patch("providers.request_json")
     def test_qdrant_batch_query_uses_read_retry_contract(self, request):
         request.return_value = {"result": [{"points": [{"score": 0.9}]}]}
         payload_filter = {"must": [{"key": "granularity", "match": {"value": "article"}}]}
