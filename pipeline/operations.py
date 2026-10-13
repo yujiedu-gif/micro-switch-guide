@@ -1540,6 +1540,8 @@ def qdrant_init(args: argparse.Namespace, config: dict[str, Any], credentials: d
                 results[kind] = "exists"
             else:
                 raise
+        if kind in {"article_plan", "section_plan", "chunk"}:
+            client.create_payload_index(name, "granularity")
     print(canonical_json({"dimensions": expected, "collections": results}))
     return 0
 
@@ -2997,7 +2999,7 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
         owner_job = str(cluster[0].get("job_id", owner))
         for index, item in enumerate(cluster):
             score = cosine_similarity(cluster[0]["vector"], item["vector"])
-            duplicate_of = owner if index and str(item.get("job_id", item["id"])) != owner_job else None
+            duplicate_of = owner if index and score >= threshold and str(item.get("job_id", item["id"])) != owner_job else None
             if args.object_type == "article_plan" and duplicate_of:
                 duplicate_of = None
                 for earlier in cluster[:index]:
@@ -3085,6 +3087,19 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
         if not item["duplicate_of"]:
             item.update({"duplicate_of": neighbor_id, "duplicate_of_job_id": neighbor_job, "similarity": score, "source": "qdrant_existing_corpus"})
 
+    # Full-article cosine is a candidate signal, not proof of duplicate body
+    # content. Two non-definition section matches (or the lexical gate) make
+    # the final rejection decision. Otherwise neighboring reader tasks are
+    # wrongly discarded merely because they share a device and vocabulary.
+    if args.object_type == "chunk":
+        for item in output:
+            if item.get("granularity") == "article" and item.get("duplicate_of"):
+                item["candidate_match"] = {
+                    "id": item["duplicate_of"], "job_id": item.get("duplicate_of_job_id"),
+                    "similarity": item["similarity"], "source": item["source"],
+                }
+                item["duplicate_of"] = None
+
     # A shared definition or one isolated similar section is not enough to
     # reject an otherwise distinct article.  Two non-definition sections that
     # match the same other article are a content-level duplicate.
@@ -3146,7 +3161,7 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
                        ON CONFLICT(provider,object_type,local_id) DO UPDATE SET status='complete',metadata_json=excluded.metadata_json,updated_at=excluded.updated_at""",
                     (local_id, canonical_json(metadata), now_iso(), now_iso()),
                 )
-    print(canonical_json({"items": len(rows), "semantic_clusters": len(clusters), "duplicates": duplicate_count, "qdrant_external_duplicates": len(external_by_id), "granularities": granularities, "output": str(args.output)}))
+    print(canonical_json({"items": len(rows), "semantic_clusters": len(clusters), "duplicates": duplicate_count, "article_candidates": sum(bool(row.get("candidate_match")) for row in output), "qdrant_external_duplicates": len(external_by_id), "granularities": granularities, "output": str(args.output)}))
     return 0
 
 

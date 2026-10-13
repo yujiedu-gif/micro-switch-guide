@@ -189,6 +189,12 @@ class QdrantClient:
             headers=self.headers, body={"vectors": {"size": dimensions, "distance": distance}},
         )
 
+    def create_payload_index(self, collection: str, field: str, schema: str = "keyword") -> dict[str, Any]:
+        return request_json(
+            "qdrant", "PUT", f"{self.url.rstrip('/')}/collections/{urllib.parse.quote(collection)}/index?wait=true",
+            headers=self.headers, body={"field_name": field, "field_schema": schema}, timeout=180, max_attempts=4,
+        )
+
     def upsert(self, collection: str, points: list[dict[str, Any]]) -> dict[str, Any]:
         return request_json(
             "qdrant", "PUT", f"{self.url.rstrip('/')}/collections/{urllib.parse.quote(collection)}/points?wait=true",

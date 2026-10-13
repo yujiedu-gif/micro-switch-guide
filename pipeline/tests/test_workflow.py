@@ -17,6 +17,35 @@ from operations import articles_export, build_batches_action, dedupe_semantic, e
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_article_cosine_is_candidate_until_section_or_lexical_confirmation(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "pipeline").mkdir()
+            (root / "pipeline" / "schema.sql").write_text((PIPELINE / "schema.sql").read_text())
+            store = Store(Paths(root))
+            store.initialize()
+            now = now_iso()
+            with store.connect() as connection:
+                for index in range(2):
+                    connection.execute(
+                        "INSERT INTO keywords(keyword_id,keyword,normalized_keyword,location_code,language_code,selected,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)",
+                        (f"kw-{index}", f"micro switch {index}", f"micro switch {index}", 2840, "en", 1, now, now),
+                    )
+                    connection.execute(
+                        "INSERT INTO content_jobs(job_id,keyword_id,custom_id,status,created_at,updated_at) VALUES(?,?,?,?,?,?)",
+                        (f"job-{index}", f"kw-{index}", f"custom-{index}", "validated", now, now),
+                    )
+            vectors = root / "vectors.jsonl"
+            vectors.write_text("".join(json.dumps({"id": f"job-{index}", "job_id": f"job-{index}", "granularity": "article", "vector": [1.0, 0.0]}) + "\n" for index in range(2)))
+            output = root / "dedupe.jsonl"
+            config = {"similarity": {"near_duplicate": 0.93, "neighbors": 5}, "qdrant": {"collections": {"chunk": "chunks"}}}
+            dedupe_semantic(argparse.Namespace(input=vectors, output=output, threshold=None, object_type="chunk", run_id=None, apply=True), config, store, {})
+            rows = load_jsonl(output)
+            self.assertEqual(sum(bool(row.get("candidate_match")) for row in rows), 1)
+            self.assertTrue(all(row["duplicate_of"] is None for row in rows))
+            with store.connect() as connection:
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM content_jobs WHERE status='validated'").fetchone()[0], 2)
+
     def test_article_export_keeps_existing_publication_as_dedupe_owner(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
