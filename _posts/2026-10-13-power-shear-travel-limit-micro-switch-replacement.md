@@ -1,7 +1,8 @@
 ---
 title: "Power shear travel limit micro switch replacement: how to verify a match"
 description: "power shear travel limit micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 09:00:00 +0800
+date: 2026-10-13 09:55:12 +0800
+last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:
   - power shear travel limit micro switch replacement

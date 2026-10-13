@@ -1,7 +1,8 @@
 ---
 title: "cnc router end of stroke micro switch wiring: How the Switch Connects to an End-of-Stroke Input"
 description: "cnc router end of stroke micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
-date: 2026-10-13 09:00:00 +0800
+date: 2026-10-13 17:07:02 +0800
+last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:
   - cnc router end of stroke micro switch wiring
