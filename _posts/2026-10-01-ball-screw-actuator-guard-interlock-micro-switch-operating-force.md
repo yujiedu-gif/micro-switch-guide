@@ -2,7 +2,7 @@
 title: "Ball screw actuator guard interlock micro switch operating force: what does it mean?"
 description: "ball screw actuator guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-01 12:26:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ball screw actuator guard interlock micro switch operating force

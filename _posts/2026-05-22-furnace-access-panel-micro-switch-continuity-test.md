@@ -2,7 +2,7 @@
 title: "Furnace access panel micro switch continuity test: what can it tell you?"
 description: "furnace access panel micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-22 15:34:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - furnace access panel micro switch continuity test

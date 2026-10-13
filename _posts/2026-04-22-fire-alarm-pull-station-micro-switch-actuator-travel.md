@@ -2,7 +2,7 @@
 title: "Fire alarm pull station micro switch actuator travel: how does the motion work?"
 description: "fire alarm pull station micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-22 18:54:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fire alarm pull station micro switch actuator travel

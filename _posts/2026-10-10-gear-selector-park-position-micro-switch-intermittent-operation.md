@@ -2,7 +2,7 @@
 title: "Gear selector park position micro switch intermittent operation: how to diagnose it"
 description: "gear selector park position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-10 09:28:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - gear selector park position micro switch intermittent operation

@@ -2,7 +2,7 @@
 title: "Hospital bed travel limit micro switch maintenance: what should you check?"
 description: "hospital bed travel limit micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-14 18:49:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - hospital bed travel limit micro switch maintenance

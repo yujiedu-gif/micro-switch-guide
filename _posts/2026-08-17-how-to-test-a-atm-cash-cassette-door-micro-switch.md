@@ -2,7 +2,7 @@
 title: "How to test a atm cash cassette door micro switch"
 description: "how to test a atm cash cassette door micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-17 12:26:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a atm cash cassette door micro switch

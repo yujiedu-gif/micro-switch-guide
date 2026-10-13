@@ -2,7 +2,7 @@
 title: "Forklift mast home position micro switch not working: how to isolate the fault"
 description: "forklift mast home position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-03 08:29:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - forklift mast home position micro switch not working

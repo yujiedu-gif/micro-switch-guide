@@ -2,7 +2,7 @@
 title: "water dispenser lever micro switch not working: Causes and Checks"
 description: "water dispenser lever micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-11 18:31:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - water dispenser lever micro switch not working

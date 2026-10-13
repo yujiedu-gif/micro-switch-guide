@@ -2,7 +2,7 @@
 title: "Micro switch explosive atmosphere troubleshooting: safe diagnostic boundaries"
 description: "micro switch explosive atmosphere troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-13 09:58:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch explosive atmosphere troubleshooting

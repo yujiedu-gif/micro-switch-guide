@@ -2,7 +2,7 @@
 title: "Loading dock door closed position micro switch: how it detects closure"
 description: "loading dock door closed position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-20 14:26:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - loading dock door closed position micro switch

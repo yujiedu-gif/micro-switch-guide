@@ -2,7 +2,7 @@
 title: "micro switch dust exposure: What Can Dust Affect?"
 description: "micro switch dust exposure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-16 17:42:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch dust exposure

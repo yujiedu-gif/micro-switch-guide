@@ -2,7 +2,7 @@
 title: "How to test a collaborative robot travel limit micro switch"
 description: "how to test a collaborative robot travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-22 18:32:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how to test a collaborative robot travel limit micro switch

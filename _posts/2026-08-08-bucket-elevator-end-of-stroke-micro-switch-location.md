@@ -2,7 +2,7 @@
 title: "Bucket elevator end of stroke micro switch location"
 description: "bucket elevator end of stroke micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-08 12:29:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bucket elevator end of stroke micro switch location

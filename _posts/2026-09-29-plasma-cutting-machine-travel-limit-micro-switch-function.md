@@ -2,7 +2,7 @@
 title: "Plasma cutting machine travel limit micro switch function: how it works"
 description: "plasma cutting machine travel limit micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-29 09:11:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - plasma cutting machine travel limit micro switch function

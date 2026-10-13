@@ -2,7 +2,7 @@
 title: "Micro switch no continuity: what the reading means"
 description: "micro switch no continuity: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-22 18:38:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch no continuity

@@ -2,7 +2,7 @@
 title: "Medical cart drawer micro switch operating force: what does it mean?"
 description: "medical cart drawer micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-28 15:45:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - medical cart drawer micro switch operating force

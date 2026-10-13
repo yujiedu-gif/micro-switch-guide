@@ -2,7 +2,7 @@
 title: "Dough mixing machine home position micro switch wiring: How to interpret it"
 description: "dough mixing machine home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-11 17:28:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dough mixing machine home position micro switch wiring

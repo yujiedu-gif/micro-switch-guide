@@ -2,7 +2,7 @@
 title: "rotary actuator micro switch operating force: What the Value Means"
 description: "rotary actuator micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-03 13:06:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - rotary actuator micro switch operating force

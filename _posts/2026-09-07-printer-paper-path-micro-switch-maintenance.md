@@ -2,7 +2,7 @@
 title: "Printer paper path micro switch maintenance: inspection and verification"
 description: "printer paper path micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-07 12:29:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printer paper path micro switch maintenance

@@ -2,7 +2,7 @@
 title: "micro switch maximum switching current testing"
 description: "micro switch maximum switching current testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-07 11:01:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch maximum switching current testing

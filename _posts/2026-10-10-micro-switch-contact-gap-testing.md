@@ -2,7 +2,7 @@
 title: "micro switch contact gap testing: What It Can Tell You"
 description: "micro switch contact gap testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-10-10 10:35:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch contact gap testing

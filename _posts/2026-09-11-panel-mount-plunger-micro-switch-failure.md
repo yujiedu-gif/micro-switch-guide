@@ -2,7 +2,7 @@
 title: "Panel mount plunger micro switch failure: how to distinguish likely causes"
 description: "panel mount plunger micro switch failure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-11 15:51:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - panel mount plunger micro switch failure

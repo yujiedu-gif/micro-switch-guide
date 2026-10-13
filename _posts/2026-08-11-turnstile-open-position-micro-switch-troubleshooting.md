@@ -2,7 +2,7 @@
 title: "Turnstile Open Position Micro Switch Troubleshooting"
 description: "turnstile open position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-11 12:33:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - turnstile open position micro switch troubleshooting

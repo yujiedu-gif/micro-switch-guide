@@ -2,7 +2,7 @@
 title: "Ice maker position micro switch intermittent operation: how to diagnose it"
 description: "ice maker position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-09 19:09:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - ice maker position micro switch intermittent operation

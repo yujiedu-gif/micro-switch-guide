@@ -2,7 +2,7 @@
 title: "Mobility scooter closed position micro switch replacement: how to verify the fault"
 description: "mobility scooter closed position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-26 21:25:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - mobility scooter closed position micro switch replacement

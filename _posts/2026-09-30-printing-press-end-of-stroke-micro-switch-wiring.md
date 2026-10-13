@@ -2,7 +2,7 @@
 title: "Printing press end of stroke micro switch wiring: how to trace the signal"
 description: "printing press end of stroke micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-30 15:02:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printing press end of stroke micro switch wiring

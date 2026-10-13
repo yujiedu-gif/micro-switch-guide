@@ -2,7 +2,7 @@
 title: "Glove box latch micro switch actuator travel: how the motion works"
 description: "glove box latch micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-11 08:20:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - glove box latch micro switch actuator travel

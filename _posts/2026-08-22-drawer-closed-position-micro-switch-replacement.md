@@ -2,7 +2,7 @@
 title: "Drawer Closed Position Micro Switch Replacement: How to Diagnose the Fault"
 description: "drawer closed position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-22 17:39:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - drawer closed position micro switch replacement

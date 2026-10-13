@@ -2,7 +2,7 @@
 title: "How a printer paper path micro switch detects movement"
 description: "printer paper path micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-14 19:23:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printer paper path micro switch

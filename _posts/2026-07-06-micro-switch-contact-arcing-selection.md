@@ -2,7 +2,7 @@
 title: "Micro switch contact arcing selection: How to assess load and switching conditions"
 description: "micro switch contact arcing selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-06 09:32:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch contact arcing selection

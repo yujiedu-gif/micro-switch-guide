@@ -2,7 +2,7 @@
 title: "micro switch SPDT contacts selection: How to Choose for a Circuit"
 description: "micro switch SPDT contacts selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-05 13:59:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch SPDT contacts selection

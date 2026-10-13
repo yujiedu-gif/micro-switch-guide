@@ -2,7 +2,7 @@
 title: "Industrial door home position micro switch location: how to identify it"
 description: "industrial door home position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-20 21:40:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial door home position micro switch location

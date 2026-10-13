@@ -2,7 +2,7 @@
 title: "Extrusion machine home position micro switch not working: how to diagnose it"
 description: "extrusion machine home position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-13 11:44:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - extrusion machine home position micro switch not working

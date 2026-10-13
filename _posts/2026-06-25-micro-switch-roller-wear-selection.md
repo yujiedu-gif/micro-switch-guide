@@ -2,7 +2,7 @@
 title: "Micro switch roller wear selection"
 description: "micro switch roller wear selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-25 19:58:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch roller wear selection

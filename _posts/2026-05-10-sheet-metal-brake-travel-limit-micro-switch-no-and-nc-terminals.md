@@ -2,7 +2,7 @@
 title: "Sheet Metal Brake Travel Limit Micro Switch NO and NC Terminals"
 description: "sheet metal brake travel limit micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-10 17:57:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sheet metal brake travel limit micro switch NO and NC terminals

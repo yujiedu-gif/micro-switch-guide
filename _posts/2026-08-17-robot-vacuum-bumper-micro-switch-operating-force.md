@@ -2,7 +2,7 @@
 title: "Robot vacuum bumper micro switch operating force: what does it mean?"
 description: "robot vacuum bumper micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-17 10:55:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - robot vacuum bumper micro switch operating force

@@ -2,7 +2,7 @@
 title: "fire damper open position micro switch adjustment: What to Check"
 description: "fire damper open position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-09 14:32:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fire damper open position micro switch adjustment

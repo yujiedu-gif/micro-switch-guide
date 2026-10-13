@@ -2,7 +2,7 @@
 title: "warehouse shuttle home position micro switch wiring: identifying the signal path"
 description: "warehouse shuttle home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-25 18:10:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - warehouse shuttle home position micro switch wiring

@@ -2,7 +2,7 @@
 title: "Industrial door end of stroke micro switch wiring: how does the signal path work?"
 description: "industrial door end of stroke micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-27 21:41:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial door end of stroke micro switch wiring

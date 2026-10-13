@@ -2,7 +2,7 @@
 title: "Micro Switch Wire Break Causes: How to Distinguish Wiring Faults"
 description: "micro switch wire break causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-04-24 16:00:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch wire break causes

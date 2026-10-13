@@ -2,7 +2,7 @@
 title: "garbage disposal reset mechanism micro switch operating force: What Does It Mean?"
 description: "garbage disposal reset mechanism micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-05 12:57:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - garbage disposal reset mechanism micro switch operating force

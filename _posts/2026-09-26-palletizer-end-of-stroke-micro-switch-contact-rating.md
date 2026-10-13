@@ -2,7 +2,7 @@
 title: "Palletizer end of stroke micro switch contact rating"
 description: "palletizer end of stroke micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-26 14:01:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - palletizer end of stroke micro switch contact rating

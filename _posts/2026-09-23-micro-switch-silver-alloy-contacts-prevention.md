@@ -2,7 +2,7 @@
 title: "Micro switch silver alloy contacts prevention: what the material can and cannot do"
 description: "micro switch silver alloy contacts prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-23 21:37:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch silver alloy contacts prevention

@@ -2,7 +2,7 @@
 title: "How a stand mixer head lock micro switch works"
 description: "stand mixer head lock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-24 17:02:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stand mixer head lock micro switch

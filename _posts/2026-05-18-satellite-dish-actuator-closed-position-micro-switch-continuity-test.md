@@ -2,7 +2,7 @@
 title: "Satellite dish actuator closed position micro switch continuity test"
 description: "satellite dish actuator closed position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-18 11:54:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - satellite dish actuator closed position micro switch continuity test

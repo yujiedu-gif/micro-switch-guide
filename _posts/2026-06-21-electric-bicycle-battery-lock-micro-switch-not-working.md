@@ -2,7 +2,7 @@
 title: "Electric bicycle battery lock micro switch not working: how to diagnose it"
 description: "electric bicycle battery lock micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-21 11:59:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric bicycle battery lock micro switch not working

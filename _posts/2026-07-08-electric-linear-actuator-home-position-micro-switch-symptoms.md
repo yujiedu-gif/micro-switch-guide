@@ -2,7 +2,7 @@
 title: "Electric Linear Actuator Home Position Micro Switch Symptoms: What They May Indicate"
 description: "electric linear actuator home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-08 12:06:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric linear actuator home position micro switch symptoms

@@ -2,7 +2,7 @@
 title: "Motorized curtain open position micro switch actuator travel"
 description: "motorized curtain open position micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-16 16:43:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized curtain open position micro switch actuator travel

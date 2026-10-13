@@ -2,7 +2,7 @@
 title: "Bottling machine travel limit micro switch: how it detects motion limits"
 description: "bottling machine travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-18 10:12:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bottling machine travel limit micro switch

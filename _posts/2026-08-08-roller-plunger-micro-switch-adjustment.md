@@ -2,7 +2,7 @@
 title: "roller plunger micro switch adjustment: how to check alignment"
 description: "roller plunger micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-08 12:10:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - roller plunger micro switch adjustment

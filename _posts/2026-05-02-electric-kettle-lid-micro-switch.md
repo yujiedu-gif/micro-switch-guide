@@ -2,7 +2,7 @@
 title: "Electric kettle lid micro switch: what does it do?"
 description: "electric kettle lid micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-02 19:19:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric kettle lid micro switch

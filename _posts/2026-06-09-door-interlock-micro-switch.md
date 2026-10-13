@@ -2,7 +2,7 @@
 title: "Door interlock micro switch: how it works"
 description: "door interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-09 12:46:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - door interlock micro switch

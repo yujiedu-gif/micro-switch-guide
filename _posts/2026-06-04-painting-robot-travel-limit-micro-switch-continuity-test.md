@@ -2,7 +2,7 @@
 title: "Painting robot travel limit micro switch continuity test: what does it show?"
 description: "painting robot travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-04 16:02:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - painting robot travel limit micro switch continuity test

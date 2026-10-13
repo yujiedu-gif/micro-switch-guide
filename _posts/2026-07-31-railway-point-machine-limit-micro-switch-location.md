@@ -2,7 +2,7 @@
 title: "Railway point machine limit micro switch location: what determines its placement?"
 description: "railway point machine limit micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-31 19:30:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - railway point machine limit micro switch location

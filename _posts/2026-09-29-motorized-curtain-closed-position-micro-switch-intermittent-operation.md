@@ -2,7 +2,7 @@
 title: "motorized curtain closed position micro switch intermittent operation: causes and checks"
 description: "motorized curtain closed position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-09-29 20:34:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized curtain closed position micro switch intermittent operation

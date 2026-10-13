@@ -2,7 +2,7 @@
 title: "Joystick assembly micro switch replacement: how to identify and assess a replacement"
 description: "joystick assembly micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-14 11:30:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - joystick assembly micro switch replacement

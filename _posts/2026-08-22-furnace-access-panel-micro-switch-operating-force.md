@@ -2,7 +2,7 @@
 title: "Furnace access panel micro switch operating force: what the value means"
 description: "furnace access panel micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-22 18:05:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - furnace access panel micro switch operating force

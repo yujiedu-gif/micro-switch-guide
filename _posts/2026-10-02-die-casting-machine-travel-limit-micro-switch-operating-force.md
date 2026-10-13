@@ -2,7 +2,7 @@
 title: "Die Casting Machine Travel Limit Micro Switch Operating Force: What Does It Mean?"
 description: "die casting machine travel limit micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-02 20:28:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - die casting machine travel limit micro switch operating force

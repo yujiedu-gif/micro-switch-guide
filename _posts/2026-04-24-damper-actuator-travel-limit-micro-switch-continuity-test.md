@@ -2,7 +2,7 @@
 title: "Damper actuator travel limit micro switch continuity test"
 description: "damper actuator travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-24 11:55:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - damper actuator travel limit micro switch continuity test

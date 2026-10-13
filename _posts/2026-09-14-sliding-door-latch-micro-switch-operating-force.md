@@ -2,7 +2,7 @@
 title: "Sliding Door Latch Micro Switch Operating Force: What It Means"
 description: "sliding door latch micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-14 20:16:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sliding door latch micro switch operating force

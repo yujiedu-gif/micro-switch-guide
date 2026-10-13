@@ -2,7 +2,7 @@
 title: "How to select a stamping press guard interlock micro switch"
 description: "how to select a stamping press guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-12 08:50:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how to select a stamping press guard interlock micro switch

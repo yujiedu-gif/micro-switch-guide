@@ -2,7 +2,7 @@
 title: "Centrifuge home position micro switch continuity test"
 description: "centrifuge home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-30 17:57:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge home position micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Extrusion Machine Guard Interlock Micro Switch Troubleshooting"
 description: "extrusion machine guard interlock micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-03 15:01:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - extrusion machine guard interlock micro switch troubleshooting

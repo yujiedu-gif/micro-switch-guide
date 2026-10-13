@@ -2,7 +2,7 @@
 title: "drawer closed position micro switch contact rating"
 description: "drawer closed position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-13 15:07:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - drawer closed position micro switch contact rating

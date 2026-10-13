@@ -2,7 +2,7 @@
 title: "tractor seat presence micro switch replacement"
 description: "tractor seat presence micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-15 10:17:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - tractor seat presence micro switch replacement

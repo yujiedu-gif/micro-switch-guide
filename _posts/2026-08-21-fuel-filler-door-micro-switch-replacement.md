@@ -2,7 +2,7 @@
 title: "Fuel Filler Door Micro Switch Replacement: How to Verify the Fault"
 description: "fuel filler door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-21 15:06:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fuel filler door micro switch replacement

@@ -2,7 +2,7 @@
 title: "Electric linear actuator travel limit micro switch failure causes"
 description: "electric linear actuator travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-06-27 19:06:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric linear actuator travel limit micro switch failure causes

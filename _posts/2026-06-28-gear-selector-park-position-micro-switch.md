@@ -2,7 +2,7 @@
 title: "How a gear selector park position micro switch detects Park"
 description: "gear selector park position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-28 10:12:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - gear selector park position micro switch

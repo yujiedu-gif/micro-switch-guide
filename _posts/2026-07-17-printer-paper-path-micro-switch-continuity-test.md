@@ -2,7 +2,7 @@
 title: "Printer paper path micro switch continuity test"
 description: "printer paper path micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-17 09:38:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - printer paper path micro switch continuity test

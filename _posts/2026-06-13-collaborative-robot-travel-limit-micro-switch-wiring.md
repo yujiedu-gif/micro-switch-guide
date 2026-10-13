@@ -2,7 +2,7 @@
 title: "Collaborative robot travel limit micro switch wiring: how are the connections understood?"
 description: "collaborative robot travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-13 10:55:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - collaborative robot travel limit micro switch wiring

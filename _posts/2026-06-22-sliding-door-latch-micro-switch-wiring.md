@@ -2,7 +2,7 @@
 title: "sliding door latch micro switch wiring: How to Identify and Trace It"
 description: "sliding door latch micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-22 13:26:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sliding door latch micro switch wiring

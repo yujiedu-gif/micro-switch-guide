@@ -2,7 +2,7 @@
 title: "Humidifier water level micro switch troubleshooting"
 description: "humidifier water level micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-30 14:38:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - humidifier water level micro switch troubleshooting

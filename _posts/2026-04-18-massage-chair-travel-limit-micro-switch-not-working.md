@@ -2,7 +2,7 @@
 title: "Massage chair travel limit micro switch not working: how to diagnose it"
 description: "massage chair travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-18 14:11:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - massage chair travel limit micro switch not working

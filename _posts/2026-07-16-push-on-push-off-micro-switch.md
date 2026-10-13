@@ -2,7 +2,7 @@
 title: "Push on push off micro switch: Does a Micro Switch Latch Its State?"
 description: "push on push off micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-16 15:39:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - push on push off micro switch

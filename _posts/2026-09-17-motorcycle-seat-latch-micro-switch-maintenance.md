@@ -2,7 +2,7 @@
 title: "motorcycle seat latch micro switch maintenance"
 description: "motorcycle seat latch micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-17 21:49:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorcycle seat latch micro switch maintenance

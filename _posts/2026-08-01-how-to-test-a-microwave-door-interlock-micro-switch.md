@@ -2,7 +2,7 @@
 title: "How to Test a Microwave Door Interlock Micro Switch"
 description: "how to test a microwave door interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-01 21:10:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a microwave door interlock micro switch

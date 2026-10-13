@@ -2,7 +2,7 @@
 title: "fire damper closed position micro switch continuity test"
 description: "fire damper closed position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-11 09:10:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - fire damper closed position micro switch continuity test

@@ -2,7 +2,7 @@
 title: "micro switch failure to actuate selection"
 description: "micro switch failure to actuate selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-10 17:25:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch failure to actuate selection

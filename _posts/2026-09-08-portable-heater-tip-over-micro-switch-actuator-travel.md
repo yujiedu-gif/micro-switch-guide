@@ -2,7 +2,7 @@
 title: "Portable heater tip over micro switch actuator travel: How does it work?"
 description: "portable heater tip over micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-08 11:27:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - portable heater tip over micro switch actuator travel

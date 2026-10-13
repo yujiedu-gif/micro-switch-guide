@@ -2,7 +2,7 @@
 title: "Sump Pump Travel Limit Micro Switch Contact Rating: What Does It Establish?"
 description: "sump pump travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-26 11:24:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - sump pump travel limit micro switch contact rating

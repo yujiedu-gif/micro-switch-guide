@@ -2,7 +2,7 @@
 title: "Micro switch resistive load rating troubleshooting"
 description: "micro switch resistive load rating troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-07 10:46:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch resistive load rating troubleshooting

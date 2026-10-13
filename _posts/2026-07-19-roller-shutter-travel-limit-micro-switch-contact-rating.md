@@ -2,7 +2,7 @@
 title: "Roller shutter travel limit micro switch contact rating: what does it mean?"
 description: "roller shutter travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-19 17:43:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - roller shutter travel limit micro switch contact rating

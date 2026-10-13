@@ -2,7 +2,7 @@
 title: "Forklift mast travel limit micro switch symptoms: what they may indicate"
 description: "forklift mast travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-18 16:28:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift mast travel limit micro switch symptoms

@@ -2,7 +2,7 @@
 title: "How to select a cnc lathe travel limit micro switch"
 description: "how to select a cnc lathe travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-14 17:24:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - how to select a cnc lathe travel limit micro switch

@@ -2,7 +2,7 @@
 title: "Panel mount plunger micro switch operating force: meaning and measurement"
 description: "panel mount plunger micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-14 13:55:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - panel mount plunger micro switch operating force

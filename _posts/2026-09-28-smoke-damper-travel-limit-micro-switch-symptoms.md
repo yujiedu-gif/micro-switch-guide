@@ -2,7 +2,7 @@
 title: "Smoke Damper Travel Limit Micro Switch Symptoms: What They May Indicate"
 description: "smoke damper travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-28 11:29:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - smoke damper travel limit micro switch symptoms

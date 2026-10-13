@@ -2,7 +2,7 @@
 title: "How a sump pump guard interlock micro switch may work"
 description: "sump pump guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-20 19:25:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sump pump guard interlock micro switch

@@ -2,7 +2,7 @@
 title: "Linear slide travel limit micro switch contact rating: what does it tell you?"
 description: "linear slide travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-23 17:18:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - linear slide travel limit micro switch contact rating

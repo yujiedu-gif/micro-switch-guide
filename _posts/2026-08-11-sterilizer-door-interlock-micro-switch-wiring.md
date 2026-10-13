@@ -2,7 +2,7 @@
 title: "Sterilizer door interlock micro switch wiring: how the switch relates to the circuit"
 description: "sterilizer door interlock micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-11 17:42:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sterilizer door interlock micro switch wiring

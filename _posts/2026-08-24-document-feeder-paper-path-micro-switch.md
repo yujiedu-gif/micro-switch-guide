@@ -2,7 +2,7 @@
 title: "How Does a document feeder paper path micro switch Work?"
 description: "document feeder paper path micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-24 13:13:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - document feeder paper path micro switch

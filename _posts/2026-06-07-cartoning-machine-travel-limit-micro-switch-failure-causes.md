@@ -2,7 +2,7 @@
 title: "Cartoning machine travel limit micro switch failure causes"
 description: "cartoning machine travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-07 10:33:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cartoning machine travel limit micro switch failure causes

@@ -2,7 +2,7 @@
 title: "Stage lift travel limit micro switch troubleshooting"
 description: "stage lift travel limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-25 09:12:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stage lift travel limit micro switch troubleshooting

@@ -2,7 +2,7 @@
 title: "stair lift travel limit micro switch intermittent operation: how to diagnose it"
 description: "stair lift travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-08 21:26:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stair lift travel limit micro switch intermittent operation

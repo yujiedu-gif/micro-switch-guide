@@ -2,7 +2,7 @@
 title: "Motorized valve travel limit micro switch operating force: what does it mean?"
 description: "motorized valve travel limit micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-06 17:43:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized valve travel limit micro switch operating force

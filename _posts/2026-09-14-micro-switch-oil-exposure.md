@@ -2,7 +2,7 @@
 title: "micro switch oil exposure: What Can It Affect?"
 description: "micro switch oil exposure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-09-14 11:55:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch oil exposure

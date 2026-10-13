@@ -2,7 +2,7 @@
 title: "Power shear travel limit micro switch: how does it work?"
 description: "power shear travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-07 16:43:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - power shear travel limit micro switch

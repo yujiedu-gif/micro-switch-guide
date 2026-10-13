@@ -2,7 +2,7 @@
 title: "dock leveler travel limit micro switch: How It Relates to Leveler Movement"
 description: "dock leveler travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-01 08:24:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler travel limit micro switch

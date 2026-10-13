@@ -2,7 +2,7 @@
 title: "Paper shredder bin interlock micro switch location: where to look"
 description: "paper shredder bin interlock micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-30 15:48:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - paper shredder bin interlock micro switch location

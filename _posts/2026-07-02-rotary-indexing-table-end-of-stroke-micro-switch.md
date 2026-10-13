@@ -2,7 +2,7 @@
 title: "Rotary indexing table end of stroke micro switch: what does it detect?"
 description: "rotary indexing table end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-02 19:35:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - rotary indexing table end of stroke micro switch

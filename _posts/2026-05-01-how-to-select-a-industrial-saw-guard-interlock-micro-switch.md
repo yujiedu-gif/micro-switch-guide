@@ -2,7 +2,7 @@
 title: "How to select a industrial saw guard interlock micro switch"
 description: "how to select a industrial saw guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-01 10:03:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - how to select a industrial saw guard interlock micro switch

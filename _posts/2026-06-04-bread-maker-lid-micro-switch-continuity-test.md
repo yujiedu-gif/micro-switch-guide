@@ -2,7 +2,7 @@
 title: "bread maker lid micro switch continuity test"
 description: "bread maker lid micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-04 17:08:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - bread maker lid micro switch continuity test

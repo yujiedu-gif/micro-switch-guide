@@ -2,7 +2,7 @@
 title: "How to Select a Cylindrical Grinder Guard Interlock Micro Switch"
 description: "how to select a cylindrical grinder guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-06 14:56:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how to select a cylindrical grinder guard interlock micro switch

@@ -2,7 +2,7 @@
 title: "float switch mechanism micro switch replacement: How the Mechanism Relates to Replacement"
 description: "float switch mechanism micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-02 09:17:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - float switch mechanism micro switch replacement

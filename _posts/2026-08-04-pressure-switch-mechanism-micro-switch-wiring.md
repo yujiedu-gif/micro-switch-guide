@@ -2,7 +2,7 @@
 title: "Pressure switch mechanism micro switch wiring: how the mechanism and contacts relate"
 description: "pressure switch mechanism micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-04 18:13:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pressure switch mechanism micro switch wiring

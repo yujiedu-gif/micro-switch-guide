@@ -2,7 +2,7 @@
 title: "How to test a incinerator end of stroke micro switch"
 description: "how to test a incinerator end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-05 12:54:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a incinerator end of stroke micro switch

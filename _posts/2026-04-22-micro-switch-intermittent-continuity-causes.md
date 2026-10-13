@@ -2,7 +2,7 @@
 title: "Micro Switch Intermittent Continuity Causes: How to Narrow Them Down"
 description: "micro switch intermittent continuity causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-22 09:03:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch intermittent continuity causes

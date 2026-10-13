@@ -2,7 +2,7 @@
 title: "Drill press home position micro switch: what does it indicate?"
 description: "drill press home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-20 15:35:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - drill press home position micro switch

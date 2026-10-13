@@ -2,7 +2,7 @@
 title: "Machine guard travel limit micro switch: How guard movement actuates it"
 description: "machine guard travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-13 12:34:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - machine guard travel limit micro switch

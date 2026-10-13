@@ -2,7 +2,7 @@
 title: "Rotary actuator micro switch adjustment: how to set and verify it"
 description: "rotary actuator micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-20 11:09:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - rotary actuator micro switch adjustment

@@ -2,7 +2,7 @@
 title: "Hood latch micro switch not working: how to separate switch and circuit faults"
 description: "hood latch micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-14 19:36:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - hood latch micro switch not working

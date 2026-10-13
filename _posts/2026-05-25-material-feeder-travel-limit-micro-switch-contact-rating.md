@@ -2,7 +2,7 @@
 title: "Material feeder travel limit micro switch contact rating"
 description: "material feeder travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-25 14:26:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - material feeder travel limit micro switch contact rating

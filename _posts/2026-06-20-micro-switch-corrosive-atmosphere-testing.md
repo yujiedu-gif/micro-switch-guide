@@ -2,7 +2,7 @@
 title: "Micro Switch Corrosive Atmosphere Testing: How to Inspect and Interpret Results"
 description: "micro switch corrosive atmosphere testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-20 21:29:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch corrosive atmosphere testing

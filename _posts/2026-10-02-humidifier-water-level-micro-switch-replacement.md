@@ -2,7 +2,7 @@
 title: "humidifier water level micro switch replacement: how to assess compatibility"
 description: "humidifier water level micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-02 21:40:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - humidifier water level micro switch replacement

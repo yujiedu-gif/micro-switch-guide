@@ -2,7 +2,7 @@
 title: "Micro Switch Mechanical Life Causes: What Affects Endurance?"
 description: "micro switch mechanical life causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-14 21:46:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch mechanical life causes

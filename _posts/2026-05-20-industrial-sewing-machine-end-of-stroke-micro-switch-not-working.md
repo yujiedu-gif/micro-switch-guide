@@ -2,7 +2,7 @@
 title: "industrial sewing machine end of stroke micro switch not working: checks and causes"
 description: "industrial sewing machine end of stroke micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-20 18:41:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial sewing machine end of stroke micro switch not working

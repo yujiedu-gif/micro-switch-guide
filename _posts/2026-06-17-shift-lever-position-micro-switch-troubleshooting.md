@@ -2,7 +2,7 @@
 title: "Shift lever position micro switch troubleshooting: a diagnostic sequence"
 description: "shift lever position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-17 15:17:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - shift lever position micro switch troubleshooting

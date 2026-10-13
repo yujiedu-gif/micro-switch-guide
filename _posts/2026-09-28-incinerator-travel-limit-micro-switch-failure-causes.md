@@ -2,7 +2,7 @@
 title: "Incinerator travel limit micro switch failure causes"
 description: "incinerator travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-28 13:04:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - incinerator travel limit micro switch failure causes

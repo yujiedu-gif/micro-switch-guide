@@ -2,7 +2,7 @@
 title: "Lawn mower seat interlock micro switch adjustment: what can be adjusted?"
 description: "lawn mower seat interlock micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-12 08:13:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - lawn mower seat interlock micro switch adjustment

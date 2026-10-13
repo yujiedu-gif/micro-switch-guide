@@ -2,7 +2,7 @@
 title: "Injection molding machine guard interlock micro switch maintenance"
 description: "injection molding machine guard interlock micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-18 21:40:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - injection molding machine guard interlock micro switch maintenance

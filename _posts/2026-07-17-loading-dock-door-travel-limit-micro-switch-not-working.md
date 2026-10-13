@@ -2,7 +2,7 @@
 title: "Loading dock door travel limit micro switch not working: how to diagnose it"
 description: "loading dock door travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-17 14:26:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - loading dock door travel limit micro switch not working

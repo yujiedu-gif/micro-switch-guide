@@ -2,7 +2,7 @@
 title: "automatic door open position micro switch wiring: How the Position Signal Works"
 description: "automatic door open position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-18 12:26:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - automatic door open position micro switch wiring

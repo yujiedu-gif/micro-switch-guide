@@ -2,7 +2,7 @@
 title: "Seat Belt Buckle Micro Switch Actuator Travel: What the Movement Means"
 description: "seat belt buckle micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-19 17:13:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - seat belt buckle micro switch actuator travel

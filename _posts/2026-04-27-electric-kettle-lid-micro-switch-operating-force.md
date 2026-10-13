@@ -2,7 +2,7 @@
 title: "Electric kettle lid micro switch operating force: what does it mean?"
 description: "electric kettle lid micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-27 11:36:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric kettle lid micro switch operating force

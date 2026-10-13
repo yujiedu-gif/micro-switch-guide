@@ -2,7 +2,7 @@
 title: "micro switch metal particle contamination causes"
 description: "micro switch metal particle contamination causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-30 13:21:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch metal particle contamination causes

@@ -2,7 +2,7 @@
 title: "Noisy micro switch: What the sound can and cannot tell you"
 description: "noisy micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-07-14 08:36:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - noisy micro switch

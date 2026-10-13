@@ -2,7 +2,7 @@
 title: "How to select a drill press guard interlock micro switch"
 description: "how to select a drill press guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-04 15:58:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - how to select a drill press guard interlock micro switch

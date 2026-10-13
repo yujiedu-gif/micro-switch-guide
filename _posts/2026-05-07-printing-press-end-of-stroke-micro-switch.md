@@ -2,7 +2,7 @@
 title: "Printing press end of stroke micro switch: how does it work?"
 description: "printing press end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-07 14:13:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printing press end of stroke micro switch

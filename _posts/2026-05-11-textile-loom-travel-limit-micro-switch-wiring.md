@@ -2,7 +2,7 @@
 title: "Textile loom travel limit micro switch wiring: how the switch relates to the circuit"
 description: "textile loom travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-11 20:22:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - textile loom travel limit micro switch wiring

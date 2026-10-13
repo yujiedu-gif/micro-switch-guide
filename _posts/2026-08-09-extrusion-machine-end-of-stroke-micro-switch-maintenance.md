@@ -2,7 +2,7 @@
 title: "Extrusion Machine End of Stroke Micro Switch Maintenance"
 description: "extrusion machine end of stroke micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-09 18:23:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine end of stroke micro switch maintenance

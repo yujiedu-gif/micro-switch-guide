@@ -2,7 +2,7 @@
 title: "How to Test a Incinerator Home Position Micro Switch"
 description: "how to test a incinerator home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-29 17:12:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a incinerator home position micro switch

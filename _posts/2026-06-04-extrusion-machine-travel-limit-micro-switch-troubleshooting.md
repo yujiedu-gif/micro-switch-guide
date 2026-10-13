@@ -2,7 +2,7 @@
 title: "Extrusion machine travel limit micro switch troubleshooting"
 description: "extrusion machine travel limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-04 16:50:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - extrusion machine travel limit micro switch troubleshooting

@@ -2,7 +2,7 @@
 title: "How Does a float switch mechanism micro switch NO and NC terminals Work?"
 description: "float switch mechanism micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-24 11:57:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - float switch mechanism micro switch NO and NC terminals

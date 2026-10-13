@@ -2,7 +2,7 @@
 title: "Loading dock door travel limit micro switch symptoms: what do they indicate?"
 description: "loading dock door travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-30 21:47:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - loading dock door travel limit micro switch symptoms

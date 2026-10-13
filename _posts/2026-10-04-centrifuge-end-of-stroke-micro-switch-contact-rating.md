@@ -2,7 +2,7 @@
 title: "centrifuge end of stroke micro switch contact rating: What Does It Mean?"
 description: "centrifuge end of stroke micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-04 12:38:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - centrifuge end of stroke micro switch contact rating

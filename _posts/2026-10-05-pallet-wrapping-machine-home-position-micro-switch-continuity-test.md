@@ -2,7 +2,7 @@
 title: "Pallet wrapping machine home position micro switch continuity test"
 description: "pallet wrapping machine home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-10-05 17:22:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pallet wrapping machine home position micro switch continuity test

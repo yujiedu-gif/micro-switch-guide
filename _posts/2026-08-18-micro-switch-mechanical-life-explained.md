@@ -2,7 +2,7 @@
 title: "micro switch mechanical life explained"
 description: "micro switch mechanical life explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-18 11:16:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch mechanical life explained

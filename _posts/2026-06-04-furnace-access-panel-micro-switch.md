@@ -2,7 +2,7 @@
 title: "furnace access panel micro switch: How It Relates to Panel Position"
 description: "furnace access panel micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-04 09:28:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - furnace access panel micro switch

@@ -2,7 +2,7 @@
 title: "Dryer lint filter interlock micro switch troubleshooting"
 description: "dryer lint filter interlock micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-15 14:24:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dryer lint filter interlock micro switch troubleshooting

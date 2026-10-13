@@ -2,7 +2,7 @@
 title: "Palletizer guard interlock micro switch symptoms: how to distinguish likely causes"
 description: "palletizer guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-21 21:00:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - palletizer guard interlock micro switch symptoms

@@ -2,7 +2,7 @@
 title: "How a CNC router end of stroke micro switch works"
 description: "cnc router end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-26 08:21:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc router end of stroke micro switch

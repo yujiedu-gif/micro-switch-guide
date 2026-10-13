@@ -2,7 +2,7 @@
 title: "Micro Switch Temperature Damage: Causes, Clues, and Assessment Limits"
 description: "micro switch temperature damage: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-17 18:13:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch temperature damage

@@ -2,7 +2,7 @@
 title: "ceiling fan pull mechanism micro switch: How It Works"
 description: "ceiling fan pull mechanism micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-10 18:39:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ceiling fan pull mechanism micro switch

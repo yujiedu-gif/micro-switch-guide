@@ -2,7 +2,7 @@
 title: "micro switch actuator strength explained"
 description: "micro switch actuator strength explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-25 14:14:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch actuator strength explained

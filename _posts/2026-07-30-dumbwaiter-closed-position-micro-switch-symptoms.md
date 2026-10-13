@@ -2,7 +2,7 @@
 title: "dumbwaiter closed position micro switch symptoms"
 description: "dumbwaiter closed position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-30 17:42:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dumbwaiter closed position micro switch symptoms

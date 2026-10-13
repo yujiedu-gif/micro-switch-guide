@@ -2,7 +2,7 @@
 title: "Fuel Filler Door Micro Switch Operating Force: What Does It Mean?"
 description: "fuel filler door micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-04 21:22:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fuel filler door micro switch operating force

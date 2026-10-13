@@ -2,7 +2,7 @@
 title: "Joystick Assembly Micro Switch Intermittent Operation: How to Diagnose It"
 description: "joystick assembly micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-05 18:38:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - joystick assembly micro switch intermittent operation

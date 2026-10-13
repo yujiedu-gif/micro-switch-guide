@@ -2,7 +2,7 @@
 title: "Bucket elevator guard interlock micro switch continuity test"
 description: "bucket elevator guard interlock micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-17 09:33:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bucket elevator guard interlock micro switch continuity test

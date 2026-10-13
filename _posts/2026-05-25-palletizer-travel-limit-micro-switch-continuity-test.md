@@ -2,7 +2,7 @@
 title: "Palletizer Travel Limit Micro Switch Continuity Test"
 description: "palletizer travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-25 14:48:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - palletizer travel limit micro switch continuity test

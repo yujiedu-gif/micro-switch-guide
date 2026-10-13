@@ -2,7 +2,7 @@
 title: "Capping machine guard interlock micro switch actuator travel: what movement means"
 description: "capping machine guard interlock micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-18 20:40:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - capping machine guard interlock micro switch actuator travel

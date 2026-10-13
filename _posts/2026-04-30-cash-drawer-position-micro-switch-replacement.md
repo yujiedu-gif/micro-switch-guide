@@ -2,7 +2,7 @@
 title: "Cash Drawer Position Micro Switch Replacement: How to Assess Compatibility"
 description: "cash drawer position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-30 16:48:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cash drawer position micro switch replacement

@@ -2,7 +2,7 @@
 title: "Motorized valve travel limit micro switch replacement: what should you verify?"
 description: "motorized valve travel limit micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-12 15:31:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized valve travel limit micro switch replacement

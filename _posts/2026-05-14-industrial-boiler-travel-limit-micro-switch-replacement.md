@@ -2,7 +2,7 @@
 title: "Industrial Boiler Travel Limit Micro Switch Replacement: How to Verify Compatibility"
 description: "industrial boiler travel limit micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-14 15:26:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial boiler travel limit micro switch replacement

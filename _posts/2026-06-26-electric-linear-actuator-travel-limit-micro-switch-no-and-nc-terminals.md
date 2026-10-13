@@ -2,7 +2,7 @@
 title: "Electric linear actuator travel limit micro switch NO and NC terminals"
 description: "electric linear actuator travel limit micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-06-26 13:45:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric linear actuator travel limit micro switch NO and NC terminals

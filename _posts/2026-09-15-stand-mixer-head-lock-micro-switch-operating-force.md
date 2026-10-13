@@ -2,7 +2,7 @@
 title: "What Does Stand Mixer Head Lock Micro Switch Operating Force Mean?"
 description: "stand mixer head lock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-15 16:52:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stand mixer head lock micro switch operating force

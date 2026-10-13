@@ -2,7 +2,7 @@
 title: "Industrial saw travel limit micro switch continuity test: what does it show?"
 description: "industrial saw travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-18 11:44:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial saw travel limit micro switch continuity test

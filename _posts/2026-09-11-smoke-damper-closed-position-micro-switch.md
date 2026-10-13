@@ -2,7 +2,7 @@
 title: "smoke damper closed position micro switch: How Does It Indicate Closure?"
 description: "smoke damper closed position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-11 17:13:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - smoke damper closed position micro switch

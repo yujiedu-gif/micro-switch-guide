@@ -2,7 +2,7 @@
 title: "Collaborative robot travel limit micro switch continuity test"
 description: "collaborative robot travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-10 16:39:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - collaborative robot travel limit micro switch continuity test

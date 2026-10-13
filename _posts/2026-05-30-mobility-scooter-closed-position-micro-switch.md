@@ -2,7 +2,7 @@
 title: "mobility scooter closed position micro switch: How does it indicate a closed position?"
 description: "mobility scooter closed position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-30 13:41:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - mobility scooter closed position micro switch

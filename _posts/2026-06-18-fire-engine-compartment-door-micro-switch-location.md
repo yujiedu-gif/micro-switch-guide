@@ -2,7 +2,7 @@
 title: "Fire engine compartment door micro switch location: how to identify it"
 description: "fire engine compartment door micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-18 09:29:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fire engine compartment door micro switch location

@@ -2,7 +2,7 @@
 title: "Lawn mower brake pedal micro switch not working: how to diagnose the cause"
 description: "lawn mower brake pedal micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-04 21:24:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - lawn mower brake pedal micro switch not working

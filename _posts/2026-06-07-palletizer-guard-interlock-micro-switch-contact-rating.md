@@ -2,7 +2,7 @@
 title: "Palletizer guard interlock micro switch contact rating"
 description: "palletizer guard interlock micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-07 10:05:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - palletizer guard interlock micro switch contact rating

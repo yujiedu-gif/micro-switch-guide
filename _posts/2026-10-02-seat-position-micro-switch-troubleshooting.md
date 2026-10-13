@@ -2,7 +2,7 @@
 title: "Seat position micro switch troubleshooting: how to isolate the cause"
 description: "seat position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-02 17:05:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - seat position micro switch troubleshooting

@@ -2,7 +2,7 @@
 title: "Vacuum pump travel limit micro switch function: How the mechanism works"
 description: "vacuum pump travel limit micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-29 10:51:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - vacuum pump travel limit micro switch function

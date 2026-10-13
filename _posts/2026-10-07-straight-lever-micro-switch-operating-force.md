@@ -2,7 +2,7 @@
 title: "Straight lever micro switch operating force: what the value means"
 description: "straight lever micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-07 10:34:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - straight lever micro switch operating force

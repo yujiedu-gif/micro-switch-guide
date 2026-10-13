@@ -2,7 +2,7 @@
 title: "Micro switch temperature range explained"
 description: "micro switch temperature range explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-21 08:42:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch temperature range explained

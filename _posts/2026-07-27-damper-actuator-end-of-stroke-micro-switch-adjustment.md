@@ -2,7 +2,7 @@
 title: "Damper actuator end of stroke micro switch adjustment"
 description: "damper actuator end of stroke micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-27 13:19:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - damper actuator end of stroke micro switch adjustment

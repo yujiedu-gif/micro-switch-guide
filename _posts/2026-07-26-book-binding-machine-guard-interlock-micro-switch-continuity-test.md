@@ -2,7 +2,7 @@
 title: "book binding machine guard interlock micro switch continuity test"
 description: "book binding machine guard interlock micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-07-26 20:40:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - book binding machine guard interlock micro switch continuity test

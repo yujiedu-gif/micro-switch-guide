@@ -2,7 +2,7 @@
 title: "Printing press home position micro switch intermittent operation: how to trace the fault"
 description: "printing press home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-02 13:18:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - printing press home position micro switch intermittent operation

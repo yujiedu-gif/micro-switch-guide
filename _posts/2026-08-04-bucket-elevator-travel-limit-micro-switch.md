@@ -2,7 +2,7 @@
 title: "bucket elevator travel limit micro switch: How It Can Detect a Travel Position"
 description: "bucket elevator travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-04 11:58:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bucket elevator travel limit micro switch

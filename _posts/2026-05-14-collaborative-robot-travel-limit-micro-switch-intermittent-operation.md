@@ -2,7 +2,7 @@
 title: "Collaborative robot travel limit micro switch intermittent operation: how to diagnose it"
 description: "collaborative robot travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-14 13:05:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - collaborative robot travel limit micro switch intermittent operation

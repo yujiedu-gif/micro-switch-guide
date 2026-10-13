@@ -2,7 +2,7 @@
 title: "Motorized curtain closed position micro switch location: how to identify it"
 description: "motorized curtain closed position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-03 12:12:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized curtain closed position micro switch location

@@ -2,7 +2,7 @@
 title: "Cylindrical grinder end of stroke micro switch intermittent operation: how to diagnose it"
 description: "cylindrical grinder end of stroke micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-08-30 15:11:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cylindrical grinder end of stroke micro switch intermittent operation

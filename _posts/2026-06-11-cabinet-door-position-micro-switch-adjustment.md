@@ -2,7 +2,7 @@
 title: "Cabinet door position micro switch adjustment: how to check engagement"
 description: "cabinet door position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-11 11:09:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cabinet door position micro switch adjustment

@@ -2,7 +2,7 @@
 title: "micro switch movement differential causes"
 description: "micro switch movement differential causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-05 16:38:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch movement differential causes

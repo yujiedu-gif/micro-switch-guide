@@ -2,7 +2,7 @@
 title: "Chainsaw brake mechanism micro switch actuator travel: how the movement relates"
 description: "chainsaw brake mechanism micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-08 17:39:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - chainsaw brake mechanism micro switch actuator travel

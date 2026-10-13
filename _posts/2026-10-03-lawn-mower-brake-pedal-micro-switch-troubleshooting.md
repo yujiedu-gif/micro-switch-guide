@@ -2,7 +2,7 @@
 title: "Lawn mower brake pedal micro switch troubleshooting"
 description: "lawn mower brake pedal micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-03 09:16:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - lawn mower brake pedal micro switch troubleshooting

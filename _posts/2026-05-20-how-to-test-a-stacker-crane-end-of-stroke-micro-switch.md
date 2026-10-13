@@ -2,7 +2,7 @@
 title: "How to Test a Stacker Crane End of Stroke Micro Switch"
 description: "how to test a stacker crane end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-20 14:08:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a stacker crane end of stroke micro switch

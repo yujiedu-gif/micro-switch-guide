@@ -2,7 +2,7 @@
 title: "Fire damper closed position micro switch troubleshooting: isolate the indication fault"
 description: "fire damper closed position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-27 20:06:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - fire damper closed position micro switch troubleshooting

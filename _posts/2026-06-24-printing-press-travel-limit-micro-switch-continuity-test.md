@@ -2,7 +2,7 @@
 title: "Printing press travel limit micro switch continuity test: what does it verify?"
 description: "printing press travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-24 21:18:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printing press travel limit micro switch continuity test

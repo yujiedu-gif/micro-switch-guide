@@ -2,7 +2,7 @@
 title: "Micro switch position drift: how to identify the source"
 description: "micro switch position drift: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-10 08:46:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch position drift

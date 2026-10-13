@@ -2,7 +2,7 @@
 title: "Emergency Exit Door Position Micro Switch Continuity Test"
 description: "emergency exit door position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-28 12:14:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - emergency exit door position micro switch continuity test

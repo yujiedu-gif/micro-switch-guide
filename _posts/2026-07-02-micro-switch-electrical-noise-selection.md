@@ -2,7 +2,7 @@
 title: "Micro switch electrical noise selection: what should you evaluate?"
 description: "micro switch electrical noise selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-02 19:55:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch electrical noise selection

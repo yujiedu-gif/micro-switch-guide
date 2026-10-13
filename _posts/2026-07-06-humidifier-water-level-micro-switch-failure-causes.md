@@ -2,7 +2,7 @@
 title: "humidifier water level micro switch failure causes: What Can Be Checked"
 description: "humidifier water level micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-06 12:15:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - humidifier water level micro switch failure causes

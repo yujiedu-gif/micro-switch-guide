@@ -2,7 +2,7 @@
 title: "Dock leveler end of stroke micro switch intermittent operation: how to diagnose it"
 description: "dock leveler end of stroke micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-17 16:55:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dock leveler end of stroke micro switch intermittent operation

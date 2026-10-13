@@ -2,7 +2,7 @@
 title: "Bus door position micro switch replacement: identification and verification"
 description: "bus door position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-04 12:18:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bus door position micro switch replacement

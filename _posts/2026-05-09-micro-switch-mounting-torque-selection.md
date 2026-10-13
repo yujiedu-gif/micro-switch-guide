@@ -2,7 +2,7 @@
 title: "Micro switch mounting torque selection: how to choose a documented limit"
 description: "micro switch mounting torque selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-09 09:46:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch mounting torque selection

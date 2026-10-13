@@ -2,7 +2,7 @@
 title: "Hospital bed travel limit micro switch wiring: how the switch fits the circuit"
 description: "hospital bed travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-28 08:45:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - hospital bed travel limit micro switch wiring

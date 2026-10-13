@@ -2,7 +2,7 @@
 title: "Extrusion machine end of stroke micro switch operating force: what does it mean?"
 description: "extrusion machine end of stroke micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-17 14:52:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine end of stroke micro switch operating force

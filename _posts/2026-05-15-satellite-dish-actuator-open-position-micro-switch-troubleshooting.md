@@ -2,7 +2,7 @@
 title: "Satellite dish actuator open position micro switch troubleshooting"
 description: "satellite dish actuator open position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-15 10:12:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - satellite dish actuator open position micro switch troubleshooting

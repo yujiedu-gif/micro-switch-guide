@@ -2,7 +2,7 @@
 title: "Vacuum packaging machine home position micro switch operating force"
 description: "vacuum packaging machine home position micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-04-22 14:25:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - vacuum packaging machine home position micro switch operating force

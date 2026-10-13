@@ -2,7 +2,7 @@
 title: "How does a centrifuge end of stroke micro switch work"
 description: "how does a centrifuge end of stroke micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-20 21:08:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a centrifuge end of stroke micro switch work

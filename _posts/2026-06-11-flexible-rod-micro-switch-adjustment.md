@@ -2,7 +2,7 @@
 title: "Flexible rod micro switch adjustment: how to set and verify actuation"
 description: "flexible rod micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-11 20:09:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - flexible rod micro switch adjustment

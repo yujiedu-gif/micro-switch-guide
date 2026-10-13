@@ -2,7 +2,7 @@
 title: "Micro switch contact contamination troubleshooting"
 description: "micro switch contact contamination troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-05 10:03:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch contact contamination troubleshooting

@@ -2,7 +2,7 @@
 title: "Forklift Mast Home Position Micro Switch Continuity Test"
 description: "forklift mast home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-08 08:20:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - forklift mast home position micro switch continuity test

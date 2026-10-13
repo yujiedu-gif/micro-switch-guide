@@ -2,7 +2,7 @@
 title: "Door jamb micro switch symptoms: What signs can indicate a switch problem?"
 description: "door jamb micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-24 15:06:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - door jamb micro switch symptoms

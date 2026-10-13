@@ -2,7 +2,7 @@
 title: "Electric kettle lid micro switch location: where to look"
 description: "electric kettle lid micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-09 15:52:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric kettle lid micro switch location

@@ -2,7 +2,7 @@
 title: "Glove box latch micro switch intermittent operation: how to diagnose it"
 description: "glove box latch micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-05 14:30:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - glove box latch micro switch intermittent operation

@@ -2,7 +2,7 @@
 title: "Portable heater tip over micro switch contact rating: what does it tell you?"
 description: "portable heater tip over micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-15 15:48:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - portable heater tip over micro switch contact rating

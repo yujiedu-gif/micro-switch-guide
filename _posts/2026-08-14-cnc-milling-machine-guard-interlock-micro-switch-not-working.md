@@ -2,7 +2,7 @@
 title: "cnc milling machine guard interlock micro switch not working: How to Diagnose It"
 description: "cnc milling machine guard interlock micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-14 21:32:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cnc milling machine guard interlock micro switch not working

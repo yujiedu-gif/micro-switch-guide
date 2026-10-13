@@ -2,7 +2,7 @@
 title: "Micro Switch Contact Oxidation Causes: What Can Affect Contact Reliability?"
 description: "micro switch contact oxidation causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-21 16:50:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch contact oxidation causes

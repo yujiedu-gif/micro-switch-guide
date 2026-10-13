@@ -2,7 +2,7 @@
 title: "Incubator Door Micro Switch Replacement: How to Verify the Fault and Choose Safely"
 description: "incubator door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-05 12:07:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incubator door micro switch replacement

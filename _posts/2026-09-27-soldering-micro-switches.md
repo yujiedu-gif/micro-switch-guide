@@ -2,7 +2,7 @@
 title: "Soldering micro switches: terminal types, limits, and checks"
 description: "soldering micro switches: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-09-27 13:27:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - soldering micro switches

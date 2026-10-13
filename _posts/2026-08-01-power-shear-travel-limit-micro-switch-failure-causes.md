@@ -2,7 +2,7 @@
 title: "Power shear travel limit micro switch failure causes"
 description: "power shear travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-01 14:57:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - power shear travel limit micro switch failure causes

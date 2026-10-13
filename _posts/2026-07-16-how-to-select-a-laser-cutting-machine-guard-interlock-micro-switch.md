@@ -2,7 +2,7 @@
 title: "How to Select a Laser Cutting Machine Guard Interlock Micro Switch"
 description: "how to select a laser cutting machine guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-07-16 17:33:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - how to select a laser cutting machine guard interlock micro switch

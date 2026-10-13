@@ -2,7 +2,7 @@
 title: "roller shutter travel limit micro switch wiring"
 description: "roller shutter travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-04 10:30:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - roller shutter travel limit micro switch wiring

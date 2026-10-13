@@ -2,7 +2,7 @@
 title: "Ceiling fan pull mechanism micro switch troubleshooting: how to isolate the cause"
 description: "ceiling fan pull mechanism micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-21 15:47:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - ceiling fan pull mechanism micro switch troubleshooting

@@ -2,7 +2,7 @@
 title: "Depalletizer guard interlock micro switch adjustment: what should be checked?"
 description: "depalletizer guard interlock micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-08 14:22:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer guard interlock micro switch adjustment

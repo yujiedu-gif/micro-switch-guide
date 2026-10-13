@@ -2,7 +2,7 @@
 title: "Collaborative robot travel limit micro switch function"
 description: "collaborative robot travel limit micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-03 14:55:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - collaborative robot travel limit micro switch function

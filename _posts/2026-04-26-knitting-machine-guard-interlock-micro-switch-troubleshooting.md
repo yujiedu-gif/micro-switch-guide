@@ -2,7 +2,7 @@
 title: "Knitting machine guard interlock micro switch troubleshooting"
 description: "knitting machine guard interlock micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-26 21:28:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - knitting machine guard interlock micro switch troubleshooting

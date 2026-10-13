@@ -2,7 +2,7 @@
 title: "Pressure Switch Mechanism Micro Switch Operating Force: How They Relate"
 description: "pressure switch mechanism micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-07 21:23:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - pressure switch mechanism micro switch operating force

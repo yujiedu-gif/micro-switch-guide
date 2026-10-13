@@ -2,7 +2,7 @@
 title: "How a printer cover micro switch can detect cover position"
 description: "printer cover micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-24 15:20:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printer cover micro switch

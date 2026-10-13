@@ -2,7 +2,7 @@
 title: "How Does a Drawer Closed Position Micro Switch Detect Closure?"
 description: "drawer closed position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-02 20:18:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - drawer closed position micro switch

@@ -2,7 +2,7 @@
 title: "ceiling fan pull mechanism micro switch adjustment"
 description: "ceiling fan pull mechanism micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-10 14:05:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ceiling fan pull mechanism micro switch adjustment

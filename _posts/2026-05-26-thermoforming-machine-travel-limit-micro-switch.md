@@ -2,7 +2,7 @@
 title: "How a thermoforming machine travel limit micro switch works"
 description: "thermoforming machine travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-26 14:43:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - thermoforming machine travel limit micro switch

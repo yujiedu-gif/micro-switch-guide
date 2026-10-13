@@ -2,7 +2,7 @@
 title: "postal scale platform micro switch intermittent operation: a troubleshooting sequence"
 description: "postal scale platform micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-26 11:20:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - postal scale platform micro switch intermittent operation

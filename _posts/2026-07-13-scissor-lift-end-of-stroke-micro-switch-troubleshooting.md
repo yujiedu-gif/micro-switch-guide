@@ -2,7 +2,7 @@
 title: "Scissor lift end of stroke micro switch troubleshooting"
 description: "scissor lift end of stroke micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-13 18:34:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - scissor lift end of stroke micro switch troubleshooting

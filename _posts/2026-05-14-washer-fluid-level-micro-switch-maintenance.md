@@ -2,7 +2,7 @@
 title: "Washer fluid level micro switch maintenance"
 description: "washer fluid level micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-14 10:00:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - washer fluid level micro switch maintenance

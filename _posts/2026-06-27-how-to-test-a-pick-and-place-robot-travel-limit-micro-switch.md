@@ -2,7 +2,7 @@
 title: "How to test a pick and place robot travel limit micro switch"
 description: "how to test a pick and place robot travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-27 13:49:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a pick and place robot travel limit micro switch

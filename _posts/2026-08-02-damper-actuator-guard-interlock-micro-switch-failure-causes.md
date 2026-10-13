@@ -2,7 +2,7 @@
 title: "Damper actuator guard interlock micro switch failure causes: how to distinguish them"
 description: "damper actuator guard interlock micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-02 17:51:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - damper actuator guard interlock micro switch failure causes

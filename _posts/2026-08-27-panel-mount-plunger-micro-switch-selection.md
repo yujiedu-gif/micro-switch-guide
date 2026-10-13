@@ -2,7 +2,7 @@
 title: "Panel mount plunger micro switch selection"
 description: "panel mount plunger micro switch selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-27 18:37:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - panel mount plunger micro switch selection

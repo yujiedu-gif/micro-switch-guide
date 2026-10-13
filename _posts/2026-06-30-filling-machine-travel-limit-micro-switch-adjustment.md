@@ -2,7 +2,7 @@
 title: "Filling machine travel limit micro switch adjustment: what to adjust and verify"
 description: "filling machine travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-30 17:07:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - filling machine travel limit micro switch adjustment

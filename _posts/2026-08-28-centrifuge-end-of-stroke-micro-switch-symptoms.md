@@ -2,7 +2,7 @@
 title: "Centrifuge end of stroke micro switch symptoms: what do they indicate?"
 description: "centrifuge end of stroke micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-28 10:19:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge end of stroke micro switch symptoms

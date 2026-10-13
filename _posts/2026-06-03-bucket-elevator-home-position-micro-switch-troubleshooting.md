@@ -2,7 +2,7 @@
 title: "Bucket elevator home position micro switch troubleshooting"
 description: "bucket elevator home position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-03 14:11:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - bucket elevator home position micro switch troubleshooting

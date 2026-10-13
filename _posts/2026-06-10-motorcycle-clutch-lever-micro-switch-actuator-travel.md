@@ -2,7 +2,7 @@
 title: "Motorcycle clutch lever micro switch actuator travel: what does it mean?"
 description: "motorcycle clutch lever micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-10 18:25:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorcycle clutch lever micro switch actuator travel

@@ -2,7 +2,7 @@
 title: "CNC Lathe Home Position Micro Switch Location: How to Identify It"
 description: "cnc lathe home position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-19 17:11:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc lathe home position micro switch location

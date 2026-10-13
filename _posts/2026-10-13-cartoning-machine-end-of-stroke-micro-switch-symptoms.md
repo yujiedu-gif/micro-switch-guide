@@ -2,7 +2,7 @@
 title: "Cartoning machine end of stroke micro switch symptoms"
 description: "cartoning machine end of stroke micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-13 08:34:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cartoning machine end of stroke micro switch symptoms

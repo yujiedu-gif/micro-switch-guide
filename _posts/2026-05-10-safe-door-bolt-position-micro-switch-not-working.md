@@ -2,7 +2,7 @@
 title: "safe door bolt position micro switch not working: How to Diagnose the Cause"
 description: "safe door bolt position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-10 09:35:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - safe door bolt position micro switch not working

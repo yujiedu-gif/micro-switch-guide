@@ -2,7 +2,7 @@
 title: "Industrial saw guard interlock micro switch replacement: how to assess compatibility"
 description: "industrial saw guard interlock micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-03 17:24:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial saw guard interlock micro switch replacement

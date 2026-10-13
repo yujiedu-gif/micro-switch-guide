@@ -2,7 +2,7 @@
 title: "Printer Paper Path Micro Switch Replacement: Diagnosis and Limits"
 description: "printer paper path micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-08 13:40:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printer paper path micro switch replacement

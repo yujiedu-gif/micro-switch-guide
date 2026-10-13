@@ -2,7 +2,7 @@
 title: "How a smoke damper travel limit micro switch relates to damper motion"
 description: "smoke damper travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-02 18:05:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - smoke damper travel limit micro switch

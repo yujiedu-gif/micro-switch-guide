@@ -2,7 +2,7 @@
 title: "Micro switch cam misalignment troubleshooting"
 description: "micro switch cam misalignment troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-26 09:50:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch cam misalignment troubleshooting

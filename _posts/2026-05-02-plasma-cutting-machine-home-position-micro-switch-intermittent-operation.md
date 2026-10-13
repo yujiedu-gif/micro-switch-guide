@@ -2,7 +2,7 @@
 title: "plasma cutting machine home position micro switch intermittent operation: How to Diagnose It"
 description: "plasma cutting machine home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-05-02 14:09:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - plasma cutting machine home position micro switch intermittent operation

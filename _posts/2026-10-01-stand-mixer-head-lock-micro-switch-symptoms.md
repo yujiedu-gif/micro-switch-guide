@@ -2,7 +2,7 @@
 title: "Stand mixer head lock micro switch symptoms: what they may indicate"
 description: "stand mixer head lock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-01 15:28:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stand mixer head lock micro switch symptoms

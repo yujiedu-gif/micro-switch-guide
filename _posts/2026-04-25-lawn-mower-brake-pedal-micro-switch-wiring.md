@@ -2,7 +2,7 @@
 title: "Lawn mower brake pedal micro switch wiring: how to trace it"
 description: "lawn mower brake pedal micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-25 13:20:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - lawn mower brake pedal micro switch wiring

@@ -2,7 +2,7 @@
 title: "Dishwasher door latch micro switch maintenance"
 description: "dishwasher door latch micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-07 15:07:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dishwasher door latch micro switch maintenance

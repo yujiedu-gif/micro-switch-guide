@@ -2,7 +2,7 @@
 title: "roller shutter open position micro switch failure causes: How to distinguish them"
 description: "roller shutter open position micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-30 12:00:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - roller shutter open position micro switch failure causes

@@ -2,7 +2,7 @@
 title: "aircraft door closed monitor micro switch location"
 description: "aircraft door closed monitor micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-02 11:12:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - aircraft door closed monitor micro switch location

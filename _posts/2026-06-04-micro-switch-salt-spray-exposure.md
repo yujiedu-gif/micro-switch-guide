@@ -2,7 +2,7 @@
 title: "Micro Switch Salt Spray Exposure: What It Can and Cannot Show"
 description: "micro switch salt spray exposure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-04 15:16:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Waterproof Switches
 tags:
   - micro switch salt spray exposure

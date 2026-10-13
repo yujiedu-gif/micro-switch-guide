@@ -2,7 +2,7 @@
 title: "How Does a Dock Leveler Guard Interlock Micro Switch Work?"
 description: "dock leveler guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-16 08:44:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler guard interlock micro switch

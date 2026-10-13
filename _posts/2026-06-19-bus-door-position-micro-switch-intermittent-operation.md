@@ -2,7 +2,7 @@
 title: "bus door position micro switch intermittent operation: How to Diagnose It"
 description: "bus door position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-19 20:16:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - bus door position micro switch intermittent operation

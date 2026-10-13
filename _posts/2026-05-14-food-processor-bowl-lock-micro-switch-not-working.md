@@ -2,7 +2,7 @@
 title: "Food processor bowl lock micro switch not working: how to isolate the fault"
 description: "food processor bowl lock micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-14 13:21:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - food processor bowl lock micro switch not working

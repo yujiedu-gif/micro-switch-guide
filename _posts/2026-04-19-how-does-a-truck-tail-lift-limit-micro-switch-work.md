@@ -2,7 +2,7 @@
 title: "How does a truck tail lift limit micro switch work"
 description: "how does a truck tail lift limit micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-19 21:35:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a truck tail lift limit micro switch work

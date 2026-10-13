@@ -2,7 +2,7 @@
 title: "Electric kettle lid micro switch replacement: how to identify the fault and replacement requirements"
 description: "electric kettle lid micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-26 16:19:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric kettle lid micro switch replacement

@@ -2,7 +2,7 @@
 title: "Micro switch coolant exposure causes"
 description: "micro switch coolant exposure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-27 10:30:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch coolant exposure causes

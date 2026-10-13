@@ -2,7 +2,7 @@
 title: "Pressure washer trigger micro switch actuator travel: what the movement means"
 description: "pressure washer trigger micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-12 19:57:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pressure washer trigger micro switch actuator travel

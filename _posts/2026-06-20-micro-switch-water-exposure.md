@@ -2,7 +2,7 @@
 title: "Micro Switch Water Exposure: What Moisture Can Mean"
 description: "micro switch water exposure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-20 14:14:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Waterproof Switches
 tags:
   - micro switch water exposure

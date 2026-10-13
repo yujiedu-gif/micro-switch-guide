@@ -2,7 +2,7 @@
 title: "mobility scooter open position micro switch symptoms: What They May Indicate"
 description: "mobility scooter open position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-08 18:39:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - mobility scooter open position micro switch symptoms

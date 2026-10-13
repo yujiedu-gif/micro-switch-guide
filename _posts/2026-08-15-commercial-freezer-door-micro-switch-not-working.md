@@ -2,7 +2,7 @@
 title: "Commercial freezer door micro switch not working: how to diagnose it"
 description: "commercial freezer door micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-15 17:18:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - commercial freezer door micro switch not working

@@ -2,7 +2,7 @@
 title: "Glove box latch micro switch location: how to identify it"
 description: "glove box latch micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-05 19:00:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - glove box latch micro switch location

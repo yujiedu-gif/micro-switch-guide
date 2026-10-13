@@ -2,7 +2,7 @@
 title: "Electric bicycle battery lock micro switch actuator travel: how does it work?"
 description: "electric bicycle battery lock micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-28 21:04:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric bicycle battery lock micro switch actuator travel

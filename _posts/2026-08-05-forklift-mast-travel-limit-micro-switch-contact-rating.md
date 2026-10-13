@@ -2,7 +2,7 @@
 title: "Forklift mast travel limit micro switch contact rating: what does it mean?"
 description: "forklift mast travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-05 08:43:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift mast travel limit micro switch contact rating

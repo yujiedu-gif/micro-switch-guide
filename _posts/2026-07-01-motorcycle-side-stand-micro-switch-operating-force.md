@@ -2,7 +2,7 @@
 title: "Motorcycle Side Stand Micro Switch Operating Force: What the Value Means"
 description: "motorcycle side stand micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-01 19:38:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorcycle side stand micro switch operating force

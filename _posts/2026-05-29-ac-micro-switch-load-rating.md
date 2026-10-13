@@ -2,7 +2,7 @@
 title: "AC micro switch load: how to interpret the rating"
 description: "AC micro switch load: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-05-29 18:30:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - AC micro switch load

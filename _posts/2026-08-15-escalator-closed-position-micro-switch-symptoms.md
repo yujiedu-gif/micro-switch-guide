@@ -2,7 +2,7 @@
 title: "escalator closed position micro switch symptoms: Possible Causes and Diagnostic Boundaries"
 description: "escalator closed position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-15 14:29:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - escalator closed position micro switch symptoms

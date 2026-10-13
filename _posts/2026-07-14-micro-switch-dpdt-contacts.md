@@ -2,7 +2,7 @@
 title: "micro switch DPDT contacts: What the Arrangement Means"
 description: "micro switch DPDT contacts: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-14 16:08:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch DPDT contacts

@@ -2,7 +2,7 @@
 title: "Rotary indexing table end of stroke micro switch troubleshooting"
 description: "rotary indexing table end of stroke micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-16 12:54:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - rotary indexing table end of stroke micro switch troubleshooting

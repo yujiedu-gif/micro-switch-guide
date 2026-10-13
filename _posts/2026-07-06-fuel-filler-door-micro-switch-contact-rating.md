@@ -2,7 +2,7 @@
 title: "Fuel Filler Door Micro Switch Contact Rating: What Does It Mean?"
 description: "fuel filler door micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-06 15:31:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fuel filler door micro switch contact rating

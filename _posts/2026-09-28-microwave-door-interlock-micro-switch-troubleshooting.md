@@ -2,7 +2,7 @@
 title: "Microwave door interlock micro switch troubleshooting"
 description: "microwave door interlock micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-28 20:31:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - microwave door interlock micro switch troubleshooting

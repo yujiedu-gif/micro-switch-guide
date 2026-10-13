@@ -2,7 +2,7 @@
 title: "Material feeder guard interlock micro switch location: how to identify it"
 description: "material feeder guard interlock micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-08 09:19:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - material feeder guard interlock micro switch location

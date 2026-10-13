@@ -2,7 +2,7 @@
 title: "cylindrical grinder home position micro switch contact rating: How to Interpret It"
 description: "cylindrical grinder home position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-26 11:25:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cylindrical grinder home position micro switch contact rating

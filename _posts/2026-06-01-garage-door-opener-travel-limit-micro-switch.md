@@ -2,7 +2,7 @@
 title: "How a garage door opener travel limit micro switch marks an endpoint"
 description: "garage door opener travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-01 14:20:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - garage door opener travel limit micro switch

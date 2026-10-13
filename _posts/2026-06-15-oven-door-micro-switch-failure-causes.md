@@ -2,7 +2,7 @@
 title: "Oven door micro switch failure causes: what can go wrong?"
 description: "oven door micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-15 10:57:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - oven door micro switch failure causes

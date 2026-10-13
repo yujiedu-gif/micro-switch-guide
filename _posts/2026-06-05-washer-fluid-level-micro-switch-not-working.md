@@ -2,7 +2,7 @@
 title: "Washer fluid level micro switch not working: how to diagnose it"
 description: "washer fluid level micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-05 16:38:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - washer fluid level micro switch not working

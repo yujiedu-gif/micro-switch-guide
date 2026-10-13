@@ -2,7 +2,7 @@
 title: "micro switch vibration resistance explained: What It Means and What It Does Not Prove"
 description: "micro switch vibration resistance explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-18 11:44:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch vibration resistance explained

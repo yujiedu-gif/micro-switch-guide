@@ -2,7 +2,7 @@
 title: "Collaborative Robot End of Stroke Micro Switch Symptoms: What Do They Indicate?"
 description: "collaborative robot end of stroke micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-20 18:35:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - collaborative robot end of stroke micro switch symptoms

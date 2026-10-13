@@ -2,7 +2,7 @@
 title: "Collaborative robot travel limit micro switch failure causes"
 description: "collaborative robot travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-19 20:47:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - collaborative robot travel limit micro switch failure causes

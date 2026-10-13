@@ -2,7 +2,7 @@
 title: "Micro switch contact oxidation: what it can indicate and how to assess it"
 description: "micro switch contact oxidation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-30 19:13:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch contact oxidation

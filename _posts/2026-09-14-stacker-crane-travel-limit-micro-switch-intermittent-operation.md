@@ -2,7 +2,7 @@
 title: "stacker crane travel limit micro switch intermittent operation: How to diagnose it"
 description: "stacker crane travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-14 16:52:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stacker crane travel limit micro switch intermittent operation

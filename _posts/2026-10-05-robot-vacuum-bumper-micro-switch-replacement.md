@@ -2,7 +2,7 @@
 title: "robot vacuum bumper micro switch replacement"
 description: "robot vacuum bumper micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-05 13:16:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - robot vacuum bumper micro switch replacement

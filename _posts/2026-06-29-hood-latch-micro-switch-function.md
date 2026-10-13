@@ -2,7 +2,7 @@
 title: "Hood latch micro switch function: How the switch responds to latch movement"
 description: "hood latch micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-29 11:01:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - hood latch micro switch function

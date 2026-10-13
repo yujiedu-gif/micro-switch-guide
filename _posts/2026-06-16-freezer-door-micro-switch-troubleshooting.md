@@ -2,7 +2,7 @@
 title: "Freezer Door Micro Switch Troubleshooting: How to Check the Switch"
 description: "freezer door micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-16 14:38:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - freezer door micro switch troubleshooting

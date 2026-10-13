@@ -2,7 +2,7 @@
 title: "Scissor lift travel limit micro switch not working: how to isolate the fault"
 description: "scissor lift travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-25 09:56:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - scissor lift travel limit micro switch not working

@@ -2,7 +2,7 @@
 title: "Linear slide travel limit micro switch intermittent operation: how to diagnose it"
 description: "linear slide travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-14 12:04:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - linear slide travel limit micro switch intermittent operation

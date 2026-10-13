@@ -2,7 +2,7 @@
 title: "Toaster carriage micro switch: How the Component Responds to Carriage Movement"
 description: "toaster carriage micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-16 14:35:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - toaster carriage micro switch

@@ -2,7 +2,7 @@
 title: "Electric fan oscillation limit micro switch troubleshooting"
 description: "electric fan oscillation limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-27 13:53:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric fan oscillation limit micro switch troubleshooting

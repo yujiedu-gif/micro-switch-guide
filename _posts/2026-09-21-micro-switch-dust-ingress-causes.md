@@ -2,7 +2,7 @@
 title: "micro switch dust ingress causes"
 description: "micro switch dust ingress causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-21 16:44:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch dust ingress causes

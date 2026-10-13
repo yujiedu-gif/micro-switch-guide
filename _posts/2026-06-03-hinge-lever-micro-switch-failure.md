@@ -2,7 +2,7 @@
 title: "Hinge lever micro switch failure: causes and checks"
 description: "hinge lever micro switch failure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-03 10:44:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - hinge lever micro switch failure

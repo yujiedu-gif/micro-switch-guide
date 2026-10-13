@@ -2,7 +2,7 @@
 title: "automatic door open position micro switch replacement"
 description: "automatic door open position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-28 10:59:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - automatic door open position micro switch replacement

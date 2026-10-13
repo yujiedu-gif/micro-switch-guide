@@ -2,7 +2,7 @@
 title: "fire alarm pull station micro switch adjustment: What Can Be Adjusted?"
 description: "fire alarm pull station micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-26 10:07:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fire alarm pull station micro switch adjustment

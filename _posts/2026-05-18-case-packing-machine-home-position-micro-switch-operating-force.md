@@ -2,7 +2,7 @@
 title: "Case packing machine home position micro switch operating force: what it means"
 description: "case packing machine home position micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-18 13:42:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - case packing machine home position micro switch operating force

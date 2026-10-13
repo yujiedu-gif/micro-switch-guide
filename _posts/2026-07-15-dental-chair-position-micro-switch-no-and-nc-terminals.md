@@ -2,7 +2,7 @@
 title: "Dental chair position micro switch NO and NC terminals: what do they mean?"
 description: "dental chair position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-15 20:44:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dental chair position micro switch NO and NC terminals

@@ -2,7 +2,7 @@
 title: "Joystick assembly micro switch operating force: what the force value means"
 description: "joystick assembly micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-08 21:37:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - joystick assembly micro switch operating force

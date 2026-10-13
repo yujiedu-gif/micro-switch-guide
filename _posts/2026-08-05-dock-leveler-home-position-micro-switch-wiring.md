@@ -2,7 +2,7 @@
 title: "Dock leveler home position micro switch wiring: how to understand the signal path"
 description: "dock leveler home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-05 15:35:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler home position micro switch wiring

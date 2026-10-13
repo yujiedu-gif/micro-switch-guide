@@ -2,7 +2,7 @@
 title: "Wheelchair lift closed position micro switch wiring: how to interpret the signal"
 description: "wheelchair lift closed position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-23 12:14:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - wheelchair lift closed position micro switch wiring

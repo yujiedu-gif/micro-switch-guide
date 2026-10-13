@@ -2,7 +2,7 @@
 title: "straight lever micro switch selection: How to Match the Actuator to the Mechanism"
 description: "straight lever micro switch selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-14 10:45:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - straight lever micro switch selection

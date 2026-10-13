@@ -2,7 +2,7 @@
 title: "chainsaw brake mechanism micro switch: How the Parts Interact"
 description: "chainsaw brake mechanism micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-28 11:40:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - chainsaw brake mechanism micro switch

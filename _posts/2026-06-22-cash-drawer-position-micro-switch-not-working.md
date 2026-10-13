@@ -2,7 +2,7 @@
 title: "Cash Drawer Position Micro Switch Not Working: How to Diagnose It"
 description: "cash drawer position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-22 10:46:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cash drawer position micro switch not working

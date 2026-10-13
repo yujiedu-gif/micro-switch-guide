@@ -2,7 +2,7 @@
 title: "Drill press home position micro switch wiring: what the connection means"
 description: "drill press home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-21 09:43:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - drill press home position micro switch wiring

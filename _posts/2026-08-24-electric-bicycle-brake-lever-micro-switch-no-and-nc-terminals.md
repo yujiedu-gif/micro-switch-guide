@@ -2,7 +2,7 @@
 title: "Electric bicycle brake lever micro switch NO and NC terminals: what do they mean?"
 description: "electric bicycle brake lever micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-24 11:29:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric bicycle brake lever micro switch NO and NC terminals

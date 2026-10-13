@@ -2,7 +2,7 @@
 title: "Micro switch mechanical misalignment prevention: mounting and actuator checks"
 description: "micro switch mechanical misalignment prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-31 14:27:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch mechanical misalignment prevention

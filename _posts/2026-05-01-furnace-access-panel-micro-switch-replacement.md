@@ -2,7 +2,7 @@
 title: "Furnace access panel micro switch replacement: how to assess the switch"
 description: "furnace access panel micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-01 15:34:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - furnace access panel micro switch replacement

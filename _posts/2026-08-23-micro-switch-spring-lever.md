@@ -2,7 +2,7 @@
 title: "Micro Switch Spring Lever: How It Transfers Motion"
 description: "micro switch spring lever: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-08-23 16:24:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch spring lever

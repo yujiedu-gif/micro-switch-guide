@@ -2,7 +2,7 @@
 title: "Stage lift open position micro switch: what does its signal mean?"
 description: "stage lift open position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-19 08:31:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stage lift open position micro switch

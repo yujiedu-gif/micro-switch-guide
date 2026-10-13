@@ -2,7 +2,7 @@
 title: "Drill press guard interlock micro switch troubleshooting"
 description: "drill press guard interlock micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-25 13:57:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - drill press guard interlock micro switch troubleshooting

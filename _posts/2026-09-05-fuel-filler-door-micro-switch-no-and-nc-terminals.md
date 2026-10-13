@@ -2,7 +2,7 @@
 title: "fuel filler door micro switch NO and NC terminals: What the labels mean"
 description: "fuel filler door micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-05 13:06:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - fuel filler door micro switch NO and NC terminals

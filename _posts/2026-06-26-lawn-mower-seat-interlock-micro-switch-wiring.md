@@ -2,7 +2,7 @@
 title: "Lawn mower seat interlock micro switch wiring"
 description: "lawn mower seat interlock micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-26 09:08:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - lawn mower seat interlock micro switch wiring

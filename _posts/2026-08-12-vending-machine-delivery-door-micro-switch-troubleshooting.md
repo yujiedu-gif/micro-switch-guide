@@ -2,7 +2,7 @@
 title: "Vending Machine Delivery Door Micro Switch Troubleshooting"
 description: "vending machine delivery door micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-12 11:02:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - vending machine delivery door micro switch troubleshooting

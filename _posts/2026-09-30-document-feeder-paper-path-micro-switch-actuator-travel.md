@@ -2,7 +2,7 @@
 title: "Document feeder paper path micro switch actuator travel: how the mechanism works"
 description: "document feeder paper path micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-30 15:29:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - document feeder paper path micro switch actuator travel

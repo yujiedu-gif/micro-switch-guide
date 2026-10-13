@@ -2,7 +2,7 @@
 title: "Oven door micro switch operating force: what does it mean?"
 description: "oven door micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-19 13:02:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - oven door micro switch operating force

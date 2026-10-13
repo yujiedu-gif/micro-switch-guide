@@ -2,7 +2,7 @@
 title: "Incinerator guard interlock micro switch: how does it work?"
 description: "incinerator guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-07 14:51:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incinerator guard interlock micro switch

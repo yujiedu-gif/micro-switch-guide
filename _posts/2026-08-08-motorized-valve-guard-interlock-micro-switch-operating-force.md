@@ -2,7 +2,7 @@
 title: "Motorized valve guard interlock micro switch operating force: what does it mean?"
 description: "motorized valve guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-08 14:47:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized valve guard interlock micro switch operating force

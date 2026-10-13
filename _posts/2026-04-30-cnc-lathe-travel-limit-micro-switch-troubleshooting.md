@@ -2,7 +2,7 @@
 title: "CNC Lathe Travel Limit Micro Switch Troubleshooting: How to Trace a Fault"
 description: "cnc lathe travel limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-30 09:39:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cnc lathe travel limit micro switch troubleshooting

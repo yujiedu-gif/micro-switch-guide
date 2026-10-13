@@ -2,7 +2,7 @@
 title: "electric linear actuator travel limit micro switch function"
 description: "electric linear actuator travel limit micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-16 19:59:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric linear actuator travel limit micro switch function

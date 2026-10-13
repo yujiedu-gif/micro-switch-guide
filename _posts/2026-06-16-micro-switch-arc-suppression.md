@@ -2,7 +2,7 @@
 title: "Micro switch arc suppression: why arcs form and how suppression is evaluated"
 description: "micro switch arc suppression: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-16 12:22:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch arc suppression

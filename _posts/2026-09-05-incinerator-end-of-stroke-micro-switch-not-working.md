@@ -2,7 +2,7 @@
 title: "Incinerator End of Stroke Micro Switch Not Working: How to Diagnose It"
 description: "incinerator end of stroke micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-05 17:08:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - incinerator end of stroke micro switch not working

@@ -2,7 +2,7 @@
 title: "Stage lift open position micro switch contact rating"
 description: "stage lift open position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-09 14:35:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stage lift open position micro switch contact rating

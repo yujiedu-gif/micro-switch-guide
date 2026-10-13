@@ -2,7 +2,7 @@
 title: "pick and place robot home position micro switch intermittent operation: How to diagnose the signal path"
 description: "pick and place robot home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-09-29 17:27:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - pick and place robot home position micro switch intermittent operation

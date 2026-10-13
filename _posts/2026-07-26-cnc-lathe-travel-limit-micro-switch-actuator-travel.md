@@ -2,7 +2,7 @@
 title: "CNC lathe travel limit micro switch actuator travel: how are they related?"
 description: "cnc lathe travel limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-26 20:44:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc lathe travel limit micro switch actuator travel

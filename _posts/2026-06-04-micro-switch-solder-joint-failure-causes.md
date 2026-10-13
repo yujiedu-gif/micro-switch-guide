@@ -2,7 +2,7 @@
 title: "micro switch solder joint failure causes"
 description: "micro switch solder joint failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-04 16:20:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch solder joint failure causes

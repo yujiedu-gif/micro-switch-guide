@@ -2,7 +2,7 @@
 title: "How a belt conveyor travel limit micro switch works"
 description: "belt conveyor travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-25 17:19:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - belt conveyor travel limit micro switch

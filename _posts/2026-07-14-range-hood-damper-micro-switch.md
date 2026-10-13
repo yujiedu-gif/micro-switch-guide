@@ -2,7 +2,7 @@
 title: "How Does a Range Hood Damper Micro Switch Work?"
 description: "range hood damper micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-14 10:14:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - range hood damper micro switch

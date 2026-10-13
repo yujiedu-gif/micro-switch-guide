@@ -2,7 +2,7 @@
 title: "micro switch gold plated contacts explained"
 description: "micro switch gold plated contacts explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-22 10:02:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch gold plated contacts explained

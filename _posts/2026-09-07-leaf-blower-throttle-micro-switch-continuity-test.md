@@ -2,7 +2,7 @@
 title: "Leaf blower throttle micro switch continuity test"
 description: "leaf blower throttle micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-07 12:55:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - leaf blower throttle micro switch continuity test

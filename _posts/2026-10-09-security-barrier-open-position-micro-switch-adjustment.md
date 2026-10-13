@@ -2,7 +2,7 @@
 title: "Security barrier open position micro switch adjustment: how to set and verify it"
 description: "security barrier open position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-09 16:23:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - security barrier open position micro switch adjustment

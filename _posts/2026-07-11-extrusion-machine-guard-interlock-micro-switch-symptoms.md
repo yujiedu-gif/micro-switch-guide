@@ -2,7 +2,7 @@
 title: "Extrusion machine guard interlock micro switch symptoms: what do they indicate?"
 description: "extrusion machine guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-11 13:15:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - extrusion machine guard interlock micro switch symptoms

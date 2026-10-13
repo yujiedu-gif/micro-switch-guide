@@ -2,7 +2,7 @@
 title: "How to test a power wheelchair travel limit micro switch"
 description: "how to test a power wheelchair travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-23 21:41:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a power wheelchair travel limit micro switch

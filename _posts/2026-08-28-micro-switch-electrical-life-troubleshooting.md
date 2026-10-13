@@ -2,7 +2,7 @@
 title: "Micro switch electrical life troubleshooting: What evidence can identify wear?"
 description: "micro switch electrical life troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-28 20:43:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch electrical life troubleshooting

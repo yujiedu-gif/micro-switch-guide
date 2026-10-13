@@ -2,7 +2,7 @@
 title: "Pill dispenser door micro switch location: how to identify it"
 description: "pill dispenser door micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-21 21:52:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pill dispenser door micro switch location

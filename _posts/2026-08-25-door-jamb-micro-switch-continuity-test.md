@@ -2,7 +2,7 @@
 title: "Door jamb micro switch continuity test: how to check the switch"
 description: "door jamb micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-25 14:46:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - door jamb micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Joystick assembly micro switch maintenance: inspection and verification"
 description: "joystick assembly micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-01 10:45:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - joystick assembly micro switch maintenance

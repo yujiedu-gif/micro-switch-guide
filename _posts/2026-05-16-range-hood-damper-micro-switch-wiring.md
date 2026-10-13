@@ -2,7 +2,7 @@
 title: "Range hood damper micro switch wiring: how does the switch relate to the circuit?"
 description: "range hood damper micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-16 15:33:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - range hood damper micro switch wiring

@@ -2,7 +2,7 @@
 {% assign post_author = site.data.authors[author_key] %}
 {% assign post_title = page.title | append: ' | ' | append: site.title %}
 {% assign post_url = page.url | absolute_url %}
-{% assign modified_date = page.last_modified_at | default: page.last_updated | default: page.date %}
+{% assign modified_date = page.last_updated | default: page.last_modified_at %}
 <title>{{ post_title | escape }}</title>
 <meta name="generator" content="Jekyll">
 <meta name="author" content="{{ post_author.name | escape }}">
@@ -28,7 +28,7 @@
     "@id": "{{ post_url }}"
   },
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ modified_date | date_to_xmlschema }}",
+  {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
   "author": {
     "@type": "{{ post_author.type | default: 'Organization' }}",
     "name": {{ post_author.name | jsonify }},

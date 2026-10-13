@@ -2,7 +2,7 @@
 title: "Forklift seat presence mechanism micro switch replacement"
 description: "forklift seat presence mechanism micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-03 08:51:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift seat presence mechanism micro switch replacement

@@ -2,7 +2,7 @@
 title: "cartoning machine home position micro switch wiring: How the Signal Path Works"
 description: "cartoning machine home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-23 19:13:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cartoning machine home position micro switch wiring

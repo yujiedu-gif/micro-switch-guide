@@ -2,7 +2,7 @@
 title: "Cabinet door position micro switch not working: how to isolate the fault"
 description: "cabinet door position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-22 18:36:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cabinet door position micro switch not working

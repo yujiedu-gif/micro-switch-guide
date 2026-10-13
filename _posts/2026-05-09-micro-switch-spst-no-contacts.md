@@ -2,7 +2,7 @@
 title: "micro switch SPST NO contacts: meaning and contact state"
 description: "micro switch SPST NO contacts: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-09 14:15:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch SPST NO contacts

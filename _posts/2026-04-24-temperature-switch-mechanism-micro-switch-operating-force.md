@@ -2,7 +2,7 @@
 title: "Temperature switch mechanism micro switch operating force: How do they relate?"
 description: "temperature switch mechanism micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-24 18:53:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - temperature switch mechanism micro switch operating force

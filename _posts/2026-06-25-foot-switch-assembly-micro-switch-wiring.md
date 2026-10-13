@@ -2,7 +2,7 @@
 title: "Foot switch assembly micro switch wiring: how the component connects"
 description: "foot switch assembly micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-25 09:39:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - foot switch assembly micro switch wiring

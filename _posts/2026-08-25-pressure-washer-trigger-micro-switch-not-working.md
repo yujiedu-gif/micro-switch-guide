@@ -2,7 +2,7 @@
 title: "Pressure washer trigger micro switch not working: how to diagnose it"
 description: "pressure washer trigger micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-25 19:43:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - pressure washer trigger micro switch not working

@@ -2,7 +2,7 @@
 title: "How a steering column lock micro switch works"
 description: "steering column lock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-13 19:33:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - steering column lock micro switch

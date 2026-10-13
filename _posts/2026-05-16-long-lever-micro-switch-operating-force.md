@@ -2,7 +2,7 @@
 title: "Long lever micro switch operating force: what the rating means"
 description: "long lever micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-16 19:14:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - long lever micro switch operating force

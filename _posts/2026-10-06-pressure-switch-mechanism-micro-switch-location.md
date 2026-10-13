@@ -2,7 +2,7 @@
 title: "Pressure switch mechanism micro switch location: how the parts relate"
 description: "pressure switch mechanism micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-06 14:34:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pressure switch mechanism micro switch location

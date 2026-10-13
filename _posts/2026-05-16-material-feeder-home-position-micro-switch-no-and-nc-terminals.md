@@ -2,7 +2,7 @@
 title: "How Do Material Feeder Home Position Micro Switch NO and NC Terminals Relate?"
 description: "material feeder home position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-16 20:44:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - material feeder home position micro switch NO and NC terminals

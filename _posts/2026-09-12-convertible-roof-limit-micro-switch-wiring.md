@@ -2,7 +2,7 @@
 title: "Convertible roof limit micro switch wiring: how can it be identified and checked?"
 description: "convertible roof limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-12 19:31:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - convertible roof limit micro switch wiring

@@ -2,7 +2,7 @@
 title: "Server rack door micro switch failure causes: symptoms and checks"
 description: "server rack door micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-27 15:46:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - server rack door micro switch failure causes

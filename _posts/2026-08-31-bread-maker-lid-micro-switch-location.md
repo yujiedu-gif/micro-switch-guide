@@ -2,7 +2,7 @@
 title: "Bread maker lid micro switch location: how to find the switch"
 description: "bread maker lid micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-31 14:36:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bread maker lid micro switch location

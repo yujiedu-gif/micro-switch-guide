@@ -2,7 +2,7 @@
 title: "micro switch temperature range troubleshooting: How to investigate temperature-related faults"
 description: "micro switch temperature range troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-15 17:13:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch temperature range troubleshooting

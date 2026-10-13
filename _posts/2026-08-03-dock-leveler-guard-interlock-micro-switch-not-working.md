@@ -2,7 +2,7 @@
 title: "Dock leveler guard interlock micro switch not working: how to diagnose it"
 description: "dock leveler guard interlock micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-03 12:18:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dock leveler guard interlock micro switch not working

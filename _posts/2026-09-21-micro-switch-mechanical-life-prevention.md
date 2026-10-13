@@ -2,7 +2,7 @@
 title: "Micro Switch Mechanical Life Prevention: How to Reduce Avoidable Wear"
 description: "micro switch mechanical life prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-21 14:35:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch mechanical life prevention

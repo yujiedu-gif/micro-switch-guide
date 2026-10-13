@@ -2,7 +2,7 @@
 title: "Micro Switch Electrical Noise Troubleshooting"
 description: "micro switch electrical noise troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-19 09:33:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch electrical noise troubleshooting

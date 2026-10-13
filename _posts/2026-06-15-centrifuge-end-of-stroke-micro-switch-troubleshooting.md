@@ -2,7 +2,7 @@
 title: "Centrifuge end of stroke micro switch troubleshooting"
 description: "centrifuge end of stroke micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-15 17:54:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge end of stroke micro switch troubleshooting

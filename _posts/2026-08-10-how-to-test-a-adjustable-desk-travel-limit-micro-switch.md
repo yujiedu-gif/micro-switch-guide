@@ -2,7 +2,7 @@
 title: "How to Test a Adjustable Desk Travel Limit Micro Switch"
 description: "how to test a adjustable desk travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-10 16:11:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a adjustable desk travel limit micro switch

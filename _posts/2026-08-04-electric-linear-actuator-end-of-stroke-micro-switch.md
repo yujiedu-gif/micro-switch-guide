@@ -2,7 +2,7 @@
 title: "Electric linear actuator end of stroke micro switch: How does it work?"
 description: "electric linear actuator end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-04 08:13:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric linear actuator end of stroke micro switch

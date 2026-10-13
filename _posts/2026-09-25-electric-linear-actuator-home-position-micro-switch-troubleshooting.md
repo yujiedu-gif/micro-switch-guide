@@ -2,7 +2,7 @@
 title: "Electric linear actuator home position micro switch troubleshooting"
 description: "electric linear actuator home position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-09-25 15:48:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric linear actuator home position micro switch troubleshooting

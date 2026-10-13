@@ -2,7 +2,7 @@
 title: "Electric linear actuator end of stroke micro switch wiring: how the signal path works"
 description: "electric linear actuator end of stroke micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-14 20:42:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric linear actuator end of stroke micro switch wiring

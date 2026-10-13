@@ -2,7 +2,7 @@
 title: "Security gate limit micro switch failure causes"
 description: "security gate limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-19 14:13:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - security gate limit micro switch failure causes

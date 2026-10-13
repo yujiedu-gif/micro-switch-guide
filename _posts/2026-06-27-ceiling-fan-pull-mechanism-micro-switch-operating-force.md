@@ -2,7 +2,7 @@
 title: "Ceiling Fan Pull Mechanism Micro Switch Operating Force"
 description: "ceiling fan pull mechanism micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-27 11:43:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ceiling fan pull mechanism micro switch operating force

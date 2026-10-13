@@ -2,7 +2,7 @@
 title: "Moving walkway open position micro switch wiring: what the switch does"
 description: "moving walkway open position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-20 11:32:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - moving walkway open position micro switch wiring

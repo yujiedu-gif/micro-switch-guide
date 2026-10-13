@@ -2,7 +2,7 @@
 title: "dock leveler end of stroke micro switch contact rating: how to interpret it"
 description: "dock leveler end of stroke micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-26 12:49:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler end of stroke micro switch contact rating

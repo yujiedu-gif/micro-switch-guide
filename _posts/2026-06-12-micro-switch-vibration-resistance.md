@@ -2,7 +2,7 @@
 title: "Micro switch vibration resistance: what does it mean and how can it be assessed?"
 description: "micro switch vibration resistance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-12 09:32:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch vibration resistance

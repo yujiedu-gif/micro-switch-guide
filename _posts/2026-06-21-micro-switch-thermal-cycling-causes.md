@@ -2,7 +2,7 @@
 title: "Micro switch thermal cycling causes: how temperature changes affect operation"
 description: "micro switch thermal cycling causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-21 16:14:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch thermal cycling causes

@@ -2,7 +2,7 @@
 title: "micro switch high humidity explained"
 description: "micro switch high humidity explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-23 09:13:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch high humidity explained

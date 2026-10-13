@@ -2,7 +2,7 @@
 title: "Forklift mast travel limit micro switch failure causes"
 description: "forklift mast travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-17 17:34:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - forklift mast travel limit micro switch failure causes

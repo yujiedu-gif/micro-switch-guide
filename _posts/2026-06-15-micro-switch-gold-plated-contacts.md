@@ -2,7 +2,7 @@
 title: "What Do Micro Switch Gold Plated Contacts Mean?"
 description: "micro switch gold plated contacts: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-15 21:08:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch gold plated contacts

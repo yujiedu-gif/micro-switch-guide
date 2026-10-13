@@ -2,7 +2,7 @@
 title: "motorized curtain travel limit micro switch NO and NC terminals"
 description: "motorized curtain travel limit micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-17 17:22:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized curtain travel limit micro switch NO and NC terminals

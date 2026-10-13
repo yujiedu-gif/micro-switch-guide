@@ -2,7 +2,7 @@
 title: "lawn mower brake pedal micro switch operating force: What Does It Mean?"
 description: "lawn mower brake pedal micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-19 19:17:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - lawn mower brake pedal micro switch operating force

@@ -2,7 +2,7 @@
 title: "What Is Micro Switch Contact Bounce?"
 description: "what is micro switch contact bounce: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-10-06 15:48:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - what is micro switch contact bounce

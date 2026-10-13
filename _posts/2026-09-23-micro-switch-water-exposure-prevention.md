@@ -2,7 +2,7 @@
 title: "micro switch water exposure prevention: How to Reduce Exposure"
 description: "micro switch water exposure prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-23 16:04:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Waterproof Switches
 tags:
   - micro switch water exposure prevention

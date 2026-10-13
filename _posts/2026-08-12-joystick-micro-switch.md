@@ -2,7 +2,7 @@
 title: "How Does a joystick micro switch Work in a Joystick?"
 description: "joystick micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-08-12 21:00:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - joystick micro switch

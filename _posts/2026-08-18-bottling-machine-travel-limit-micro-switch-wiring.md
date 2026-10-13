@@ -2,7 +2,7 @@
 title: "Bottling machine travel limit micro switch wiring: how to trace and verify it"
 description: "bottling machine travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-18 19:01:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bottling machine travel limit micro switch wiring

@@ -2,7 +2,7 @@
 title: "warehouse shuttle end of stroke micro switch intermittent operation"
 description: "warehouse shuttle end of stroke micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-01 11:13:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - warehouse shuttle end of stroke micro switch intermittent operation

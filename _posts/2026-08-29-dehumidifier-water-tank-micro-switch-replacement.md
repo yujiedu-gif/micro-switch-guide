@@ -2,7 +2,7 @@
 title: "Dehumidifier Water Tank Micro Switch Replacement: How to Identify and Assess the Switch"
 description: "dehumidifier water tank micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-29 10:27:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dehumidifier water tank micro switch replacement

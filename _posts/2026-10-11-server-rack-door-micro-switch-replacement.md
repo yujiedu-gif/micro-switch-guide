@@ -2,7 +2,7 @@
 title: "Server rack door micro switch replacement: how to verify the part and fit"
 description: "server rack door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-11 10:01:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - server rack door micro switch replacement

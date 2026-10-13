@@ -2,7 +2,7 @@
 title: "Refrigerator ice chute micro switch wiring: how to identify the connections"
 description: "refrigerator ice chute micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-04 08:37:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - refrigerator ice chute micro switch wiring

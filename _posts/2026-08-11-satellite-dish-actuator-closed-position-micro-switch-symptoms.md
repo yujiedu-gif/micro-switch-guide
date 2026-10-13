@@ -2,7 +2,7 @@
 title: "Satellite dish actuator closed position micro switch symptoms: what do they indicate?"
 description: "satellite dish actuator closed position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-11 11:14:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - satellite dish actuator closed position micro switch symptoms

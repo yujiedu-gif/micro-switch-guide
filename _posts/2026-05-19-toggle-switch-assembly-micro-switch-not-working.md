@@ -2,7 +2,7 @@
 title: "Toggle switch assembly micro switch not working: how to isolate the fault"
 description: "toggle switch assembly micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-19 13:25:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - toggle switch assembly micro switch not working

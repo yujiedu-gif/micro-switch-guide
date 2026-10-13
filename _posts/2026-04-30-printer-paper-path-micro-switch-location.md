@@ -2,7 +2,7 @@
 title: "Printer paper path micro switch location: how to find the switch"
 description: "printer paper path micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-30 10:39:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printer paper path micro switch location

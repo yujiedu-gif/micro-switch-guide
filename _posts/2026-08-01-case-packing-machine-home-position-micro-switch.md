@@ -2,7 +2,7 @@
 title: "How a case packing machine home position micro switch signals the reference point"
 description: "case packing machine home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-01 18:54:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - case packing machine home position micro switch

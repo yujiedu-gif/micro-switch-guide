@@ -2,7 +2,7 @@
 title: "Filling machine end of stroke micro switch symptoms: what they may indicate"
 description: "filling machine end of stroke micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-21 21:24:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - filling machine end of stroke micro switch symptoms

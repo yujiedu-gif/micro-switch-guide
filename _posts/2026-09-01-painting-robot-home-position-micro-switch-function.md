@@ -2,7 +2,7 @@
 title: "Painting robot home position micro switch function"
 description: "painting robot home position micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-01 20:58:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - painting robot home position micro switch function

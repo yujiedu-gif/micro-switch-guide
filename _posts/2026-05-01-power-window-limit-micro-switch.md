@@ -2,7 +2,7 @@
 title: "How Does a power window limit micro switch Work?"
 description: "power window limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-01 16:43:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - power window limit micro switch

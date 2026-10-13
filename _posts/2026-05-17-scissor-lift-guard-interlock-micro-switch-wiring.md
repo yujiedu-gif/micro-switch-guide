@@ -2,7 +2,7 @@
 title: "Scissor lift guard interlock micro switch wiring: how to identify the circuit"
 description: "scissor lift guard interlock micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-17 09:39:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - scissor lift guard interlock micro switch wiring

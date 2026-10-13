@@ -2,7 +2,7 @@
 title: "Micro switch contact contamination causes"
 description: "micro switch contact contamination causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-03 08:20:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch contact contamination causes

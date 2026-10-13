@@ -2,7 +2,7 @@
 title: "how to test a power shear guard interlock micro switch"
 description: "how to test a power shear guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-13 15:05:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a power shear guard interlock micro switch

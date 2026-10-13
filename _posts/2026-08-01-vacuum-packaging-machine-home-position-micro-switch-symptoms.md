@@ -2,7 +2,7 @@
 title: "Vacuum Packaging Machine Home Position Micro Switch Symptoms: What They May Mean"
 description: "vacuum packaging machine home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-01 10:54:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - vacuum packaging machine home position micro switch symptoms

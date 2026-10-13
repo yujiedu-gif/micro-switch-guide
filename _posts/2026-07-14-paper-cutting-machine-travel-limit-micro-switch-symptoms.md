@@ -2,7 +2,7 @@
 title: "paper cutting machine travel limit micro switch symptoms: What They Can Indicate"
 description: "paper cutting machine travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-14 09:20:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - paper cutting machine travel limit micro switch symptoms

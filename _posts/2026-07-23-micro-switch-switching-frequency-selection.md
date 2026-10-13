@@ -2,7 +2,7 @@
 title: "Micro Switch Switching Frequency Selection: What Conditions Should You Check?"
 description: "micro switch switching frequency selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-23 09:48:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch switching frequency selection

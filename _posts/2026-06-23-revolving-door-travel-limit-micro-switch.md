@@ -2,7 +2,7 @@
 title: "How Does a Revolving Door Travel Limit Micro Switch Work?"
 description: "revolving door travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-23 15:09:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - revolving door travel limit micro switch

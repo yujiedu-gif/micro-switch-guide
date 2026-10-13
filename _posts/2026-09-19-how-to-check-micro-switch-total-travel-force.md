@@ -2,7 +2,7 @@
 title: "How to Check Micro Switch Total Travel Force"
 description: "how to check micro switch total travel force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-19 10:03:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - how to check micro switch total travel force

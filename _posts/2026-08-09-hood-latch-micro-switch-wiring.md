@@ -2,7 +2,7 @@
 title: "Hood latch micro switch wiring: how to identify the connections"
 description: "hood latch micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-09 08:25:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - hood latch micro switch wiring

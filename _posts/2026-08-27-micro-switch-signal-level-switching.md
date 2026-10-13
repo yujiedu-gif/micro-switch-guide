@@ -2,7 +2,7 @@
 title: "Micro switch signal level switching: what determines low-level compatibility?"
 description: "micro switch signal level switching: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-27 13:00:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch signal level switching

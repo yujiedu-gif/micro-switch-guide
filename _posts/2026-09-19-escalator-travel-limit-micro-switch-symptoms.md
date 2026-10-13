@@ -2,7 +2,7 @@
 title: "Escalator travel limit micro switch symptoms: what do they indicate?"
 description: "escalator travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-19 17:05:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - escalator travel limit micro switch symptoms

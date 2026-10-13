@@ -2,7 +2,7 @@
 title: "Forklift mast home position micro switch troubleshooting"
 description: "forklift mast home position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-27 20:23:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - forklift mast home position micro switch troubleshooting

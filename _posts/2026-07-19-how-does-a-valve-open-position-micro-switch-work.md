@@ -2,7 +2,7 @@
 title: "How Does a Valve Open Position Micro Switch Work?"
 description: "how does a valve open position micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-19 19:35:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a valve open position micro switch work

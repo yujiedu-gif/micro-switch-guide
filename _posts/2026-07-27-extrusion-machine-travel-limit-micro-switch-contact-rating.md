@@ -2,7 +2,7 @@
 title: "Extrusion machine travel limit micro switch contact rating"
 description: "extrusion machine travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-27 10:28:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine travel limit micro switch contact rating

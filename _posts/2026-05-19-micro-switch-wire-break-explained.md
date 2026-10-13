@@ -2,7 +2,7 @@
 title: "micro switch wire break explained: How to Distinguish a Broken Wire from a Switch Fault"
 description: "micro switch wire break explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-19 09:08:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch wire break explained

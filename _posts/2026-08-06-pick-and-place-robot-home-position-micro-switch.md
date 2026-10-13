@@ -2,7 +2,7 @@
 title: "Pick and place robot home position micro switch: How does it provide a home reference?"
 description: "pick and place robot home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-06 08:35:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pick and place robot home position micro switch

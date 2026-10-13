@@ -2,7 +2,7 @@
 title: "Micro Switch Mechanical Vibration Testing: What the Test Can Establish"
 description: "micro switch mechanical vibration testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-28 14:55:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch mechanical vibration testing

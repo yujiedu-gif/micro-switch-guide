@@ -2,7 +2,7 @@
 title: "Extrusion machine home position micro switch contact rating"
 description: "extrusion machine home position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-23 17:13:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine home position micro switch contact rating

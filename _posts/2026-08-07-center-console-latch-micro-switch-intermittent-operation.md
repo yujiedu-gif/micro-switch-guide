@@ -2,7 +2,7 @@
 title: "Center console latch micro switch intermittent operation: how to diagnose it"
 description: "center console latch micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-07 16:27:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - center console latch micro switch intermittent operation

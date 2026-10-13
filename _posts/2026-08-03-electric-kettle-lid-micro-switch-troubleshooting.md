@@ -2,7 +2,7 @@
 title: "Electric kettle lid micro switch troubleshooting: how to diagnose the fault"
 description: "electric kettle lid micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-03 13:08:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric kettle lid micro switch troubleshooting

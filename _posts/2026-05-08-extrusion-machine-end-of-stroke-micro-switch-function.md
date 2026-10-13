@@ -2,7 +2,7 @@
 title: "Extrusion machine end of stroke micro switch function: How the travel-limit signal works"
 description: "extrusion machine end of stroke micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-08 09:52:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine end of stroke micro switch function

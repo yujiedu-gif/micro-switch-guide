@@ -2,7 +2,7 @@
 title: "Power shear end of stroke micro switch failure causes"
 description: "power shear end of stroke micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-21 17:16:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - power shear end of stroke micro switch failure causes

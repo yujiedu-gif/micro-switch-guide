@@ -2,7 +2,7 @@
 title: "Stacker crane home position micro switch replacement"
 description: "stacker crane home position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-14 20:28:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stacker crane home position micro switch replacement

@@ -2,7 +2,7 @@
 title: "Mobility scooter travel limit micro switch adjustment: what can be checked safely?"
 description: "mobility scooter travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-27 13:30:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - mobility scooter travel limit micro switch adjustment

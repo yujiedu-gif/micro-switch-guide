@@ -2,7 +2,7 @@
 title: "Micro switch coolant exposure troubleshooting"
 description: "micro switch coolant exposure troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-11 10:57:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch coolant exposure troubleshooting

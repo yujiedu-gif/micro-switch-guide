@@ -2,7 +2,7 @@
 title: "Laboratory analyzer cover micro switch continuity test"
 description: "laboratory analyzer cover micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-24 08:19:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - laboratory analyzer cover micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Micro switch contact arcing testing: what can a check establish?"
 description: "micro switch contact arcing testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-22 19:46:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch contact arcing testing

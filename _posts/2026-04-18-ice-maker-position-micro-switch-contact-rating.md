@@ -2,7 +2,7 @@
 title: "ice maker position micro switch contact rating: What the Rating Tells You"
 description: "ice maker position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-18 14:55:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ice maker position micro switch contact rating

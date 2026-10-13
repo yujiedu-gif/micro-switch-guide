@@ -2,7 +2,7 @@
 title: "motorized curtain travel limit micro switch troubleshooting"
 description: "motorized curtain travel limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-21 10:59:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized curtain travel limit micro switch troubleshooting

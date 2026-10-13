@@ -2,7 +2,7 @@
 title: "stand mixer head lock micro switch intermittent operation"
 description: "stand mixer head lock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-23 18:15:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stand mixer head lock micro switch intermittent operation

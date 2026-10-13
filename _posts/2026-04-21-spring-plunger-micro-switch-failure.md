@@ -2,7 +2,7 @@
 title: "Spring plunger micro switch failure: how to distinguish the cause"
 description: "spring plunger micro switch failure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-04-21 16:57:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - spring plunger micro switch failure

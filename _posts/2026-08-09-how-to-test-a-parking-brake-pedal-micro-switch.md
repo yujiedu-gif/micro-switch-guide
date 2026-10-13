@@ -2,7 +2,7 @@
 title: "How to test a parking brake pedal micro switch"
 description: "how to test a parking brake pedal micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-09 12:18:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a parking brake pedal micro switch

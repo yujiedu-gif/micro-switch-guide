@@ -2,7 +2,7 @@
 title: "How to test a motorcycle seat latch micro switch"
 description: "how to test a motorcycle seat latch micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-25 16:16:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a motorcycle seat latch micro switch

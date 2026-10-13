@@ -2,7 +2,7 @@
 title: "Fire Alarm Pull Station Micro Switch Failure Causes"
 description: "fire alarm pull station micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-01 17:25:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - fire alarm pull station micro switch failure causes

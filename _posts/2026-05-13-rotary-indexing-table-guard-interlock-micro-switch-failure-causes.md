@@ -2,7 +2,7 @@
 title: "Rotary indexing table guard interlock micro switch failure causes"
 description: "rotary indexing table guard interlock micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-13 18:31:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - rotary indexing table guard interlock micro switch failure causes

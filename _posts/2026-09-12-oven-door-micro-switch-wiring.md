@@ -2,7 +2,7 @@
 title: "Oven door micro switch wiring: How does the switch relate to the door mechanism and circuit?"
 description: "oven door micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-12 21:35:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - oven door micro switch wiring

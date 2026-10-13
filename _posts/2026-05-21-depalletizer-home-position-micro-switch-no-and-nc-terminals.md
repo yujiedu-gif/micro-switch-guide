@@ -2,7 +2,7 @@
 title: "depalletizer home position micro switch NO and NC terminals: What They Mean"
 description: "depalletizer home position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-21 17:51:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer home position micro switch NO and NC terminals

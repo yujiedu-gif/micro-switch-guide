@@ -2,7 +2,7 @@
 title: "Micro switch wire break troubleshooting: how to isolate the open path"
 description: "micro switch wire break troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-26 14:36:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch wire break troubleshooting

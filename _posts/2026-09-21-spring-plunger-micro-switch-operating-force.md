@@ -2,7 +2,7 @@
 title: "Spring plunger micro switch operating force: meaning and measurement"
 description: "spring plunger micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-21 09:02:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - spring plunger micro switch operating force

@@ -2,7 +2,7 @@
 title: "Boom lift guard interlock micro switch replacement: what must be verified?"
 description: "boom lift guard interlock micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-11 19:07:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - boom lift guard interlock micro switch replacement

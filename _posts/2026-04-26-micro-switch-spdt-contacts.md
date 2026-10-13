@@ -2,7 +2,7 @@
 title: "micro switch SPDT contacts: What do COM, NO, and NC mean?"
 description: "micro switch SPDT contacts: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-04-26 21:36:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch SPDT contacts

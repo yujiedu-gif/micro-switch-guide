@@ -2,7 +2,7 @@
 title: "Garbage disposal reset mechanism micro switch failure causes"
 description: "garbage disposal reset mechanism micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-18 10:09:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - garbage disposal reset mechanism micro switch failure causes
