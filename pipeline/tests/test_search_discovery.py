@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from unittest.mock import patch
 
-from search_discovery import bigquery_sql, git_post_change_rows, submit_indexnow, sync_bigquery_rows, validate_urls, wait_for_deploy
+from search_discovery import bigquery_sql, ensure_bigquery_response, git_post_change_rows, submit_indexnow, sync_bigquery_rows, validate_urls, wait_for_deploy
 
 
 class SearchDiscoveryTests(unittest.TestCase):
@@ -45,6 +45,14 @@ class SearchDiscoveryTests(unittest.TestCase):
         self.assertIn("search_type = 'web'", query)
         with self.assertRaises(ValueError):
             bigquery_sql("bad.project", "searchconsole")
+
+    def test_bigquery_api_error_is_actionable(self) -> None:
+        from types import SimpleNamespace
+        response = SimpleNamespace(ok=False, status_code=404, json=lambda: {
+            "error": {"message": "Not found: Table project:searchconsole.searchdata_url_impression"}
+        })
+        with self.assertRaisesRegex(RuntimeError, "searchdata_url_impression"):
+            ensure_bigquery_response(response)
 
     def test_bigquery_sync_replaces_rolling_snapshot_idempotently(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
