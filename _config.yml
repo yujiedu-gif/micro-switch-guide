@@ -10,6 +10,7 @@ repository: yujiedu-gif/micro-switch-guide
 author:
   name: Micro Switch Guide
 logo: /assets/icons/favicon.svg
+google_tag_manager: "GTM-MSRP8BSG"
 
 permalink: /guides/:title/
 timezone: Asia/Shanghai

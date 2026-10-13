@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' }}">
   <head>
+    {% include google-tag-manager.html %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b1f36">
@@ -14,6 +15,7 @@
     {% include structured-data.html %}
   </head>
   <body>
+    {% include google-tag-manager-noscript.html %}
     <a class="skip-link" href="#main-content">Skip to content</a>
     {% include header.html %}
     <main id="main-content">
