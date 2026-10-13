@@ -7,15 +7,56 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 PIPELINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPELINE))
 
 from core import Paths, Store, load_json, load_jsonl, now_iso, stable_id
-from operations import build_batches_action, dedupe_semantic, jobs_create, jobs_export, keywords_filter, publication_select, same_plan_content_identity, source_packs_build
+from operations import build_batches_action, dedupe_semantic, embed_objects, jobs_create, jobs_export, keywords_filter, publication_select, same_plan_content_identity, source_packs_build
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_embedding_resumes_after_transient_qdrant_failure(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "pipeline").mkdir()
+            (root / "pipeline" / "schema.sql").write_text((PIPELINE / "schema.sql").read_text())
+            store = Store(Paths(root))
+            store.initialize()
+            source = root / "input.jsonl"
+            source.write_text("".join(json.dumps({"id": str(i), "text": f"micro switch {i}"}) + "\n" for i in range(3)))
+            output = root / "vectors.jsonl"
+            config = {"models": {"embedding_provider": "local", "embedding_dimensions": 2, "embedding": "test"}, "qdrant": {"collections": {"chunk": "chunks"}}}
+
+            class FakeEmbedder:
+                def __init__(self) -> None:
+                    self.calls = []
+                def embed(self, texts, _purpose):
+                    self.calls.append(len(texts))
+                    return [[1.0, 0.0] for _ in texts]
+
+            class FakeQdrant:
+                def __init__(self, fail_second: bool) -> None:
+                    self.calls = 0
+                    self.fail_second = fail_second
+                def upsert(self, _collection, _points):
+                    self.calls += 1
+                    if self.fail_second and self.calls == 2:
+                        raise RuntimeError("transient Qdrant failure")
+
+            args = argparse.Namespace(input=source, output=output, provider="local", object_type="chunk", batch_size=2)
+            first_embedder = FakeEmbedder()
+            with patch("operations._embedding_client", return_value=first_embedder), patch("operations.QdrantClient", return_value=FakeQdrant(True)):
+                with self.assertRaisesRegex(RuntimeError, "transient Qdrant failure"):
+                    embed_objects(args, config, store, {"QDRANT_URL": "url", "QDRANT_API_KEY": "key"})
+            self.assertEqual(len(load_jsonl(output)), 2)
+            second_embedder = FakeEmbedder()
+            with patch("operations._embedding_client", return_value=second_embedder), patch("operations.QdrantClient", return_value=FakeQdrant(False)):
+                embed_objects(args, config, store, {"QDRANT_URL": "url", "QDRANT_API_KEY": "key"})
+            self.assertEqual(second_embedder.calls, [1])
+            self.assertEqual(len(load_jsonl(output)), 3)
+
     def test_plan_similarity_does_not_merge_distinct_reader_tasks(self) -> None:
         function = {
             "owned_question": "How does the micro switch detect position?",

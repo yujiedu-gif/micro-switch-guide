@@ -1620,14 +1620,27 @@ def embed_objects(args: argparse.Namespace, config: dict[str, Any], store: Any, 
     provider = args.provider or config["models"]["embedding_provider"]
     embedder = _embedding_client(provider, config, credentials)
     qdrant = QdrantClient(credentials["QDRANT_URL"], credentials["QDRANT_API_KEY"])
-    output = []
+    existing = {
+        str(row["id"]): row for row in load_jsonl(args.output)
+    } if args.output.exists() else {}
+    pending = [
+        row for row in rows
+        if not (
+            str(row["id"]) in existing
+            and existing[str(row["id"])].get("text") == row["text"]
+            and len(existing[str(row["id"])].get("vector") or []) == config["models"]["embedding_dimensions"]
+        )
+    ]
     expected = config["models"]["embedding_dimensions"]
-    for offset in range(0, len(rows), args.batch_size):
-        chunk = rows[offset:offset + args.batch_size]
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    for offset in range(0, len(pending), args.batch_size):
+        chunk = pending[offset:offset + args.batch_size]
         vectors = embedder.embed([row["text"] for row in chunk], "document")
         if len(vectors) != len(chunk) or any(len(vector) != expected for vector in vectors):
             raise RuntimeError("embedding response count or dimensions do not match request")
         points = []
+        embedding_records = []
+        embedded_chunk = []
         for row, vector in zip(chunk, vectors):
             point_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f"msg:{args.object_type}:{row['id']}"))
             payload = {"local_id": row["id"], "text": row["text"], "object_type": args.object_type}
@@ -1635,14 +1648,28 @@ def embed_objects(args: argparse.Namespace, config: dict[str, Any], store: Any, 
                 if row.get(field) is not None:
                     payload[field] = row[field]
             points.append({"id": point_id, "vector": vector, "payload": payload})
-            output.append({**row, "vector": vector, "qdrant_point_id": point_id})
-            with store.connect() as connection:
-                connection.execute("""INSERT INTO embeddings(object_type,object_id,model,dimensions,vector_sha256,qdrant_point_id,created_at)
-                    VALUES(?,?,?,?,?,?,?) ON CONFLICT(object_type,object_id,model) DO UPDATE SET dimensions=excluded.dimensions,vector_sha256=excluded.vector_sha256,qdrant_point_id=excluded.qdrant_point_id""",
-                    (args.object_type, row["id"], config["models"]["embedding"], expected, sha256_bytes(canonical_json(vector).encode()), point_id, now_iso()))
+            embedded_chunk.append({**row, "vector": vector, "qdrant_point_id": point_id})
+            embedding_records.append(
+                (args.object_type, row["id"], config["models"]["embedding"], expected,
+                 sha256_bytes(canonical_json(vector).encode()), point_id, now_iso())
+            )
+        with store.connect() as connection:
+            connection.executemany(
+                """INSERT INTO embeddings(object_type,object_id,model,dimensions,vector_sha256,qdrant_point_id,created_at)
+                   VALUES(?,?,?,?,?,?,?) ON CONFLICT(object_type,object_id,model) DO UPDATE SET
+                   dimensions=excluded.dimensions,vector_sha256=excluded.vector_sha256,qdrant_point_id=excluded.qdrant_point_id""",
+                embedding_records,
+            )
         qdrant.upsert(config["qdrant"]["collections"][args.object_type], points)
+        with args.output.open("a", encoding="utf-8", newline="\n") as handle:
+            for item in embedded_chunk:
+                handle.write(canonical_json(item) + "\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        existing.update({str(item["id"]): item for item in embedded_chunk})
+    output = [existing[str(row["id"])] for row in rows]
     write_jsonl(args.output, output)
-    print(canonical_json({"embedded": len(output), "output": str(args.output)}))
+    print(canonical_json({"embedded": len(output), "newly_embedded": len(pending), "output": str(args.output)}))
     return 0
 
 
@@ -3001,11 +3028,16 @@ def dedupe_semantic(args: argparse.Namespace, config: dict[str, Any], store: Any
         current_ids = set(by_id)
 
         def query_existing(chunk: list[dict[str, Any]]) -> list[tuple[dict[str, Any], list[dict[str, Any]]]]:
+            granularities = {str(row.get("granularity")) for row in chunk if row.get("granularity")}
+            payload_filter = None
+            if args.object_type in {"article_plan", "section_plan", "chunk"} and len(granularities) == 1:
+                payload_filter = {"must": [{"key": "granularity", "match": {"value": next(iter(granularities))}}]}
             batches = qdrant.query_batch(
                 config["qdrant"]["collections"][args.object_type],
                 [row["vector"] for row in chunk],
                 limit=config["similarity"]["neighbors"],
                 score_threshold=threshold,
+                payload_filter=payload_filter,
             )
             if len(batches) != len(chunk):
                 raise RuntimeError(f"Qdrant returned {len(batches)} results for {len(chunk)} plans")

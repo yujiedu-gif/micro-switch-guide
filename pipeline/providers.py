@@ -205,12 +205,14 @@ class QdrantClient:
         )
         return result.get("result", {}).get("points", result.get("result", []))
 
-    def query_batch(self, collection: str, vectors: list[list[float]], limit: int = 20, score_threshold: float | None = None) -> list[list[dict[str, Any]]]:
+    def query_batch(self, collection: str, vectors: list[list[float]], limit: int = 20, score_threshold: float | None = None, payload_filter: dict[str, Any] | None = None) -> list[list[dict[str, Any]]]:
         searches = []
         for vector in vectors:
             search: dict[str, Any] = {"query": vector, "limit": limit, "with_payload": True}
             if score_threshold is not None:
                 search["score_threshold"] = score_threshold
+            if payload_filter is not None:
+                search["filter"] = payload_filter
             searches.append(search)
         result = request_json(
             "qdrant", "POST", f"{self.url.rstrip('/')}/collections/{urllib.parse.quote(collection)}/points/query/batch",
