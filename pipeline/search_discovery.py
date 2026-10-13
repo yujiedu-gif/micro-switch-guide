@@ -18,6 +18,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://www.microswitchguide.com"
+DEFAULT_BIGQUERY_PROJECT = "fluent-justice-494303-g3"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 KEY_RE = re.compile(r"^[A-Za-z0-9-]{8,128}$")
 POST_RE = re.compile(r"^_posts/\d{4}-\d{2}-\d{2}-(.+)\.md$")
@@ -151,10 +152,14 @@ ORDER BY impressions DESC"""
 def bigquery_readout(project: str, dataset: str, location: str) -> dict:
     try:
         import google.auth
+        from google.auth.exceptions import DefaultCredentialsError
         from google.auth.transport.requests import AuthorizedSession
     except ImportError as error:
         raise RuntimeError("Install google-auth and requests to query BigQuery") from error
-    credentials, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/bigquery.readonly"])
+    try:
+        credentials, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/bigquery.readonly"])
+    except DefaultCredentialsError as error:
+        raise RuntimeError("Google Application Default Credentials are missing; authenticate to the Cloud project before querying BigQuery") from error
     session = AuthorizedSession(credentials)
     url = f"https://bigquery.googleapis.com/bigquery/v2/projects/{project}/queries"
     response = session.post(url, json={"query": bigquery_sql(project, dataset), "useLegacySql": False, "maxResults": 10000,
@@ -225,12 +230,12 @@ def main(argv: list[str] | None = None) -> int:
     notify.add_argument("--wait-pages-build", action="store_true")
     notify.add_argument("--dry-run", action="store_true")
     bq = sub.add_parser("bigquery-check", help="query Search Console bulk export")
-    bq.add_argument("--project", default=os.environ.get("MSG_BIGQUERY_PROJECT"))
+    bq.add_argument("--project", default=os.environ.get("MSG_BIGQUERY_PROJECT", DEFAULT_BIGQUERY_PROJECT))
     bq.add_argument("--dataset", default=os.environ.get("MSG_BIGQUERY_DATASET", "searchconsole"))
     bq.add_argument("--location", default=os.environ.get("MSG_BIGQUERY_LOCATION", "US"))
     bq.add_argument("--show-sql", action="store_true")
     sync = sub.add_parser("bigquery-sync", help="copy URL performance aggregates into pipeline SQLite")
-    sync.add_argument("--project", default=os.environ.get("MSG_BIGQUERY_PROJECT"))
+    sync.add_argument("--project", default=os.environ.get("MSG_BIGQUERY_PROJECT", DEFAULT_BIGQUERY_PROJECT))
     sync.add_argument("--dataset", default=os.environ.get("MSG_BIGQUERY_DATASET", "searchconsole"))
     sync.add_argument("--location", default=os.environ.get("MSG_BIGQUERY_LOCATION", "US"))
     args = parser.parse_args(argv)
