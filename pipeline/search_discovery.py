@@ -149,6 +149,18 @@ GROUP BY url
 ORDER BY impressions DESC"""
 
 
+def ensure_bigquery_response(response) -> None:
+    if response.ok:
+        return
+    try:
+        message = response.json().get("error", {}).get("message")
+    except ValueError:
+        message = None
+    if not message:
+        message = "request failed"
+    raise RuntimeError(f"BigQuery HTTP {response.status_code}: {message}")
+
+
 def bigquery_readout(project: str, dataset: str, location: str) -> dict:
     try:
         import google.auth
@@ -164,7 +176,7 @@ def bigquery_readout(project: str, dataset: str, location: str) -> dict:
     url = f"https://bigquery.googleapis.com/bigquery/v2/projects/{project}/queries"
     response = session.post(url, json={"query": bigquery_sql(project, dataset), "useLegacySql": False, "maxResults": 10000,
                                        "location": location, "maximumBytesBilled": "1000000000"}, timeout=60)
-    response.raise_for_status()
+    ensure_bigquery_response(response)
     body = response.json()
     reference = body.get("jobReference", {})
     rows = list(body.get("rows", []))
@@ -179,7 +191,7 @@ def bigquery_readout(project: str, dataset: str, location: str) -> dict:
         if body.get("pageToken"):
             params["pageToken"] = body["pageToken"]
         response = session.get(next_url, params=params, timeout=45)
-        response.raise_for_status()
+        ensure_bigquery_response(response)
         body = response.json()
         rows.extend(body.get("rows", []))
     else:
