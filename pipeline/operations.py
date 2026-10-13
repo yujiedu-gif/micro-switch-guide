@@ -2777,6 +2777,15 @@ def links_reconcile(args: argparse.Namespace, config: dict[str, Any], store: Any
             (*run_params, *accepted_statuses),
         ).fetchall()
     accepted = {row["job_id"]: dict(row) for row in rows}
+    candidate_metadata = {
+        row["job_id"]: (
+            len(re.findall(r"[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*", row["keyword"] or "")),
+            bool(re.search(r"\d", row["keyword"] or "")),
+            (row["keyword"] or "").casefold(),
+        )
+        for row in rows
+    }
+    ranked_candidates: dict[tuple[str, int], list[Any]] = {}
     rewritten_articles = replaced_links = 0
     now = now_iso()
     with store.connect() as connection:
@@ -2790,17 +2799,6 @@ def links_reconcile(args: argparse.Namespace, config: dict[str, Any], store: Any
             ):
                 continue
             used = {link.get("target_job_id") for link in links if link.get("target_job_id") in accepted}
-            candidates = [
-                candidate for candidate in rows
-                if candidate["job_id"] != row["job_id"]
-                and candidate["job_id"] not in used
-            ]
-            candidates.sort(key=lambda item: (
-                item["category"] != row["category"],
-                bool(re.search(r"\d", item["keyword"] or "")),
-                item["keyword"].casefold(),
-                item["job_id"],
-            ))
             body = article.get("body_markdown", "")
             changed = False
             new_links = []
@@ -2811,15 +2809,20 @@ def links_reconcile(args: argparse.Namespace, config: dict[str, Any], store: Any
                     new_links.append(link)
                     continue
                 old_anchor_words = len(re.findall(r"[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*", str(link.get("anchor_text", ""))))
-                eligible = [item for item in candidates if item["job_id"] not in used]
-                eligible.sort(key=lambda item: (
-                    len(re.findall(r"[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*", item["keyword"] or "")) < old_anchor_words,
-                    item["category"] != row["category"],
-                    bool(re.search(r"\d", item["keyword"] or "")),
-                    item["keyword"].casefold(),
-                    item["job_id"],
-                ))
-                replacement = eligible[0] if eligible else None
+                rank_key = (row["category"], old_anchor_words)
+                if rank_key not in ranked_candidates:
+                    ranked_candidates[rank_key] = sorted(rows, key=lambda item: (
+                        candidate_metadata[item["job_id"]][0] < old_anchor_words,
+                        item["category"] != row["category"],
+                        candidate_metadata[item["job_id"]][1],
+                        candidate_metadata[item["job_id"]][2],
+                        item["job_id"],
+                    ))
+                replacement = next(
+                    (item for item in ranked_candidates[rank_key]
+                     if item["job_id"] != row["job_id"] and item["job_id"] not in used),
+                    None,
+                )
                 if replacement is None:
                     raise RuntimeError(f"no accepted replacement link is available for {row['job_id']}")
                 used.add(replacement["job_id"])

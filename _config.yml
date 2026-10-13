@@ -39,3 +39,6 @@ exclude:
   - vendor
   - work
   - outputs
+  - pipeline
+  - bin
+  - reports
