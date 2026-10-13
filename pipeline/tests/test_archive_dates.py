@@ -25,6 +25,8 @@ class ArchiveDateTests(unittest.TestCase):
         self.assertEqual(len(times), len(set(times)))
         self.assertEqual(times, sorted(times))
         self.assertTrue(all(not value.endswith(":00") for value in times))
+        today_times = times_for_day(date(2026, 10, 13), 30, 11 * 3600 + 45 * 60)
+        self.assertTrue(all(value < "11:45:00" for value in today_times))
 
 
 if __name__ == "__main__":

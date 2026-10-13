@@ -17,10 +17,9 @@ layout: default
       <span>By <a href="{{ post_author.url }}">{{ post_author.name }}</a></span>
       <span aria-hidden="true">·</span>
       <span>Published <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time></span>
-      {% assign updated_date = page.last_modified_at | default: page.last_updated %}
-      {% if updated_date %}
+      {% if page.last_updated %}
       <span aria-hidden="true">·</span>
-      <span>Updated <time datetime="{{ updated_date | date_to_xmlschema }}">{{ updated_date | date: '%B %-d, %Y' }}</time></span>
+      <span>Updated <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: '%B %-d, %Y' }}</time></span>
       {% endif %}
       <span aria-hidden="true">·</span>
       <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>

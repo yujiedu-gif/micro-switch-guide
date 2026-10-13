@@ -1,7 +1,7 @@
 ---
 title: "Belt conveyor home position micro switch troubleshooting"
 description: "belt conveyor home position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 08:13:51 +0800
+date: 2026-10-13 08:29:36 +0800
 last_modified_at: 2026-10-13 11:46:37 +0800
 category: Troubleshooting
 tags:

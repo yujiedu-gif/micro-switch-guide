@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Deterministically spread one dated post cohort over an archival window.
 
-This changes presentation dates, not the historical fact that the cohort first
-went live on ``--source-date``. Keep ``last_modified_at`` at the current update
-time so sitemap <lastmod> and article dateModified do not falsely move backward.
+Keep ``last_modified_at`` at the current update time so sitemap <lastmod> and
+article dateModified reflect the latest site update.
 Dry-run is the default; --apply is required for any file changes.
 """
 
@@ -51,11 +50,14 @@ def daily_quotas(days: list[date], total: int, minimum: int = 18, maximum: int =
     return [minimum + value for value in allocated]
 
 
-def times_for_day(day: date, count: int) -> list[str]:
+def times_for_day(day: date, count: int, latest_second: int | None = None) -> list[str]:
     rng = random.Random(digest_number(f"msg-archive-time-v1|{day}"))
     seconds: set[int] = set()
+    upper_bound = min(21 * 3600 + 55 * 60, latest_second) if latest_second is not None else 21 * 3600 + 55 * 60
+    if upper_bound <= 8 * 3600 + 5 * 60 + count:
+        raise ValueError("not enough earlier times are available for the current day")
     while len(seconds) < count:
-        second = rng.randrange(8 * 3600 + 5 * 60, 21 * 3600 + 55 * 60)
+        second = rng.randrange(8 * 3600 + 5 * 60, upper_bound)
         if second % 60:
             seconds.add(second)
     return [f"{value // 3600:02d}:{value // 60 % 60:02d}:{value % 60:02d}" for value in sorted(seconds)]
@@ -79,12 +81,17 @@ def main() -> int:
     dates = [args.source_date - timedelta(days=i) for i in range(args.days - 1, -1, -1)]
     quotas = daily_quotas(dates, len(sources))
     ordered = sorted(sources, key=lambda path: (digest_number(path.name), path.name))
-    modified = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S %z")
+    modified_datetime = datetime.now(ZoneInfo("Asia/Shanghai"))
+    modified = modified_datetime.strftime("%Y-%m-%d %H:%M:%S %z")
     moves: list[tuple[Path, Path, str]] = []
     destinations: set[Path] = set()
     position = 0
     for day, quota in zip(dates, quotas):
-        for clock_time in times_for_day(day, quota):
+        latest_second = (
+            modified_datetime.hour * 3600 + modified_datetime.minute * 60 + modified_datetime.second - 60
+            if day == modified_datetime.date() else None
+        )
+        for clock_time in times_for_day(day, quota, latest_second):
             source = ordered[position]
             position += 1
             slug = source.name[len(prefix):]

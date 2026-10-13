@@ -1,7 +1,7 @@
 ---
 title: "Forklift parking brake micro switch replacement"
 description: "forklift parking brake micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
-date: 2026-10-13 18:43:30 +0800
+date: 2026-10-13 09:05:28 +0800
 last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:

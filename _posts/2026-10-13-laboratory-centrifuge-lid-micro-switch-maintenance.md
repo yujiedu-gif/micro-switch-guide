@@ -1,7 +1,7 @@
 ---
 title: "Laboratory centrifuge lid micro switch maintenance"
 description: "laboratory centrifuge lid micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 11:13:43 +0800
+date: 2026-10-13 09:52:49 +0800
 last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:
