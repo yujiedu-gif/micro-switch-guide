@@ -1,7 +1,8 @@
 ---
 title: "industrial saw end of stroke micro switch maintenance"
 description: "industrial saw end of stroke micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 09:00:00 +0800
+date: 2026-10-13 09:36:07 +0800
+last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:
   - industrial saw end of stroke micro switch maintenance

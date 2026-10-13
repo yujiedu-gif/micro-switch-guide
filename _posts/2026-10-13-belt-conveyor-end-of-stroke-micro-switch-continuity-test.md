@@ -1,7 +1,8 @@
 ---
 title: "Belt conveyor end of stroke micro switch continuity test"
 description: "belt conveyor end of stroke micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 09:00:00 +0800
+date: 2026-10-13 08:07:12 +0800
+last_modified_at: 2026-10-13 11:46:37 +0800
 category: Troubleshooting
 tags:
   - belt conveyor end of stroke micro switch continuity test

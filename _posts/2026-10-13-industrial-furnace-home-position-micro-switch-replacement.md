@@ -1,7 +1,8 @@
 ---
 title: "industrial furnace home position micro switch replacement"
 description: "industrial furnace home position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 09:00:00 +0800
+date: 2026-10-13 09:13:48 +0800
+last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:
   - industrial furnace home position micro switch replacement

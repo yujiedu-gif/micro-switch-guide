@@ -1,7 +1,8 @@
 ---
 title: "Cash drawer position micro switch location: where to look and how to identify it"
 description: "cash drawer position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
-date: 2026-10-13 09:00:00 +0800
+date: 2026-10-13 08:40:25 +0800
+last_modified_at: 2026-10-13 11:46:37 +0800
 category: Applications
 tags:
   - cash drawer position micro switch location
