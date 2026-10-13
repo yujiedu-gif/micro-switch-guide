@@ -2783,6 +2783,12 @@ def links_reconcile(args: argparse.Namespace, config: dict[str, Any], store: Any
         for row in rows:
             article = json.loads(row["article_json"])
             links = list(article.get("internal_links", []))
+            if all(
+                (target := accepted.get(link.get("target_job_id")))
+                and link.get("url") == f"/guides/{target['slug']}/"
+                for link in links
+            ):
+                continue
             used = {link.get("target_job_id") for link in links if link.get("target_job_id") in accepted}
             candidates = [
                 candidate for candidate in rows
