@@ -29,13 +29,15 @@ class SourceAndValidationTests(unittest.TestCase):
         }
         links = [{"target_job_id": "j2", "relation": "related", "anchor_text": "related guide", "url": "/guides/related/"}]
         article = assemble_article_draft(
-            {"body_markdown": "micro switch basics begins.\n\n## micro switch basics\n\nText.\n\n## Final note\n\nmicro switch basics.", "used_claim_ids": ["c1"]},
+            {"body_markdown": "micro switch basics begins.\n\n## micro switch basics—what it means\n\nText.\n\n## Final note\n\nmicro switch basics.", "used_claim_ids": ["c1"]},
             plan, pack, links,
         )
         self.assertEqual(article["title"], plan["title"])
         self.assertEqual(article["sources"][0]["source_id"], "s1")
         self.assertEqual(article["internal_links"], links)
         self.assertEqual(article["source_manufacturer_names"], [])
+        self.assertNotIn("—", article["body_markdown"])
+        self.assertIn("micro switch basics, what it means", article["body_markdown"])
 
     def test_commercial_source_name_is_kept_as_citation_guard_metadata(self) -> None:
         plan = {

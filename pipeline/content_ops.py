@@ -448,6 +448,10 @@ def assemble_article_draft(
     ]
     primary_keyword = str(plan.get("primary_keyword", ""))
     category = str(plan.get("category", "Basics"))
+    # Normalize punctuation without changing factual words or evidence scope.
+    # The model commonly writes paired em dashes in H2s despite the style rule;
+    # a local copy edit should not consume the sole paid content revision.
+    body_markdown = re.sub(r"[ \t]*—[ \t]*", ", ", str(draft.get("body_markdown", "")))
     article = {
         "primary_keyword": primary_keyword,
         "secondary_keywords": list(plan.get("secondary_keywords", [])),
@@ -458,7 +462,7 @@ def assemble_article_draft(
         "slug": plan.get("slug", ""),
         "category": category,
         "tags": list(dict.fromkeys([primary_keyword, "micro switches", category])),
-        "body_markdown": draft.get("body_markdown", ""),
+        "body_markdown": body_markdown,
         "used_claim_ids": used_claim_ids,
         "internal_links": links,
         "source_manufacturer_names": sorted({

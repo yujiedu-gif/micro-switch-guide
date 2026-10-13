@@ -63,11 +63,13 @@ class ProviderContractTests(unittest.TestCase):
     @patch("providers.request_json")
     def test_qdrant_batch_query_uses_read_retry_contract(self, request):
         request.return_value = {"result": [{"points": [{"score": 0.9}]}]}
-        result = QdrantClient("https://qdrant.example", "key").query_batch("msg_topics_v1", [[1.0, 0.0]], 5, 0.87)
+        payload_filter = {"must": [{"key": "granularity", "match": {"value": "article"}}]}
+        result = QdrantClient("https://qdrant.example", "key").query_batch("msg_topics_v1", [[1.0, 0.0]], 5, 0.87, payload_filter)
         self.assertEqual(result, [[{"score": 0.9}]])
         self.assertTrue(request.call_args.args[2].endswith("/points/query/batch"))
         self.assertEqual(request.call_args.kwargs["max_attempts"], 3)
         self.assertEqual(request.call_args.kwargs["body"]["searches"][0]["score_threshold"], 0.87)
+        self.assertEqual(request.call_args.kwargs["body"]["searches"][0]["filter"], payload_filter)
 
     @patch("providers.request_json")
     def test_qdrant_upsert_retries_transient_writes(self, request):
