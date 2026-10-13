@@ -2,7 +2,7 @@
 title: "Blow molding machine end of stroke micro switch not working: how to troubleshoot it"
 description: "blow molding machine end of stroke micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-11 21:38:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - blow molding machine end of stroke micro switch not working

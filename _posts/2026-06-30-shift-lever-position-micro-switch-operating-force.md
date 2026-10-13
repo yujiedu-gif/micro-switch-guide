@@ -2,7 +2,7 @@
 title: "Shift lever position micro switch operating force: how are they related?"
 description: "shift lever position micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-30 17:43:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - shift lever position micro switch operating force

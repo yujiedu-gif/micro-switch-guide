@@ -2,7 +2,7 @@
 title: "Car parking lift open position micro switch troubleshooting"
 description: "car parking lift open position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-11 19:51:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - car parking lift open position micro switch troubleshooting

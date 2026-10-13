@@ -2,7 +2,7 @@
 title: "Dough mixing machine guard interlock micro switch operating force: what does it mean?"
 description: "dough mixing machine guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-03 21:20:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dough mixing machine guard interlock micro switch operating force

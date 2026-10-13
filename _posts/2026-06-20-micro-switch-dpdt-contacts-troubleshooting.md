@@ -2,7 +2,7 @@
 title: "micro switch DPDT contacts troubleshooting: how to check each pole"
 description: "micro switch DPDT contacts troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-20 08:58:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch DPDT contacts troubleshooting

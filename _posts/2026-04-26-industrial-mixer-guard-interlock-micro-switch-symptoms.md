@@ -2,7 +2,7 @@
 title: "Industrial mixer guard interlock micro switch symptoms: causes and checks"
 description: "industrial mixer guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-26 08:27:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial mixer guard interlock micro switch symptoms

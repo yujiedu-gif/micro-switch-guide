@@ -2,7 +2,7 @@
 title: "Electrical enclosure door micro switch location"
 description: "electrical enclosure door micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-09 16:32:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electrical enclosure door micro switch location

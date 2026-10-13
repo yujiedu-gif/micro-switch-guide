@@ -2,7 +2,7 @@
 title: "Collaborative robot travel limit micro switch contact rating: what does it establish?"
 description: "collaborative robot travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-09 15:59:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - collaborative robot travel limit micro switch contact rating

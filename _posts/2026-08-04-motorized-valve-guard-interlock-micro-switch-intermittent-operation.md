@@ -2,7 +2,7 @@
 title: "Motorized valve guard interlock micro switch intermittent operation: how to isolate the cause"
 description: "motorized valve guard interlock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-08-04 17:49:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized valve guard interlock micro switch intermittent operation

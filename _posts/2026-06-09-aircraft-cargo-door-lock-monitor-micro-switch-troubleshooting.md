@@ -2,7 +2,7 @@
 title: "Aircraft cargo door lock monitor micro switch troubleshooting"
 description: "aircraft cargo door lock monitor micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-09 21:50:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - aircraft cargo door lock monitor micro switch troubleshooting

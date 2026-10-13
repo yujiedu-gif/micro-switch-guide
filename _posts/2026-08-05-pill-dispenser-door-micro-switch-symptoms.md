@@ -2,7 +2,7 @@
 title: "Pill dispenser door micro switch symptoms: causes and checks"
 description: "pill dispenser door micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-05 09:25:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - pill dispenser door micro switch symptoms

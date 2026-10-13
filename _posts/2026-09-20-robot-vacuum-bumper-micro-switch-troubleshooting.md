@@ -2,7 +2,7 @@
 title: "Robot vacuum bumper micro switch troubleshooting"
 description: "robot vacuum bumper micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-20 13:42:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - robot vacuum bumper micro switch troubleshooting

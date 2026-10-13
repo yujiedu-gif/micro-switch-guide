@@ -2,7 +2,7 @@
 title: "Micro switch slow actuation causes: how to diagnose the delay"
 description: "micro switch slow actuation causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-06 15:11:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch slow actuation causes

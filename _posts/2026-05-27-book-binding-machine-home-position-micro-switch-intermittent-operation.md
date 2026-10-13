@@ -2,7 +2,7 @@
 title: "Book binding machine home position micro switch intermittent operation"
 description: "book binding machine home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-05-27 18:52:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - book binding machine home position micro switch intermittent operation

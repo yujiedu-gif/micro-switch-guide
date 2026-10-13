@@ -2,7 +2,7 @@
 title: "Garage door opener closed position micro switch: how it signals position"
 description: "garage door opener closed position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-26 13:19:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - garage door opener closed position micro switch

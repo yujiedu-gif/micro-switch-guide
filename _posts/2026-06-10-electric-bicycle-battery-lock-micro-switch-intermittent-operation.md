@@ -2,7 +2,7 @@
 title: "Electric bicycle battery lock micro switch intermittent operation: how to diagnose it"
 description: "electric bicycle battery lock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-06-10 08:51:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric bicycle battery lock micro switch intermittent operation

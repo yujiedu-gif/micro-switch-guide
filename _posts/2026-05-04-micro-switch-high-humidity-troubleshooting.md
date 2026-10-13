@@ -2,7 +2,7 @@
 title: "micro switch high humidity troubleshooting"
 description: "micro switch high humidity troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-04 11:51:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch high humidity troubleshooting

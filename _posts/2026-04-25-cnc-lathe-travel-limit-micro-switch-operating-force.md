@@ -2,7 +2,7 @@
 title: "CNC lathe travel limit micro switch operating force: how force relates to actuator travel"
 description: "cnc lathe travel limit micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-25 10:35:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc lathe travel limit micro switch operating force

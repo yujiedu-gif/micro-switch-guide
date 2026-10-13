@@ -2,7 +2,7 @@
 title: "industrial boiler end of stroke micro switch location: How to Identify It"
 description: "industrial boiler end of stroke micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-20 12:18:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial boiler end of stroke micro switch location

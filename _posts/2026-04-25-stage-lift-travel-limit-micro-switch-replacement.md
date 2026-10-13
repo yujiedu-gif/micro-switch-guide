@@ -2,7 +2,7 @@
 title: "Stage lift travel limit micro switch replacement: how to assess the need"
 description: "stage lift travel limit micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-25 13:23:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stage lift travel limit micro switch replacement

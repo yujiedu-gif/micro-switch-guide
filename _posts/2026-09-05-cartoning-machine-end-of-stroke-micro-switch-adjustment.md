@@ -2,7 +2,7 @@
 title: "Cartoning machine end of stroke micro switch adjustment"
 description: "cartoning machine end of stroke micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-05 20:10:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cartoning machine end of stroke micro switch adjustment

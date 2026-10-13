@@ -2,7 +2,7 @@
 title: "Centrifuge end of stroke micro switch adjustment"
 description: "centrifuge end of stroke micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-21 13:20:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - centrifuge end of stroke micro switch adjustment

@@ -2,7 +2,7 @@
 title: "What Does a micro switch 16a Rating Mean?"
 description: "micro switch 16a: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-08-21 20:41:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch 16a

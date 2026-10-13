@@ -2,7 +2,7 @@
 title: "Dishwasher door latch micro switch wiring: terminal identification and verification"
 description: "dishwasher door latch micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-28 17:12:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dishwasher door latch micro switch wiring

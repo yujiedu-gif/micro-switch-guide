@@ -2,7 +2,7 @@
 title: "How to test a printer paper path micro switch"
 description: "how to test a printer paper path micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-08 09:20:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a printer paper path micro switch

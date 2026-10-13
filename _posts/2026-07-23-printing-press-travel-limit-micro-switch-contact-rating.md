@@ -2,7 +2,7 @@
 title: "printing press travel limit micro switch contact rating: what does it establish?"
 description: "printing press travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-23 12:39:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printing press travel limit micro switch contact rating

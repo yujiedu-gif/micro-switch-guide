@@ -2,7 +2,7 @@
 title: "Cash drawer position micro switch NO and NC terminals: what do the labels mean?"
 description: "cash drawer position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-24 11:37:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cash drawer position micro switch NO and NC terminals

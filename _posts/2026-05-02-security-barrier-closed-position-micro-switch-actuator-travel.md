@@ -2,7 +2,7 @@
 title: "Security barrier closed position micro switch actuator travel: How does it indicate position?"
 description: "security barrier closed position micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-02 20:45:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - security barrier closed position micro switch actuator travel

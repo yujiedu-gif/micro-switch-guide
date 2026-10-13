@@ -2,7 +2,7 @@
 title: "Toggle switch assembly micro switch actuator travel: how the motion relates"
 description: "toggle switch assembly micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-09 16:50:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - toggle switch assembly micro switch actuator travel

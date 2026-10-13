@@ -2,7 +2,7 @@
 title: "Micro Switch Contact Welding Selection: How to Assess Suitability"
 description: "micro switch contact welding selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-16 17:04:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch contact welding selection

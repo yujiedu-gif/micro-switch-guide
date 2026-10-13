@@ -2,7 +2,7 @@
 title: "labeling machine end of stroke micro switch symptoms: Causes and checks"
 description: "labeling machine end of stroke micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-20 21:43:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - labeling machine end of stroke micro switch symptoms

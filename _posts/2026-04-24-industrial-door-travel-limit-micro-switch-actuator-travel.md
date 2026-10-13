@@ -2,7 +2,7 @@
 title: "Industrial door travel limit micro switch actuator travel: How motion relates"
 description: "industrial door travel limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-24 20:48:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial door travel limit micro switch actuator travel

@@ -2,7 +2,7 @@
 title: "How Does an Operating Table Position Micro Switch Work?"
 description: "operating table position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-27 15:39:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - operating table position micro switch

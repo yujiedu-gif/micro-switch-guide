@@ -2,7 +2,7 @@
 title: "Infusion pump door micro switch: What role can it play?"
 description: "infusion pump door micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-24 11:32:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - infusion pump door micro switch

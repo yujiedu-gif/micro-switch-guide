@@ -2,7 +2,7 @@
 title: "Emergency exit door position micro switch adjustment: what changes and how to verify it"
 description: "emergency exit door position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-23 12:45:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - emergency exit door position micro switch adjustment

@@ -2,7 +2,7 @@
 title: "Micro switch slow actuation selection: what to check"
 description: "micro switch slow actuation selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-04 11:00:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch slow actuation selection

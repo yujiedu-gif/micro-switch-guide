@@ -2,7 +2,7 @@
 title: "Thermoforming machine travel limit micro switch adjustment: how to verify the setting"
 description: "thermoforming machine travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-01 09:49:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - thermoforming machine travel limit micro switch adjustment

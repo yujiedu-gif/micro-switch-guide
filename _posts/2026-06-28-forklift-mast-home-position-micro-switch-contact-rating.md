@@ -2,7 +2,7 @@
 title: "Forklift Mast Home Position Micro Switch Contact Rating"
 description: "forklift mast home position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-28 17:32:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift mast home position micro switch contact rating

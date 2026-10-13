@@ -2,7 +2,7 @@
 title: "Centrifuge End of Stroke Micro Switch Wiring: What the Contacts Show"
 description: "centrifuge end of stroke micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-02 11:37:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - centrifuge end of stroke micro switch wiring

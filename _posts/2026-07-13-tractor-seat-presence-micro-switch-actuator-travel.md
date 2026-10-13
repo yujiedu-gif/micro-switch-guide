@@ -2,7 +2,7 @@
 title: "Tractor seat presence micro switch actuator travel"
 description: "tractor seat presence micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-13 18:00:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - tractor seat presence micro switch actuator travel

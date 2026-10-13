@@ -2,7 +2,7 @@
 title: "computer mouse button micro switch troubleshooting"
 description: "computer mouse button micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-22 11:16:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - computer mouse button micro switch troubleshooting

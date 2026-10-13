@@ -2,7 +2,7 @@
 title: "Infusion pump door micro switch intermittent operation: how to distinguish causes"
 description: "infusion pump door micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-03 15:10:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - infusion pump door micro switch intermittent operation

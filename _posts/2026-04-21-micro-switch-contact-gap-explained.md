@@ -2,7 +2,7 @@
 title: "micro switch contact gap explained"
 description: "micro switch contact gap explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-04-21 19:04:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch contact gap explained

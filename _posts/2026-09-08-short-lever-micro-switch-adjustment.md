@@ -2,7 +2,7 @@
 title: "Short lever micro switch adjustment: what can be changed safely?"
 description: "short lever micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-08 12:48:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - short lever micro switch adjustment

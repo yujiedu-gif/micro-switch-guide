@@ -2,7 +2,7 @@
 title: "Pick and place robot guard interlock micro switch: what role does it serve?"
 description: "pick and place robot guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-25 16:07:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pick and place robot guard interlock micro switch

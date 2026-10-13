@@ -2,7 +2,7 @@
 title: "Vacuum cleaner brush head micro switch operating force: what does it mean?"
 description: "vacuum cleaner brush head micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-15 15:27:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - vacuum cleaner brush head micro switch operating force

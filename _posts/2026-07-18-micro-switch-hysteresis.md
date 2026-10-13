@@ -2,7 +2,7 @@
 title: "micro switch hysteresis: What Are the Operating and Release Points?"
 description: "micro switch hysteresis: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-07-18 10:34:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch hysteresis

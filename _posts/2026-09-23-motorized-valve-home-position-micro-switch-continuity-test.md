@@ -2,7 +2,7 @@
 title: "motorized valve home position micro switch continuity test"
 description: "motorized valve home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-23 16:47:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized valve home position micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Clothes dryer door micro switch wiring: understanding the circuit"
 description: "clothes dryer door micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-02 17:10:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - clothes dryer door micro switch wiring

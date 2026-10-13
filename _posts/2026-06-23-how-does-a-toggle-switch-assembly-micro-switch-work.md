@@ -2,7 +2,7 @@
 title: "How does a toggle switch assembly micro switch work"
 description: "how does a toggle switch assembly micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-23 09:19:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - how does a toggle switch assembly micro switch work

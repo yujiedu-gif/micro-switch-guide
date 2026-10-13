@@ -2,7 +2,7 @@
 title: "Micro Switch Contact Wear Selection: How to Use Wear Evidence"
 description: "micro switch contact wear selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-26 20:07:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch contact wear selection

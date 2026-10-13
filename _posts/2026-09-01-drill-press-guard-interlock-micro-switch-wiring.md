@@ -2,7 +2,7 @@
 title: "Drill press guard interlock micro switch wiring: how the connection works"
 description: "drill press guard interlock micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-01 08:23:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - drill press guard interlock micro switch wiring

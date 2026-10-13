@@ -2,7 +2,7 @@
 title: "computer mouse button micro switch symptoms: What They Can Indicate"
 description: "computer mouse button micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-19 18:54:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - computer mouse button micro switch symptoms

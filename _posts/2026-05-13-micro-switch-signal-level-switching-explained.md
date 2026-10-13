@@ -2,7 +2,7 @@
 title: "micro switch signal level switching explained: What Determines Suitability?"
 description: "micro switch signal level switching explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-13 12:30:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch signal level switching explained

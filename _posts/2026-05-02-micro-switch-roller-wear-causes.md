@@ -2,7 +2,7 @@
 title: "micro switch roller wear causes: How to Identify the Mechanical Failure Path"
 description: "micro switch roller wear causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-02 15:20:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch roller wear causes

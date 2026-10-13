@@ -2,7 +2,7 @@
 title: "How to test a food processor bowl lock micro switch"
 description: "how to test a food processor bowl lock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-01 11:22:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a food processor bowl lock micro switch

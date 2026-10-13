@@ -2,7 +2,7 @@
 title: "Centrifuge travel limit micro switch troubleshooting"
 description: "centrifuge travel limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-01 18:59:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge travel limit micro switch troubleshooting

@@ -2,7 +2,7 @@
 title: "mobility scooter open position micro switch intermittent operation"
 description: "mobility scooter open position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-10-03 10:03:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - mobility scooter open position micro switch intermittent operation

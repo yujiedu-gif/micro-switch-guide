@@ -2,7 +2,7 @@
 title: "Pick and place robot home position micro switch symptoms: what they indicate"
 description: "pick and place robot home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-10 09:08:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - pick and place robot home position micro switch symptoms

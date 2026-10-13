@@ -2,7 +2,7 @@
 title: "How to Test a Cartoning Machine Travel Limit Micro Switch"
 description: "how to test a cartoning machine travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-22 09:52:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a cartoning machine travel limit micro switch

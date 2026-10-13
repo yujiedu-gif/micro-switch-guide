@@ -2,7 +2,7 @@
 title: "Laboratory centrifuge lid micro switch replacement: how to diagnose the need"
 description: "laboratory centrifuge lid micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-20 11:13:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laboratory centrifuge lid micro switch replacement

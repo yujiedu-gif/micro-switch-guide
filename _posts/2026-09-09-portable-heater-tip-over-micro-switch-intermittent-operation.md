@@ -2,7 +2,7 @@
 title: "portable heater tip over micro switch intermittent operation"
 description: "portable heater tip over micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-09 18:44:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - portable heater tip over micro switch intermittent operation

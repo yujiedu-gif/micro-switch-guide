@@ -2,7 +2,7 @@
 title: "micro switch inrush current: How to assess a load against switch ratings"
 description: "micro switch inrush current: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-10-06 08:26:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch inrush current

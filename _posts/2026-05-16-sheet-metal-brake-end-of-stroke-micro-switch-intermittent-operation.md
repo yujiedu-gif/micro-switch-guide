@@ -2,7 +2,7 @@
 title: "Sheet metal brake end of stroke micro switch intermittent operation: how to diagnose it"
 description: "sheet metal brake end of stroke micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-16 20:12:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - sheet metal brake end of stroke micro switch intermittent operation

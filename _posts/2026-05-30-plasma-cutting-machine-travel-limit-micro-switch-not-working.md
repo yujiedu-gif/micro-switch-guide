@@ -2,7 +2,7 @@
 title: "Plasma cutting machine travel limit micro switch not working: how to diagnose it"
 description: "plasma cutting machine travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-30 10:48:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - plasma cutting machine travel limit micro switch not working

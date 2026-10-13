@@ -2,7 +2,7 @@
 title: "Micro switch gold plated contacts troubleshooting: how to isolate the fault"
 description: "micro switch gold plated contacts troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-16 14:48:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch gold plated contacts troubleshooting

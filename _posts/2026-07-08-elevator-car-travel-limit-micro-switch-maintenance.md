@@ -2,7 +2,7 @@
 title: "Elevator car travel limit micro switch maintenance: what should be checked?"
 description: "elevator car travel limit micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-08 08:50:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - elevator car travel limit micro switch maintenance

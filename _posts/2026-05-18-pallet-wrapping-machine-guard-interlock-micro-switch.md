@@ -2,7 +2,7 @@
 title: "Pallet wrapping machine guard interlock micro switch: How does it work?"
 description: "pallet wrapping machine guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-18 09:07:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pallet wrapping machine guard interlock micro switch

@@ -2,7 +2,7 @@
 title: "micro switch corrosive atmosphere selection"
 description: "micro switch corrosive atmosphere selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-06 14:27:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch corrosive atmosphere selection

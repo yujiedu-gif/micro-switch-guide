@@ -2,7 +2,7 @@
 title: "Security Gate Limit Micro Switch Actuator Travel: What the Movement Means"
 description: "security gate limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-30 09:25:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - security gate limit micro switch actuator travel

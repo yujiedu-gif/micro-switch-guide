@@ -4,6 +4,7 @@ layout: default
 <article class="article-shell">
   {% assign author_key = page.author | default: 'editorial_team' %}
   {% assign post_author = site.data.authors[author_key] %}
+  {% assign modified_date = page.last_updated | default: page.last_modified_at %}
   <div class="container article-header">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">/</span>
@@ -17,9 +18,9 @@ layout: default
       <span>By <a href="{{ post_author.url }}">{{ post_author.name }}</a></span>
       <span aria-hidden="true">·</span>
       <span>Published <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time></span>
-      {% if page.last_updated %}
+      {% if modified_date %}
       <span aria-hidden="true">·</span>
-      <span>Updated <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: '%B %-d, %Y' }}</time></span>
+      <span>Updated <time datetime="{{ modified_date | date_to_xmlschema }}">{{ modified_date | date: '%B %-d, %Y' }}</time></span>
       {% endif %}
       <span aria-hidden="true">·</span>
       <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>

@@ -2,7 +2,7 @@
 title: "How to check micro switch bifurcated contacts"
 description: "how to check micro switch bifurcated contacts: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-13 10:18:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to check micro switch bifurcated contacts

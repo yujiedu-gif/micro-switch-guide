@@ -2,7 +2,7 @@
 title: "Micro switch failure to actuate: causes and checks"
 description: "micro switch failure to actuate: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-03 09:51:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch failure to actuate

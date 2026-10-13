@@ -2,7 +2,7 @@
 title: "micro switch DPDT contacts prevention: What the Contact Arrangement Does"
 description: "micro switch DPDT contacts prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-17 12:03:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch DPDT contacts prevention

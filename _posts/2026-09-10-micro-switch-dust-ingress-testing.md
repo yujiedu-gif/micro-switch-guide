@@ -2,7 +2,7 @@
 title: "micro switch dust ingress testing: What Can a Test Establish?"
 description: "micro switch dust ingress testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-10 12:23:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Waterproof Switches
 tags:
   - micro switch dust ingress testing

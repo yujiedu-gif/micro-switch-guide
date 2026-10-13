@@ -2,7 +2,7 @@
 title: "Push button assembly micro switch contact rating: how to interpret it"
 description: "push button assembly micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-17 13:57:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - push button assembly micro switch contact rating

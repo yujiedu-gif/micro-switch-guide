@@ -2,7 +2,7 @@
 title: "Incinerator home position micro switch wiring: how to trace and verify it"
 description: "incinerator home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-12 11:48:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incinerator home position micro switch wiring

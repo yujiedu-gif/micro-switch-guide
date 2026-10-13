@@ -2,7 +2,7 @@
 title: "material feeder home position micro switch actuator travel: How Does It Relate to the Home Position?"
 description: "material feeder home position micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-23 21:17:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - material feeder home position micro switch actuator travel

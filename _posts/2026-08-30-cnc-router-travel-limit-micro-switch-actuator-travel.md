@@ -2,7 +2,7 @@
 title: "CNC Router Travel Limit Micro Switch Actuator Travel: What Does It Mean?"
 description: "cnc router travel limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-30 14:43:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc router travel limit micro switch actuator travel

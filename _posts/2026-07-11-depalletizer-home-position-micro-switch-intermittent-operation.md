@@ -2,7 +2,7 @@
 title: "Depalletizer home position micro switch intermittent operation: how to isolate the cause"
 description: "depalletizer home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-11 11:08:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - depalletizer home position micro switch intermittent operation

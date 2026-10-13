@@ -2,7 +2,7 @@
 title: "Forklift Parking Brake Micro Switch Contact Rating: How to Interpret It"
 description: "forklift parking brake micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-19 17:40:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift parking brake micro switch contact rating

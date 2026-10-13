@@ -2,7 +2,7 @@
 title: "Die Casting Machine Home Position Micro Switch Contact Rating"
 description: "die casting machine home position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-16 11:05:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - die casting machine home position micro switch contact rating

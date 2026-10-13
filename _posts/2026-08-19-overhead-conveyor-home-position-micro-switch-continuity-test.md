@@ -2,7 +2,7 @@
 title: "Overhead Conveyor Home Position Micro Switch Continuity Test"
 description: "overhead conveyor home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-19 13:34:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - overhead conveyor home position micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Scissor lift home position micro switch troubleshooting"
 description: "scissor lift home position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-19 19:48:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - scissor lift home position micro switch troubleshooting

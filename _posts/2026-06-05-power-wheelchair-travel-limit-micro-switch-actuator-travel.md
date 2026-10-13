@@ -2,7 +2,7 @@
 title: "power wheelchair travel limit micro switch actuator travel: How Does Actuator Travel Relate to a Limit?"
 description: "power wheelchair travel limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-05 10:08:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - power wheelchair travel limit micro switch actuator travel

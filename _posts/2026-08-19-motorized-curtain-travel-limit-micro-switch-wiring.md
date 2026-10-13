@@ -2,7 +2,7 @@
 title: "Motorized curtain travel limit micro switch wiring: how does it work?"
 description: "motorized curtain travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-19 18:02:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized curtain travel limit micro switch wiring

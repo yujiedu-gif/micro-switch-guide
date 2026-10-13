@@ -2,7 +2,7 @@
 title: "humidifier water level micro switch contact rating: How to Interpret It"
 description: "humidifier water level micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-25 18:29:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - humidifier water level micro switch contact rating

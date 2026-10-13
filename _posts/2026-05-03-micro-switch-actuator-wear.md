@@ -2,7 +2,7 @@
 title: "Micro switch actuator wear: signs, checks, and limits"
 description: "micro switch actuator wear: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-03 10:43:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch actuator wear

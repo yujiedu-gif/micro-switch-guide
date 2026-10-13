@@ -2,7 +2,7 @@
 title: "Paper cutting machine guard interlock micro switch wiring: how to understand it"
 description: "paper cutting machine guard interlock micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-11 11:28:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - paper cutting machine guard interlock micro switch wiring

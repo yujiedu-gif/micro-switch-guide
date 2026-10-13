@@ -2,7 +2,7 @@
 title: "linear slide travel limit micro switch wiring: How the Switch Connects and Signals an Endpoint"
 description: "linear slide travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-28 18:19:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - linear slide travel limit micro switch wiring

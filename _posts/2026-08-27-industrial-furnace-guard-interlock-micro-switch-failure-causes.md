@@ -2,7 +2,7 @@
 title: "Industrial furnace guard interlock micro switch failure causes"
 description: "industrial furnace guard interlock micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-27 11:21:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial furnace guard interlock micro switch failure causes

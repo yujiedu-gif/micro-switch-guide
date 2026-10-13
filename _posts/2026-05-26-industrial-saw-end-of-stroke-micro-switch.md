@@ -2,7 +2,7 @@
 title: "Industrial saw end of stroke micro switch: how does it signal travel completion?"
 description: "industrial saw end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-26 20:10:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial saw end of stroke micro switch

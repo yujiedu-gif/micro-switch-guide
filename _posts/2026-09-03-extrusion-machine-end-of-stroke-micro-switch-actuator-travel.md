@@ -2,7 +2,7 @@
 title: "Extrusion machine end of stroke micro switch actuator travel"
 description: "extrusion machine end of stroke micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-03 10:47:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine end of stroke micro switch actuator travel

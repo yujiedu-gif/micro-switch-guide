@@ -2,7 +2,7 @@
 title: "stair lift travel limit micro switch wiring: How the Switch Fits the Circuit"
 description: "stair lift travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-12 10:20:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stair lift travel limit micro switch wiring

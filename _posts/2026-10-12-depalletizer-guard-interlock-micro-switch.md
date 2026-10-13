@@ -2,7 +2,7 @@
 title: "How a depalletizer guard interlock micro switch may signal guard position"
 description: "depalletizer guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-12 18:05:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer guard interlock micro switch

@@ -2,7 +2,7 @@
 title: "Leaf lever micro switch installation: positioning and verification"
 description: "leaf lever micro switch installation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-09 10:02:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - leaf lever micro switch installation

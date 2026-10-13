@@ -2,7 +2,7 @@
 title: "Scanner lid micro switch adjustment: how to assess actuation"
 description: "scanner lid micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-28 09:42:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - scanner lid micro switch adjustment

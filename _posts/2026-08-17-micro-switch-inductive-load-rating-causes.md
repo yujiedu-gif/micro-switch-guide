@@ -2,7 +2,7 @@
 title: "micro switch inductive load rating causes"
 description: "micro switch inductive load rating causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-17 18:31:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch inductive load rating causes

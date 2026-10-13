@@ -2,7 +2,7 @@
 title: "Depalletizer guard interlock micro switch wiring: how does the contact relate to the circuit?"
 description: "depalletizer guard interlock micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-20 13:24:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer guard interlock micro switch wiring

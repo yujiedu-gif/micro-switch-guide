@@ -2,7 +2,7 @@
 title: "steering column lock micro switch intermittent operation: How to Trace the Cause"
 description: "steering column lock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-10 14:31:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - steering column lock micro switch intermittent operation

@@ -2,7 +2,7 @@
 title: "Micro switch release speed testing: what is measured and how"
 description: "micro switch release speed testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-24 08:25:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch release speed testing

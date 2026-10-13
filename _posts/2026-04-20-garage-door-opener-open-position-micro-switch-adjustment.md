@@ -2,7 +2,7 @@
 title: "Garage door opener open position micro switch adjustment"
 description: "garage door opener open position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-20 11:40:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - garage door opener open position micro switch adjustment

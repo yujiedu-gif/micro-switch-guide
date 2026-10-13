@@ -2,7 +2,7 @@
 title: "Micro switch operating force testing: how to measure it"
 description: "micro switch operating force testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-31 14:15:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch operating force testing

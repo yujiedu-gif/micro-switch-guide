@@ -2,7 +2,7 @@
 title: "steering column lock micro switch failure causes"
 description: "steering column lock micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-18 18:53:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - steering column lock micro switch failure causes

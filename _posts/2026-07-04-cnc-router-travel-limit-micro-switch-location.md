@@ -2,7 +2,7 @@
 title: "CNC router travel limit micro switch location: How to identify it"
 description: "cnc router travel limit micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-04 20:02:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc router travel limit micro switch location

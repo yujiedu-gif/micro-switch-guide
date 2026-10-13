@@ -2,7 +2,7 @@
 title: "What Is the micro switch releasing position?"
 description: "micro switch releasing position: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-29 10:28:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch releasing position

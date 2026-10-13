@@ -2,7 +2,7 @@
 title: "How a motorcycle seat latch micro switch detects latch position"
 description: "motorcycle seat latch micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-04-29 09:11:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorcycle seat latch micro switch

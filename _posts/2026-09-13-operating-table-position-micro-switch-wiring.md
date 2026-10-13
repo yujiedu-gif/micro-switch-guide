@@ -2,7 +2,7 @@
 title: "Operating table position micro switch wiring: how does the connection work?"
 description: "operating table position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-13 16:53:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - operating table position micro switch wiring

@@ -2,7 +2,7 @@
 title: "Microwave Door Interlock Micro Switch Replacement: How to Diagnose the Need"
 description: "microwave door interlock micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-30 16:43:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - microwave door interlock micro switch replacement

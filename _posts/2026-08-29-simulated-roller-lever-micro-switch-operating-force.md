@@ -2,7 +2,7 @@
 title: "Simulated Roller Lever Micro Switch Operating Force"
 description: "simulated roller lever micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-29 19:58:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - simulated roller lever micro switch operating force

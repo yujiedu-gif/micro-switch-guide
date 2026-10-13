@@ -2,7 +2,7 @@
 title: "Micro switch dust ingress: what can dust do to a micro switch?"
 description: "micro switch dust ingress: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-06-01 14:46:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch dust ingress

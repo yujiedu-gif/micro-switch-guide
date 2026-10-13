@@ -2,7 +2,7 @@
 title: "Cabinet Door Position Micro Switch Failure Causes"
 description: "cabinet door position micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-03 10:57:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cabinet door position micro switch failure causes

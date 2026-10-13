@@ -2,7 +2,7 @@
 title: "Elevator landing door travel limit micro switch not working: what to check"
 description: "elevator landing door travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-19 15:00:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - elevator landing door travel limit micro switch not working

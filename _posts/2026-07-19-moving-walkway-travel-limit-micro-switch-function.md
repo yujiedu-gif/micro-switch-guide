@@ -2,7 +2,7 @@
 title: "moving walkway travel limit micro switch function: How It Works"
 description: "moving walkway travel limit micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-19 18:56:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - moving walkway travel limit micro switch function

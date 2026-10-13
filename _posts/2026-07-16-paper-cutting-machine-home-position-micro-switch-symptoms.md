@@ -2,7 +2,7 @@
 title: "Paper cutting machine home position micro switch symptoms: what they may indicate"
 description: "paper cutting machine home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-16 08:58:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - paper cutting machine home position micro switch symptoms

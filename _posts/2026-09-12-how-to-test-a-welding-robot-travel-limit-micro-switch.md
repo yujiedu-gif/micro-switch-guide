@@ -2,7 +2,7 @@
 title: "How to Test a Welding Robot Travel Limit Micro Switch"
 description: "how to test a welding robot travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-12 16:24:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a welding robot travel limit micro switch

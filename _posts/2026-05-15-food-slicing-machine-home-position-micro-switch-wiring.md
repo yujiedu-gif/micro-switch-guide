@@ -2,7 +2,7 @@
 title: "Food slicing machine home position micro switch wiring: identify and verify the signal"
 description: "food slicing machine home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-15 15:45:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - food slicing machine home position micro switch wiring

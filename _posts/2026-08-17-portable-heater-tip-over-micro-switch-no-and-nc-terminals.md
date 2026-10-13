@@ -2,7 +2,7 @@
 title: "portable heater tip over micro switch NO and NC terminals: What Do They Mean?"
 description: "portable heater tip over micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-17 08:35:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - portable heater tip over micro switch NO and NC terminals

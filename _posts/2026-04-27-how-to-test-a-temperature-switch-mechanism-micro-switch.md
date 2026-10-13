@@ -2,7 +2,7 @@
 title: "How to Test a Temperature Switch Mechanism Micro Switch"
 description: "how to test a temperature switch mechanism micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-27 15:17:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a temperature switch mechanism micro switch

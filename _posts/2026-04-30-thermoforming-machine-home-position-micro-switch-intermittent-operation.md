@@ -2,7 +2,7 @@
 title: "Thermoforming machine home position micro switch intermittent operation"
 description: "thermoforming machine home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-04-30 17:45:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - thermoforming machine home position micro switch intermittent operation

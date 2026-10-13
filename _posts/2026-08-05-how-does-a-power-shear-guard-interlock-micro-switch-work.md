@@ -2,7 +2,7 @@
 title: "How Does a Power Shear Guard Interlock Micro Switch Work?"
 description: "how does a power shear guard interlock micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-05 19:05:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a power shear guard interlock micro switch work

@@ -2,7 +2,7 @@
 title: "Incinerator End of Stroke Micro Switch: How Endpoint Detection Works"
 description: "incinerator end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-09 20:33:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incinerator end of stroke micro switch

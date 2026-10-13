@@ -2,7 +2,7 @@
 title: "Charging port door micro switch intermittent operation: how to diagnose it"
 description: "charging port door micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-05 10:30:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - charging port door micro switch intermittent operation

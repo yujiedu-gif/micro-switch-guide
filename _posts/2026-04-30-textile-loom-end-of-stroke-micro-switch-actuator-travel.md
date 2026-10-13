@@ -2,7 +2,7 @@
 title: "Textile loom end of stroke micro switch actuator travel"
 description: "textile loom end of stroke micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-30 19:09:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - textile loom end of stroke micro switch actuator travel

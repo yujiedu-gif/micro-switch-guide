@@ -2,7 +2,7 @@
 title: "Printing press home position micro switch not working: how to diagnose it"
 description: "printing press home position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-22 10:57:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - printing press home position micro switch not working

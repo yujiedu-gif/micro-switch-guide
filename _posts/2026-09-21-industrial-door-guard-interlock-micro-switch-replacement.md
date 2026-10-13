@@ -2,7 +2,7 @@
 title: "Industrial door guard interlock micro switch replacement: how to verify the right part"
 description: "industrial door guard interlock micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-21 10:42:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - industrial door guard interlock micro switch replacement

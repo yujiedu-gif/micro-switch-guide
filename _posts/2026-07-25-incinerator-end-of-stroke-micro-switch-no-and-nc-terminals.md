@@ -2,7 +2,7 @@
 title: "incinerator end of stroke micro switch NO and NC terminals"
 description: "incinerator end of stroke micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-25 18:29:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incinerator end of stroke micro switch NO and NC terminals

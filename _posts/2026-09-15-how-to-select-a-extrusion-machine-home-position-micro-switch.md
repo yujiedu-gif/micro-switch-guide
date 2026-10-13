@@ -2,7 +2,7 @@
 title: "How to select a extrusion machine home position micro switch"
 description: "how to select a extrusion machine home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-15 10:31:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - how to select a extrusion machine home position micro switch

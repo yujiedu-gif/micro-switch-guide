@@ -2,7 +2,7 @@
 title: "micro switch freezing temperature: What Freezing Conditions Mean for Operation"
 description: "micro switch freezing temperature: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-11 08:39:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch freezing temperature

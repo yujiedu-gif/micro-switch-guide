@@ -2,7 +2,7 @@
 title: "How to assess a sample tray position micro switch replacement"
 description: "sample tray position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-11 14:26:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - sample tray position micro switch replacement

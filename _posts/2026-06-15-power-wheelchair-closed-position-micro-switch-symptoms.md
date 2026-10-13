@@ -2,7 +2,7 @@
 title: "power wheelchair closed position micro switch symptoms: What They Can Indicate"
 description: "power wheelchair closed position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-15 17:06:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - power wheelchair closed position micro switch symptoms

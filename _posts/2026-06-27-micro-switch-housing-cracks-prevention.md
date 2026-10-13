@@ -2,7 +2,7 @@
 title: "micro switch housing cracks prevention"
 description: "micro switch housing cracks prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-27 20:47:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch housing cracks prevention

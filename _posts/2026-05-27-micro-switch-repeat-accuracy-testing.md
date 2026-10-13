@@ -2,7 +2,7 @@
 title: "Micro switch repeat accuracy testing: how to assess repeatability"
 description: "micro switch repeat accuracy testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-27 09:50:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch repeat accuracy testing

@@ -2,7 +2,7 @@
 title: "Emergency exit door position micro switch location: where to look"
 description: "emergency exit door position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-10 09:18:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - emergency exit door position micro switch location

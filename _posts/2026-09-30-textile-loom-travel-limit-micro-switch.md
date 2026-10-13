@@ -2,7 +2,7 @@
 title: "textile loom travel limit micro switch: How It Marks a Travel Boundary"
 description: "textile loom travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-30 19:55:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - textile loom travel limit micro switch

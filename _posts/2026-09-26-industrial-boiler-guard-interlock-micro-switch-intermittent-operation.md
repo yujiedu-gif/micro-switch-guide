@@ -2,7 +2,7 @@
 title: "Industrial boiler guard interlock micro switch intermittent operation: how to diagnose it"
 description: "industrial boiler guard interlock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-09-26 10:53:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial boiler guard interlock micro switch intermittent operation

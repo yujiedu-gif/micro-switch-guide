@@ -2,7 +2,7 @@
 title: "Industrial saw travel limit micro switch failure causes"
 description: "industrial saw travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-07 21:13:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial saw travel limit micro switch failure causes

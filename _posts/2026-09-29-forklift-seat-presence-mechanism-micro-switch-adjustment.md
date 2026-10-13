@@ -2,7 +2,7 @@
 title: "Forklift Seat Presence Mechanism Micro Switch Adjustment"
 description: "forklift seat presence mechanism micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-29 10:52:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift seat presence mechanism micro switch adjustment

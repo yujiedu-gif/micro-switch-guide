@@ -2,7 +2,7 @@
 title: "Moving walkway travel limit micro switch intermittent operation: causes and checks"
 description: "moving walkway travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-10 13:43:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - moving walkway travel limit micro switch intermittent operation

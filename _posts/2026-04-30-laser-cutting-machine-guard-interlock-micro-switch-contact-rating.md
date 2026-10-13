@@ -2,7 +2,7 @@
 title: "Laser cutting machine guard interlock micro switch contact rating: how to interpret it"
 description: "laser cutting machine guard interlock micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-04-30 09:04:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laser cutting machine guard interlock micro switch contact rating

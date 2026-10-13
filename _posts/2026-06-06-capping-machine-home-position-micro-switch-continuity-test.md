@@ -2,7 +2,7 @@
 title: "Capping Machine Home Position Micro Switch Continuity Test"
 description: "capping machine home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-06 18:42:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - capping machine home position micro switch continuity test

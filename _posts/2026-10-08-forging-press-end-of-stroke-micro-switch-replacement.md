@@ -2,7 +2,7 @@
 title: "Forging Press End of Stroke Micro Switch Replacement: How to Verify Fit"
 description: "forging press end of stroke micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-08 12:27:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forging press end of stroke micro switch replacement

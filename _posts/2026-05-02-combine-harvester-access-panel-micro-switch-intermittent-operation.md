@@ -2,7 +2,7 @@
 title: "Combine harvester access panel micro switch intermittent operation: how to diagnose it"
 description: "combine harvester access panel micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-05-02 21:27:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - combine harvester access panel micro switch intermittent operation

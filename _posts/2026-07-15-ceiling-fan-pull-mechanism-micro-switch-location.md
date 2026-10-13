@@ -2,7 +2,7 @@
 title: "Ceiling fan pull mechanism micro switch location"
 description: "ceiling fan pull mechanism micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-15 15:36:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ceiling fan pull mechanism micro switch location

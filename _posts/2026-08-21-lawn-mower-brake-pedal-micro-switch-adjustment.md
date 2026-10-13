@@ -2,7 +2,7 @@
 title: "Lawn mower brake pedal micro switch adjustment: how to check the actuation point"
 description: "lawn mower brake pedal micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-21 10:45:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - lawn mower brake pedal micro switch adjustment

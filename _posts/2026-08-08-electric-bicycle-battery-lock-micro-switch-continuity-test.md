@@ -2,7 +2,7 @@
 title: "Electric bicycle battery lock micro switch continuity test: what can it show?"
 description: "electric bicycle battery lock micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-08 17:48:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - electric bicycle battery lock micro switch continuity test

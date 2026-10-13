@@ -2,7 +2,7 @@
 title: "Laser cutting machine home position micro switch: How does it establish a reference?"
 description: "laser cutting machine home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-30 14:28:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laser cutting machine home position micro switch

@@ -2,7 +2,7 @@
 title: "micro switch debounce explained"
 description: "micro switch debounce explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-08 20:11:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch debounce explained

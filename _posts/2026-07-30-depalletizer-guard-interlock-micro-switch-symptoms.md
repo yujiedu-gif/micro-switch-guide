@@ -2,7 +2,7 @@
 title: "Depalletizer guard interlock micro switch symptoms: what do they indicate?"
 description: "depalletizer guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-30 19:02:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - depalletizer guard interlock micro switch symptoms

@@ -2,7 +2,7 @@
 title: "case packing machine home position micro switch continuity test"
 description: "case packing machine home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-08 15:46:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - case packing machine home position micro switch continuity test

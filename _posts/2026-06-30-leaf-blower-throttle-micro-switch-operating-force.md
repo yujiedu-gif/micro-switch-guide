@@ -2,7 +2,7 @@
 title: "leaf blower throttle micro switch operating force: What does it mean?"
 description: "leaf blower throttle micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-30 20:40:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - leaf blower throttle micro switch operating force

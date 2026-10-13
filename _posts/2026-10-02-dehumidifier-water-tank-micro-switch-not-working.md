@@ -2,7 +2,7 @@
 title: "dehumidifier water tank micro switch not working: How to distinguish likely causes"
 description: "dehumidifier water tank micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-02 16:24:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dehumidifier water tank micro switch not working

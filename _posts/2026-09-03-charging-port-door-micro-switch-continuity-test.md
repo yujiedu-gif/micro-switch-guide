@@ -2,7 +2,7 @@
 title: "Charging port door micro switch continuity test"
 description: "charging port door micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-03 11:04:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - charging port door micro switch continuity test

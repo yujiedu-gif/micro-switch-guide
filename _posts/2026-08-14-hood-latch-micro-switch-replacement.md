@@ -2,7 +2,7 @@
 title: "hood latch micro switch replacement: How to Verify the Fault and Replacement"
 description: "hood latch micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-08-14 15:31:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - hood latch micro switch replacement

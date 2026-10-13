@@ -2,7 +2,7 @@
 title: "Steering column lock micro switch continuity test: safe checks and limits"
 description: "steering column lock micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-12 10:18:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - steering column lock micro switch continuity test

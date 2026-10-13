@@ -2,7 +2,7 @@
 title: "Linear slide home position micro switch location: how to identify it"
 description: "linear slide home position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-01 21:46:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - linear slide home position micro switch location

@@ -2,7 +2,7 @@
 title: "Rotary indexing table travel limit micro switch wiring: How does it work?"
 description: "rotary indexing table travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-06 20:33:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - rotary indexing table travel limit micro switch wiring

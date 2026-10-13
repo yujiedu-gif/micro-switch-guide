@@ -2,7 +2,7 @@
 title: "Medical cart drawer micro switch adjustment: how to check actuation"
 description: "medical cart drawer micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-20 14:30:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - medical cart drawer micro switch adjustment

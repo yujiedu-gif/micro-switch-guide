@@ -2,7 +2,7 @@
 title: "Portable heater tip over micro switch wiring: how the connection works"
 description: "portable heater tip over micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-28 20:38:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - portable heater tip over micro switch wiring

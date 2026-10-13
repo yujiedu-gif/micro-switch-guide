@@ -2,7 +2,7 @@
 title: "Pick and place robot travel limit micro switch contact rating: What does it mean?"
 description: "pick and place robot travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-02 11:05:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pick and place robot travel limit micro switch contact rating

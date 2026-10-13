@@ -2,7 +2,7 @@
 title: "Dock leveler home position micro switch intermittent operation: how to trace the cause"
 description: "dock leveler home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-25 21:46:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dock leveler home position micro switch intermittent operation

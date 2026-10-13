@@ -2,7 +2,7 @@
 title: "Stacker crane end of stroke micro switch failure causes"
 description: "stacker crane end of stroke micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-02 20:55:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stacker crane end of stroke micro switch failure causes

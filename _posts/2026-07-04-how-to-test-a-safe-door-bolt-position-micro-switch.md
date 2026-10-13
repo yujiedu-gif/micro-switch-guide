@@ -2,7 +2,7 @@
 title: "How to test a safe door bolt position micro switch"
 description: "how to test a safe door bolt position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-04 20:21:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a safe door bolt position micro switch

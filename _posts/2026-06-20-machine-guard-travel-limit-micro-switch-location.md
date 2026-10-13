@@ -2,7 +2,7 @@
 title: "Machine guard travel limit micro switch location: how to assess placement"
 description: "machine guard travel limit micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-20 18:19:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - machine guard travel limit micro switch location

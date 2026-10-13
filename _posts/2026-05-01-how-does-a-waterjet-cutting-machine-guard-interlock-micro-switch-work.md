@@ -2,7 +2,7 @@
 title: "How does a waterjet cutting machine guard interlock micro switch work"
 description: "how does a waterjet cutting machine guard interlock micro switch work: Understand the operating idea, essential terminology, practical checks,."
 date: 2026-05-01 14:32:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a waterjet cutting machine guard interlock micro switch work

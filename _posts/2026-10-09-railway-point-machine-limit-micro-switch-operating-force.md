@@ -2,7 +2,7 @@
 title: "Railway point machine limit micro switch operating force: what does it mean?"
 description: "railway point machine limit micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-09 17:19:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - railway point machine limit micro switch operating force

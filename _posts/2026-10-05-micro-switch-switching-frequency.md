@@ -2,7 +2,7 @@
 title: "What Does Micro Switch Switching Frequency Mean?"
 description: "micro switch switching frequency: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-10-05 16:49:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch switching frequency

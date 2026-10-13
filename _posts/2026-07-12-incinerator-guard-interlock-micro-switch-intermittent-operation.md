@@ -2,7 +2,7 @@
 title: "Incinerator guard interlock micro switch intermittent operation: how to diagnose it"
 description: "incinerator guard interlock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-12 12:36:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - incinerator guard interlock micro switch intermittent operation

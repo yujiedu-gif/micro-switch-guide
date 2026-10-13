@@ -2,7 +2,7 @@
 title: "Satellite dish actuator closed position micro switch wiring: how to interpret the limit circuit"
 description: "satellite dish actuator closed position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-11 13:58:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - satellite dish actuator closed position micro switch wiring

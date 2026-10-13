@@ -2,7 +2,7 @@
 title: "Steering column lock micro switch contact rating: what does it mean?"
 description: "steering column lock micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-05 08:58:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - steering column lock micro switch contact rating

@@ -2,7 +2,7 @@
 title: "Clothes dryer door micro switch replacement: diagnosis and safe checks"
 description: "clothes dryer door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-10 19:03:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - clothes dryer door micro switch replacement

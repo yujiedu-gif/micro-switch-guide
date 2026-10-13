@@ -2,7 +2,7 @@
 title: "Moving walkway travel limit micro switch actuator travel"
 description: "moving walkway travel limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-13 15:57:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - moving walkway travel limit micro switch actuator travel

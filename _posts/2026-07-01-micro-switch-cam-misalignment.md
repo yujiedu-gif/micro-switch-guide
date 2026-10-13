@@ -2,7 +2,7 @@
 title: "Micro switch cam misalignment: how to diagnose the cause"
 description: "micro switch cam misalignment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-01 10:16:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch cam misalignment

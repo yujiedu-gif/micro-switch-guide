@@ -2,7 +2,7 @@
 title: "How to Test a Washer Fluid Level Micro Switch"
 description: "how to test a washer fluid level micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-13 17:59:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a washer fluid level micro switch

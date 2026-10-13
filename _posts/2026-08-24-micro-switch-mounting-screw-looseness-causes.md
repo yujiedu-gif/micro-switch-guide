@@ -2,7 +2,7 @@
 title: "Micro switch mounting screw looseness causes: what changes and how to diagnose it"
 description: "micro switch mounting screw looseness causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-24 08:33:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch mounting screw looseness causes

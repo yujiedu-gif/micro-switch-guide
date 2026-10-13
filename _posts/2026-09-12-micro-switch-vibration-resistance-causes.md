@@ -2,7 +2,7 @@
 title: "micro switch vibration resistance causes"
 description: "micro switch vibration resistance causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-12 15:54:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch vibration resistance causes

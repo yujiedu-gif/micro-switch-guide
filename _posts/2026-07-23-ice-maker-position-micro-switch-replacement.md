@@ -2,7 +2,7 @@
 title: "ice maker position micro switch replacement: How to Verify the Fault"
 description: "ice maker position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-23 18:36:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - ice maker position micro switch replacement

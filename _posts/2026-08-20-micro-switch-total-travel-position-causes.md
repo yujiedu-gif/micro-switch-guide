@@ -2,7 +2,7 @@
 title: "Micro switch total travel position causes"
 description: "micro switch total travel position causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-20 21:32:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch total travel position causes

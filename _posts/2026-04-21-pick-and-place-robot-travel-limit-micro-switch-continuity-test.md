@@ -2,7 +2,7 @@
 title: "Pick and place robot travel limit micro switch continuity test"
 description: "pick and place robot travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-21 21:26:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - pick and place robot travel limit micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Food slicing machine guard interlock micro switch symptoms: what do they mean?"
 description: "food slicing machine guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-22 21:16:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - food slicing machine guard interlock micro switch symptoms

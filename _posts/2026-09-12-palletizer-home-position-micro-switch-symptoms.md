@@ -2,7 +2,7 @@
 title: "Palletizer home position micro switch symptoms: how to distinguish possible causes"
 description: "palletizer home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-12 08:27:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - palletizer home position micro switch symptoms

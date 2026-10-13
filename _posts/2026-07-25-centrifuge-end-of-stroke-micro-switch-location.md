@@ -2,7 +2,7 @@
 title: "Centrifuge End of Stroke Micro Switch Location: How to Identify It"
 description: "centrifuge end of stroke micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-25 11:04:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - centrifuge end of stroke micro switch location

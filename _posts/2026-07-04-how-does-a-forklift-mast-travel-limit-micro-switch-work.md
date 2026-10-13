@@ -2,7 +2,7 @@
 title: "How Does a Forklift Mast Travel Limit Micro Switch Work?"
 description: "how does a forklift mast travel limit micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-04 15:13:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a forklift mast travel limit micro switch work

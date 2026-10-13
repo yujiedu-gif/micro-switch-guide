@@ -2,7 +2,7 @@
 title: "Autoclave door interlock micro switch maintenance"
 description: "autoclave door interlock micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-06 20:01:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - autoclave door interlock micro switch maintenance

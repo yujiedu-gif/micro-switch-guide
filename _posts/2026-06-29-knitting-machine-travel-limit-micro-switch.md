@@ -2,7 +2,7 @@
 title: "Knitting machine travel limit micro switch: How does it mark a travel endpoint?"
 description: "knitting machine travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-29 09:51:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - knitting machine travel limit micro switch

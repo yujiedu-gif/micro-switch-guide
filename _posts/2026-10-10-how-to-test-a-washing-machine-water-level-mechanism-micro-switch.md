@@ -2,7 +2,7 @@
 title: "How to Test a Washing Machine Water Level Mechanism Micro Switch"
 description: "how to test a washing machine water level mechanism micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-10-10 21:25:27 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a washing machine water level mechanism micro switch

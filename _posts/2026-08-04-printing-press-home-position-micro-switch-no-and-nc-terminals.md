@@ -2,7 +2,7 @@
 title: "printing press home position micro switch NO and NC terminals: What Do They Indicate?"
 description: "printing press home position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-04 14:45:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - printing press home position micro switch NO and NC terminals

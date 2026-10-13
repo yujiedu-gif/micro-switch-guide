@@ -2,7 +2,7 @@
 title: "Material feeder home position micro switch replacement: how to confirm the switch is faulty"
 description: "material feeder home position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-26 15:52:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - material feeder home position micro switch replacement

@@ -2,7 +2,7 @@
 title: "Food slicing machine guard interlock micro switch operating force: what does it mean?"
 description: "food slicing machine guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-09-22 12:28:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - food slicing machine guard interlock micro switch operating force

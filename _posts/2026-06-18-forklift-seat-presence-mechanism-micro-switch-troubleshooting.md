@@ -2,7 +2,7 @@
 title: "Forklift Seat Presence Mechanism Micro Switch Troubleshooting"
 description: "forklift seat presence mechanism micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-18 12:10:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - forklift seat presence mechanism micro switch troubleshooting

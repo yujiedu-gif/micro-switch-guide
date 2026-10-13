@@ -2,7 +2,7 @@
 title: "motorized valve guard interlock micro switch symptoms: what they can and cannot show"
 description: "motorized valve guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-02 16:08:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized valve guard interlock micro switch symptoms

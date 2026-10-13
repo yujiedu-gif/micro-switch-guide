@@ -2,7 +2,7 @@
 title: "Micro switch release speed troubleshooting"
 description: "micro switch release speed troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-25 13:17:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch release speed troubleshooting

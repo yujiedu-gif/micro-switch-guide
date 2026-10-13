@@ -2,7 +2,7 @@
 title: "bread maker lid micro switch NO and NC terminals: What the Labels Mean"
 description: "bread maker lid micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-01 15:48:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bread maker lid micro switch NO and NC terminals

@@ -2,7 +2,7 @@
 title: "micro switch shock resistance explained"
 description: "micro switch shock resistance explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-20 16:42:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch shock resistance explained

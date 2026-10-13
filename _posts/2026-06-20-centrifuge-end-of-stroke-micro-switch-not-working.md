@@ -2,7 +2,7 @@
 title: "Centrifuge End of Stroke Micro Switch Not Working: How to Diagnose It"
 description: "centrifuge end of stroke micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-20 08:57:42 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge end of stroke micro switch not working

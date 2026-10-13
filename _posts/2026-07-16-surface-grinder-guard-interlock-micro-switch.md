@@ -2,7 +2,7 @@
 title: "How a surface grinder guard interlock micro switch works"
 description: "surface grinder guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-16 21:01:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - surface grinder guard interlock micro switch

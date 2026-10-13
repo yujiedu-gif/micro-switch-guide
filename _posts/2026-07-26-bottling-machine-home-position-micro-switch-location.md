@@ -2,7 +2,7 @@
 title: "Bottling machine home position micro switch location: How to identify it"
 description: "bottling machine home position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-26 21:12:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bottling machine home position micro switch location

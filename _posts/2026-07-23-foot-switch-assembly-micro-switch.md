@@ -2,7 +2,7 @@
 title: "Foot switch assembly micro switch: how the component works"
 description: "foot switch assembly micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-23 14:19:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - foot switch assembly micro switch

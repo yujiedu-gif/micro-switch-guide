@@ -2,7 +2,7 @@
 title: "Escalator closed position micro switch maintenance: inspection and verification"
 description: "escalator closed position micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-16 18:50:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - escalator closed position micro switch maintenance

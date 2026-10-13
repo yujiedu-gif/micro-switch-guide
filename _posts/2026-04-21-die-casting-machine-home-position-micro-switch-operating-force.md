@@ -2,7 +2,7 @@
 title: "die casting machine home position micro switch operating force: What Does It Mean?"
 description: "die casting machine home position micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-21 17:06:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - die casting machine home position micro switch operating force

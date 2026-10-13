@@ -2,7 +2,7 @@
 title: "scanner lid micro switch NO and NC terminals: What Do They Mean?"
 description: "scanner lid micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-09 15:28:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - scanner lid micro switch NO and NC terminals

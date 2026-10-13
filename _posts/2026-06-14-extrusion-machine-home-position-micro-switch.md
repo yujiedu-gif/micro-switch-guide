@@ -2,7 +2,7 @@
 title: "Extrusion machine home position micro switch: how does it mark home?"
 description: "extrusion machine home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-14 08:31:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine home position micro switch

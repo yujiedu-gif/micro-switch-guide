@@ -2,7 +2,7 @@
 title: "Sheet Metal Brake End of Stroke Micro Switch Adjustment"
 description: "sheet metal brake end of stroke micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-16 20:17:10 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sheet metal brake end of stroke micro switch adjustment

@@ -2,7 +2,7 @@
 title: "Linear slide end of stroke micro switch location: how to find it"
 description: "linear slide end of stroke micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-21 09:51:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - linear slide end of stroke micro switch location

@@ -2,7 +2,7 @@
 title: "Charging port door micro switch contact rating: how to interpret it"
 description: "charging port door micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-30 18:08:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - charging port door micro switch contact rating

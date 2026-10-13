@@ -2,7 +2,7 @@
 title: "solar tracker open position micro switch NO and NC terminals: What the Contacts Mean"
 description: "solar tracker open position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-05 13:30:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - solar tracker open position micro switch NO and NC terminals

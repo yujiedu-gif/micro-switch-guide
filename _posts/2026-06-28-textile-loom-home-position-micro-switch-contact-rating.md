@@ -2,7 +2,7 @@
 title: "Textile Loom Home Position Micro Switch Contact Rating: What Does It Mean?"
 description: "textile loom home position micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-28 17:00:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - textile loom home position micro switch contact rating

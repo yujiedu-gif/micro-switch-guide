@@ -2,7 +2,7 @@
 title: "Infusion pump door micro switch continuity test: what can it tell you?"
 description: "infusion pump door micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-27 08:19:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - infusion pump door micro switch continuity test

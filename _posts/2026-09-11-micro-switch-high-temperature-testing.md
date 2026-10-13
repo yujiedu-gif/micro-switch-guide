@@ -2,7 +2,7 @@
 title: "Micro switch high temperature testing: What Does It Establish?"
 description: "micro switch high temperature testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-11 16:27:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch high temperature testing

@@ -2,7 +2,7 @@
 title: "Micro Switch Movement Differential Prevention: How Differential Travel Helps"
 description: "micro switch movement differential prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-16 13:58:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch movement differential prevention

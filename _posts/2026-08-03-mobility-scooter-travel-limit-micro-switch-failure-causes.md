@@ -2,7 +2,7 @@
 title: "Mobility scooter travel limit micro switch failure causes"
 description: "mobility scooter travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-03 13:56:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - mobility scooter travel limit micro switch failure causes

@@ -2,7 +2,7 @@
 title: "Laser Cutting Machine Guard Interlock Micro Switch Operating Force: What Does It Mean?"
 description: "laser cutting machine guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-07-19 14:08:40 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laser cutting machine guard interlock micro switch operating force

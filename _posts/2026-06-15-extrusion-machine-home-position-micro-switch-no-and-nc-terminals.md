@@ -2,7 +2,7 @@
 title: "Extrusion machine home position micro switch NO and NC terminals: how to interpret them"
 description: "extrusion machine home position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-15 14:49:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine home position micro switch NO and NC terminals

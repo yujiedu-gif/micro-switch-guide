@@ -2,7 +2,7 @@
 title: "HVAC micro switch: What It Does in a System"
 description: "HVAC micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-07-24 09:56:08 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - HVAC micro switch

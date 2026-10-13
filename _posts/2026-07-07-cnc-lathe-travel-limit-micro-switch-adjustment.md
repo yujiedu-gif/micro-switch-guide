@@ -2,7 +2,7 @@
 title: "CNC lathe travel limit micro switch adjustment: safe setup and verification"
 description: "cnc lathe travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-07 08:37:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc lathe travel limit micro switch adjustment

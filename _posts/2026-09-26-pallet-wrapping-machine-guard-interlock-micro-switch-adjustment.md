@@ -2,7 +2,7 @@
 title: "Pallet Wrapping Machine Guard Interlock Micro Switch Adjustment"
 description: "pallet wrapping machine guard interlock micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-26 17:43:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pallet wrapping machine guard interlock micro switch adjustment

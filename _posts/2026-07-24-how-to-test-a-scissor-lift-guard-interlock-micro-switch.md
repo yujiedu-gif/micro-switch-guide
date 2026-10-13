@@ -2,7 +2,7 @@
 title: "How to test a scissor lift guard interlock micro switch"
 description: "how to test a scissor lift guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-24 09:01:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a scissor lift guard interlock micro switch

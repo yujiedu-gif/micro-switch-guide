@@ -2,7 +2,7 @@
 title: "Sump pump travel limit micro switch symptoms: what do they indicate?"
 description: "sump pump travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-26 11:36:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - sump pump travel limit micro switch symptoms

@@ -2,7 +2,7 @@
 title: "Temperature switch mechanism micro switch actuator travel: how movement operates the switch"
 description: "temperature switch mechanism micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-24 14:49:43 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - temperature switch mechanism micro switch actuator travel

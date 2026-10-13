@@ -2,7 +2,7 @@
 title: "Blow molding machine travel limit micro switch wiring"
 description: "blow molding machine travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-12 18:16:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - blow molding machine travel limit micro switch wiring

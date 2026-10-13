@@ -2,7 +2,7 @@
 title: "Sump pump home position micro switch symptoms"
 description: "sump pump home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-10 15:42:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - sump pump home position micro switch symptoms

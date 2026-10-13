@@ -2,7 +2,7 @@
 title: "Fuel filler door micro switch troubleshooting"
 description: "fuel filler door micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-18 09:24:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - fuel filler door micro switch troubleshooting

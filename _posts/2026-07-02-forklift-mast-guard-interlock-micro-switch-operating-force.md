@@ -2,7 +2,7 @@
 title: "Forklift mast guard interlock micro switch operating force"
 description: "forklift mast guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-02 14:57:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - forklift mast guard interlock micro switch operating force

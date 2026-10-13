@@ -2,7 +2,7 @@
 title: "humidifier water level micro switch not working: causes and checks"
 description: "humidifier water level micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-01 18:33:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - humidifier water level micro switch not working

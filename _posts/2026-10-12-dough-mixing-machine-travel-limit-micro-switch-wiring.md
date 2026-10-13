@@ -2,7 +2,7 @@
 title: "Dough mixing machine travel limit micro switch wiring: How the circuit relationship works"
 description: "dough mixing machine travel limit micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-12 11:59:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dough mixing machine travel limit micro switch wiring

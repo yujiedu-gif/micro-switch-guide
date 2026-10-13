@@ -2,7 +2,7 @@
 title: "Forklift mast guard interlock micro switch troubleshooting"
 description: "forklift mast guard interlock micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-24 17:12:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - forklift mast guard interlock micro switch troubleshooting

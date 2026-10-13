@@ -2,7 +2,7 @@
 title: "Sheet Metal Brake Guard Interlock Micro Switch Operating Force: What Does It Mean?"
 description: "sheet metal brake guard interlock micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-02 17:00:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - sheet metal brake guard interlock micro switch operating force

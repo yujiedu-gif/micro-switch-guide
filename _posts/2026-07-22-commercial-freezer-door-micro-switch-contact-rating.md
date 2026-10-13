@@ -2,7 +2,7 @@
 title: "Commercial freezer door micro switch contact rating: what does it mean?"
 description: "commercial freezer door micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-22 09:36:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - commercial freezer door micro switch contact rating

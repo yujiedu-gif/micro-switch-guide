@@ -2,7 +2,7 @@
 title: "Moving walkway closed position micro switch adjustment"
 description: "moving walkway closed position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-25 13:12:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - moving walkway closed position micro switch adjustment

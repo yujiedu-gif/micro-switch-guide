@@ -2,7 +2,7 @@
 title: "Pick and place robot guard interlock micro switch actuator travel"
 description: "pick and place robot guard interlock micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-04-29 20:20:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - pick and place robot guard interlock micro switch actuator travel

@@ -2,7 +2,7 @@
 title: "Micro switch dust exposure troubleshooting"
 description: "micro switch dust exposure troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-09-29 10:19:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch dust exposure troubleshooting

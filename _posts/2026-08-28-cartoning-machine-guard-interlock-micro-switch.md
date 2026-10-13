@@ -2,7 +2,7 @@
 title: "Cartoning machine guard interlock micro switch: what does it do?"
 description: "cartoning machine guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-28 21:14:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cartoning machine guard interlock micro switch

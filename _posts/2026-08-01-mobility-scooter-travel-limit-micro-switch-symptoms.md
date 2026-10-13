@@ -2,7 +2,7 @@
 title: "Mobility scooter travel limit micro switch symptoms: what may indicate a switch issue?"
 description: "mobility scooter travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-01 13:25:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - mobility scooter travel limit micro switch symptoms

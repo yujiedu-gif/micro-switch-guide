@@ -2,7 +2,7 @@
 title: "Stand mixer head lock micro switch replacement: what should you verify?"
 description: "stand mixer head lock micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-27 08:44:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - stand mixer head lock micro switch replacement

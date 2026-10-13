@@ -2,7 +2,7 @@
 title: "Food slicing machine end of stroke micro switch: how does it work?"
 description: "food slicing machine end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-11 21:50:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - food slicing machine end of stroke micro switch

@@ -2,7 +2,7 @@
 title: "Ceiling fan pull mechanism micro switch replacement: what to check first"
 description: "ceiling fan pull mechanism micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-02 14:49:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - ceiling fan pull mechanism micro switch replacement

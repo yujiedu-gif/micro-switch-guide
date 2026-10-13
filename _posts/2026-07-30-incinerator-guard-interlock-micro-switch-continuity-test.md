@@ -2,7 +2,7 @@
 title: "incinerator guard interlock micro switch continuity test: What the Reading Can Tell You"
 description: "incinerator guard interlock micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-30 18:00:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - incinerator guard interlock micro switch continuity test

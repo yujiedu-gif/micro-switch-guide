@@ -2,7 +2,7 @@
 title: "Palletizer guard interlock micro switch: how does it work?"
 description: "palletizer guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-23 08:11:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - palletizer guard interlock micro switch

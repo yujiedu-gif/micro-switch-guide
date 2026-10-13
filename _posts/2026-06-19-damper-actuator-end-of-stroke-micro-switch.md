@@ -2,7 +2,7 @@
 title: "damper actuator end of stroke micro switch: How It Works"
 description: "damper actuator end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-19 10:55:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - damper actuator end of stroke micro switch

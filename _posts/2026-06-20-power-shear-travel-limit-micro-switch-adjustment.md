@@ -2,7 +2,7 @@
 title: "power shear travel limit micro switch adjustment: What to Check"
 description: "power shear travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-20 14:31:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - power shear travel limit micro switch adjustment

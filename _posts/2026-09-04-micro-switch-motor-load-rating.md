@@ -2,7 +2,7 @@
 title: "Micro switch motor load rating: what does it mean?"
 description: "micro switch motor load rating: learn what a motor-specific rating means, which operating conditions matter, and what to verify before judging suitability."
 date: 2026-09-04 09:02:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch motor load rating

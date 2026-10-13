@@ -2,7 +2,7 @@
 title: "atex pin plunger micro switch: What Does the Designation Mean?"
 description: "atex pin plunger micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-10-07 19:22:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - atex pin plunger micro switch

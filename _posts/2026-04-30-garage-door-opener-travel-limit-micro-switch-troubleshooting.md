@@ -2,7 +2,7 @@
 title: "garage door opener travel limit micro switch troubleshooting"
 description: "garage door opener travel limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-30 13:35:22 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - garage door opener travel limit micro switch troubleshooting

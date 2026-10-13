@@ -2,7 +2,7 @@
 title: "Micro Switch Roller Wear Prevention: How to Reduce Actuator Wear"
 description: "micro switch roller wear prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-28 20:19:11 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch roller wear prevention

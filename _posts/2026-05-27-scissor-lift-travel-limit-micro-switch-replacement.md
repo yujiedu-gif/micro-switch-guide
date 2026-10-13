@@ -2,7 +2,7 @@
 title: "Scissor lift travel limit micro switch replacement"
 description: "scissor lift travel limit micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-27 18:37:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - scissor lift travel limit micro switch replacement

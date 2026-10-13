@@ -2,7 +2,7 @@
 title: "Extrusion machine travel limit micro switch actuator travel"
 description: "extrusion machine travel limit micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-28 10:15:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - extrusion machine travel limit micro switch actuator travel

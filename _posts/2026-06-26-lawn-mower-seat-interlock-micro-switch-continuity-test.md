@@ -2,7 +2,7 @@
 title: "Lawn mower seat interlock micro switch continuity test"
 description: "lawn mower seat interlock micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-26 17:16:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - lawn mower seat interlock micro switch continuity test

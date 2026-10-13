@@ -2,7 +2,7 @@
 title: "motorized curtain open position micro switch symptoms"
 description: "motorized curtain open position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-10 15:33:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized curtain open position micro switch symptoms

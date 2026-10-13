@@ -2,7 +2,7 @@
 title: "Spring plunger micro switch adjustment: what can you change?"
 description: "spring plunger micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-26 09:35:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - spring plunger micro switch adjustment

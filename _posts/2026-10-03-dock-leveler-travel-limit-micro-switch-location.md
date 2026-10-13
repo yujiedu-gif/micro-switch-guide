@@ -2,7 +2,7 @@
 title: "Dock leveler travel limit micro switch location"
 description: "dock leveler travel limit micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-03 20:21:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler travel limit micro switch location

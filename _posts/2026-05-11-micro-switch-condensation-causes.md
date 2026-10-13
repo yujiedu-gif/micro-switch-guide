@@ -2,7 +2,7 @@
 title: "Micro switch condensation causes: What can make a micro switch condense?"
 description: "micro switch condensation causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-11 15:29:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch condensation causes

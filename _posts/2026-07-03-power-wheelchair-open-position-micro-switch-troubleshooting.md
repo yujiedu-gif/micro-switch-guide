@@ -2,7 +2,7 @@
 title: "Power wheelchair open position micro switch troubleshooting"
 description: "power wheelchair open position micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-03 13:42:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - power wheelchair open position micro switch troubleshooting

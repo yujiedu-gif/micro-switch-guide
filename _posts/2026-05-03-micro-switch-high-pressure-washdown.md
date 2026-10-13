@@ -2,7 +2,7 @@
 title: "Micro switch high pressure washdown: what protection can you verify?"
 description: "micro switch high pressure washdown: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-03 18:36:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Waterproof Switches
 tags:
   - micro switch high pressure washdown

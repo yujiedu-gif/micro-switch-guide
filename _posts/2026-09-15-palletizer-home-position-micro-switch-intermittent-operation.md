@@ -2,7 +2,7 @@
 title: "Palletizer home position micro switch intermittent operation: how to isolate the fault"
 description: "palletizer home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-15 08:49:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - palletizer home position micro switch intermittent operation

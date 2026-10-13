@@ -2,7 +2,7 @@
 title: "depalletizer travel limit micro switch: How It Marks an Endpoint"
 description: "depalletizer travel limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-18 21:10:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer travel limit micro switch

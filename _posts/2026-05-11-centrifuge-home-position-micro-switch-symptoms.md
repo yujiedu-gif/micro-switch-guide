@@ -2,7 +2,7 @@
 title: "centrifuge home position micro switch symptoms: What They May Indicate"
 description: "centrifuge home position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-11 13:51:21 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge home position micro switch symptoms

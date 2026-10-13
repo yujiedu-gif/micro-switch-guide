@@ -2,7 +2,7 @@
 title: "micro switch intermittent continuity selection: How to Diagnose an Unstable Reading"
 description: "micro switch intermittent continuity selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-24 17:57:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch intermittent continuity selection

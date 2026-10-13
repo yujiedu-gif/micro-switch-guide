@@ -2,7 +2,7 @@
 title: "Clothes dryer door micro switch failure causes: how to distinguish switch faults"
 description: "clothes dryer door micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-14 18:21:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - clothes dryer door micro switch failure causes

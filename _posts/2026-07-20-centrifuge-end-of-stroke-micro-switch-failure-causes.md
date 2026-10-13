@@ -2,7 +2,7 @@
 title: "Centrifuge End of Stroke Micro Switch Failure Causes"
 description: "centrifuge end of stroke micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-20 21:12:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - centrifuge end of stroke micro switch failure causes

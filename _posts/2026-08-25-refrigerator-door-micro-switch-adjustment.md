@@ -2,7 +2,7 @@
 title: "Refrigerator door micro switch adjustment: how to assess actuator alignment"
 description: "refrigerator door micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-25 21:28:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - refrigerator door micro switch adjustment

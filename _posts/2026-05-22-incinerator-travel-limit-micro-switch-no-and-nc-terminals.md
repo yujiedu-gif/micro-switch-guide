@@ -2,7 +2,7 @@
 title: "Incinerator travel limit micro switch NO and NC terminals: How Do They Relate to Travel?"
 description: "incinerator travel limit micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-22 15:39:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incinerator travel limit micro switch NO and NC terminals

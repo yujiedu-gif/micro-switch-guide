@@ -2,7 +2,7 @@
 title: "Hospital bed travel limit micro switch intermittent operation: how to distinguish causes"
 description: "hospital bed travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-08-20 21:30:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - hospital bed travel limit micro switch intermittent operation

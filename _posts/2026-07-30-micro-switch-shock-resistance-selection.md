@@ -2,7 +2,7 @@
 title: "Micro Switch Shock Resistance Selection: What to Verify"
 description: "micro switch shock resistance selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-30 19:00:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch shock resistance selection

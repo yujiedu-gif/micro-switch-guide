@@ -2,7 +2,7 @@
 title: "Laser cutting machine travel limit micro switch function"
 description: "laser cutting machine travel limit micro switch function: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-27 21:07:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laser cutting machine travel limit micro switch function

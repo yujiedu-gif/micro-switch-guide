@@ -2,7 +2,7 @@
 title: "How does a vacuum packaging machine end of stroke micro switch work"
 description: "how does a vacuum packaging machine end of stroke micro switch work: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-08-31 19:16:32 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a vacuum packaging machine end of stroke micro switch work

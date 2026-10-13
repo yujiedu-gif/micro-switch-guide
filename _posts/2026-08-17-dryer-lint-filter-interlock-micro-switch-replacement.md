@@ -2,7 +2,7 @@
 title: "Dryer Lint Filter Interlock Micro Switch Replacement: How to Verify the Fault"
 description: "dryer lint filter interlock micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-17 09:43:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dryer lint filter interlock micro switch replacement

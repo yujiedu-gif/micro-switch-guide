@@ -2,7 +2,7 @@
 title: "Motorcycle side stand micro switch replacement: how to verify the fault"
 description: "motorcycle side stand micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-07-29 20:33:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorcycle side stand micro switch replacement

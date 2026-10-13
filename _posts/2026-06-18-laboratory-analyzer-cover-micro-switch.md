@@ -2,7 +2,7 @@
 title: "laboratory analyzer cover micro switch: How it detects cover position"
 description: "laboratory analyzer cover micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-18 08:46:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laboratory analyzer cover micro switch

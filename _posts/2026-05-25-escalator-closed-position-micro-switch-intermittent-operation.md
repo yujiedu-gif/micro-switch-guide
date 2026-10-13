@@ -2,7 +2,7 @@
 title: "Escalator closed position micro switch intermittent operation: How to diagnose it"
 description: "escalator closed position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-25 20:34:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - escalator closed position micro switch intermittent operation

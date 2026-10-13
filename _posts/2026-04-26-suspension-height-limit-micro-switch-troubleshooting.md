@@ -2,7 +2,7 @@
 title: "Suspension height limit micro switch troubleshooting: a diagnostic path"
 description: "suspension height limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-26 10:40:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - suspension height limit micro switch troubleshooting

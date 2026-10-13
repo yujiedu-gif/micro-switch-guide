@@ -2,7 +2,7 @@
 title: "Micro switch corrosive atmosphere: how to assess suitability"
 description: "micro switch corrosive atmosphere: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-15 15:42:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch corrosive atmosphere

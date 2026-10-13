@@ -2,7 +2,7 @@
 title: "What Is a micro switch contact gap?"
 description: "micro switch contact gap: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-07-27 12:53:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch contact gap

@@ -2,7 +2,7 @@
 title: "Center console latch micro switch operating force: what does it mean?"
 description: "center console latch micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-08 10:45:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - center console latch micro switch operating force

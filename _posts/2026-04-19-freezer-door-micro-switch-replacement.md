@@ -2,7 +2,7 @@
 title: "Freezer Door Micro Switch Replacement: How to Confirm the Switch Is the Problem"
 description: "freezer door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-19 18:31:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - freezer door micro switch replacement

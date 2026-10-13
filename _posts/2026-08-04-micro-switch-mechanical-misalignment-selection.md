@@ -2,7 +2,7 @@
 title: "micro switch mechanical misalignment selection"
 description: "micro switch mechanical misalignment selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-04 14:04:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch mechanical misalignment selection

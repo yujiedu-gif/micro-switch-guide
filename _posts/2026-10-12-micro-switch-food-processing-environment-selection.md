@@ -2,7 +2,7 @@
 title: "Micro switch food processing environment selection"
 description: "micro switch food processing environment selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-12 18:22:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch food processing environment selection

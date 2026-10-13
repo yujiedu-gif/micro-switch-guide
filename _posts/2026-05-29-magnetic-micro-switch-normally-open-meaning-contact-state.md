@@ -2,7 +2,7 @@
 title: "magnetic micro switch normally open: Meaning and Contact State"
 description: "magnetic micro switch normally open: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-29 13:04:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - magnetic micro switch normally open

@@ -2,7 +2,7 @@
 title: "Depalletizer End of Stroke Micro Switch Intermittent Operation: How to Diagnose It"
 description: "depalletizer end of stroke micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-20 19:45:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - depalletizer end of stroke micro switch intermittent operation

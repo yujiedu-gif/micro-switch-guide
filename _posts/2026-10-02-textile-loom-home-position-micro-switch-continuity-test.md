@@ -2,7 +2,7 @@
 title: "Textile loom home position micro switch continuity test"
 description: "textile loom home position micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-02 08:46:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - textile loom home position micro switch continuity test

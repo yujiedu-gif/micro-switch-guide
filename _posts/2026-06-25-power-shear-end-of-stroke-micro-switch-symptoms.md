@@ -2,7 +2,7 @@
 title: "Power shear end of stroke micro switch symptoms: what do they indicate?"
 description: "power shear end of stroke micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-25 17:45:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - power shear end of stroke micro switch symptoms

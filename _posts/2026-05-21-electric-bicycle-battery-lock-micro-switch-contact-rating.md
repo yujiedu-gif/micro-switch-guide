@@ -2,7 +2,7 @@
 title: "Electric bicycle battery lock micro switch contact rating"
 description: "electric bicycle battery lock micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-21 09:48:16 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric bicycle battery lock micro switch contact rating

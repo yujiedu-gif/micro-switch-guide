@@ -2,7 +2,7 @@
 title: "Micro switch clearance distance causes"
 description: "micro switch clearance distance causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-26 12:01:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch clearance distance causes

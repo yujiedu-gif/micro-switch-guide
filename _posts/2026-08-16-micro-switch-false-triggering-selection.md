@@ -2,7 +2,7 @@
 title: "Micro Switch False Triggering Selection: How to Choose for Reliable Actuation"
 description: "micro switch false triggering selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-16 21:22:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch false triggering selection

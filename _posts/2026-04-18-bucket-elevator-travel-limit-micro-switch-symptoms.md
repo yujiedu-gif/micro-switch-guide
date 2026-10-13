@@ -2,7 +2,7 @@
 title: "Bucket elevator travel limit micro switch symptoms: What do they indicate?"
 description: "bucket elevator travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-18 20:04:45 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - bucket elevator travel limit micro switch symptoms

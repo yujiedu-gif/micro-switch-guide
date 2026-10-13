@@ -2,7 +2,7 @@
 title: "Micro switch explosive atmosphere causes: how ignition risks arise"
 description: "micro switch explosive atmosphere causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-22 08:22:29 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Basics
 tags:
   - micro switch explosive atmosphere causes

@@ -2,7 +2,7 @@
 title: "Tailgate latch micro switch contact rating: what does it mean?"
 description: "tailgate latch micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-07-10 09:10:39 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - tailgate latch micro switch contact rating

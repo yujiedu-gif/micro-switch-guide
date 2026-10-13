@@ -2,7 +2,7 @@
 title: "Motorcycle Seat Latch Micro Switch Intermittent Operation: How to Isolate the Fault"
 description: "motorcycle seat latch micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-20 08:45:35 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorcycle seat latch micro switch intermittent operation

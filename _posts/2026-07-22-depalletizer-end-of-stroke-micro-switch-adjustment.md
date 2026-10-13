@@ -2,7 +2,7 @@
 title: "Depalletizer end of stroke micro switch adjustment"
 description: "depalletizer end of stroke micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-22 15:53:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer end of stroke micro switch adjustment

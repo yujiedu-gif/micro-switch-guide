@@ -2,7 +2,7 @@
 title: "Copier door micro switch replacement: how to assess the switch"
 description: "copier door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-03 15:31:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - copier door micro switch replacement

@@ -2,7 +2,7 @@
 title: "Electric fan oscillation limit micro switch replacement: how to assess fit and fault"
 description: "electric fan oscillation limit micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-10 13:41:18 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric fan oscillation limit micro switch replacement

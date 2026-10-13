@@ -2,7 +2,7 @@
 title: "Book Binding Machine Travel Limit Micro Switch Continuity Test"
 description: "book binding machine travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-06-30 08:48:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - book binding machine travel limit micro switch continuity test

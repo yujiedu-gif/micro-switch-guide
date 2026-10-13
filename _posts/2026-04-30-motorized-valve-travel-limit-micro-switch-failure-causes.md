@@ -2,7 +2,7 @@
 title: "Motorized valve travel limit micro switch failure causes"
 description: "motorized valve travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-04-30 12:38:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - motorized valve travel limit micro switch failure causes

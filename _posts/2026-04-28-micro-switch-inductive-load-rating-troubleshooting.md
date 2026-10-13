@@ -2,7 +2,7 @@
 title: "Micro switch inductive load rating troubleshooting"
 description: "micro switch inductive load rating troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-28 20:09:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch inductive load rating troubleshooting

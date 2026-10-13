@@ -2,7 +2,7 @@
 title: "Swing gate opener open position micro switch actuator travel"
 description: "swing gate opener open position micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-04 10:03:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - swing gate opener open position micro switch actuator travel

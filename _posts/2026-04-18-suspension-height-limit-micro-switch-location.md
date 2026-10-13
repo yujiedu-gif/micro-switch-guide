@@ -2,7 +2,7 @@
 title: "Suspension height limit micro switch location: where to find it"
 description: "suspension height limit micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-18 16:31:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - suspension height limit micro switch location

@@ -2,7 +2,7 @@
 title: "Blow molding machine travel limit micro switch symptoms: how to distinguish causes"
 description: "blow molding machine travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-04-19 17:57:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - blow molding machine travel limit micro switch symptoms

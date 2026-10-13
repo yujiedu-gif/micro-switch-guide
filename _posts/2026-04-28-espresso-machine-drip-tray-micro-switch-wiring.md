@@ -2,7 +2,7 @@
 title: "Espresso machine drip tray micro switch wiring: how to identify the circuit"
 description: "espresso machine drip tray micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-28 11:14:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - espresso machine drip tray micro switch wiring

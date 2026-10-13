@@ -2,7 +2,7 @@
 title: "server rack door micro switch: How It Detects Door Movement"
 description: "server rack door micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-09 19:09:04 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - server rack door micro switch

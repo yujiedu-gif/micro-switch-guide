@@ -2,7 +2,7 @@
 title: "Industrial door end of stroke micro switch intermittent operation: How to diagnose it"
 description: "industrial door end of stroke micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-10-02 17:47:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - industrial door end of stroke micro switch intermittent operation

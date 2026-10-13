@@ -2,7 +2,7 @@
 title: "control cabinet door micro switch NO and NC terminals: What Do They Mean?"
 description: "control cabinet door micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-13 19:39:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - control cabinet door micro switch NO and NC terminals

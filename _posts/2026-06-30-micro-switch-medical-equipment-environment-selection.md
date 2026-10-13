@@ -2,7 +2,7 @@
 title: "micro switch medical equipment environment selection"
 description: "micro switch medical equipment environment selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-30 19:59:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch medical equipment environment selection

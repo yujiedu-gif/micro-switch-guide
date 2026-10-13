@@ -2,7 +2,7 @@
 title: "Bread Maker Lid Micro Switch Adjustment: How to Assess Actuation"
 description: "bread maker lid micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-05-13 08:52:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bread maker lid micro switch adjustment

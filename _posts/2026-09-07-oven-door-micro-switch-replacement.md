@@ -2,7 +2,7 @@
 title: "Oven door micro switch replacement: how to verify the fault"
 description: "oven door micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-07 11:30:58 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - oven door micro switch replacement

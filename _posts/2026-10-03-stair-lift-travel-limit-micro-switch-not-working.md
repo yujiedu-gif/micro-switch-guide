@@ -2,7 +2,7 @@
 title: "Stair lift travel limit micro switch not working: how to diagnose it"
 description: "stair lift travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-10-03 17:25:48 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - stair lift travel limit micro switch not working

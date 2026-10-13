@@ -2,7 +2,7 @@
 title: "Sliding door latch micro switch contact rating"
 description: "sliding door latch micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-03 10:52:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - sliding door latch micro switch contact rating

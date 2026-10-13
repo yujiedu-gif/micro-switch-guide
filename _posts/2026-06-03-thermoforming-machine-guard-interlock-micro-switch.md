@@ -2,7 +2,7 @@
 title: "Thermoforming Machine Guard Interlock Micro Switch: What Does It Do?"
 description: "thermoforming machine guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-03 09:45:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - thermoforming machine guard interlock micro switch

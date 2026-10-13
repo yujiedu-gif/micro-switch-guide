@@ -2,7 +2,7 @@
 title: "Shift lever position micro switch location: how to identify it"
 description: "shift lever position micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-14 19:39:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - shift lever position micro switch location

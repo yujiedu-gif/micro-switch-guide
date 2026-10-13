@@ -2,7 +2,7 @@
 title: "steering column lock micro switch NO and NC terminals"
 description: "steering column lock micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-19 12:50:20 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - steering column lock micro switch NO and NC terminals

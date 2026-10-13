@@ -2,7 +2,7 @@
 title: "Security barrier open position micro switch wiring: how does it work?"
 description: "security barrier open position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-01 10:34:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - security barrier open position micro switch wiring

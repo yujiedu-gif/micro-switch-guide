@@ -2,7 +2,7 @@
 title: "Microscope Stage Limit Micro Switch Intermittent Operation: How to Diagnose It"
 description: "microscope stage limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-09-08 11:49:53 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - microscope stage limit micro switch intermittent operation

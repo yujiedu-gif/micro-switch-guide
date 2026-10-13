@@ -2,7 +2,7 @@
 title: "Leaf blower throttle micro switch wiring: how to identify the connections"
 description: "leaf blower throttle micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-11 12:53:47 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - leaf blower throttle micro switch wiring

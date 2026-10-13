@@ -2,7 +2,7 @@
 title: "Chainsaw brake mechanism micro switch wiring: how the switch relates to the brake"
 description: "chainsaw brake mechanism micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-24 15:08:31 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - chainsaw brake mechanism micro switch wiring

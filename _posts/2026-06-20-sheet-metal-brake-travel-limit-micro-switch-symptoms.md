@@ -2,7 +2,7 @@
 title: "Sheet Metal Brake Travel Limit Micro Switch Symptoms: How to Diagnose Them"
 description: "sheet metal brake travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-20 16:26:12 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - sheet metal brake travel limit micro switch symptoms

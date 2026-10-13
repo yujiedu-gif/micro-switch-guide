@@ -2,7 +2,7 @@
 title: "Dock leveler home position micro switch actuator travel: how does it work?"
 description: "dock leveler home position micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-07 14:22:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler home position micro switch actuator travel

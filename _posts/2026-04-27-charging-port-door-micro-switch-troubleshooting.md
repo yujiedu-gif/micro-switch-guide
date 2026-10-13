@@ -2,7 +2,7 @@
 title: "Charging port door micro switch troubleshooting"
 description: "charging port door micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-27 21:39:02 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - charging port door micro switch troubleshooting

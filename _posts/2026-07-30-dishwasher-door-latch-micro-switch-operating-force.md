@@ -2,7 +2,7 @@
 title: "dishwasher door latch micro switch operating force: What Does It Mean?"
 description: "dishwasher door latch micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-30 15:50:25 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dishwasher door latch micro switch operating force

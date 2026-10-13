@@ -2,7 +2,7 @@
 title: "server rack door micro switch contact rating"
 description: "server rack door micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-09 09:56:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - server rack door micro switch contact rating

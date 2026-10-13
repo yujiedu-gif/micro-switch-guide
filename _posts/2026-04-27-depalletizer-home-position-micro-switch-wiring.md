@@ -2,7 +2,7 @@
 title: "Depalletizer home position micro switch wiring: how does it work?"
 description: "depalletizer home position micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-04-27 08:46:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - depalletizer home position micro switch wiring

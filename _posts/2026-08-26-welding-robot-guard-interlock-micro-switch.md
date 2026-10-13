@@ -2,7 +2,7 @@
 title: "Welding robot guard interlock micro switch: how the component works"
 description: "welding robot guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-26 19:19:06 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - welding robot guard interlock micro switch

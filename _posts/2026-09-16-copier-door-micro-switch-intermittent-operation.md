@@ -2,7 +2,7 @@
 title: "Copier door micro switch intermittent operation: how to narrow the cause"
 description: "copier door micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-16 12:38:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - copier door micro switch intermittent operation

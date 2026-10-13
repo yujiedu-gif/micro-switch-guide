@@ -2,7 +2,7 @@
 title: "Die casting machine travel limit micro switch intermittent operation: How to diagnose it"
 description: "die casting machine travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
 date: 2026-07-13 13:53:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - die casting machine travel limit micro switch intermittent operation

@@ -2,7 +2,7 @@
 title: "Microscope stage limit micro switch failure causes: how to distinguish faults"
 description: "microscope stage limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-07-06 10:58:55 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - microscope stage limit micro switch failure causes

@@ -2,7 +2,7 @@
 title: "Micro switch contact oxidation troubleshooting"
 description: "micro switch contact oxidation troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-02 21:52:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch contact oxidation troubleshooting

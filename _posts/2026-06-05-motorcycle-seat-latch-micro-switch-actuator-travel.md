@@ -2,7 +2,7 @@
 title: "Motorcycle seat latch micro switch actuator travel"
 description: "motorcycle seat latch micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-05 08:55:19 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorcycle seat latch micro switch actuator travel

@@ -2,7 +2,7 @@
 title: "Incinerator Travel Limit Micro Switch Adjustment: Mechanism and Verification"
 description: "incinerator travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-08-05 08:58:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - incinerator travel limit micro switch adjustment

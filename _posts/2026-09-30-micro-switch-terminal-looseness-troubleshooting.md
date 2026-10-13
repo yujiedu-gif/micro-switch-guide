@@ -2,7 +2,7 @@
 title: "micro switch terminal looseness troubleshooting: how to distinguish connection and mounting problems"
 description: "micro switch terminal looseness troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-30 15:02:30 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch terminal looseness troubleshooting

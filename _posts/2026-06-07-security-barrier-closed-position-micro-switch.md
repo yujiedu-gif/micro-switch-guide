@@ -2,7 +2,7 @@
 title: "How a security barrier closed position micro switch works"
 description: "security barrier closed position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-07 18:16:15 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - security barrier closed position micro switch

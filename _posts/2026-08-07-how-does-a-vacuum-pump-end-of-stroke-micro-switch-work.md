@@ -2,7 +2,7 @@
 title: "How Does a Vacuum Pump End of Stroke Micro Switch Work?"
 description: "how does a vacuum pump end of stroke micro switch work: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-07 12:54:07 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - how does a vacuum pump end of stroke micro switch work

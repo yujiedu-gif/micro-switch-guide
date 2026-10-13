@@ -2,7 +2,7 @@
 title: "Robot vacuum bumper micro switch maintenance: inspection and limits"
 description: "robot vacuum bumper micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-02 19:38:52 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - robot vacuum bumper micro switch maintenance

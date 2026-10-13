@@ -2,7 +2,7 @@
 title: "Book Binding Machine Home Position Micro Switch Failure Causes"
 description: "book binding machine home position micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-05 13:02:37 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - book binding machine home position micro switch failure causes

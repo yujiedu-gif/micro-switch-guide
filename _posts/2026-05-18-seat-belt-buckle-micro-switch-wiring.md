@@ -2,7 +2,7 @@
 title: "Seat belt buckle micro switch wiring: how to interpret it"
 description: "seat belt buckle micro switch wiring: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-18 12:06:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - seat belt buckle micro switch wiring

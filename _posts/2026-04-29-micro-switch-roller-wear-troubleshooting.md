@@ -2,7 +2,7 @@
 title: "Micro switch roller wear troubleshooting: how to identify the cause"
 description: "micro switch roller wear troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-29 14:34:36 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch roller wear troubleshooting

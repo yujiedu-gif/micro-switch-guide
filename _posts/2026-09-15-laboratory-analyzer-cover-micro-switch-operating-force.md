@@ -2,7 +2,7 @@
 title: "Laboratory Analyzer Cover Micro Switch Operating Force: What It Means"
 description: "laboratory analyzer cover micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-09-15 16:36:17 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - laboratory analyzer cover micro switch operating force

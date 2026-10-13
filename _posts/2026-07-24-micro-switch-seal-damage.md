@@ -2,7 +2,7 @@
 title: "What Does micro switch seal damage Mean?"
 description: "micro switch seal damage: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
 date: 2026-07-24 15:30:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Waterproof Switches
 tags:
   - micro switch seal damage

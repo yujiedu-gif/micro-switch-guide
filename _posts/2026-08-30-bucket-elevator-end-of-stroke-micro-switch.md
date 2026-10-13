@@ -2,7 +2,7 @@
 title: "Bucket elevator end of stroke micro switch: How does it detect a travel limit?"
 description: "bucket elevator end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-30 08:25:41 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - bucket elevator end of stroke micro switch

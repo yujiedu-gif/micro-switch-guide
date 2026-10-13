@@ -2,7 +2,7 @@
 title: "Palletizer guard interlock micro switch failure causes: how to distinguish them"
 description: "palletizer guard interlock micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-19 16:26:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - palletizer guard interlock micro switch failure causes

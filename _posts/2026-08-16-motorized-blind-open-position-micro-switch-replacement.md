@@ -2,7 +2,7 @@
 title: "Motorized blind open position micro switch replacement: diagnosis and verification"
 description: "motorized blind open position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-16 11:01:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - motorized blind open position micro switch replacement

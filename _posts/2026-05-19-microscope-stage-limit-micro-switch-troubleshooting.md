@@ -2,7 +2,7 @@
 title: "Microscope stage limit micro switch troubleshooting"
 description: "microscope stage limit micro switch troubleshooting: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-19 08:52:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - microscope stage limit micro switch troubleshooting

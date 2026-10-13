@@ -2,7 +2,7 @@
 title: "Material feeder end of stroke micro switch location: How to identify it"
 description: "material feeder end of stroke micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-01 21:12:38 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - material feeder end of stroke micro switch location

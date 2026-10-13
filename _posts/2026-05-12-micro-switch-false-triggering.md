@@ -2,7 +2,7 @@
 title: "Micro Switch False Triggering: How to Diagnose Unwanted Actuation"
 description: "micro switch false triggering: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-05-12 13:48:03 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - micro switch false triggering

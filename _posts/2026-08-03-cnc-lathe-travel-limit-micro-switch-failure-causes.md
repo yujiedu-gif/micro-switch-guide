@@ -2,7 +2,7 @@
 title: "CNC lathe travel limit micro switch failure causes"
 description: "cnc lathe travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-03 12:03:44 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - cnc lathe travel limit micro switch failure causes

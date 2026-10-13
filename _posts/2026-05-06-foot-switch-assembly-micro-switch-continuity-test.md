@@ -2,7 +2,7 @@
 title: "Foot switch assembly micro switch continuity test: how to check it"
 description: "foot switch assembly micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-05-06 12:29:33 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - foot switch assembly micro switch continuity test

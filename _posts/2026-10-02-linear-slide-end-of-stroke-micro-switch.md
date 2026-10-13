@@ -2,7 +2,7 @@
 title: "linear slide end of stroke micro switch: How It Detects Travel Limits"
 description: "linear slide end of stroke micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-10-02 12:44:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - linear slide end of stroke micro switch

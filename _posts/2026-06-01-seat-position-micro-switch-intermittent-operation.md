@@ -2,7 +2,7 @@
 title: "Seat Position Micro Switch Intermittent Operation: How to Diagnose It"
 description: "seat position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-01 17:08:54 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - seat position micro switch intermittent operation

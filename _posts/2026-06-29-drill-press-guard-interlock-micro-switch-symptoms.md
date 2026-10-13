@@ -2,7 +2,7 @@
 title: "Drill press guard interlock micro switch symptoms: what they can indicate"
 description: "drill press guard interlock micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-06-29 08:54:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - drill press guard interlock micro switch symptoms

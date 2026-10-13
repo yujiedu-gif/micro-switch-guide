@@ -2,7 +2,7 @@
 title: "sunroof limit micro switch failure causes: How to Distinguish Switch Faults from Other Problems"
 description: "sunroof limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-04-25 10:29:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - sunroof limit micro switch failure causes

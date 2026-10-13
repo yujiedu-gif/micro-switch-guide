@@ -2,7 +2,7 @@
 title: "Roller shutter travel limit micro switch continuity test"
 description: "roller shutter travel limit micro switch continuity test: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-28 10:06:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - roller shutter travel limit micro switch continuity test

@@ -2,7 +2,7 @@
 title: "Electric bicycle battery lock micro switch adjustment: what should you check?"
 description: "electric bicycle battery lock micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-10-08 11:38:05 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - electric bicycle battery lock micro switch adjustment

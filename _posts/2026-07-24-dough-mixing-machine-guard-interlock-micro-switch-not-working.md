@@ -2,7 +2,7 @@
 title: "dough mixing machine guard interlock micro switch not working: safe fault checks"
 description: "dough mixing machine guard interlock micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-07-24 14:09:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - dough mixing machine guard interlock micro switch not working

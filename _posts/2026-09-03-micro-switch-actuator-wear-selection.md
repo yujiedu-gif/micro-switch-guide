@@ -2,7 +2,7 @@
 title: "Micro switch actuator wear selection: how to choose for changing motion"
 description: "micro switch actuator wear selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-03 09:37:01 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch actuator wear selection

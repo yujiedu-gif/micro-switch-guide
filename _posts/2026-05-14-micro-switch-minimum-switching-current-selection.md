@@ -2,7 +2,7 @@
 title: "micro switch minimum switching current selection: How to assess low-current suitability"
 description: "micro switch minimum switching current selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-05-14 16:42:28 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch minimum switching current selection

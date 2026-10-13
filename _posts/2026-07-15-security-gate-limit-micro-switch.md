@@ -2,7 +2,7 @@
 title: "How Does a security gate limit micro switch Detect Gate Travel?"
 description: "security gate limit micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-15 12:23:26 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - security gate limit micro switch

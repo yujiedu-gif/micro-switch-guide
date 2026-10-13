@@ -2,7 +2,7 @@
 title: "Micro switch temperature range prevention"
 description: "micro switch temperature range prevention: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-06-08 13:24:50 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch temperature range prevention

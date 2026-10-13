@@ -2,7 +2,7 @@
 title: "Micro switch motor load rating selection: how to match ratings to a motor circuit"
 description: "micro switch motor load rating selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-26 19:33:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - micro switch motor load rating selection

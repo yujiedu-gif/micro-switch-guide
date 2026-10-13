@@ -2,7 +2,7 @@
 title: "trunk latch micro switch maintenance: Inspection Limits and Checks"
 description: "trunk latch micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-06-17 11:30:34 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - trunk latch micro switch maintenance

@@ -2,7 +2,7 @@
 title: "CNC Lathe Travel Limit Micro Switch Maintenance: Inspection and Verification"
 description: "cnc lathe travel limit micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-25 17:15:14 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - cnc lathe travel limit micro switch maintenance

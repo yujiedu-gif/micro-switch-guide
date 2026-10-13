@@ -2,7 +2,7 @@
 title: "How to test a cash drawer position micro switch"
 description: "how to test a cash drawer position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-06-30 20:53:23 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a cash drawer position micro switch

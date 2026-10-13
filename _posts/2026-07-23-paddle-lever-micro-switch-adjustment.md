@@ -2,7 +2,7 @@
 title: "Paddle lever micro switch adjustment: what can be adjusted and how to verify it"
 description: "paddle lever micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-23 21:10:49 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - paddle lever micro switch adjustment

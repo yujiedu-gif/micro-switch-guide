@@ -2,7 +2,7 @@
 title: "How to Test a Vibratory Feeder Home Position Micro Switch"
 description: "how to test a vibratory feeder home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
 date: 2026-05-02 15:08:57 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - how to test a vibratory feeder home position micro switch

@@ -2,7 +2,7 @@
 title: "Damper closed position micro switch symptoms: what do they mean?"
 description: "damper closed position micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-02 18:48:51 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - damper closed position micro switch symptoms

@@ -2,7 +2,7 @@
 title: "leaf lever micro switch selection: How to Match Actuation and Application Requirements"
 description: "leaf lever micro switch selection: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-09-20 12:11:56 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Selection Guides
 tags:
   - leaf lever micro switch selection

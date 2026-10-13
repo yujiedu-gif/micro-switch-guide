@@ -2,7 +2,7 @@
 title: "medical refrigerator door micro switch not working: How to Diagnose the Fault"
 description: "medical refrigerator door micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-19 12:41:13 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Troubleshooting
 tags:
   - medical refrigerator door micro switch not working

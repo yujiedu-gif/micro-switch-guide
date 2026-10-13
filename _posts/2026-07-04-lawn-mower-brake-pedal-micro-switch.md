@@ -2,7 +2,7 @@
 title: "lawn mower brake pedal micro switch: What It Does"
 description: "lawn mower brake pedal micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
 date: 2026-07-04 09:33:59 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - lawn mower brake pedal micro switch

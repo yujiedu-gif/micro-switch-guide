@@ -2,7 +2,7 @@
 title: "Dock leveler travel limit micro switch contact rating"
 description: "dock leveler travel limit micro switch contact rating: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
 date: 2026-08-21 19:13:46 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dock leveler travel limit micro switch contact rating

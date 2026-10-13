@@ -2,7 +2,7 @@
 title: "Dental chair position micro switch adjustment: How to assess switch alignment"
 description: "dental chair position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
 date: 2026-09-01 17:30:09 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - dental chair position micro switch adjustment

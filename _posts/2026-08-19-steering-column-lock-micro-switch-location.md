@@ -2,7 +2,7 @@
 title: "Steering column lock micro switch location: how to verify it"
 description: "steering column lock micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
 date: 2026-08-19 21:18:24 +0800
-last_modified_at: 2026-10-13 11:46:37 +0800
+sitemap_omit_lastmod: true
 category: Applications
 tags:
   - steering column lock micro switch location
