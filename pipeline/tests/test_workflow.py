@@ -13,10 +13,33 @@ PIPELINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPELINE))
 
 from core import Paths, Store, load_json, load_jsonl, now_iso, stable_id
-from operations import build_batches_action, dedupe_semantic, embed_objects, jobs_create, jobs_export, keywords_filter, publication_select, same_plan_content_identity, source_packs_build
+from operations import articles_export, build_batches_action, dedupe_semantic, embed_objects, jobs_create, jobs_export, keywords_filter, publication_select, same_plan_content_identity, source_packs_build
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_article_export_keeps_existing_publication_as_dedupe_owner(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "pipeline").mkdir()
+            (root / "pipeline" / "schema.sql").write_text((PIPELINE / "schema.sql").read_text())
+            store = Store(Paths(root))
+            store.initialize()
+            now = now_iso()
+            with store.connect() as connection:
+                for job_id, status in (("a-new", "validated"), ("z-old", "rendered")):
+                    keyword_id = f"kw-{job_id}"
+                    connection.execute(
+                        "INSERT INTO keywords(keyword_id,keyword,normalized_keyword,location_code,language_code,selected,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)",
+                        (keyword_id, f"micro switch {job_id}", f"micro switch {job_id}", 2840, "en", 1, now, now),
+                    )
+                    connection.execute(
+                        "INSERT INTO content_jobs(job_id,keyword_id,custom_id,status,article_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?)",
+                        (job_id, keyword_id, f"custom-{job_id}", status, json.dumps({"slug": job_id}), now, now),
+                    )
+            output = root / "articles.jsonl"
+            articles_export(argparse.Namespace(run_id=None, status=["validated", "rendered"], output=output, limit=10), store)
+            self.assertEqual([row["job_id"] for row in load_jsonl(output)], ["z-old", "a-new"])
+
     def test_embedding_resumes_after_transient_qdrant_failure(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
