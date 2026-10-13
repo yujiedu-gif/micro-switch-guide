@@ -13,8 +13,10 @@ on:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     permissions:
       contents: read
+      pages: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,4 +24,5 @@ jobs:
       - name: Notify after deployment is visible
         env:
           BEFORE: ${{ github.event.inputs.before || github.event.before }}
-        run: python3 pipeline/search_discovery.py indexnow-submit --before "$BEFORE" --after "$GITHUB_SHA"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 pipeline/search_discovery.py indexnow-submit --before "$BEFORE" --after "$GITHUB_SHA" --wait-seconds 1800 --wait-pages-build

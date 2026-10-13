@@ -93,6 +93,25 @@ def wait_for_deploy(urls: dict[str, int], key: str, timeout: int) -> None:
         time.sleep(min(20, max(1, deadline - time.monotonic())))
 
 
+def wait_for_pages_build(commit: str, token: str, timeout: int) -> None:
+    if not re.fullmatch(r"[a-f0-9]{40}", commit) or not token:
+        raise ValueError("A full commit SHA and GitHub token are required to wait for Pages")
+    url = "https://api.github.com/repos/yujiedu-gif/micro-switch-guide/pages/builds/latest"
+    deadline = time.monotonic() + timeout
+    while True:
+        request = Request(url, headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"})
+        with urlopen(request, timeout=15) as response:
+            build = json.load(response)
+        if build.get("commit") == commit:
+            if build.get("status") == "built":
+                return
+            if build.get("status") == "errored":
+                raise RuntimeError("GitHub Pages build failed for the deployed commit")
+        if time.monotonic() >= deadline:
+            raise TimeoutError("GitHub Pages has not built the target commit")
+        time.sleep(min(20, max(1, deadline - time.monotonic())))
+
+
 def submit_indexnow(urls: list[str], key: str, endpoint: str = INDEXNOW_ENDPOINT) -> list[dict]:
     urls = validate_urls(urls)
     if not KEY_RE.fullmatch(key):
@@ -100,7 +119,8 @@ def submit_indexnow(urls: list[str], key: str, endpoint: str = INDEXNOW_ENDPOINT
     results = []
     for start in range(0, len(urls), 10000):
         chunk = urls[start:start + 10000]
-        payload = json.dumps({"host": urlparse(SITE).netloc, "key": key, "urlList": chunk}).encode()
+        payload = json.dumps({"host": urlparse(SITE).netloc, "key": key,
+                              "keyLocation": f"{SITE}/{key}.txt", "urlList": chunk}).encode()
         request = Request(endpoint, data=payload, headers={"Content-Type": "application/json; charset=utf-8"}, method="POST")
         try:
             with urlopen(request, timeout=30) as response:
@@ -202,6 +222,7 @@ def main(argv: list[str] | None = None) -> int:
     notify.add_argument("--before", required=True, help="Git commit before deployment")
     notify.add_argument("--after", default="HEAD")
     notify.add_argument("--wait-seconds", type=int, default=900)
+    notify.add_argument("--wait-pages-build", action="store_true")
     notify.add_argument("--dry-run", action="store_true")
     bq = sub.add_parser("bigquery-check", help="query Search Console bulk export")
     bq.add_argument("--project", default=os.environ.get("MSG_BIGQUERY_PROJECT"))
@@ -231,6 +252,8 @@ def main(argv: list[str] | None = None) -> int:
                 print(json.dumps({"count": len(urls), "urls": urls}))
             elif urls:
                 key = read_key()
+                if args.wait_pages_build:
+                    wait_for_pages_build(args.after, os.environ.get("GITHUB_TOKEN", ""), args.wait_seconds)
                 wait_for_deploy(changes, key, args.wait_seconds)
                 print(json.dumps({"submitted": submit_indexnow(urls, key)}))
             else:

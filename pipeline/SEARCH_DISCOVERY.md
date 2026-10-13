@@ -2,7 +2,7 @@
 
 ## IndexNow
 
-Run `./bin/search-discovery indexnow-key-init` once and commit the root text file. After the file is deployed, verify the returned URL serves exactly the file contents. The main-branch workflow derives changed guide URLs from the Git diff, waits for the live key and pages, then submits up to 10,000 URLs per request. For manual recovery use `./bin/search-discovery indexnow-submit --before <previous-deployed-sha>` after the key is live. It accepts only URLs on the configured canonical host. A 200/202 response means the notification was received, not that a page was indexed. IndexNow serves participating search engines; Google discovery continues through the Sitemap.
+Run `./bin/search-discovery indexnow-key-init` once and commit the root text file. After the file is deployed, verify the returned URL serves exactly the file contents. The main-branch workflow derives changed guide URLs from the Git diff, waits for the GitHub Pages build of that commit and the live key and pages, then submits up to 10,000 URLs per request with an explicit `keyLocation`. For manual recovery use `./bin/search-discovery indexnow-submit --before <previous-deployed-sha>` after the key is live. Submit only URLs added, materially updated, or removed since enabling IndexNow; do not backfill unchanged historical URLs. It accepts only URLs on the configured canonical host. A 200/202 response means the notification was received, not that a page was indexed. Confirm receipt in Bing Webmaster Tools. IndexNow serves participating search engines; Google discovery continues through the Sitemap.
 
 ## Search Console to BigQuery
 
@@ -17,4 +17,4 @@ MSG_BIGQUERY_PROJECT=your-project-id MSG_BIGQUERY_LOCATION=US ./bin/search-disco
 
 The query aggregates repeated URL impression rows across the last 90 days and caps billed scan bytes at 1 GB. `bigquery-check` prints a count without changing SQLite; `bigquery-sync` upserts the current URL aggregates into `search_console_url_performance` in the ignored SQLite database. `--show-sql` shows the exact SQL without connecting. This is performance data, not a URL index-status feed; page index status requires Search Console's URL Inspection API. Review the Cloud project's billing and dataset retention before starting continuous export.
 
-Sources: [Search Console setup](https://support.google.com/webmasters/answer/12917675), [BigQuery export tables](https://support.google.com/webmasters/answer/12917991), [IndexNow protocol](https://www.indexnow.org/documentation).
+Sources: [Search Console setup](https://support.google.com/webmasters/answer/12917675), [BigQuery export tables](https://support.google.com/webmasters/answer/12917991), [Bing IndexNow setup](https://www.bing.com/indexnow/getstarted), [IndexNow protocol](https://www.indexnow.org/documentation).

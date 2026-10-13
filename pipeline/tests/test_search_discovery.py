@@ -3,10 +3,11 @@ from __future__ import annotations
 import subprocess
 import tempfile
 import unittest
+import json
 from pathlib import Path
 from unittest.mock import patch
 
-from search_discovery import bigquery_sql, git_post_change_rows, sync_bigquery_rows, validate_urls, wait_for_deploy
+from search_discovery import bigquery_sql, git_post_change_rows, submit_indexnow, sync_bigquery_rows, validate_urls, wait_for_deploy
 
 
 class SearchDiscoveryTests(unittest.TestCase):
@@ -24,6 +25,13 @@ class SearchDiscoveryTests(unittest.TestCase):
     def test_foreign_url_rejected(self) -> None:
         with self.assertRaises(ValueError):
             validate_urls(["https://other.example/guides/foo/"])
+
+    def test_indexnow_payload_uses_bing_key_location(self) -> None:
+        with patch("search_discovery.urlopen") as open_url:
+            open_url.return_value.__enter__.return_value.status = 200
+            submit_indexnow(["https://www.microswitchguide.com/guides/example/"], "abc12345")
+            payload = json.loads(open_url.call_args.args[0].data)
+        self.assertEqual(payload["keyLocation"], "https://www.microswitchguide.com/abc12345.txt")
 
     def test_wait_requires_new_page_and_deleted_page_state(self) -> None:
         changes = {"https://www.microswitchguide.com/guides/new/": 200,
