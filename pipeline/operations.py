@@ -2876,12 +2876,12 @@ def articles_export(args: argparse.Namespace, store: Any) -> int:
         if statuses:
             placeholders = ",".join("?" for _ in statuses)
             rows = connection.execute(
-                f"SELECT job_id,article_json FROM content_jobs WHERE article_json IS NOT NULL AND status IN ({placeholders}){run_filter} ORDER BY job_id LIMIT ?",
+                f"SELECT job_id,article_json FROM content_jobs WHERE article_json IS NOT NULL AND status IN ({placeholders}){run_filter} ORDER BY CASE status WHEN 'published' THEN 0 WHEN 'rendered' THEN 1 ELSE 2 END, job_id LIMIT ?",
                 (*statuses, *run_params, args.limit),
             ).fetchall()
         else:
             rows = connection.execute(
-                f"SELECT job_id,article_json FROM content_jobs WHERE article_json IS NOT NULL{run_filter} ORDER BY job_id LIMIT ?",
+                f"SELECT job_id,article_json FROM content_jobs WHERE article_json IS NOT NULL{run_filter} ORDER BY CASE status WHEN 'published' THEN 0 WHEN 'rendered' THEN 1 ELSE 2 END, job_id LIMIT ?",
                 (*run_params, args.limit),
             ).fetchall()
     output = []
