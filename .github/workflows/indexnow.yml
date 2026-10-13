@@ -1,0 +1,28 @@
+name: Notify IndexNow after site deployment
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts/**'
+      - '.github/workflows/indexnow.yml'
+  workflow_dispatch:
+    inputs:
+      before:
+        description: 'Previous deployed commit SHA'
+        required: true
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Notify after deployment is visible
+        env:
+          BEFORE: ${{ github.event.inputs.before || github.event.before }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 pipeline/search_discovery.py indexnow-submit --before "$BEFORE" --after "$GITHUB_SHA" --wait-seconds 1800 --wait-pages-build

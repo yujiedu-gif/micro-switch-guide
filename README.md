@@ -1,5 +1,7 @@
 # Micro Switch Guide
 
+Search discovery integrations: see [IndexNow and Search Console BigQuery setup](pipeline/SEARCH_DISCOVERY.md).
+
 A lightweight English educational blog about micro switch fundamentals, selection, waterproofing, troubleshooting, and applications. It is built with Jekyll and designed for free hosting on GitHub Pages.
 
 ## One-time setup
