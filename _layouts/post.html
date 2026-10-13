@@ -17,7 +17,7 @@ layout: default
     <div class="post-meta article-meta">
       <span>By <a href="{{ post_author.url }}">{{ post_author.name }}</a></span>
       <span aria-hidden="true">·</span>
-      <span>Published <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time></span>
+      <span>Published <time datetime="{% if page.publication_date_only %}{{ page.date | date: '%Y-%m-%d' }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">{{ page.date | date: '%B %-d, %Y' }}</time></span>
       {% if modified_date %}
       <span aria-hidden="true">·</span>
       <span>Updated <time datetime="{{ modified_date | date_to_xmlschema }}">{{ modified_date | date: '%B %-d, %Y' }}</time></span>
