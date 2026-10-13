@@ -12,7 +12,13 @@ sitemap: false
         <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
         {% unless doc.sitemap_omit_lastmod %}
           {% assign modified_date = doc.last_updated | default: doc.last_modified_at | default: doc.date %}
-          {% if modified_date %}<lastmod>{{ modified_date | date_to_xmlschema }}</lastmod>{% endif %}
+          {% if modified_date %}
+            {% if doc.publication_date_only and doc.last_updated == nil and doc.last_modified_at == nil %}
+              <lastmod>{{ doc.date | date: '%Y-%m-%d' }}</lastmod>
+            {% else %}
+              <lastmod>{{ modified_date | date_to_xmlschema }}</lastmod>
+            {% endif %}
+          {% endif %}
         {% endunless %}
       </url>
     {% endfor %}
