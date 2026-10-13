@@ -1,8 +1,7 @@
 ---
 title: "operating table position micro switch maintenance: Inspection and Verification"
 description: "operating table position micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - operating table position micro switch maintenance

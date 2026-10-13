@@ -2,6 +2,7 @@
 title: Micro Switch Guides
 description: Browse practical micro switch guides by topic, from basic operating principles to selection, waterproofing, troubleshooting, and applications.
 permalink: /guides/
+last_updated: 2026-10-11 18:43:25 +0800
 ---
 
 <section class="page-hero compact-hero">

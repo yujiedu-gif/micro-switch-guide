@@ -1,8 +1,7 @@
 ---
 title: "Dough Mixing Machine End of Stroke Micro Switch Maintenance"
 description: "dough mixing machine end of stroke micro switch maintenance: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - dough mixing machine end of stroke micro switch maintenance

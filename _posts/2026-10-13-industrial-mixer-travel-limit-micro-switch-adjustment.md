@@ -1,8 +1,7 @@
 ---
 title: "Industrial mixer travel limit micro switch adjustment: what should be checked?"
 description: "industrial mixer travel limit micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 09:35:30 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
   - industrial mixer travel limit micro switch adjustment

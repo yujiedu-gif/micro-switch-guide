@@ -1,8 +1,7 @@
 ---
 title: "thermoforming machine home position micro switch: How It Signals a Reference Position"
 description: "thermoforming machine home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
-date: 2026-10-13 11:11:21 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
   - thermoforming machine home position micro switch

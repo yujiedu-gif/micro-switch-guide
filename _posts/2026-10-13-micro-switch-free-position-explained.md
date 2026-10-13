@@ -1,8 +1,7 @@
 ---
 title: "Micro switch free position explained"
 description: "micro switch free position explained: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
-date: 2026-10-13 10:08:18 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Basics
 tags:
   - micro switch free position explained

@@ -1,8 +1,7 @@
 ---
 title: "Micro switch high pressure washdown causes"
 description: "micro switch high pressure washdown causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Waterproof Switches
 tags:
   - micro switch high pressure washdown causes

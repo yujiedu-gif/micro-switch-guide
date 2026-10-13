@@ -3,6 +3,7 @@ layout: null
 sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- lastmod is emitted only when a verified substantive update is recorded. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% assign collections = site.collections | where_exp: 'collection', 'collection.output != false' %}
   {% for collection in collections %}
@@ -10,16 +11,8 @@ sitemap: false
     {% for doc in docs %}
       <url>
         <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
-        {% unless doc.sitemap_omit_lastmod %}
-          {% assign modified_date = doc.last_updated | default: doc.last_modified_at | default: doc.date %}
-          {% if modified_date %}
-            {% if doc.publication_date_only and doc.last_updated == nil and doc.last_modified_at == nil %}
-              <lastmod>{{ doc.date | date: '%Y-%m-%d' }}</lastmod>
-            {% else %}
-              <lastmod>{{ modified_date | date_to_xmlschema }}</lastmod>
-            {% endif %}
-          {% endif %}
-        {% endunless %}
+        {% assign modified_date = doc.last_updated | default: doc.last_modified_at %}
+        {% if modified_date %}<lastmod>{{ modified_date | date_to_xmlschema }}</lastmod>{% endif %}
       </url>
     {% endfor %}
   {% endfor %}

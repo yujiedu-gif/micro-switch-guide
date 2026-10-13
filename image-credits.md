@@ -2,6 +2,7 @@
 title: Image Credits
 description: Source and license information for photographs used by Micro Switch Guide.
 permalink: /image-credits/
+last_updated: 2026-10-11 18:20:35 +0800
 ---
 
 <section class="page-hero">

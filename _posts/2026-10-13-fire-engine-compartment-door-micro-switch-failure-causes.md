@@ -1,8 +1,7 @@
 ---
 title: "Fire engine compartment door micro switch failure causes: how to distinguish them"
 description: "fire engine compartment door micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - fire engine compartment door micro switch failure causes

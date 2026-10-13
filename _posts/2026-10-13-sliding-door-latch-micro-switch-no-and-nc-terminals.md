@@ -1,8 +1,7 @@
 ---
 title: "Sliding door latch micro switch NO and NC terminals: what the labels mean"
 description: "sliding door latch micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - sliding door latch micro switch NO and NC terminals

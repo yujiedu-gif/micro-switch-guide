@@ -1,8 +1,7 @@
 ---
 title: "Palletizer home position micro switch not working: how to diagnose it"
 description: "palletizer home position micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 10:20:30 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Troubleshooting
 tags:
   - palletizer home position micro switch not working

@@ -1,8 +1,7 @@
 ---
 title: "sump pump travel limit micro switch intermittent operation: How to diagnose it"
 description: "sump pump travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 10:54:16 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Troubleshooting
 tags:
   - sump pump travel limit micro switch intermittent operation

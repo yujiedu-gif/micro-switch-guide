@@ -12,7 +12,7 @@ import tempfile
 import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -281,7 +281,12 @@ def add_commands(commands: argparse._SubParsersAction) -> None:
     render_run.add_argument("--run-id", required=True)
     render_run.add_argument("--date", default=date.today().isoformat())
     render_run.add_argument("--limit", type=int, default=10_000)
-    render_run.add_argument("--spread-days", type=int, default=0, help="spread posts evenly across this many days ending on --date")
+    render_run.add_argument(
+        "--spread-days",
+        type=int,
+        default=0,
+        help="deprecated; only 0 is accepted because publication dates must match the real launch date",
+    )
 
     submit = commands.add_parser("batch-submit", help="upload a prepared JSONL and create an OpenAI batch")
     submit.add_argument("--run-id", required=True)
@@ -2284,8 +2289,8 @@ def publication_select(args: argparse.Namespace, store: Any) -> int:
 
 def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], store: Any) -> int:
     publish_date = date.fromisoformat(args.date)
-    if args.spread_days < 0:
-        raise ValueError("spread-days must be zero or greater")
+    if args.spread_days != 0:
+        raise ValueError("spread-days is disabled; publication dates must match the real launch date")
     rendered = skipped = failed = 0
     schema = load_json(paths.pipeline / "schemas" / "article.schema.json")
     (paths.root / "_posts").mkdir(parents=True, exist_ok=True)
@@ -2297,7 +2302,7 @@ def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], sto
                ORDER BY job_id LIMIT ?""",
             (args.run_id, args.limit),
         ).fetchall()
-    for index, row in enumerate(rows):
+    for row in rows:
         article = json.loads(row["article_json"])
         errors = validate_schema(article, schema) + article_policy_errors(article, config)
         if errors:
@@ -2305,11 +2310,7 @@ def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], sto
             with store.connect() as connection:
                 connection.execute("UPDATE content_jobs SET status='validation_failed',validation_json=?,updated_at=? WHERE job_id=?", (canonical_json({"errors": errors}), now_iso(), row["job_id"]))
             continue
-        if args.spread_days and len(rows) > 1:
-            days_before_end = round(args.spread_days * (len(rows) - 1 - index) / (len(rows) - 1))
-            article_date = publish_date - timedelta(days=days_before_end)
-        else:
-            article_date = publish_date
+        article_date = publish_date
         destination = paths.root / "_posts" / f"{article_date.isoformat()}-{article['slug']}.md"
         rendered_text = render_post(article, article_date, config["site"]["author"], config["site"]["timezone"])
         if destination.exists():
@@ -2326,7 +2327,7 @@ def render_run(args: argparse.Namespace, paths: Any, config: dict[str, Any], sto
         with store.connect() as connection:
             connection.execute("UPDATE content_jobs SET status='rendered',updated_at=? WHERE job_id=?", (now_iso(), row["job_id"]))
         rendered += 1
-    print(canonical_json({"jobs": len(rows), "rendered": rendered, "skipped_existing": skipped, "failed": failed, "spread_days": args.spread_days}))
+    print(canonical_json({"jobs": len(rows), "rendered": rendered, "skipped_existing": skipped, "failed": failed}))
     return 1 if failed else 0
 
 

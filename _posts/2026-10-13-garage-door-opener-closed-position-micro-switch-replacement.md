@@ -1,8 +1,7 @@
 ---
 title: "Garage Door Opener Closed Position Micro Switch Replacement"
 description: "garage door opener closed position micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - garage door opener closed position micro switch replacement

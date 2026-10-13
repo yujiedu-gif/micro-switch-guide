@@ -1,13 +1,14 @@
 ---
 title: "Replace With a Clear, Specific Article Title"
 description: "Write a 140–160 character summary that explains exactly what the reader will learn."
-date: 2026-01-01 09:00:00 +0800
+date: YYYY-MM-DD 09:00:00 +0800
 category: Basics
 tags:
   - micro switch
   - snap action
 author: editorial_team
-# last_updated: 2026-01-15 09:00:00 +0800
+# Add last_updated only after a verified, substantive change to the published page.
+# last_updated: YYYY-MM-DD HH:MM:SS +0800
 ---
 
 Open with two or three sentences that define the reader's problem and explain what this guide will help them decide or understand.

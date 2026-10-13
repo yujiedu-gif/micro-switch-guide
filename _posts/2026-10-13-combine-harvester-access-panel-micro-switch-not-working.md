@@ -1,8 +1,7 @@
 ---
 title: "Combine harvester access panel micro switch not working: how to diagnose it"
 description: "combine harvester access panel micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - combine harvester access panel micro switch not working

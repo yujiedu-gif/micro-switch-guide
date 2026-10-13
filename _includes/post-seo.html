@@ -27,7 +27,7 @@
     "@type": "WebPage",
     "@id": "{{ post_url }}"
   },
-  {% if page.publication_date_only %}"datePublished": "{{ page.date | date: '%Y-%m-%d' }}",{% else %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
   {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
   "author": {
     "@type": "{{ post_author.type | default: 'Organization' }}",

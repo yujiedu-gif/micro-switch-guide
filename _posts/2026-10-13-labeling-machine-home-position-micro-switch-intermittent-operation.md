@@ -1,8 +1,7 @@
 ---
 title: "Labeling machine home position micro switch intermittent operation: how to diagnose it"
 description: "labeling machine home position micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations,."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - labeling machine home position micro switch intermittent operation

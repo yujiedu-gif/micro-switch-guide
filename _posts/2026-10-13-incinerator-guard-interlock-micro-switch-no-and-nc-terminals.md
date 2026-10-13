@@ -1,8 +1,7 @@
 ---
 title: "incinerator guard interlock micro switch NO and NC terminals"
 description: "incinerator guard interlock micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - incinerator guard interlock micro switch NO and NC terminals

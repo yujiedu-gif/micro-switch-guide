@@ -1,8 +1,7 @@
 ---
 title: "Industrial sewing machine guard interlock micro switch contact rating"
 description: "industrial sewing machine guard interlock micro switch contact rating: Understand the operating idea, essential terminology, practical checks,."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - industrial sewing machine guard interlock micro switch contact rating

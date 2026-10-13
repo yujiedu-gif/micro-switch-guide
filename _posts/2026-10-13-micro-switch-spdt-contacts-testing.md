@@ -1,8 +1,7 @@
 ---
 title: "How to Test micro switch SPDT contacts testing"
 description: "micro switch SPDT contacts testing: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - micro switch SPDT contacts testing

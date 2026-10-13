@@ -1,8 +1,7 @@
 ---
 title: "Industrial Door Guard Interlock Micro Switch Actuator Travel: What the Motion Means"
 description: "industrial door guard interlock micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - industrial door guard interlock micro switch actuator travel

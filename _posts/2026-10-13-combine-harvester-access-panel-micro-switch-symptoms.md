@@ -1,8 +1,7 @@
 ---
 title: "Combine harvester access panel micro switch symptoms: what do they indicate?"
 description: "combine harvester access panel micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 08:52:10 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
   - combine harvester access panel micro switch symptoms

@@ -1,8 +1,7 @@
 ---
 title: "Refrigerator ice chute micro switch failure causes"
 description: "refrigerator ice chute micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - refrigerator ice chute micro switch failure causes

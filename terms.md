@@ -2,6 +2,7 @@
 title: Terms of Use
 description: Terms governing access to and use of Micro Switch Guide.
 permalink: /terms/
+last_updated: 2026-09-29 18:49:46 +0800
 ---
 
 <section class="page-hero compact-hero">

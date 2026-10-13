@@ -1,8 +1,7 @@
 ---
 title: "dryer lint filter interlock micro switch intermittent operation: How to Diagnose It"
 description: "dryer lint filter interlock micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - dryer lint filter interlock micro switch intermittent operation

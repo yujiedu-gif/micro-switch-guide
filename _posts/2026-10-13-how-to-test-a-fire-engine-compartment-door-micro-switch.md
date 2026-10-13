@@ -1,8 +1,7 @@
 ---
 title: "How to test a fire engine compartment door micro switch"
 description: "how to test a fire engine compartment door micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 09:11:50 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Troubleshooting
 tags:
   - how to test a fire engine compartment door micro switch

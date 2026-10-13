@@ -1,7 +1,7 @@
 ---
 title: "Aircraft flap position micro switch operating force: what it means"
 description: "aircraft flap position micro switch operating force: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-12 09:00:00 +0800
+date: 2026-10-12 17:55:05 +0800
 category: Applications
 tags:
   - aircraft flap position micro switch operating force

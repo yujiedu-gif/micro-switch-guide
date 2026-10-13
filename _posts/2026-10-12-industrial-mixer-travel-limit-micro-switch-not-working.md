@@ -1,7 +1,7 @@
 ---
 title: "industrial mixer travel limit micro switch not working"
 description: "industrial mixer travel limit micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-12 09:00:00 +0800
+date: 2026-10-12 17:55:05 +0800
 category: Troubleshooting
 tags:
   - industrial mixer travel limit micro switch not working

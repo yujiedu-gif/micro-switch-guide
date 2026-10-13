@@ -1,7 +1,7 @@
 ---
 title: "Access control door position micro switch NO and NC terminals"
 description: "access control door position micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-12 09:00:00 +0800
+date: 2026-10-12 16:49:35 +0800
 category: Applications
 tags:
   - access control door position micro switch NO and NC terminals

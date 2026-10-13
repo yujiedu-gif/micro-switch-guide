@@ -1,8 +1,7 @@
 ---
 title: "How to Diagnose Power window limit micro switch intermittent operation"
 description: "power window limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 10:21:47 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Troubleshooting
 tags:
   - power window limit micro switch intermittent operation

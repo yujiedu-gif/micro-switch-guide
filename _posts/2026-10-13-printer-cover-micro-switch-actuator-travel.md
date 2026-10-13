@@ -1,8 +1,7 @@
 ---
 title: "Printer cover micro switch actuator travel: how movement relates"
 description: "printer cover micro switch actuator travel: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - printer cover micro switch actuator travel

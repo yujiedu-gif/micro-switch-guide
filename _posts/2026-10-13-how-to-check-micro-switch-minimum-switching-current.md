@@ -1,8 +1,7 @@
 ---
 title: "How to Check Micro Switch Minimum Switching Current"
 description: "how to check micro switch minimum switching current: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - how to check micro switch minimum switching current

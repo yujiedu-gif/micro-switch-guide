@@ -1,8 +1,7 @@
 ---
 title: "Sample tray position micro switch adjustment: what should you check?"
 description: "sample tray position micro switch adjustment: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
-date: 2026-10-13 10:49:05 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
   - sample tray position micro switch adjustment

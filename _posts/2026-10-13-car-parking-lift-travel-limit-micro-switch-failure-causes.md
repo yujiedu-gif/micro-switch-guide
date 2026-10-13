@@ -1,8 +1,7 @@
 ---
 title: "Car Parking Lift Travel Limit Micro Switch Failure Causes"
 description: "car parking lift travel limit micro switch failure causes: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - car parking lift travel limit micro switch failure causes

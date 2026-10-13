@@ -1,8 +1,7 @@
 ---
 title: "Blow molding machine travel limit micro switch NO and NC terminals"
 description: "blow molding machine travel limit micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations,."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - blow molding machine travel limit micro switch NO and NC terminals

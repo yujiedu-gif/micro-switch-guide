@@ -1,8 +1,7 @@
 ---
 title: "Knitting machine travel limit micro switch symptoms: what they may indicate"
 description: "knitting machine travel limit micro switch symptoms: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - knitting machine travel limit micro switch symptoms

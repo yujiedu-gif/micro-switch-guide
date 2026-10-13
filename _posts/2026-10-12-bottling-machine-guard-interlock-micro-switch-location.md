@@ -1,7 +1,7 @@
 ---
 title: "bottling machine guard interlock micro switch location: How to Identify and Verify It"
 description: "bottling machine guard interlock micro switch location: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-12 09:00:00 +0800
+date: 2026-10-12 17:55:05 +0800
 category: Applications
 tags:
   - bottling machine guard interlock micro switch location

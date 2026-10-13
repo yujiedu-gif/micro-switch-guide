@@ -1,8 +1,7 @@
 ---
 title: "Extrusion machine guard interlock micro switch: How it relates to guard sensing"
 description: "extrusion machine guard interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - extrusion machine guard interlock micro switch

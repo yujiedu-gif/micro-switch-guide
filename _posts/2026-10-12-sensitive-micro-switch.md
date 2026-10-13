@@ -1,7 +1,7 @@
 ---
 title: "Sensitive micro switch: what makes a switch sensitive?"
 description: "sensitive micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
-date: 2026-10-12 09:00:00 +0800
+date: 2026-10-12 16:49:35 +0800
 category: Selection Guides
 tags:
   - sensitive micro switch

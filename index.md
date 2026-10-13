@@ -2,6 +2,7 @@
 title: Micro Switch Guide
 description: Practical, plain-English guides to micro switch fundamentals, selection, waterproofing, troubleshooting, and applications.
 permalink: /
+last_updated: 2026-09-29 18:49:46 +0800
 ---
 
 <section class="hero">

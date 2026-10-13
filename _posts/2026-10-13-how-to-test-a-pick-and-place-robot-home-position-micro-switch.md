@@ -1,8 +1,7 @@
 ---
 title: "How to Test a Pick and Place Robot Home Position Micro Switch"
 description: "how to test a pick and place robot home position micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Applications
 tags:
   - how to test a pick and place robot home position micro switch

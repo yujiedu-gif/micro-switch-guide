@@ -2,6 +2,7 @@
 title: About Micro Switch Guide
 description: Learn about the purpose, scope, and publishing principles behind Micro Switch Guide.
 permalink: /about/
+last_updated: 2026-10-11 18:20:35 +0800
 ---
 
 <section class="page-hero about-hero">

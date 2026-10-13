@@ -1,8 +1,7 @@
 ---
 title: "Chain conveyor guard interlock micro switch not working: how to diagnose the fault"
 description: "chain conveyor guard interlock micro switch not working: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 08:42:04 +0800
-sitemap_omit_lastmod: true
+date: 2026-10-13 11:27:16 +0800
 category: Troubleshooting
 tags:
   - chain conveyor guard interlock micro switch not working

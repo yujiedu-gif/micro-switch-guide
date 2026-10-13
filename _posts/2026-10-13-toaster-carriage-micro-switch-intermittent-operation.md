@@ -1,8 +1,7 @@
 ---
 title: "toaster carriage micro switch intermittent operation: How to distinguish possible causes"
 description: "toaster carriage micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - toaster carriage micro switch intermittent operation

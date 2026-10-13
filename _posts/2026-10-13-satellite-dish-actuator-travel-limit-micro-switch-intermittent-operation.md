@@ -1,8 +1,7 @@
 ---
 title: "Satellite dish actuator travel limit micro switch intermittent operation"
 description: "satellite dish actuator travel limit micro switch intermittent operation: Understand the operating idea, essential terminology, practical checks,."
-date: 2026-10-13 00:00:00 +0800
-publication_date_only: true
+date: 2026-10-13 13:45:35 +0800
 category: Troubleshooting
 tags:
   - satellite dish actuator travel limit micro switch intermittent operation
