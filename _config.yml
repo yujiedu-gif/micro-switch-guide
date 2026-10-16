@@ -34,6 +34,8 @@ defaults:
       author: editorial_team
 
 exclude:
+  - AGENTS.md
+  - docs/
   - Gemfile
   - Gemfile.lock
   - README.md

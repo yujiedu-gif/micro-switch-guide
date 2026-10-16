@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' }}">
   <head>
+    {% if page.admin_publication_id %}<meta name="website-admin-publication" content="{{ page.admin_publication_id | escape }}">{% endif %}
     {% include google-tag-manager.html %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
