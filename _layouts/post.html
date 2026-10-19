@@ -34,6 +34,12 @@ layout: default
     </aside>
     <div class="article-content" data-article-content>
       {{ content }}
+      <aside class="article-feedback" aria-labelledby="article-feedback-heading">
+        <p class="eyebrow">Your input</p>
+        <h2 id="article-feedback-heading">What should we cover next?</h2>
+        <p>Have a question, a topic suggestion, or an idea for improving this guide? Send our editorial team a note. Include the page link if your feedback is about this article.</p>
+        <a class="button" href="mailto:editor@microswitchguide.com?subject=Micro%20Switch%20Guide%20feedback&amp;body=Page%3A%20{{ page.url | absolute_url | url_encode }}%0A%0AMy%20suggestion%3A%20">Share an idea</a>
+      </aside>
     </div>
   </div>
 

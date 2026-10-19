@@ -2,7 +2,7 @@
 title: Micro Switch Guide
 description: Practical, plain-English guides to micro switch fundamentals, selection, waterproofing, troubleshooting, and applications.
 permalink: /
-last_updated: 2026-09-29 18:49:46 +0800
+last_updated: 2026-10-19 09:59:13 +0800
 ---
 
 <section class="hero">
@@ -34,6 +34,17 @@ last_updated: 2026-09-29 18:49:46 +0800
       </div>
       <figcaption><strong>Inside a generic SPDT switch</strong><span>The three external terminals represent COM, NC, and NO. Schematic construction; internal arrangements vary by design.</span></figcaption>
     </figure>
+  </div>
+</section>
+
+<section class="feedback-section" aria-labelledby="feedback-heading">
+  <div class="container feedback-section-inner">
+    <div>
+      <p class="eyebrow">Help shape the library</p>
+      <h2 id="feedback-heading">What should we explain next?</h2>
+      <p>Share a micro switch question, suggest a new guide, or tell us how to improve an existing one.</p>
+    </div>
+    <a class="button" href="{{ '/contact/' | relative_url }}">Leave a suggestion</a>
   </div>
 </section>
 
