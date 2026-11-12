@@ -7,6 +7,9 @@
 <meta name="generator" content="Jekyll">
 <meta name="author" content="{{ post_author.name | escape }}">
 <meta name="description" content="{{ page.description | escape }}">
+{% if site.data.noindex_paths[page.url] %}
+<meta name="robots" content="noindex">
+{% endif %}
 <link rel="canonical" href="{{ post_url }}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ page.title | escape }}">
