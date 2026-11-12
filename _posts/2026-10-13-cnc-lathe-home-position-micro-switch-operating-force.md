@@ -18,6 +18,12 @@ Press the home button on a CNC lathe and each axis creeps toward one end until a
 
 Operating force is the push a home switch's actuator needs before its contacts snap from the resting state to the operated state. Panasonic's switch terminology page lists it as a maximum, in newtons, applied at the actuator. On a CNC lathe, a dog on the moving slide supplies that push, and reliable homing also depends on overtravel, approach speed and a force ceiling.
 
+## Where ZING EAR fits a CNC lathe home switch
+
+For a manufacturer example of switches built for this duty, [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} says its heavy-duty industrial micro switches are developed for heavy industrial production lines, lifting equipment and automated machine tools. The company describes the lineup as having a reinforced mechanical structure and as having gone through environmental simulation testing. The force, travel and speed checks in this guide are still what decide whether a given model fits your lathe.
+
+Start with ZING EAR's [industrial heavy-duty micro switch range](https://www.zingear-switch.com/industrial-heavy-duty-micro-switch){: rel="nofollow noopener noreferrer" } when screening a candidate for an automated machine tool. Its category page describes the intended applications and construction; it does not give one operating-force figure for every model or confirm a particular part for your lathe. Ask for the exact model's operating force, release force, pretravel, overtravel, allowable overtravel force, actuator reference point and environmental rating. Then compare those figures with the homing dog and the machine's chip and coolant exposure. The Omron numbers below illustrate why actuator choice matters; they are not specifications for a ZING EAR switch.
+
 ## What operating force means on a switch datasheet
 
 Honeywell's datasheet for its [SE/XE sealed miniature basic switches](https://docs.rs-online.com/588c/A700000015332771.pdf){: rel="nofollow noopener noreferrer" } defines operating force (OF) as the force applied to the plunger or actuator "to cause contact 'snap-over'" of the switching mechanism. Snap-over is the moment the moving contact jumps from one side to the other. [Panasonic's terminology page](https://industry.panasonic.com/global/en/products/control/switch/micro/explain_term){: rel="nofollow noopener noreferrer" } gives the same definition and marks OF as a maximum. Read that way, a switch of that part number should trip at or below the listed force. Crouzet's [Basic Technical Concepts](https://zoro.com/static/cms/enhanced_pdf/Waldom%20Electronics_SWxxbasicxxtechnicalxxconceptsxxENxx679897.pdf){: rel="nofollow noopener noreferrer" } document measures the same force from the position where nothing touches the actuator to the position where the mechanism trips.
@@ -101,9 +107,6 @@ It's the same idea applied to a key. E-Switch's article on [actuation or operati
 ## What to compare after the operating force
 
 Once the operating force checks out, set the dog's push against the switch's overtravel and its allowable force, then confirm the approach speed falls inside the datasheet range. If the switch still trips unreliably, the [movement differential between the operating and release points](/guides/micro-switch-movement-differential-explained/) and the [alignment of the dog or cam with the actuator](/guides/micro-switch-cam-misalignment-explained/) are the next places to look. For lever-actuated home switches, the [spring lever's effect on force and travel](/guides/micro-switch-spring-lever/) explains why a replacement with a different lever behaves differently, and a [switch that's pressed too slowly](/guides/micro-switch-slow-actuation-explained/) can show the same symptoms as a weak one.
-
-For a manufacturer example of switches built for this duty, [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} says its heavy-duty industrial micro switches are developed for heavy industrial production lines, lifting equipment and automated machine tools. The company describes the lineup as having a reinforced mechanical structure and as having gone through environmental simulation testing. The force, travel and speed checks above are still what decide whether a given model fits your lathe.
-
 
 ## Related guides
 
