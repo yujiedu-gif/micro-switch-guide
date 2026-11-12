@@ -20,15 +20,15 @@ A 2 wire proximity sensor is a non-contact sensor whose two wires carry both its
 
 ## How a 2 wire proximity sensor detects metal, and why it needs power to do it
 
-Omron's technical guide for proximity sensors describes the inductive type this way: the sensor drives an AC magnetic field from a detection coil, and a metal object in that field develops eddy currents. The guide explains that those eddy currents cause a magnetic loss, which shows up as a change in the coil's impedance. The sensor's electronics detect that change and switch the output. The output itself is a semiconductor, and the same guide notes that proximity sensors use semiconductor outputs, so there are no contacts to wear out.
+Omron's [technical guide for proximity sensors](https://www.ia.omron.com/support/guide/41/introduction.html){: rel="nofollow noopener noreferrer" } describes the inductive type this way: the sensor drives an AC magnetic field from a detection coil, and a metal object in that field develops eddy currents. The guide explains that those eddy currents cause a magnetic loss, which shows up as a change in the coil's impedance. The sensor's electronics detect that change and switch the output. The output itself is a semiconductor, and the same guide notes that proximity sensors use semiconductor outputs, so there are no contacts to wear out.
 
-Contact is the main split from a micro switch or other contact-based switch. Omron's guide contrasts the two directly: a limit switch detects an object by touching it, while a proximity sensor detects it electrically. A micro switch also needs no power to work, and its contacts can be checked with an ohmmeter on the bench. A proximity sensor's coil and output stage do nothing until they're powered, and in a 2 wire version that power can only arrive through the load.
+Contact is the main split from a [micro switch or other contact-based switch](/guides/micro-switch-proximity-sensors/). Omron's guide contrasts the two directly: a limit switch detects an object by touching it, while a proximity sensor detects it electrically. A [micro switch](/guides/what-is-a-micro-switch/) also needs no power to work, and its contacts can be checked with an ohmmeter on the bench. A proximity sensor's coil and output stage do nothing until they're powered, and in a 2 wire version that power can only arrive through the load.
 
-Omron's guide also counts magnet-operated sensors as proximity sensors, but those use a reed switch with real contacts, so the powered-electronics point applies to the inductive and capacitive types.
+Omron's guide also counts magnet-operated sensors as proximity sensors, but those use a [reed switch](/guides/reed-contact-sensor/) with real contacts, so the powered-electronics point applies to the inductive and capacitive types.
 
 ## Why a 2 wire sensor leaks current when off and drops voltage when on
 
-The cause sits in the wiring. Beckhoff's application note on digital inputs for 2-wire and 3-wire sensors explains that a 2-wire sensor carries its signal and its supply on the same wire. In practice the supply, the sensor and the load then form one series loop. To keep the sensor's electronics alive, the note says, a permanent minimum current, called the quiescent or residual current, has to flow through the wires and through whatever input or coil the sensor drives. Omron's and ifm's datasheets list that off-state current as the leakage current.
+The cause sits in the wiring. Beckhoff's application note on [digital inputs for 2-wire and 3-wire sensors](https://download.beckhoff.com/download/document/application_notes/DK9222-0909-0008.pdf){: rel="nofollow noopener noreferrer" } explains that a 2-wire sensor carries its signal and its supply on the same wire. In practice the supply, the sensor and the load then form one series loop. To keep the sensor's electronics alive, the note says, a permanent minimum current, called the quiescent or residual current, has to flow through the wires and through whatever input or coil the sensor drives. Omron's and ifm's datasheets list that off-state current as the leakage current.
 
 The chain runs like this:
 
@@ -79,7 +79,7 @@ Beckhoff states that Type 1 inputs suit 2-wire sensors only to a very limited ex
 
 ## Wiring 2 wire sensors in series or in parallel
 
-Two or more 2 wire sensors can share one load, but each arrangement runs into either the residual voltage or the leakage current. Omron's FAQ on series and parallel connections of proximity sensors gives the limits for its DC 2-wire models.
+Two or more 2 wire sensors can share one load, but each arrangement runs into either the residual voltage or the leakage current. Omron's FAQ on [series and parallel connections of proximity sensors](https://www.ia.omron.com/support/faq/answer/41/faq00311/index.html){: rel="nofollow noopener noreferrer" } gives the limits for its DC 2-wire models.
 
 **In series (an AND circuit)**, every sensor that's on keeps its residual voltage across itself, and that voltage is taken away from the load. The FAQ's rule is that the supply voltage minus the number of sensors times the residual voltage must stay at or above the voltage the load needs to operate.
 
@@ -96,7 +96,7 @@ Turn off the supply before you touch the wiring. Omron's technical guide warns t
 3. **Check the load against the table above.** The load's ON current has to fall inside the sensor's load current range, and the load's off threshold has to sit above the sensor's leakage current.
 4. **Power up and watch the sensor's operation indicator** as a metal target approaches and moves away.
 
-Testing follows from the same chain. Because the output is a semiconductor that only switches when powered, an unpowered continuity check of the kind used on a micro switch's normally open and normally closed terminals says little about a 2-wire sensor. A powered check says more. With the sensor on, the voltage across its two leads should be no more than the residual voltage on its datasheet, the few volts the sensor keeps for itself. With it off, most of the supply voltage should appear across the sensor, because the small leakage current makes only a small drop across the load.
+Testing follows from the same chain. Because the output is a semiconductor that only switches when powered, an unpowered continuity check of the kind used on a micro switch's [normally open and normally closed terminals](/guides/no-nc-micro-switch/) says little about a 2-wire sensor. A powered check says more. With the sensor on, the voltage across its two leads should be no more than the residual voltage on its datasheet, the few volts the sensor keeps for itself. With it off, most of the supply voltage should appear across the sensor, because the small leakage current makes only a small drop across the load.
 
 📌 **On a PLC input that won't turn off:** *Compare the sensor's leakage current with the input's OFF current before suspecting the sensor. A leakage figure above the OFF current explains the symptom without any fault in the sensor.*
 
@@ -121,6 +121,13 @@ One lead goes toward the supply and the other goes to the load, so the sensor an
 ## What to read on a 2 wire sensor's datasheet before you wire it
 
 Look for three lines: the leakage current that flows when the sensor is off, the residual voltage it keeps when on, and the load current range it needs. Then hold them against the OFF current, ON voltage and ON current of the input or coil it will drive. If any of the three falls outside, the input type or the sensor type has to change before the wiring does.
+
+
+## Related guides
+
+- [what is a micro switch actuator](/guides/what-is-a-micro-switch-actuator/)
+- [reed contact sensor](/guides/reed-contact-sensor/)
+- [electrical switch gear](/guides/electrical-switch-gear/)
 
 ## Sources
 

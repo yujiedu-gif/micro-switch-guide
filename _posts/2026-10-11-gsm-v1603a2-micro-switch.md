@@ -22,7 +22,7 @@ Replacement listings for the GSM-V1603A2 describe it as a normally open switch, 
 
 ## Where the GSM-V1603A2 part number shows up
 
-The part number appears in two kinds of equipment in public parts catalogs. Parts Town, a distributor of manufacturers' service parts, carries it as a genuine Turbo Air replacement part, number 4415A66600. Turbo Air builds commercial refrigeration equipment, where a commercial freezer door micro switch tells the controls whether a door is shut. The same listing gives the part as roughly 1.05 by 0.65 by 0.45 inches and flags it as no longer available.
+The part number appears in two kinds of equipment in public parts catalogs. Parts Town, a distributor of manufacturers' service parts, carries it as a genuine Turbo Air replacement part, number 4415A66600. Turbo Air builds commercial refrigeration equipment, where a [commercial freezer door micro switch](/guides/commercial-freezer-door-micro-switch/) tells the controls whether a door is shut. The same listing gives the part as roughly 1.05 by 0.65 by 0.45 inches and flags it as no longer available.
 
 Appliance parts sellers list the same number as a microwave door switch. Several of those listings pair it with GE, Samsung, Sharp and Frigidaire microwaves, where switches of this kind sit behind the door latch.
 
@@ -49,13 +49,13 @@ If your switch body carries a rating code or terminal labels, the table below sh
 | 1/2HP | The motor load, in horsepower, the switch is rated to switch at the listed voltage | Omron's D3V datasheet lists the D3V-16 at 16 A, 1/2 HP for 125 VAC and 250 VAC |
 | T85 or T105 | The maximum ambient temperature, in °C, the switch is rated for | Carling's guide defines T85; Omron's D3V datasheet gives T105 for the D3V-16 |
 | µ | A micro-gap approval, meaning a contact gap under 3 mm | Carling Technologies' rating guide |
-| Terminal labels | COM, NO and NC mark which terminal is common, normally open or normally closed; see how NO and NC terminals differ on a micro switch | Omron's D3V terminal drawings use these labels |
+| Terminal labels | COM, NO and NC mark which terminal is common, normally open or normally closed; see [how NO and NC terminals differ on a micro switch](/guides/no-nc-micro-switch/) | Omron's D3V terminal drawings use these labels |
 
 Terminal count is the first mark to read. Two terminals mean an SPST switch, either NO or NC, and the label or a continuity test tells you which. Three terminals mean COM, NO and NC, and the pair the original wires were on decides how the switch behaves.
 
 ## Why the switch's job in a microwave matters more than its number
 
-US federal rules for microwave ovens, 21 CFR 1030.10, require at least two working safety interlocks plus a means of monitoring them. Each interlock is a door interlock micro switch or a similar device that stops the oven when the door opens. The same section requires that no single failed part can disable every interlock, and that a failed monitored interlock leaves the oven unable to run until it is repaired. Service instructions must say which interlock is primary and which is secondary.
+US federal rules for microwave ovens, [21 CFR 1030.10](https://www.law.cornell.edu/cfr/text/21/1030.10){: rel="nofollow noopener noreferrer" }, require at least two working safety interlocks plus a means of monitoring them. Each interlock is a [door interlock micro switch](/guides/door-interlock-micro-switch/) or a similar device that stops the oven when the door opens. The same section requires that no single failed part can disable every interlock, and that a failed monitored interlock leaves the oven unable to run until it is repaired. Service instructions must say which interlock is primary and which is secondary.
 
 A GE microwave service sheet shows how those roles look at the terminals. In that sheet, the primary interlock reads 0 Ω from COM to NO with the door closed and an open circuit with the door open. The monitor switch reads the opposite way.
 
@@ -80,9 +80,9 @@ Compare the old switch and the candidate side by side before any wire goes back 
 | Mounting holes | A shifted switch changes when the contacts close | Hole size varies even within one family, as Omron's D3V datasheet lists 3.1 mm and 2.9 mm options; measure the old switch |
 | Body size | The switch has to sit in the original bracket | Measure length, width and height against the old part |
 
-For the continuity test, which the guide on how to test a micro switch covers in more detail, set a multimeter to resistance or continuity and touch the probes to COM and NO. With the plunger at rest, a normally open switch shows no continuity; pressed, it reads close to 0 Ω. Repeat on COM and NC if the switch has a third terminal, where the readings reverse.
+For the continuity test, which the guide on [how to test a micro switch](/guides/how-to-test-a-micro-switch/) covers in more detail, set a multimeter to resistance or continuity and touch the probes to COM and NO. With the plunger at rest, a normally open switch shows no continuity; pressed, it reads close to 0 Ω. Repeat on COM and NC if the switch has a third terminal, where the readings reverse.
 
-Then compare the result with the microwave door interlock continuity test readings that the oven's service manual gives for that position with the door open and closed. A replacement that matches every row of the table and tests the same way as the original is the one that fits.
+Then compare the result with the [microwave door interlock continuity test](/guides/microwave-door-interlock-micro-switch-continuity-test/) readings that the oven's service manual gives for that position with the door open and closed. A replacement that matches every row of the table and tests the same way as the original is the one that fits.
 
 ## FAQ
 
@@ -103,6 +103,13 @@ In a repair, the wiring follows the old switch. Photograph or label each wire be
 Read the body print and the terminal labels on the old GSM-V1603A2 first, then find the switch's position, primary, secondary or monitor, in your oven's service manual. A replacement has to match the print, the labels and that position's continuity readings.
 
 Microwave door switches are a high-volume appliance part, and some switch makers publish their work in this area. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists microwave ovens among the kitchen appliances its home appliance micro switches are made for, and its success-cases page describes a Galanz microwave oven project for which it provides customized switch solutions. A maker's case page shows what a switch family is designed for, while the print and continuity checks above decide whether a part fits your oven.
+
+
+## Related guides
+
+- [corrosion resistant micro switch](/guides/corrosion-resistant-micro-switch/)
+- [micro switch 5pa2](/guides/micro-switch-5pa2/)
+- [micro switch current rating](/guides/micro-switch-current-rating/)
 
 ## Sources
 

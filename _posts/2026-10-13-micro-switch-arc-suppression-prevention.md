@@ -16,23 +16,23 @@ A micro switch that cuts power to a solenoid valve or a small DC motor can throw
 
 ## Quick answer
 
-Micro switch arc suppression means adding a small circuit that absorbs or diverts a load's stored energy, so less of it burns across the opening contacts. Crouzet's technical note for its switches lists three such circuits for inductive loads: a fast diode for DC only, and a varistor or an RC network for AC or DC.
+Micro switch arc suppression means adding a small circuit that absorbs or diverts a load's stored energy, so less of it burns across the opening contacts. [Crouzet's technical note](https://media.crouzet.com/catalog/_notice/pdf/SW_MS_microswitches_basic_technical_concepts_EN.pdf){: rel="nofollow noopener noreferrer" } for its switches lists three such circuits for inductive loads: a fast diode for DC only, and a varistor or an RC network for AC or DC.
 
 ## Why a micro switch arcs when it opens a load
 
-An arc is a spark of current that keeps flowing through the air after two contacts have physically separated. Inside a micro switch, also called a snap-action switch, the contacts sit close together, so the arc has only a short gap to jump. Panasonic's technical notes for its snap-action switches say the design is meant for AC, with "small contact gaps and no arc absorber," meaning no part built to put an arc out. The same notes allow only low-capacity DC use, within each product's rating.
+An arc is a spark of current that keeps flowing through the air after two contacts have physically separated. Inside a micro switch, also called a snap-action switch, the contacts sit close together, so the arc has only a short gap to jump. [Panasonic's technical notes](https://industry.panasonic.com/global/en/products/control/switch/micro/explain_term){: rel="nofollow noopener noreferrer" } for its snap-action switches say the design is meant for AC, with "small contact gaps and no arc absorber," meaning no part built to put an arc out. The same notes allow only low-capacity DC use, within each product's rating.
 
-The kind of current decides how long the arc lasts. An Omron FAQ on power relays explains that an AC arc dies each time the current passes through zero, while a DC current never reverses, so its arc carries on until something forces it out. Omron's FAQ on basic switches (FAQE20034) draws the same line for micro switches: in DC switching the arc lasts longer and wears the contacts harder than in AC.
+The kind of current decides how long the arc lasts. An [Omron FAQ on power relays](https://forum.digikey.com/t/explain-to-me-the-mechanism-that-interrupts-the-arc/38850){: rel="nofollow noopener noreferrer" } explains that an AC arc dies each time the current passes through zero, while a DC current never reverses, so its arc carries on until something forces it out. [Omron's FAQ on basic switches (FAQE20034)](https://forum.digikey.com/t/how-do-i-open-and-close-dc-using-a-basic-switch/35412){: rel="nofollow noopener noreferrer" } draws the same line for micro switches: in DC switching the arc lasts longer and wears the contacts harder than in AC.
 
 The kind of load decides how strong the arc is. A coil in a relay, solenoid or motor stores energy in its magnetic field while current flows through it. When the switch opens, the magnetic field collapses and the coil pushes back with a high voltage. Sprecher + Schuh's guide to surge suppressors for relay and contactor coils says that, without a suppressor, this spike can reach 8 to 10 times the coil's rated voltage. A voltage that high can push current across the separating contacts as an arc.
 
 Crouzet's technical note calls these inductive loads. The same note states that breaking them creates "powerful arcing that accelerates erosion of contacts".
 
-A resistive load such as a heater has no coil and stores almost no magnetic energy. Crouzet uses it as the reference load for its headline ratings and says switching it causes no specific problem. Our guide to inductive loads on a micro switch covers how these loads are rated.
+A resistive load such as a heater has no coil and stores almost no magnetic energy. Crouzet uses it as the reference load for its headline ratings and says switching it causes no specific problem. [Our guide to inductive loads on a micro switch](/guides/micro-switch-inductive-load/) covers how these loads are rated.
 
 ## How each suppression circuit gives the energy somewhere else to go
 
-Every suppression circuit does the same job: when the contacts open, the coil's current finds an easier route than the gap. The circuits differ in which supplies they suit and what they cost. Omron publishes a selection table for these circuits in its relay FAQ (FAQ02804), and the same contact physics applies to a micro switch driving a coil.
+Every suppression circuit does the same job: when the contacts open, the coil's current finds an easier route than the gap. The circuits differ in which supplies they suit and what they cost. Omron publishes a selection table for these circuits in its [relay FAQ (FAQ02804)](https://www.ia.omron.com/support/faq/answer/36/faq02804/index.html){: rel="nofollow noopener noreferrer" }, and the same contact physics applies to a micro switch driving a coil.
 
 ### RC network (snubber)
 
@@ -40,7 +40,7 @@ An RC network is a resistor (R) and a capacitor (C) wired in series. Omron's FAQ
 
 Panasonic's circuit notes for snap-action switches give a smaller example of 0.1 μF with a series resistor above 10 Ω. RC networks work on AC and DC.
 
-The capacitor needs its resistor. Omron's FAQ warns that a capacitor wired alone across the contacts stores energy while the switch is open, and that this energy rushes through the contacts when they close and can weld them. More on how an RC snubber works with a micro switch.
+The capacitor needs its resistor. Omron's FAQ warns that a capacitor wired alone across the contacts stores energy while the switch is open, and that this energy rushes through the contacts when they close and can weld them. [More on how an RC snubber works with a micro switch](/guides/micro-switch-rc-snubber-explained/).
 
 ### Diode across the load
 
@@ -48,11 +48,11 @@ A diode is a part that lets current flow one way only. Wired across a DC coil wi
 
 Omron's FAQ calls a diode generally the most effective protection for a DC load. The same FAQ specifies a reverse breakdown voltage (the voltage the diode can block) of more than 10 times the circuit voltage, plus a forward current rating above the load current. Crouzet's note gives the same placement for DC only, with the diode's reverse voltage above the supply voltage and its forward current about equal to the load current.
 
-A diode cannot be used on AC, because it would conduct on every other half cycle. More on the flyback diode and a micro switch.
+A diode cannot be used on AC, because it would conduct on every other half cycle. [More on the flyback diode and a micro switch](/guides/micro-switch-flyback-diode-explained/).
 
 The diode has a cost. Omron notes that it slows the release of a relay or solenoid more than an RC network does, because the coil's current dies away slowly through the diode. Sprecher + Schuh's guide puts the increase in a contactor coil's drop-out time at 3 to 10 times.
 
-Adding a Zener diode, a diode that also conducts backward above a set voltage, in series with the diode shortens that delay, according to Omron's FAQ. The two Omron sources differ on the Zener voltage: FAQ02804 puts it at about the supply voltage, while Omron Europe's knowledge-base article on contact welding puts it at about 1.2 times the supply voltage.
+Adding a Zener diode, a diode that also conducts backward above a set voltage, in series with the diode shortens that delay, according to Omron's FAQ. The two Omron sources differ on the Zener voltage: FAQ02804 puts it at about the supply voltage, while [Omron Europe's knowledge-base article on contact welding](https://automation-knowledge-base.omron.eu/support/solutions/articles/103000352417-what-causes-contact-welding-and-what-can-be-done-about-it-){: rel="nofollow noopener noreferrer" } puts it at about 1.2 times the supply voltage.
 
 ### Varistor
 
@@ -75,13 +75,13 @@ An RC network across the contacts has a side effect on AC. Omron's FAQ notes tha
 
 Suppression acts on the moment the contacts open. Some damage happens at the moment they close. Crouzet's note says lamps and capacitive loads can draw an inrush current of up to 15 times the rated current when switched on, which raises the risk of contact welding. Breaking those loads, the same note says, is no harder than breaking a resistive one. A suppressor that acts when the contacts open does little for a surge that happens when they close, so the answer is a switch rated for lamp loads.
 
-Panasonic's notes add a rule for capacitive loads: put a series resistor in front of each one to limit that surge. Contact welding and its causes covers what happens when the contacts fuse.
+Panasonic's notes add a rule for capacitive loads: put a series resistor in front of each one to limit that surge. [Contact welding and its causes](/guides/micro-switch-contact-welding-causes/) covers what happens when the contacts fuse.
 
 A suppressor also does not raise a switch's DC rating on paper. Omron's FAQ on DC switching tells you to select a switch with a DC rating and use it within that rating. The same FAQ points to its X series, which has a built-in magnet that blows the arc away from the contacts.
 
-Crouzet's note lists the other ways of raising DC breaking capacity: an arc reduction circuit, a double-break switch, a switch with magnetic blow-out, or several switches in series operated together. If the load draws more than the switch can break, Omron's guidance on contact welding is to switch the load with a relay or contactor. The micro switch then drives the relay's coil, which is itself an inductive load and needs its own diode or RC network. How a 5 amp rating compares with a real load walks through that check.
+Crouzet's note lists the other ways of raising DC breaking capacity: an arc reduction circuit, a double-break switch, a switch with magnetic blow-out, or several switches in series operated together. If the load draws more than the switch can break, Omron's guidance on contact welding is to switch the load with a relay or contactor. The micro switch then drives the relay's coil, which is itself an inductive load and needs its own diode or RC network. [How a 5 amp rating compares with a real load](/guides/5-amp-micro-switch-rating-load-suitability/) walks through that check.
 
-Two environments call for more than a suppressor. Omron's datasheet for its A-20G switch says a switch must not be used on its own in flammable or explosive gas, because arcing and heat can start a fire. The same datasheet notes that arc energy near silicone oil, silicone rubber or silicone wiring can deposit silicon oxide on the contacts, and it calls for both a contact protection circuit and removal of the silicone source.
+Two environments call for more than a suppressor. [Omron's datasheet for its A-20G switch](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } says a switch must not be used on its own in flammable or explosive gas, because arcing and heat can start a fire. The same datasheet notes that arc energy near silicone oil, silicone rubber or silicone wiring can deposit silicon oxide on the contacts, and it calls for both a contact protection circuit and removal of the silicone source.
 
 ## FAQ
 
@@ -98,6 +98,14 @@ A limit switch is often built around a basic micro switch, and the datasheet for
 Check whether the supply is AC or DC, because that rules the diode in or out. Check whether the load is a coil, a lamp or a capacitor, because suppression helps the first and does little for the other two. Check the switch's own DC rating, because no suppressor can stand in for it.
 
 Switch makers also work on the arc inside the switch body. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} describes its new energy micro switches, used for functions such as charging gun insertion and removal detection, as having enhanced arc resistance and high insulation compared with basic micro switches. That is a property of the switch itself, so the supply, load and DC rating checks above still apply to the circuit around it.
+
+
+## Related guides
+
+- [micro switch flyback diode causes](/guides/micro-switch-flyback-diode-causes/)
+- [panel mount plunger micro switch working principle](/guides/panel-mount-plunger-micro-switch-working-principle/)
+- [cam follower micro switch adjustment](/guides/cam-follower-micro-switch-adjustment/)
+- [micro switch SPST NC contacts explained](/guides/micro-switch-spst-nc-contacts-explained/)
 
 ## Sources
 

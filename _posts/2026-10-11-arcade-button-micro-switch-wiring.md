@@ -16,13 +16,13 @@ An arcade button's micro switch has three metal tabs printed COM, NO and NC, yet
 
 ## Quick answer
 
-Arcade button micro switch wiring uses two of three terminals: the input wire goes on normally open (NO), the ground wire on common (COM). Ultimarc's installation notes for its I-PAC input boards say to leave the normally closed (NC) tab empty and to daisy-chain the ground side of every switch, one wire running from switch to switch, to a single GND terminal.
+Arcade button micro switch wiring uses two of three terminals: the input wire goes on normally open (NO), the ground wire on common (COM). [Ultimarc's installation notes for its I-PAC input boards](https://www.ultimarc.com/control-interfaces/i-pacs/i-pac2/){: rel="nofollow noopener noreferrer" } say to leave the normally closed (NC) tab empty and to daisy-chain the ground side of every switch, one wire running from switch to switch, to a single GND terminal.
 
 ## Before you start: power and connectors
 
 If the button sits in a full cabinet with a PC, monitor or power supply inside, switch the cabinet off at the wall and unplug it before you reach into the control panel. A stand-alone stick that runs from a USB cable only needs the cable unplugged. Ultimarc's page for the I-PAC 2 says the board plugs into a USB port and needs no separate power, so the button circuit itself is low voltage.
 
-Check the connector size before you buy wire. Push-on connectors have to match the width of the switch's tabs, the flat metal blades the wires slide onto. Ultimarc lists the ready-made wiring harness for its Mini-PAC board with 4.8 mm switch connectors, or with both 4.8 mm and 2.8 mm connectors for its Goldleaf button panels, so both widths turn up on arcade switches. Wikipedia's FASTON terminal article lists those widths as the 187 and 110 families, named for blade widths of 0.187 in and 0.110 in.
+Check the connector size before you buy wire. Push-on connectors have to match the width of the switch's tabs, the flat metal blades the wires slide onto. Ultimarc lists the ready-made wiring harness for its Mini-PAC board with 4.8 mm switch connectors, or with both 4.8 mm and 2.8 mm connectors for its Goldleaf button panels, so both widths turn up on arcade switches. [Wikipedia's FASTON terminal article](https://en.wikipedia.org/wiki/FASTON_terminal){: rel="nofollow noopener noreferrer" } lists those widths as the 187 and 110 families, named for blade widths of 0.187 in and 0.110 in.
 
 ## Identify COM, NO and NC on the switch
 
@@ -32,7 +32,7 @@ Most switches print the three labels on the case next to the tabs. Each label te
 - **NO (normally open)** stays apart from COM until the button is pressed.
 - **NC (normally closed)** touches COM until the button is pressed.
 
-"Normally" means at rest, with nothing pressing the switch. Electronic Design's article on snap-action switches describes the press from that resting state: at the operating point, the common contact accelerates away from the NC contact and comes to rest against the NO contact. The explainer on NO and NC micro switch contacts covers the two states in more depth.
+"Normally" means at rest, with nothing pressing the switch. [Electronic Design's article on snap-action switches](https://www.electronicdesign.com/markets/energy/article/21789793/snap-action-switches-still-rule-the-roost){: rel="nofollow noopener noreferrer" } describes the press from that resting state: at the operating point, the common contact accelerates away from the NC contact and comes to rest against the NO contact. The [explainer on NO and NC micro switch contacts](/guides/no-nc-micro-switch/) covers the two states in more depth.
 
 If the labels are worn off, a multimeter on its continuity setting sorts the tabs out with the power off. On that setting, the meter beeps when its two probes touch metal that's connected. Touch the probes to two tabs at a time. The pair that beeps at rest and goes quiet when you press is COM and NC. The pair that stays quiet at rest and beeps when you press is COM and NO. The tab that appears in both pairs is COM.
 
@@ -44,7 +44,7 @@ If the labels are worn off, a multimeter on its continuity setting sorts the tab
 4. **Leave NC empty.** Ultimarc's notes say nothing should go on the NC tag.
 5. **Tug each connector gently.** A connector that slides off with a light pull isn't fully seated or doesn't match the tab width.
 
-The shared ground is standard practice in arcade cabinets. Ultimarc's I-PAC 2 page states that most arcade cabinets have one side of all switches commoned, and that the board's button inputs are all referenced to ground, so no button needs its own separate ground run. On the Mini-PAC, which uses a supplied harness, Ultimarc ships the ground as its own daisy-chain harness that plugs into the black wire of the main harness. The guide to why one COM wire can serve every button explains the shared ground in more detail.
+The shared ground is standard practice in arcade cabinets. Ultimarc's I-PAC 2 page states that most arcade cabinets have one side of all switches commoned, and that the board's button inputs are all referenced to ground, so no button needs its own separate ground run. On the Mini-PAC, which uses a supplied harness, Ultimarc ships the ground as its own daisy-chain harness that plugs into the black wire of the main harness. The [guide to why one COM wire can serve every button](/guides/button-com-1-wire/) explains the shared ground in more detail.
 
 ## Test the button with the board connected
 
@@ -77,13 +77,21 @@ Wire each button's NO tab to its own input on the board, then run a single groun
 
 ### How many ohms should a switch have?
 
-Measured across COM and NO with the button held, a closed switch should read close to zero ohms on a multimeter; with the button released, the meter should show an open circuit. For scale, Omron's datasheet for its A-20G basic switch lists contact resistance, the resistance across the closed contacts, of 15 mΩ maximum when new, far below what a hobby meter can show. A reading of several ohms across closed contacts points to dirty or worn contacts or a poor connector.
+Measured across COM and NO with the button held, a closed switch should read close to zero ohms on a multimeter; with the button released, the meter should show an open circuit. For scale, [Omron's datasheet for its A-20G basic switch](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } lists contact resistance, the resistance across the closed contacts, of 15 mΩ maximum when new, far below what a hobby meter can show. A reading of several ohms across closed contacts points to dirty or worn contacts or a poor connector.
 
 ## After the buttons work
 
-Joystick switches follow the same rule: input on NO, ground on COM, NC empty, with the joystick's switches joining the same ground chain. The arcade joystick micro switch wiring guide covers terminal checks for the direction switches, and the arcade micro switch explainer covers what the switch under each button is.
+Joystick switches follow the same rule: input on NO, ground on COM, NC empty, with the joystick's switches joining the same ground chain. The [arcade joystick micro switch wiring guide](/guides/arcade-joystick-micro-switch-wiring/) covers terminal checks for the direction switches, and the [arcade micro switch explainer](/guides/arcade-micro-switch/) covers what the switch under each button is.
 
 Switch makers build parts with this use in mind. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists game control sticks among the markets on its home page, and its G6 troubleshooting article assigns the ZINGEAR G605-150S06A to gaming joysticks and e-sports peripherals. The COM, NO and NC rule above applies to whichever switch you fit, so read its terminal markings before you crimp the first wire.
+
+
+## Related guides
+
+- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
+- [elevator micro switch](/guides/elevator-micro-switch/)
+- [rice cooker micro switch](/guides/rice-cooker-micro-switch/)
+- [what is a micro switch in a car](/guides/what-is-a-micro-switch-in-a-car/)
 
 ## Sources
 

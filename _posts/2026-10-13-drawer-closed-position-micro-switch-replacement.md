@@ -27,7 +27,7 @@ US patent 8,224,701, for a detecting device for a cash drawer and point-of-sale 
 The switch's job sets how much care the replacement needs:
 
 - **Status switches** on cash drawers and similar equipment report a position to a controller over a low-voltage signal line, as in the patent above. A wrong reading there causes a nuisance rather than a hazard.
-- **Safety interlocks** stop something dangerous when the drawer opens. A microwave drawer is a microwave oven, and US federal rules for microwave ovens (21 CFR 1030.10) require at least two safety interlocks plus a means of monitoring them, and say service procedures must not leave the interlocks inoperative. Replacing those switches is a job for qualified service using the manufacturer's procedure; our guide to the microwave door interlock continuity test explains how those switch sets are checked.
+- **Safety interlocks** stop something dangerous when the drawer opens. A microwave drawer is a microwave oven, and US federal rules for microwave ovens (21 CFR 1030.10) require at least two safety interlocks plus a means of monitoring them, and say service procedures must not leave the interlocks inoperative. Replacing those switches is a job for qualified service using the manufacturer's procedure; our guide to the [microwave door interlock continuity test](/guides/microwave-door-interlock-micro-switch-continuity-test/) explains how those switch sets are checked.
 
 ## Before you start: power and safety
 
@@ -39,7 +39,7 @@ Don't tape the switch down, join its terminals with a wire, or bend its lever to
 
 A drawer that no longer closes far enough looks exactly like a failed switch. With the power off, find the switch at the back or side of the drawer opening. If you lift the drawer off its slides to see it, put the drawer back for this check.
 
-- **Push the drawer fully shut by hand and watch the switch.** You should see the plunger or lever move and, in a quiet room, hear a click. If the drawer stops short because of a bent slide, a jammed item or debris, fix that first. Our article on drawer closed position micro switch actuator travel covers how far the drawer needs to push.
+- **Push the drawer fully shut by hand and watch the switch.** You should see the plunger or lever move and, in a quiet room, hear a click. If the drawer stops short because of a bent slide, a jammed item or debris, fix that first. Our article on [drawer closed position micro switch actuator travel](/guides/drawer-closed-position-micro-switch-actuator-travel/) covers how far the drawer needs to push.
 - **Check the lever.** Omron's FAQ on basic switch failures names a deformed actuator lever as a relatively common cause, and says a lever that sits at a larger angle or has more play than before has deformed.
 - **Check the bracket.** A switch that has shifted on loose screws or a cracked bracket can sit out of reach of the drawer.
 
@@ -52,7 +52,7 @@ Disconnect the switch's wires, photograph which terminals they came from, and se
 | Released (drawer out) | Continuity | Open |
 | Pressed past the click (drawer shut) | Open | Continuity |
 
-A switch that reads the same in both positions, or that flickers as you press it slowly, has failed. If it tests good and the drawer presses it fully, the fault is in the cable, the connector or the controller instead. Our guide to why a cash drawer position micro switch is not working follows that path on point-of-sale equipment.
+A switch that reads the same in both positions, or that flickers as you press it slowly, has failed. If it tests good and the drawer presses it fully, the fault is in the cable, the connector or the controller instead. Our guide to [why a cash drawer position micro switch is not working](/guides/cash-drawer-position-micro-switch-not-working/) follows that path on point-of-sale equipment.
 
 ## Step 3: Choose a replacement that matches
 
@@ -60,7 +60,7 @@ The manufacturer's part number is the surest match. When you're choosing a gener
 
 | Check | Why it matters |
 |---|---|
-| Size and mounting hole spacing | The new switch has to bolt into the same holes; our guide to micro switch mounting holes lists datasheet spacings by size. |
+| Size and mounting hole spacing | The new switch has to bolt into the same holes; our guide to [micro switch mounting holes](/guides/micro-switch-mounting-holes/) lists datasheet spacings by size. |
 | Actuator type and lever length | A longer or shorter lever changes where the drawer trips the switch. |
 | Terminal style | Quick-connect tabs, solder lugs and PCB pins aren't interchangeable without rewiring. |
 | Contact type for small signals | A switch built for heavy loads may not reliably switch a logic-level signal, the few-volt on/off signal an electronic input reads. |
@@ -70,7 +70,7 @@ That last row is easy to miss on a status switch. Omron's VX datasheet warns tha
 ## Step 4: Fit, wire and adjust the new switch
 
 1. **Mount it the same way round as the old one,** on a flat surface. Omron's SS datasheet warns that mounting on an uneven surface can deform the switch, causing faulty operation or a broken housing.
-2. **Wire it to the same terminal pair.** If the old switch used COM and NO, the new one must too. Swapping to COM and NC reverses the signal, so a drawer that's shut would read as open. Our explainer on drawer closed position micro switch NO and NC terminals covers how to tell which pair your equipment uses.
+2. **Wire it to the same terminal pair.** If the old switch used COM and NO, the new one must too. Swapping to COM and NC reverses the signal, so a drawer that's shut would read as open. Our explainer on [drawer closed position micro switch NO and NC terminals](/guides/drawer-closed-position-micro-switch-no-and-nc-terminals/) covers how to tell which pair your equipment uses.
 3. **Set how far the drawer presses the switch.** Close the drawer and check that it presses the switch past the click with some movement to spare. Omron's FAQ on how far to push a basic switch warns that stopping near the operating point can cause chattering. The same FAQ sets the pushing distance at 60% to 90% of the switch's rated overtravel, the extra distance the plunger can safely move after it clicks. A slotted bracket, if your equipment has one, lets you slide the switch to get there.
 4. **Mind the lever's weight.** Omron's VX datasheet says to mount a lever switch so the lever's weight doesn't rest on the switch, because its small reset force may not spring the lever back.
 
@@ -93,6 +93,14 @@ Disconnect power and mount the switch with the screws and washers its datasheet 
 Suppose a new switch tests good on the bench and the drawer still reads incorrectly. Check the terminal pair against your photo first, then the cable and connector, then whether the drawer still travels far enough to press the switch. Each of those can make a good switch report the wrong state.
 
 Drawer closing detection is a listed use for appliance switches. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} names large-capacity disinfection cabinet drawer closing verification among the applications of its ZINGEAR G905-150F06W1, and disinfection cabinet drawer closing monitoring among those of its ZINGEAR G9105-150S00D1. Whichever switch you fit, match its terminal pair to your photo of the old wiring.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 

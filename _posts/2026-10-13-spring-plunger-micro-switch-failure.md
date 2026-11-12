@@ -35,7 +35,7 @@ Going by those two rows, the spring plunger lets the machine part that presses t
 
 Omron's SS series datasheet tells installers to turn off the power supply before mounting or removing the switch, wiring it, or doing maintenance, because working live can cause electric shock or burns. On anything plugged into a wall outlet, unplug it; on battery equipment, take the battery out. Don't bypass the switch to keep a machine running while you troubleshoot: if it sits on a door, guard or limit, it's there to stop something moving.
 
-Most of these switches have three terminals, marked common (COM), normally closed (NC) and normally open (NO). Electronic Design's explainer on snap-action switches describes the at-rest state: with the plunger fully released, the common contact rests against the NC contact, so COM to NC conducts. Pressing past the operating point, where the switch clicks, moves the common contact over to NO. "Normally" means "with nothing pressing the plunger," which matters when the switch is installed and the machine holds it pressed. Our guide to NO and NC terminals on a micro switch covers the markings in more detail.
+Most of these switches have three terminals, marked common (COM), normally closed (NC) and normally open (NO). Electronic Design's explainer on snap-action switches describes the at-rest state: with the plunger fully released, the common contact rests against the NC contact, so COM to NC conducts. Pressing past the operating point, where the switch clicks, moves the common contact over to NO. "Normally" means "with nothing pressing the plunger," which matters when the switch is installed and the machine holds it pressed. Our guide to [NO and NC terminals on a micro switch](/guides/no-nc-micro-switch/) covers the markings in more detail.
 
 ## Step 1: Check the plunger and what presses it
 
@@ -43,7 +43,7 @@ Start with the switch still mounted and the power off. Move the machine part (do
 
 - **Does the part reach the plunger at all?** A bracket that has shifted or a cam that has worn can stop short. Crouzet's technical notes on its micro switches say the actuating device must push the plunger through at least 0.5 times the rated overtravel, and must never stop at the operating point. If the part barely touches the plunger, the switch can't switch reliably.
 - **Is the push straight?** The same Crouzet notes say a plunger should be pressed along its axis, and that most of its switches accept a side approach only up to 45° off the plunger's axis. A part that wipes across the plunger at a steep angle loads it sideways, which can bind the plunger or crack the housing over time.
-- **Does the plunger come back?** Press it with a fingertip and let go. It should return fully and on its own. A plunger that returns slowly or stops partway points to dirt, grease or a damaged plunger spring. Omron's A series precautions warn against mounting the switch where cutting debris and dust can build up on the actuator. Our article on why a micro switch plunger sticks goes through those causes.
+- **Does the plunger come back?** Press it with a fingertip and let go. It should return fully and on its own. A plunger that returns slowly or stops partway points to dirt, grease or a damaged plunger spring. Omron's A series precautions warn against mounting the switch where cutting debris and dust can build up on the actuator. Our article on [why a micro switch plunger sticks](/guides/micro-switch-plunger-sticking-explained/) goes through those causes.
 
 ## Step 2: Check how far the plunger is pushed
 
@@ -70,13 +70,13 @@ What the readings point to:
 - **Continuity that stays on one pair whatever you do:** the contacts may be welded shut, or the mechanism isn't moving. If the plunger moves freely but nothing changes, it's the inside of the switch.
 - **A reading that flickers as you press slowly:** check the travel (Step 2) first, then suspect worn or dirty contacts.
 
-Our step-by-step guide on how to test a spring plunger micro switch shows probe placement on common terminal layouts.
+Our step-by-step guide on [how to test a spring plunger micro switch](/guides/how-to-test-a-spring-plunger-micro-switch/) shows probe placement on common terminal layouts.
 
 ## Why the contacts fail
 
 If the plunger and travel check out but the contact test fails, the cause is usually electrical or environmental.
 
-- **Welding from high inrush.** Crouzet's notes say motors and electromagnets can draw an inrush, a surge at the moment of switch-on, of up to 6 times the rated current when switched on, and lamps and capacitive loads up to 15 times, which greatly increases the risk of welding the contacts. Omron's A series datasheet adds that switching extremely slowly can also lead to contact failure or welding. Our contact welding troubleshooting guide covers this case.
+- **Welding from high inrush.** Crouzet's notes say motors and electromagnets can draw an inrush, a surge at the moment of switch-on, of up to 6 times the rated current when switched on, and lamps and capacitive loads up to 15 times, which greatly increases the risk of welding the contacts. Omron's A series datasheet adds that switching extremely slowly can also lead to contact failure or welding. Our [contact welding troubleshooting guide](/guides/micro-switch-contact-welding-troubleshooting/) covers this case.
 - **Film on the contacts from too little current.** Omron's FAQ on the minimum applicable load says that below that load, the contact surface is more open to a chemical coating from the surrounding air, which can cause contact failure. A switch built for a motor circuit and reused on a small signal line can fail this way.
 - **Contamination.** Crouzet tells users to keep silicone, grease, oil and cyanoacrylate glue away from its micro switches because they affect contact resistance, and says grease and oil must never get inside. Spraying lubricant at a sticky plunger can turn a mechanical problem into a contact problem.
 - **Vibration.** Omron's A series precautions say continuous vibration or shock can cause contact failure from abrasion powder and shorten the switch's life.
@@ -97,7 +97,15 @@ It depends on the series and the load. Omron's A series datasheet lists 1,000,00
 
 ## Where to look next
 
-If the plunger and contacts both test fine, the fault is in the wiring or the controller that reads the switch, and our guide to diagnosing an intermittent micro switch covers that side. If the switch did fail, measure the travel your machine gives the plunger before fitting the new one, and check that it carries the plunger past the click and into the overtravel window on the new switch's datasheet.
+If the plunger and contacts both test fine, the fault is in the wiring or the controller that reads the switch, and our guide to [diagnosing an intermittent micro switch](/guides/intermittent-micro-switch-diagnosis/) covers that side. If the switch did fail, measure the travel your machine gives the plunger before fitting the new one, and check that it carries the plunger past the click and into the overtravel window on the new switch's datasheet.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 

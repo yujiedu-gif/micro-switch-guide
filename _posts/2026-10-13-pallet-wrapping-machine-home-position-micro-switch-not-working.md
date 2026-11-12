@@ -16,23 +16,23 @@ A pallet wrapper that keeps turning after the wrap cycle, or won't start because
 
 ## Quick answer
 
-When a pallet wrapping machine's home position micro switch (also called a snap-action switch) fails, the fault sits in one of three places: the cam or roller pressing it, its contacts, or the wiring and controller input. Omron's FAQ on basic switch failures splits basic switch failures into mechanical ones, which covers the first place, and electrical ones such as contact failure, which covers the second.
+When a pallet wrapping machine's home position micro switch (also called a snap-action switch) fails, the fault sits in one of three places: the cam or roller pressing it, its contacts, or the wiring and controller input. [Omron's FAQ on basic switch failures](https://forum.digikey.com/t/what-may-have-caused-a-basic-switch-failure/35453){: rel="nofollow noopener noreferrer" } splits basic switch failures into mechanical ones, which covers the first place, and electrical ones such as contact failure, which covers the second.
 
 Check each place with the machine locked out, starting with the one you can see.
 
 ## Confirm the home sensor is a micro switch
 
-"Home" on a pallet wrapper can mean two positions: the turntable's stopping point and the film carriage's starting height. The two are often sensed by different parts. The user manual for Global Industrial's fully automatic low profile pallet wrapper (model 238509) shows the split. The parts list gives the turntable an NPN proximity switch and the tower two limit switches for the carriage's up and down limits. A micro switch with a roller sits on the film carriage's safety plate.
+"Home" on a pallet wrapper can mean two positions: the turntable's stopping point and the film carriage's starting height. The two are often sensed by different parts. The [user manual for Global Industrial's fully automatic low profile pallet wrapper (model 238509)](https://static.globalindustrial.com/products/pdf/89665-global-industrial/238509.pdf){: rel="nofollow noopener noreferrer" } shows the split. The parts list gives the turntable an NPN proximity switch and the tower two limit switches for the carriage's up and down limits. A micro switch with a roller sits on the film carriage's safety plate.
 
 The same manual says that pressing Reset returns the turntable to its home position and lowers the carriage to its initial position. A home fault on that machine can therefore come from a proximity sensor or from a mechanical limit switch, depending on which motion fails to reach home.
 
-Look at the part before testing it. A micro switch or limit switch has a lever, roller or plunger that something has to push, and usually three screw or spade terminals. A proximity sensor is a threaded or flat body with a cable and no moving actuator. If yours is a proximity sensor, the checks below for cams, levers and contacts don't apply; see the guide on how 2-wire proximity sensors work instead.
+Look at the part before testing it. A micro switch or limit switch has a lever, roller or plunger that something has to push, and usually three screw or spade terminals. A proximity sensor is a threaded or flat body with a cable and no moving actuator. If yours is a proximity sensor, the checks below for cams, levers and contacts don't apply; see the guide on [how 2-wire proximity sensors work](/guides/2-wire-proximity-sensor/) instead.
 
 Figure 1. On a turntable pallet wrapper, "home" can depend on more than one sensor, and they are not always the same type.
 
 ## Lock out the wrapper before you touch the switch
 
-The Global Industrial manual requires all maintenance to be done with the power supply disconnected and limits inspection, troubleshooting and part replacement to qualified personnel. In the US, the lockout rule OSHA 29 CFR 1910.147 applies to servicing where an unexpected start could injure someone, and a turntable or carriage that starts while your hands are at the switch is that hazard.
+The Global Industrial manual requires all maintenance to be done with the power supply disconnected and limits inspection, troubleshooting and part replacement to qualified personnel. In the US, the lockout rule [OSHA 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147){: rel="nofollow noopener noreferrer" } applies to servicing where an unexpected start could injure someone, and a turntable or carriage that starts while your hands are at the switch is that hazard.
 
 OSHA's rule also states that push buttons, selector switches and other control circuit devices are not energy isolating devices. The wrapper's stop button and the emergency stop are control circuit devices, so pressing them does not make the machine safe to reach into. Lock the main disconnect instead.
 
@@ -54,7 +54,7 @@ A micro switch only changes state after its actuator has moved a set distance, a
 
 A bent lever is the first. Omron's FAQ on basic switch failures names deformation of the actuator lever as a relatively common cause, typically after something got caught in the lever. On a wrapper, a torn film tail or a dropped strap can be that something.
 
-An actuator pushed too little or too far is the second problem: too little shows up as no click when the machine reaches home, too far as a lever bent past its stop. Omron's FAQ on how far to push a basic switch deals with overtravel (OT), the distance the actuator may keep moving after the contacts switch. The FAQ gives 60% to 90% of the specified OT and warns that beyond 90% the actuator or switch may be damaged. Omron's A-20G datasheet gives a different window for that switch, 70% to 100% of the rated OT, so use the figure in the datasheet for your exact part.
+An actuator pushed too little or too far is the second problem: too little shows up as no click when the machine reaches home, too far as a lever bent past its stop. [Omron's FAQ on how far to push a basic switch](https://forum.digikey.com/t/please-advise-the-appropriate-amount-of-pushing-for-a-basic-switch/35452){: rel="nofollow noopener noreferrer" } deals with overtravel (OT), the distance the actuator may keep moving after the contacts switch. The FAQ gives 60% to 90% of the specified OT and warns that beyond 90% the actuator or switch may be damaged. [Omron's A-20G datasheet](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } gives a different window for that switch, 70% to 100% of the rated OT, so use the figure in the datasheet for your exact part.
 
 A cam that stops the actuator right at the switching point is the third. The same Omron FAQ warns against stopping near the operating position (OP), where the contacts switch on, or the release position (RP), where they switch back, because contact pressure there is low and chattering or bouncing can follow. A turntable that coasts to a stop with the roller balanced on the edge of the cam gives an intermittent home signal.
 
@@ -64,7 +64,7 @@ With the wrapper locked out, remove one wire from the switch so the rest of the 
 
 At rest, COM to NC should read closed and COM to NO open. Press the lever through its stroke and both readings should swap with a click. Release slowly and they should swap back. If the readings don't change, or flicker as you press, the contacts are at fault even when the click sounds normal.
 
-Two contact problems explain a switch that clicks but doesn't conduct. Omron's FAQ on minimum loads says that below a basic switch's minimum applicable load, the contact surface is more susceptible to a chemical coating from the surrounding air, which can eventually cause contact failure. A controller input draws a small current, so a home switch with silver contacts can be exposed to exactly that. Omron's A-20G datasheet adds a second cause: the switch is generally not built to resist water, and splashing oil, water or dust calls for a protective cover.
+Two contact problems explain a switch that clicks but doesn't conduct. [Omron's FAQ on minimum loads](https://forum.digikey.com/t/what-problems-may-occur-if-the-set-current-is-below-the-minimum-applicable-load-for-a-basic-switch/35390){: rel="nofollow noopener noreferrer" } says that below a basic switch's minimum applicable load, the contact surface is more susceptible to a chemical coating from the surrounding air, which can eventually cause contact failure. A controller input draws a small current, so a home switch with silver contacts can be exposed to exactly that. Omron's A-20G datasheet adds a second cause: the switch is generally not built to resist water, and splashing oil, water or dust calls for a protective cover.
 
 📌 **On replacement parts:** *A switch with gold-plated contacts is made for small signal currents. Match the contact material, actuator type and terminal layout of the original, using the wrapper maker's part number where one is listed.*
 
@@ -80,7 +80,7 @@ Never place a jumper across the home switch or force the input to get the machin
 
 ### How do limit switches work?
 
-A limit switch is a switch that a moving part of a machine presses when it reaches a set position. ABB's technical data for its limit switches describes two kinds of contact element inside. Snap-action contacts switch at a speed independent of the actuator; slow-action contacts move only as fast as the actuator does. On a pallet wrapper, a cam or plate on the turntable or carriage presses the switch's lever or roller.
+A limit switch is a switch that a moving part of a machine presses when it reaches a set position. [ABB's technical data for its limit switches](https://library.e.abb.com/public/3bc07b949ed045eeb142e05426863e59/1SXU000023C0202_09_General_tech_data.pdf){: rel="nofollow noopener noreferrer" } describes two kinds of contact element inside. Snap-action contacts switch at a speed independent of the actuator; slow-action contacts move only as fast as the actuator does. On a pallet wrapper, a cam or plate on the turntable or carriage presses the switch's lever or roller.
 
 ### Is the home sensor on a pallet wrapper a micro switch or a proximity sensor?
 
@@ -92,9 +92,17 @@ An intermittent home signal can point to a roller that stops near the switching 
 
 ## What to write down before you call service
 
-Note which motion fails to reach home, what type of sensor sits there, whether the switch clicks, what the meter showed across COM, NO and NC, and whether the input indicator changed. Those five observations narrow the fault to actuation, contacts or wiring before a technician arrives. For more on the parts involved, see the guides on how to test a micro switch with a multimeter, micro switch contact oxidation, cam misalignment on a micro switch and roller plunger micro switch failure.
+Note which motion fails to reach home, what type of sensor sits there, whether the switch clicks, what the meter showed across COM, NO and NC, and whether the input indicator changed. Those five observations narrow the fault to actuation, contacts or wiring before a technician arrives. For more on the parts involved, see the guides on [how to test a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/), [micro switch contact oxidation](/guides/micro-switch-contact-oxidation-explained/), [cam misalignment on a micro switch](/guides/micro-switch-cam-misalignment-explained/) and [roller plunger micro switch failure](/guides/roller-plunger-micro-switch-failure/).
 
 Home and in-place signals like this one are exactly what some industrial switch lines are built to report. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} says its heavy-duty industrial micro switches feed back key status signals such as equipment limit position and station in-place, with the stated aim of reducing unplanned shutdowns. The checks above still sort out whether a given fault sits in the actuation, the contacts or the wiring.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 

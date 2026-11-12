@@ -22,9 +22,9 @@ In the handbook's description, those switches do two jobs on landing gear. A squ
 
 ## What the FAA handbook means by a micro switch
 
-The FAA's Aviation Maintenance Technician Handbook, Airframe (FAA-H-8083-31B), the textbook the agency publishes for mechanics preparing for certification, describes micro switches in its electrical chapter. The handbook states that micro switches "require very little pressure to activate," that they're spring loaded, and that their contacts return to the normal position once the pressure is removed. The same passage names landing gear, flaps and spoilers as examples of moving parts whose position these switches detect or whose travel they limit.
+The FAA's [Aviation Maintenance Technician Handbook, Airframe (FAA-H-8083-31B)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf){: rel="nofollow noopener noreferrer" }, the textbook the agency publishes for mechanics preparing for certification, describes micro switches in its electrical chapter. The handbook states that micro switches "require very little pressure to activate," that they're spring loaded, and that their contacts return to the normal position once the pressure is removed. The same passage names landing gear, flaps and spoilers as examples of moving parts whose position these switches detect or whose travel they limit.
 
-The same handbook lists the usual contact arrangement as single pole, double throw (SPDT) or double pole, double throw (DPDT). In an SPDT switch, one moving contact can touch either of two fixed contacts, and the handbook names the three contacts normally open (NO), normally closed (NC) and common (COM). "Normally" refers to the state with nothing pressing the actuator, the plunger or lever that the outside part pushes. Electronic Design's explainer on snap-action switches describes the common contact resting against the NC contact in that free position, then moving over to the NO contact once the plunger reaches its operating point.
+The same handbook lists the usual contact arrangement as single pole, double throw (SPDT) or double pole, double throw (DPDT). In an SPDT switch, one moving contact can touch either of two fixed contacts, and the handbook names the three contacts normally open (NO), normally closed (NC) and common (COM). "Normally" refers to the state with nothing pressing the actuator, the plunger or lever that the outside part pushes. [Electronic Design's explainer on snap-action switches](https://www.electronicdesign.com/markets/energy/article/21789793/snap-action-switches-still-rule-the-roost){: rel="nofollow noopener noreferrer" } describes the common contact resting against the NC contact in that free position, then moving over to the NO contact once the plunger reaches its operating point.
 
 A glossary at the back of the handbook adds the history behind the name. The glossary entry for the one-word spelling defines the term as the registered trade name for a precision switch that uses a short throw of the control plunger to actuate the contacts. The same entry says these switches are used primarily as limit switches, meaning switches that signal when a moving part reaches the end of its travel.
 
@@ -57,7 +57,7 @@ In that design, the switch never touches the handle. All the switch does is open
 
 Other systems use the same air or ground signal. Squat switches serve antiskid brake systems, landing gear safety circuits and cabin pressurization systems, according to the FAA glossary. In the handbook's anti-skid section, the brakes are kept from applying until the squat switch signals weight on wheels, because brakes applied as the tires touch the runway could cause an immediate tire blowout.
 
-An August 2012 article by Ian J. Twombly in AOPA's Flight Training magazine adds transponders, the radios that report the aircraft to air traffic control, which switch between standby on the ground and altitude mode in the air. SKYbrary, the aviation safety reference, lists thrust reversers, nose wheel steering, trim and autopilot among the systems that use the weight on wheels (WoW) signal.
+[An August 2012 article by Ian J. Twombly in AOPA's Flight Training magazine](https://www.aopa.org/news-and-media/all-news/2012/august/flight-training-magazine/how-it-works){: rel="nofollow noopener noreferrer" } adds transponders, the radios that report the aircraft to air traffic control, which switch between standby on the ground and altitude mode in the air. [SKYbrary, the aviation safety reference](https://skybrary.aero/articles/weight-wheels-wow-systems){: rel="nofollow noopener noreferrer" }, lists thrust reversers, nose wheel steering, trim and autopilot among the systems that use the weight on wheels (WoW) signal.
 
 ## How limit switches stop the gear motor and light the three green lights
 
@@ -83,7 +83,7 @@ On many aircraft, the gear position job goes to a sensor with no moving contacts
 
 When the gear is in its designed position, the metal target sits close to the inductor in the sensor and reduces the return voltage. The handbook's example drawing lists the detector output as 0.3 V for logic 0 and 13 V for logic 1, the two states the logic unit reads.
 
-The handbook gives the reason for the change. Switches with moving parts, it says, "can become contaminated with dirt and moisture from runways and taxi ways." Aircraft parts makers build sensors for this job: Crane Aerospace & Electronics, which makes ELDEC sensors, lists self-contained proximity sensors for landing gear, including weight on wheels, among its products. SKYbrary's article on weight on wheels systems states the trade-off. Mechanical switches are easier to test but fail more often because they rely on mechanical contacts, and proximity sensors are more reliable but harder to troubleshoot.
+The handbook gives the reason for the change. Switches with moving parts, it says, "can become contaminated with dirt and moisture from runways and taxi ways." Aircraft parts makers build sensors for this job: [Crane Aerospace & Electronics](https://www.craneae.com/proximity-switches){: rel="nofollow noopener noreferrer" }, which makes ELDEC sensors, lists self-contained proximity sensors for landing gear, including weight on wheels, among its products. SKYbrary's article on weight on wheels systems states the trade-off. Mechanical switches are easier to test but fail more often because they rely on mechanical contacts, and proximity sensors are more reliable but harder to troubleshoot.
 
 | | Micro switch (contact type) | Proximity sensor (non-contact) |
 |---|---|---|
@@ -93,7 +93,7 @@ The handbook gives the reason for the change. Switches with moving parts, it say
 | Weak point named in the sources | Dirt and moisture on moving parts (FAA handbook); fails more often (SKYbrary) | Can read partly open and partly closed if the gap is wrong (SKYbrary) |
 | Testing | Easier to test (SKYbrary) | Harder to troubleshoot (SKYbrary) |
 
-SKYbrary adds a caution about the gap between target and sensor: a proximity sensor that's known to be good but set to an incorrect clearance can cause very erratic behavior in the systems that use its signal. The comparison of micro switches and proximity sensors covers the two sensing methods outside aviation.
+SKYbrary adds a caution about the gap between target and sensor: a proximity sensor that's known to be good but set to an incorrect clearance can cause very erratic behavior in the systems that use its signal. The [comparison of micro switches and proximity sensors](/guides/micro-switch-proximity-sensors/) covers the two sensing methods outside aviation.
 
 ## Questions people ask about landing gear switches
 
@@ -107,11 +107,19 @@ The FAA handbook's landing gear chapter opens with its purpose: landing gear "su
 
 ### How do you check a micro switch?
 
-On a bench, a micro switch is usually checked for continuity: COM to NC should be closed at rest and COM to NO closed when the actuator is pressed, as covered in the step-by-step micro switch continuity test. On an aircraft, the switch is part of a certified system, and the FAA handbook points to the aircraft manufacturer's maintenance manual for the full description of the gear indication system. Checks and adjustments there belong to a certificated mechanic working from that manual.
+On a bench, a micro switch is usually checked for continuity: COM to NC should be closed at rest and COM to NO closed when the actuator is pressed, as covered in the [step-by-step micro switch continuity test](/guides/how-to-test-a-micro-switch/). On an aircraft, the switch is part of a certified system, and the FAA handbook points to the aircraft manufacturer's maintenance manual for the full description of the gear indication system. Checks and adjustments there belong to a certificated mechanic working from that manual.
 
 ## Where the switch logic for one aircraft is written down
 
-Whether a squat switch is open or closed on the ground, how many limit switches a gear leg carries, and which circuits share them all vary by aircraft type. The FAA handbook itself sends readers to the manufacturer's maintenance and operating manuals for the complete description. The wiring diagram in that manual shows which contact, NO or NC, each switch uses. The guide to NO, NC and COM terminals explains how to read those terminal names, and the aircraft flap position micro switch article covers another job the same kind of switch does on an airframe.
+Whether a squat switch is open or closed on the ground, how many limit switches a gear leg carries, and which circuits share them all vary by aircraft type. The FAA handbook itself sends readers to the manufacturer's maintenance and operating manuals for the complete description. The wiring diagram in that manual shows which contact, NO or NC, each switch uses. The [guide to NO, NC and COM terminals](/guides/micro-switch-how-it-works-and-how-to-verify-terminals/) explains how to read those terminal names, and the [aircraft flap position micro switch](/guides/aircraft-flap-position-micro-switch/) article covers another job the same kind of switch does on an airframe.
+
+
+## Related guides
+
+- [accelerator pedal position stop micro switch actuator travel](/guides/accelerator-pedal-position-stop-micro-switch-actuator-travel/)
+- [incinerator end of stroke micro switch maintenance](/guides/incinerator-end-of-stroke-micro-switch-maintenance/)
+- [rotary indexing table guard interlock micro switch location](/guides/rotary-indexing-table-guard-interlock-micro-switch-location/)
+- [security barrier open position micro switch wiring](/guides/security-barrier-open-position-micro-switch-wiring/)
 
 ## Sources
 

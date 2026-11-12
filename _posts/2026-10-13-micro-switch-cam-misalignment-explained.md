@@ -20,14 +20,14 @@ Micro switch cam misalignment means the cam no longer meets the switch's roller 
 
 ## What a correctly aligned cam does to the switch
 
-Honeywell's General Technical Bulletin #14, Applying Precision Switches, describes the switch, with a small wheel on its plunger or lever, as "a spring loaded cam follower." The cam is the shaped wheel or bar that pushes that roller as it turns or slides, and the plunger is the button on the switch body that the roller or lever presses. The bulletin's rules for a well-set pair are short:
+Honeywell's General Technical Bulletin #14, [Applying Precision Switches](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/ja/products/switches/basic-switches/common/documents/sps-ast-applying-precision-switches-technical-note.pdf){: rel="nofollow noopener noreferrer" }, describes the switch, with a small wheel on its plunger or lever, as "a spring loaded cam follower." The cam is the shaped wheel or bar that pushes that roller as it turns or slides, and the plunger is the button on the switch body that the roller or lever presses. The bulletin's rules for a well-set pair are short:
 
 - The cam and roller lie in the same plane, and the roller ideally stays in contact with the cam at all times.
 - The cam's rise angle, the steepness of the slope the roller climbs, stays at or below 30°, so the roller rides up a ramp instead of being struck.
 - The cam doesn't let the roller drop off a sharp edge, which the bulletin calls drop-off release.
 - The cam doesn't push the plunger with excessive force at full overtravel.
 
-How far the cam pushes matters as much as the angle. The actuator is the part the cam touches, the roller lever or plunger, and overtravel (OT) is the travel it can safely take after the contacts click over. Omron's A-20G basic switch datasheet says to push the actuator past the click by 70% to 100% of the rated OT. Crouzet's Basic Technical Concepts asks for at least 0.5 times the OT and never beyond the total travel position, where the actuator meets its internal stop.
+How far the cam pushes matters as much as the angle. The actuator is the part the cam touches, the roller lever or plunger, and overtravel (OT) is the travel it can safely take after the contacts click over. Omron's [A-20G basic switch datasheet](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } says to push the actuator past the click by 70% to 100% of the rated OT. Crouzet's [Basic Technical Concepts](https://zoro.com/static/cms/enhanced_pdf/Waldom%20Electronics_SWxxbasicxxtechnicalxxconceptsxxENxx679897.pdf){: rel="nofollow noopener noreferrer" } asks for at least 0.5 times the OT and never beyond the total travel position, where the actuator meets its internal stop.
 
 ## The ways a cam can sit out of line
 
@@ -37,7 +37,7 @@ When the cam and roller aren't in the same plane, the roller rides on one edge o
 
 ### Too shallow
 
-If the cam's high point no longer pushes the actuator far enough, the switch either never reaches its operating point (the point where the contacts snap over) or stops just past it. Contact force is the spring pressure holding closed contacts together, and Honeywell's bulletin explains that it falls toward zero as the plunger nears the operating point. Omron's FAQE20046 on how far to push a basic switch warns that stopping near the operating position or the release position "may create chattering or bouncing," meaning rapid on-off flicker in the signal. The release position is where the contacts snap back on the return.
+If the cam's high point no longer pushes the actuator far enough, the switch either never reaches its operating point (the point where the contacts snap over) or stops just past it. Contact force is the spring pressure holding closed contacts together, and Honeywell's bulletin explains that it falls toward zero as the plunger nears the operating point. Omron's FAQE20046 on [how far to push a basic switch](https://forum.digikey.com/t/please-advise-the-appropriate-amount-of-pushing-for-a-basic-switch/35452){: rel="nofollow noopener noreferrer" } warns that stopping near the operating position or the release position "may create chattering or bouncing," meaning rapid on-off flicker in the signal. The release position is where the contacts snap back on the return.
 
 ### Too deep
 
@@ -58,11 +58,11 @@ A cam that has turned on its shaft still reaches the roller at the right depth a
 | Extra pulses right after the cam passes | Sharp drop-off on the cam | Honeywell GTB #14: a lever may oscillate after drop-off release, "giving a series of false operations" |
 | Switch trips cleanly but at the wrong moment | Wrong point in the turn | Cam has shifted on its shaft |
 
-A lever that's bent is worth a closer look in its own right. Omron's FAQ on what causes basic switch failures calls a deformed actuator lever "a relatively common cause" of failure. The sign it names is a larger bend angle or more play than a new lever.
+A lever that's bent is worth a closer look in its own right. Omron's FAQ on [what causes basic switch failures](https://forum.digikey.com/t/what-may-have-caused-a-basic-switch-failure/35453){: rel="nofollow noopener noreferrer" } calls a deformed actuator lever "a relatively common cause" of failure. The sign it names is a larger bend angle or more play than a new lever.
 
 ## How to check cam alignment step by step
 
-Lock out the machine before you touch the cam or the switch: switch off and isolate the power and any stored motion, and lock it so nobody can restart it. OSHA's rule on the control of hazardous energy, 29 CFR 1910.147 covers this kind of servicing. If the switch is part of a guard or door interlock, don't wedge or bypass it while you work.
+Lock out the machine before you touch the cam or the switch: switch off and isolate the power and any stored motion, and lock it so nobody can restart it. OSHA's rule on the [control of hazardous energy, 29 CFR 1910.147](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-J/section-1910.147){: rel="nofollow noopener noreferrer" } covers this kind of servicing. If the switch is part of a guard or door interlock, don't wedge or bypass it while you work.
 
 1. **Test the switch on its own.** Set a meter to continuity and check the common terminal against the normally closed and normally open terminals, first with the actuator free and then pressed by hand past the click. Free, common to normally closed reads closed and common to normally open reads open; pressed, the two swap. If the readings don't swap cleanly, replace the switch before judging the cam.
 2. **Look at the pair from above.** Turn the cam slowly by hand and watch the roller. It should run centered on the cam face, with the two in the same plane, as Honeywell's bulletin requires.
@@ -83,7 +83,15 @@ The spring supplies the contact force that holds closed contacts together. Honey
 
 ## After the cam is set
 
-Once the cam runs in plane, at the right depth and at the right angle, check it again after a short run. Honeywell's bulletin describes a settling-in period over the first several hundred operations, in which the switch, its actuator and "associated operating cam or linkage" bed in together and the switching points shift slightly. For background on why depth matters, see how movement differential sets the reset point and how a spring lever trades force for travel. If the roller itself is worn, the cam follower failure guide and roller plunger failure guide cover the replacement, and preventing cam misalignment covers keeping it set.
+Once the cam runs in plane, at the right depth and at the right angle, check it again after a short run. Honeywell's bulletin describes a settling-in period over the first several hundred operations, in which the switch, its actuator and "associated operating cam or linkage" bed in together and the switching points shift slightly. For background on why depth matters, see how [movement differential sets the reset point](/guides/micro-switch-movement-differential-explained/) and how a [spring lever trades force for travel](/guides/micro-switch-spring-lever/). If the roller itself is worn, the [cam follower failure guide](/guides/cam-follower-micro-switch-failure/) and [roller plunger failure guide](/guides/roller-plunger-micro-switch-failure/) cover the replacement, and [preventing cam misalignment](/guides/micro-switch-cam-misalignment-prevention/) covers keeping it set.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 

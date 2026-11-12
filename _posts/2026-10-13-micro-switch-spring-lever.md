@@ -20,11 +20,11 @@ A spring lever micro switch is a micro switch, also called a snap-action switch,
 
 ## Two springs, two jobs: the lever outside and the blade inside
 
-Crouzet's Basic Technical Concepts document draws the parts inside the housing: a plunger, a snap-acting blade, a return spring, a moving contact and fixed contacts. The plunger is the button the lever presses, and the moving contact rides on the blade, touching one fixed contact or the other. The snap-acting blade is the spring that makes the click. The blade stores energy as the plunger goes down and releases it all at once.
+Crouzet's [Basic Technical Concepts](https://zoro.com/static/cms/enhanced_pdf/Waldom%20Electronics_SWxxbasicxxtechnicalxxconceptsxxENxx679897.pdf){: rel="nofollow noopener noreferrer" } document draws the parts inside the housing: a plunger, a snap-acting blade, a return spring, a moving contact and fixed contacts. The plunger is the button the lever presses, and the moving contact rides on the blade, touching one fixed contact or the other. The snap-acting blade is the spring that makes the click. The blade stores energy as the plunger goes down and releases it all at once.
 
-The lever sits outside that housing. Omron's A-20G basic switch datasheet lists hinge lever, short hinge lever and hinge roller lever versions, each with a stainless-steel lever hinged over the plunger. Honeywell's SE/XE datasheet lists add-on "straight leaf" and "roller leaf" actuators, which are flat springs fixed at one end. Either way, the lever's only job is to press the plunger.
+The lever sits outside that housing. Omron's [A-20G basic switch datasheet](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } lists hinge lever, short hinge lever and hinge roller lever versions, each with a stainless-steel lever hinged over the plunger. Honeywell's [SE/XE datasheet](https://docs.rs-online.com/588c/A700000015332771.pdf){: rel="nofollow noopener noreferrer" } lists add-on "straight leaf" and "roller leaf" actuators, which are flat springs fixed at one end. Either way, the lever's only job is to press the plunger.
 
-The terminals tell you which way the contacts sit. Honeywell's General Technical Bulletin #14, Applying Precision Switches, explains that with nothing pressing the plunger, the common (COM) contact rests against the normally closed (NC) contact. "Normally" means the untouched state, so the normally open (NO) contact is the one that's disconnected until the switch operates.
+The terminals tell you which way the contacts sit. Honeywell's General Technical Bulletin #14, [Applying Precision Switches](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/ja/products/switches/basic-switches/common/documents/sps-ast-applying-precision-switches-technical-note.pdf){: rel="nofollow noopener noreferrer" }, explains that with nothing pressing the plunger, the common (COM) contact rests against the normally closed (NC) contact. "Normally" means the untouched state, so the normally open (NO) contact is the one that's disconnected until the switch operates.
 
 ## How the lever carries motion to the snap, step by step
 
@@ -60,7 +60,7 @@ Honeywell's Bulletin #14 explains why the gap between on and off grows. Differen
 The force figure that applies to your switch also depends on these details:
 
 - **Where the force is measured.** Honeywell's SE/XE datasheet measures force on adjustable actuators at the lever's maximum length, and Crouzet's document puts its reference point 3 mm in from the end of a flat lever. Pressing nearer the hinge takes more force.
-- **Which way the switch is mounted.** Omron's SS miniature basic switch datasheet gives separate reference values for lever models mounted so the lever's own weight doesn't rest on the plunger.
+- **Which way the switch is mounted.** Omron's [SS miniature basic switch datasheet](https://electrokit.com/upload/quick/d7/22/4fba_41011077-tds.pdf){: rel="nofollow noopener noreferrer" } gives separate reference values for lever models mounted so the lever's own weight doesn't rest on the plunger.
 
 ## Leaf, hinge and roller versions of the lever
 
@@ -78,7 +78,7 @@ A roller matters when the pushing object slides across the lever instead of pres
 
 Unplug the appliance or lock out the machine first, and never tape or wedge a lever that serves as a safety interlock, such as on a door.
 
-1. **Look at the lever.** Omron's FAQ on what causes basic switch failures calls a deformed actuator lever "a relatively common cause" of failure, usually from something getting caught in it. A larger bend angle or more play than a new lever means it's deformed.
+1. **Look at the lever.** Omron's FAQ on [what causes basic switch failures](https://forum.digikey.com/t/what-may-have-caused-a-basic-switch-failure/35453){: rel="nofollow noopener noreferrer" } calls a deformed actuator lever "a relatively common cause" of failure, usually from something getting caught in it. A larger bend angle or more play than a new lever means it's deformed.
 2. **Press the lever end slowly and listen.** A click means the blade inside snapped. It doesn't prove the contacts carry current, because the same Omron FAQ lists contact failure as a separate electrical fault.
 3. **Test with a meter on continuity.** With the lever free, the common terminal to the normally closed terminal should read closed, and common to normally open should read open. With the lever held past the click, the readings should swap.
 4. **Let the lever back slowly.** The readings should swap back a little later than they switched on the way down, because the release point sits above the operating point.
@@ -111,7 +111,15 @@ Disconnect power, then use a meter on continuity: COM to NC closed and COM to NO
 
 ## Matching a replacement lever switch
 
-When you replace a spring lever micro switch, match the lever style and length as well as the switch body, because Omron's and Honeywell's tables show the lever changing force, travel and differential travel. If the original is a leaf lever micro switch, a hinge lever of a different length won't trip at the same point. The actuator types guide compares the other options, and the movement differential explainer covers why a lever switch turns off later than it turns on. Where the lever is driven by a cam, cam misalignment and a bent hinge lever are the usual next suspects.
+When you replace a spring lever micro switch, match the lever style and length as well as the switch body, because Omron's and Honeywell's tables show the lever changing force, travel and differential travel. If the original is a [leaf lever micro switch](/guides/leaf-lever-micro-switch-working-principle/), a hinge lever of a different length won't trip at the same point. The [actuator types guide](/guides/micro-switch-actuator-types/) compares the other options, and the [movement differential explainer](/guides/micro-switch-movement-differential-explained/) covers why a lever switch turns off later than it turns on. Where the lever is driven by a cam, [cam misalignment](/guides/micro-switch-cam-misalignment-explained/) and a [bent hinge lever](/guides/hinge-lever-micro-switch-failure/) are the usual next suspects.
+
+
+## Related guides
+
+- [micro switch mechanical vibration testing](/guides/micro-switch-mechanical-vibration-testing/)
+- [flexible rod micro switch travel](/guides/flexible-rod-micro-switch-travel/)
+- [what is micro switch contact bounce](/guides/what-is-micro-switch-contact-bounce/)
+- [push on push off micro switch](/guides/push-on-push-off-micro-switch/)
 
 ## Sources
 

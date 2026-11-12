@@ -40,7 +40,7 @@ The table also shows a trap. Honeywell's V15 datasheet lists 3.1 mm holes for 3 
 
 A micro switch triggers when its actuator, the plunger or lever that the machine presses, reaches the operating position (OP). Honeywell's datasheet for its SE and XE sealed switches explains how that position is measured. Linear dimensions for an in-line plunger run from the top of the plunger to a reference line, usually the center of the mounting holes. Omron's A series datasheet gives the operating position of its pin plunger model as 16.3 ±0.4 mm from the hole centers, where ±0.4 mm is the allowed tolerance.
 
-That measuring convention has a practical consequence. Two switches with identical hole spacing can trigger at different points if their operating positions differ, because the plunger tip sits a different distance from the holes. A replacement that bolts straight on can then fall short of the cam or door that's supposed to press it, or get pressed past its overtravel, the extra distance the plunger can safely move after it switches. Our explainer on micro switch pretravel covers how operating position, pretravel and overtravel relate.
+That measuring convention has a practical consequence. Two switches with identical hole spacing can trigger at different points if their operating positions differ, because the plunger tip sits a different distance from the holes. A replacement that bolts straight on can then fall short of the cam or door that's supposed to press it, or get pressed past its overtravel, the extra distance the plunger can safely move after it switches. Our explainer on [micro switch pretravel](/guides/micro-switch-pretravel-explained/) covers how operating position, pretravel and overtravel relate.
 
 📌 **On slotted brackets:** *A bracket with slots instead of round holes lets the switch slide toward or away from the machine part. Since the operating position is measured from the hole centers, sliding the switch moves its trigger point by the same amount.*
 
@@ -62,19 +62,19 @@ Disconnect power before you remove or mount the switch. Omron's SS datasheet tel
 - **Don't overtighten.** The torques in Omron's datasheets are small: the D2F datasheet lists 0.08 to 0.1 N·m, which is a light twist with a small screwdriver, so a torque screwdriver or a gentle hand matters more on small switches.
 - **Mount on a flat surface.** Omron's SS datasheet warns that mounting on an uneven surface can deform the switch, causing faulty operation or a broken housing.
 - **Keep live terminals clear of a metal bracket.** Omron's SS datasheet cites EN 61058-1 for a minimum 1.6 mm clearance between live terminals and the mounting plate, and says to add a separator or insulation guard if that can't be met.
-- **Mind lever weight.** Omron's VX datasheet says to mount a lever switch so the lever's weight doesn't rest on the switch, because the small reset force may not return it. Our guide to hinge lever micro switch installation covers the extra alignment a lever needs.
+- **Mind lever weight.** Omron's VX datasheet says to mount a lever switch so the lever's weight doesn't rest on the switch, because the small reset force may not return it. Our guide to [hinge lever micro switch installation](/guides/hinge-lever-micro-switch-installation/) covers the extra alignment a lever needs.
 
-After the screws are tight, move the machine part by hand and listen for the click. Then check with a multimeter that the contacts change state at the point where the machine part should trigger them. Our step-by-step guide on how to test a micro switch covers the meter setup.
+After the screws are tight, move the machine part by hand and listen for the click. Then check with a multimeter that the contacts change state at the point where the machine part should trigger them. Our step-by-step guide on [how to test a micro switch](/guides/how-to-test-a-micro-switch/) covers the meter setup.
 
 ## When a switch mounts without screw holes
 
-Some switches are held another way. Omron's A series includes panel mount plunger models, such as the A-20GQ-B, that mount through a panel with an M12 × 1 threaded bushing and two hex nuts. The datasheet says not to use the M12 mounting and the screw holes at the same time. Our article on the panel mount plunger micro switch explains how that type works.
+Some switches are held another way. Omron's A series includes panel mount plunger models, such as the A-20GQ-B, that mount through a panel with an M12 × 1 threaded bushing and two hex nuts. The datasheet says not to use the M12 mounting and the screw holes at the same time. Our article on the [panel mount plunger micro switch](/guides/panel-mount-plunger-micro-switch-working-principle/) explains how that type works.
 
 ## FAQ
 
 ### What are the different types of micro switches?
 
-By size, the usual classes run from general-purpose (large basic) through miniature and subminiature to ultra-subminiature; the Omron datasheets cited here cover one series in each (A, V, SS, D2F). By actuator, Omron's A series datasheet lists pin plunger, short spring plunger and panel mount plunger models, and its V series datasheet adds hinge lever, hinge roller lever and simulated roller lever versions. Our overview of micro switch actuator types compares them.
+By size, the usual classes run from general-purpose (large basic) through miniature and subminiature to ultra-subminiature; the Omron datasheets cited here cover one series in each (A, V, SS, D2F). By actuator, Omron's A series datasheet lists pin plunger, short spring plunger and panel mount plunger models, and its V series datasheet adds hinge lever, hinge roller lever and simulated roller lever versions. Our overview of [micro switch actuator types](/guides/micro-switch-actuator-types/) compares them.
 
 ### What screws are in a switch?
 
@@ -83,6 +83,14 @@ For the series in the table, Omron's datasheets call for M4 screws on the A seri
 ## Matching a replacement to the old part
 
 Before ordering, write down the hole diameter, center spacing, offset, body size, terminal direction and actuator type of the old switch, and compare them with the dimension drawing on the new part's datasheet. Offset here means how far one hole sits across the body from the other, the 10.3 mm figure on a V-size switch. The figure that's easiest to miss is the operating position measured from the hole centers, so check that last number before you assume a switch that bolts on will also trigger in the right place.
+
+
+## Related guides
+
+- [inline micro switch](/guides/inline-micro-switch-suitability/)
+- [access hatch open position micro switch contact rating](/guides/access-hatch-open-position-micro-switch-contact-rating/)
+- [micro switch salt spray](/guides/micro-switch-salt-spray/)
+- [dpdt micro switch](/guides/dpdt-micro-switch-contact-operation-selection/)
 
 ## Sources
 

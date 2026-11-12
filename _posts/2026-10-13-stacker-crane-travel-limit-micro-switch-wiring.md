@@ -16,13 +16,13 @@ A stacker crane runs along a rail between storage racks, and a switch near each 
 
 ## Quick answer
 
-On a stacker crane travel limit, the micro switch (also called a snap-action switch) is wired through its common (COM) and normally closed (NC) terminals, in series with the circuit that permits travel. Galil's application note on limit inputs explains why: a normally closed input also trips when a wire opens or disconnects, which makes the input fail-safe.
+On a stacker crane travel limit, the micro switch (also called a snap-action switch) is wired through its common (COM) and normally closed (NC) terminals, in series with the circuit that permits travel. [Galil's application note on limit inputs](https://www.galil.com/resources/application-notes/using-normally-closed-switch-for-inputs/){: rel="nofollow noopener noreferrer" } explains why: a normally closed input also trips when a wire opens or disconnects, which makes the input fail-safe.
 
 The NC contact does not catch every fault. A welded contact or a short across the switch wiring holds the circuit closed. Safety-rated limit switches add a mechanism called positive opening for the welded contact; the short needs attention in how the cable is routed and protected.
 
 ## Lock out the crane before you open the switch
 
-The US lockout rule, OSHA 29 CFR 1910.147, covers servicing and maintenance where an unexpected start or release of stored energy could injure someone. Rewiring a travel limit on a stacker crane falls inside that scope, because the crane can move under power while your hands are near the rail.
+The US lockout rule, [OSHA 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147){: rel="nofollow noopener noreferrer" }, covers servicing and maintenance where an unexpected start or release of stored energy could injure someone. Rewiring a travel limit on a stacker crane falls inside that scope, because the crane can move under power while your hands are near the rail.
 
 The same rule draws a line that matters for limit wiring. OSHA defines an energy isolating device as a mechanical device that physically blocks energy, such as a disconnect switch or circuit breaker, and states that push buttons, selector switches and other control circuit devices do not qualify. A travel limit switch, an emergency stop button and a PLC stop command all sit in the control circuit, so none of them counts as isolation.
 
@@ -30,7 +30,7 @@ OSHA's sequence ends with verification of isolation, step (d)(6), before work be
 
 ## Find COM, NO and NC on the switch
 
-A micro switch with three terminals is single pole, double throw (SPDT): one common (COM) terminal that switches between a normally open (NO) terminal and a normally closed (NC) terminal. Honeywell's training module on electromechanical switch technology describes the two states: a normally open switch carries no current at rest and closes when actuated, while a normally closed switch conducts at rest and opens when actuated.
+A micro switch with three terminals is single pole, double throw (SPDT): one common (COM) terminal that switches between a normally open (NO) terminal and a normally closed (NC) terminal. [Honeywell's training module on electromechanical switch technology](https://www.digikey.com/en/ptm/h/honeywell/electromechanical-switch-technology/tutorial?slide=5){: rel="nofollow noopener noreferrer" } describes the two states: a normally open switch carries no current at rest and closes when actuated, while a normally closed switch conducts at rest and opens when actuated.
 
 "Normally" refers to the switch at rest, with nothing pressing the actuator. On a crane, the rest state is the crane anywhere short of the limit, so COM to NC is closed during normal travel and opens when the crane's trip cam presses the lever. The meaning has nothing to do with the state the circuit spends most of its time in.
 
@@ -38,7 +38,7 @@ Terminal markings vary between makers, so read the label on the switch body or i
 
 Figure 1. The same three terminals give a closed path through NC at rest and through NO when the crane's cam presses the actuator.
 
-On a crane rail, the terminals are usually behind a housing cover. Omron's datasheet for its A-20G basic switch warns that switches are generally not built to resist water and calls for a protective cover where oil, water or dust can reach them. For a travel limit on a crane rail, that points to an enclosed limit switch, with the snap-action element sealed inside a housing and driven by an external lever or plunger.
+On a crane rail, the terminals are usually behind a housing cover. [Omron's datasheet for its A-20G basic switch](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } warns that switches are generally not built to resist water and calls for a protective cover where oil, water or dust can reach them. For a travel limit on a crane rail, that points to an enclosed limit switch, with the snap-action element sealed inside a housing and driven by an external lever or plunger.
 
 ## Why the stop circuit uses the NC contact
 
@@ -62,9 +62,9 @@ A welded contact and a shorted cable both leave the NC path closed, so NC wiring
 
 A standard micro switch opens its NC contact with a spring. If an overload has welded the contact, the spring may not be strong enough to pull it apart, and the circuit stays closed while the crane runs on. A short between the two wires feeding the switch has the same effect, because current flows around the contact.
 
-Safety-rated limit switches answer the welded-contact case with positive opening, also called direct opening action. ABB's general technical data for its limit switches describes the requirement. For the part of the travel that separates the contacts, there must be a positive drive with no resilient member, such as a spring, between the moving contact and the point where force is applied. In plain terms, the actuator pushes the contact open through solid parts, so a stuck contact still gets moved. The same document notes that positive opening applies to NC contacts only and that such switches carry a dedicated symbol on the housing.
+Safety-rated limit switches answer the welded-contact case with positive opening, also called direct opening action. [ABB's general technical data for its limit switches](https://library.e.abb.com/public/3bc07b949ed045eeb142e05426863e59/1SXU000023C0202_09_General_tech_data.pdf){: rel="nofollow noopener noreferrer" } describes the requirement. For the part of the travel that separates the contacts, there must be a positive drive with no resilient member, such as a spring, between the moving contact and the point where force is applied. In plain terms, the actuator pushes the contact open through solid parts, so a stuck contact still gets moved. The same document notes that positive opening applies to NC contacts only and that such switches carry a dedicated symbol on the housing.
 
-Omron's knowledge base for its European safety products describes the result: the actuator's own force pushes a welded contact open. Omron's description uses a 10 N force on the contacts to stand in for the weld, and states that once forced open, the gap withstands the impulse voltage stipulated in EN 60947-5-1. The international version of that standard is [IEC 60947-5-1](https://webstore.iec.ch/en/publication/65935){:rel="nofollow"}, whose current fifth edition was published in 2024.
+[Omron's knowledge base for its European safety products](https://automation-knowledge-base.omron.eu/support/solutions/articles/103000352430-what-is-a-direct-opening-mechanism-forcibly-opened-contacts-){: rel="nofollow noopener noreferrer" } describes the result: the actuator's own force pushes a welded contact open. Omron's description uses a 10 N force on the contacts to stand in for the weld, and states that once forced open, the gap withstands the impulse voltage stipulated in EN 60947-5-1. The international version of that standard is [IEC 60947-5-1](https://webstore.iec.ch/en/publication/65935){:rel="nofollow"}, whose current fifth edition was published in 2024.
 
 Because positive opening requires no spring in the opening path, a general-purpose micro switch that opens its NC contact by spring alone does not meet it. Only switches marked and documented for positive opening do.
 
@@ -117,9 +117,17 @@ For the stop function, wire it normally closed. Galil's application note describ
 
 ## What to check next on your own crane
 
-Pull the crane's electrical drawings and confirm that every travel limit in the stop path uses the NC contact. Then look at the switch body or datasheet for the positive opening symbol, and compare the switch's DC inductive rating with the coil it switches. Related guides cover what NO and NC mean on a micro switch, how to test a micro switch with a multimeter, why micro switch contacts weld and what causes a stacker crane home position switch to fail.
+Pull the crane's electrical drawings and confirm that every travel limit in the stop path uses the NC contact. Then look at the switch body or datasheet for the positive opening symbol, and compare the switch's DC inductive rating with the coil it switches. Related guides cover [what NO and NC mean on a micro switch](/guides/no-nc-micro-switch/), [how to test a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/), [why micro switch contacts weld](/guides/micro-switch-contact-welding-troubleshooting/) and [what causes a stacker crane home position switch to fail](/guides/stacker-crane-home-position-micro-switch-failure-causes/).
 
 Some micro switch makers build a separate line for this kind of machinery. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"}, for instance, lists lifting equipment among the scenarios its heavy-duty industrial micro switches are developed for, alongside heavy production lines and automated machine tools. Whichever maker supplies the part, the NC wiring, positive opening and DC rating checks above still decide whether it belongs in the crane's stop circuit.
+
+
+## Related guides
+
+- [bottling machine home position micro switch location](/guides/bottling-machine-home-position-micro-switch-location/)
+- [incinerator end of stroke micro switch maintenance](/guides/incinerator-end-of-stroke-micro-switch-maintenance/)
+- [rotary indexing table guard interlock micro switch location](/guides/rotary-indexing-table-guard-interlock-micro-switch-location/)
+- [security barrier open position micro switch wiring](/guides/security-barrier-open-position-micro-switch-wiring/)
 
 ## Sources
 

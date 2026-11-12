@@ -54,7 +54,7 @@ The quickest way to tell which job your switch does is to follow its two wires. 
 4. **Press the actuator the way the basket does.** With the actuator pressed, COM to NO should read near zero ohms. Released, it should read open. Repeat on COM and NC, where the readings should be the reverse.
 5. **Compare with the photo.** If the wires were on COM and NO, the circuit was meant to close with the basket in. If it used COM and NC, it was meant to close with the basket out, and the replacement has to be wired the same way.
 
-A switch that reads open in both positions, reads closed in both, or flickers while you hold it pressed has failed. The general method for testing a micro switch with a multimeter covers meter settings in more detail, and the difference between NO and NC contacts explains why the two pairs read opposite each other.
+A switch that reads open in both positions, reads closed in both, or flickers while you hold it pressed has failed. The general method for [testing a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/) covers meter settings in more detail, and the [difference between NO and NC contacts](/guides/no-nc-micro-switch/) explains why the two pairs read opposite each other.
 
 ## Common faults that look like a bad switch
 
@@ -65,7 +65,7 @@ Tower's T17175 manual describes a "safety switch in the cooking basket" that kee
 - **Switch moved in its mount.** If the switch has shifted, the tab or rib on the basket may press it only part way. Electronic Design's description of snap action has the contacts change only once the plunger reaches the operating point, so a partial press can leave them unchanged.
 - **Switch failed.** Only the meter test above confirms this one.
 
-If the switch tests good and the basket seats properly, the fault lies elsewhere in the fryer. A step-by-step air fryer basket micro switch replacement covers removal and fitting once the switch is confirmed bad.
+If the switch tests good and the basket seats properly, the fault lies elsewhere in the fryer. A step-by-step [air fryer basket micro switch replacement](/guides/air-fryer-basket-micro-switch-replacement/) covers removal and fitting once the switch is confirmed bad.
 
 ## FAQ
 
@@ -83,6 +83,14 @@ In an air fryer, a failed basket switch usually shows up as a fryer that won't s
 Write down three things from the old switch: which two terminals were wired, the rating printed on the body, and the actuator style, whether a plain plunger or a lever. The terminals and rating match the replacement to the circuit, and the actuator style matches it to the part of the basket that presses it. If the old switch carried the heater current, the new one's resistive rating has to cover the fryer's wattage divided by the supply voltage.
 
 Air fryers come up in switch makers' own application notes. In a blog post on micro switch applications, [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists air fryer temperature safety, with a bimetal strip and a micro switch working as two layers of overheat protection. Its home appliance line page adds that operating force and terminal style can be customized to each appliance's structure, which is one reason the basket switch in your fryer has to be matched to the original part rather than to a generic one.
+
+
+## Related guides
+
+- [ball screw actuator home position micro switch replacement](/guides/ball-screw-actuator-home-position-micro-switch-replacement/)
+- [bottling machine end of stroke micro switch](/guides/bottling-machine-end-of-stroke-micro-switch/)
+- [automated guided vehicle home position micro switch location](/guides/automated-guided-vehicle-home-position-micro-switch-location/)
+- [accelerator pedal position stop micro switch operating force](/guides/accelerator-pedal-position-stop-micro-switch-operating-force/)
 
 ## Sources
 
