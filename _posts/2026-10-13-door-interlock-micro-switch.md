@@ -16,13 +16,13 @@ Open a microwave oven while it's running and the cooking stops the moment the la
 
 ## Quick answer
 
-A door interlock micro switch is a small snap-action switch that the door or its latch presses only when the door is fully shut. Honeywell lists door interlocks among the applications of its DM Series basic switch. In a microwave oven, several of these door switches work together so that power reaches the cooking circuit only while the door stays closed.
+A door interlock micro switch is a small snap-action switch that the door or its latch presses only when the door is fully shut. ZING EAR's product page for its [ZINGEAR G5T16-E1Z200](https://www.zingear-switch.com/zingear-group-g5t16-e1z200-home-appliance-micro-switch-micro-switch-supplier.html){: rel="nofollow noopener noreferrer" }, rated 16A at 250VAC, lists safety interlock of kitchen appliance doors among its uses. In a microwave oven, several of these door switches work together so that power reaches the cooking circuit only while the door stays closed.
 
 ## What happens inside the switch when the door presses it
 
 Inside the housing, a spring mechanism carries one moving contact between two fixed contacts. The three terminals are marked common (COM), normally closed (NC) and normally open (NO). Daniel Herzog's article on snap-action switches in Electronic Design describes the resting state. With the plunger, the small button the door or latch pushes, in its free position, "the NC circuit of the switch can carry current," and the common terminal is insulated from the NO terminal. "Normally" therefore means the state with nothing pressing the actuator.
 
-Press the plunger far enough and it reaches the operating point, the spot in its travel where the spring flips over and the common contact snaps across to the NO contact. The same article notes that the common contact "cannot stop partway" between NC and NO. Crouzet's explainer on how micro switches work adds that the snap-action mechanism gives "instantaneous switching regardless of the actuation speed." A door that someone pushes shut slowly still moves the contact in one quick jump.
+Press the plunger far enough and it reaches the operating point, the spot in its travel where the spring flips over and the common contact snaps across to the NO contact. The same article notes that the common contact "cannot stop partway" between NC and NO. A switch maker's explainer on how micro switches work adds that the snap-action mechanism gives "instantaneous switching regardless of the actuation speed." A door that someone pushes shut slowly still moves the contact in one quick jump.
 
 In a door interlock, a shut door is the pressed state. A circuit wired through COM and NO is complete only while the door holds the plunger down. A circuit wired through COM and NC is complete only while the door is open. The monitor switch further down depends on that reversal, so the difference between NO and NC contacts is worth having straight before reading a microwave schematic.
 
@@ -58,9 +58,9 @@ LG's online training manual for its front-load washer describes a door lock asse
 
 ### Machine guards
 
-Safety switches on machine guards are judged against a stricter idea called positive opening. ABB's general technical data for its limit switches defines it as an actuator that "ensures full contact opening" of the normally closed contact. For that part of the travel, ABB allows "no resilient member (e.g. springs)" between the moving contacts and the point where force is applied. Electronic Design's description of snap action relies on "a plunger and spring," so a standard micro switch has the very spring that definition excludes.
+Safety switches on machine guards are judged against a stricter idea called positive opening. One maker's general technical data for limit switches defines it as an actuator that "ensures full contact opening" of the normally closed contact. For that part of the travel, the same document allows "no resilient member (e.g. springs)" between the moving contacts and the point where force is applied. Electronic Design's description of snap action relies on "a plunger and spring," so a standard micro switch has the very spring that definition excludes.
 
-ABB also notes that positive opening "does not deal with N.O. contacts," meaning normally open ones. A guard circuit built this way runs through a contact that the opening guard forces apart. The function of a safety micro switch covers where specially rated parts come in.
+The document also notes that positive opening "does not deal with N.O. contacts," meaning normally open ones. A guard circuit built this way runs through a contact that the opening guard forces apart. The function of a safety micro switch covers where specially rated parts come in.
 
 ## Checking a door interlock switch without defeating it
 
@@ -75,19 +75,19 @@ A blown fuse is a symptom, and the switches are the cause to look for. The DCS m
 ## FAQ
 
 **What is the purpose of a micro switch?**
-A micro switch turns a small mechanical movement into a definite contact change. In a door interlock, that movement is the door or latch reaching the fully shut position. Honeywell lists both appliance door lights and door interlocks as applications for its DM Series basic switch.
+A micro switch turns a small mechanical movement into a definite contact change. In a door interlock, that movement is the door or latch reaching the fully shut position. One basic switch catalog lists both appliance door lights and door interlocks as applications for its switch series.
 
 **Can you bypass a microwave door switch?**
 No. US federal rules (21 CFR 1030.10) require at least two working interlocks plus a monitor, and require that service work not leave the interlocks inoperative. If a door switch has failed, the service manual for that model names the part and test procedure for replacing it.
 
 **How does a micro switch work?**
-A spring mechanism holds a moving contact against the NC contact until the actuator is pressed to the operating point. Past that point, the contact snaps across to the NO contact, and Crouzet describes this switching as independent of how fast the actuator moves. Releasing the actuator lets the spring snap the contact back.
+A spring mechanism holds a moving contact against the NC contact until the actuator is pressed to the operating point. Past that point, the contact snaps across to the NO contact, and the switch maker's explainer cited above describes this switching as independent of how fast the actuator moves. Releasing the actuator lets the spring snap the contact back.
 
 ## What to look at before replacing a door switch
 
 Start with the service manual or wiring diagram for your exact model, since it names which switch is primary, which is secondary and which is the monitor. Match the replacement's contact form and electrical rating to the part it replaces, because a normally open switch fitted in the monitor position reverses the logic the fuse depends on. If the fuse blew, test every switch in the interlock set before fitting a new fuse.
 
-Door interlock switches come from appliance switch makers, and some describe where their parts are used. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists microwave ovens, range hoods and coffee machines among the kitchen appliances its home appliance micro switches cover. Whichever maker built the original, the service manual still names the position each switch fills, and a replacement has to match that position's contact form.
+Door interlock switches come from appliance switch makers, and some describe where their parts are used. [ZING EAR](https://www.zingear-switch.com/){: rel="nofollow noopener noreferrer" } lists microwave ovens, range hoods and coffee machines among the kitchen appliances its home appliance micro switches cover. Whichever maker built the original, the service manual still names the position each switch fills, and a replacement has to match that position's contact form.
 
 ## Sources
 
@@ -96,8 +96,6 @@ Door interlock switches come from appliance switch makers, and some describe whe
 - DCS MO-24SS technical service manual, Component Test and Blown Monitor Fuse Test (ManualsLib copy)
 - EESS Information Bulletin 24-071, Microwave oven clause 22.106 (AS/NZS 60335.2.25), 2024
 - Daniel Herzog, "Snap-Action Switches Still Rule The Roost," Electronic Design, 2012
-- Crouzet, How does a microswitch work?
-- Honeywell, DM Series Basic/Snap Action Switch
 - LG Online Training Manual, Door Lock (front-load washer, hosted by Reliable Parts)
-- ABB, Limit switches: General technical data (1SXU000023C0202)
+- ZING EAR, ZINGEAR G5T16-E1Z200 product page: https://www.zingear-switch.com/zingear-group-g5t16-e1z200-home-appliance-micro-switch-micro-switch-supplier.html
 - ZING EAR, Home Appliance Micro Switch product line page: https://www.zingear-switch.com/home-appliance-micro-switch

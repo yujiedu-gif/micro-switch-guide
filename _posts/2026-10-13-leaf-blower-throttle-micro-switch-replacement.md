@@ -32,7 +32,7 @@ Echo's operator's manual for the PB-2520 shows how a gas blower is laid out. The
 
 Battery blowers are built differently. Ryobi's repair sheet for the RY40407VNM 40-volt blower lists a trigger and a variable speed switch as parts. The same sheet's wiring diagram labels a motor, a switch, a micro switch, a motor controller and the battery contact plate. Sealey's parts list for its CP108VBBO 10.8-volt cordless leaf blower names a micro switch and a switch button as separate parts.
 
-To find out which your blower has, look up the repair sheet or parts diagram for your exact model number. If the parts list names a micro switch, that's the part this guide is about. If the only electrical part near the throttle is a stop or on/off switch, see [our trigger switch explainer](/guides/trigger-switch/) for how those differ.
+To find out which your blower has, look up the repair sheet or parts diagram for your exact model number. If the parts list names a micro switch, that's the part this guide is about. If the only electrical part near the throttle is a stop or on/off switch, see our trigger switch explainer for how those differ.
 
 ## Safety before you open the handle
 
@@ -64,7 +64,7 @@ Disconnect the switch's wires, set a multimeter to continuity, and probe the ter
 | Released | Continuity | Open |
 | Pressed past the click | Open | Continuity |
 
-A switch that reads the same in both positions, or that flickers as you press slowly, has failed or is dirty inside. Crouzet's technical notes on its micro switches put closed-contact resistance generally under 20 mΩ, so a good contact reads as a near-zero short on a hobby meter. If your photo shows only two terminals wired, the blower uses just that pair, so judge the switch on that pair. Our step-by-step guide on [how to test a leaf blower throttle micro switch](/guides/how-to-test-a-leaf-blower-throttle-micro-switch/) covers probe placement in more detail.
+A switch that reads the same in both positions, or that flickers as you press slowly, has failed or is dirty inside. One switch maker's technical notes on its micro switches put closed-contact resistance generally under 20 mΩ, so a good contact reads as a near-zero short on a hobby meter. If your photo shows only two terminals wired, the blower uses just that pair, so judge the switch on that pair. Our step-by-step guide on how to test a leaf blower throttle micro switch covers probe placement in more detail.
 
 If the switch tests good, press the trigger by hand and watch whether it actually pushes the switch's button far enough to click. A worn or cracked trigger, or a switch that has shifted in its mount, can leave a working switch unpressed.
 
@@ -72,12 +72,12 @@ If the switch tests good, press the trigger by hand and watch whether it actuall
 
 Ryobi's RY40406 manual calls for identical replacement parts when servicing a blower, so order by the part number on your model's repair sheet where one is listed. If you're matching a generic micro switch instead, check these against the old one:
 
-- **Size and mounting holes.** Micro switches come in size classes with different hole spacing; our guide to [micro switch mounting holes](/guides/micro-switch-mounting-holes/) lists datasheet figures by size.
+- **Size and mounting holes.** Micro switches come in size classes with different hole spacing; our guide to micro switch mounting holes lists datasheet figures by size.
 - **Actuator.** A pin plunger, a lever or a roller lever each sit at a different height and need the trigger to press them a different way.
 - **Terminals.** Solder lugs, quick-connect tabs and PCB pins aren't interchangeable without rewiring.
-- **Which pair the blower uses.** Wire COM and NO, or COM and NC, exactly as your photo shows. Our guide to [NO and NC terminals](/guides/no-nc-micro-switch/) explains the difference.
+- **Which pair the blower uses.** Wire COM and NO, or COM and NC, exactly as your photo shows. Our guide to NO and NC terminals explains the difference.
 
-After fitting it, check the trigger travel before you close the housing. Omron's FAQ on how far to push a basic switch says the operating part shouldn't stop near the point where the switch clicks, because the switch can chatter. The same FAQ sets the pushing distance at 60% to 90% of the switch's rated overtravel, the extra distance the button can safely move after it clicks. In practice, a full squeeze of the trigger should click the switch clearly and still not push its button flat against the body.
+After fitting it, check the trigger travel before you close the housing. A switch maker's FAQ on how far to push a basic switch says the operating part shouldn't stop near the point where the switch clicks, because the switch can chatter. The same FAQ sets the pushing distance at 60% to 90% of the switch's rated overtravel, the extra distance the button can safely move after it clicks. In practice, a full squeeze of the trigger should click the switch clearly and still not push its button flat against the body.
 
 Route the wires so the trigger can't pinch them, close the housing, and test continuity once more through the handle if you can reach the connector.
 
@@ -97,15 +97,7 @@ On a gas blower, Echo's chart for an engine that doesn't accelerate properly lis
 
 Find the repair sheet or parts diagram for your exact model before buying anything, because it tells you whether the throttle has a micro switch at all and gives the part number to order. If your blower's diagram names only a stop switch, there's no throttle micro switch to replace, and the manual's troubleshooting chart is the next place to look.
 
-Garden tools are a named application for some sealed switch series. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"}'s article on its G3 waterproof micro switch lists safety triggers in electric trimmers, mowers and blowers, and its product page for the ZINGEAR G5W11-WZ200A04-W2 presents that switch for home appliances and gardening equipment. On your own blower, fit and function still come down to the terminal, actuator and rating checks above.
-
-
-## Related guides
-
-- [bottling machine home position micro switch location](/guides/bottling-machine-home-position-micro-switch-location/)
-- [incinerator end of stroke micro switch maintenance](/guides/incinerator-end-of-stroke-micro-switch-maintenance/)
-- [rotary indexing table guard interlock micro switch location](/guides/rotary-indexing-table-guard-interlock-micro-switch-location/)
-- [security barrier open position micro switch wiring](/guides/security-barrier-open-position-micro-switch-wiring/)
+Garden tools are a named application for some sealed switch series. [ZING EAR](https://www.zingear-switch.com/){: rel="nofollow noopener noreferrer" }'s article on its G3 waterproof micro switch lists safety triggers in electric trimmers, mowers and blowers, and its product page for the ZINGEAR G5W11-WZ200A04-W2 presents that switch for home appliances and gardening equipment. On your own blower, fit and function still come down to the terminal, actuator and rating checks above.
 
 ## Sources
 
@@ -114,8 +106,6 @@ Garden tools are a named application for some sealed switch series. [ZING EAR](h
 - Sealey, CP108VBBO SV10.8 Series Cordless Leaf Blower parts information
 - Ryobi, RY404017 40 Volt Backpack Blower Operator's Manual
 - Ryobi, RY40406 40 Volt Blower Operator's Manual
-- Omron FAQ FAQE20046, "Please advise the appropriate amount of pushing for a basic switch" (reposted on DigiKey TechForum)
-- Crouzet, Microswitches: Basic Technical Concepts (12/2020)
 - Electronic Design, "Snap-Action Switches Still Rule The Roost"
 - ZING EAR blog, The G3 Waterproof Micro Switch: A Miniature Sealed Solution: https://www.zingear-switch.com/the-g3-waterproof-micro-switch-a-miniature-sealed-solution.html
 - ZING EAR, ZINGEAR G5W11-WZ200A04-W2 product page: https://www.zingear-switch.com/zingear-g5w11-wz200a04-w2-home-appliances-gardening-equipment-switch-micro-switch-manufacturer.html
