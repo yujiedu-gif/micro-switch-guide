@@ -1,6 +1,6 @@
 ---
-title: "Arcade joystick micro switch replacement: how to choose and verify a compatible switch"
-description: "arcade joystick micro switch replacement: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for."
+title: "Arcade Joystick Micro Switch Replacement: Find the Failed Switch, Match It and Swap It"
+description: "Arcade joystick micro switch replacement: confirm which switch failed, tell clip-on switches from a switch board, match tabs and force, then swap and test."
 date: 2026-10-12 16:49:35 +0800
 category: Applications
 tags:
@@ -8,62 +8,94 @@ tags:
   - micro switches
   - Applications
 author: editorial_team
+seo_title: "Arcade Joystick Micro Switch Replacement, Step by Step"
+last_updated: 2026-11-12
 ---
 
-Arcade joystick micro switch replacement is appropriate only when the joystick has a separately mounted, serviceable switch. Some designs use an integrated or non-serviceable assembly, so do not assume a switch can be removed just because a joystick has directional inputs. When a switch is replaceable, the choice depends on its electrical connections and physical interfaces, not just its appearance. Record how the existing part is mounted, how the joystick contacts its actuator, and how its terminals are wired before removing it. Then compare those details with a candidate replacement and verify operation after installation. If the switch itself tests correctly, the fault may lie elsewhere in the control path.
+One direction on an arcade joystick stops registering while the other directions still work, and the micro switch for that direction is the first suspect. Can that single switch be replaced on its own? **A joystick that holds each switch separately on push-on tabs lets you swap the one bad switch, while a joystick whose switches are soldered to a small board makes the board the part you replace.** Confirming the failed switch, telling the two constructions apart, matching a replacement, the swap itself and the final test follow in that order.
 
-## When arcade joystick micro switch replacement is possible
+## Quick answer
 
-First inspect the joystick with its power disconnected. Determine whether each direction operates a separately mounted switch or whether the switching function is part of an integrated assembly. A separate switch may have accessible terminals, a distinct actuator, and a removable mounting method. Those features are evidence to investigate, not a guarantee that the part is intended to be replaced. The exact construction remains specific to the joystick.
+Arcade joystick micro switch replacement starts by confirming which direction's switch has failed, then swapping that switch or the small circuit board that carries all four. Focus Attack, a US arcade parts distributor, recommends replacing the entire board on the Sanwa JLF joystick because its switches are soldered on. Separate switches unplug from their wires one at a time.
 
-Observe how joystick movement reaches the switch. The lever or another moving part may contact the switch actuator directly or through a mechanical feature. Note the contact point, the direction of movement, and whether the switch can be removed without dismantling or damaging other parts. If there is no independently removable switch, do not treat an internal component as a replaceable micro switch based on appearance alone.
+## Before you start
 
-A similar-looking switch may have different terminal positions, mounting geometry, or actuator reach. It may fail to fit, remain actuated when the joystick is centered, or fail to operate at the end of a direction. Establish serviceability and record the existing interfaces before selecting a replacement. If construction is unclear, the available evidence is not enough to conclude that a generic switch will fit.
+Unplug the controller. In a full cabinet with a PC, monitor or power supply inside, switch the cabinet off at the wall and unplug it before you open the control panel. Take a photo of the wiring under the joystick before you pull anything off, so each wire can go back on the same tab.
 
-## Identify the switch and record compatibility details
+## Confirm that the switch is the part that failed
 
-Keep the game system disconnected from power. Before loosening wires or removing the switch, document the wiring and terminal positions, such as with a clear sketch or photograph. Record any markings on the switch and note which joystick direction operates it. Preserve the wiring record so the replacement can be connected to the same circuit points.
+A dead direction can come from the switch, the wire to it, or the input on the board, so test before you buy a part. Ultimarc's notes for its I-PAC input board describe a test that skips the switch entirely. With a text program such as Notepad open, touch one end of a short wire to a GND terminal and the other end to an input terminal, and a character should appear. The short wire does the switch's job, so a character means the board input works and the fault sits in the switch or its wires.
 
-In generic changeover terminology, COM means common terminal, NO means normally open terminal, and NC means normally closed terminal. These labels describe terminal roles, but they do not establish how a particular joystick circuit is wired. Check the markings and, where needed, use a continuity test to identify connections in the released and actuated states. Verify the exact device schematic rather than assuming the labels or contact arrangement from appearance. Record which terminals are used and which contact transition occurs when the actuator moves.
+Then test the switch itself with the controller unplugged. Set a multimeter to continuity, which beeps when the two probes touch connected metal, and probe the switch's common (COM) and normally open (NO) tabs, the metal blades printed with those labels. COM is wired to the contact that moves, and NO only touches it while the switch is pressed. The pair should stay silent at rest and beep when you press the switch's actuator, its small button or lever, by hand. A switch that never beeps, or beeps only some of the time, is the failed part. The micro switch continuity test guide covers the meter readings in more detail.
 
-Measure and record the installed switch's mounting dimensions and the arrangement, type, and orientation of its terminals. Note available electrical ratings from markings or other reliable documentation, including the stated load type and AC or DC distinction where provided. Do not infer ratings from the switch's size or from its use in a joystick. If those characteristics cannot be established, treat them as unknown rather than assuming a candidate is electrically suitable.
+A third check needs no meter. Pull the two wires off the dead direction's switch and the two off a working direction's switch, then put each pair on the other switch. If the dead direction moves to the other direction in the game, the fault travelled with the switch, so the switch is bad. If the same direction stays dead, the fault sits in its wiring or its board input.
 
-Also record the actuator's shape, reach, and point of contact with the joystick mechanism. Compare operating force and travel where they affect the joystick's feel or whether movement reliably operates and releases the contacts. Under MIL-PRF-8805K 6.5.1, operating force, also called actuating force, is the force or torque applied to the actuating mechanism to operate the contacts. Under MIL-PRF-8805K 6.5.17, release force, also called releasing force, is the force or torque to which force on the actuator must be reduced to permit the contacts to return to the unoperated position after operation. These definitions describe force terms; they do not supply a suitable value for a particular joystick.
+## Separate switches or a switch board: tell them apart
 
-## Choose a compatible replacement for arcade joystick micro switch replacement
+Turn the joystick over and look at the base. Joy-IT's datasheet for its Joystick01, for example, lists four micro switches on its stick, one for each direction. What matters for replacement is how those four are held.
 
-Compare a candidate with the recorded switch across electrical and mechanical interfaces. Start with the contact arrangement: match the connections used in the existing circuit rather than choosing by a familiar-looking housing or terminal label alone. Confirm terminal type, orientation, and clearance so the existing wiring can reach and connect without interfering with movement or nearby parts. Compare stated electrical ratings with the recorded requirements, preserving the load type and AC or DC distinction. If either side's requirements are unknown, compatibility is unresolved.
+- **Separate switches:** each switch has its own metal tabs with wires pushed onto them. One switch comes off without touching the others.
+- **Switch board:** all four switches sit on one small circuit board, and a single plug connects the board to the controller. Focus Attack's support page for the Sanwa JLF says that joystick's switches are soldered to the board, and that a five-pin harness, a plug-in cable with one wire per pin, connects it. The harness carries one shared ground wire plus one wire per direction.
 
-Check mounting dimensions and the method by which the original switch is secured. A candidate that cannot sit in the same position or be secured appropriately may shift during joystick use. Then compare actuator geometry and the point where the joystick mechanism touches it. Too little reach may prevent a direction from registering; too much reach or a different shape may keep the switch actuated at rest, cause unintended input, or interfere with movement. These are reasons to verify geometry, not a basis for assuming all joystick designs use the same dimensions.
+Melting the solder to free a single switch is possible with the right tools, but Focus Attack's advice for the JLF is to replace the board in its entirety. The guide to soldering micro switches covers terminal types and soldering limits if you go that route.
 
-Compare operating force and travel when they affect the feel or reliable actuation of the joystick. A switch that requires a different force or movement may behave differently even if its terminals and mounting appear to match. Do not use appearance as a substitute for checking the force-related details available for both parts. Where a relevant detail cannot be verified, do not claim a confirmed match. No universal-fit assumption follows from the term “micro switch.”
+## Match the replacement to the switch you remove
 
-## Remove and install the switch without damaging the joystick
+Read the markings on the old switch's case first, then check each point below against the new switch's datasheet. ZF's D4 series datasheet is a useful example of the options a single switch family offers.
 
-Keep power disconnected throughout removal and installation. Use the wiring record to preserve each connection. Follow the existing mounting method rather than forcing the switch into a different position or treating an unidentified fastening method as interchangeable. If the switch is soldered or otherwise secured in a way that cannot be removed without risking damage, the evidence here does not establish a suitable removal procedure for that construction.
+| What to match | What the datasheets show | What goes wrong if it doesn't match |
+|---|---|---|
+| Tab width (the metal blades the wire connectors push onto) | ZF's D4 datasheet lists 4.8 mm and 6.3 mm quick-connect tabs; Ultimarc lists harness connectors in 4.8 mm and 2.8 mm | The existing connectors won't grip the new tabs |
+| Contact form | ZF's D4 datasheet offers single pole, single throw (SPST) with a normally open contact, SPST with a normally closed (NC) contact, and single pole, double throw (SPDT) | An SPST switch with only an NC contact has no NO contact, so the joystick input never closes on a press |
+| Operating force (the press needed to flip the switch) | ZF's D4 datasheet offers standard or light operating force, from 45 to 400 cN (centinewtons, roughly 46 to 408 grams of force) depending on the model | The new direction feels lighter or heavier than the other three |
+| Body and actuator (the switch's button or lever) | ZF's D4 datasheet lists a plain button actuator and a range of levers and rollers | The joystick shaft may miss the new switch or hold it pressed |
 
-Handle the switch and joystick carefully. Avoid pulling on wire insulation, bending terminals unnecessarily, stressing solder joints, or applying force to plastic parts. Keep the replacement aligned so the joystick mechanism contacts the actuator at the recorded point. Secure it using the existing mounting arrangement, without assuming a particular fastener or mounting design.
+Contact form has more leeway than it looks. Arcade boards only use the COM and NO tabs, which Ultimarc's notes state directly, so an SPDT switch and an SPST switch with a normally open contact both work in a joystick. The NC tab on an SPDT switch simply stays empty.
 
-Before reconnecting the game system, move the joystick through its available directions while observing the switch mechanism. Each movement should operate the relevant switch, and the actuator should release when the joystick returns. Check for binding, persistent contact, or movement that fails to reach the actuator. If the switch does not move and release freely, revisit its position and compatibility rather than relying on a powered test to reveal a mechanical problem.
+A replacement with a different force than the three switches you keep makes one direction feel different, so match the force figure on the old switch's datasheet where you can find it.
 
-### Related guides
+## Swap a separate switch
 
-- [ball screw actuator home position micro switch replacement](/guides/ball-screw-actuator-home-position-micro-switch-replacement/)
-- [bottling machine end of stroke micro switch](/guides/bottling-machine-end-of-stroke-micro-switch/)
-- [automated guided vehicle home position micro switch location](/guides/automated-guided-vehicle-home-position-micro-switch-location/)
-- [accelerator pedal position stop micro switch operating force](/guides/accelerator-pedal-position-stop-micro-switch-operating-force/)
+1. **Pull the connectors straight off the old switch's tabs.** Grip the connector, not the wire.
+2. **Remove the switch from its mount.** Note which way it faced, so the new one points its actuator at the joystick shaft the same way.
+3. **Fit the new switch in the same position and orientation.** Tighten any screw only until the switch stops moving.
+4. **Push the connectors back on.** The input wire goes on NO and the ground wire on COM, as Ultimarc's notes instruct for every joystick switch.
+5. **Move the stick by hand toward the new switch** and listen for the click before you close up the controller.
 
-## Verify operation and isolate other faults
+## Swap a switch board
 
-With power still disconnected, check continuity in the switch's released and actuated states. Compare the results with the recorded terminal arrangement and expected contact transition. A continuity result is meaningful only in relation to the particular contacts and circuit configuration; do not assume every terminal pair should behave identically. If the observed transition does not match the record, inspect the wiring and terminal identification before treating the replacement as verified.
+Focus Attack's support page describes the board swap on the Sanwa JLF, a Japanese-style arcade joystick, as removing the restrictor guide, unplugging the five-pin harness and switching out the board for a new one. The restrictor guide is the plastic gate around the shaft that limits the stick to four directions or lets it reach the four diagonals as well.
 
-Next, move the joystick through each direction independently and check that the corresponding switch operates consistently and returns freely. Confirm that the released state is restored when the joystick returns to center, and that adjacent movements do not cause an unintended switch to remain actuated. Once the mechanical and continuity checks are complete, reconnect the system and check whether each direction is registered. If a direction still fails, the test does not by itself prove the switch is at fault or that the input system is functioning correctly.
+Before plugging the harness into the new board, check the wire order. Paradise Arcade Shop's listing for the Sanwa JLF-TP-8YT gives the order, viewed from the top with the connector facing forward, as black for ground, then green for up, yellow for down, orange for left and red for right. A harness built for a different stick can use another order, so compare it with the board's markings.
 
-When the switch passes continuity and movement checks but the input remains unreliable, inspect the wiring, connectors, joystick mechanism, alignment, and downstream input path. A loose connection, damaged wire, mechanical issue, or fault beyond the switch may explain the symptom. Avoid replacing parts by guesswork. The practical decision is based on serviceability first, verified electrical and mechanical compatibility second, and separate continuity and direction-by-direction checks after installation. If any of those checks cannot be established, replacement compatibility or the source of the fault remains unresolved.
+## Test after the swap
 
-This concludes the explanation of arcade joystick micro switch replacement.
+Run the continuity test on the new switch with the controller unplugged: COM to NO should be silent at rest and beep when the stick pushes the switch. Then plug the controller in and check every direction, including the diagonals. A diagonal presses two neighboring switches at once, so it confirms the new switch works together with the switch beside it. On an Ultimarc board, Ultimarc suggests testing in Notepad with the player 2 inputs, because some player 1 inputs are mapped to keys such as ALT that don't type a character.
 
-## Sources and references
+📌 **On a direction that still fails:** *If the new switch tests good on the meter but the direction still does nothing, go back to the wire-swap check. A dead direction that stays put when the switches trade wires points to a loose connector, a break in the ground chain or the board input.*
 
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }
+## FAQ
+
+### What are the symptoms of a bad micro switch?
+
+In a joystick, a bad switch shows up as one direction that never registers, registers only some of the time, or stays on after the stick returns to center. A continuity check between COM and NO confirms it: the pair should be open at rest and closed when pressed, every time.
+
+### How to wire up a micro switch?
+
+For an arcade joystick, wire the direction's input to NO and the ground to COM, and leave NC empty. Ultimarc's installation notes describe that pairing for every button and joystick switch, with the ground side of all switches chained to one GND terminal. The arcade joystick micro switch wiring guide covers the terminals in more detail.
+
+## Keep the old switch until the new one is proven
+
+Hold on to the removed switch until every direction tests clean in a game, since its markings are the quickest way to reorder the same part. The arcade micro switch explainer explains the snap mechanism inside the switch you just replaced.
+
+If you are weighing replacement brands, game controls are a listed market for at least one switch maker. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists game control sticks among the markets on its home page, and its G6 troubleshooting article assigns the ZINGEAR G605-150S06A to gaming joysticks and e-sports peripherals. Compare its terminal width and operating force with the old switch before fitting it, as you would with any other brand.
+
+## Sources
+
+- Ultimarc, I-PAC 2 product page, installation and testing notes
+- Focus Attack support, Can I replace the microswitch PCB in my Sanwa JLF?
+- Paradise Arcade Shop, Sanwa JLF-TP-8YT Joystick listing
+- ZF Electronics, D4 Series Miniature Snap Switch, Single Pole datasheet (last update 2019-07-19, third-party mirror)
+- Joy-IT, Joystick01 datasheet (2025-07-24)
+- ZING EAR, home page (application markets list): https://www.zingear-switch.com/
+- ZING EAR blog, Causes and Troubleshooting Methods for G6 Micro Switch Failures: https://www.zingear-switch.com/causes-and-troubleshooting-methods-for-g6-micro-switch-failures.html

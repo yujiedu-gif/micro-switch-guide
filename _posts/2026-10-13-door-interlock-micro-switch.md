@@ -1,6 +1,6 @@
 ---
-title: "Door interlock micro switch: how it works"
-description: "door interlock micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
+title: "How a Door Interlock Micro Switch Works: Primary, Secondary and Monitor Switches"
+description: "A door interlock micro switch is pressed only when a door is fully shut. See how microwave primary, secondary and monitor switches and the fuse work together."
 date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
@@ -8,65 +8,96 @@ tags:
   - micro switches
   - Applications
 author: editorial_team
+seo_title: "How a Door Interlock Micro Switch Works"
+last_updated: 2026-11-12
 ---
 
-A door interlock micro switch can translate mechanical movement associated with a door into an electrical contact-state change. That change is an input to the equipment’s circuit, not a complete description of what the equipment will do. Some door interlocks use a micro switch; others do not, so the arrangement depends on the particular design.
+Open a microwave oven while it's running and the cooking stops the moment the latch lets go, before anyone touches the Stop button. One widely repeated explanation says a spare switch then trips your home's circuit breaker if the main door switches ever fail. **Microwave service manuals give that job to a fuse inside the oven, and the spare switch, called the monitor switch, is wired to blow it on purpose.** The latch, the contacts inside each door switch and the fuse are taken below in the order the door moves them, followed by the same contact logic in washer door locks and machine guards.
 
-Understanding the function means following two connected but distinct paths: the mechanical movement that reaches the switch actuator, and the electrical response determined by the host equipment. A click or a result from an isolated switch check does not, by itself, establish that the complete interlock safely controls operation.
+## Quick answer
 
-## What a door interlock micro switch does
+A door interlock micro switch is a small snap-action switch that the door or its latch presses only when the door is fully shut. Honeywell lists door interlocks among the applications of its DM Series basic switch. In a microwave oven, several of these door switches work together so that power reaches the cooking circuit only while the door stays closed.
 
-In a design that uses one, the micro switch is an electromechanical component that changes an electrical contact state in response to mechanical actuator movement. A door, latch, or related mechanism may provide that movement. The switch therefore converts a mechanical input into an electrical change that the equipment’s circuit can receive.
+## What happens inside the switch when the door presses it
 
-The micro switch is only one possible part of the door interlock. The interlock may also include a latch or other mechanical features, connections, and the host equipment’s control circuit. The switch’s contact change does not independently explain how those parts work together, and its presence does not establish that every door interlock has the same construction.
+Inside the housing, a spring mechanism carries one moving contact between two fixed contacts. The three terminals are marked common (COM), normally closed (NC) and normally open (NO). Daniel Herzog's article on snap-action switches in Electronic Design describes the resting state. With the plunger, the small button the door or latch pushes, in its free position, "the NC circuit of the switch can carry current," and the common terminal is insulated from the NO terminal. "Normally" therefore means the state with nothing pressing the actuator.
 
-The distinction matters because the door’s position is not itself a complete description of the switch’s electrical state. The relevant movement must reach the switch actuator in the way the particular design provides. The resulting contact change then becomes an input to the equipment. Without documentation for that design, it is not possible to assign a specific contact arrangement, wiring state, or response to a closed or open door.
+Press the plunger far enough and it reaches the operating point, the spot in its travel where the spring flips over and the common contact snaps across to the NO contact. The same article notes that the common contact "cannot stop partway" between NC and NO. Crouzet's explainer on how micro switches work adds that the snap-action mechanism gives "instantaneous switching regardless of the actuation speed." A door that someone pushes shut slowly still moves the contact in one quick jump.
 
-A miniature snap-action switch can be used for position or limit detection, but that general use is not a suitability claim for a particular interlock. The exact switch and equipment documentation govern the applicable connection, terminals, circuit function, and permissible load. A generic description of how a micro switch works cannot establish that a given switch is suitable for a particular door, circuit, or safety function.
+In a door interlock, a shut door is the pressed state. A circuit wired through COM and NO is complete only while the door holds the plunger down. A circuit wired through COM and NC is complete only while the door is open. The monitor switch further down depends on that reversal, so the difference between NO and NC contacts is worth having straight before reading a microwave schematic.
 
-## How door movement reaches the micro switch
+## Why a microwave oven needs more than one door switch
 
-The mechanical path starts with movement of the door. In a design that uses a linkage, latch, cam, or lever, movement of that part can be passed along to the switch actuator. The actuator is the part of the switch moved by the external mechanism. When the actuator moves as the design specifies, the switch changes its contact state.
+US federal rules for microwave ovens, 21 CFR 1030.10, define a safety interlock as a device or system of devices meant "to prevent generation of microwave energy when access to the cavity is possible." The same section says that "Microwave ovens shall have a minimum of two operative safety interlocks." Under that section, at least one of them must not be operable by any part of the body or by a straight object 10 cm long. A finger or a stick poked at the door frame can't switch it.
 
-The sequence is therefore conditional: door movement may move an associated mechanism; that mechanism may move the actuator; actuator movement may produce a contact-state change. Not every interlock uses the same intermediate parts, and the sequence should not be read as a claim that a particular latch, cam, or lever is present. Those details depend on the documented design.
+The rule then closes the obvious gap. Under paragraph (c)(2)(ii), one failed mechanical or electrical part "shall not cause all safety interlocks to be inoperative." Paragraph (c)(2)(v) names the two required interlocks primary and secondary and requires the service instructions to say which is which. Paragraph (c)(2)(vi) adds a monitor for one or both interlocks, which must make the oven inoperable until it's repaired if an interlock fails.
 
-This explanation does not assign a normal contact state to an open or closed door. Nor does it say which terminals connect before or after actuator movement. Those details require the exact switch’s connection diagram and terminal markings, together with the circuit function documented for the equipment. Inferring them from the switch’s physical layout or from the door’s position can lead to an unsupported conclusion.
+The Sanyo EM-FL50N service manual names the failure this design has in mind: primary and secondary switches that "stick closed." A switch whose contacts stay closed keeps its circuit complete after the door opens, so power flows as if the door were still shut. If both interlocks stick, nothing in the interlock path breaks the circuit, and the monitor exists for that case.
 
-The external mechanism and the switch also have different roles. The mechanism provides movement; the switch responds to movement at its actuator by changing an electrical contact state. A visible change in door or latch position does not, on its own, demonstrate that the actuator moved as intended or that the electrical contact changed. Conversely, observing actuator movement does not establish how the host circuit uses the resulting input.
+## How the primary, secondary and monitor switches share the work
 
-A useful explanation of the mechanism therefore stops at the supported boundary: mechanical movement reaches the actuator, and the switch changes contact state. The details of how far the parts move, how they are arranged, and which state corresponds to a particular door position remain design-specific unless the equipment documentation identifies them.
+The Sanyo EM-FL50N manual describes the sequence in one line: "By closing the door, the primary and secondary interlock switches close and monitor switch opens." With both interlocks closed, the same manual says, household supply voltage flows through that model's 10 amp fuse toward the magnetron circuit, the part that generates the microwaves.
 
-## Why the contact change does not define the equipment response
+| Switch (Sanyo EM-FL50N service manual) | Door closed | Door open | What it does |
+|---|---|---|---|
+| Primary interlock | Closed | Open | Breaks power to the cooking circuit when the door opens |
+| Secondary interlock | Closed | Open | Breaks the same circuit independently of the primary |
+| Monitor | Open | Closed | Shorts the supply if an interlock is still closed with the door open, which blows the 10 amp fuse |
 
-The micro switch provides a contact-state change; the host equipment’s wiring and control logic determine what that change means. Depending on the documented circuit, the input may permit operation, inhibit it, or serve as a signal. The switch alone does not establish which response occurs. A door interlock’s purpose or label is not enough to infer a particular shutdown, alarm, or safe state.
+The monitor is the switch that runs backwards. The Sanyo manual calls it the "normally closed safety switch." If the primary and secondary switches stick closed and the door opens, the manual explains, "the circuit would be shorted through the normally closed safety switch." With the door open, the monitor's contacts are closed, so a stuck interlock path plus a closed monitor connects the supply straight across itself. The surge blows the fuse, and the oven goes dead. A dead oven is the intended result, and the household breaker isn't part of the sequence the manual describes.
 
-This separation is especially important when describing safety behavior. A contact change can be one part of an interlock function, but the complete function depends on the equipment design and the way the switch is connected and interpreted. The available general description does not establish that the equipment prevents operation whenever a door is open, that it stops immediately, or that a particular fault response occurs. Such conclusions require evidence about the complete equipment, not merely the presence of a micro switch.
+Appliance standards test for the same behavior. Australia's Electrical Equipment Safety System (EESS) covers it in bulletin 24-071 (2024), on clause 22.106 of AS/NZS 60335.2.25, the microwave oven safety standard used there. The bulletin says the clause requires the supervision device of each door interlock, the part the US rule calls a monitor, to make the oven inoperable if the interlock fails. Fuses are the usual tool, since the requirement "is commonly achieved using fuses," the bulletin adds, and it quotes the test wording: "The internal fuse shall rupture each time."
 
-To understand a specific arrangement, use the connection diagram, terminal markings, circuit function, and permissible load documented for the exact switch and equipment. Do not infer terminal identity or circuit behavior from a generic switch diagram or physical layout. If the documentation does not identify a detail, that detail remains unresolved rather than being supplied by assumption.
+Not every interlock position is a micro switch. The DCS MO-24SS technical service manual calls its primary interlock a relay, an electrically operated switch, and pairs it with a secondary interlock switch and a monitor switch. That manual also packages the monitor switch with a 20 ampere fuse as one assembly.
 
-The component’s role can still be stated clearly without overstating the application: it provides an electrically detectable change in response to mechanical actuator movement. Whether the equipment uses that change to allow, prevent, or indicate operation belongs to the host circuit and its control logic. This boundary avoids treating one possible design as a rule for all door interlocks.
+## The same contact logic in other doors
 
-### Related guides
+### Washer door locks
 
-- [aircraft door closed monitor micro switch NO and NC terminals](/guides/aircraft-door-closed-monitor-micro-switch-no-and-nc-terminals/)
-- [access control door position micro switch function](/guides/access-control-door-position-micro-switch-function/)
-- [ball screw actuator end of stroke micro switch contact rating](/guides/ball-screw-actuator-end-of-stroke-micro-switch-contact-rating/)
-- [capping machine guard interlock micro switch actuator travel](/guides/capping-machine-guard-interlock-micro-switch-actuator-travel/)
+LG's online training manual for its front-load washer describes a door lock assembly, driven by a heated bimetal and a solenoid, that "locks the door during the wash cycle." The board learns the door is locked through a contact: "The lock is detected by the main board when terminals 4 and 5 are closed." As in the microwave, a closed contact between those terminals is how the control learns the door is in its safe position.
 
-## What a click or continuity check can establish
+### Machine guards
 
-A click may indicate that a mechanism moved or that a snap-action mechanism operated. It does not prove that the electrical contacts have continuity, that the switch is wired correctly, or that the complete door interlock functions as intended. Sound is an observation of movement at most, not a complete electrical or equipment-level test.
+Safety switches on machine guards are judged against a stricter idea called positive opening. ABB's general technical data for its limit switches defines it as an actuator that "ensures full contact opening" of the normally closed contact. For that part of the travel, ABB allows "no resilient member (e.g. springs)" between the moving contacts and the point where force is applied. Electronic Design's description of snap action relies on "a plunger and spring," so a standard micro switch has the very spring that definition excludes.
 
-An isolated continuity check can provide information about the switch under the specific conditions of the check, but interpretation requires the documented contact arrangement and expected behavior for the defined actuator state. The available general evidence does not specify which terminals to test or what reading to expect for a particular door position. Those details must come from the exact switch and equipment documentation; they should not be guessed from a click, terminal location, or generic diagram.
+ABB also notes that positive opening "does not deal with N.O. contacts," meaning normally open ones. A guard circuit built this way runs through a contact that the opening guard forces apart. The function of a safety micro switch covers where specially rated parts come in.
 
-Even a documented result from an isolated switch check has a limited scope. It concerns the switch in the tested state. It does not establish that the switch is correctly connected in the installed equipment, that the wiring and control circuit behave as intended, or that the complete interlock safely prevents operation. A component check and an assessment of the complete equipment answer different questions.
+## Checking a door interlock switch without defeating it
 
-The practical boundary is therefore clear: a micro switch may convert door-related mechanical movement into a contact change, while the equipment determines the consequence of that change. A click or isolated check cannot prove the whole interlock’s behavior. For a specific installation, conclusions about terminals, circuit response, permissible load, or safety function depend on documentation for that exact switch and equipment, with applicable deenergization and qualification requirements observed.
+📌 **On safety:** *Unplug the appliance before opening any panel. A microwave oven's high-voltage capacitor is the part its service manuals tell technicians to discharge before testing, so if you aren't trained to do that, leave the work to a qualified appliance technician.*
 
-This concludes the explanation of door interlock micro switch.
+The DCS MO-24SS manual starts its interlock tests by having you disconnect the power supply cord before removing the outer case. Its next step reads "Discharge high voltage capacitor," which drains the charge the capacitor can hold after the cord is pulled. Never jumper, tape down or bridge a door switch to see whether the oven runs. Federal rules for microwave ovens require that service adjustments or procedures not leave the interlocks inoperative. A bypassed interlock removes the protection the rest of the circuit was built around.
 
-## Sources and references
+The Sanyo EM-FL50N manual checks the monitor switch with an ohmmeter, on an oven that's unplugged and discharged. "As the door is opened, your meter should show a short," the manual says, and with the door closed it should show an open circuit. The primary and secondary switches should read the opposite way. A step-by-step continuity test for a microwave door interlock micro switch walks through the meter settings, and the general method for testing a micro switch with a multimeter applies to any door switch.
 
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
-- Occupational Safety and Health Administration: [29 CFR 1910.333: Selection and Use of Work Practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333){: rel="nofollow noopener noreferrer" }
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }
+A blown fuse is a symptom, and the switches are the cause to look for. The DCS manual warns, "BEFORE REPLACING A BLOWN MONITOR FUSE, TEST THE PRIMARY INTERLOCK." If improper switch operation blew the fuse, the same manual has the monitor fuse and monitor switch replaced together, "even if the monitor switch operates normally."
+
+## FAQ
+
+**What is the purpose of a micro switch?**
+A micro switch turns a small mechanical movement into a definite contact change. In a door interlock, that movement is the door or latch reaching the fully shut position. Honeywell lists both appliance door lights and door interlocks as applications for its DM Series basic switch.
+
+**Can you bypass a microwave door switch?**
+No. US federal rules (21 CFR 1030.10) require at least two working interlocks plus a monitor, and require that service work not leave the interlocks inoperative. If a door switch has failed, the service manual for that model names the part and test procedure for replacing it.
+
+**How does a micro switch work?**
+A spring mechanism holds a moving contact against the NC contact until the actuator is pressed to the operating point. Past that point, the contact snaps across to the NO contact, and Crouzet describes this switching as independent of how fast the actuator moves. Releasing the actuator lets the spring snap the contact back.
+
+## What to look at before replacing a door switch
+
+Start with the service manual or wiring diagram for your exact model, since it names which switch is primary, which is secondary and which is the monitor. Match the replacement's contact form and electrical rating to the part it replaces, because a normally open switch fitted in the monitor position reverses the logic the fuse depends on. If the fuse blew, test every switch in the interlock set before fitting a new fuse.
+
+Door interlock switches come from appliance switch makers, and some describe where their parts are used. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists microwave ovens, range hoods and coffee machines among the kitchen appliances its home appliance micro switches cover. Whichever maker built the original, the service manual still names the position each switch fills, and a replacement has to match that position's contact form.
+
+## Sources
+
+- US Code of Federal Regulations, 21 CFR 1030.10, Microwave ovens (Legal Information Institute)
+- Sanyo EM-FL50N service manual, Electrical Operation and Door & Interlock Adjustments (ManualsLib copy)
+- DCS MO-24SS technical service manual, Component Test and Blown Monitor Fuse Test (ManualsLib copy)
+- EESS Information Bulletin 24-071, Microwave oven clause 22.106 (AS/NZS 60335.2.25), 2024
+- Daniel Herzog, "Snap-Action Switches Still Rule The Roost," Electronic Design, 2012
+- Crouzet, How does a microswitch work?
+- Honeywell, DM Series Basic/Snap Action Switch
+- LG Online Training Manual, Door Lock (front-load washer, hosted by Reliable Parts)
+- ABB, Limit switches: General technical data (1SXU000023C0202)
+- ZING EAR, Home Appliance Micro Switch product line page: https://www.zingear-switch.com/home-appliance-micro-switch

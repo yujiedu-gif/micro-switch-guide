@@ -1,6 +1,6 @@
 ---
-title: "Arcade Button Micro Switch Wiring: Identify and Connect the Terminals"
-description: "Learn arcade button micro switch wiring by identifying COM, NO, and NC terminals and checking a button’s switch documentation before connecting it."
+title: "Arcade Button Micro Switch Wiring: Which Two Terminals to Use and How to Share the Ground"
+description: "Arcade button micro switch wiring uses two terminals: input wire on NO, ground on COM, NC left empty. Steps, a quick test and the faults a wrong tab causes."
 date: 2026-10-11 18:01:49 +0800
 category: Applications
 tags:
@@ -8,65 +8,88 @@ tags:
   - micro switches
   - Applications
 author: editorial_team
+seo_title: "Arcade Button Micro Switch Wiring: COM, NO and Ground"
+last_updated: 2026-11-12
 ---
 
-# Arcade Button Micro Switch Wiring: Identify COM, NO, and NC
+An arcade button's micro switch has three metal tabs printed COM, NO and NC, yet the input board it connects to offers one terminal per button plus a ground. Which two tabs take the wires, and does every button need its own ground wire back to the board? **The button's own wire goes on NO, the ground goes on COM, and one ground wire can hop from COM to COM across every button before it reaches the board.** Identifying the tabs, the wiring steps, a test with the board connected and the faults a wrong tab causes follow in that order.
 
-Arcade button micro switch wiring starts with identifying the switch’s common terminal and deciding whether the intended input should use the normally open or normally closed contact. The labels describe contact states, not a guaranteed terminal arrangement. Check the markings or documentation for the exact switch before connecting anything.
+## Quick answer
 
-This guide covers the button switch’s contact terminals only. It does not specify how to wire a complete control panel or connect a particular encoder, board, or system. A generic terminal diagram can explain the terms, but it cannot establish the correct wiring for a specific device.
+Arcade button micro switch wiring uses two of three terminals: the input wire goes on normally open (NO), the ground wire on common (COM). Ultimarc's installation notes for its I-PAC input boards say to leave the normally closed (NC) tab empty and to daisy-chain the ground side of every switch, one wire running from switch to switch, to a single GND terminal.
 
-## What arcade button micro switch wiring needs you to identify
+## Before you start: power and connectors
 
-The task is to identify COM and then select either NO or NC according to the behavior required by the intended input circuit. COM is the shared contact in a changeover arrangement. NO and NC are the two alternative contacts. The exact switch marking or schematic is authoritative; physical position alone is not.
+If the button sits in a full cabinet with a PC, monitor or power supply inside, switch the cabinet off at the wall and unplug it before you reach into the control panel. A stand-alone stick that runs from a USB cable only needs the cable unplugged. Ultimarc's page for the I-PAC 2 says the board plugs into a USB port and needs no separate power, so the button circuit itself is low voltage.
 
-A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement. Such switches are commonly used for position or limit detection. In a button, the actuator movement is associated with pressing and releasing the button, but the general description does not establish a specific switch’s terminal layout or connection requirements.
+Check the connector size before you buy wire. Push-on connectors have to match the width of the switch's tabs, the flat metal blades the wires slide onto. Ultimarc lists the ready-made wiring harness for its Mini-PAC board with 4.8 mm switch connectors, or with both 4.8 mm and 2.8 mm connectors for its Goldleaf button panels, so both widths turn up on arcade switches. Wikipedia's FASTON terminal article lists those widths as the 187 and 110 families, named for blade widths of 0.187 in and 0.110 in.
 
-The switch terminals are only one part of a control system. Identifying COM, NO, and NC does not explain connections to an encoder, control board, power source, or other panel controls. Those connections depend on the documented circuit and equipment. Keep this task focused on the switch’s contact pair rather than treating a terminal explanation as a complete panel-wiring plan.
+## Identify COM, NO and NC on the switch
 
-## What COM, NO, and NC mean on an arcade button micro switch
+Most switches print the three labels on the case next to the tabs. Each label tells you what the tab connects to inside:
 
-In a generic changeover contact, COM means common: the shared terminal that can connect to either of the other contacts as the switch changes state. NO means normally open, and NC means normally closed. “Normally” refers to the actuator’s unpressed or rest state in the applicable switch documentation.
+- **COM (common)** connects to the moving contact, the metal piece that the spring flips when you press.
+- **NO (normally open)** stays apart from COM until the button is pressed.
+- **NC (normally closed)** touches COM until the button is pressed.
 
-At rest, the NO contact is open relative to COM, while the NC contact is closed relative to COM. When the actuator is pressed, the contact state changes. In a typical changeover description, COM transfers from NC to NO; verify that behavior against the documentation for the exact switch rather than assuming every device uses identical markings or mechanics.
+"Normally" means at rest, with nothing pressing the switch. Electronic Design's article on snap-action switches describes the press from that resting state: at the operating point, the common contact accelerates away from the NC contact and comes to rest against the NO contact. The explainer on NO and NC micro switch contacts covers the two states in more depth.
 
-These terms describe electrical contact states, not where a terminal sits on the housing. A drawing that places COM at the top, for example, is not a universal layout. Likewise, a terminal’s shape or apparent position does not by itself prove whether it is COM, NO, or NC. Use the device’s own labels or schematic to map the names to physical terminals.
+If the labels are worn off, a multimeter on its continuity setting sorts the tabs out with the power off. On that setting, the meter beeps when its two probes touch metal that's connected. Touch the probes to two tabs at a time. The pair that beeps at rest and goes quiet when you press is COM and NC. The pair that stays quiet at rest and beeps when you press is COM and NO. The tab that appears in both pairs is COM.
 
-## How to identify the terminals before connecting wires
+## Wire the button step by step
 
-First inspect the switch and any documentation supplied for the button or switch. Look for COM, NO, and NC markings, or a schematic that identifies the contacts. The diagram, markings, circuit function, and permissible load documented for the exact switch and equipment should guide the connection. A generic drawing or a familiar-looking housing is not enough to establish terminal identity.
+1. **Run the input wire to NO.** Take the wire from the board terminal assigned to that button and push its connector fully onto the NO tab. Ultimarc's I-PAC 2 page says some switches have three connections and that only the ones marked NO and COM get used.
+2. **Run the ground to COM.** Push a ground wire onto the COM tab.
+3. **Chain the ground to the next button.** Run the same ground wire on to the COM tab of the next button, and the next, then end the chain on a GND terminal of the board. Ultimarc's notes call this daisy-chaining the other side of all switches together.
+4. **Leave NC empty.** Ultimarc's notes say nothing should go on the NC tag.
+5. **Tug each connector gently.** A connector that slides off with a light pull isn't fully seated or doesn't match the tab width.
 
-If the labels are absent, unreadable, or inconsistent with the available diagram, do not guess based on terminal position. Resolve the identification from applicable documentation or another suitably supported identification method. The evidence here does not specify a particular measurement procedure, so this guide does not prescribe one. If the switch cannot be identified reliably, its terminal assignment remains unresolved.
+The shared ground is standard practice in arcade cabinets. Ultimarc's I-PAC 2 page states that most arcade cabinets have one side of all switches commoned, and that the board's button inputs are all referenced to ground, so no button needs its own separate ground run. On the Mini-PAC, which uses a supplied harness, Ultimarc ships the ground as its own daisy-chain harness that plugs into the black wire of the main harness. The guide to why one COM wire can serve every button explains the shared ground in more detail.
 
-Before making a connection, also confirm that the intended circuit and load are within the documented conditions for the exact switch and equipment. This guide provides no voltage or current rating, and it does not establish a permissible load for any particular button. Follow applicable deenergization and qualification requirements; a generic COM/NO/NC explanation is not a substitute for them.
+## Test the button with the board connected
 
-## Choose COM with NO or COM with NC for the intended input
+Ultimarc's basic test for the I-PAC uses a text program such as Notepad. Plug the board in, open Notepad and press the buttons; each press should type a character. Ultimarc suggests trying the player 2 buttons first, because some player 1 inputs are mapped to keys such as ALT that don't print anything.
 
-Using COM with NO means the contact is open relative to COM at rest and changes state when the actuator is pressed. This pairing is appropriate only when that state behavior matches the intended input circuit and its documentation. It should not be treated as a universal arcade-system convention.
+If a button types nothing, split the fault in two. Ultimarc's notes describe touching one end of a short wire to GND and the other end to an input terminal: a character should appear. The short wire does the switch's job, so a character from that test means the board and its input are fine, so the problem sits in the switch or the wires to it. With the board unplugged, the continuity test from the identification step tells you whether the switch itself still closes between COM and NO when pressed.
 
-Using COM with NC means the contact is closed relative to COM at rest and changes state when the actuator is pressed. This pairing may fit an input circuit that is documented to use that behavior, but the contact definition alone cannot establish that it will work with a particular encoder or board.
+📌 **On the self-test light:** *Ultimarc says the LED on an I-PAC stays on in normal use, and flashes a number of times then stays off when the board detects a failure at power-up.*
 
-The decision is therefore about the required input behavior, not which pair looks more common or which terminals are easiest to reach. Check the equipment’s connection information and the exact switch documentation together. If those sources do not establish the required contact pair, compatibility and the correct choice remain undetermined. Do not infer them from the button’s appearance or from a generic example.
+## Faults that come from the wrong tab or a loose wire
 
-### Related guides
+| What you see | Likely cause | What to check |
+|---|---|---|
+| Buttons read as held down, joystick directions jump, keys stick | Input wires on NC instead of NO, which Ultimarc names as a very common cause | Move each input wire from NC to NO |
+| One button does nothing | Loose connector on NO or COM, or a failed switch | Reseat both connectors, then run the continuity test |
+| Every button past a certain point does nothing | Break in the ground chain, so every switch after the break loses its ground | Follow the chain from the last working button |
+| Connector slides off or won't go on | Connector width doesn't match the tab | Compare the tab with 4.8 mm and 2.8 mm connectors |
 
-- [2 terminal micro switch](/guides/2-terminal-micro-switch/)
-- [elevator micro switch](/guides/elevator-micro-switch/)
-- [rice cooker micro switch](/guides/rice-cooker-micro-switch/)
-- [what is a micro switch in a car](/guides/what-is-a-micro-switch-in-a-car/)
+The third row follows from how the chain works: ground reaches each switch through the switch before it, so one broken link cuts off every switch further along. Ultimarc's own notes put a related warning in software terms: when inputs sit on NC, the board sees many keys held at once, which is why shift functions stop working.
 
-## What this wiring guide does not determine
+## FAQ
 
-Knowing the switch terminals does not establish compatibility with a specific encoder, control board, or system. It also does not determine how a complete arcade control panel should be wired, whether a visually similar replacement switch will fit or function, or why a button might fail after wiring. Those questions require separate, device-specific evidence and are outside this guide’s scope.
+### How to wire an arcade button micro switch with 2 wires?
 
-The same limit applies to test results and electrical ratings. Contact resistance is a measured switch requirement; its method, connection points, and limit must come from the applicable specification and test procedure. A terminal explanation cannot supply those values or establish that a particular switch meets them.
+Put one wire on the NO tab and the other on the COM tab, and leave NC empty. The NO wire goes to the board's input for that button, and the COM wire goes to ground. Ultimarc's I-PAC notes describe exactly that pairing for every button and joystick switch.
 
-For a connection decision, use the exact switch and equipment documentation, identify COM from the documented marking or schematic, and choose NO or NC only when its contact state matches the intended input. If the required information is missing, do not treat a generic terminal layout as confirmation. This article explains the contact terms; it does not replace equipment-specific wiring instructions or resolve other panel tasks.
+### How to wire arcade buttons?
 
-In short, arcade button micro switch wiring depends on verified terminal identity and the intended input behavior. Confirm COM, determine whether the circuit requires NO or NC, and rely on the applicable documentation rather than assumptions about terminal position.
+Wire each button's NO tab to its own input on the board, then run a single ground wire from COM to COM across all the buttons and end it on the board's GND terminal. Ultimarc's I-PAC 2 page notes that most arcade cabinets already have one side of all switches commoned this way.
 
-## Sources and references
+### How many ohms should a switch have?
 
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
-- Occupational Safety and Health Administration: [29 CFR 1910.333: Selection and Use of Work Practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333){: rel="nofollow noopener noreferrer" }
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }
+Measured across COM and NO with the button held, a closed switch should read close to zero ohms on a multimeter; with the button released, the meter should show an open circuit. For scale, Omron's datasheet for its A-20G basic switch lists contact resistance, the resistance across the closed contacts, of 15 mΩ maximum when new, far below what a hobby meter can show. A reading of several ohms across closed contacts points to dirty or worn contacts or a poor connector.
+
+## After the buttons work
+
+Joystick switches follow the same rule: input on NO, ground on COM, NC empty, with the joystick's switches joining the same ground chain. The arcade joystick micro switch wiring guide covers terminal checks for the direction switches, and the arcade micro switch explainer covers what the switch under each button is.
+
+Switch makers build parts with this use in mind. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists game control sticks among the markets on its home page, and its G6 troubleshooting article assigns the ZINGEAR G605-150S06A to gaming joysticks and e-sports peripherals. The COM, NO and NC rule above applies to whichever switch you fit, so read its terminal markings before you crimp the first wire.
+
+## Sources
+
+- Ultimarc, I-PAC 2 product page, installation and testing notes
+- Electronic Design, Snap-Action Switches Still Rule The Roost
+- Omron, General-purpose Basic Switch A (A-20G) datasheet (third-party mirror)
+- Wikipedia, FASTON terminal
+- ZING EAR, home page (application markets list): https://www.zingear-switch.com/
+- ZING EAR blog, Causes and Troubleshooting Methods for G6 Micro Switch Failures: https://www.zingear-switch.com/causes-and-troubleshooting-methods-for-g6-micro-switch-failures.html

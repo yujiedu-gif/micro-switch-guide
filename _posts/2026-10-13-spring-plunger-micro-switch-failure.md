@@ -1,6 +1,6 @@
 ---
-title: "Spring plunger micro switch failure: how to distinguish the cause"
-description: "spring plunger micro switch failure: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
+title: "Spring Plunger Micro Switch Failure: What Goes Wrong and How to Tell Which Part Failed"
+description: "A spring plunger micro switch fails at the plunger, the snap mechanism or the contacts. How to tell which one, using Omron and Crouzet datasheet guidance."
 date: 2026-10-13 11:27:16 +0800
 category: Troubleshooting
 tags:
@@ -8,74 +8,103 @@ tags:
   - micro switches
   - Troubleshooting
 author: editorial_team
+seo_title: "Spring Plunger Micro Switch Failure: Causes and Checks"
+last_updated: 2026-11-12
 ---
 
-A spring plunger micro switch failure is not the only explanation for a device that does not respond when a mechanism moves. The issue may lie in the external input path, the switch’s contacts or connections, the wiring, or another part of the host equipment. Separating those possibilities requires tracing the movement to the actuator, then checking the switch under defined and isolated conditions.
+A machine door that no longer registers as shut, or a carriage that runs past its stop, often traces back to a small switch with a spring-loaded button on top. Replacing that switch is easy, so is the switch the part that actually failed? **A spring plunger micro switch has two halves that fail in different ways: the plunger that takes the push, and the switch body that turns the push into a contact change.** The checks below follow that split, from the plunger, through the snap mechanism, to the contacts.
 
-A spring plunger is the actuator on a particular electromechanical micro switch. The actuator is distinct from the lever, cam, door, or other mechanism that moves it, and from the equipment that uses the switch’s electrical output. Not every device with a spring-loaded plunger contains a micro switch. The checks below help narrow the location of a fault; they do not establish that the whole assembly is safe or suitable for use.
+## Quick answer
 
-## What spring plunger micro switch failure can mean
+A spring plunger micro switch fails when its plunger sticks or gets pushed sideways, when it's pressed too far or too little, or when its contacts weld (melt and stick together), wear or get coated. Omron's FAQ on basic switch failures splits the causes into electrical ones, such as welding, and mechanical ones, such as external damage. A continuity test, plunger released and then pressed, shows which group you're in.
 
-A failure symptom is an observation, not a diagnosis. For example, a host device may fail to respond, respond inconsistently, or behave differently as its mechanism moves. Those symptoms alone do not show whether the switch itself is faulty. The cause could be restricted or misaligned movement, damage in the actuator or mechanism, an internal contact problem, a terminal or wiring issue, or a fault elsewhere in the equipment.
+## What a spring plunger adds to a micro switch
 
-Keep the parts of the input path distinct. The host mechanism supplies movement; the spring plunger receives that movement; the switch changes its electrical contact state according to its design; and the equipment’s circuit determines what that change does. A problem at any point can produce an apparently similar symptom. The equipment’s response therefore cannot, by itself, identify a failed switch.
+A micro switch, also called a snap-action switch, flips its contacts with a snap once its actuator, the part the machine presses, travels a set distance. The plain version has a pin plunger: a short rod that pushes straight on the internal spring. A spring plunger puts a second spring inside the plunger itself, so the plunger can keep moving after the contacts have switched.
 
-Start with observations that do not require assuming a specific switch specification. Does the external mechanism move through its intended range? Does it reach the plunger and then release it, or is motion blocked, diverted, or incomplete? Does the plunger appear damaged or unable to move as expected? These observations can point toward an input-path problem, but they do not establish the switch’s internal electrical condition.
+Omron's datasheet for its A series shows what that buys. The pin plunger A-20G-B and the short spring plunger A-20GD-B list the same operating force (OF), the push needed to switch it, of 3.92 to 6.13 N, and the same pretravel (PT), 1.3 mm max. Pretravel is the distance the plunger moves before the contacts switch. The difference is in overtravel (OT), the extra distance the plunger can safely move after switching:
 
-A click may indicate movement of a snap mechanism, if the particular design has one. It does not prove that the contacts changed state, that the terminals are wired correctly, or that the switch is suitable for the connected load. Treat a sound or feel as a clue about mechanical movement, not as a pass/fail electrical test.
+| Omron A series model | Actuator | Pretravel (PT) max. | Overtravel (OT) min. |
+|---|---|---|---|
+| A-20G-B | Pin plunger | 1.3 mm | 0.25 mm |
+| A-20GD-B | Short spring plunger | 1.3 mm | 3 mm |
 
-## Follow the mechanical input to the spring plunger micro switch
+Going by those two rows, the spring plunger lets the machine part that presses the switch overshoot by about twelve times as much. A margin that large suits a cam (a shaped rotating part), door or slide that doesn't stop at a precise spot. The same design tells you where to look when the switch stops working: the extra spring is one more moving part, and the overtravel it allows still has a limit.
 
-Trace motion from the host mechanism toward the plunger rather than starting with an assumption that the switch has failed. Look for an obstruction or a change in how the mechanism approaches the actuator. Misalignment may cause the mechanism to miss the plunger or meet it in an unintended way. Restricted movement may prevent the actuator from reaching its designed operating position. These are possible causes, not conclusions based on appearance alone.
+## Before you test: power off and identify the terminals
 
-Observe both movement toward the switch and release. The mechanism needs to move the actuator as intended for the particular design. If the mechanism does not reach or release the plunger as intended, a failure to actuate may originate outside the switch. If the plunger or its associated mechanism appears damaged or moves abnormally, that observation narrows the mechanical question but does not establish whether an electrical fault is also present.
+Omron's SS series datasheet tells installers to turn off the power supply before mounting or removing the switch, wiring it, or doing maintenance, because working live can cause electric shock or burns. On anything plugged into a wall outlet, unplug it; on battery equipment, take the battery out. Don't bypass the switch to keep a machine running while you troubleshoot: if it sits on a door, guard or limit, it's there to stop something moving.
 
-Do not apply a universal travel or force threshold. The available evidence does not specify a required force, alignment tolerance, or travel value for an unidentified switch. A general travel distinction can help describe motion: pretravel runs from the free position to the operating position, while overtravel runs from the operating position to the extreme permitted actuator position. These terms do not supply a pass/fail measurement for an unknown design.
+Most of these switches have three terminals, marked common (COM), normally closed (NC) and normally open (NO). Electronic Design's explainer on snap-action switches describes the at-rest state: with the plunger fully released, the common contact rests against the NC contact, so COM to NC conducts. Pressing past the operating point, where the switch clicks, moves the common contact over to NO. "Normally" means "with nothing pressing the plunger," which matters when the switch is installed and the machine holds it pressed. Our guide to NO and NC terminals on a micro switch covers the markings in more detail.
 
-If a judgment depends on whether the mechanism reaches an operating point or stays within permitted overtravel, use the limits documented for the exact switch and equipment. Without those design-specific limits, a visible movement difference may be worth investigating, but it cannot establish that the actuator travel is acceptable or unacceptable. Likewise, do not force the plunger or adjust the surrounding mechanism based on an assumed universal setting.
+## Step 1: Check the plunger and what presses it
 
-## Separate a switch fault from terminal, wiring, or equipment faults
+Start with the switch still mounted and the power off. Move the machine part (door, cam, slide) by hand and watch the plunger.
 
-The switch’s contact arrangement and the meaning of a continuity result depend on its documented terminals and reference condition. Do not infer terminal identity from physical position, wire color, or a generic diagram. Use the connection diagram, terminal marking, circuit function, and permissible load documented for the exact switch and equipment. If that information is missing or unclear, the electrical result cannot be interpreted reliably.
+- **Does the part reach the plunger at all?** A bracket that has shifted or a cam that has worn can stop short. Crouzet's technical notes on its micro switches say the actuating device must push the plunger through at least 0.5 times the rated overtravel, and must never stop at the operating point. If the part barely touches the plunger, the switch can't switch reliably.
+- **Is the push straight?** The same Crouzet notes say a plunger should be pressed along its axis, and that most of its switches accept a side approach only up to 45° off the plunger's axis. A part that wipes across the plunger at a steep angle loads it sideways, which can bind the plunger or crack the housing over time.
+- **Does the plunger come back?** Press it with a fingertip and let go. It should return fully and on its own. A plunger that returns slowly or stops partway points to dirt, grease or a damaged plunger spring. Omron's A series precautions warn against mounting the switch where cutting debris and dust can build up on the actuator. Our article on why a micro switch plunger sticks goes through those causes.
 
-A switch-level observation is not the same as a wiring check. A continuity check across an isolated switch can provide evidence about the contacts in a defined actuator state. It does not establish that installed wires are intact, connected to the correct terminals, or functioning as the host equipment requires. Nor does a switch reading identify a fault elsewhere in the equipment’s control logic.
+## Step 2: Check how far the plunger is pushed
 
-Keep the possible fault locations separate:
+Too little travel and too much travel both cause failures, in opposite directions.
 
-- **Mechanical input:** The external mechanism may be obstructed, misaligned, or unable to move or release the plunger as intended.
-- **Actuator or switch mechanism:** The plunger or associated mechanism may be damaged or may not behave as expected. That observation does not alone prove an internal contact fault.
-- **Internal contacts:** A defined, isolated check may provide evidence about contact behavior, but only when the expected state and documented terminals are known.
-- **Terminals or wiring:** Incorrect identification, a loose or interrupted connection, or another wiring issue may prevent the host circuit from responding as expected. A switch-only check does not test the installed wiring.
-- **Host equipment:** A fault elsewhere may affect the observed response even if an isolated switch check produces the expected result.
+Omron's FAQ on how far to push a basic switch warns that if the operating part stops near the operating position or the release position, the switch can chatter or bounce. Crouzet explains why: near those points the contact force drops and the contact resistance can rise sharply. The symptom is an intermittent signal that comes and goes with vibration or temperature.
 
-These categories are diagnostic possibilities, not a list of confirmed causes. In particular, an apparently normal switch reading does not prove that the equipment’s circuit is correctly connected or operating. A symptom in the host equipment should not be attributed to the switch until observations distinguish the switch from the surrounding circuit.
+Pushing too far does the opposite kind of damage. The same Omron FAQ sets the pushing distance at 60% to 90% of the rated overtravel, and says that beyond 90% the actuator or switch may be damaged. Omron's A series datasheet gives a slightly different window, 70% to 100% of rated OT, and says travel must never exceed the permissible OT position. Either way, a machine that drives the plunger to the bottom of its stroke on every cycle is wearing the switch out. A spring plunger gives you more room, but a plunger pressed flat against the housing has run out of that room.
 
-## Check the isolated switch and interpret the result
+📌 **On the extra overtravel:** *The spring plunger's larger OT is a margin for an imprecise machine, so it's worth checking whether the mounting or the cam changed before a failure, since that's often what used the margin up.*
 
-A continuity check is meaningful only when the switch is isolated from the circuit, the actuator state is defined, and the terminals being checked are identified from documentation for that exact switch. The expected contact behavior must also be known for that arrangement and state. Without those conditions, a meter reading may be real but still have no reliable diagnostic interpretation.
+## Step 3: Test the contacts with a multimeter
 
-First, establish whether the required isolation can be performed safely and whether the relevant terminals and test condition can be identified. Follow applicable deenergization and qualification requirements. If safe isolation or circuit identification is uncertain, do not proceed with the check; seek qualified help. This article does not supply a procedure for working on an energized circuit or for diagnosing a particular host device.
+With the power off and the switch's wires disconnected, set a multimeter to continuity or the lowest resistance range. Crouzet defines contact resistance as the resistance measured across the terminals when the contacts are closed. For its micro switches, Crouzet puts it generally under 20 mΩ with the plunger at rest or fully pressed, so a working contact reads as a near-zero short on a hobby meter.
 
-With the switch isolated and the documented arrangement understood, compare the observed continuity in the defined actuator state with the expected behavior for that switch. If the result differs, it is evidence of a possible switch-level problem under that test condition. It is not, by itself, a complete diagnosis: the terminals, actuator state, isolation, measurement method, and expected behavior all affect what the result means.
+| Plunger | COM to NC | COM to NO |
+|---|---|---|
+| Released | Continuity | Open |
+| Pressed past the click | Open | Continuity |
 
-If the isolated result matches the documented expectation, that supports only the narrow conclusion that the switch behaved as expected during that check. It does not prove correct mounting, proper actuation in the equipment, intact wiring, suitable load capability, or correct host-system operation. A click does not add proof of those points. Do not use either a click or one reading as a substitute for identifying the cause of the original symptom.
+What the readings point to:
 
-### Related guides
+- **No continuity on either pair in either position:** the contacts aren't touching at all, from a broken internal spring, a contact coated with film, or a cracked housing.
+- **Continuity that stays on one pair whatever you do:** the contacts may be welded shut, or the mechanism isn't moving. If the plunger moves freely but nothing changes, it's the inside of the switch.
+- **A reading that flickers as you press slowly:** check the travel (Step 2) first, then suspect worn or dirty contacts.
 
-- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
-- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
-- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
-- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
+Our step-by-step guide on how to test a spring plunger micro switch shows probe placement on common terminal layouts.
 
-## When spring plunger micro switch failure needs qualified diagnosis
+## Why the contacts fail
 
-Stop when safe isolation cannot be confirmed, terminal identification is uncertain, or the required actuator state and expected test behavior are not documented. The same applies when interpreting the result would require knowledge of the host circuit that is unavailable. The relevant boundary is not whether a mechanism looks simple; it is whether the test conditions and electrical relationships can be established safely and correctly.
+If the plunger and travel check out but the contact test fails, the cause is usually electrical or environmental.
 
-A useful diagnostic sequence is to observe the external movement, check whether it reaches and releases the plunger as intended, and then distinguish mechanical observations from electrical evidence. If an isolated switch check is within the person’s qualifications and can be performed under the applicable requirements, interpret it only against the documented terminals and actuator state. Further evidence may be needed to separate a switch fault from a wiring or host-equipment fault.
+- **Welding from high inrush.** Crouzet's notes say motors and electromagnets can draw an inrush, a surge at the moment of switch-on, of up to 6 times the rated current when switched on, and lamps and capacitive loads up to 15 times, which greatly increases the risk of welding the contacts. Omron's A series datasheet adds that switching extremely slowly can also lead to contact failure or welding. Our contact welding troubleshooting guide covers this case.
+- **Film on the contacts from too little current.** Omron's FAQ on the minimum applicable load says that below that load, the contact surface is more open to a chemical coating from the surrounding air, which can cause contact failure. A switch built for a motor circuit and reused on a small signal line can fail this way.
+- **Contamination.** Crouzet tells users to keep silicone, grease, oil and cyanoacrylate glue away from its micro switches because they affect contact resistance, and says grease and oil must never get inside. Spraying lubricant at a sticky plunger can turn a mechanical problem into a contact problem.
+- **Vibration.** Omron's A series precautions say continuous vibration or shock can cause contact failure from abrasion powder and shorten the switch's life.
 
-The conclusion should match the evidence. Restricted or misaligned movement points toward an input-path question, not automatic proof of an internal switch failure. A continuity result that differs from documented behavior may support a switch-level concern under the test conditions, but does not diagnose the complete assembly. An expected isolated reading narrows the possibilities without clearing the wiring or equipment. That is how to investigate spring plunger micro switch failure without confusing the actuator input, the switch, and the system around it.
+## When to replace the switch, when to fix the machine, and what to match
 
-## Sources and references
+Replace the switch when the plunger moves correctly, the travel is in range, and the contact test still fails. Fix the machine first when the plunger sticks, the push comes in at an angle, or the stroke stops short or bottoms out, because a new switch in the same spot will fail the same way. Match the actuator type, the terminal layout, the mounting holes and the electrical rating of the old part. Omron's A series datasheet, for example, lists the pin plunger and spring plunger versions as separate model numbers with different overtravel.
 
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
-- Occupational Safety and Health Administration: [29 CFR 1910.333: Selection and Use of Work Practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333){: rel="nofollow noopener noreferrer" }
+## FAQ
+
+### What are the symptoms of a bad switch?
+
+A bad spring plunger micro switch shows up as a machine that ignores a door, guard or limit, as a signal that flickers on and off, or as a switch that stays on after the plunger is released. A plunger that sticks down or returns slowly is a mechanical symptom. A continuity test that doesn't change between released and pressed confirms the switch body itself has failed.
+
+### How long do micro switches last?
+
+It depends on the series and the load. Omron's A series datasheet lists 1,000,000 operations minimum for mechanical durability, measured without load, and 500,000 operations minimum for electrical durability at its rated load. A switch on a motor or lamp circuit, or one that's pushed past its overtravel every cycle, will usually wear out sooner than its datasheet figure.
+
+## Where to look next
+
+If the plunger and contacts both test fine, the fault is in the wiring or the controller that reads the switch, and our guide to diagnosing an intermittent micro switch covers that side. If the switch did fail, measure the travel your machine gives the plunger before fitting the new one, and check that it carries the plunger past the click and into the overtravel window on the new switch's datasheet.
+
+## Sources
+
+- Omron, General-purpose Basic Switch A datasheet (CSM_A_DS_E_3_4): operating characteristics of A-20G-B and A-20GD-B, durability, safety precautions
+- Omron, SS Miniature Basic Switch (Non-Sealed) catalog pages (B053-E2-11D), hosted by Electrokit: power-off precaution
+- Omron FAQ FAQE20047, "What may have caused a basic switch failure?" (reposted on DigiKey TechForum)
+- Omron FAQ FAQE20046, "Please advise the appropriate amount of pushing for a basic switch" (reposted on DigiKey TechForum)
+- Omron FAQ FAQE20025, "What problems may occur if the set current is below the minimum applicable load for a basic switch?" (reposted on DigiKey TechForum)
+- Crouzet, Microswitches: Basic Technical Concepts (12/2020)
+- Electronic Design, "Snap-Action Switches Still Rule The Roost."

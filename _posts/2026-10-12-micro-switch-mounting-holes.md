@@ -1,6 +1,6 @@
 ---
-title: "Micro switch mounting holes: How to Check Fit and Installation"
-description: "micro switch mounting holes: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful."
+title: "Micro Switch Mounting Holes: Hole Sizes, Spacing by Switch Size, and How to Check the Fit"
+description: "Micro switch mounting holes by size class, from Omron and Honeywell datasheets: hole diameter, center spacing, screw size and how to check a replacement fits."
 date: 2026-10-12 16:49:35 +0800
 category: Selection Guides
 tags:
@@ -8,86 +8,92 @@ tags:
   - micro switches
   - Selection Guides
 author: editorial_team
+seo_title: "Micro Switch Mounting Holes: Sizes, Spacing and Fit"
+last_updated: 2026-11-12
 ---
 
-The **micro switch mounting holes** help locate and retain a switch, but matching holes alone do not prove that the assembly will work correctly. A reliable fit check separates the hole pattern from the fasteners, surrounding clearance, and actuator alignment. Measure the specific switch, compare it with a dimensioned drawing or the mounting support, and check operation after fastening. Do not assume that similar-looking switches share dimensions or installation limits. If the documentation does not provide needed measurements or fastening guidance, treat them as unknown rather than guessing.
+The two holes through the body of a micro switch look like an afterthought next to the button and the terminals. Swap in a switch whose holes line up, though, and the machine can still miss its stop or press the new switch too hard. **The mounting holes are the reference point for where a micro switch triggers, so a replacement has to match the hole spacing, the screw size and the trigger height measured from those holes.** The sections below give datasheet hole patterns for each common switch size, then the checks that confirm a new switch fits.
 
-A miniature snap-action switch can change an electrical contact state in response to mechanical actuator movement and is commonly used for position or limit detection. That general use does not establish that every design suits a particular mounting arrangement. This guide focuses on physical fit and post-installation verification, not electrical ratings, wiring, or application suitability.
+## Quick answer
 
-## What micro switch mounting holes determine
+Micro switch mounting holes are two through-holes, set a fixed distance apart, that screw the switch to a bracket. The spacing depends on the switch's size class. Omron's datasheets list a 22.2 mm center-to-center spacing with 3.1 mm holes for M3 screws on its V miniature series, 9.5 mm on its SS subminiature series, and 6.5 mm on its D2F ultra-subminiature series.
 
-Mounting holes provide locations for retaining a switch on a support. Their pattern can help determine whether the switch can be positioned and fastened at the intended location. However, a matching pattern is only one part of an installation check. It does not by itself show that the switch body has enough room, that the actuator can reach the mechanism it must sense, or that the switch is electrically suitable for a particular task.
+## Mounting hole sizes by switch size class
 
-Treat three physical details separately:
+Micro switches, also called snap-action switches, come in a few size classes, and each class has its own hole pattern. Size names and exact dimensions vary between manufacturers, so the table names the maker and series behind every figure. Each row comes from that maker's datasheet for the series named.
 
-- **Hole spacing:** the distance from the center of one hole to the center of another.
-- **Hole diameter:** the width of each opening, which affects whether a proposed fastener can pass through it.
-- **Mounting surface:** the surrounding support and available space around the switch once it is placed.
+| Size class | Example series (maker) | Hole diameter | Screw | Hole center spacing | Screw torque |
+|---|---|---|---|---|---|
+| General-purpose (large basic) | A series (Omron) | 4.2 mm | M4 | 25.4 ±0.1 mm | 1.18 to 1.47 N·m |
+| General-purpose (large basic) | BZ series (Honeywell) | not stated on product page | not stated | 25.4 mm | not stated |
+| Miniature (V-size) | V series (Omron) | 3.1 mm | M3 | 22.2 ±0.1 mm | 0.39 to 0.59 N·m |
+| Miniature (V-size) | V15 series, metric (Honeywell) | 3.10 mm +0.10/−0.05 | 3 mm pins or screws | 22.20 ±0.1 mm | not stated |
+| Miniature (V-size) | V15 series, US version (Honeywell) | 2.90 mm +0.10/−0.05 | #4 screws | 22.20 ±0.1 mm | not stated |
+| Subminiature | SS series (Omron) | 2.4 mm | M2.3 | 9.5 ±0.1 mm | 0.23 to 0.26 N·m |
+| Ultra-subminiature | D2F series (Omron) | 2.0 mm | M2 | 6.5 ±0.15 mm | 0.08 to 0.1 N·m |
 
-A switch may have compatible hole spacing but still present a problem if a fastener does not fit, the body contacts nearby parts, or the actuator cannot move as intended. Conversely, a switch that appears to sit in the right location is not confirmed as a fit just because its outline looks similar to another component.
+Two patterns in that table have more than one maker behind them. Honeywell's BZ product page gives 25.4 mm centers, the same figure Omron lists for its A series. For the miniature V-size, Omron's V datasheet and Honeywell's V15 datasheet both draw holes 22.2 mm apart. Honeywell's V7 product page describes the same size as a "22,2 mm x 10,3 mm diagonal mount". Omron's V drawing shows the same 10.3 mm second dimension, so the two holes are offset across the body as well as along it.
 
-Use the applicable documentation for the specific switch when checking dimensions and installation limits. Numerical travel limits are requirements of the applicable specification sheet; they must not be inferred from the component category. In other words, do not use the general description “micro switch” as a substitute for the travel information required for the particular device.
+The table also shows a trap. Honeywell's V15 datasheet lists 3.1 mm holes for 3 mm metric screws and, under a "K" designator added to the part number, 2.9 mm holes for US #4 screws. Going by that datasheet, two V15 switches can share the 22.2 mm spacing and still take different screws.
 
-## How to measure micro switch mounting holes
+## Why the holes set where the switch triggers
 
-Start with the specific switch and the mounting support where it is intended to sit. Use a suitable measuring tool to determine hole diameter and center-to-center spacing. For a pattern with more than two holes, record the number of holes and their arrangement as well as the spacing between relevant centers. A single spacing measurement may not describe the full pattern.
+A micro switch triggers when its actuator, the plunger or lever that the machine presses, reaches the operating position (OP). Honeywell's datasheet for its SE and XE sealed switches explains how that position is measured. Linear dimensions for an in-line plunger run from the top of the plunger to a reference line, usually the center of the mounting holes. Omron's A series datasheet gives the operating position of its pin plunger model as 16.3 ±0.4 mm from the hole centers, where ±0.4 mm is the allowed tolerance.
 
-Then compare the measurements with a dimensioned drawing for the exact switch, if one is available. If no drawing is available, compare direct measurements of the switch and support. Check each relevant dimension rather than relying on visual similarity or on a drawing for a different switch. A pattern that looks close may still fail to align.
+That measuring convention has a practical consequence. Two switches with identical hole spacing can trigger at different points if their operating positions differ, because the plunger tip sits a different distance from the holes. A replacement that bolts straight on can then fall short of the cam or door that's supposed to press it, or get pressed past its overtravel, the extra distance the plunger can safely move after it switches. Our explainer on micro switch pretravel covers how operating position, pretravel and overtravel relate.
 
-Keep measurement uncertainty in mind. A reading may not establish an exact dimension, particularly if the hole edge or center is difficult to identify. Do not treat an uncertain reading as proof that a fastener will fit or that all holes will align. If a dimension is unclear, consult the specific switch documentation or obtain a more reliable measurement before fastening.
+📌 **On slotted brackets:** *A bracket with slots instead of round holes lets the switch slide toward or away from the machine part. Since the operating position is measured from the hole centers, sliding the switch moves its trigger point by the same amount.*
 
-A useful comparison record includes:
+## How to measure the holes and body of a switch you already have
 
-1. The number and arrangement of mounting holes.
-2. The center-to-center spacing needed to align the pattern.
-3. The diameter of each relevant hole.
-4. Any differences between the switch measurements and the support.
+When the old switch has no readable part number, three measurements identify its pattern.
 
-This comparison checks the hole pattern only. It does not establish body clearance, fastener engagement, or actuator alignment, so those checks must follow separately.
+1. **Hole diameter.** Measure across each hole with calipers. Compare with the datasheet figures in the table: about 4.2 mm, 3.1 mm, 2.9 mm, 2.4 mm or 2.0 mm points to a likely size class and screw.
+2. **Center spacing.** Measure from the inside edge of one hole to the inside edge of the other, then add one hole diameter. For two holes of equal size, that sum is the center-to-center distance. Measuring edge to edge on the same side of each hole (left edge to left edge) gives the same number.
+3. **Offset.** Check whether the holes sit on one line or diagonally. A V-size switch with holes on a diagonal, as Honeywell describes for its V7 (22.2 mm × 10.3 mm), needs a bracket drilled on the same diagonal.
 
-## Check fastener fit, clearance, and actuator alignment
+Then measure the body (length, height, thickness) and note which way the terminals point. A switch that matches the holes but has a longer body or terminals on a different side may not fit the space.
 
-Once the pattern has been compared, check whether the fastener passes through the switch hole and engages the mounting support as intended. Use documented guidance where available. Do not assume that a fastener is appropriate solely because it can enter an opening. The available evidence here does not specify fastener dimensions or engagement requirements, so those details remain specific to the switch and mounting arrangement.
+## Checks before and after you tighten the screws
 
-Next, inspect clearance around the switch body, terminals, and actuator throughout the actuator’s movement. A switch may align with the holes yet sit too close to another part, or something may obstruct the actuator. Check the assembled position rather than judging clearance only while the switch is loose. If the body or actuator contacts nearby parts, the hole pattern can still be correct while the installation is not functioning as intended.
+Disconnect power before you remove or mount the switch. Omron's SS datasheet tells installers to turn off the power supply before mounting or removing the switch, wiring it, or doing maintenance, because working live can cause electric shock or burns. On a plug-in appliance, unplug it; on battery equipment, take the battery out.
 
-Keep mounting alignment distinct from actuator alignment. Mounting alignment concerns how the holes position the switch. Actuator alignment concerns whether the mechanism that the switch is meant to sense can move the actuator as intended. A switch can fit the mounting holes but miss that mechanism. Hole measurements alone cannot resolve that condition.
+- **Use the specified screw and washers.** Omron's V, SS and D2F datasheets all call for mounting screws with plain washers or spring washers, at the screw size listed in the table above.
+- **Don't overtighten.** The torques in Omron's datasheets are small: the D2F datasheet lists 0.08 to 0.1 N·m, which is a light twist with a small screwdriver, so a torque screwdriver or a gentle hand matters more on small switches.
+- **Mount on a flat surface.** Omron's SS datasheet warns that mounting on an uneven surface can deform the switch, causing faulty operation or a broken housing.
+- **Keep live terminals clear of a metal bracket.** Omron's SS datasheet cites EN 61058-1 for a minimum 1.6 mm clearance between live terminals and the mounting plate, and says to add a separator or insulation guard if that can't be met.
+- **Mind lever weight.** Omron's VX datasheet says to mount a lever switch so the lever's weight doesn't rest on the switch, because the small reset force may not return it. Our guide to hinge lever micro switch installation covers the extra alignment a lever needs.
 
-Do not infer a specific actuator travel, force, or engagement requirement from the switch category. Check the documentation for the specific device when those limits matter. If the needed limits or fastening guidance are unavailable, leave them unresolved rather than substituting assumptions based on another switch.
+After the screws are tight, move the machine part by hand and listen for the click. Then check with a multimeter that the contacts change state at the point where the machine part should trigger them. Our step-by-step guide on how to test a micro switch covers the meter setup.
 
-## Verify mounting holes and operation after fastening
+## When a switch mounts without screw holes
 
-Fasten the switch according to its applicable installation instructions. The fasteners should secure it without forcing the pattern into alignment or distorting the housing. If a fastener does not line up or fit, stop rather than using force to make the parts meet. A forced fit can hide a pattern mismatch and leave the switch displaced or under stress.
+Some switches are held another way. Omron's A series includes panel mount plunger models, such as the A-20GQ-B, that mount through a panel with an M12 × 1 threaded bushing and two hex nuts. The datasheet says not to use the M12 mounting and the screw holes at the same time. Our article on the panel mount plunger micro switch explains how that type works.
 
-After fastening, move the actuator through its intended movement and check that it is free to move. Observe whether the switch remains in position and whether switching is reliable during the check. Binding, inconsistent switching, or movement of the switch itself calls for a closer look at the installation. The observation can help distinguish a mounting problem from an actuator problem, but it does not by itself identify an electrical fault or establish a wiring issue.
+## FAQ
 
-If the holes do not align, do not force the fasteners or modify the switch. Use a correctly designed mounting solution that matches the intended installation and the switch’s documented requirements. If operation is unreliable after fastening, recheck the pattern, fastener engagement, body clearance, and actuator path as separate items. A matching hole pattern does not rule out interference or misalignment.
+### What are the different types of micro switches?
 
-### Related guides
+By size, the usual classes run from general-purpose (large basic) through miniature and subminiature to ultra-subminiature; the Omron datasheets cited here cover one series in each (A, V, SS, D2F). By actuator, Omron's A series datasheet lists pin plunger, short spring plunger and panel mount plunger models, and its V series datasheet adds hinge lever, hinge roller lever and simulated roller lever versions. Our overview of micro switch actuator types compares them.
 
-- [inline micro switch](/guides/inline-micro-switch-suitability/)
-- [access hatch open position micro switch contact rating](/guides/access-hatch-open-position-micro-switch-contact-rating/)
-- [micro switch salt spray](/guides/micro-switch-salt-spray/)
-- [dpdt micro switch](/guides/dpdt-micro-switch-contact-operation-selection/)
+### What screws are in a switch?
 
-## Micro switch mounting holes: fit checklist and mismatch clues
+For the series in the table, Omron's datasheets call for M4 screws on the A series, M3 on the V series, M2.3 on the SS series and M2 on the D2F series. Honeywell's V15 comes in a metric version for 3 mm screws and a US version for #4 screws. Check the hole diameter before buying screws: going by the SS datasheet's 2.4 mm hole, an M2.5 screw won't pass through it.
 
-Before treating an installation as a fit, check each item independently:
+## Matching a replacement to the old part
 
-- **Spacing:** Compare the hole centers with a dimensioned drawing or direct measurements of the specific switch and support.
-- **Diameter:** Check the measured hole diameter instead of judging it by appearance.
-- **Fastener engagement:** Confirm that the fastener fits and engages the support as intended, using applicable documentation where available.
-- **Body and terminal clearance:** Check for contact or obstruction in the assembled position.
-- **Actuator path:** Confirm that the actuator can move freely and that the intended mechanism can reach it.
-- **Post-fastening behavior:** Check for switch displacement, binding, or inconsistent switching.
+Before ordering, write down the hole diameter, center spacing, offset, body size, terminal direction and actuator type of the old switch, and compare them with the dimension drawing on the new part's datasheet. Offset here means how far one hole sits across the body from the other, the 10.3 mm figure on a V-size switch. The figure that's easiest to miss is the operating position measured from the hole centers, so check that last number before you assume a switch that bolts on will also trigger in the right place.
 
-A hole-pattern mismatch calls for checking the measurements and the pattern comparison. A loose mount points to a check of fastener fit and engagement. An obstructed or binding actuator calls for checking clearance and actuator alignment, even if the holes match. These clues identify which part of the fit check to revisit; they do not establish a specific electrical cause.
+## Sources
 
-When a dimension, travel limit, or fastening limit is missing, consult the specific switch’s documentation. Device-specific numerical travel limits belong to the applicable specification sheet, not to assumptions about the component category. A secure installation requires more than holes that appear to line up: verify the measured pattern, fastening, clearance, and actuator movement without forcing a mismatch.
-
-This concludes the explanation of micro switch mounting holes.
-
-## Sources and references
-
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }
+- Omron, V Miniature Basic Switch datasheet
+- Omron, VX Miniature Basic Switch datasheet
+- Omron, SS Subminiature Basic Switch datasheet
+- Omron, SS Miniature Basic Switch (Non-Sealed) catalog pages (B053-E2-11D), hosted by Electrokit: power-off and EN 61058-1 clearance notes
+- Omron, D2F Ultra Subminiature Basic Switch datasheet
+- Omron, General-purpose Basic Switch A datasheet (CSM_A_DS_E_3_4), third-party mirror
+- Honeywell, MICRO SWITCH V15 Series Standard Miniature Basic Switches datasheet (004945), hosted by RS
+- Honeywell, MICRO SWITCH SE/XE Series Sealed Miniature Basic Switches datasheet, hosted by RS
+- Honeywell, V7 Series Miniature Basic Switch product page
+- Honeywell, BZ Series Basic Switch product page
+- [IEC 61058-1:2026, Switches for appliances, Part 1: General requirements (IEC webstore; EN 61058-1 is the European adoption)](https://webstore.iec.ch/en/publication/115499){:rel="nofollow"}

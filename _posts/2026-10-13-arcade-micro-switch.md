@@ -1,6 +1,6 @@
 ---
-title: "How an arcade micro switch works inside some buttons"
-description: "arcade micro switch: Understand the operating idea, essential terminology, practical checks, limitations, and evidence needed for careful selection,."
+title: "What Is an Arcade Micro Switch? Where It Sits and How It Clicks"
+description: "An arcade micro switch is a small snap-action switch under a button or joystick. See where it sits, how it clicks, and why only COM and NO get wired."
 date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
@@ -8,63 +8,90 @@ tags:
   - micro switches
   - Applications
 author: editorial_team
+seo_title: "Arcade Micro Switch: What It Is and How It Works"
+last_updated: 2026-11-12
 ---
 
-An arcade micro switch is an electromechanical component found inside some arcade buttons, not another name for the entire button or control system. When a button design includes one, movement of the button can move the switch’s actuator, causing the switch to change an electrical contact state. The exact motion path and resulting input behavior depend on the particular button and circuit; they should not be assumed to be identical across arcade controls.
+Under an arcade button or joystick sits a small switch that registers each press the player makes. Is that switch a special arcade part, or the same small switch found in appliances and machines? **An arcade micro switch is a standard snap-action micro switch, and what makes it an arcade part is the way it is mounted and wired, with push-on tabs and one of its three terminals left empty.** The switch's position under buttons and joysticks, the snap inside its case, its three terminals and the specifications that separate one arcade switch from another each get a section.
 
-## What an arcade micro switch refers to
+## Quick answer
 
-A micro switch is a small electromechanical switch that responds to mechanical movement. A miniature snap-action switch can change an electrical contact state in response to actuator movement and is commonly used for position or limit detection. That general description helps explain the component, but it does not establish that every arcade button contains a micro switch or uses the same mechanism.
+An arcade micro switch is a small snap-action switch that needs very little force and closes a circuit when an arcade button or joystick moves. Ultimarc, which makes arcade input boards, tells builders to wire only the terminals marked normally open (NO) and common (COM), so the game sees a closed circuit only while the control is held.
 
-In a button that does contain one, the switch is only one part of a larger assembly. The button cap is the part the player presses. A return mechanism may move the button back after pressure is released. An actuator or linkage can transmit button movement to the switch. Wiring connects the switch to the surrounding circuit, and the game or controller interprets the circuit’s input. Those parts have related roles, but they are not interchangeable terms.
+## Where the switch sits in a button and in a joystick
 
-The defining relationship is mechanical: button movement reaches the micro switch through the button’s particular actuator interface. The switch then changes its electrical contact state. The button assembly supplies the motion; the micro switch responds to it. The host circuit, in turn, uses the resulting electrical condition as an input according to its own design.
+In a push button, the switch sits under the button's plunger, the plastic stem that moves when you press the cap. The plunger moves straight down and presses the small button on top of the switch. ZF's D4 series datasheet calls that actuator type simply "button." Arcade Renovations, a US parts seller, says the Cherry D44X switch it sells was used by Industrias Lorenzo and Suzo Happ for years on push buttons and joysticks.
 
-This boundary matters because arcade buttons vary. Some designs include a micro switch, while others may use a different arrangement. Even among buttons that use one, the actuator interface and internal contact arrangement may differ. The general explanation here applies to the component relationship, not to every button, control panel, game, or controller.
+A joystick uses several switches around the base of the lever. Joy-IT's datasheet for its Joystick01 lists four micro switches and a restrictor plate, a plate around the lever that blocks some directions, which sets the stick to 2-way, 4-way or 8-way movement. Each of the four switches faces one direction, and the bottom of the lever presses whichever switch it tilts toward. Because of that layout, a diagonal push leans on two neighboring switches at once, and the game reads the pair as a diagonal, such as up and left together.
 
-## How an arcade micro switch responds to button movement
+Some joysticks mount their switches on a small circuit board instead of clipping them on one by one. Focus Attack's support page for the Sanwa JLF says the switches are soldered to the board and that a five-pin harness, a plug-in cable with one wire per pin, connects it to the rest of the controller. Board mounting or clip-on mounting decides how a failed switch gets replaced, which the arcade joystick micro switch replacement guide covers step by step.
 
-The operation begins when force moves the button cap. In a design with a micro switch, some part of the button assembly transfers that movement toward the switch’s actuator. The actuator is the part of the switch moved by the external mechanism. The button cap, any linkage, and the actuator therefore form a mechanical path, but the exact parts and their geometry are design-specific.
+## What happens inside the switch when you press
 
-As the actuator moves, the switch operates and changes an electrical contact state. In a snap-action design, the contact change is associated with the switch’s mechanism. The essential sequence is button movement, mechanical transfer to the actuator, switch operation, and contact change. This explains how pressing a button can produce an electrical input without making the button itself the electrical switch.
+The snap inside the switch comes from a spring. Schneider Electric's FAQ on snap-action contacts explains that the actuator, the switch's own small button, pretensions an over-center spring, and the spring tension operates the contact once a certain tension is reached. The steps inside the case run in this order:
 
-The sequence should not be read as a claim about a particular travel distance, force, sound, or timing. Those details are not established for arcade buttons as a class. Nor does the general description establish whether a given button’s contact is open or closed before pressing, or which terminal arrangement it uses. Those facts require information about the actual switch and how it is installed.
+1. The button's plunger pushes the switch's own small button down.
+2. The switch's button bends the internal spring, and the spring stores energy.
+3. At a set point, the spring passes its tipping point and flips.
+4. The flip throws the moving contact, a metal piece wired to the common terminal, from one fixed contact to the other.
 
-When pressure is removed, the button assembly may return, and the actuator may move back as part of that design. The precise return path and the contact state after release depend on the button and switch arrangement. A general account of actuation does not establish the return mechanism, the switch’s reference state, or the circuit’s response to that state.
+Electronic Design's article on snap-action switches adds that the common contact can't stop partway between the two fixed contacts. Schneider's FAQ notes that the release works the same way in reverse: the contacts stay put until the spring tension drops below a certain level, then snap back. The same article notes that once the plunger reaches the operating point, the common contact accelerates away without further plunger movement, so a slow press and a fast press end in the same quick flip.
 
-It is also useful to keep mechanical action distinct from electrical interpretation. The button’s movement explains how the switch is actuated. The switch’s contact change explains how an electrical condition can change. Neither fact alone establishes what the game will do, whether the circuit recognizes a press, or what state it treats as inactive.
+## The three terminals, and why arcade wiring leaves one empty
 
-## What the contact change means in the arcade circuit
+Most arcade micro switches have three metal tabs. COM connects to the moving contact. NO connects to a fixed contact that stays apart from COM until the switch is pressed. Normally closed (NC) connects to a fixed contact that touches COM until the switch is pressed. "Normally" describes the switch at rest, with nothing pressing it. When the press flips the spring, COM leaves NC and lands on NO. The NO and NC micro switch explainer walks through the two contact states in more detail.
 
-The micro switch changes an electrical contact state; the surrounding arcade circuit determines what that change means as an input. A controller may interpret a circuit condition according to its particular design, but the contact change alone does not establish a universal “pressed” state, active state, or game response. The switch is a component in the input path, not the game logic itself.
+Arcade input boards expect a circuit that closes only while the player holds the control. Ultimarc's installation notes for its I-PAC boards say some switches have three connections, that you should only use the ones marked NO and COM, and that nothing goes on the NC tag. The same notes describe the failure that follows when the inputs go on NC instead: erratic joystick directions and "stuck" keys, because every untouched control reads as pressed.
 
-The contact arrangement and its reference condition matter when describing state. Terms such as normally open and normally closed are meaningful only in relation to the documented reference condition and actual switch arrangement. The available general facts do not identify a universal arcade-button arrangement or establish which state corresponds to a press. It would therefore be inaccurate to infer a particular NO or NC behavior from the presence of a micro switch alone.
+The COM side of every switch usually shares one wire. Ultimarc tells builders to daisy-chain one side of all switches, running a single wire from switch to switch, and to connect that chain to a ground (GND) terminal on the board. The arcade button micro switch wiring guide shows the full hookup.
 
-Wiring is another part of the system boundary. A contact change can affect a circuit only through the electrical connections and input design actually used. The fact that a switch is present does not establish its terminal connections, the controller’s logic, or whether the circuit treats a contact transition or a sustained state as an input. Those details belong to the particular assembly and circuit documentation.
+📌 **On the empty tab:** *Leaving NC unconnected is normal for arcade wiring. The tab is still part of the switch, and some non-arcade uses do wire it.*
 
-This distinction also prevents a common overreach: observing that a button moves does not prove that the game has received an input. Mechanical movement may be occurring at the button while the switch arrangement, contact condition, wiring, or host circuit remains unknown. Conversely, a game’s response cannot by itself identify the internal button mechanism. Each part of the path has to be understood within its own scope.
+## What separates one arcade micro switch from another
 
-The practical conclusion is limited but useful: in a button designed around a micro switch, mechanical motion operates the switch, and the switch’s contact change provides an electrical condition for the host circuit. The circuit’s interpretation is separate. No universal input logic or game behavior follows from the component’s operation alone.
+Arcade micro switches look alike, but their datasheets differ on the points that change feel and fit. Arcade Renovations lists its Cherry D44X as ZF part D449-R1AA-CF. ZF's D4 series datasheet decodes that number as a 10 A, single pole, double throw (SPDT) switch with light operating force, 4.8 mm quick-connect tabs and a plain button actuator. SPDT means one common terminal that switches between two others. The same datasheet lists the other options a D4 switch can carry:
 
-### Related guides
+| What differs | What ZF's D4 datasheet lists | What it changes in an arcade control |
+|---|---|---|
+| Operating force (the press needed to flip the switch) | 45 to 400 cN, model dependent, with a choice of standard or light force | How hard the player has to press before the switch flips |
+| Terminal width | Quick-connect tabs 4.8 mm (0.187 in) or 6.3 mm (0.250 in) wide | Which push-on connector fits the tab |
+| Contact material | Gold cross point on the 0.1 A version, silver or silver alloy on higher ratings | How reliably the contacts carry a very small signal current |
+| Electrical life | 50,000 operations at rated load and 85 °C | How many presses the switch is tested for at its full current rating |
 
-- [aircraft door closed monitor micro switch NO and NC terminals](/guides/aircraft-door-closed-monitor-micro-switch-no-and-nc-terminals/)
-- [access control door position micro switch function](/guides/access-control-door-position-micro-switch-function/)
-- [ball screw actuator end of stroke micro switch contact rating](/guides/ball-screw-actuator-end-of-stroke-micro-switch-contact-rating/)
-- [capping machine guard interlock micro switch actuator travel](/guides/capping-machine-guard-interlock-micro-switch-actuator-travel/)
+Terminal width is the item that most often stops a swap. Wikipedia's FASTON terminal article lists the common push-on families by blade width in thousandths of an inch: 110 (about 2.8 mm), 187 (about 4.8 mm) and 250 (about 6.3 mm). Ultimarc offers its Mini-PAC wiring harness with 4.8 mm switch connectors, or with both 4.8 mm and 2.8 mm connectors for its Goldleaf button panels, so both widths turn up in arcade builds. A connector made for one width won't grip a tab of another.
 
-## Which design details determine the behavior
+Life ratings need their conditions read alongside them. The 50,000 figure in ZF's table is for switching the full rated current, which runs from 0.1 A to 21 A across the D4 versions. Ultimarc's I-PAC boards take their power from the USB port with no separate supply, so the current through each arcade switch is a signal current far below those ratings. A press count from a product listing that doesn't say which load, meaning the current switched during the test, it was measured at can't be compared with a datasheet figure that does.
 
-To understand a particular assembly, the relevant facts are its actual switch arrangement, the mechanical interface between the button and actuator, and the documented contact terminals and reference condition. These details explain how movement reaches the switch and how the resulting contact change is presented electrically. They cannot be established merely by calling an object an arcade button or noting that it contains a small switch-like part.
+## FAQ
 
-The actuator interface is important because buttons need not transfer motion in the same way. A cap may move a mechanism that directly reaches the actuator, or the design may use another linkage. Without documentation for the particular button, the exact path, direction, and amount of actuator movement remain unresolved. The general mechanism does not justify assigning one geometry to all arcade controls.
+### What is the purpose of a micro switch?
 
-Contact terminology likewise needs a reference. A description of a contact as open or closed should identify the relevant switch state and arrangement. Without that information, the component’s behavior before pressing, during operation, and after release cannot be specified. The host circuit’s interpretation remains a separate unknown even when the component’s contact arrangement is documented.
+A micro switch turns a small physical movement into an open or closed circuit. In arcade controls, that movement is a button press or a joystick push, and the circuit tells the input board which control the player used. Ultimarc's I-PAC notes treat every button, joystick direction and coin switch the same way: one side to an input, the other to ground.
 
-Appearance and button movement are not substitutes for those details. A button that looks similar to another may have a different internal arrangement, and visible movement does not establish contact state or wiring. This article does not determine compatibility with a particular controller or game, provide a repair procedure, or prescribe a test for an individual panel. Those questions require evidence about the specific equipment and fall outside the general explanation.
+### What is inside a micro switch?
 
-In short, an arcade micro switch works as the electromechanical component that responds to movement in a button designed to use one. The button supplies mechanical motion; the switch changes an electrical contact state; and the host circuit determines how that condition is interpreted. The actual actuator path, reference state, terminals, and input logic remain design-specific.
+Inside the plastic case sit a small actuator button, a spring, one moving contact and two fixed contacts. Schneider Electric's FAQ describes the spring as an over-center mechanism that the actuator loads until it trips the contacts. The three outside tabs, COM, NO and NC, connect to the moving contact and the two fixed contacts.
 
-## Sources and references
+### How to wire up a micro switch?
 
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }
+In an arcade control, connect the input wire to NO and the ground wire to COM, and leave NC empty, as Ultimarc's I-PAC installation notes instruct. With several controls, one ground wire can run from COM to COM across every switch. Check that the connector width matches the tab before pushing it on.
+
+## What to check before you replace one
+
+Start with the switch already in the control: read the markings on its case, measure the width of its metal terminal tabs, and note whether it clips on or is soldered to a board. Those three facts decide which replacement fits, and the operating force on the new switch's datasheet tells you whether the button will feel the same. For wiring the replacement, the guide to how one COM wire serves every button explains the shared ground.
+
+Game controls are a regular market for micro switch makers. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists game control sticks among the markets on its home page, and its G6 troubleshooting article assigns the ZINGEAR G605-150S06A to gaming joysticks and e-sports peripherals. Whichever brand you choose, the markings, tab width and operating force checks above still decide whether a replacement fits.
+
+## Sources
+
+- Ultimarc, I-PAC 2 product page and installation notes
+- ZF Electronics, D4 Series Miniature Snap Switch, Single Pole datasheet (last update 2019-07-19, third-party mirror)
+- Schneider Electric FAQ FA22871, What are the differences between snap-action and slow-break contacts in limit switches?
+- Electronic Design, Snap-Action Switches Still Rule The Roost
+- Joy-IT, Joystick01 datasheet (2025-07-24)
+- Arcade Renovations, Cherry 75g .187" D44X Microswitch listing
+- Focus Attack support, Can I replace the microswitch PCB in my Sanwa JLF?
+- Wikipedia, FASTON terminal
+- Google AI Overview for "what is an arcade micro switch" (US, 2026-10-30)
+- ZING EAR, home page (application markets list): https://www.zingear-switch.com/
+- ZING EAR blog, Causes and Troubleshooting Methods for G6 Micro Switch Failures: https://www.zingear-switch.com/causes-and-troubleshooting-methods-for-g6-micro-switch-failures.html
