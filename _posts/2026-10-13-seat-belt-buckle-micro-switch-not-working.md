@@ -22,7 +22,7 @@ Some buckles use a mechanical micro switch, also called a snap-action switch, an
 
 ## What the buckle switch tells the car
 
-The seat belt reminder comes first. In the US, Federal Motor Vehicle Safety Standard No. 208 sets the rule. Section S7.3 of FMVSS No. 208 (49 CFR 571.208) requires a warning light and an audible signal for the driver's belt. The same section lets the manufacturer decide whether the belt counts as "not in use" when the "belt latch mechanism" isn't fastened or when the belt hasn't been pulled out at least 4 inches from its stowed position. A buckle switch meets the first option.
+The seat belt reminder comes first. In the US, Federal Motor Vehicle Safety Standard No. 208 sets the rule. Section S7.3 of [FMVSS No. 208 (49 CFR 571.208)](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.208){: rel="nofollow noopener noreferrer" } requires a warning light and an audible signal for the driver's belt. The same section lets the manufacturer decide whether the belt counts as "not in use" when the "belt latch mechanism" isn't fastened or when the belt hasn't been pulled out at least 4 inches from its stowed position. A buckle switch meets the first option.
 
 The belt-extension option can use a sensor on the belt reel instead, like the Hall-effect sensor that senses how much belt has been pulled out in a Ford patent (US 8,600,622). So some cars rely on a buckle switch for the reminder and some don't.
 
@@ -40,9 +40,9 @@ On many cars, the buckle signal also goes to airbag control. Kia's owner's manua
 | Moving electrical contacts | Yes | None |
 | Source | US patent 4,785,906 (1988), a seat belt buckle with a built-in micro switch | Allegro MicroSystems application note on vehicle safety systems |
 
-Allegro's note calls the two-wire Hall-effect switch "a simple, yet reliable, solution common to many automobiles on the road today." It describes the steel buckle part interrupting "the magnetic field between a magnet and the Hall-effect device," so the output switches on when the field is interrupted and off when the buckle is removed. The note also flags a design challenge: "wide tolerances of the mechanical buckle assembly" can cause large variations in the magnetic field at the sensor. The Hall-effect switch guide explains that sensing method in more depth.
+Allegro's note calls the two-wire Hall-effect switch "a simple, yet reliable, solution common to many automobiles on the road today." It describes the steel buckle part interrupting "the magnetic field between a magnet and the Hall-effect device," so the output switches on when the field is interrupted and off when the buckle is removed. The note also flags a design challenge: "wide tolerances of the mechanical buckle assembly" can cause large variations in the magnetic field at the sensor. The [Hall-effect switch guide](/guides/hall-effect-limit-switch/) explains that sensing method in more depth.
 
-A buckle's outside doesn't show which kind is inside. The carmaker's service information names the part, and the guide to how a micro switch works covers the mechanical type.
+A buckle's outside doesn't show which kind is inside. The carmaker's service information names the part, and the [guide to how a micro switch works](/guides/micro-switch-how-it-works-and-how-to-verify-terminals/) covers the mechanical type.
 
 ## What "not working" looks like, and what it can mean
 
@@ -78,7 +78,7 @@ The steps below describe the approach in the published bulletins. The steps are 
 3. **Measure the buckle circuit at its connector.** The bulletin then has the technician disconnect the buckle connector and measure resistance with the tongue inserted and again with it removed, comparing both with the carmaker's values. Resistance values depend on the buckle design, which is why the service information for that exact car matters.
 4. **Confirm the repair.** Honda's recall bulletin has the technician check that the SRS indicator comes on and then turns off within 10 seconds after the car is switched on, and that no new SRS fault codes are stored.
 
-The guide to diagnosing an intermittent micro switch covers intermittent faults in switches outside cars.
+The [guide to diagnosing an intermittent micro switch](/guides/intermittent-micro-switch-diagnosis/) covers intermittent faults in switches outside cars.
 
 ## Questions people ask about seat belt sensors
 
@@ -100,9 +100,17 @@ Something in the latch may be blocking the tongue, or the buckle mechanism may b
 
 ## What to tell the shop
 
-Note which seat is affected, whether the belt light, the chime or the airbag light is involved, whether the fault comes and goes, and whether moving the buckle changes it. Notes on those points match the checks technicians run from the service bulletins and shorten the diagnosis. The forklift seat switch guide covers a related safety switch that senses an occupied seat rather than a fastened belt.
+Note which seat is affected, whether the belt light, the chime or the airbag light is involved, whether the fault comes and goes, and whether moving the buckle changes it. Notes on those points match the checks technicians run from the service bulletins and shorten the diagnosis. The [forklift seat switch guide](/guides/forklift-seat-presence-mechanism-micro-switch-wiring/) covers a related safety switch that senses an occupied seat rather than a fastened belt.
 
 Seat belt buckle detection is one of the automotive jobs switch makers list. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"}'s case page on its cooperation with Hangzhou Ruiy Y Automobile Technology names seat belt buckle detection among the seat safety functions its automotive micro switches serve, alongside electric seat adjustment limits, and its article on the G10B waterproof switch lists brake and seatbelt mechanisms among that switch's automotive uses. A given car's buckle may still use a micro switch or a Hall sensor, so diagnosis belongs with the dealer or a qualified technician.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 

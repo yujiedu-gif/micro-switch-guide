@@ -57,13 +57,13 @@ The GE and Maytag manuals each put a switch in each supply leg, line and neutral
 4. **Move the probe from NO to NC.** The readings should flip: near zero ohms released, open when pressed.
 5. **Check which pair the harness used.** If the wires were on COM and NO, the circuit closes when the plunger is pressed. If they were on COM and NC, it closes when the plunger is released.
 
-A switch that reads the same in both plunger positions, or flickers while held down, has failed. The general method for testing a micro switch with a multimeter covers meter settings, and routine care of a dishwasher door latch micro switch covers the latch side.
+A switch that reads the same in both plunger positions, or flickers while held down, has failed. The general method for [testing a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/) covers meter settings, and [routine care of a dishwasher door latch micro switch](/guides/dishwasher-door-latch-micro-switch-maintenance/) covers the latch side.
 
 ## Can you swap NO and NC on a replacement?
 
 No, not without changing what the dishwasher sees. Moving a wire from NO to NC reverses the switch's logic, so a circuit that was meant to close with the door latched would close with it open. In a design like the GE or Maytag latch, where the switches sit in the line and neutral legs, that reversal decides whether the supply reaches the dishwasher with the door open. Match the replacement's contact form, meaning whether it offers NO, NC or both, to the original, and wire it to the same terminals shown in your photo or in the model's wiring diagram.
 
-The difference between NO and NC contacts is covered in general terms in a separate guide, and the same contact logic in microwave ovens appears in how a door interlock micro switch works.
+The [difference between NO and NC contacts](/guides/no-nc-micro-switch/) is covered in general terms in a separate guide, and the same contact logic in microwave ovens appears in [how a door interlock micro switch works](/guides/door-interlock-micro-switch/).
 
 ## FAQ
 
@@ -81,6 +81,14 @@ In a dishwasher latch, a failing switch can leave the machine dead with the door
 Record which terminals were wired, the rating printed on the switch body, and whether the latch presses or releases the plunger when the door shuts. Those three facts decide whether a replacement will behave like the original. If the service manual for your model names the switches as normally open or normally closed, check that label against your meter readings before ordering.
 
 Dishwasher door switches are a regular catalog item for appliance switch makers. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists dishwashers among the applications of its ZINGEAR G905-150F05W1 and ZINGEAR G9105-150R00F1 switches, and its article on the G3 waterproof series names dishwasher door interlocks among that series' uses. Whichever switch your dishwasher carries, the service manual's continuity table is still what tells you which contact is NO and which is NC.
+
+
+## Related guides
+
+- [bottling machine home position micro switch location](/guides/bottling-machine-home-position-micro-switch-location/)
+- [incinerator end of stroke micro switch maintenance](/guides/incinerator-end-of-stroke-micro-switch-maintenance/)
+- [rotary indexing table guard interlock micro switch location](/guides/rotary-indexing-table-guard-interlock-micro-switch-location/)
+- [security barrier open position micro switch wiring](/guides/security-barrier-open-position-micro-switch-wiring/)
 
 ## Sources
 

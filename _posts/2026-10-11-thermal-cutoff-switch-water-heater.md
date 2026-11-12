@@ -41,7 +41,7 @@ Inside an electric ECO, the part that does the switching is a small metal plate 
 
 The contacts don't creep apart as the tank warms. Senasys, which makes bimetal snap-disc thermostats, says its discs "snap" on a temperature change, "providing positive and instantaneous opening of the electric circuit."
 
-Electronic Design's explainer on snap-action switches describes a micro switch storing energy in a spring as its button-like plunger is pressed and releasing it at a set point in the travel, so the contacts change state at once. A thermal cutoff gets the same kind of sudden contact change from heat acting on the disc instead of a finger on a plunger. Temperature-triggered switching of this kind is the subject of how a snap-action thermal switch changes state.
+Electronic Design's explainer on snap-action switches describes a [micro switch](/guides/what-is-a-micro-switch/) storing energy in a spring as its button-like plunger is pressed and releasing it at a set point in the travel, so the contacts change state at once. A thermal cutoff gets the same kind of sudden contact change from heat acting on the disc instead of a finger on a plunger. Temperature-triggered switching of this kind is the subject of [how a snap-action thermal switch changes state](/guides/snap-action-thermal-switch/).
 
 Once tripped, a manual-reset disc stays inverted after the tank cools. A Therm-O-Disc patent for a trip-free manual reset thermostat (US 4,480,246, granted 1984) explains that the disc stays in its operating condition until someone pushes it back. The same patent defines trip-free: the reset member can't close the contacts while the disc is still above its operating temperature. Senasys lists a related limit for its own manual-reset discs, which can be reset only after the temperature has dropped at least 25°F from the trip.
 
@@ -76,7 +76,7 @@ Opening the panel to see the button means working near live parts. White-Rodgers
 
 Bypassing a thermal cutoff removes the only part that would stop a runaway heater. State's handbook warns: "Do not attempt to disable or modify this feature in any way. Use only factory authorized replacement parts." A replacement has to match the original's opening temperature and reset type, which Bradford White ties to the switch's color code. A qualified water heater technician should make that match, and gas-side work belongs with a licensed gas technician.
 
-📌 **On a protective switch's place in the circuit:** *A thermal cutoff is one input to the heater's protective circuit, the same role described in how a safety switch works within a protective circuit. The switch opening shows that heat crossed a limit, and the reason it crossed has to be found elsewhere.*
+📌 **On a protective switch's place in the circuit:** *A thermal cutoff is one input to the heater's protective circuit, the same role described in [how a safety switch works within a protective circuit](/guides/safety-micro-switch-function/). The switch opening shows that heat crossed a limit, and the reason it crossed has to be found elsewhere.*
 
 ## FAQ
 
@@ -94,7 +94,14 @@ Manufacturers say no. State Water Heaters' handbook tells service providers not 
 
 ## Where to look before you call for service
 
-The model number on the heater's data plate leads to the manual for that exact unit, and the manual's ECO or thermal switch section gives the opening temperature and reset method for your switch. If you have an RV unit, identifying what an RV electric water heater switch controls starts from the same labels. Knowing whether you have an electric ECO, a gas probe ECO or a burner-door TCO tells the technician which circuit to check first.
+The model number on the heater's data plate leads to the manual for that exact unit, and the manual's ECO or thermal switch section gives the opening temperature and reset method for your switch. If you have an RV unit, [identifying what an RV electric water heater switch controls](/guides/rv-electric-water-heater-switch/) starts from the same labels. Knowing whether you have an electric ECO, a gas probe ECO or a burner-door TCO tells the technician which circuit to check first.
+
+
+## Related guides
+
+- [emergency shut off switch](/guides/emergency-shut-off-switch/)
+- [generator switch over](/guides/generator-switch-over/)
+- [what is a micro switch](/guides/what-is-a-micro-switch/)
 
 ## Sources
 

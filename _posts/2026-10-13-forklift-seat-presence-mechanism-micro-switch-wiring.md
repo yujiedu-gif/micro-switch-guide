@@ -33,7 +33,7 @@ Other manufacturers describe similar interlocks with their own timing:
 
 The Doosan manual adds a detail that changes how the system should be understood. If the operator lifts off the seat during operation, the seat switch system "will desengage the transmission allowing the truck to coast but not automatically stop." The same page states in capitals that the "PARKING BRAKE IS NOT AUTOMATICALLY APPLIED." An operator presence system removes drive and hydraulic power; on that truck, it doesn't stop a moving load by itself.
 
-The presence system therefore works alongside, and doesn't replace, the federal rule for leaving a truck. OSHA's powered industrial truck standard, 29 CFR 1910.178(m)(5)(i), requires that when a truck is left unattended, "load engaging means shall be fully lowered, controls shall be neutralized, power shall be shut off, and brakes set."
+The presence system therefore works alongside, and doesn't replace, the federal rule for leaving a truck. OSHA's powered industrial truck standard, [29 CFR 1910.178(m)(5)(i)](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178){: rel="nofollow noopener noreferrer" }, requires that when a truck is left unattended, "load engaging means shall be fully lowered, controls shall be neutralized, power shall be shut off, and brakes set."
 
 ## Where the micro switch sits and how it is wired
 
@@ -49,9 +49,9 @@ In the arrangement both Honeywell and Toyota describe, the seat switch is used s
 | Seat empty | Released | Open | No operator: functions locked out |
 | Wire broken or connector loose | Any | Circuit open | No operator: functions locked out |
 
-The last row follows from the first two. Because "present" requires a closed circuit, a broken wire, a corroded connector or a switch whose contacts no longer close reads exactly like an empty seat, which locks the truck out instead of leaving it running. The exact terminals, wire colors and controller input differ by make and model, and the truck's own service manual wiring diagram is the reference for them. The guide to normally open micro switches explains the NO contact in more detail.
+The last row follows from the first two. Because "present" requires a closed circuit, a broken wire, a corroded connector or a switch whose contacts no longer close reads exactly like an empty seat, which locks the truck out instead of leaving it running. The exact terminals, wire colors and controller input differ by make and model, and the truck's own service manual wiring diagram is the reference for them. The [guide to normally open micro switches](/guides/normally-open-micro-switch/) explains the NO contact in more detail.
 
-Not every seat uses a micro switch. Delta Systems, a maker of seat switches for equipment including material handling, lists sealed, unsealed and Hall-effect styles, and describes operator presence switches as providing "a fail-safe condition" when the operator is no longer in the seat. A Hall-effect switch senses a magnet instead of closing contacts, as the Hall-effect switch guide explains. Komatsu's AX20 manual describes its interlock in terms of the operator being seated properly, without naming the sensor.
+Not every seat uses a micro switch. Delta Systems, a maker of seat switches for equipment including material handling, lists sealed, unsealed and Hall-effect styles, and describes operator presence switches as providing "a fail-safe condition" when the operator is no longer in the seat. A Hall-effect switch senses a magnet instead of closing contacts, as the [Hall-effect switch guide](/guides/hall-effect-limit-switch/) explains. Komatsu's AX20 manual describes its interlock in terms of the operator being seated properly, without naming the sensor.
 
 ## Why the seat switch circuit is never jumpered
 
@@ -70,15 +70,23 @@ A truck that locks out with an operator seated, or alarms intermittently on roug
 1. **Read the controller's fault indication.** Many trucks show an operator presence or seat switch fault on the display, and the service manual says which code or light means what.
 2. **Disconnect the battery before electrical work.** The same OSHA standard, in 1910.178(q)(4), states that "trucks in need of repairs to the electrical system shall have the battery disconnected prior to such repairs."
 3. **Check the seat's mechanical action.** In the Honeywell arrangement the seat itself presses the actuator, so anything that stops the seat traveling fully, such as wear at the hinge or a bent bracket, can leave the actuator only partly pressed. A partly pressed switch sits close to the point where its contacts flip, so a seat that bounces on a rough floor can open it for a moment, which fits an alarm that comes and goes over bumps.
-4. **Test the removed switch.** With the switch out of circuit, COM to NO should be open at rest and closed when the actuator is pressed. The step-by-step micro switch continuity test covers the method.
+4. **Test the removed switch.** With the switch out of circuit, COM to NO should be open at rest and closed when the actuator is pressed. The [step-by-step micro switch continuity test](/guides/how-to-test-a-micro-switch/) covers the method.
 5. **Inspect the harness where the seat moves.** Wires under a hinged seat flex every time the seat moves, so the connector and the wire near the hinge are a likely place for an intermittent open.
 6. **Replace with the specified part and test the function.** After repair, the presence system should lock out lifting or travel again when the operator stands, as the truck's manual describes.
 
 ## What to have ready before ordering a replacement switch
 
-Have the truck's make, model and serial number, the service manual's wiring diagram for the seat circuit, and a note of whether the fault is constant or comes and goes. The wiring diagram settles which terminals the switch uses, and the intermittent-or-constant note points the technician toward the seat mechanism and harness or toward the switch itself. A related switch in cars reads the belt rather than the seat, as the seat belt buckle switch guide explains.
+Have the truck's make, model and serial number, the service manual's wiring diagram for the seat circuit, and a note of whether the fault is constant or comes and goes. The wiring diagram settles which terminals the switch uses, and the intermittent-or-constant note points the technician toward the seat mechanism and harness or toward the switch itself. A related switch in cars reads the belt rather than the seat, as the [seat belt buckle switch guide](/guides/seat-belt-buckle-micro-switch-not-working/) explains.
 
 Presence and position signals on heavy equipment are a stated use for industrial switch lines. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} describes its heavy-duty industrial micro switches as feeding back status signals such as equipment limit position and station in-place, and as designed for workshops with high dust and continuous operation. A forklift seat switch is still part of the truck maker's operator presence system, so the replacement part and its setting come from the truck's service manual.
+
+
+## Related guides
+
+- [bottling machine home position micro switch location](/guides/bottling-machine-home-position-micro-switch-location/)
+- [incinerator end of stroke micro switch maintenance](/guides/incinerator-end-of-stroke-micro-switch-maintenance/)
+- [rotary indexing table guard interlock micro switch location](/guides/rotary-indexing-table-guard-interlock-micro-switch-location/)
+- [security barrier open position micro switch wiring](/guides/security-barrier-open-position-micro-switch-wiring/)
 
 ## Sources
 

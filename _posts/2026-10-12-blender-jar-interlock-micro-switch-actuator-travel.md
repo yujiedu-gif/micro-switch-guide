@@ -59,7 +59,7 @@ In a blender, the plunger's resting point is set by the jar, the lid and the lin
 
 Movement differential gives the interlock a margin on the way back up. Once the contacts have changed at the operating point, they don't change back until the plunger rises to the release position, which sits above the operating point by the movement differential. Omron's datasheet lists that gap as 0.2 mm max. for the pin-plunger A-20G-B and 2.4 mm max. for the hinge-lever A-20GV-B.
 
-A jar that lifts slightly while running keeps the motor enabled until the plunger passes the release position. The same gap means a stroke that ends just past the operating point leaves little room before the contacts let go. A separate article on movement differential in a micro switch covers the snap-back side in more detail, and micro switch pretravel covers the first leg of the stroke.
+A jar that lifts slightly while running keeps the motor enabled until the plunger passes the release position. The same gap means a stroke that ends just past the operating point leaves little room before the contacts let go. A separate article on [movement differential in a micro switch](/guides/micro-switch-movement-differential-explained/) covers the snap-back side in more detail, and [micro switch pretravel](/guides/micro-switch-pretravel-explained/) covers the first leg of the stroke.
 
 ## Checking actuator travel without defeating the interlock
 
@@ -67,7 +67,7 @@ A jar that lifts slightly while running keeps the motor enabled until the plunge
 
 Ninja's same guide states that "This appliance has no serviceable parts" and directs owners to return it to SharkNinja, so on that brand the checks open to an owner stop at the outside. Look for a cracked or worn lid tab, debris in the actuator opening on the base, and alignment marks that don't line up when the lid clicks. On the BL682Q, a power light that keeps flashing with everything seated means the base hasn't registered the pitcher and lid, so the tab-to-switch chain is the first suspect.
 
-For a technician with the base open and unplugged, the questions follow the datasheet. Does the plunger travel past the operating point when the jar seats, and where does it stop compared with the rated overtravel? Does it rise back past the release position when the jar comes off? A meter across the switch terminals shows the contact change, and the method for testing a micro switch with a multimeter applies. Force, the other half of the same push, is covered in blender jar interlock micro switch operating force.
+For a technician with the base open and unplugged, the questions follow the datasheet. Does the plunger travel past the operating point when the jar seats, and where does it stop compared with the rated overtravel? Does it rise back past the release position when the jar comes off? A meter across the switch terminals shows the contact change, and the method for [testing a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/) applies. Force, the other half of the same push, is covered in [blender jar interlock micro switch operating force](/guides/blender-jar-interlock-micro-switch-operating-force/).
 
 ## FAQ
 
@@ -85,6 +85,14 @@ In a blender interlock, the usual signs are a motor that won't start with the ja
 Read the old switch's markings and find its datasheet, then compare its pretravel, overtravel and operating force with the replacement's. A replacement with less overtravel or a higher operating force can leave the plunger short of a reliable position on the same jar. If the figures match and the fault stays, the jar, lid and linkage are the next places to look.
 
 Appliance switch makers often tune the switch to the appliance it goes into. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"}'s home appliance line page says the company supports customized adjustment of operating force and terminal styles to suit the structure of different home appliances. That kind of tuning is why the pretravel and overtravel figures above belong to the specific switch fitted in your blender, not to blender switches in general.
+
+
+## Related guides
+
+- [ball screw actuator home position micro switch replacement](/guides/ball-screw-actuator-home-position-micro-switch-replacement/)
+- [bottling machine end of stroke micro switch](/guides/bottling-machine-end-of-stroke-micro-switch/)
+- [automated guided vehicle home position micro switch location](/guides/automated-guided-vehicle-home-position-micro-switch-location/)
+- [accelerator pedal position stop micro switch operating force](/guides/accelerator-pedal-position-stop-micro-switch-operating-force/)
 
 ## Sources
 

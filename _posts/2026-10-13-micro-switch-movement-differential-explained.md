@@ -24,19 +24,19 @@ Every maker measures the same thing: how far the actuator has to back off after 
 
 | Maker and document | Name and abbreviation | How the document defines it |
 |---|---|---|
-| Omron, A-20G datasheet | Movement differential (MD), listed as max. | Gap between the operating position (OP) and the release position (RP) |
-| Panasonic, technical terminology page | Movement differential (MD), max. | "The distance or degree from operating position to release position of the actuator" |
-| Honeywell, SE/XE datasheet | Differential travel (D.T.), max. | Actuator travel "from point where contacts 'snap-over' to point where they 'snap-back'" |
-| Crouzet, Basic Technical Concepts | Differential travel (DT) | "Distance between the operating position OP and the release position RLP" |
+| Omron, [A-20G datasheet](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } | Movement differential (MD), listed as max. | Gap between the operating position (OP) and the release position (RP) |
+| Panasonic, [technical terminology page](https://industry.panasonic.com/global/en/products/control/switch/micro/explain_term){: rel="nofollow noopener noreferrer" } | Movement differential (MD), max. | "The distance or degree from operating position to release position of the actuator" |
+| Honeywell, [SE/XE datasheet](https://docs.rs-online.com/588c/A700000015332771.pdf){: rel="nofollow noopener noreferrer" } | Differential travel (D.T.), max. | Actuator travel "from point where contacts 'snap-over' to point where they 'snap-back'" |
+| Crouzet, [Basic Technical Concepts](https://zoro.com/static/cms/enhanced_pdf/Waldom%20Electronics_SWxxbasicxxtechnicalxxconceptsxxENxx679897.pdf){: rel="nofollow noopener noreferrer" } | Differential travel (DT) | "Distance between the operating position OP and the release position RLP" |
 
 The trap is the letters RP. Panasonic's page and Omron's FAQE20046 use RP for the release position, the point where the contacts snap back. Crouzet uses RP for the rest position, where the actuator sits with nothing touching it, and writes RLP for the release position. When two datasheets disagree about RP, read each one's own legend before comparing numbers.
 
 ## How the gap appears in one press and release
 
-Honeywell's General Technical Bulletin #14, Applying Precision Switches, walks through a full cycle of a plunger switch:
+Honeywell's General Technical Bulletin #14, [Applying Precision Switches](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/ja/products/switches/basic-switches/common/documents/sps-ast-applying-precision-switches-technical-note.pdf){: rel="nofollow noopener noreferrer" }, walks through a full cycle of a plunger switch:
 
 1. With nothing pressing the plunger, the common contact rests on the normally closed contact.
-2. The plunger travels down through the pretravel to the operating point. There the common contact snaps across to the normally open contact.
+2. The plunger travels down through the [pretravel](/guides/micro-switch-pretravel-explained/) to the operating point. There the common contact snaps across to the normally open contact.
 3. The plunger can keep going through the overtravel, and the contacts stay where they are.
 4. On the way back up, the plunger passes the operating point again, and the bulletin notes that "this does not cause the position of the common contact to change."
 5. Only at the release point does the common contact snap back to the normally closed side.
@@ -61,7 +61,7 @@ The same bulletin explains the design trade. Building a mechanism with very high
 
 Once a switch has operated, its contacts don't return until the actuator backs off past the release point. A wobble smaller than the movement differential therefore can't switch the contacts back, which is the protection summaries of the term point to.
 
-The protection stops at the edges of the gap. Honeywell's Bulletin #14 explains that contact force falls as the plunger nears the operating or release point and is zero the instant the contacts separate. Near either point, the bulletin adds, a jar "may cause the switch mechanism to snap over prematurely." The bulletin describes the effect as a shift of the operating or release point that narrows the differential travel. Omron's FAQE20046 on how far to push a basic switch gives the practical rule: an actuator that stops near the operating or release position "may create chattering or bouncing."
+The protection stops at the edges of the gap. Honeywell's Bulletin #14 explains that contact force falls as the plunger nears the operating or release point and is zero the instant the contacts separate. Near either point, the bulletin adds, a jar "may cause the switch mechanism to snap over prematurely." The bulletin describes the effect as a shift of the operating or release point that narrows the differential travel. Omron's FAQE20046 on [how far to push a basic switch](https://forum.digikey.com/t/please-advise-the-appropriate-amount-of-pushing-for-a-basic-switch/35452){: rel="nofollow noopener noreferrer" } gives the practical rule: an actuator that stops near the operating or release position "may create chattering or bouncing."
 
 In practice the gap and the push depth work together. The gap stops a switch that has already operated from releasing on a small wobble. A push well past the operating point, which Omron's A-20G datasheet sets at 70% to 100% of the rated overtravel, keeps the contacts away from the low-force zone in the first place.
 
@@ -93,15 +93,23 @@ A micro switch turns a very small, repeatable movement into a clean electrical c
 
 ### What is a switch lever?
 
-A switch lever is an arm fitted over the plunger so a cam, door or slide can operate the switch with less force but more travel. The lever also widens the movement differential: Omron's A-20G datasheet lists 2.4 mm max. for the hinge lever version against 0.2 mm max. at the bare plunger. The spring lever guide covers the lever in detail.
+A switch lever is an arm fitted over the plunger so a cam, door or slide can operate the switch with less force but more travel. The lever also widens the movement differential: Omron's A-20G datasheet lists 2.4 mm max. for the hinge lever version against 0.2 mm max. at the bare plunger. The [spring lever guide](/guides/micro-switch-spring-lever/) covers the lever in detail.
 
 ### How does a differential pressure switch work?
 
-Dwyer's introduction to differential pressure switches describes a spring-loaded diaphragm between two pressure inputs that moves and pushes on a snap switch. Its example switch trips as pressure rises to 3-1/2 inches of water column and resets only when pressure falls to about 2.4, a gap Dwyer calls the dead band. Dwyer states the "dead band is inherent in a snap switch" and traces it partly to the de-actuation travel of the switch lever, which is the movement differential seen as a pressure gap.
+Dwyer's [introduction to differential pressure switches](https://dwyer-inst.com/en/list/post/introduction-to-precision-low-range-differential-pressure-switches){: rel="nofollow noopener noreferrer" } describes a spring-loaded diaphragm between two pressure inputs that moves and pushes on a snap switch. Its example switch trips as pressure rises to 3-1/2 inches of water column and resets only when pressure falls to about 2.4, a gap Dwyer calls the dead band. Dwyer states the "dead band is inherent in a snap switch" and traces it partly to the de-actuation travel of the switch lever, which is the movement differential seen as a pressure gap.
 
 ## Where movement differential matters when you set up a switch
 
-Check the movement differential whenever the switch has to reset at a known position, such as a CNC lathe home switch whose release point sets the zero. Compare it with the pretravel and overtravel on the same sheet, and remember that a lever version, a heavier load or a cam that meets the actuator off-line can each move the reset point. If a wider or narrower gap is the goal, the hysteresis selection guide covers choosing for it.
+Check the movement differential whenever the switch has to reset at a known position, such as a [CNC lathe home switch](/guides/cnc-lathe-home-position-micro-switch-operating-force/) whose release point sets the zero. Compare it with the pretravel and overtravel on the same sheet, and remember that a lever version, a heavier load or a [cam that meets the actuator off-line](/guides/micro-switch-cam-misalignment-explained/) can each move the reset point. If a wider or narrower gap is the goal, the [hysteresis selection guide](/guides/micro-switch-hysteresis-selection/) covers choosing for it.
+
+
+## Related guides
+
+- [micro switch flyback diode causes](/guides/micro-switch-flyback-diode-causes/)
+- [panel mount plunger micro switch working principle](/guides/panel-mount-plunger-micro-switch-working-principle/)
+- [cam follower micro switch adjustment](/guides/cam-follower-micro-switch-adjustment/)
+- [micro switch SPST NC contacts explained](/guides/micro-switch-spst-nc-contacts-explained/)
 
 ## Sources
 

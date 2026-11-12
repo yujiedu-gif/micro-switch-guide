@@ -18,13 +18,13 @@ When a bucket elevator's inspection door or guard carries an interlock switch, o
 
 To test a bucket elevator guard interlock micro switch, lock out the elevator, then check the switch's normally closed (NC) safety contacts with a multimeter: closed with the guard shut, open with the guard open. Then, under the lockout rule's testing sequence, confirm from outside the guard that the elevator's control refuses to start while the guard is open.
 
-The micro switch inside the interlock, also called a snap-action switch, is only one part of the safety function. KWS Manufacturing's bucket elevator manual states that other devices should not be used as a substitute for locking out the power before guards or covers are removed.
+The micro switch inside the interlock, also called a snap-action switch, is only one part of the safety function. [KWS Manufacturing's bucket elevator manual](https://www.kwsmfg.com/wp-content/uploads/Bucket-Elevator-OM-5-21-13.pdf){: rel="nofollow noopener noreferrer" } states that other devices should not be used as a substitute for locking out the power before guards or covers are removed.
 
 ## Lock out the elevator before the first check
 
 KWS's Bucket Elevator Safety, Operation and Maintenance Manual (revision 1, issued 2013) covers opening the elevator for inspection, cleaning or observation. The manual says the motor is then to be locked out electrically so that nobody can restart it, however remote from the area. The same manual says locking out the power gives the only real protection against injury, and warns that secondary devices can give employees a false sense of security. In OSHA's terms below, the lock goes on an energy isolating device such as the motor's disconnect switch.
 
-The US lockout rule, OSHA 29 CFR 1910.147, matches that view. It defines an energy isolating device as a mechanical device that physically blocks energy, such as a disconnect switch, and states that push buttons, selector switches and other control circuit devices are not energy isolating devices. A guard interlock switch is a control circuit device, so an open guard doesn't mean the elevator is isolated.
+The US lockout rule, [OSHA 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147){: rel="nofollow noopener noreferrer" }, matches that view. It defines an energy isolating device as a mechanical device that physically blocks energy, such as a disconnect switch, and states that push buttons, selector switches and other control circuit devices are not energy isolating devices. A guard interlock switch is a control circuit device, so an open guard doesn't mean the elevator is isolated.
 
 The KWS manual also places the owner's obligations under ANSI B20.1, the US safety standard for conveyors. The current edition is [ASME B20.1-2024](https://knowledge.bsigroup.com/products/safety-standard-for-conveyors-and-related-equipment-2){:rel="nofollow"}, published in September 2024.
 
@@ -32,11 +32,11 @@ The KWS manual also places the owner's obligations under ANSI B20.1, the US safe
 
 A guard interlock can be a limit switch with a lever or plunger that the guard presses, a switch with a separate actuator fixed to the door, or a non-contact switch. A meter check of contacts applies to the first two kinds; a non-contact switch is checked by its maker's procedure instead.
 
-On a contact switch, look on the housing or datasheet for the positive opening symbol defined in [IEC 60947-5-1](https://webstore.iec.ch/en/publication/65935){:rel="nofollow"}. Banner's datasheet for its SI-LM40 safety limit switch describes what the symbol promises: the NC safety contacts are forced open, without the use of springs, when the actuator moves from its home position. ABB's general technical data for limit switches adds that positive opening applies to NC contacts only.
+On a contact switch, look on the housing or datasheet for the positive opening symbol defined in [IEC 60947-5-1](https://webstore.iec.ch/en/publication/65935){:rel="nofollow"}. [Banner's datasheet for its SI-LM40 safety limit switch](https://info.bannerengineering.com/cs/groups/public/documents/literature/50159.pdf){: rel="nofollow noopener noreferrer" } describes what the symbol promises: the NC safety contacts are forced open, without the use of springs, when the actuator moves from its home position. [ABB's general technical data for limit switches](https://library.e.abb.com/public/3bc07b949ed045eeb142e05426863e59/1SXU000023C0202_09_General_tech_data.pdf){: rel="nofollow noopener noreferrer" } adds that positive opening applies to NC contacts only.
 
 A general-purpose micro switch opens its NC contact with a spring, and a spring may not be strong enough to pull a welded contact apart, so it lacks that guarantee. If you find one fitted to a personnel guard, flag it for the person responsible for the machine's safety design rather than treating the test result as the whole answer.
 
-Note the contact arrangement printed on the switch. Omron's D4N-2220 safety limit switch, for example, has two NC contacts, and each one needs its own check.
+Note the contact arrangement printed on the switch. [Omron's D4N-2220 safety limit switch](https://www.ia.omron.com/product/item/10489/){: rel="nofollow noopener noreferrer" }, for example, has two NC contacts, and each one needs its own check.
 
 ## Inspect the switch and actuator
 
@@ -91,7 +91,7 @@ Where several guards are wired in series, test each guard on its own. Banner's d
 | Meter passes, but the elevator starts with the guard open | Wiring fault, a bypass in the control panel, or a control logic fault | Treat as a failed safety function; the elevator stays out of service until the control circuit is corrected |
 | Reading flickers as the guard moves | Worn contacts, loose actuator, contamination in the housing | Clean or replace, then retest |
 
-Banner's datasheet tells users not to attempt repairs on its safety switch and to return a defective unit, and Omron's European knowledge base describes the direct opening mechanism as the way a welded contact gets forced open. Rule out a jammed actuator and any jumper first. After that, a switch whose NC contact reads closed with the guard open has failed at the job that mechanism exists for, and replacement is safer than adjustment.
+Banner's datasheet tells users not to attempt repairs on its safety switch and to return a defective unit, and [Omron's European knowledge base](https://automation-knowledge-base.omron.eu/support/solutions/articles/103000352430-what-is-a-direct-opening-mechanism-forcibly-opened-contacts-){: rel="nofollow noopener noreferrer" } describes the direct opening mechanism as the way a welded contact gets forced open. Rule out a jammed actuator and any jumper first. After that, a switch whose NC contact reads closed with the guard open has failed at the job that mechanism exists for, and replacement is safer than adjustment.
 
 Never tape, wedge, jumper or use a spare actuator to hold an interlock closed. Banner's datasheet warns against using spare actuators to bypass a safety switch, and KWS's manual warns that relying on a secondary device such as an interlock, instead of lockout, can end in serious injury if that device fails.
 
@@ -111,9 +111,17 @@ Banner's SI-LM40 datasheet calls for a designated person to check the switch at 
 
 ## Keep the test record with the elevator
 
-Write down the guard tested, the date, both meter readings (guard closed and guard open), whether the elevator refused to start and who performed it. A record that shows a contact reading closed with the guard open, even once, is the signal to replace that switch. Related guides cover how to test a micro switch with a multimeter, the safety function of a micro switch, operating force on a dock leveler guard interlock and NO and NC terminals on a bucket elevator end-of-stroke switch.
+Write down the guard tested, the date, both meter readings (guard closed and guard open), whether the elevator refused to start and who performed it. A record that shows a contact reading closed with the guard open, even once, is the signal to replace that switch. Related guides cover [how to test a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/), [the safety function of a micro switch](/guides/safety-micro-switch-function/), [operating force on a dock leveler guard interlock](/guides/dock-leveler-guard-interlock-micro-switch-operating-force/) and [NO and NC terminals on a bucket elevator end-of-stroke switch](/guides/bucket-elevator-end-of-stroke-micro-switch-no-and-nc-terminals/).
 
 Bucket elevators run in dusty plants, a condition industrial switch makers design for. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} describes its heavy-duty industrial micro switches as designed for workshop conditions with high dust and continuous operation. Dust tolerance doesn't replace the lockout and test steps above, which apply to any guard switch on the elevator.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 

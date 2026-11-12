@@ -16,34 +16,34 @@ Under an arcade button or joystick sits a small switch that registers each press
 
 ## Quick answer
 
-An arcade micro switch is a small snap-action switch that needs very little force and closes a circuit when an arcade button or joystick moves. Ultimarc, which makes arcade input boards, tells builders to wire only the terminals marked normally open (NO) and common (COM), so the game sees a closed circuit only while the control is held.
+An arcade micro switch is a small snap-action switch that needs very little force and closes a circuit when an arcade button or joystick moves. [Ultimarc](https://www.ultimarc.com/control-interfaces/i-pacs/i-pac2/){: rel="nofollow noopener noreferrer" }, which makes arcade input boards, tells builders to wire only the terminals marked normally open (NO) and common (COM), so the game sees a closed circuit only while the control is held.
 
 ## Where the switch sits in a button and in a joystick
 
-In a push button, the switch sits under the button's plunger, the plastic stem that moves when you press the cap. The plunger moves straight down and presses the small button on top of the switch. ZF's D4 series datasheet calls that actuator type simply "button." Arcade Renovations, a US parts seller, says the Cherry D44X switch it sells was used by Industrias Lorenzo and Suzo Happ for years on push buttons and joysticks.
+In a push button, the switch sits under the button's plunger, the plastic stem that moves when you press the cap. The plunger moves straight down and presses the small button on top of the switch. [ZF's D4 series datasheet](https://static.chipdip.ru/lib/421/DOC044421589.pdf){: rel="nofollow noopener noreferrer" } calls that actuator type simply "button." [Arcade Renovations](https://www.arcaderenovations.com/cherry-75g-d44x-microswitch.html){: rel="nofollow noopener noreferrer" }, a US parts seller, says the Cherry D44X switch it sells was used by Industrias Lorenzo and Suzo Happ for years on push buttons and joysticks.
 
-A joystick uses several switches around the base of the lever. Joy-IT's datasheet for its Joystick01 lists four micro switches and a restrictor plate, a plate around the lever that blocks some directions, which sets the stick to 2-way, 4-way or 8-way movement. Each of the four switches faces one direction, and the bottom of the lever presses whichever switch it tilts toward. Because of that layout, a diagonal push leans on two neighboring switches at once, and the game reads the pair as a diagonal, such as up and left together.
+A joystick uses several switches around the base of the lever. [Joy-IT's datasheet for its Joystick01](https://joy-it.net/files/files/Produkte/Joystick01/Joystick01_Datasheet-EN_2025-07-24.pdf){: rel="nofollow noopener noreferrer" } lists four micro switches and a restrictor plate, a plate around the lever that blocks some directions, which sets the stick to 2-way, 4-way or 8-way movement. Each of the four switches faces one direction, and the bottom of the lever presses whichever switch it tilts toward. Because of that layout, a diagonal push leans on two neighboring switches at once, and the game reads the pair as a diagonal, such as up and left together.
 
-Some joysticks mount their switches on a small circuit board instead of clipping them on one by one. Focus Attack's support page for the Sanwa JLF says the switches are soldered to the board and that a five-pin harness, a plug-in cable with one wire per pin, connects it to the rest of the controller. Board mounting or clip-on mounting decides how a failed switch gets replaced, which the arcade joystick micro switch replacement guide covers step by step.
+Some joysticks mount their switches on a small circuit board instead of clipping them on one by one. [Focus Attack's support page for the Sanwa JLF](https://support.focusattack.com/hc/en-us/articles/115005595046-Can-I-replace-the-microswitch-PCB-in-my-Sanwa-JLF){: rel="nofollow noopener noreferrer" } says the switches are soldered to the board and that a five-pin harness, a plug-in cable with one wire per pin, connects it to the rest of the controller. Board mounting or clip-on mounting decides how a failed switch gets replaced, which the [arcade joystick micro switch replacement guide](/guides/arcade-joystick-micro-switch-replacement/) covers step by step.
 
 ## What happens inside the switch when you press
 
-The snap inside the switch comes from a spring. Schneider Electric's FAQ on snap-action contacts explains that the actuator, the switch's own small button, pretensions an over-center spring, and the spring tension operates the contact once a certain tension is reached. The steps inside the case run in this order:
+The snap inside the switch comes from a spring. [Schneider Electric's FAQ on snap-action contacts](https://www.se.com/uk/en/faqs/FA22871){: rel="nofollow noopener noreferrer" } explains that the actuator, the switch's own small button, pretensions an over-center spring, and the spring tension operates the contact once a certain tension is reached. The steps inside the case run in this order:
 
 1. The button's plunger pushes the switch's own small button down.
 2. The switch's button bends the internal spring, and the spring stores energy.
 3. At a set point, the spring passes its tipping point and flips.
 4. The flip throws the moving contact, a metal piece wired to the common terminal, from one fixed contact to the other.
 
-Electronic Design's article on snap-action switches adds that the common contact can't stop partway between the two fixed contacts. Schneider's FAQ notes that the release works the same way in reverse: the contacts stay put until the spring tension drops below a certain level, then snap back. The same article notes that once the plunger reaches the operating point, the common contact accelerates away without further plunger movement, so a slow press and a fast press end in the same quick flip.
+[Electronic Design's article on snap-action switches](https://www.electronicdesign.com/markets/energy/article/21789793/snap-action-switches-still-rule-the-roost){: rel="nofollow noopener noreferrer" } adds that the common contact can't stop partway between the two fixed contacts. Schneider's FAQ notes that the release works the same way in reverse: the contacts stay put until the spring tension drops below a certain level, then snap back. The same article notes that once the plunger reaches the operating point, the common contact accelerates away without further plunger movement, so a slow press and a fast press end in the same quick flip.
 
 ## The three terminals, and why arcade wiring leaves one empty
 
-Most arcade micro switches have three metal tabs. COM connects to the moving contact. NO connects to a fixed contact that stays apart from COM until the switch is pressed. Normally closed (NC) connects to a fixed contact that touches COM until the switch is pressed. "Normally" describes the switch at rest, with nothing pressing it. When the press flips the spring, COM leaves NC and lands on NO. The NO and NC micro switch explainer walks through the two contact states in more detail.
+Most arcade micro switches have three metal tabs. COM connects to the moving contact. NO connects to a fixed contact that stays apart from COM until the switch is pressed. Normally closed (NC) connects to a fixed contact that touches COM until the switch is pressed. "Normally" describes the switch at rest, with nothing pressing it. When the press flips the spring, COM leaves NC and lands on NO. The [NO and NC micro switch explainer](/guides/no-nc-micro-switch/) walks through the two contact states in more detail.
 
 Arcade input boards expect a circuit that closes only while the player holds the control. Ultimarc's installation notes for its I-PAC boards say some switches have three connections, that you should only use the ones marked NO and COM, and that nothing goes on the NC tag. The same notes describe the failure that follows when the inputs go on NC instead: erratic joystick directions and "stuck" keys, because every untouched control reads as pressed.
 
-The COM side of every switch usually shares one wire. Ultimarc tells builders to daisy-chain one side of all switches, running a single wire from switch to switch, and to connect that chain to a ground (GND) terminal on the board. The arcade button micro switch wiring guide shows the full hookup.
+The COM side of every switch usually shares one wire. Ultimarc tells builders to daisy-chain one side of all switches, running a single wire from switch to switch, and to connect that chain to a ground (GND) terminal on the board. The [arcade button micro switch wiring guide](/guides/arcade-button-micro-switch-wiring/) shows the full hookup.
 
 📌 **On the empty tab:** *Leaving NC unconnected is normal for arcade wiring. The tab is still part of the switch, and some non-arcade uses do wire it.*
 
@@ -58,7 +58,7 @@ Arcade micro switches look alike, but their datasheets differ on the points that
 | Contact material | Gold cross point on the 0.1 A version, silver or silver alloy on higher ratings | How reliably the contacts carry a very small signal current |
 | Electrical life | 50,000 operations at rated load and 85 °C | How many presses the switch is tested for at its full current rating |
 
-Terminal width is the item that most often stops a swap. Wikipedia's FASTON terminal article lists the common push-on families by blade width in thousandths of an inch: 110 (about 2.8 mm), 187 (about 4.8 mm) and 250 (about 6.3 mm). Ultimarc offers its Mini-PAC wiring harness with 4.8 mm switch connectors, or with both 4.8 mm and 2.8 mm connectors for its Goldleaf button panels, so both widths turn up in arcade builds. A connector made for one width won't grip a tab of another.
+Terminal width is the item that most often stops a swap. [Wikipedia's FASTON terminal article](https://en.wikipedia.org/wiki/FASTON_terminal){: rel="nofollow noopener noreferrer" } lists the common push-on families by blade width in thousandths of an inch: 110 (about 2.8 mm), 187 (about 4.8 mm) and 250 (about 6.3 mm). Ultimarc offers its Mini-PAC wiring harness with 4.8 mm switch connectors, or with both 4.8 mm and 2.8 mm connectors for its Goldleaf button panels, so both widths turn up in arcade builds. A connector made for one width won't grip a tab of another.
 
 Life ratings need their conditions read alongside them. The 50,000 figure in ZF's table is for switching the full rated current, which runs from 0.1 A to 21 A across the D4 versions. Ultimarc's I-PAC boards take their power from the USB port with no separate supply, so the current through each arcade switch is a signal current far below those ratings. A press count from a product listing that doesn't say which load, meaning the current switched during the test, it was measured at can't be compared with a datasheet figure that does.
 
@@ -78,9 +78,17 @@ In an arcade control, connect the input wire to NO and the ground wire to COM, a
 
 ## What to check before you replace one
 
-Start with the switch already in the control: read the markings on its case, measure the width of its metal terminal tabs, and note whether it clips on or is soldered to a board. Those three facts decide which replacement fits, and the operating force on the new switch's datasheet tells you whether the button will feel the same. For wiring the replacement, the guide to how one COM wire serves every button explains the shared ground.
+Start with the switch already in the control: read the markings on its case, measure the width of its metal terminal tabs, and note whether it clips on or is soldered to a board. Those three facts decide which replacement fits, and the operating force on the new switch's datasheet tells you whether the button will feel the same. For wiring the replacement, the [guide to how one COM wire serves every button](/guides/button-com-1-wire/) explains the shared ground.
 
 Game controls are a regular market for micro switch makers. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists game control sticks among the markets on its home page, and its G6 troubleshooting article assigns the ZINGEAR G605-150S06A to gaming joysticks and e-sports peripherals. Whichever brand you choose, the markings, tab width and operating force checks above still decide whether a replacement fits.
+
+
+## Related guides
+
+- [aircraft door closed monitor micro switch NO and NC terminals](/guides/aircraft-door-closed-monitor-micro-switch-no-and-nc-terminals/)
+- [access control door position micro switch function](/guides/access-control-door-position-micro-switch-function/)
+- [ball screw actuator end of stroke micro switch contact rating](/guides/ball-screw-actuator-end-of-stroke-micro-switch-contact-rating/)
+- [capping machine guard interlock micro switch actuator travel](/guides/capping-machine-guard-interlock-micro-switch-actuator-travel/)
 
 ## Sources
 

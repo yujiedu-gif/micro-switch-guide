@@ -72,6 +72,14 @@ The practical boundary is clear: use an isolated test only to assess documented 
 
 This concludes the explanation of how to test a autoclave door interlock micro switch.
 
+
+## Related guides
+
+- [industrial sewing machine end of stroke micro switch not working](/guides/industrial-sewing-machine-end-of-stroke-micro-switch-not-working/)
+- [laser cutting machine end of stroke micro switch symptoms](/guides/laser-cutting-machine-end-of-stroke-micro-switch-symptoms/)
+- [windshield wiper park position micro switch troubleshooting](/guides/windshield-wiper-park-position-micro-switch-troubleshooting/)
+- [industrial boiler end of stroke micro switch failure causes](/guides/industrial-boiler-end-of-stroke-micro-switch-failure-causes/)
+
 ## Sources and references
 
 - Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }

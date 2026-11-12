@@ -16,15 +16,15 @@ A micro switch wired to a programmable logic controller (PLC) input or a microco
 
 ## Quick answer
 
-Gold-plated contacts in a micro switch are contacts with a gold surface, used where the current is too small to break the film that forms on silver. Panasonic's technical notes call for its gold contact type when the load is 0.1 A or below, and Omron says its gold contacts appear mainly in basic switches rated at 0.1 A.
+Gold-plated contacts in a micro switch are contacts with a gold surface, used where the current is too small to break the film that forms on silver. [Panasonic's technical notes](https://industry.panasonic.com/global/en/products/control/switch/micro/explain_term){: rel="nofollow noopener noreferrer" } call for its gold contact type when the load is 0.1 A or below, and Omron says its gold contacts appear mainly in basic switches rated at 0.1 A.
 
 ## Why silver contacts fail on small currents
 
-Most general-purpose micro switches, also called snap-action switches, use silver or silver-alloy contacts. Crouzet's technical note says its switches are normally fitted with silver or silver-nickel contacts, which the note describes as a compromise between electrical performance, heat and service life that suits most applications.
+Most general-purpose micro switches, also called snap-action switches, use silver or silver-alloy contacts. [Crouzet's technical note](https://media.crouzet.com/catalog/_notice/pdf/SW_MS_microswitches_basic_technical_concepts_EN.pdf){: rel="nofollow noopener noreferrer" } says its switches are normally fitted with silver or silver-nickel contacts, which the note describes as a compromise between electrical performance, heat and service life that suits most applications.
 
-Silver has one weakness. Panasonic's technical notes for its snap-action switches say silver contact surfaces are "prone to be oxidized and form a sulfide film". Once the film grows, the same notes say, it "may not be broken by the switching operation, causing a conduction failure". Omron's A-20G datasheet describes the same failure for silver contacts used with microloads, meaning very small currents, and points to a microload switch with gold contacts instead.
+Silver has one weakness. Panasonic's technical notes for its snap-action switches say silver contact surfaces are "prone to be oxidized and form a sulfide film". Once the film grows, the same notes say, it "may not be broken by the switching operation, causing a conduction failure". [Omron's A-20G datasheet](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } describes the same failure for silver contacts used with microloads, meaning very small currents, and points to a microload switch with gold contacts instead.
 
-Omron's relay FAQ on oxide film gives the reason gold helps: gold is not susceptible to oxidation. Micro switch contact oxidation explains how the film forms.
+[Omron's relay FAQ on oxide film](https://forum.digikey.com/t/what-could-cause-contact-failure-due-to-oxide-film-during-microload-switching/33891){: rel="nofollow noopener noreferrer" } gives the reason gold helps: gold is not susceptible to oxidation. [Micro switch contact oxidation](/guides/micro-switch-contact-oxidation-explained/) explains how the film forms.
 
 ## Where each maker draws the line for gold
 
@@ -34,10 +34,10 @@ Every maker sets its own threshold for when a load is small enough to need gold,
 |---|---|---|
 | Panasonic technical notes (snap-action switches) | Loads of 0.1 A or below | Gold (Au) contact type |
 | Crouzet technical note (its switches) | Below 20 V and/or below 100 mA, especially below 0.3 VA | Works down to about 4 V and 1 mA; below that, consult Crouzet |
-| C&K datasheet, MM series | "Low level," defined as switching with no arcing: 0.4 VA max at 20 V AC or DC max | Gold option rated from low level to 1 A at 125 VAC or 30 VDC |
-| Omron FAQE20005 | Gold contacts used mainly in its 0.1 A rated basic switches | Lists models such as SS-01, D2F-01 and D2MV-01 |
+| [C&K datasheet, MM series](https://cdn.components.ru/media/PDF/36139.pdf){: rel="nofollow noopener noreferrer" } | "Low level," defined as switching with no arcing: 0.4 VA max at 20 V AC or DC max | Gold option rated from low level to 1 A at 125 VAC or 30 VDC |
+| [Omron FAQE20005](https://forum.digikey.com/t/which-basic-switches-have-gold-plated-contacts/35316){: rel="nofollow noopener noreferrer" } | Gold contacts used mainly in its 0.1 A rated basic switches | Lists models such as SS-01, D2F-01 and D2MV-01 |
 
-Some search answers give a single range, such as below 50 to 100 mA and under 20 to 24 V, without naming whose switch it describes. The makers above draw their lines at different points, so the threshold that applies is the one printed for the switch you are about to fit. Signal-level switching on a micro switch covers circuits that sit near those limits.
+Some search answers give a single range, such as below 50 to 100 mA and under 20 to 24 V, without naming whose switch it describes. The makers above draw their lines at different points, so the threshold that applies is the one printed for the switch you are about to fit. [Signal-level switching on a micro switch](/guides/micro-switch-signal-level-switching-causes/) covers circuits that sit near those limits.
 
 ## Conditions that call for gold beyond current
 
@@ -53,7 +53,7 @@ A safety or alarm switch that sits untouched for months and then has to pass a s
 
 A gold-contact model carries a far lower maximum current. C&K's MM datasheet rates its fine-silver version at 7 A for 125 and 250 VAC. The same datasheet rates its 24K gold version from low level, which C&K defines as switching with no arcing, up to 1 A at 125 VAC or 30 VDC. Omron's FAQE20005 places its gold contacts mainly in switches rated at 0.1 A. A gold model therefore suits the signal side of a circuit and leaves the load side to a silver part or a relay.
 
-Surges matter even inside the rating. Omron's datasheet for its SS series warns that a model for ordinary loads may give faulty contact on a microload circuit. Inrush current, the same datasheet says, can increase contact wear and shorten life even within a microload model's range, so a contact protection circuit may be needed. How a 5 amp rating compares with a real load covers the high-current side.
+Surges matter even inside the rating. [Omron's datasheet for its SS series](https://electrokit.com/upload/quick/d7/22/4fba_41011077-tds.pdf){: rel="nofollow noopener noreferrer" } warns that a model for ordinary loads may give faulty contact on a microload circuit. Inrush current, the same datasheet says, can increase contact wear and shorten life even within a microload model's range, so a contact protection circuit may be needed. [How a 5 amp rating compares with a real load](/guides/5-amp-micro-switch-rating-load-suitability/) covers the high-current side.
 
 One part can sometimes cover both ends. Crouzet's note describes gold-plated silver-nickel contacts, possibly in a crossbar arrangement, that cover a very wide operating range so a single part number can serve different applications.
 
@@ -63,7 +63,7 @@ The contact material line is where gold shows up, and makers word it differently
 
 1. **The rating range.** C&K's MM datasheet writes it as "from low level to 1 AMP," which gives both ends at once.
 2. **The minimum applicable load.** Omron's SS datasheet calls it a reference value at the N reliability level, an estimated malfunction rate below 1 in 2,000,000 operations at 60% reliability. Omron treats it as a reference figure rather than a guarantee.
-3. **The contact resistance.** Read it together with the test current it was measured at; contact resistance explains how the figure is measured.
+3. **The [contact resistance](/guides/what-is-micro-switch-contact-resistance/).** Read it together with the test current it was measured at; contact resistance explains how the figure is measured.
 
 Then compare the circuit's current and voltage with the maker's low-level line, check that the gold model's maximum covers any surge at switch-on, and note how often the switch will operate and in what air.
 
@@ -82,6 +82,14 @@ On switch contacts, gold is used because it does not tarnish the way silver does
 Find the smallest and the largest current the switch will ever carry, including any surge. If the smallest sits below the maker's low-level line and the largest fits under the gold model's rating, the gold model is the match. If the largest does not fit, split the job: a gold switch for the signal, a silver switch or relay for the load.
 
 Gold is also offered as a build option on small switches. In its article on customizing small micro switches for home appliances, [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} says its ultra small micro switch supports customized gold-plated contacts to reduce contact resistance and improve corrosion resistance. The current limits above still decide whether that option suits your circuit.
+
+
+## Related guides
+
+- [spring plunger micro switch selection](/guides/spring-plunger-micro-switch-selection/)
+- [micro switch freezing temperature selection](/guides/micro-switch-freezing-temperature-selection/)
+- [micro switch contact gap selection](/guides/micro-switch-contact-gap-selection/)
+- [micro switch dust ingress selection](/guides/micro-switch-dust-ingress-selection/)
 
 ## Sources
 

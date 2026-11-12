@@ -26,7 +26,7 @@ The rollers ride on a carriage that a motor drives up and down the backrest. Som
 - **Limit sensors plus a motor counter.** Cozzia's maintenance service manual for its EC-360D chair lists an "up & down limit sensor" and a separate counting sensor on the rolling motor among the parts its self-check tests.
 - **A position sensor instead of end switches.** Panasonic's service manual for its EP-MA73 massage lounger describes an up/down sensor driven by a sensor gear, and says the up/down stop position changes if the massage mechanism is removed, so the gear has to be adjusted on reassembly.
 
-So before buying a switch, find out which kind your chair has. The service manual or parts list for your model is the reliable source; a "limit sensor" in one manual may not be a micro switch at all. Our explainer on travel limit micro switches in linear actuators shows the same end-of-travel idea in another motor-driven product.
+So before buying a switch, find out which kind your chair has. The service manual or parts list for your model is the reliable source; a "limit sensor" in one manual may not be a micro switch at all. Our explainer on [travel limit micro switches in linear actuators](/guides/electric-linear-actuator-travel-limit-micro-switch-function/) shows the same end-of-travel idea in another motor-driven product.
 
 ## Safety before you open the back cover
 
@@ -47,7 +47,7 @@ If the chair shows an error code, write it down first. Cozzia's manual explains 
 With the chair unplugged, open the back cover and find the switches at the ends of the roller track. Work through these in order.
 
 1. **Look at the lever.** A travel limit switch usually has a lever that the carriage pushes. Omron's FAQ on basic switch failures names a deformed actuator lever as a relatively common cause; in its example, something caught on the lever and bent it. The same FAQ says a lever that sits at a larger angle or has more play has deformed.
-2. **Check that the carriage reaches the lever.** Move the carriage by hand only if your service manual allows it. A switch bracket that has shifted, or a carriage tab that has bent, can miss the lever. Our article on micro switch cam misalignment covers how a pressing part that's out of line stops a switch from operating.
+2. **Check that the carriage reaches the lever.** Move the carriage by hand only if your service manual allows it. A switch bracket that has shifted, or a carriage tab that has bent, can miss the lever. Our article on [micro switch cam misalignment](/guides/micro-switch-cam-misalignment-explained/) covers how a pressing part that's out of line stops a switch from operating.
 3. **Check the connectors.** Cozzia's manual lists a disconnected backrest wire as a cause for both up and down limit errors. Reseat every connector between the switch and the control board.
 4. **Test the switch with a multimeter.** Disconnect the switch's wires and set the meter to continuity. Most micro switches have three terminals: common (COM), normally closed (NC) and normally open (NO). Electronic Design's explainer on snap-action switches describes the at-rest state: with the actuator released, the common contact rests against the NC contact.
 
@@ -56,7 +56,7 @@ With the chair unplugged, open the back cover and find the switches at the ends 
 | Released | Continuity | Open |
 | Pressed past the click | Open | Continuity |
 
-A switch that reads the same in both positions, or that flickers as you press the lever slowly, has failed. Our guide on how to test a micro switch covers meter setup and probe placement, and our explainer on NO and NC terminals explains why the chair may use only one pair.
+A switch that reads the same in both positions, or that flickers as you press the lever slowly, has failed. Our guide on [how to test a micro switch](/guides/how-to-test-a-micro-switch/) covers meter setup and probe placement, and our explainer on [NO and NC terminals](/guides/no-nc-micro-switch/) explains why the chair may use only one pair.
 
 📌 **On clicking but not reversing:** *If the switch clicks and tests good but the rollers still won't reverse, the fault is past the switch, in the wiring, the control board or the motor, which Cozzia's manual also lists among the causes.*
 
@@ -81,6 +81,14 @@ On a chair that reverses its rollers with end switches, a failed upper switch, a
 Write down the chair's model number, the error code, which end the rollers stop at, and whether the motor keeps running there. Those four details tell a technician, or you with the service manual open, whether to start at the limit switch, the wiring, the position sensor or the motor.
 
 Limit and position switches inside household appliances are a regular product for switch makers. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"}'s home appliance line page says the company supports customized adjustment of operating force and terminal styles to suit the structure of different home appliances. A replacement therefore has to match the chair's original part, which its model number and service manual identify.
+
+
+## Related guides
+
+- [industrial sewing machine end of stroke micro switch not working](/guides/industrial-sewing-machine-end-of-stroke-micro-switch-not-working/)
+- [laser cutting machine end of stroke micro switch symptoms](/guides/laser-cutting-machine-end-of-stroke-micro-switch-symptoms/)
+- [windshield wiper park position micro switch troubleshooting](/guides/windshield-wiper-park-position-micro-switch-troubleshooting/)
+- [industrial boiler end of stroke micro switch failure causes](/guides/industrial-boiler-end-of-stroke-micro-switch-failure-causes/)
 
 ## Sources
 

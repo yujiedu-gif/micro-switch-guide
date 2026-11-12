@@ -22,36 +22,36 @@ Micro switch contact oxidation is a thin film of silver sulfide or oxide that fo
 
 Most general-purpose micro switches, also called snap-action switches, use silver or silver-alloy contacts. Crouzet's technical note says its switches are normally fitted with silver or silver-nickel contacts, and Omron's datasheet for its A-20G switch lists a silver alloy.
 
-Silver reacts with the air around it. Panasonic's technical notes for its snap-action switches say silver contact surfaces "are prone to be oxidized and form a sulfide film." The word oxidation is used loosely for this, but both makers name sulfur as a main source. Omron's A-20G datasheet calls the layer a "sulfide coating" and lists the gases that attack contacts: hydrogen sulfide, sulfur dioxide, ammonia, nitric acid gas and chlorine.
+Silver reacts with the air around it. [Panasonic's technical notes](https://industry.panasonic.com/global/en/products/control/switch/micro/explain_term){: rel="nofollow noopener noreferrer" } for its snap-action switches say silver contact surfaces "are prone to be oxidized and form a sulfide film." The word oxidation is used loosely for this, but both makers name sulfur as a main source. [Omron's A-20G datasheet](https://static.chipdip.ru/lib/275/DOC011275390.pdf){: rel="nofollow noopener noreferrer" } calls the layer a "sulfide coating" and lists the gases that attack contacts: hydrogen sulfide, sulfur dioxide, ammonia, nitric acid gas and chlorine.
 
 The film can start before the switch is ever installed. Panasonic's notes say long storage at high temperature or humidity, or in air with organic or sulfide gases, may form a sulfide or oxide film on the contacts. The same notes ask for switches to be stored in a polyethylene bag or another airtight container, to keep their silver-plated terminals from discoloring through sulfurization.
 
 ## Why a small current cannot break through the film
 
-A switch that carries a decent load keeps its contacts usable, because switching that load breaks the film; Omron's FAQ on relay contacts calls this a cleaning effect. When the current is tiny, that cleaning stops. Panasonic's notes describe the sequence: the switch "operates with no problems at the beginning of use," then, as the film grows, "the film may not be broken by the switching operation, causing a conduction failure."
+A switch that carries a decent load keeps its contacts usable, because switching that load breaks the film; [Omron's FAQ on relay contacts](https://forum.digikey.com/t/what-could-cause-contact-failure-due-to-oxide-film-during-microload-switching/33891){: rel="nofollow noopener noreferrer" } calls this a cleaning effect. When the current is tiny, that cleaning stops. Panasonic's notes describe the sequence: the switch "operates with no problems at the beginning of use," then, as the film grows, "the film may not be broken by the switching operation, causing a conduction failure."
 
-Omron's A-20G datasheet gives two conditions for the same failure. Silver contacts fail when used with microloads, meaning very small currents, or when used "with relatively low frequency for a long time". A switch that sits untouched for weeks and then has to pass a signal faces the second condition. Omron's FAQ on the minimum applicable load (FAQE20025) adds that below that load, the contact surface is more susceptible to a chemical coating from the surrounding air.
+Omron's A-20G datasheet gives two conditions for the same failure. Silver contacts fail when used with microloads, meaning very small currents, or when used "with relatively low frequency for a long time". A switch that sits untouched for weeks and then has to pass a signal faces the second condition. [Omron's FAQ on the minimum applicable load](https://forum.digikey.com/t/what-problems-may-occur-if-the-set-current-is-below-the-minimum-applicable-load-for-a-basic-switch/35390){: rel="nofollow noopener noreferrer" } (FAQE20025) adds that below that load, the contact surface is more susceptible to a chemical coating from the surrounding air.
 
 Where "too small" begins depends on the maker:
 
 | Source | Where a small load starts | Advice |
 |---|---|---|
 | Panasonic technical notes (snap-action switches) | 0.1 A or below | Use the gold (Au) contact type |
-| Crouzet technical note (its switches) | Below 20 V and/or 100 mA, especially below 0.3 VA | Gold or gold-alloy coating, especially if switched less than about once a week or in a sulfide atmosphere |
+| [Crouzet technical note](https://media.crouzet.com/catalog/_notice/pdf/SW_MS_microswitches_basic_technical_concepts_EN.pdf){: rel="nofollow noopener noreferrer" } (its switches) | Below 20 V and/or 100 mA, especially below 0.3 VA | Gold or gold-alloy coating, especially if switched less than about once a week or in a sulfide atmosphere |
 | Omron FAQE10082 (relays) | A load of 48 V and 100 mA or more has a cleaning effect | Gold-alloy contacts for microloads |
 
-The 48 V and 100 mA figure appears in some online answers about micro switches, but it comes from Omron's FAQ on relay contacts, and the switch makers above set their own lines in their own terms. For a micro switch, the threshold to trust is the one in that switch's own datasheet. Signal-level switching on a micro switch covers the low-current side in more detail.
+The 48 V and 100 mA figure appears in some online answers about micro switches, but it comes from Omron's FAQ on relay contacts, and the switch makers above set their own lines in their own terms. For a micro switch, the threshold to trust is the one in that switch's own datasheet. [Signal-level switching on a micro switch](/guides/micro-switch-signal-level-switching-causes/) covers the low-current side in more detail.
 
 ## Other films that look like oxidation
 
 Not every insulating layer on a contact is oxidation, and the fixes differ.
 
-- **Silicone deposits.** Omron's A-20G datasheet says that near silicone oil, silicone rubber or silicone wiring, arc energy can deposit silicon oxide on the contacts and cause contact failure. Crouzet's note says silicone-containing substances must be kept away from its switches because they harm contact resistance.
-- **Solder flux.** Omron's datasheet for its SS series warns that flux getting inside the switch can cause faulty contact.
+- **Silicone deposits.** Omron's A-20G datasheet says that near silicone oil, silicone rubber or silicone wiring, arc energy can deposit silicon oxide on the contacts and cause contact failure. Crouzet's note says silicone-containing substances must be kept away from its switches because they harm [contact resistance](/guides/what-is-micro-switch-contact-resistance/).
+- **Solder flux.** [Omron's datasheet for its SS series](https://electrokit.com/upload/quick/d7/22/4fba_41011077-tds.pdf){: rel="nofollow noopener noreferrer" } warns that flux getting inside the switch can cause faulty contact.
 - **Grease and oil.** Crouzet's note says grease and oil must never get inside its switches.
 - **Corrosive gas.** Omron's A-20G datasheet warns that the gases listed above can cause contact faults or corrosion, a separate problem from the small-current film.
 
-Corrosive atmospheres and micro switches looks at that last case.
+[Corrosive atmospheres and micro switches](/guides/micro-switch-corrosive-atmosphere-causes/) looks at that last case.
 
 ## How to check whether the contacts are the problem
 
@@ -61,15 +61,15 @@ Disconnect power before you touch the switch or its wiring. Then check the conta
 2. Measure between COM and the normally closed (NC) terminal with the actuator fully released.
 3. Press and release several times and watch whether the reading stays steady.
 
-The full press matters. Omron's FAQ on contact resistance specifies measuring the NC contact at the free position (fully released) and the NO contact at total travel (fully pressed). The same FAQ notes that contact pressure falls almost to zero near the points where the contacts change over. Crouzet's note says the same: near those points the contact force drops and resistance "may increase substantially". A reading that flickers at half press is therefore normal, and does not prove a film.
+The full press matters. [Omron's FAQ on contact resistance](https://forum.digikey.com/t/what-is-the-contact-resistance-of-a-basic-switch/35383){: rel="nofollow noopener noreferrer" } specifies measuring the NC contact at the free position (fully released) and the NO contact at total travel (fully pressed). The same FAQ notes that contact pressure falls almost to zero near the points where the contacts change over. Crouzet's note says the same: near those points the contact force drops and resistance "may increase substantially". A reading that flickers at half press is therefore normal, and does not prove a film.
 
-A healthy closed contact reads very low. Omron's A-20G datasheet lists 15 mΩ (thousandths of an ohm) maximum contact resistance for a new switch, and Crouzet's note gives generally less than 20 mΩ for its switches. Panasonic's notes say their figures are measured by voltage drop at 6 to 8 VDC and 1 A, so a handheld meter reading is only a rough comparison with those figures. A reading of several ohms, or one that jumps around at full press, points at the contacts. How to test a micro switch walks through the full test, and contact resistance explains the figure.
+A healthy closed contact reads very low. Omron's A-20G datasheet lists 15 mΩ (thousandths of an ohm) maximum contact resistance for a new switch, and Crouzet's note gives generally less than 20 mΩ for its switches. Panasonic's notes say their figures are measured by voltage drop at 6 to 8 VDC and 1 A, so a handheld meter reading is only a rough comparison with those figures. A reading of several ohms, or one that jumps around at full press, points at the contacts. [How to test a micro switch](/guides/how-to-test-a-micro-switch/) walks through the full test, and contact resistance explains the figure.
 
 ## How contact oxidation is prevented
 
 The makers' answers follow from the cause:
 
-- **Gold contacts for small loads.** Omron's A-20G datasheet calls for a microload switch with gold contacts, and Panasonic's notes call for the gold contact type at 0.1 A or below. Omron's relay FAQ notes that gold is not susceptible to oxidation. When a circuit needs gold-plated contacts covers that choice.
+- **Gold contacts for small loads.** Omron's A-20G datasheet calls for a microload switch with gold contacts, and Panasonic's notes call for the gold contact type at 0.1 A or below. Omron's relay FAQ notes that gold is not susceptible to oxidation. [When a circuit needs gold-plated contacts](/guides/micro-switch-gold-plated-contacts-selection/) covers that choice.
 - **A little more current.** For very low-energy circuits below 1 mA and 4 V, Crouzet's note asks for the circuit to pass at least a few mA through the contacts, at least while they close, and says a higher voltage across the open contacts improves reliability.
 - **Sulfur-resistant parts.** For air with hydrogen sulfide or other corrosive gases, Panasonic's notes ask users to consult the maker and point to its contact sulfurization-prevention products, which use gold-clad double-layer contacts.
 - **A clean environment.** Remove silicone sources, keep flux, grease and oil out, and store spare switches sealed, as the Omron, Crouzet and Panasonic documents above describe.
@@ -97,6 +97,14 @@ A closed switch in good condition reads close to zero. Omron lists 15 mΩ maximu
 Look at the current the switch carries. If it feeds a logic input or another signal circuit, the cause is likely the film this article describes, and a gold-contact switch is the lasting fix. If it carries a motor or heater, look at the rating instead: Crouzet's note ties heavier loads to arc erosion and contact welding, which are different failures.
 
 Switch makers address the same film in their own guidance. In its article on poor contact in mini micro switches, [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists sealed housings rated IP65 or IP67 as its countermeasure for contact oxidation and sulfidation. The same ZING EAR article describes gold-plated brass contacts with a plating thickness of at least 0.5 μm and contact resistance of 10 mΩ or less.
+
+
+## Related guides
+
+- [espresso machine drip tray micro switch troubleshooting](/guides/espresso-machine-drip-tray-micro-switch-troubleshooting/)
+- [micro switch condensation troubleshooting](/guides/micro-switch-condensation-troubleshooting/)
+- [how to test a extrusion machine home position micro switch](/guides/how-to-test-a-extrusion-machine-home-position-micro-switch/)
+- [cash drawer position micro switch intermittent operation](/guides/cash-drawer-position-micro-switch-intermittent-operation/)
 
 ## Sources
 
