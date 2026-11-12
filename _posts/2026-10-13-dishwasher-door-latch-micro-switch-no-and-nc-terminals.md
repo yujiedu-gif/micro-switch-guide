@@ -1,6 +1,6 @@
 ---
-title: "Dishwasher door latch micro switch NO and NC terminals: what do they mean?"
-description: "dishwasher door latch micro switch NO and NC terminals: Understand the operating idea, essential terminology, practical checks, limitations, and evidence."
+title: "Dishwasher Door Latch Micro Switch NO and NC Terminals: What They Mean and How to Read Them"
+description: "On a dishwasher door latch micro switch, NO and NC describe the contacts with the plunger released. See how latches use them and how to read your switch."
 date: 2026-10-13 11:27:16 +0800
 category: Applications
 tags:
@@ -8,61 +8,87 @@ tags:
   - micro switches
   - Applications
 author: editorial_team
+seo_title: "Dishwasher Door Latch Micro Switch NO and NC Terminals"
+last_updated: 2026-11-12
 ---
 
-The **dishwasher door latch micro switch NO and NC terminals** describe contact states under the switch’s specified reference condition. They do not, by themselves, say whether current is flowing through an installed dishwasher circuit. To interpret them, first identify the reference condition and contact arrangement documented for the exact switch. Then distinguish the switch’s contact behavior from the latch movement, appliance wiring, and control response.
+Pull a dishwasher's door latch out of its housing and the small switch inside it carries terminal letters for normally open and normally closed, often with a third for common. The usual reading is that "normally" means the door is open, so NO is open with the door open and closes when you latch it. **For a micro switch the reference is the plunger, and dishwasher service manuals call their door switches normally closed or normally open depending on how the latch is built.** The letters on the switch, two real latch designs and a meter check on your own switch follow in that order.
 
-A micro switch is an electromechanical component that can change an electrical contact state in response to movement of its actuator. Some dishwasher latch designs may use one, but the supplied information does not establish that every dishwasher does or that all such designs share the same arrangement. The labels are a starting point for identifying the switch contacts, not a diagnosis of an appliance symptom.
+## Quick answer
 
-## Dishwasher door latch micro switch NO and NC terminals: the direct meaning
+On a dishwasher door latch micro switch, NO (normally open) and NC (normally closed) describe the contacts while nothing presses the plunger, the small button the latch pushes. Daniel Herzog's article in Electronic Design describes that resting state: the NC circuit "can carry current" and the common (COM) terminal is insulated from NO. Whether latching the door closes or opens the circuit depends on which pair the dishwasher uses.
 
-NO means “normally open,” and NC means “normally closed.” These names refer to the contact states at the switch’s specified reference condition. That condition must be taken from the switch documentation; the labels should not be read as an unconditional statement about current flow while the switch is installed in a dishwasher.
+## NO and NC compared
 
-The reference condition matters because the switch contact state can change when the actuator moves. A contact identified as NO at the documented reference condition may be in a different state after actuation; the corresponding interpretation for NC depends on the documented contact arrangement. Do not assume a particular physical position of the dishwasher door or latch is the switch’s reference condition unless the documentation says so.
+| Terminal pair | Plunger released | Plunger pressed | Typical meter reading, released | Typical meter reading, pressed |
+|---|---|---|---|---|
+| COM to NO (normally open) | Open | Closed | Open (no continuity) | Near 0 ohms |
+| COM to NC (normally closed) | Closed | Open | Near 0 ohms | Open (no continuity) |
 
-Also distinguish a contact state from a circuit result. Current flow in the appliance depends on how the terminals are connected, the circuit function, and the permissible load for the exact switch and equipment. A terminal label alone does not establish that current flows, that the appliance receives a particular signal, or that the dishwasher permits operation. Those conclusions require the actual circuit information.
+COM is the terminal shared by both pairs. Electronic Design's description of the snap action adds that the moving contact "cannot stop partway between the NC and normally open contacts," so at any moment exactly one of the two pairs is closed. Crouzet's explainer on how micro switches work describes the same split from the other side: pressing a normally open switch closes the contact "and current flows," and pressing a normally closed one opens it.
 
-The practical first step is therefore not to guess from the latch position or terminal appearance. Find the connection diagram and terminal markings for the exact switch, along with the relevant equipment documentation. If those records do not identify the reference condition or contact arrangement, treat that information as unresolved rather than assuming a standard layout.
+## What "normally" refers to
 
-## How latch movement can change a micro switch contact state
+On a micro switch, "normally" means the actuator is free, with nothing pushing the plunger. Electronic Design calls that state the free position, and a datasheet's NO and NC labels describe the switch in it.
 
-Where a dishwasher design uses a micro switch in its latch mechanism, the mechanical and electrical events are separate links in a chain. Door-latch or linkage movement may move the switch actuator. If the actuator reaches the switch’s operating conditions, the switch can change a contact state. The appliance’s control circuit may then respond according to its own wiring and logic.
+Other door switches use a different reference, which is where the confusion starts. Absolute Automation, which makes magnetic door contacts, defines its NO switch as one where "the internal switch is open when the magnetic module is against the switch module," and it equates that with the door being closed. On that kind of contact, "normally" describes the installed, door-shut condition. On a micro switch it describes the switch on the bench.
 
-That sequence is conditional. The available evidence does not establish how a particular latch moves, whether it directly contacts the actuator, which direction of movement operates the switch, or what door position corresponds to the switch’s reference condition. Those details vary with the documented design and cannot be inferred from the words NO and NC.
+In a dishwasher, the latch decides whether a closed door presses the plunger. If the latch pushes the plunger when the door shuts, the NO pair (COM and NO) closes with the door. If the latch releases the plunger when the door shuts, the NC pair (COM and NC) closes with the door. The letters on the switch stay the same either way.
 
-The component’s function also does not specify the dishwasher’s response. A contact-state change might be part of position or limit detection, but the exact role and resulting control behavior depend on the appliance circuit. Do not infer that an open door must produce one particular terminal state, that a closed door must produce another, or that a contact change necessarily starts, stops, or enables any appliance function.
+## How two dishwasher latches use the terminals
 
-Keep the entities distinct when interpreting a symptom. The latch or linkage provides mechanical input; the actuator is the part moved by that input; the switch changes a contact state under its operating conditions; and the appliance circuit determines what that change means to the wider system. A problem at any of those points, or elsewhere in the appliance, may affect the observed behavior. The terminal labels alone cannot identify which point is responsible.
+### GE GLDT690T: normally open contacts closed by the latch
 
-## What NO and NC labels do not establish in a dishwasher
+GE's technical service manual for the GLDT690T describes a door switch assembly of "2 switches activated by a spring-loaded plunger." One switch "connects or disconnects the line (hot) side of 120 VAC," and the other does the same for the neutral side. When the door is closed, the manual says, "the door latch presses and holds down the switch plunger," and "the normally open contacts of the door switches are closed." This design matches the usual reading: the NO pair closes when you latch the door.
 
-NO and NC identify documented contact states, not the terminal’s role in every appliance circuit. They do not establish which wire belongs on a terminal, whether a circuit is correctly connected, what signal the appliance control interprets, or whether a dishwasher symptom is caused by the switch. Those questions require the exact switch and equipment documentation and, where relevant, an assessment of the circuit.
+### Maytag MDBH970AW: normally closed switches in series with the supply
 
-For example, a dishwasher that does not start does not, from that symptom alone, establish a latch-switch fault. The cause could involve the mechanical input, an internal contact issue, terminal identification, wiring, or another part of the equipment. The symptom needs evidence that distinguishes among these possibilities; an NO or NC marking does not do that work.
+Maytag's service manual for the MDBH970AW describes the other arrangement. "Two Door Switches are used in the Latch Assembly," and "Both switches are normally CLOSED and will open only when engaged by the Door Latch mechanism." The same manual says each switch "is in series with respect to L1 and neutral line operations," L1 being the line or hot side. It adds that "Failure of either or both switches will result in rendering the Dishwasher inoperative."
 
-Likewise, an audible click is not proof that the contacts have electrical continuity, that the terminals are wired correctly, or that the appliance circuit works. It may indicate mechanical movement, but it does not verify the electrical or system-level result. A click should not be treated as confirmation that a latch mechanism, switch, or dishwasher is safe or functional.
+The GE and Maytag manuals each put a switch in each supply leg, line and neutral, and both use the door latch to operate them. They label the switches from opposite ends, which is why a meter reading with the door open and latched tells you more about your own model than the letters alone.
 
-Avoid transferring a contact description from one switch or diagram to another. The exact switch’s documented contact arrangement, reference condition, terminal markings, circuit function, and permissible load are relevant. If any of these are missing or unclear, the installation’s behavior remains unknown on the available information. Do not fill that gap by assuming a universal dishwasher-latch design.
+## Reading the terminals on your own switch
 
-### Related guides
+📌 **On safety:** *Switch off the dishwasher's breaker or unplug it before removing the inner door panel. GE's GLDT690T manual warns that "Power remains applied to the controller" at one connector "while the door is open," so an open door doesn't make the wiring safe. Never jumper the door switch terminals to run the machine with the door open.*
 
-- [bottling machine home position micro switch location](/guides/bottling-machine-home-position-micro-switch-location/)
-- [incinerator end of stroke micro switch maintenance](/guides/incinerator-end-of-stroke-micro-switch-maintenance/)
-- [rotary indexing table guard interlock micro switch location](/guides/rotary-indexing-table-guard-interlock-micro-switch-location/)
-- [security barrier open position micro switch wiring](/guides/security-barrier-open-position-micro-switch-wiring/)
+1. **Photograph the wires on the switch before removing them.** Note which wire sits on COM and which on NO or NC.
+2. **Take the wires off the switch.** Testing the switch out of circuit keeps the rest of the dishwasher out of the reading.
+3. **Put the meter probes on COM and NO.** With the plunger released, a good switch reads open. Press the plunger and it should read near zero ohms.
+4. **Move the probe from NO to NC.** The readings should flip: near zero ohms released, open when pressed.
+5. **Check which pair the harness used.** If the wires were on COM and NO, the circuit closes when the plunger is pressed. If they were on COM and NC, it closes when the plunger is released.
 
-## How to interpret a documented terminal arrangement safely
+A switch that reads the same in both plunger positions, or flickers while held down, has failed. The general method for testing a micro switch with a multimeter covers meter settings, and routine care of a dishwasher door latch micro switch covers the latch side.
 
-Use the connection diagram, terminal marking, circuit function, and permissible load documented for the exact switch and equipment. Identify the stated reference condition before interpreting NO or NC, and use the diagram rather than a generic physical-layout assumption to identify terminals. If the documentation does not establish those details, terminal appearance or a familiar label is not enough to resolve them.
+## Can you swap NO and NC on a replacement?
 
-A continuity check should not be treated as a universal dishwasher test procedure. The evidence here does not provide a model-specific test method or expected readings for a particular latch arrangement. In general, a meaningful check of a switch must define the tested actuator state and isolation condition; an isolated switch reading does not establish that an installed circuit is safe or that the appliance operates correctly. Do not infer installed-circuit behavior from a component reading alone.
+No, not without changing what the dishwasher sees. Moving a wire from NO to NC reverses the switch's logic, so a circuit that was meant to close with the door latched would close with it open. In a design like the GE or Maytag latch, where the switches sit in the line and neutral legs, that reversal decides whether the supply reaches the dishwasher with the door open. Match the replacement's contact form, meaning whether it offers NO, NC or both, to the original, and wire it to the same terminals shown in your photo or in the model's wiring diagram.
 
-Electrical work has a separate safety boundary. Under the cited United States workplace rule, exposed live parts generally must be deenergized before work, a qualified person must verify the deenergized condition with test equipment, and work on energized parts is limited to qualified persons. Verify all applicable requirements. Do not use the terminal labels, an audible click, or an isolated reading as a substitute for the required safety practices.
+The difference between NO and NC contacts is covered in general terms in a separate guide, and the same contact logic in microwave ovens appears in how a door interlock micro switch works.
 
-In short, **dishwasher door latch micro switch NO and NC terminals** name contact states at a documented reference condition. To relate them to a latch, confirm the exact switch arrangement and trace the documented path from latch movement to actuator movement and contact change. The appliance’s wiring and control logic determine what that change means; the labels alone do not establish circuit operation or diagnose a dishwasher fault.
+## FAQ
 
-## Sources and references
+**Why won't my dishwasher start even though the door is closed?**
+One common cause is a door latch switch that no longer reports a closed door. GE's GLDT690T manual describes the latch pressing the switch plunger to close the door switch contacts, and Maytag's MDBH970AW manual says failure of either door switch leaves the dishwasher inoperative. A meter test on the switch, with power off, shows whether its contacts still change when the plunger moves.
 
-- Defense Logistics Agency ASSIST: [MIL-PRF-8805K: Switches and Switch Assemblies, Sensitive, Snap Action, General Specification For](https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=7196){: rel="nofollow noopener noreferrer" }
-- Occupational Safety and Health Administration: [29 CFR 1910.333: Selection and Use of Work Practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333){: rel="nofollow noopener noreferrer" }
-- Wikipedia: [Miniature snap-action switch](https://en.wikipedia.org/wiki/Miniature_snap-action_switch){: rel="nofollow noopener noreferrer" }
+**How to wire up a micro switch?**
+Put each wire back on the terminal it came off, using a photo taken before removal. COM joins NO when the plunger is pressed and joins NC when it's released, so the dishwasher's design decides which pair is used. Match the replacement's rating and contact form to the original.
+
+**What are the symptoms of a bad micro switch?**
+In a dishwasher latch, a failing switch can leave the machine dead with the door latched, or make it stop when the door is nudged. On a meter, a bad switch reads the same with the plunger pressed and released, or reads unsteadily while pressed. Check that the latch is actually reaching the plunger before replacing the switch.
+
+## What to note before ordering a replacement switch
+
+Record which terminals were wired, the rating printed on the switch body, and whether the latch presses or releases the plunger when the door shuts. Those three facts decide whether a replacement will behave like the original. If the service manual for your model names the switches as normally open or normally closed, check that label against your meter readings before ordering.
+
+Dishwasher door switches are a regular catalog item for appliance switch makers. [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists dishwashers among the applications of its ZINGEAR G905-150F05W1 and ZINGEAR G9105-150R00F1 switches, and its article on the G3 waterproof series names dishwasher door interlocks among that series' uses. Whichever switch your dishwasher carries, the service manual's continuity table is still what tells you which contact is NO and which is NC.
+
+## Sources
+
+- GE GLDT690T Technical Service Manual, Door Switch Assembly, p.18 (ManualsLib copy)
+- Maytag MDBH970AW service manual, Door Latch & Switch Holder Assembly (16021814 Rev. 0, ManualsOnline copy)
+- Daniel Herzog, "Snap-Action Switches Still Rule The Roost," Electronic Design, 2012
+- Crouzet, How does a microswitch work?
+- Absolute Automation, What is the difference between your NO and NC door switches?
+- ZING EAR, G905-150F05W1 product page: https://www.zingear-switch.com/g905-150f05w1-compact-waterproof-and-dustproof-micro-switch--switch-button-for-disinfection-cabinet--dishwasher.html
+- ZING EAR, ZINGEAR G9105-150R00F1 product page: https://www.zingear-switch.com/zingear-group-g9105-150r00f1-industrial-equipment-micro-switch.html
+- ZING EAR blog, The G3 Waterproof Micro Switch: A Miniature Sealed Solution: https://www.zingear-switch.com/the-g3-waterproof-micro-switch-a-miniature-sealed-solution.html
