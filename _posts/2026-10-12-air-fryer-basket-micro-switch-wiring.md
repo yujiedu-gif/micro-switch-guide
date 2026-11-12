@@ -28,9 +28,9 @@ Every test below is done with the plug out of the wall. If the fryer is still un
 
 A three-terminal micro switch is marked common (COM), normally open (NO) and normally closed (NC), and some bodies print C for common. COM is the terminal that's always part of the circuit. NC is joined to COM when nothing presses the actuator, the button or lever on the switch that the basket pushes. NO is joined to COM only while the actuator is pressed. Daniel Herzog's article on snap-action switches in Electronic Design describes the resting state the same way. With the plunger free, "the NC circuit of the switch can carry current," and the common terminal is insulated from the NO terminal.
 
-For an air fryer, "pressed" means the basket is in. So a circuit wired through COM and NO is complete only with the basket home, and a circuit through COM and NC is complete only with the basket out. Crouzet's explainer on how micro switches work describes the same pair of outcomes: in a normally open switch, pressing closes the contact "and current flows"; in a normally closed one, it opens and interrupts the current.
+For an air fryer, "pressed" means the basket is in. So a circuit wired through COM and NO is complete only with the basket home, and a circuit through COM and NC is complete only with the basket out. One switch maker's explainer on how micro switches work describes the same pair of outcomes: in a normally open switch, pressing closes the contact "and current flows"; in a normally closed one, it opens and interrupts the current.
 
-The body of the switch also carries its rating. Carling Technologies describes the common European format with the example "16(4)A 250V~ T85." In Carling's reading, 16 A is the resistive load current and the 4 in brackets is the inductive load current. Crouzet's Basic Technical Concepts document counts motors, solenoids and relay coils as inductive loads. The ~ means AC, and T85 is the maximum operating temperature in degrees Celsius. A switch in the heater path has to be rated for the heater's current, which is why the rating on the old switch belongs on your shopping list.
+The body of the switch also carries its rating. A switch maker's guide to amp ratings describes the common European format with the example "16(4)A 250V~ T85." In that guide's reading, 16 A is the resistive load current and the 4 in brackets is the inductive load current. Basic switch technical guides count motors, solenoids and relay coils as inductive loads. The ~ means AC, and T85 is the maximum operating temperature in degrees Celsius. A switch in the heater path has to be rated for the heater's current, which is why the rating on the old switch belongs on your shopping list.
 
 ## Two jobs a basket switch can do
 
@@ -54,7 +54,7 @@ The quickest way to tell which job your switch does is to follow its two wires. 
 4. **Press the actuator the way the basket does.** With the actuator pressed, COM to NO should read near zero ohms. Released, it should read open. Repeat on COM and NC, where the readings should be the reverse.
 5. **Compare with the photo.** If the wires were on COM and NO, the circuit was meant to close with the basket in. If it used COM and NC, it was meant to close with the basket out, and the replacement has to be wired the same way.
 
-A switch that reads open in both positions, reads closed in both, or flickers while you hold it pressed has failed. The general method for [testing a micro switch with a multimeter](/guides/how-to-test-a-micro-switch/) covers meter settings in more detail, and the [difference between NO and NC contacts](/guides/no-nc-micro-switch/) explains why the two pairs read opposite each other.
+A switch that reads open in both positions, reads closed in both, or flickers while you hold it pressed has failed. The general method for testing a micro switch with a multimeter covers meter settings in more detail, and the difference between NO and NC contacts explains why the two pairs read opposite each other.
 
 ## Common faults that look like a bad switch
 
@@ -65,7 +65,7 @@ Tower's T17175 manual describes a "safety switch in the cooking basket" that kee
 - **Switch moved in its mount.** If the switch has shifted, the tab or rib on the basket may press it only part way. Electronic Design's description of snap action has the contacts change only once the plunger reaches the operating point, so a partial press can leave them unchanged.
 - **Switch failed.** Only the meter test above confirms this one.
 
-If the switch tests good and the basket seats properly, the fault lies elsewhere in the fryer. A step-by-step [air fryer basket micro switch replacement](/guides/air-fryer-basket-micro-switch-replacement/) covers removal and fitting once the switch is confirmed bad.
+If the switch tests good and the basket seats properly, the fault lies elsewhere in the fryer. A step-by-step air fryer basket micro switch replacement covers removal and fitting once the switch is confirmed bad.
 
 ## FAQ
 
@@ -82,15 +82,7 @@ In an air fryer, a failed basket switch usually shows up as a fryer that won't s
 
 Write down three things from the old switch: which two terminals were wired, the rating printed on the body, and the actuator style, whether a plain plunger or a lever. The terminals and rating match the replacement to the circuit, and the actuator style matches it to the part of the basket that presses it. If the old switch carried the heater current, the new one's resistive rating has to cover the fryer's wattage divided by the supply voltage.
 
-Air fryers come up in switch makers' own application notes. In a blog post on micro switch applications, [ZING EAR](https://www.zingear-switch.com/){:rel="nofollow"} lists air fryer temperature safety, with a bimetal strip and a micro switch working as two layers of overheat protection. Its home appliance line page adds that operating force and terminal style can be customized to each appliance's structure, which is one reason the basket switch in your fryer has to be matched to the original part rather than to a generic one.
-
-
-## Related guides
-
-- [ball screw actuator home position micro switch replacement](/guides/ball-screw-actuator-home-position-micro-switch-replacement/)
-- [bottling machine end of stroke micro switch](/guides/bottling-machine-end-of-stroke-micro-switch/)
-- [automated guided vehicle home position micro switch location](/guides/automated-guided-vehicle-home-position-micro-switch-location/)
-- [accelerator pedal position stop micro switch operating force](/guides/accelerator-pedal-position-stop-micro-switch-operating-force/)
+Air fryers come up in switch makers' own application notes. In a blog post on micro switch applications, [ZING EAR](https://www.zingear-switch.com/){: rel="nofollow noopener noreferrer" } lists air fryer temperature safety, with a bimetal strip and a micro switch working as two layers of overheat protection. Its home appliance line page adds that operating force and terminal style can be customized to each appliance's structure, which is one reason the basket switch in your fryer has to be matched to the original part rather than to a generic one.
 
 ## Sources
 
@@ -98,7 +90,5 @@ Air fryers come up in switch makers' own application notes. In a blog post on mi
 - Tower, 6 Litre Vortx Digital Air Fryer User Manual, Model T17169 (Next listing G27102)
 - Tower, 6 Litre Vortx Air Fryer User Manual, Model T17175
 - Daniel Herzog, "Snap-Action Switches Still Rule The Roost," Electronic Design, 2012
-- Crouzet, How does a microswitch work?
-- Carling Technologies, Amp Ratings, HP, Volts
 - ZING EAR blog, Micro Switches: The Silent Guardians of Precision Control: https://www.zingear-switch.com/micro-switches-the-silent-guardians-of-precision-control.html
 - ZING EAR, Home Appliance Micro Switch product line page: https://www.zingear-switch.com/home-appliance-micro-switch
